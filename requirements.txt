@@ -1,5 +1,6 @@
-django
+Pillow
+South
+Django
 django-toolbelt
-south
 mezzanine
 cartridge
