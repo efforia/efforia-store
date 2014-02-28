@@ -1,0 +1,629 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Gine",
+				"Ginecológica"
+			],
+			[
+				"Idade",
+				"IdadeGestacionalAdmin	class"
+			],
+			[
+				"Peso",
+				"PesoCFAdmin	class"
+			],
+			[
+				"Pes",
+				"PesoDBPAdmin	class"
+			],
+			[
+				"Tabel",
+				"TabelaGinecologicaAdmin	class"
+			],
+			[
+				"Ta",
+				"TabelaMamariaAdmin	class"
+			],
+			[
+				"Ou",
+				"OutroAdmin	class"
+			],
+			[
+				"An",
+				"AntecedenteAdmin	class"
+			],
+			[
+				"Tab",
+				"TabelaMamaria	class"
+			],
+			[
+				"Obs",
+				"ObstetricoAdmin	class"
+			],
+			[
+				"H",
+				"HistoricoAdmin	class"
+			],
+			[
+				"Te",
+				"TelefoneAdmin	class"
+			],
+			[
+				"Ex",
+				"ExameAdmin	class"
+			],
+			[
+				"Imagem",
+				"ImagemAdmin	class"
+			],
+			[
+				"Pac",
+				"PacienteAdmin	class"
+			],
+			[
+				"Presc",
+				"PrescricaoAdmin	class"
+			],
+			[
+				"Lembrete",
+				"LembreteAdmin	class"
+			],
+			[
+				"Pessoa",
+				"PessoaAdmin	class"
+			],
+			[
+				"c",
+				"contrib"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"u",
+				"urls	function"
+			],
+			[
+				"Proce",
+				"ProcedimentoView	class"
+			],
+			[
+				"Pr",
+				"Procedimento	class"
+			],
+			[
+				"E",
+				"Exame	class"
+			],
+			[
+				"R",
+				"RenovacaoView	class"
+			],
+			[
+				"def",
+				"def	Function"
+			],
+			[
+				"f",
+				"forms	import"
+			],
+			[
+				"loa",
+				"loads	function"
+			],
+			[
+				"Image",
+				"ImageField"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/william/Develop/boilerplate/manage.py",
+			"settings":
+			{
+				"buffer_size": 955,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/william/Develop/boilerplate/efforia/settings.py",
+			"settings":
+			{
+				"buffer_size": 16311,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git reset",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"set python",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"Anaconda",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Discover Packages"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"os.path.abspath('..')",
+			"os.path.abspath('~/')",
+			"os.path.abspath('.')",
+			"os.path.abspath('~')",
+			"os.path.abspath('/')",
+			"os.path.abspath()",
+			"os.path.abspath",
+			"os.path",
+			"import os",
+			"exit()",
+			"print('Hello World!')",
+			"import django",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"exit()",
+			"print \"Hello World!\"",
+			"exit"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/william/Develop/boilerplate/templates/index.html",
+		"/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/mezzanine/core/admin.py",
+		"/Users/william/Develop/boilerplate/urls.py",
+		"/Users/william/Desktop/NomeProcedimento.csv",
+		"/Users/william/Desktop/Lembrete.csv",
+		"/Users/william/Desktop/Ginecologia.csv",
+		"/Users/william/Desktop/Prescricao.csv",
+		"/Users/william/Desktop/Procedimento.csv",
+		"/Users/william/Desktop/Calculo_IG.csv",
+		"/Users/william/Desktop/Exame.csv",
+		"/Users/william/Desktop/Historico.csv",
+		"/Users/william/Desktop/Atividade.csv",
+		"/Users/william/Desktop/Outro.csv",
+		"/Users/william/Dropbox/Projetos/Nexgyn/Nexgyn/Telefone.csv",
+		"/Users/william/Downloads/bctop10.csv",
+		"/Users/william/Desktop/Nexgyn.csv",
+		"/Users/william/Desktop/Nexgynnew.csv",
+		"/Users/william/Desktop/Paciente.csv",
+		"/Users/william/Desktop/Antecedentes.csv",
+		"/Users/william/Desktop/Pessoa.csv",
+		"/Users/william/Heroku/sergiorocha/nexgyn/adminx.py",
+		"/Users/william/Heroku/sergiorocha/calculo/adminx.py",
+		"/Users/william/Heroku/sergiorocha/agenda/adminx.py",
+		"/Users/william/Heroku/sergiorocha/agenda/__init__.py",
+		"/Users/william/Heroku/sergiorocha/agenda/migrations/__init__.py",
+		"/Users/william/Heroku/sergiorocha/boilerplate/models.py",
+		"/Users/william/Heroku/sergiorocha/nexgyn/settings.py",
+		"/Users/william/Heroku/sergiorocha/nexgyn/urls.py",
+		"/Users/william/Heroku/sergiorocha/nexgyn/wsgi.py",
+		"/Users/william/Heroku/sergiorocha/boilerplate/templates/xadmin/base_site.html",
+		"/Users/william/Develop/dashboard.html",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/william/Heroku/sergiorocha/boilerplate/views.py",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/william/Desktop/helloworld.py",
+		"/Users/william/Desktop/untitled.sublime-project",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/User/sublime_jedi.sublime-settings",
+		"/Users/william/Heroku/sergiorocha/boilerplate/urls.py",
+		"/Users/william/Heroku/sergiorocha/nexgyn/views.py",
+		"/Users/william/Heroku/sergiorocha/nexgyn/queries.sql",
+		"/Users/william/Heroku/sergiorocha/boilerplate/settings.py",
+		"/Users/william/Heroku/sergiorocha/nexgyn/Agenda/models.py",
+		"/Users/william/Heroku/sergiorocha/nexgyn/Calculo/models.py",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/Pylinter/Pylinter.sublime-settings",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/Default (OSX).sublime-keymap",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/william/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/william/Vagrant/efforia/Develop/efforia/socialize/urls.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/wsgi.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/views.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/feedly/urls.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/urls.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/store.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/content.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/models.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/app.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/main.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/efforia/settings.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/socialize/social.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/hub/forms.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/socialize/forms.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/feedly/views.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/hub/control.py",
+		"/Users/william/Vagrant/efforia/Develop/cloud-boilerplate/urls.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/shipping/models.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/socialize/stream.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/shipping/correios.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/settings.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/wsgi.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/models.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_spread/views.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/forms.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/eos/models.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/views.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/urls.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_spread/urls.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/app.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/control.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/__init__.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/views.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/tests.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/payments.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/main.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/social_feed/feed.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/django-feed/app.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/django-feed/feed.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/django-feed/payments.py",
+		"/Users/william/Vagrant/efforia/Develop/efforia/django-feed/main.py",
+		"/Users/william/Heroku/djangocms-boilerplate/project/settings.py",
+		"/Users/william/Heroku/djangocms-boilerplate/project/staging.py",
+		"/Users/william/Heroku/cartridge-boilerplate/local_settings.py",
+		"/Users/william/Heroku/cartridge-boilerplate/settings.py",
+		"/Users/william/git/efforia/efforia/stream.py",
+		"/Users/william/git/efforia/efforia/app.py",
+		"/Users/william/git/efforia/efforia/control.py",
+		"/Users/william/git/efforia/efforia/feed.py",
+		"/Users/william/git/efforia/efforia/main.py",
+		"/Users/william/git/efforia/efforia/payments.py",
+		"/Users/william/git/efforia/efforia/social.py",
+		"/Users/william/Heroku/fabricadeideias/project/settings.py",
+		"/Users/william/Heroku/efforia-github/efforia/feed.py",
+		"/Users/william/Heroku/efforia-github/efforia/settings.py",
+		"/Users/william/Heroku/efforia-boilerplate/requirements.txt",
+		"/Users/william/Heroku/fabricadeideias/static/css/sandbox.css",
+		"/Users/william/plethora/efforia/efforia/settings.py",
+		"/Users/william/Heroku/efforia-boilerplate/manage.py",
+		"/Users/william/git/project/project/urls.py",
+		"/Users/william/git/nexgyn/Nexgyn/queries.sql",
+		"/Users/william/Downloads/uinput-1.c",
+		"/Users/william/git/efforia/setup.py",
+		"/Users/william/git/project/app/views.py",
+		"/Users/william/plethora/app/models.py",
+		"/Users/william/plethora/efforia/settings.py",
+		"/Users/william/plethora/plethora.py",
+		"/Users/william/plethora/efforia/app/models.py",
+		"/Users/william/Develop/efforia/urls.py",
+		"/Users/william/Develop/efforia/efforia/urls.py",
+		"/Users/william/Develop/efforia/app/api.py",
+		"/Users/william/Develop/efforia/efforia/settings.py",
+		"/Users/william/Develop/efforia/settings.py",
+		"/Users/william/Develop/efforia/efforia/views.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"models.py",
+			"Ginecologia.csv",
+			"Procedimento.csv",
+			"Exame.csv",
+			"Historico.csv",
+			"",
+			"models.py",
+			"",
+			"adminx.py",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"SECRET_KEY",
+			"SECURE_PROXY_SSL_HEADER",
+			"\"",
+			"Antecedente",
+			"Dashboard",
+			"#",
+			"00/01/00",
+			"#",
+			"00/01/00",
+			"#",
+			",",
+			"#",
+			",",
+			"2678",
+			"6554",
+			"00/01/00",
+			"#",
+			",",
+			"BooleanField(null=True, blank=True)",
+			"BooleanField(default=False, null=True, blank=True)",
+			"BooleanField(null=True, blank=True)",
+			"agenda",
+			"agendas",
+			"adsite",
+			"xadmin.site",
+			"Obstétrico",
+			"Control",
+			"Passwords",
+			"Profile",
+			"Coins",
+			"Tutorial",
+			"Facebook",
+			"Twitter",
+			"Authentication",
+			"Deletes",
+			"ID",
+			"Follows",
+			"Search"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"",
+			"01/01/10",
+			"",
+			"01/01/10",
+			"",
+			".",
+			"",
+			".",
+			"01/01/10",
+			"",
+			".",
+			"BooleanField(default=False)",
+			"site",
+			"adsite",
+			"Obstetrico"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/william/Develop/boilerplate/manage.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 955,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								773,
+								773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/william/Develop/boilerplate/efforia/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9367,
+								9367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 4685.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 124.0
+	},
+	"project": "efforia.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
