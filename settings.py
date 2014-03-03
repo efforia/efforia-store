@@ -148,6 +148,13 @@ import os
 # INSTALLED_APPS setting.
 USE_SOUTH = True
 
+SITE_TITLE = 'Efforia'
+
+########################
+# APPS DJANGO SETTINGS #
+########################
+
+LOCALE_DATE = ('Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dec')
 
 ########################
 # MAIN DJANGO SETTINGS #
@@ -251,10 +258,6 @@ DATABASES = {
     }
 }
 
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
-
 #########
 # PATHS #
 #########
@@ -333,7 +336,15 @@ INSTALLED_APPS = (
     "mezzanine.galleries",
     "mezzanine.twitter",
     "mezzanine.accounts",
-    #"mezzanine.mobile",
+    "django_pagseguro",
+    "django_moip",
+    "paypal",
+    "social_auth",
+    "crispy_forms",
+    "pure_pagination",
+    "socialize",
+    "shipping",
+    "feedly",
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -433,7 +444,9 @@ try:
 except ImportError:
     SECRET_KEY = "928f26e4-2b36-48c1-b9b7-5e2049306018df5334a2-3efa-4de8-a10b-010226b85823eaa7584f-0878-43f2-b099-45f4b73519af"
     NEVERCACHE_KEY = "0085b0ee-8947-4699-ba15-6bbf538cf75f06e504a2-ee28-4c9e-8a23-ffa5bdebc69384f3b8c4-e63f-4c95-874f-d43f59ff92aa"
-    pass
+    # Parse database configuration from $DATABASE_URL
+    import dj_database_url
+    DATABASES['default'] = dj_database_url.config()
 
 
 ####################
