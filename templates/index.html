@@ -1,13 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block meta_title %}{% trans "Inicial" %}{% endblock %}
-{% block title %}{% trans "Inicial" %}{% endblock %}
-
-{% block breadcrumb_menu %}
-<li class="active">{% trans "Inicial" %}</li>
-{% endblock %}
-
 {% block main %}
 {% blocktrans %}
 <h2>Congratulations!</h2>
@@ -23,6 +16,14 @@
     <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">Other frequently asked questions</a></li>
     <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
     <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
+    <li>Realizar integração com sistema de frete com Shipping</li>
+    <li>Realizar integração com os sistemas de pagamento MOIP, PagSeguro e PayPal</li>
+    <li>Finalizar design novo da página principal com o Feedly</li>
+    <li>Integrar login social ao novo site do Efforia</li>
+    <li>Construir wizard de customização do Hub</li>
+    <li>Construir as páginas pelo Mezzanine</li>
+    <li>Adicionar produtos pelo Cartridge</li>
+    <li>Migrar banco de dados local para Heroku quando finalizar tudo</li>
 </ul>
 {% endblocktrans %}
 {% endblock %}
