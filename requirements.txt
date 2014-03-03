@@ -11,5 +11,5 @@ django-crispy-forms==1.4.0
 django-pure-pagination==0.2.1
 django-socialize==0.5.0
 django-toolbelt==0.0.1
-django-feedly==0.5.0
+django-feedly==0.5.1
 django-ship==0.1.0
