@@ -154,6 +154,8 @@ SITE_TITLE = 'Efforia'
 ########################
 
 LOCALE_DATE = ('Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dec')
+STORE_POSTCODE = '90020110'
+CLIENT_POSTCODE = '91350180'
 
 ########################
 # MAIN DJANGO SETTINGS #
