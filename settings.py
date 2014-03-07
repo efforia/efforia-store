@@ -16,7 +16,7 @@ import os
 # SHOP_CATEGORY_USE_FEATURED_IMAGE = True
 
 # Set an alternative OrderForm class for the checkout process.
-# SHOP_CHECKOUT_FORM_CLASS = 'cartridge.shop.forms.OrderForm'
+SHOP_CHECKOUT_FORM_CLASS = 'feedly.forms.ExternalPaymentOrderForm'
 
 # If True, the checkout process is split into separate
 # billing/shipping and payment steps.
@@ -29,7 +29,7 @@ import os
 # Controls the formatting of monetary values accord to the locale
 # module in the python standard library. If an empty string is
 # used, will fall back to the system's locale.
-# SHOP_CURRENCY_LOCALE = ""
+SHOP_CURRENCY_LOCALE = ""
 
 # Dotted package path and class name of the function that
 # is called on submit of the billing/shipping checkout step. This
@@ -46,7 +46,7 @@ SHOP_HANDLER_BILLING_SHIPPING = "shipping.hooks.fretefacil_shipping_handler"
 # Dotted package path and class name of the function that
 # is called on submit of the payment checkout step. This is where
 # integration with a payment gateway should be implemented.
-# SHOP_HANDLER_PAYMENT = "cartridge.shop.checkout.default_payment_handler"
+SHOP_HANDLER_PAYMENT = "feedly.hooks.paypal_payment_handler"
 
 # Sequence of value/name pairs for order statuses.
 # SHOP_ORDER_STATUS_CHOICES = (
@@ -119,25 +119,14 @@ SHOP_HANDLER_BILLING_SHIPPING = "shipping.hooks.fretefacil_shipping_handler"
 # field instance. When specifying the field class, the path
 # ``django.models.db.`` can be omitted for regular Django model fields.
 #
-# EXTRA_MODEL_FIELDS = (
-#     (
-#         # Dotted path to field.
-#         "mezzanine.blog.models.BlogPost.image",
-#         # Dotted path to field class.
-#         "somelib.fields.ImageField",
-#         # Positional args for field class.
-#         ("Image",),
-#         # Keyword args for field class.
-#         {"blank": True, "upload_to": "blog"},
-#     ),
-#     # Example of adding a field to *all* of Mezzanine's content types:
-#     (
-#         "mezzanine.pages.models.Page.another_field",
-#         "IntegerField", # 'django.db.models.' is implied if path is omitted.
-#         ("Another name",),
-#         {"blank": True, "default": 1},
-#     ),
-# )
+EXTRA_MODEL_FIELDS = (
+    (
+        "cartridge.shop.models.Order.paypal_redirect_token",
+        "django.db.models.CharField",
+        (),
+        {"blank":True,"max_length":36},
+    ),   
+)
 
 # Setting to turn on featured images for blog posts. Defaults to False.
 #
@@ -157,9 +146,27 @@ LOCALE_DATE = ('Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov'
 STORE_POSTCODE = '90020110'
 CLIENT_POSTCODE = '91350180'
 
+PAYPAL_RECEIVER_EMAIL = 'efforiaca@gmail.com'
+
+PAYPAL_CLIENT_ID = 'AeiijxAGPGKJ1J94r7u7nqX_8oCKtOzI0ZNChSIMwAkEg2Y3wff8FQhPfGZw'
+PAYPAL_CLIENT_SECRET = 'EKmSiRBgd31RKZ324o47--u1IgxoOMI-J6UvuIP-X5qFSm30xYy_ULllqHIc'
+
+PAGSEGURO_EMAIL_COBRANCA = 'efforiaca@gmail.com'
+PAGSEGURO_TOKEN = ''
+
 ########################
 # MAIN DJANGO SETTINGS #
 ########################
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = 'contato@efforia.com.br'
+EMAIL_HOST_PASSWORD = 'c40k21_1'
+
+#DEFAULT_FROM_EMAIL = 'contato@efforia.com.br'
+#SERVER_EMAIL = 'contato@efforia.com.br'
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -190,12 +197,12 @@ USE_TZ = True
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = "en"
+LANGUAGE_CODE = "pt-BR"
 
 # Supported languages
 _ = lambda s: s
 LANGUAGES = (
-    ('en', _('English')),
+    ('pt-BR', _('Brazilian Portuguese')),
 )
 
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
@@ -210,7 +217,7 @@ SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
-USE_I18N = False
+USE_I18N = True
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true

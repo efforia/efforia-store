@@ -20,6 +20,8 @@ urlpatterns = i18n_patterns("",
 
 urlpatterns += patterns('',
 
+    ("^shipping/", include("shipping.urls")),
+    ("^feedly/", include("feedly.urls")),
     # Cartridge URLs.
     ("^shop/", include("cartridge.shop.urls")),
     url("^account/orders/$", "cartridge.shop.views.order_history",
@@ -93,7 +95,6 @@ urlpatterns += patterns('',
     # need to use the ``SITE_PREFIX`` setting as well.
 
     # ("^%s/" % settings.SITE_PREFIX, include("mezzanine.urls"))
-
 )
 
 # Adds ``STATIC_URL`` to the context of error pages, so that error
