@@ -11,5 +11,5 @@ django-toolbelt==0.0.1
 django-feedly==0.5.4
 django-ship==0.1.4
 reportlab==2.7
+pagseguro==0.1.6.dev0
 paypalrestsdk
-pagseguro
