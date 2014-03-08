@@ -29,7 +29,7 @@ SHOP_CHECKOUT_STEPS_CONFIRMATION = False
 # Controls the formatting of monetary values accord to the locale
 # module in the python standard library. If an empty string is
 # used, will fall back to the system's locale.
-SHOP_CURRENCY_LOCALE = ""
+SHOP_CURRENCY_LOCALE = "pt_BR.UTF-8"
 
 # Dotted package path and class name of the function that
 # is called on submit of the billing/shipping checkout step. This
@@ -47,8 +47,7 @@ SHOP_HANDLER_TAX = None
 # Dotted package path and class name of the function that
 # is called on submit of the payment checkout step. This is where
 # integration with a payment gateway should be implemented.
-SHOP_HANDLER_PAYMENT = "feedly.hooks.paypal_payment_handler"
-# SHOP_HANDLER_PAYMENT = "feedly.hooks.pagseguro_payment_handler"
+SHOP_HANDLER_PAYMENT = "feedly.hooks.multiple_payment_handler"
 
 # Sequence of value/name pairs for order statuses.
 # SHOP_ORDER_STATUS_CHOICES = (
@@ -127,7 +126,13 @@ EXTRA_MODEL_FIELDS = (
         "django.db.models.CharField",
         (),
         {"blank":True,"max_length":36},
-    ),   
+    ),
+    (
+        "cartridge.shop.models.Order.pagseguro_redirect",
+        "django.db.models.CharField",
+        (),
+        {"blank":True,"null":True,"max_length":200},
+    ),      
 )
 
 # Setting to turn on featured images for blog posts. Defaults to False.
@@ -154,7 +159,9 @@ PAYPAL_CLIENT_ID = 'AeiijxAGPGKJ1J94r7u7nqX_8oCKtOzI0ZNChSIMwAkEg2Y3wff8FQhPfGZw
 PAYPAL_CLIENT_SECRET = 'EKmSiRBgd31RKZ324o47--u1IgxoOMI-J6UvuIP-X5qFSm30xYy_ULllqHIc'
 
 PAGSEGURO_EMAIL_COBRANCA = 'efforiaca@gmail.com'
-PAGSEGURO_TOKEN = ''
+PAGSEGURO_TOKEN = 'D9BBC61094BB4C8BADB296613350FF20'
+
+SHOP_CURRENCY = 'BRL'
 
 ########################
 # MAIN DJANGO SETTINGS #
