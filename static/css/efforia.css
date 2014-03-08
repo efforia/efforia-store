@@ -3,3 +3,12 @@
 
 body { font-family:Ubuntu; }
 h1,h2,h3,h4,h5,h6,ul.nav { font-family: Ubuntu; font-weight:bold; }
+
+.facebook,.facebook:hover { text-align:left; background:#3C5A98; text-shadow:none; }
+.twitter,.twitter:hover { text-align:left; background:#00ACED; text-shadow:none; }
+.youtube,.youtube:hover { text-align:left; background:#FF1F20; text-shadow:none; }
+.foursquare,.foursquare:hover { text-align:left; background:#0072B1; text-shadow:none; }
+.github,.github:hover { text-align:left; background:white; text-shadow:none; }
+
+.divider { margin:5px; }
+.inline { display:inline; color:white; }

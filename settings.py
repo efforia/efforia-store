@@ -239,7 +239,15 @@ TEMPLATE_LOADERS = (
     "django.template.loaders.app_directories.Loader",
 )
 
-AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
+AUTHENTICATION_BACKENDS = (
+    "mezzanine.core.auth_backends.MezzanineBackend",
+    'django.contrib.auth.backends.ModelBackend',
+    'social_auth.backends.twitter.TwitterBackend',
+    'social_auth.backends.facebook.FacebookBackend',
+    'social_auth.backends.google.GoogleOAuth2Backend',
+    'social_auth.backends.contrib.foursquare.FoursquareBackend',
+    'social_auth.backends.contrib.github.GithubBackend',
+)
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -367,6 +375,8 @@ INSTALLED_APPS = (
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.auth.context_processors.auth",
     "django.contrib.messages.context_processors.messages",
+    "social_auth.context_processors.social_auth_by_type_backends",
+    "social_auth.context_processors.social_auth_login_redirect",
     "django.core.context_processors.debug",
     "django.core.context_processors.i18n",
     "django.core.context_processors.static",
@@ -445,6 +455,43 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 #     "NEVERCACHE_KEY": NEVERCACHE_KEY,
 # }
 
+SOCIAL_AUTH_DEFAULT_USERNAME = 'new_efforiaid'
+SOCIAL_AUTH_UID_LENGTH = 16
+SOCIAL_AUTH_ASSOCIATION_HANDLE_LENGTH = 16
+SOCIAL_AUTH_NONCE_SERVER_URL_LENGTH = 16
+SOCIAL_AUTH_ASSOCIATION_SERVER_URL_LENGTH = 16
+SOCIAL_AUTH_ASSOCIATION_HANDLE_LENGTH = 16
+
+# Preenchimento obrigatorio para cada backend que for utilizado
+GITHUB_APP_ID                = '45b9116a0e2152049110'
+GITHUB_API_SECRET            = '7bb2f71373d42f517982136eaca9041b58b78a0c'
+TWITTER_CONSUMER_KEY         = 'oUa8pDde2HDLnVfT8P8p4g'
+TWITTER_CONSUMER_SECRET      = 'viyd4XjO4tJ9RIjK97HVX4FSocYMv3mgjvEt5vBH28Y'
+FACEBOOK_APP_ID              = '153246718126522'
+FACEBOOK_API_SECRET          = '15f57d59a69b96c3d3013b4c9aa301f2'
+GOOGLE_OAUTH2_CLIENT_ID      = ''
+GOOGLE_OAUTH2_CLIENT_SECRET  = ''
+FOURSQUARE_CONSUMER_KEY      = 'HRGDML5VAGTUB1D22ICA51L4LXPZRQZI2SQS24X2XOCXRIO2'
+FOURSQUARE_CONSUMER_SECRET   = 'VBLTME2BBUAYDJJC1JF4FUAISBPOCOIEBSPWR3IWPVVRXMFL'
+
+SOCIAL_AUTH_PIPELINE = (
+        'social_auth.backends.pipeline.social.social_auth_user',
+        'social_auth.backends.pipeline.associate.associate_by_email',
+        'social_auth.backends.pipeline.misc.save_status_to_session',
+        'social_auth.backends.pipeline.user.create_user',
+        'social_auth.backends.pipeline.social.associate_user',
+        'social_auth.backends.pipeline.social.load_extra_data',
+        'social_auth.backends.pipeline.user.update_user_details',
+        'social_auth.backends.pipeline.misc.save_status_to_session',
+)
+
+LOGIN_URL          = '/accounts/login'
+LOGIN_REDIRECT_URL = '/'
+LOGIN_ERROR_URL    = '/'
+
+SESSION_ENGINE = "django.contrib.sessions.backends.cached_db"
+ANONYMOUS_USER_ID = -1
+# AUTH_PROFILE_MODULE = 'efforia.Profile'
 
 ##################
 # LOCAL SETTINGS #

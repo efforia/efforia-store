@@ -19,7 +19,8 @@ urlpatterns = i18n_patterns("",
 )
 
 urlpatterns += patterns('',
-
+    url("",include("social_auth.urls")),
+    ("^socialize/",include("socialize.urls")),
     ("^shipping/", include("shipping.urls")),
     ("^feedly/", include("feedly.urls")),
     # Cartridge URLs.

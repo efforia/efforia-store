@@ -13,9 +13,10 @@
 {% block main %}
 
 {% errors_for form %}
-
 <form method="post"{% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
+	<h2></h2>
     <fieldset>
+    <div class="col-md-6">
     <legend>{{ title }}</legend>
     {% fields_for form %}
     <div class="form-actions">
@@ -23,6 +24,20 @@
         <input class="btn btn-primary btn-lg pull-right" type="submit" value="{{ title }}">
         {% endblock %}
     </div>
+    </div>
+    <div class="col-md-6">
+    <legend>Entrar pelas redes sociais</legend>
+	<a href="{% url "socialauth_begin" "twitter" %}" class="btn btn-block integration twitter"><img width="36" src="{{ STATIC_URL }}img/twitter.png" style="margin:0px 5px"/>
+	<div class="divider inline">Fazer login com uma conta do Twitter</div></a>
+	<a href="{% url 'socialauth_begin' 'facebook' %}" class="btn btn-block integration facebook"><img width="36" src="{{ STATIC_URL }}img/facebook.png" style="margin:0px 5px"/>
+	<div class="divider inline">Fazer login com uma conta do Facebook</div></a>
+	<a href="{% url 'socialauth_begin' 'github' %}" class="btn btn-block btn-default integration github"><img width="108" src="{{ STATIC_URL }}img/github.png" style="margin:2px 5px"/>
+	<div style="color:black;" class="divider inline">Fazer login com uma conta do GitHub</div></a>
+	<!--<a href="{% url 'socialauth_begin' 'google-oauth2' %}" class="btn btn-block integration youtube"><img width="105" src="{{ STATIC_URL }}img/youtube.png" style="margin:0px 7px"/>
+	<div class="divider inline">Fazer login com uma conta do YouTube</div></a>!-->
+	<a href="{% url 'socialauth_begin' 'foursquare' %}" class="btn btn-block integration foursquare"><img width="108" src="{{ STATIC_URL }}img/foursquare.png" style="margin:4px 5px"/>
+	<div class="divider inline">Fazer login com uma conta do Foursquare</div></a>
+	</div>
     </fieldset>
 </form>
 {% endblock %}
