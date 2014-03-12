@@ -20,11 +20,11 @@ SHOP_CHECKOUT_FORM_CLASS = 'feedly.forms.ExternalPaymentOrderForm'
 
 # If True, the checkout process is split into separate
 # billing/shipping and payment steps.
-SHOP_CHECKOUT_STEPS_SPLIT = False
+SHOP_CHECKOUT_STEPS_SPLIT = True
 
 # If True, the checkout process has a final confirmation step before
 # completion.
-SHOP_CHECKOUT_STEPS_CONFIRMATION = False
+SHOP_CHECKOUT_STEPS_CONFIRMATION = True
 
 # Controls the formatting of monetary values accord to the locale
 # module in the python standard library. If an empty string is
@@ -41,8 +41,8 @@ SHOP_HANDLER_BILLING_SHIPPING = "shipping.hooks.fretefacil_shipping_handler"
 # is called once an order is successful and all of the order
 # object's data has been created. This is where any custom order
 # processing should be implemented.
+SHOP_HANDLER_TAX = "cartridge.shop.checkout.default_tax_handler"
 SHOP_HANDLER_ORDER = None
-SHOP_HANDLER_TAX = None
 
 # Dotted package path and class name of the function that
 # is called on submit of the payment checkout step. This is where
