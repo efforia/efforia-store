@@ -3,28 +3,39 @@
 
 {% block main %}
 {% blocktrans %}
-<h2>Congratulations!</h2>
-<p>
-    Welcome to your new Mezzanine powered website.
-    Here are some quick links to get you started:
-</p>
-<ul>
-    <li><a href="/admin/">Log in to the admin interface</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/content-architecture.html">Creating custom page types</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#templates">Modifying HTML templates</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin">Changing this homepage</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/frequently-asked-questions.html">Other frequently asked questions</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/configuration.html#default-settings">Full list of settings</a></li>
-    <li><a href="http://mezzanine.jupo.org/docs/deployment.html">Deploying to a production server</a></li>
-    <li>Realizar integração com sistema de frete com Shipping</li>
-    <li>Realizar integração com os sistemas de pagamento MOIP, PagSeguro e PayPal</li>
-    <li>Finalizar design novo da página principal com o Feedly</li>
-    <li>Integrar login social ao novo site do Efforia</li>
-    <li>Integrar envio de e-mails pelo SendGrid ou outro</li>
-    <li>Construir wizard de customização do Hub</li>
-    <li>Construir as páginas pelo Mezzanine</li>
-    <li>Adicionar produtos pelo Cartridge</li>
-    <li>Migrar banco de dados local para Heroku quando finalizar tudo</li>
-</ul>
+<div style="text-align:center;">
+    <div class="col-lg-6" style="background-color:#0EA84A;">
+        <a href="#" class="white">
+            <br><img src="/static/svg/hub.svg" width="40%"/>
+            <h1>Hub</h1>
+            <h3>A partir de R$ 499,00</h3>
+        </a>
+    </div>
+    <div class="col-lg-6" style="background-color:#6D1943;">
+        <a href="#" class="white">
+            <br><img src="/static/svg/hub_white.svg" width="40%"/>
+            <h1>Hub Pro</h1>
+            <h3>A partir de R$ 699,00</h3>
+        </a>
+    </div>
+    <div class="col-lg-4" style="background-color:#DBDB1F; color:black;">
+        <a href="#" class="black">
+            <br><br><img src="/static/svg/accessory.svg" width="60%"/><br>
+            <h1>Acessórios</h1><br>
+        </a>
+    </div>
+    <div class="col-lg-4" style="background-color:#3F66AF; color:white;">
+        <a href="#" class="white">
+            <br><br><img src="/static/svg/plug.svg" width="60%"/><br>
+            <h1>Plugs</h1><br>
+        </a>
+    </div>
+    <div class="col-lg-4" style="background-color:#EC1C23; color:white;">
+        <a href="#" class="white">
+            <br><br><img src="/static/svg/combo.svg" width="60%"/><br>
+            <h1>Combos</h1><br>
+        </a>
+    </div>
+</div>
 {% endblocktrans %}
 {% endblock %}
