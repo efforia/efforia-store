@@ -76,8 +76,13 @@ _gaq.push(['_trackTrans']);
 <p>{% trans "Porém, seu pedido está pendente de pagamento, pedimos para que clique no botão abaixo para efetuar o pagamento." %}</p>
 <br>
 <p>
-    <a class="btn btn-large btn-primary" target="_blank" href="{% url "payment_redirect" order.id %}">{% trans "Pague seu pedido" %}</a>
+    <a class="btn btn-large btn-primary payment_redirect" target="_blank" href="{% url "payment_redirect" order.id %}">{% trans "Pague seu pedido" %}</a>
     <a class="btn btn-large" target="_blank" href="{% url "shop_invoice" order.id %}">{% trans "View invoice in your browser" %}</a>
 </p>
+<script>
+$(document).ready(function(){
+    window.location = $('.payment_redirect').attr('href');
+})
+</script>
 {% endblock %}
 
