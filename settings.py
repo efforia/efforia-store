@@ -151,6 +151,7 @@ SITE_TITLE = 'Efforia'
 
 LOCALE_DATE = ('Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dec')
 STORE_POSTCODE = '90020110'
+STORE_COUNTRY = 'Brasil'
 
 PAYPAL_RECEIVER_EMAIL = 'efforiaca@gmail.com'
 
