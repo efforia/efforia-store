@@ -151,7 +151,6 @@ SITE_TITLE = 'Efforia'
 
 LOCALE_DATE = ('Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dec')
 STORE_POSTCODE = '90020110'
-CLIENT_POSTCODE = '91350180'
 
 PAYPAL_RECEIVER_EMAIL = 'efforiaca@gmail.com'
 
@@ -162,6 +161,8 @@ PAGSEGURO_EMAIL_COBRANCA = 'efforiaca@gmail.com'
 PAGSEGURO_TOKEN = 'D9BBC61094BB4C8BADB296613350FF20'
 
 SHOP_CURRENCY = 'BRL'
+
+DEFAULT_HOST = 'store.efforia.com.br'
 
 ########################
 # MAIN DJANGO SETTINGS #

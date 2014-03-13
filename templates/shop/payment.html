@@ -3,27 +3,9 @@
 
 {% block fields %}
 {% if request.cart.has_items %}
-
-
-<div class="page-header">
-  <h1>Verifique as formas de pagamento disponíveis abaixo</h1>
-</div>
-
-<div class="input-group">
-      <span class="input-group-addon">
-        <input type="radio" checked>
-      </span>
-<!-- PayPal Logo --> <img src="https://www.paypalobjects.com/webstatic/mktg/br/compra_segura_horizontal.png" border="0" alt="CompraSegura"> <!-- PayPal Logo -->
-</div>
-<div class="input-group">
-      <span class="input-group-addon">
-        <input type="radio">
-      </span>
-<!-- PayPal Logo --> <img src="https://www.paypalobjects.com/webstatic/mktg/br/compra_segura_horizontal.png" border="0" alt="CompraSegura"> <!-- PayPal Logo -->
-</div>
-
+{% errors_for form %}
+{% include "shop/includes/payment_fields.html" %}
 {% fields_for form.other_fields %}
-
-
 {% endif %}
 {% endblock %}
+
