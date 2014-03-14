@@ -123,22 +123,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Y/Develop/efforiastore/settings.py",
-			"settings":
-			{
-				"buffer_size": 19133,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Y/Develop/efforiastore/templates/shop/complete.html",
-			"settings":
-			{
-				"buffer_size": 2275,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
@@ -219,7 +203,26 @@
 	},
 	"console":
 	{
-		"height": 153.0
+		"height": 153.0,
+		"history":
+		[
+			"os.path.abspath('..')",
+			"os.path.abspath('~/')",
+			"os.path.abspath('.')",
+			"os.path.abspath('~')",
+			"os.path.abspath('/')",
+			"os.path.abspath()",
+			"os.path.abspath",
+			"os.path",
+			"import os",
+			"exit()",
+			"print('Hello World!')",
+			"import django",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"exit()",
+			"print \"Hello World!\"",
+			"exit"
+		]
 	},
 	"distraction_free":
 	{
@@ -232,6 +235,8 @@
 	},
 	"file_history":
 	[
+		"/Y/Develop/efforiastore/templates/shop/complete.html",
+		"/Y/Develop/efforiastore/settings.py",
 		"/Y/Env/mezzanine/lib/python2.7/site-packages/cartridge/shop/checkout.py",
 		"/Y/Env/mezzanine/lib/python2.7/site-packages/cartridge/shop/page_processors.py",
 		"/Y/Env/mezzanine/lib/python2.7/site-packages/cartridge/shop/middleware.py",
@@ -357,9 +362,7 @@
 		"/Users/william/git/project/app/views.py",
 		"/Users/william/plethora/app/models.py",
 		"/Users/william/plethora/efforia/settings.py",
-		"/Users/william/plethora/plethora.py",
-		"/Users/william/plethora/efforia/app/models.py",
-		"/Users/william/Develop/efforia/urls.py"
+		"/Users/william/plethora/plethora.py"
 	],
 	"find":
 	{
@@ -458,65 +461,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Y/Develop/efforiastore/settings.py",
-					"settings":
-					{
-						"buffer_size": 19133,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1687,
-								1687
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 278.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Y/Develop/efforiastore/templates/shop/complete.html",
-					"settings":
-					{
-						"buffer_size": 2275,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								208,
-								208
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1070.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -563,6 +509,7 @@
 	{
 		"height": 124.0
 	},
+	"project": "efforia.sublime-project",
 	"replace":
 	{
 		"height": 50.0
@@ -584,10 +531,24 @@
 		],
 		"width": 0.0
 	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": false,
 	"side_bar_visible": true,
 	"side_bar_width": 232.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }

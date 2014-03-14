@@ -24,7 +24,7 @@ SHOP_CHECKOUT_STEPS_SPLIT = True
 
 # If True, the checkout process has a final confirmation step before
 # completion.
-SHOP_CHECKOUT_STEPS_CONFIRMATION = True
+SHOP_CHECKOUT_STEPS_CONFIRMATION = False
 
 # Controls the formatting of monetary values accord to the locale
 # module in the python standard library. If an empty string is

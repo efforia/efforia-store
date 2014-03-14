@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/Y/Develop/efforiastore"
+			"follow_symlinks": true,
+			"path": "/Users/william/Develop/efforiastore"
 		}
 	]
 }
