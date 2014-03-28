@@ -1,9 +1,9 @@
-@font-face { font-family: 'Ubuntu'; src: url('/static/ttf/ubuntu.ttf'); }
+@font-face { font-family: 'Ubuntu'; src: url('/static/ttf/ubuntul.ttf'); }
 @font-face { font-family: 'Ubuntu'; src: url('/static/ttf/ubuntu-bold.ttf'); font-weight: bold; }
 
 body { font-family:Ubuntu; }
 h1,h2,h3,h4,h5,h6,ul.nav { font-family: Ubuntu; font-weight:bold; }
-a,a:hover { text-decoration:none; }
+a,a:hover,a:active,a:focus { text-decoration:none !important; }
 
 .facebook,.facebook:hover { text-align:left; background:#3C5A98; text-shadow:none; }
 .twitter,.twitter:hover { text-align:left; background:#00ACED; text-shadow:none; }

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
 <meta name="description" content="{% block meta_description %}{% endblock %}">
-<title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
+<title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/efforia_logo.png" %}">
 
 {% ifinstalled mezzanine.blog %}
@@ -125,8 +125,9 @@
     <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
     <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
     {% trans "and" %}
-    <a href="http://www.djangoproject.com">Django</a>
-    <span class="separator">|</span>!-->
+    <a href="http://www.djangoproject.com">Django</a>!-->
+    Efforia Tecnologia Ltda
+    <span class="separator">|</span>
     Tema desenvolvido a partir do <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>
     {% ifinstalled mezzanine.mobile %}
     <span class="separator">|</span>
