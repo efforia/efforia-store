@@ -20,3 +20,20 @@ a,a:hover { text-decoration:none; }
 .input_id_card_pay_option_0 { display:none; }
 .white,.black:hover { color:white; }
 .black,.white:hover { color:black; }
+.nebula-cover {
+	background-image:url('/static/img/nebula.png'); 
+	background-size:cover; 
+	background-repeat:no-repeat; 
+	background-attachment:fixed;
+}
+.fixed-navbar {
+	border:0px; 
+	border-radius:0px; 
+	padding:0px;
+	margin-bottom:0px; 
+}
+.nebula-jumbotron {
+	text-align:center; 
+	color:white; 
+	padding:10em 0em;
+}

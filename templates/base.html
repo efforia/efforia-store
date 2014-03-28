@@ -45,9 +45,9 @@
 {% block extra_head %}{% endblock %}
 </head>
 
-<body id="{% block body_id %}body{% endblock %}">
+<body id="{% block body_id %}body{% endblock %}" style="padding:0px;">
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default navbar-inverse fixed-navbar" role="navigation">
 <div class="container">
 <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -56,14 +56,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" style="padding:7px;" href="/"><img src="{% static "img/efforia.png" %}"/></a>
+    <a class="navbar-brand" style="padding:7px;" href="/"><img src="{% static "img/efforia_nebula.png" %}" style="height:2em;"/></a>
 </div>
-<div class="navbar-collapse collapse navbar-right">
+<div class="navbar-collapse collapse navbar-right" style="border:none; box-shadow:none;">
     {% page_menu "pages/menus/dropdown.html" %}
 </div>
 </div>
+<div class="nebula-jumbotron hidden">
+<h1 style="font-size:7em">HUB</h1>
+<h2 style="font-size:3em">Chegou o aparelho que<br> vai dar o que falar</h2>
+<br><br>
 </div>
-
+</div>
 <div class="container">
 
 {% nevercache %}
@@ -80,7 +84,7 @@
 {% endnevercache %}
 
 </div>
-<div class="container">
+<div class="container page">
 <div class="row">
 
 <!--<div class="col-md-2 left">
@@ -117,13 +121,13 @@
 
 <div class="row">
 <p class="site-info text-center">
-    {% trans "Powered by" %}
+    <!--{% trans "Powered by" %}
     <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
     <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
     {% trans "and" %}
     <a href="http://www.djangoproject.com">Django</a>
-    <span class="separator">|</span>
-    {% trans "Theme by" %} <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>
+    <span class="separator">|</span>!-->
+    Tema desenvolvido a partir do <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>
     {% ifinstalled mezzanine.mobile %}
     <span class="separator">|</span>
     <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
