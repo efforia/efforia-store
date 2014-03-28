@@ -46,7 +46,8 @@
 </head>
 
 <body id="{% block body_id %}body{% endblock %}" style="padding:0px;">
-
+<div id="outer">
+<div id="inner">
 <div class="navbar navbar-default navbar-inverse fixed-navbar" role="navigation">
 <div class="container">
 <div class="navbar-header">
@@ -139,6 +140,7 @@
 </footer>
 
 {% include "includes/footer_scripts.html" %}
-
+</div>
+</div>
 </body>
 </html>
