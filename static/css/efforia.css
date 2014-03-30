@@ -9,7 +9,10 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-body { font-family:Ubuntu; }
+body { 
+	font-family:Ubuntu; 
+	background:#222222;
+}
 h1,h2,h3,h4,h5,h6,ul.nav { font-family: Ubuntu; font-weight:bold; }
 a,a:hover,a:active,a:focus { text-decoration:none !important; }
 
@@ -44,4 +47,8 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
 	text-align:center; 
 	color:white; 
 	padding:10em 0em;
+}
+
+#inner{
+	background:white;
 }
