@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load staticfiles %}
 
 {% block main %}
-{% blocktrans %}
+<style>
+.jumbo-paragraph {
+    font-size:1.3em; 
+    line-height:1.5em
+}
+</style>
 <script>
 $(document).ready(function(){
     $('.fixed-navbar')
@@ -16,13 +22,27 @@ $(document).ready(function(){
 </script>
 <div style="text-align:center;">
     <div class="col-md-4" style="background-color:#0EA84A;">
-        <a href="#" class="white">
-            <br><br><img src="/static/svg/hub.svg" width="50%"/>
-            <h1>Hub</h1>
-            <h3>A partir de R$ 499,00</h3><br>
-        </a>
+        <div class="white">
+            <h2>Conversa com todo mundo</h2>
+            <br><img src="{% static "svg/integrated.svg" %}" width="80%"/><br>
+            <br><p class="jumbo-paragraph">O Hub é capaz de se comunicar com tablets, smartphones, computadores e televisores, podendo assim tocar e transmitir vídeos, músicas e fotos.</p><br>
+        </div>
     </div>
-    <div class="col-md-4" style="background-color:#FFFFFF;">
+    <div class="col-md-4" style="background-color:#3F66AF; color:white;">
+        <div class="white">
+            <h2>Uma gama de acessórios</h2>
+            <br><img src="{% static "svg/accessories.svg" %}" width="80%"/><br>
+            <br><p class="jumbo-paragraph">Com suporte a tecnologia USB e HDMI, você consegue ligar vários periféricos a ele, como controles de jogo, teclados, pendrives e televisões.</p><br>
+        </div>
+    </div>
+    <div class="col-md-4" style="background-color:#EC1C23; color:white;">
+        <div class="white">
+            <h2>Combina bem em conjunto</h2>
+            <br><img src="{% static "svg/combinated.svg" %}" width="80%"/><br>
+            <br><p class="jumbo-paragraph">O Hub funciona muito bem quando comunica-se com outros Hubs da mesma casa, proporcionando uma experiência de multimídia inédita.</p><br>
+        </div>
+    </div>
+    <!--<div class="col-md-4" style="background-color:#FFFFFF;">
         <a href="#" class="black">
             <br><br><img src="/static/svg/cloud.svg" width="50%"/>
             <h1>Hub Cloud</h1>
@@ -39,21 +59,12 @@ $(document).ready(function(){
     <div class="col-md-4" style="background-color:#DBDB1F; color:black;">
         <a href="#" class="black">
             <br><br><img src="/static/svg/retro.svg" width="50%"/>
-            <h1>Retro</h1><br>
+            <h1>Retro</h1>
+            <h3>A partir de R$ 499,00</h3><br>
         </a>
-    </div>
-    <div class="col-md-4" style="background-color:#3F66AF; color:white;">
-        <a href="#" class="white">
-            <br><br><img src="/static/svg/plug.svg" width="50%"/>
-            <h1>Acessórios</h1><br>
-        </a>
-    </div>
-    <div class="col-md-4" style="background-color:#EC1C23; color:white;">
-        <a href="#" class="white">
-            <br><br><img src="/static/svg/combo.svg" width="50%"/><br>
-            <h1>Combos</h1><br>
-        </a>
-    </div>
+    </div>!-->
 </div>
-{% endblocktrans %}
 {% endblock %}
+{% blocktrans %}
+{% endblocktrans %}
+
