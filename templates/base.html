@@ -7,6 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
 <meta name="description" content="{% block meta_description %}{% endblock %}">
+<style>
+@font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntul.ttf" %}"); }
+@font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntu-bold.ttf" %}"); font-weight: bold; }
+.nebula-cover {
+    background-image:url("{% static "img/nebula.png" %}"); 
+    background-size:cover; 
+    background-repeat:no-repeat; 
+    background-attachment:fixed;
+}
+</style>
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/efforia_logo.png" %}">
 

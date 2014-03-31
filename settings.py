@@ -285,6 +285,34 @@ DATABASES = {
     }
 }
 
+###################
+# S3 STATIC FILES #
+###################
+
+AWS_QUERYSTRING_AUTH = False
+AWS_ACCESS_KEY_ID = 'AKIAIXTTZYYYQMUBVFFQ'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'efforia'
+AWS_PRELOAD_METADATA = True #helps collectstatic do updates
+
+STATICFILES_STORAGE = 's3.S3BotoStorage'
+
+DEFAULT_FILE_STORAGE = 's3.S3BotoStorage'
+
+STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'grappelli'
+
+MEDIA_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+
+###########
+# LOGGING #
+###########
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+}
+
 #########
 # PATHS #
 #########
@@ -322,7 +350,6 @@ STATICFILES_DIRS = (
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = STATIC_URL + "media/"
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
@@ -369,7 +396,8 @@ INSTALLED_APPS = (
     "socialize",
     "shipping",
     "feedly",
-    "store"
+    "store",
+    "storages"
 )
 
 # List of processors used by RequestContext to populate the context.

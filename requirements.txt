@@ -3,6 +3,8 @@ Mezzanine==3.0.9
 Pillow==2.3.0
 South==0.8.4
 Django==1.6.2
+Boto==2.27.0
+django-storages==1.1.8
 django-social-auth==0.7.28
 django-crispy-forms==1.4.0
 django-pure-pagination==0.2.1
