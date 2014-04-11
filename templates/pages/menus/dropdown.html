@@ -3,7 +3,10 @@
 {% if page_branch_in_menu %}
 
 {% if branch_level == 0 %}
-<style>.dropdown-toggle { background:transparent !important; } </style>
+<style>
+.dropdown-toggle { background:transparent !important; } 
+.caret { display:none; }
+</style>
 <ul class="nav navbar-nav">
     {% for page in page_branch %}
     {% if not has_home and page.is_primary and forloop.first %}
@@ -29,7 +32,10 @@
 </ul>
 
 {% else %}
-<style>.dropdown-toggle { background:transparent !important; } </style>
+<style>
+.dropdown-toggle { background:transparent !important; } 
+.caret { display:none; }
+</style>
 <ul class="dropdown-menu" style="background:#222; box-shadow:none; border:none;">
     {% for page in page_branch %}
     {% if page.in_menu %}
