@@ -3,6 +3,7 @@
 {% if page_branch_in_menu %}
 
 {% if branch_level == 0 %}
+<style>.dropdown-toggle { background:transparent !important; } </style>
 <ul class="nav navbar-nav">
     {% for page in page_branch %}
     {% if not has_home and page.is_primary and forloop.first %}
@@ -28,7 +29,8 @@
 </ul>
 
 {% else %}
-<ul class="dropdown-menu">
+<style>.dropdown-toggle { background:transparent !important; } </style>
+<ul class="dropdown-menu" style="background:transparent; box-shadow:none; border:none;">
     {% for page in page_branch %}
     {% if page.in_menu %}
     <li class="{% if page.has_children_in_menu %}dropdown-submenu{% endif %}
