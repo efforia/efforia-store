@@ -219,7 +219,7 @@ LANGUAGES = (
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-DEBUG = True
+DEBUG = False
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -295,15 +295,6 @@ AWS_SECRET_ACCESS_KEY = '5Jmze7z2gv3tasuQ6IJcVa1ClU6y5j16Q5g53d4I'
 AWS_STORAGE_BUCKET_NAME = 'efforia'
 AWS_PRELOAD_METADATA = True #helps collectstatic do updates
 
-STATICFILES_STORAGE = 's3.S3BotoStorage'
-
-DEFAULT_FILE_STORAGE = 's3.S3BotoStorage'
-
-STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
-ADMIN_MEDIA_PREFIX = STATIC_URL + 'grappelli'
-
-MEDIA_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
-
 ###########
 # LOGGING #
 ###########
@@ -350,6 +341,7 @@ STATICFILES_DIRS = (
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
+MEDIA_URL = "/static/media/"
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
@@ -539,6 +531,11 @@ except ImportError:
     # Parse database configuration from $DATABASE_URL
     import dj_database_url
     DATABASES['default'] = dj_database_url.config()
+    STATICFILES_STORAGE = 's3.S3BotoStorage'
+    DEFAULT_FILE_STORAGE = 's3.S3BotoStorage'
+    STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+    MEDIA_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+
 
 
 ####################
