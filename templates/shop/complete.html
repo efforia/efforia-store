@@ -1,5 +1,6 @@
 {% extends "shop/base.html" %}
 {% load i18n future %}
+{% load staticfiles %}
 
 {% block meta_title %}{% trans "Order Complete" %}{% endblock %}
 
@@ -73,7 +74,7 @@ _gaq.push(['_trackTrans']);
 
 {% block main %}
 <div style="text-align:center; align:middle;">
-    <br><img class="payment_redirect" src="/static/svg/pocket.svg" width="30%" href="{% url "payment_redirect" order.id %}"/>
+    <br><img class="payment_redirect" src="{% static "svg/pocket.svg" %}" width="30%" href="{% url "payment_redirect" order.id %}"/>
     <h2>Por favor, aguarde enquanto processamos seu pedido.</h2>
 </div>
 <script>

@@ -8,7 +8,7 @@
 a:hover { background:white !important; font-color:black !important; } 
 .caret { display:none; }
 </style>
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav" style="float:none; margin: 0 auto; display:table; table-layout:fixed;">
     {% for page in page_branch %}
     {% if not has_home and page.is_primary and forloop.first %}
     <!--<li{% if on_home %} class=""{% endif %} id="dropdown-menu-home">
@@ -35,7 +35,7 @@ a:hover { background:white !important; font-color:black !important; }
 {% else %}
 <style>
 .dropdown-toggle { background:transparent !important; } 
-a:hover { background:white !important; font-color:black !important; } 
+a:hover { background:white !important; color:black !important; }
 .caret { display:none; }
 </style>
 <ul class="dropdown-menu" style="background:#222; box-shadow:none; border:none;">
