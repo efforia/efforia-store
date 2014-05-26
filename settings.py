@@ -163,7 +163,7 @@ PAGSEGURO_TOKEN = 'D9BBC61094BB4C8BADB296613350FF20'
 
 SHOP_CURRENCY = 'BRL'
 
-DEFAULT_HOST = 'store.efforia.com.br'
+DEFAULT_HOST = 'www.efforia.com.br'
 
 ########################
 # MAIN DJANGO SETTINGS #
