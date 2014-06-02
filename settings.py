@@ -321,11 +321,12 @@ CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME
 
 # Static asset configuration
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(PROJECT_ROOT, *STATIC_URL.strip("/").split("/"))
+
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'public'),
 )
 
 # URL prefix for static files.
@@ -389,7 +390,9 @@ INSTALLED_APPS = (
     "shipping",
     "feedly",
     "store",
-    "storages"
+    "storages",
+    "south",
+    "gunicorn"
 )
 
 # List of processors used by RequestContext to populate the context.
@@ -407,6 +410,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.core.context_processors.tz",
     "mezzanine.conf.context_processors.settings",
+    "mezzanine.pages.context_processors.page"
 )
 
 # List of middleware classes to use. Order is important; in the request phase,
