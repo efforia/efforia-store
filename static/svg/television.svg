@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="400px" viewBox="0 0 600 400" enable-background="new 0 0 600 400" xml:space="preserve">
+<g>
+	<line fill="none" stroke="#DEDB24" stroke-width="5" stroke-miterlimit="10" x1="538.691" y1="359.07" x2="538.691" y2="233.885"/>
+	<g>
+		
+			<line fill="none" stroke="#4368B1" stroke-width="5" stroke-miterlimit="10" x1="334.902" y1="158.442" x2="488.674" y2="158.442"/>
+		
+			<rect x="488.674" y="150.198" fill="#4368B1" stroke="#1D304B" stroke-width="3" stroke-miterlimit="10" width="25.35" height="17.744"/>
+	</g>
+	
+		<rect x="531.976" y="213.93" fill="#DEDB24" stroke="#7E7B31" stroke-width="3" stroke-miterlimit="10" width="13.43" height="19.182"/>
+	
+		<rect x="556.531" y="213.93" fill="#16A94A" stroke="#116735" stroke-width="3" stroke-miterlimit="10" width="13.428" height="19.182"/>
+	<g>
+		
+			<rect x="513.924" y="106.762" fill="none" stroke="#A51E29" stroke-width="5.0128" stroke-miterlimit="10" width="76.928" height="104.615"/>
+		
+			<line fill="none" stroke="#EC2227" stroke-width="5.0128" stroke-miterlimit="10" x1="510.079" y1="104.07" x2="594.696" y2="104.07"/>
+		
+			<line fill="none" stroke="#EC2227" stroke-width="5.0128" stroke-miterlimit="10" x1="510.079" y1="214.07" x2="594.696" y2="214.07"/>
+		<g>
+			<path fill="none" d="M577.023,166.184"/>
+		</g>
+		<g>
+			<path fill="none" d="M528.952,137.341"/>
+		</g>
+		<g>
+			<path fill="none" d="M528.952,166.184"/>
+		</g>
+		<g>
+			<path fill="none" d="M577.023,137.341"/>
+		</g>
+		<polygon points="576.185,173.494 552.387,187.917 528.588,173.494 528.588,144.646 552.387,130.223 576.185,144.646 		"/>
+		<g>
+			<polygon fill="#EC2227" points="552.387,159.07 535.73,148.973 552.387,138.877 569.045,148.973 			"/>
+			<polygon fill="#DEDB24" points="552.387,159.07 552.387,169.165 552.387,179.262 544.058,174.213 535.73,169.165 
+				544.058,164.118 			"/>
+			<polygon fill="#4368B1" points="552.388,159.07 552.388,169.165 552.387,179.262 560.715,174.213 569.045,169.165 
+				560.715,164.118 			"/>
+			<polygon fill="#16A94A" points="535.73,148.973 544.058,154.022 552.387,159.07 544.058,164.118 535.73,169.165 535.73,159.07 
+							"/>
+			<polygon fill="#6E1A45" points="569.045,148.961 560.715,154.011 552.387,159.057 560.715,164.105 569.045,169.153 
+				569.045,159.057 			"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path fill="none" stroke="#16A94A" stroke-width="2" stroke-miterlimit="10" d="M572.799,243.443
+				c-5.281,5.281-13.831,5.281-19.112,0"/>
+			<path fill="none" stroke="#16A94A" stroke-width="2" stroke-miterlimit="10" d="M570.3,240.943c-3.9,3.9-10.214,3.9-14.114,0"/>
+			<path fill="none" stroke="#16A94A" stroke-width="2" stroke-miterlimit="10" d="M567.374,238.252
+				c-2.282,2.283-5.979,2.283-8.263,0"/>
+		</g>
+	</g>
+	<g>
+		<rect x="26.706" y="40.929" stroke="#171617" stroke-width="8" stroke-miterlimit="10" width="308.195" height="215.735"/>
+		<line fill="none" stroke="#171617" stroke-width="8" stroke-miterlimit="10" x1="5.305" y1="277.211" x2="356.303" y2="277.211"/>
+		
+			<line fill="none" stroke="#171617" stroke-width="8" stroke-miterlimit="10" x1="180.805" y1="256.666" x2="180.805" y2="277.211"/>
+	</g>
+	<rect x="44.391" y="107.856" fill="#4368B1" width="50" height="50"/>
+	<rect x="104.391" y="107.856" fill="#4368B1" width="50" height="50"/>
+	<rect x="104.391" y="167.856" fill="#4368B1" width="50" height="50"/>
+	<rect x="44.391" y="167.856" fill="#4368B1" width="50" height="50"/>
+	<rect x="45.391" y="61.013" fill="none" width="95" height="19.688"/>
+	<rect x="173.388" y="107.856" fill="#4368B1" width="100" height="15"/>
+	<rect x="173.388" y="130.356" fill="#FFFFFF" width="100" height="50"/>
+	<rect x="44.391" y="66.02" fill="#FFFFFF" width="100" height="15"/>
+</g>
+</svg>

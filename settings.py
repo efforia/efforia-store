@@ -395,6 +395,16 @@ INSTALLED_APPS = (
     "gunicorn"
 )
 
+# Use SVG extension for filebrowser
+EXTENSIONS = {
+	'Folder': [''],
+	'Image': ['.jpg', '.jpeg', '.gif', '.png', '.tif', '.tiff', '.svg'],
+	'Video': ['.mov', '.wmv', '.mpeg', '.mpg', '.avi', '.rm'],
+	'Document': ['.pdf', '.doc', '.rtf', '.txt', '.xls', '.csv'],
+	'Audio': ['.mp3', '.mp4', '.wav', '.aiff', '.midi', '.m4p'],
+	'Code': ['.html', '.py', '.js', '.css']
+}
+
 # List of processors used by RequestContext to populate the context.
 # Each one should be a callable that takes the request object as its
 # only parameter and returns a dictionary to add to the context.

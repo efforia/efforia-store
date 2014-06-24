@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="370px" height="370px" viewBox="0 0 370 370" enable-background="new 0 0 370 370" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="#1364F0" d="M184.803,343.84c37.5,0.057,75-15.881,112.5-47.812c63.638-75,63.639-149.999,0.002-224.999
+				c-37.501-31.931-75.001-47.868-112.502-47.812C184.691,130.091,184.691,236.966,184.803,343.84z"/>
+			<path fill="#DCDC00" d="M72.697,296.027c37.327,31.784,74.654,47.722,111.981,47.812c-0.182-106.876-0.182-213.751,0-320.627
+				c-37.327,0.091-74.654,16.028-111.981,47.812C9.059,146.026,9.059,221.026,72.697,296.027z"/>
+			<path fill="none" stroke="#DEDEDE" stroke-width="30" d="M257.21,264.001"/>
+			<path fill="none" stroke="#DEDEDE" stroke-width="30" d="M185.777,189.096"/>
+			<path fill="none" stroke="#DEDEDE" stroke-width="30" d="M185.774,91.501"/>
+			<path fill="none" stroke="#DEDEDE" stroke-width="30" d="M185.709,91.501"/>
+			<path fill="none" stroke="#DEDEDE" stroke-width="30" d="M185.706,189.096"/>
+			<path fill="none" stroke="#DEDEDE" stroke-width="30" d="M114.274,264.001"/>
+			<path fill="#00A946" d="M72.697,296.027c5.611-5.628,58.946-59.062,112.283-112.498
+				c53.337,53.437,106.675,106.878,112.294,112.522C222.416,359.778,147.556,359.77,72.697,296.027z"/>
+			<g>
+				<path fill="#F50000" d="M72.697,71.025c5.611,5.628,58.946,59.062,112.283,112.5c-0.087-53.438-0.172-106.875-0.178-160.313
+					C147.434,23.269,110.066,39.206,72.697,71.025z"/>
+			</g>
+			<g>
+				<path fill="#6D1943" d="M184.869,183.525c0.087-53.438,0.188-106.875,0.223-160.313c37.368,0.026,74.736,15.934,112.104,47.722"
+					/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<polygon fill="#CCCCCC" points="195.615,194.125 58.802,309.923 174.385,172.928 			"/>
+		</g>
+		<g>
+			<polygon fill="#CCCCCC" points="195.616,172.93 311.379,310.133 174.384,194.123 			"/>
+		</g>
+		<g>
+			<polygon fill="#CCCCCC" points="170,183.526 185,6.5 200,183.526 			"/>
+		</g>
+	</g>
+	<circle fill="none" stroke="#FFFFFF" stroke-width="26.474" cx="185" cy="183.5" r="170"/>
+</g>
+</svg>
