@@ -345,7 +345,7 @@ def install():
     locale = "LC_ALL=%s" % env.locale
     with hide("stdout"):
         if locale not in sudo("cat /etc/default/locale"):
-            sudo("locale-gen %s" % locale)
+            sudo("locale-gen %s" % env.locale)
             sudo("update-locale %s" % locale)
             run("exit")
     sudo("apt-get update -y -q")

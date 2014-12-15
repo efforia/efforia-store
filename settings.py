@@ -476,18 +476,19 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 
 SECRET_KEY = "928f26e4-2b36-48c1-b9b7-5e2049306018df5334a2-3efa-4de8-a10b-010226b85823eaa7584f-0878-43f2-b099-45f4b73519af"
 NEVERCACHE_KEY = "0085b0ee-8947-4699-ba15-6bbf538cf75f06e504a2-ee28-4c9e-8a23-ffa5bdebc69384f3b8c4-e63f-4c95-874f-d43f59ff92aa"
+SSH_USER = "efforia"
 
 FABRIC = {
-     "SSH_USER": "efforia",  # SSH username
+     "SSH_USER": SSH_USER,  # SSH username
      "SSH_PASS": "mk28to#$",  # SSH password (consider key-based authentication)
-     "SSH_KEY_PATH":  "/vagrant/id_rsa",  # Local path to SSH key file, for key-based auth
+     "SSH_KEY_PATH":  "",  # Local path to SSH key file, for key-based auth
      "HOSTS": ['efforiaubuntu.cloudapp.net'],  # List of hosts to deploy to
-     "VIRTUALENV_HOME":  "/home/vagrant",  # Absolute remote path for virtualenvs
+     "VIRTUALENV_HOME":  "/home/%s" % SSH_USER,  # Absolute remote path for virtualenvs
      "PROJECT_NAME": "efforia",  # Unique identifier for project
      "REQUIREMENTS_PATH": "requirements.txt",  # Path to pip requirements, relative to project
      "GUNICORN_PORT": 8000,  # Port gunicorn will listen on
      "LOCALE": "pt_BR.UTF-8",  # Should end with ".UTF-8"
-     "LIVE_HOSTNAME": "www.efforia.com.br",  # Host for public site.
+     "LIVE_HOSTNAME": "cloud.efforia.com.br",  # Host for public site.
      "REPO_URL": "azureuser@efforia.cloudapp.net:~/efforia.git",  # Git or Mercurial remote repo URL for the project
      "DB_PASS": "mk28to#$",  # Live database password
      "ADMIN_PASS": "mk28to#$",  # Live admin user password
