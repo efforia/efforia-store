@@ -349,7 +349,7 @@ def install():
             sudo("update-locale %s" % locale)
             run("exit")
     sudo("apt-get update -y -q")
-    apt("nginx libjpeg-dev python-dev python-setuptools git-core "
+    apt("nginx libjpeg-dev python-dev libffi-dev python-setuptools git-core "
         "postgresql libpq-dev memcached supervisor")
     sudo("easy_install pip")
     sudo("pip install virtualenv mercurial")
