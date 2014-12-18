@@ -489,7 +489,7 @@ FABRIC = {
      "GUNICORN_PORT": 8000,  # Port gunicorn will listen on
      "LOCALE": "pt_BR.UTF-8",  # Should end with ".UTF-8"
      "LIVE_HOSTNAME": "cloud.efforia.com.br",  # Host for public site.
-     "REPO_URL": "azureuser@efforia.cloudapp.net:~/efforia.git",  # Git or Mercurial remote repo URL for the project
+     "REPO_URL": "git@flyingdutchman.cloudapp.net:efforia.git",  # Git or Mercurial remote repo URL for the project
      "DB_PASS": "mk28to#$",  # Live database password
      "ADMIN_PASS": "mk28to#$",  # Live admin user password
      "SECRET_KEY": SECRET_KEY,
