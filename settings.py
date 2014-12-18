@@ -482,7 +482,7 @@ FABRIC = {
      "SSH_USER": SSH_USER,  # SSH username
      "SSH_PASS": "mk28to#$",  # SSH password (consider key-based authentication)
      "SSH_KEY_PATH":  "",  # Local path to SSH key file, for key-based auth
-     "HOSTS": ['efforiaubuntu.cloudapp.net'],  # List of hosts to deploy to
+     "HOSTS": ['factory.efforia.com.br'],  # List of hosts to deploy to
      "VIRTUALENV_HOME":  "/home/%s" % SSH_USER,  # Absolute remote path for virtualenvs
      "PROJECT_NAME": "efforia",  # Unique identifier for project
      "REQUIREMENTS_PATH": "requirements.txt",  # Path to pip requirements, relative to project
