@@ -546,13 +546,6 @@ try:
 except ImportError:
     pass
 
-#    # Parse database configuration from $DATABASE_URL
-#    import dj_database_url
-#    DATABASES['default'] = dj_database_url.config()
-#    STATICFILES_STORAGE = 's3.S3BotoStorage'
-#    DEFAULT_FILE_STORAGE = 's3.S3BotoStorage'
-#    STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
-#    MEDIA_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
 
 
 
