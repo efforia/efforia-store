@@ -482,13 +482,13 @@ FABRIC = {
      "SSH_USER": SSH_USER,  # SSH username
      "SSH_PASS": "mk28to#$",  # SSH password (consider key-based authentication)
      "SSH_KEY_PATH":  "",  # Local path to SSH key file, for key-based auth
-     "HOSTS": ['factory.efforia.com.br'],  # List of hosts to deploy to
+     "HOSTS": ['www.efforia.com.br'],  # List of hosts to deploy to
      "VIRTUALENV_HOME":  "/home/%s" % SSH_USER,  # Absolute remote path for virtualenvs
      "PROJECT_NAME": "efforia",  # Unique identifier for project
      "REQUIREMENTS_PATH": "requirements.txt",  # Path to pip requirements, relative to project
      "GUNICORN_PORT": 8000,  # Port gunicorn will listen on
      "LOCALE": "pt_BR.UTF-8",  # Should end with ".UTF-8"
-     "LIVE_HOSTNAME": "factory.efforia.com.br",  # Host for public site.
+     "LIVE_HOSTNAME": "www.efforia.com.br",  # Host for public site.
      "REPO_URL": "git@factory.efforia.com.br:efforia.git",  # Git or Mercurial remote repo URL for the project
      "DB_PASS": "mk28to#$",  # Live database password
      "ADMIN_PASS": "mk28to#$",  # Live admin user password
