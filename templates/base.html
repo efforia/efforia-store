@@ -11,14 +11,12 @@
 @font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntul.ttf" %}"); }
 @font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntu-bold.ttf" %}"); font-weight: bold; }
 .nebula-cover {
-    background-image:url("{% static "img/nebula.png" %}"); 
-    background-size:cover; 
-    background-repeat:no-repeat; 
-    background-attachment:fixed;
+	background-color:white;
+	color:black;
 }
 </style>
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} {{ settings.SITE_TITLE }}{% endif %}</title>
-<link rel="shortcut icon" href="{% static "img/efforia_logo.png" %}">
+<link rel="shortcut icon" href="{% static "img/efforialogo.png" %}">
 
 {% ifinstalled mezzanine.blog %}
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
@@ -60,26 +58,38 @@
 <div class="navbar navbar-default navbar-inverse fixed-navbar" role="navigation">
 <div class="container">
 <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <a class="navbar-brand" style="padding:15px; font-size:2em; color:white;" href="/"><img src="{% static "svg/efforialogo.svg" %}" style="height:2em; align:middle;"/></a>
+</div>
+<div class="navbar-right">
+	<form class="navbar-form navbar-left" action="/search/" role="search">
+	<div class="input-group">
+	    <input class="form-control" placeholder="Pesquisar" name="q" value="" type="text">
+	    <span class="input-group-btn"><input class="btn btn-default" value="Ir" type="submit"></span>
+	</div>
+	</form>
+	<div class="btn-group" role="group" aria-label="...">
+	<button type="button" class="btn btn-info navbar-btn" onclick="window.location.replace('/shop/cart/');">
+		<h4 style="margin:0px">	<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Carrinho</h4>
+	</button>
+	<button type="button" class="btn btn-success navbar-btn" onclick="window.location.replace('/account/');">
+		<h4 style="margin:0px">	<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Entrar</h4>
+	</button>
+	</div>
+</div>
+<div class="navbar-collapse collapse navbar-right" style="border:none; box-shadow:none; text-align:center;">
+</div>
+</div>
+</div>
+<div class="navbar fixed-navbar" role="navigation" style="background-color:#17B14B; color:white"><div class="container">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="border: 1px solid white;">
         <span class="sr-only">{% trans "Toggle Navigation" %}</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar" style="background-color:white;"></span>
+        <span class="icon-bar" style="background-color:white;"></span>
+        <span class="icon-bar" style="background-color:white;"></span>
     </button>
-    <a class="navbar-brand" style="padding:7px; font-size:2em; color:white;" href="/"><img src="{% static "svg/efforia_logowhite.svg" %}" style="height:1em; align:middle;"/><p style="display:inline; vertical-align:middle">&nbsp;Efforia</p></a>
 </div>
-<div class="navbar-collapse collapse navbar-right" style="border:none; box-shadow:none;">
-    {% page_menu "pages/menus/dropdown.html" %}
-</div>
-</div>
-<div class="nebula-jumbotron hidden">
-<h1 style="font-size:7em">HUB</h1>
-<h2 style="font-size:3em">CHEGOU O APARELHO<br>QUE VAI DAR O QUE FALAR</h2>
-<p>__________________________________________________________________</p>
-<p style="font-size:1.4em; line-height:1.4em; width:50%; margin:auto">Hub é um nanocomputador com capacidade para reproduzir e transmitir vídeos, músicas e fotos, além de infinitas possibilidades, o céu é o limite.</p>
-<br><br>
-</div>
-</div>
+<div class="navbar-collapse collapse navbar-left" style="border:none; box-shadow:none;"> {% page_menu "pages/menus/dropdown.html" %}</div></div></div>
 <div id="inner">
 <div class="container">
 
@@ -95,6 +105,14 @@
 </div>
 {% endif %}
 {% endnevercache %}
+
+<h1>{% block title %}{% endblock %}</h1>
+
+<!--<ul class="breadcrumb">
+{% spaceless %}
+{% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
+{% endspaceless %}
+</ul>!-->
 
 </div>
 <div class="container page">
