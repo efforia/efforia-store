@@ -61,12 +61,6 @@
     <a class="navbar-brand" style="padding:15px; font-size:2em; color:white;" href="/"><img src="{% static "svg/efforialogo.svg" %}" style="height:2em; align:middle;"/></a>
 </div>
 <div class="navbar-right">
-	<form class="navbar-form navbar-left" action="/search/" role="search">
-	<div class="input-group">
-	    <input class="form-control" placeholder="Pesquisar" name="q" value="" type="text">
-	    <span class="input-group-btn"><input class="btn btn-default" value="Ir" type="submit"></span>
-	</div>
-	</form>
 	<div class="btn-group" role="group" aria-label="...">
 	<button type="button" class="btn btn-info navbar-btn" onclick="window.location.replace('/shop/cart/');">
 		<h4 style="margin:0px">	<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Carrinho</h4>
@@ -89,7 +83,14 @@
         <span class="icon-bar" style="background-color:white;"></span>
     </button>
 </div>
-<div class="navbar-collapse collapse navbar-left" style="border:none; box-shadow:none;"> {% page_menu "pages/menus/dropdown.html" %}</div></div></div>
+<div class="navbar-collapse collapse navbar-left" style="border:none; box-shadow:none;"> {% page_menu "pages/menus/dropdown.html" %}</div>
+<form class="navbar-form" action="/search/" role="search">
+<div class="input-group">
+    <input class="form-control" placeholder="Pesquisar" name="q" value="" type="text">
+    <span class="input-group-btn"><input class="btn btn-default" value="Ir" type="submit"></span>
+</div>
+</form>
+</div></div>
 <div id="inner">
 <div class="container">
 
