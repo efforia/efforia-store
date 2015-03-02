@@ -3,7 +3,6 @@ Mezzanine==3.1.10
 Cartridge==0.9.5
 Pillow==2.6.1
 South==1.0.1
-django-social-auth==0.7.28
 django-crispy-forms==1.4.0
 django-pure-pagination==0.2.1
 django-socialize==0.5.0
