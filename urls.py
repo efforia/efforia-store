@@ -1,8 +1,10 @@
 from __future__ import unicode_literals
 
+from django.conf import settings
 from django.conf.urls import patterns, include, url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
+from django.conf.urls.static import static
 
 from mezzanine.core.views import direct_to_template
 

@@ -8,12 +8,12 @@ class ExternalPaymentOrderForm(OrderForm):
 	GATEWAYS = (
        (1, "PayPal"),
        (2, "PagSeguro"), 
-   	)
-   	# Billing and shipping step
-   	billing_detail_complement = CharField(max_length=100,label="Número ou complemento do endereço")
-   	shipping_detail_complement = CharField(max_length=100,label="Número ou complemento do endereço")
-   	# Online payment step
-   	card_pay_option = ChoiceField(widget=RadioSelect,choices=GATEWAYS,label="Forma de pagamento online")
+   	)   
+	# Billing and shipping step
+	billing_detail_complement = CharField(max_length=100,label="Número ou complemento do endereço")
+	shipping_detail_complement = CharField(max_length=100,label="Número ou complemento do endereço")
+	# Online payment step
+	card_pay_option = ChoiceField(widget=RadioSelect,choices=GATEWAYS,label="Forma de pagamento online")
 	def __init__(self,*args,**kwargs):
 		super(ExternalPaymentOrderForm,self).__init__(*args,**kwargs)
 		del self.fields['card_expiry_year']
