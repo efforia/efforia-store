@@ -29,7 +29,8 @@ SHOP_CHECKOUT_STEPS_CONFIRMATION = False
 # Controls the formatting of monetary values accord to the locale
 # module in the python standard library. If an empty string is
 # used, will fall back to the system's locale.
-SHOP_CURRENCY_LOCALE = "pt_BR.UTF-8"
+if 'posix' not in os.name: SHOP_CURRENCY_LOCALE = "ptb"
+else: SHOP_CURRENCY_LOCALE = "pt_BR.UTF-8"
 
 # Dotted package path and class name of the function that
 # is called on submit of the billing/shipping checkout step. This
@@ -152,6 +153,7 @@ SITE_TITLE = 'Efforia Nanocomputadores'
 LOCALE_DATE = ('Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dec')
 STORE_POSTCODE = '90020110'
 STORE_COUNTRY = 'Brasil'
+
 # PayPal Receiver e-mail factory
 #PAYPAL_RECEIVER_EMAIL = 'efforiaca-facilitator@gmail.com'
 # PayPal Receiver e-mail production
@@ -226,7 +228,8 @@ LANGUAGES = (
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-DEBUG = False
+if 'posix' not in os.name: DEBUG = True
+else: DEBUG = False
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -275,22 +278,53 @@ FILE_UPLOAD_PERMISSIONS = 0o644
 # DATABASES #
 #############
 
-DATABASES = {
-    "default": {
-        # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.sqlite3",
-        # DB name or path to database file if using sqlite3.
-        "NAME": "dev.db",
-        # Not used with sqlite3.
-        "USER": "",
-        # Not used with sqlite3.
-        "PASSWORD": "",
-        # Set to empty string for localhost. Not used with sqlite3.
-        "HOST": "",
-        # Set to empty string for default. Not used with sqlite3.
-        "PORT": "",
+DATABASES = {}
+
+# Visual Studio Staging
+if 'posix' not in os.name:    
+    DATABASES = {
+        "default": {
+            # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+            "ENGINE": "django.db.backends.sqlite3",
+            # DB name or path to database file if using sqlite3.
+            "NAME": "dev.db",
+            # Not used with sqlite3.
+            "USER": "",
+            # Not used with sqlite3.
+            "PASSWORD": "",
+            # Set to empty string for localhost. Not used with sqlite3.
+            "HOST": "",
+            # Set to empty string for default. Not used with sqlite3.
+            "PORT": "",
+        }
     }
-}
+# Ubuntu Production
+else:
+    DATABASES = {
+        "default": {
+            # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            # DB name or path to database file if using sqlite3.
+            "NAME": "efforia",
+            # Not used with sqlite3.
+            "USER": "efforia",
+            # Not used with sqlite3.
+            "PASSWORD": "mk28to#$",
+            # Set to empty string for localhost. Not used with sqlite3.
+            "HOST": "127.0.0.1",
+            # Set to empty string for default. Not used with sqlite3.
+            "PORT": "",
+        }
+    }
+    CACHE_MIDDLEWARE_SECONDS = 60
+    CACHE_MIDDLEWARE_KEY_PREFIX = "efforia"
+    CACHES = {
+        "default": {
+            "BACKEND": "django.core.cache.backends.memcached.MemcachedCache",
+            "LOCATION": "127.0.0.1:11211",
+        }
+    }
+    SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 
 ###################
 # S3 STATIC FILES #
@@ -321,10 +355,11 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # Name of the directory for the project.
 PROJECT_DIRNAME = PROJECT_ROOT.split(os.sep)[-1]
 
-# Every cache key will get prefixed with this value - here we set it to
-# the name of the directory the project is in to try and use something
-# project specific.
-CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME
+if 'posix' not in os.name:
+    # Every cache key will get prefixed with this value - here we set it to
+    # the name of the directory the project is in to try and use something
+    # project specific.
+    CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME    
 
 # Static asset configuration
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -548,10 +583,10 @@ ANONYMOUS_USER_ID = -1
 # Allow any settings to be defined in local_settings.py which should be
 # ignored in your version control system allowing for settings to be
 # defined per machine.
-try:
-    from local_settings import *
-except ImportError:
-    pass
+# try:
+#    from local_settings import *
+# except ImportError:
+#    pass
 
 
 
