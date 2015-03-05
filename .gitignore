@@ -4,3 +4,6 @@
 .DS_Store
 .coverage
 local_settings.py
+gunicorn*
+last*
+store/static

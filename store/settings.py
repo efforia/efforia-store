@@ -29,8 +29,7 @@ SHOP_CHECKOUT_STEPS_CONFIRMATION = False
 # Controls the formatting of monetary values accord to the locale
 # module in the python standard library. If an empty string is
 # used, will fall back to the system's locale.
-if 'posix' not in os.name: SHOP_CURRENCY_LOCALE = "ptb"
-else: SHOP_CURRENCY_LOCALE = "pt_BR.UTF-8"
+SHOP_CURRENCY_LOCALE = "ptb" if 'posix' not in os.name else "pt_BR.UTF-8"
 
 # Dotted package path and class name of the function that
 # is called on submit of the billing/shipping checkout step. This
@@ -228,8 +227,7 @@ LANGUAGES = (
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-if 'posix' not in os.name: DEBUG = True
-else: DEBUG = False
+DEBUG = True if 'posix' not in os.name else False
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -355,14 +353,13 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # Name of the directory for the project.
 PROJECT_DIRNAME = PROJECT_ROOT.split(os.sep)[-1]
 
-if 'posix' not in os.name:
-    # Every cache key will get prefixed with this value - here we set it to
-    # the name of the directory the project is in to try and use something
-    # project specific.
-    CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME    
+# Every cache key will get prefixed with this value - here we set it to
+# the name of the directory the project is in to try and use something
+# project specific.
+if 'posix' not in os.name: CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME    
 
 # Static asset configuration
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)) if 'posix' not in os.name else os.path.abspath('store')
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, *STATIC_URL.strip("/").split("/"))
