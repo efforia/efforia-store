@@ -3,11 +3,6 @@ Mezzanine==3.1.10
 Cartridge==0.9.5
 Pillow==2.6.1
 South==1.0.1
-django-crispy-forms==1.4.0
-django-pure-pagination==0.2.1
-django-socialize==0.5.0
 django-ship==0.2.1
-django-feedly==0.6.4
-django-storages==1.1.8
 paypalrestsdk==1.6.2
 pagseguro==0.1.6.dev0
