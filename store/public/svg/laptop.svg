@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="400px" viewBox="0 0 600 400" enable-background="new 0 0 600 400" xml:space="preserve">
+<g>
+	
+		<line fill="none" stroke="#DEDB24" stroke-width="2.8274" stroke-linecap="square" stroke-miterlimit="10" x1="493.938" y1="297.803" x2="349.318" y2="297.803"/>
+	<g>
+		<path fill="none" d="M395.226,276.055"/>
+	</g>
+	
+		<line fill="none" stroke="#DEDB24" stroke-width="3.28" stroke-linecap="square" stroke-miterlimit="10" x1="493.938" y1="297.803" x2="493.938" y2="243.916"/>
+	
+		<rect x="487.223" y="223.961" fill="#DEDB24" stroke="#7E7B31" stroke-width="3" stroke-miterlimit="10" width="13.43" height="19.182"/>
+	
+		<rect x="511.778" y="223.961" fill="#16A94A" stroke="#116735" stroke-width="3" stroke-miterlimit="10" width="13.428" height="19.182"/>
+	<g>
+		
+			<rect x="469.171" y="116.793" fill="none" stroke="#A51E29" stroke-width="5.0128" stroke-miterlimit="10" width="76.928" height="104.615"/>
+		
+			<line fill="none" stroke="#EC2227" stroke-width="5.0128" stroke-miterlimit="10" x1="465.326" y1="114.102" x2="549.943" y2="114.102"/>
+		
+			<line fill="none" stroke="#EC2227" stroke-width="5.0128" stroke-miterlimit="10" x1="465.326" y1="224.102" x2="549.943" y2="224.102"/>
+		<g>
+			<path fill="none" d="M532.27,176.215"/>
+		</g>
+		<g>
+			<path fill="none" d="M484.199,147.372"/>
+		</g>
+		<g>
+			<path fill="none" d="M484.199,176.215"/>
+		</g>
+		<g>
+			<path fill="none" d="M532.27,147.372"/>
+		</g>
+		<polygon points="531.432,183.525 507.634,197.947 483.836,183.525 483.836,154.677 507.634,140.254 531.432,154.677 		"/>
+		<g>
+			<polygon fill="#EC2227" points="507.634,169.102 490.977,159.004 507.634,148.907 524.293,159.004 			"/>
+			<polygon fill="#DEDB24" points="507.634,169.102 507.634,179.195 507.634,189.293 499.304,184.244 490.977,179.195 
+				499.304,174.148 			"/>
+			<polygon fill="#4368B1" points="507.635,169.102 507.635,179.195 507.634,189.293 515.962,184.244 524.293,179.195 
+				515.962,174.148 			"/>
+			<polygon fill="#16A94A" points="490.977,159.004 499.304,164.054 507.634,169.102 499.304,174.148 490.977,179.195 
+				490.977,169.102 			"/>
+			<polygon fill="#6E1A45" points="524.293,158.993 515.962,164.042 507.634,169.088 515.962,174.135 524.293,179.184 
+				524.293,169.088 			"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path fill="none" stroke="#16A94A" stroke-width="2" stroke-miterlimit="10" d="M528.046,253.475
+				c-5.282,5.281-13.831,5.281-19.112,0"/>
+			<path fill="none" stroke="#16A94A" stroke-width="2" stroke-miterlimit="10" d="M525.547,250.975c-3.9,3.9-10.214,3.9-14.114,0"
+				/>
+			<path fill="none" stroke="#16A94A" stroke-width="2" stroke-miterlimit="10" d="M522.621,248.283
+				c-2.282,2.283-5.979,2.283-8.263,0"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path fill="none" d="M206.752,199.998"/>
+		</g>
+		<g>
+			<rect x="95.683" y="80" stroke="#171617" stroke-width="10.4463" stroke-miterlimit="10" width="222.138" height="160.652"/>
+			<polygon stroke="#171617" stroke-width="10.4463" stroke-miterlimit="10" points="128.405,319.9 50.058,319.9 95.683,248.543 
+				317.821,248.543 363.447,319.9 285.099,320 			"/>
+		</g>
+		<g>
+			<rect x="162.009" y="120.606" fill="#16A94A" width="39.886" height="39.887"/>
+			<rect x="114.146" y="120.606" fill="#4368B1" width="39.886" height="39.887"/>
+			<rect x="162.009" y="168.471" fill="#6E1A45" width="39.886" height="39.884"/>
+			<rect x="114.146" y="168.471" fill="#EC2227" width="39.886" height="39.884"/>
+			<rect x="217.052" y="120.606" fill="#DEDB24" width="79.771" height="11.966"/>
+			<rect x="217.052" y="138.556" fill="#FFFFFF" width="79.771" height="39.884"/>
+			<rect x="114.678" y="99.714" fill="#FFFFFF" width="79.771" height="11.966"/>
+		</g>
+	</g>
+</g>
+</svg>
