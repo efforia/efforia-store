@@ -106,30 +106,6 @@ def pagseguro_api():
 				  			 token=settings.PAGSEGURO_TOKEN)
 	return api
 
-def paypal_payment(request,items,price,currency):
-	paypal_api()
-	server_host = request.get_host()
-	payment = paypalrestsdk.Payment({
-		"intent": "sale",
-		"payer": {
-			"payment_method": "paypal",
-		},
-		"redirect_urls" : {
-			"return_url" : "http://%s/store/execute" % server_host,
-			"cancel_url" : "http://%s/store/cancel" % server_host
-		},
-		"transactions": [{
-			"item_list":{ "items":items	},
-			"amount": {
-				"total": '%.2f' % price,
-				"currency": currency
-			},
-			"description": "Compra de Produtos na loja."
-		}]
-	})
-	if payment.create(): return payment.id
-	else: raise CheckoutError(payment.error)
-
 def multiple_payment_handler(request, order_form, order):
 	data = order_form.cleaned_data
 	shipping = order.shipping_total
@@ -163,11 +139,16 @@ def multiple_payment_handler(request, order_form, order):
 			"quantity":1
 		})
 	price = cart.total_price()+shipping
-
+	print data['card_pay_option']
 	if '1' in data['card_pay_option']:
-		return paypal_payment(request,cart_items,price,currency)
+		return paypal_payment(request,cart_items,price,currency,order)
 	elif '2' in data['card_pay_option']:
 		return pagseguro_payment(request,cart_items,price,order)
+	elif '3' in data['card_pay_option']:
+		return bancobrasil_payment(request,cart_items,price,order)
+
+def bancobrasil_payment(request,cart_items,price,order):
+    return response("<h1>Hello World!</h1>")
 
 def pagseguro_payment(request,items,price,order):
 	server_host = request.get_host()
@@ -180,7 +161,33 @@ def pagseguro_payment(request,items,price,order):
 	# Fixes problems in localhost development environment for PagSeguro checkout
 	if 'localhost' in server_host or 'ubuntu' in server_host: server_host = settings.DEFAULT_HOST
 	payment.redirect_url = "http://%s/store/execute" % server_host
-	response = payment.checkout()
-	order.pagseguro_redirect = response.payment_url
+	resp = payment.checkout()
+	order.pagseguro_code = resp.code
+	order.pagseguro_redirect = resp.payment_url
 	order.save()
 	return response.code
+
+def paypal_payment(request,items,price,currency,order):
+	paypal_api()
+	server_host = request.get_host()
+	payment = paypalrestsdk.Payment({
+		"intent": "sale",
+		"payer": {
+			"payment_method": "paypal",
+		},
+		"redirect_urls" : {
+			"return_url" : "http://%s/store/execute" % server_host,
+			"cancel_url" : "http://%s/store/cancel" % server_host
+		},
+		"transactions": [{
+			"item_list":{ "items":items	},
+			"amount": {
+				"total": '%.2f' % price,
+				"currency": currency
+			},
+			"description": "Compra de Produtos na loja."
+		}]
+	})
+	order.paypal_redirect_token = ""
+	if payment.create(): return payment.id
+	else: raise CheckoutError(payment.error)

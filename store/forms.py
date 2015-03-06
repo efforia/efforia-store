@@ -8,7 +8,8 @@ from cartridge.shop.forms import OrderForm
 class ExternalPaymentOrderForm(OrderForm):
 	GATEWAYS = (
        (1, "PayPal"),
-       (2, "PagSeguro"), 
+       (2, "PagSeguro"),
+       (3, "BancoBrasil") 
    	)   
 	# Billing and shipping step
 	billing_detail_complement = CharField(max_length=100,label="Número ou complemento do endereço")

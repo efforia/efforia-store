@@ -1,4 +1,3 @@
-# 2015.03.05 16:30:35 Hora oficial do Brasil
 from __future__ import absolute_import, unicode_literals
 import os
 
@@ -15,6 +14,7 @@ EXTRA_MODEL_FIELDS = ((
     'cartridge.shop.models.Order.paypal_redirect_token',
     'django.db.models.CharField',(),{
         'blank': True,
+        'null': True,
         'max_length': 36
     }),(
     'cartridge.shop.models.Order.pagseguro_redirect',
@@ -141,7 +141,8 @@ INSTALLED_APPS = (
     'mezzanine.galleries', 
     'mezzanine.twitter', 
     'mezzanine.accounts',  
-    'shipping',  
+    'shipping',
+    'pyboleto.django',
     'store', 
     'south', 
     'gunicorn'
@@ -233,4 +234,3 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
-
