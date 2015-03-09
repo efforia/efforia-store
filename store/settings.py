@@ -151,7 +151,6 @@ INSTALLED_APPS = (
     'mezzanine.twitter', 
     'mezzanine.accounts',  
     'shipping',
-    'pyboleto.django',
     'store', 
     'south', 
     'gunicorn'
