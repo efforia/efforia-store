@@ -1,5 +1,8 @@
-import paypalrestsdk,urlparse
+import paypalrestsdk,urlparse,urllib2
+from xml.etree import ElementTree as ETree
 from hooks import paypal_api,pagseguro_api
+from django.core.mail import send_mail
+from django.conf import settings
 from django.http import Http404,HttpResponse
 from django.http import HttpResponse as response
 from django.shortcuts import get_object_or_404,redirect,render
@@ -24,11 +27,7 @@ def paypal_redirect(request,order):
     return redirect(redirect_url)
 
 def payment_redirect(request, order_id):
-    lookup = {
-        "id": order_id,
-        "key": "none",
-        "user_id": "none"
-        }
+    lookup = {"id": order_id}
     if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
     elif not request.user.is_staff: lookup["user_id"] = request.user.id
     order = get_object_or_404(Order, **lookup)
@@ -38,26 +37,59 @@ def payment_redirect(request, order_id):
     elif is_paypal is not None: return paypal_redirect(request,order)
     else: return redirect("/store/execute?orderid=%s" % lookup["id"])
 
+def payment_slip(request):
+	orderid = request.GET['id']
+	order = Order.objects.filter(id=orderid)[0]
+	send_mail('Subject here', 'Here is the message. Order ID: %s' % order.id, 'oi@efforia.com.br',
+    ['william.lagos1@gmail.com'], fail_silently=False)
+	context = { 
+		"order": order,
+		"agency": settings.BANK_AGENCY,
+		"account": settings.BANK_ACCOUNT,
+		"socname": settings.BANK_SOCIALNAME
+	}
+	resp = render(request,"shop/bank_confirmation.html",context)
+	return resp
+
+def payment_bank(request):
+	orderid = request.GET['order_id']
+	order = Order.objects.filter(id=orderid)[0]
+	context = { 
+		"order": order,
+		"agency": settings.BANK_AGENCY,
+		"account": settings.BANK_ACCOUNT,
+		"socname": settings.BANK_SOCIALNAME
+	}
+	resp = render(request,"shop/bank_confirmation.html",context)
+	return resp
+
 def payment_execute(request, template="shop/payment_confirmation.html"):    
-    order = None
-    if request.GET.has_key('token'):
-        paypal_api()
-        token = request.GET['token']
-        payer_id = request.GET['PayerID']
-        order = get_object_or_404(Order, paypal_redirect_token=token)
-        payment = Payment.find(order.transaction_id)
-        payment.execute({ "payer_id": payer_id })
-        order.status = 3
-        order.save()
-    elif request.GET.has_key('orderid'):
-        lookup['order_id'] = request.GET['orderid']
-        if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
-        if not request.user.is_staff: lookup["user_id"] = request.user.id
-        order = get_object_or_404(Order, **lookup)
-        order.status = 3
-        order.save()
-    #else:
-    #    
-    context = { "order" : order }
-    response = render(request, template, context)
-    return response
+	order = None
+	lookup = {}
+	if request.GET.has_key('token'):
+		paypal_api()
+		token = request.GET['token']
+		payer_id = request.GET['PayerID']
+		order = get_object_or_404(Order, paypal_redirect_token=token)
+		payment = Payment.find(order.transaction_id)
+		payment.execute({ "payer_id": payer_id })
+	elif request.GET.has_key('transaction_id'):
+		api = pagseguro_api()
+		email = api.data['email']
+		token = api.data['token']
+		transaction = request.GET['transaction_id']
+		url = api.config.TRANSACTION_URL % transaction
+		resp = urllib2.urlopen("%s?email=%s&token=%s" % (url,email,token)).read()
+		lookup["id"] = ETree.fromstring(resp).findall("reference")[0].text
+		print ETree.fromstring(resp).findall("reference")[0].text
+		if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
+		if not request.user.is_staff: lookup["user_id"] = request.user.id
+		order = get_object_or_404(Order, **lookup)
+		order.transaction_id = transaction
+	elif request.GET.has_key('orderid'):
+		return redirect("/store/bank?order_id=%s" % request.GET['orderid'])
+	order.status = 2
+	order.save()
+	context = { "order" : order }
+	response = render(request, template, context)
+	return response
