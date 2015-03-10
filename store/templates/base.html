@@ -1,6 +1,6 @@
 ﻿<!doctype html>
 <html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
-{% load pages_tags mezzanine_tags i18n future staticfiles %}
+{% load shop_tags pages_tags mezzanine_tags i18n future staticfiles %}
 
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -61,14 +61,35 @@
     <a class="navbar-brand" style="padding:15px; font-size:2em; color:white;" href="/"><img src="{% static "svg/efforialogo.svg" %}" style="height:2em;"/></a>
 </div>
 <div class="navbar-right">
-	<div class="btn-group" role="group" aria-label="...">
+    {% spaceless %}
+    <a href="{% url "shop_cart" %}">
+    <span class="glyphicon glyphicon-shopping-cart"></span>
+    {% blocktrans count request.cart.total_quantity as cart_quantity %}1 item{% plural %}{{ cart_quantity }} items{% endblocktrans %}
+    {% trans "in cart" %}:
+    {{ request.cart.total_price|currency }}</a><br>
+    {% if request.cart.total_quantity != 0 %}
+    <a href="{% url "shop_checkout" %}" class="btn btn-primary">
+        {% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}
+    </a><br>
+    {% endif %}
+    {% if settings.SHOP_USE_WISHLIST %}
+    <a href="{% url "shop_wishlist" %}" class="btn-wishlist">
+    <span class="glyphicon glyphicon-star"></span>
+    {% blocktrans count request.wishlist|length as wishlist_count %}Wishlist contains 1 item{% plural %} Wishlist contains {{ wishlist_count }} items{% endblocktrans %}</a>
+    {% endif %}
+    {% ifinstalled mezzanine.accounts %}
+    <br>
+    {% include "accounts/includes/user_panel.html" %}
+    {% endifinstalled %}
+    {% endspaceless %}
+	<!--<div class="btn-group" role="group" aria-label="...">
 	<button type="button" class="btn btn-info navbar-btn" onclick="window.location.replace('/shop/cart/');">
 		<h4 style="margin:0px">	<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Carrinho</h4>
 	</button>
 	<button type="button" class="btn btn-success navbar-btn" onclick="window.location.replace('/account/');">
 		<h4 style="margin:0px">	<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;Entrar</h4>
 	</button>
-	</div>
+	</div>!-->
 </div>
 <div class="navbar-collapse collapse navbar-right" style="border:none; box-shadow:none; text-align:center;">
 </div>
