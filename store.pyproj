@@ -235,7 +235,7 @@
     <Content Include="store\templates\shop\order_history.html" />
     <Content Include="store\templates\shop\order_invoice.html" />
     <Content Include="store\templates\shop\payment.html" />
-    <Content Include="store\templates\shop\payment_confirmation.html" />
+    <Content Include="store\templates\shop\bank_confirmation.html" />
     <Content Include="store\templates\shop\product.html" />
     <Content Include="store\templates\shop\wishlist.html" />
     <Content Include="store\templates\twitter\tweets.html" />
