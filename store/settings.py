@@ -1,4 +1,3 @@
-# 2015.03.05 16:30:35 Hora oficial do Brasil
 from __future__ import absolute_import, unicode_literals
 import os
 
@@ -15,6 +14,7 @@ EXTRA_MODEL_FIELDS = ((
     'cartridge.shop.models.Order.paypal_redirect_token',
     'django.db.models.CharField',(),{
         'blank': True,
+        'null': True,
         'max_length': 36
     }),(
     'cartridge.shop.models.Order.pagseguro_redirect',
@@ -30,10 +30,19 @@ SITE_TITLE = 'Efforia Nanocomputadores'
 LOCALE_DATE = ('Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dec')
 STORE_POSTCODE = '90020110'
 STORE_COUNTRY = 'Brasil'
+BANK_AGENCY = '1430-3'
+BANK_ACCOUNT = '33640-8'
+BANK_SOCIALNAME = 'EFFORIA TECNOLOGIA LTDA - ME'
 PAYPAL_SANDBOX_MODE = False
+PAYPAL_SANDBOX_RECEIVER_EMAIL = 'efforiaca-facilitator@gmail.com'
+PAYPAL_SANDBOX_CLIENT_ID = 'AeiijxAGPGKJ1J94r7u7nqX_8oCKtOzI0ZNChSIMwAkEg2Y3wff8FQhPfGZw'
+PAYPAL_SANDBOX_CLIENT_SECRET = 'EKmSiRBgd31RKZ324o47--u1IgxoOMI-J6UvuIP-X5qFSm30xYy_ULllqHIc'
 PAYPAL_RECEIVER_EMAIL = 'efforiaca@gmail.com'
 PAYPAL_CLIENT_ID = 'AcuUFhDe6YARWq5at2cdaoLQHsH2koobgx1xId97sIx7vBrRGqC9fH2tpO_V'
 PAYPAL_CLIENT_SECRET = 'ELcuGBAvIYa70j611-Tm9KJcVVymhutA-hwOhQNGMPXiBjH7YyDvSsxJjCGl'
+PAGSEGURO_SANDBOX_MODE = False
+PAGSEGURO_SANDBOX_EMAIL_COBRANCA = 'contato@efforia.com.br'
+PAGSEGURO_SANDBOX_TOKEN = 'FB7093D836BD40F6AB3DF509FECE1ED0'
 PAGSEGURO_EMAIL_COBRANCA = 'efforiaca@gmail.com'
 PAGSEGURO_TOKEN = 'D9BBC61094BB4C8BADB296613350FF20'
 SHOP_CURRENCY = 'BRL'
@@ -141,7 +150,7 @@ INSTALLED_APPS = (
     'mezzanine.galleries', 
     'mezzanine.twitter', 
     'mezzanine.accounts',  
-    'shipping',  
+    'shipping',
     'store', 
     'south', 
     'gunicorn'
@@ -233,4 +242,3 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
-

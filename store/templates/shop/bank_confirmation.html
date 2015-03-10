@@ -1,0 +1,23 @@
+{% extends "shop/base.html" %}
+{% load i18n future %}
+
+{% block meta_title %}{% trans "Confirmação de Pagamento" %}{% endblock %}
+
+{% block title %}{% trans "Confirmação de Pagamento" %}{% endblock %}
+
+{% block main %}
+<p>{% trans "Thank you for shopping with us, your order is complete." %}</p>
+<p>{% trans "Seu pedido será processado assim que houver a comprovação do pagamento" %}</p>
+<p>{% trans "Para depósito bancário ou transferência eletrônica, favor enviar comprovante de transação para o e-mail oi@efforia.com.br. Seguem os dados:" %}</p>
+<h3>Banco do Brasil</h3>
+<h4>Agência: {{ agency }}</h4>
+<h4>Conta: {{ account }}</h4>
+<h4>{{ socname }}</h4>
+<br>
+<p>
+    <a class="btn btn-large btn-success" href="/store/slip?id={{ order.id }}">{% trans "Pagar com o boleto bancário" %}</a>
+    <a class="btn btn-large btn-primary" href="{% url "shop_invoice" order.id %}?format=pdf">{% trans "Download PDF invoice" %}</a>
+    <a class="btn btn-large" target="_blank" href="{% url "shop_invoice" order.id %}">{% trans "View invoice in your browser" %}</a>
+</p>
+{% endblock %}
+

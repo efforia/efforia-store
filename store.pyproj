@@ -18,7 +18,7 @@
     <InterpreterId>{40855384-d6ff-4ac2-83db-2e18a82f189c}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
     <WebBrowserPort>8000</WebBrowserPort>
-    <PythonRunWebServerCommandArguments>runserver --settings store.settings %SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
+    <PythonRunWebServerCommandArguments>runserver --noreload --settings store.settings %SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
     <PythonDebugWebServerCommandArguments>runserver --settings store.settings %SERVER_PORT% $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
