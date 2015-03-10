@@ -12,8 +12,8 @@ urlpatterns = i18n_patterns(u'', (u'^admin/', include(admin.site.urls)))
 
 urlpatterns += patterns(u'', 
                         (u'^shop/', include(u'cartridge.shop.urls')), 
-						url(u'^store/slip', u'store.views.payment_slip'), 
-						url(u'^store/bank', u'store.views.payment_bank'), 
+			url(u'^store/slip', u'store.views.payment_slip'), 
+			url(u'^store/bank', u'store.views.payment_bank'), 
                         url(u'^store/cancel', u'store.views.payment_cancel'), 
                         url(u'^store/execute', u'store.views.payment_execute', name=u'payment_execute'), 
                         url(u'^store/pay/(?P<order_id>\\d+)/$', u'store.views.payment_redirect', name=u'payment_redirect'), 

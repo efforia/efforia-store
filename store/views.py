@@ -33,8 +33,8 @@ def payment_redirect(request, order_id):
     order = get_object_or_404(Order, **lookup)
     is_pagseguro = order.pagseguro_redirect 
     is_paypal = order.paypal_redirect_token
-    if is_pagseguro is not None: return redirect(str(is_pagseguro))
-    elif is_paypal is not None: return paypal_redirect(request,order)
+    if 'none' not in is_pagseguro: return redirect(str(is_pagseguro))
+    elif 'none' not in is_paypal: return paypal_redirect(request,order)
     else: return redirect("/store/execute?orderid=%s" % lookup["id"])
 
 def payment_slip(request):

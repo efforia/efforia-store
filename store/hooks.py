@@ -192,6 +192,9 @@ def multiple_payment_handler(request, order_form, order):
 		return bancobrasil_payment(request,order)
 
 def bancobrasil_payment(request,order):
+    order.paypal_redirect_token = 'none'
+    order.pagseguro_redirect = 'none'
+    order.save()
     return order.id
 
 def pagseguro_payment(request,items,price,order):
@@ -208,6 +211,7 @@ def pagseguro_payment(request,items,price,order):
 	resp = payment.checkout()
 	order.pagseguro_code = resp.code
 	order.pagseguro_redirect = resp.payment_url
+	order.paypal_redirect_token = 'none'
 	order.save()
 	return resp.code
 
@@ -233,5 +237,6 @@ def paypal_payment(request,items,price,currency,order):
 		}]
 	})
 	order.paypal_redirect_token = ""
+	order.pagseguro_redirect = 'none'
 	if payment.create(): return payment.id
 	else: raise CheckoutError(payment.error)
