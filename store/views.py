@@ -40,8 +40,8 @@ def payment_redirect(request, order_id):
 def payment_slip(request):
 	orderid = request.GET['id']
 	order = Order.objects.filter(id=orderid)[0]
-	send_mail('Subject here', 'Here is the message. Order ID: %s' % order.id, 'oi@efforia.com.br',
-    ['william.lagos1@gmail.com'], fail_silently=False)
+	send_mail('Pedido de boleto', 'Pedido de boleto. Order ID: %s' % order.id, 'oi@efforia.com.br',
+    [order.billing_detail_email,'contato@efforia.com.br'], fail_silently=False)
 	context = { 
 		"order": order,
 		"agency": settings.BANK_AGENCY,
