@@ -18,9 +18,11 @@
     <InterpreterId>{40855384-d6ff-4ac2-83db-2e18a82f189c}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
     <WebBrowserPort>8000</WebBrowserPort>
-    <PythonRunWebServerCommandArguments>runserver --noreload --settings store.settings %SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
-    <PythonDebugWebServerCommandArguments>runserver --settings store.settings %SERVER_PORT% $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
+    <PythonRunWebServerCommandArguments>runserver --noreload --settings store.settings 0.0.0.0:%SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
+    <PythonDebugWebServerCommandArguments>runserver --settings store.settings 0.0.0.0:%SERVER_PORT% $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <WebBrowserUrl>
+    </WebBrowserUrl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -235,7 +237,7 @@
     <Content Include="store\templates\shop\order_history.html" />
     <Content Include="store\templates\shop\order_invoice.html" />
     <Content Include="store\templates\shop\payment.html" />
-    <Content Include="store\templates\shop\bank_confirmation.html" />
+    <Content Include="store\templates\shop\slip_confirmation.html" />
     <Content Include="store\templates\shop\product.html" />
     <Content Include="store\templates\shop\wishlist.html" />
     <Content Include="store\templates\twitter\tweets.html" />
