@@ -7,14 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
 <meta name="description" content="{% block meta_description %}{% endblock %}">
-<style>
-@font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntul.ttf" %}"); }
-@font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntu-bold.ttf" %}"); font-weight: bold; }
-.nebula-cover {
-	background-color:white;
-	color:black;
-}
-</style>
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/efforialogo.png" %}">
 
@@ -29,27 +21,40 @@
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/rtl.css" %}">
 {% endif %}
+
 {% ifinstalled cartridge.shop %}
 <link rel="stylesheet" href="{% static "css/cartridge.css" %}">
+
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/cartridge.rtl.css" %}">
 {% endif %}
-<link rel="stylesheet" href="{% static "css/efforia.css" %}">
+
 {% endifinstalled %}
+
 {% block extra_css %}{% endblock %}
 {% endcompress %}
 
 {% compress js %}
-<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
+<script src="{% static "js/"|add:settings.JQUERY_FILENAME %}"></script>
 <script src="{% static "js/bootstrap.js" %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
 {% block extra_js %}{% endblock %}
 {% endcompress %}
+
 <!--[if lt IE 9]>
 <script src="{% static "js/html5shiv.js" %}"></script>
 <script src="{% static "js/respond.min.js" %}"></script>
 <![endif]-->
+
+<link rel="stylesheet" href="{% static "css/efforia.css" %}">
+
 <style>
+    @font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntul.ttf" %}"); }
+    @font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntu-bold.ttf" %}"); font-weight: bold; }
+    .nebula-cover {
+	    background-color:white;
+	    color:black;
+    }
     .white { color:white; }
     .centered { text-align:center; }
     .parent {
@@ -65,6 +70,8 @@
     .bordered { border: 1px solid white; }
     .leftmargin { margin-left: 15px; }
     .rightmargin { margin-right:15px; }
+    .left { text-align:left; }
+    .right { text-align:right; }
     .navbar-height { height:3em; }
     .navbar-padding { padding:15px; }
     .nomargin { margin:0px; }
@@ -77,9 +84,18 @@
 </head>
 
 <body id="{% block body_id %}body{% endblock %}" style="padding:0px;">
+    <nav class="parent visible-lg visible-md navbar navbar-default fixed-navbar" style="background:#6EC497; color:white; min-height:28px; max-height:28px;">
+        <div class="child col-md-6 left">
+            Fale conosco: &nbsp;    
+            <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;+555198485888&nbsp;&nbsp;
+            <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforianano&nbsp;&nbsp;
+            <img src="{% static "svg/phone.svg" %}" height="18"/>&nbsp;(51) 3516-2367&nbsp;&nbsp;
+        </div>
+        <div class="child col-md-6 right">CNPJ: 15.436.865/0001-72</div>
+    </nav>
     <nav class="navbar navbar-default fixed-navbar navbar-inverse">
         <div class="container-fluid">
-            <a class="hidden-md hidden-lg navbar-brand navbar-left" href="/">
+            <a class="hidden-md hidden-lg navbar-brand navbar-left" style="padding-left:0px;" href="/">
                 <img src="{% static "svg/logo.svg" %}" alt="Efforia" class="navbar-height"/>
             </a>
             <a class="hidden-xs hidden-sm navbar-brand navbar-left" href="/">
@@ -106,7 +122,7 @@
             <div id="collapse" class="collapse navbar-collapse navbar-left none">
                 {% page_menu "pages/menus/dropdown.html" %}
             </div>
-            <div class="hidden-xs hidden-sm navbar-right centered rightmargin leftmargin">
+            <div class="hidden-xs hidden-sm navbar-right centered rightmargin leftmargin" style="height:3em; margin:15px;">
                 <a class="white" href="{% url "shop_cart" %}">
                 <span class="glyphicon glyphicon-shopping-cart"></span>
                 {% blocktrans count request.cart.total_quantity as cart_quantity %}1 item{% plural %}{{ cart_quantity }} items{% endblocktrans %}
@@ -115,15 +131,16 @@
                 {% if request.cart.total_quantity != 0 %}
                 <a href="{% url "shop_checkout" %}" class="btn btn-primary">
                     {% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}
-                </a><br>
+                </a>
+                <!--<br>-->
                 {% endif %}
-                {% if settings.SHOP_USE_WISHLIST %}
+                <!--{% if settings.SHOP_USE_WISHLIST %}
                 <a href="{% url "shop_wishlist" %}" class="btn-wishlist white">
                 <span class="glyphicon glyphicon-star"></span>
                 {% blocktrans count request.wishlist|length as wishlist_count %}Wishlist contains 1 item{% plural %} Wishlist contains {{ wishlist_count }} items{% endblocktrans %}</a>
-                {% endif %}
+                {% endif %}!-->
                 {% ifinstalled mezzanine.accounts %}
-                <br>
+                <!--<br>-->
                 {% include "accounts/includes/user_panel.html" %}
                 {% endifinstalled %}
             </div>
@@ -145,71 +162,31 @@
             {% endnevercache %}
 
             <h1 style="text-align:center;">{% block title %}{% endblock %}</h1>
-
-            <!--<ul class="breadcrumb">
-            {% spaceless %}
-            {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
-            {% endspaceless %}
-            </ul>!-->
-
         </div>
         <div class="container page">
             <div class="row">
-
-            <!--<div class="col-md-2 left">
-                {% block left_panel %}
-                <div class="panel panel-default tree">{% page_menu "pages/menus/tree.html" %}</div>
-                {% endblock %}
-            </div>!-->
-
-            <div class="col-md-12 middle">
-                {% block main %}{% endblock %}
-            </div>
-
-            <!--<div class="col-md-3 right">
-                {% nevercache %}
-                {% include "includes/user_panel.html" %}
-                {% endnevercache %}
-                <div class="panel panel-default">
-                <div class="panel-body">
-                {% block right_panel %}
-                {% ifinstalled mezzanine.twitter %}
-                {% include "twitter/tweets.html" %}
-                {% endifinstalled %}
-                {% endblock %}
-                </div>
-                </div>
-            </div>!-->
-
+                <div class="col-md-12 middle">{% block main %}{% endblock %}</div>
             </div>
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-    {% page_menu "pages/menus/footer.html" %}
-
-    <div class="row">
-    <p class="site-info text-center">
-        <!--{% trans "Powered by" %}
-        <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
-        <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
-        {% trans "and" %}
-        <a href="http://www.djangoproject.com">Django</a>!-->
-        Efforia Tecnologia Ltda
-        <span class="separator">|</span>
-        Telefone: (51) 3516-2367
-        <span class="separator">|</span>
-        Rua Vigário José Inácio, 399/409 - Porto Alegre/RS - Brasil
-        <!--Tema desenvolvido a partir do <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>
-        {% ifinstalled mezzanine.mobile %}
-        <span class="separator">|</span>
-        <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
-        {% endifinstalled %}!-->
-    </p>
-    </div>
-    </div>
+        <div class="container">
+            {% page_menu "pages/menus/footer.html" %}
+            <div class="row">
+                <p class="visible-md visible-lg site-info text-center">
+                    Efforia Tecnologia Ltda
+                    <span class="separator">|</span> Telefone: (51) 3516-2367
+                    <span class="separator">|</span> Rua Vigário José Inácio, 399/409 - Porto Alegre/RS - Brasil
+                </p>
+                <p class="visible-xs visible-sm site-info text-center">
+                    Efforia Tecnologia Ltda<br/>
+                    Telefone: (51) 3516-2367<br/>
+                    Rua Vigário José Inácio, 399/409<br/>
+                    Porto Alegre/RS - Brasil
+                </p>
+            </div>
+        </div>
     </footer>
-
     {% include "includes/footer_scripts.html" %}
 </body>
 </html>
