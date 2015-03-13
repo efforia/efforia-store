@@ -61,7 +61,10 @@ TIME_ZONE = 'America/Sao_Paulo'
 USE_TZ = True
 LANGUAGE_CODE = 'pt-BR'
 _ = lambda s: s
-LANGUAGES = (('pt-BR', _('Brazilian Portuguese')),)
+LANGUAGES = (
+	('pt-BR', _('Brazilian Portuguese')),
+	('en', _('English'))
+)
 DEBUG = True if 'posix' not in os.name else False
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SITE_ID = 1

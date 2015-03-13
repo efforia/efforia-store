@@ -47,10 +47,11 @@
 <![endif]-->
 
 <link rel="stylesheet" href="{% static "css/efforia.css" %}">
-
 <style>
-    @font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntul.ttf" %}"); }
-    @font-face { font-family: 'Ubuntu'; src: url("{% static "ttf/ubuntu-bold.ttf" %}"); font-weight: bold; }
+    @font-face { font-family: "Ubuntu"; src: url("{% static "ttf/ubuntul.ttf" %}"); }
+    @font-face { font-family: "Ubuntu"; src: url("{% static "ttf/ubuntu-bold.ttf" %}"); font-weight: bold; }
+</style>
+<style>
     .nebula-cover {
 	    background-color:white;
 	    color:black;
@@ -70,8 +71,8 @@
     .bordered { border: 1px solid white; }
     .leftmargin { margin-left: 15px; }
     .rightmargin { margin-right:15px; }
-    .left { text-align:left; }
-    .right { text-align:right; }
+    .leftaligned { text-align:left; }
+    .rightaligned { text-align:right; }
     .navbar-height { height:3em; }
     .navbar-padding { padding:15px; }
     .nomargin { margin:0px; }
@@ -85,20 +86,37 @@
 
 <body id="{% block body_id %}body{% endblock %}" style="padding:0px;">
     <nav class="parent visible-lg visible-md navbar navbar-default fixed-navbar" style="background:#6EC497; color:white; min-height:28px; max-height:28px;">
-        <div class="child col-md-6 left">
+        <div class="child col-md-6 leftaligned">
             Fale conosco: &nbsp;    
             <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;+555198485888&nbsp;&nbsp;
             <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforianano&nbsp;&nbsp;
             <img src="{% static "svg/phone.svg" %}" height="18"/>&nbsp;(51) 3516-2367&nbsp;&nbsp;
         </div>
-        <div class="child col-md-6 right">CNPJ: 15.436.865/0001-72</div>
+        <div class="child col-md-6 rightaligned"><a class="white" href="{% url "shop_cart" %}">
+                {% if settings.SHOP_USE_WISHLIST %}
+                    <a href="{% url "shop_wishlist" %}" class="btn-wishlist white">
+                    <span class="glyphicon glyphicon-star"></span>
+                    {% blocktrans count request.wishlist|length as wishlist_count %}Wishlist contains 1 item{% plural %} Wishlist contains {{ wishlist_count }} items{% endblocktrans %}</a>&nbsp;&nbsp;
+                {% endif %}
+                <a href="{% url "shop_cart" %}" class="btn-cart white">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    {% if request.cart.total_quantity > 0 %}
+                        {% blocktrans count request.cart.total_quantity as cart_quantity %}
+                            1 item{% plural %}{{ cart_quantity }} items
+                        {% endblocktrans %}
+                        {% trans "in cart" %}: {{ request.cart.total_price|currency }}
+                    {% else %}
+                        {% trans "Sem itens no carrinho" %}
+                    {% endif %}
+                </a>
+        </div>
     </nav>
     <nav class="navbar navbar-default fixed-navbar navbar-inverse">
         <div class="container-fluid">
-            <a class="hidden-md hidden-lg navbar-brand navbar-left" style="padding-left:0px;" href="/">
+            <a class="hidden-md hidden-lg navbar-brand navbar-left" style="background:transparent !important; padding-left:0px;" href="/">
                 <img src="{% static "svg/logo.svg" %}" alt="Efforia" class="navbar-height"/>
             </a>
-            <a class="hidden-xs hidden-sm navbar-brand navbar-left" href="/">
+            <a class="hidden-xs hidden-sm navbar-brand navbar-left" style="background:transparent !important;" href="/">
                 <img src="{% static "svg/efforialogo.svg" %}" alt="Efforia" class="navbar-height"/>
             </a>
             <div class="navbar-header">
@@ -121,27 +139,31 @@
             </div>
             <div id="collapse" class="collapse navbar-collapse navbar-left none">
                 {% page_menu "pages/menus/dropdown.html" %}
+                <div class="hidden-lg hidden-md centered rightmargin leftmargin" style="height:3em;">
+                    {% ifinstalled mezzanine.accounts %}
+                        <div class="btn-group" role="group">
+                        {% if request.cart.total_quantity != 0 %}
+                            <a href="{% url "shop_checkout" %}" class="btn btn-sm btn-primary">
+                            {% if request.session.order.step %}
+                                {% trans "Return to Checkout" %}
+                            {% else %}
+                                {% trans "Go to Checkout" %}
+                            {% endif %}</a>
+                        {% endif %}
+                        {% include "accounts/includes/user_panel.html" %}
+                        </div>
+                    {% endifinstalled %}
+                </div>
             </div>
             <div class="hidden-xs hidden-sm navbar-right centered rightmargin leftmargin" style="height:3em; margin:15px;">
-                <a class="white" href="{% url "shop_cart" %}">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-                {% blocktrans count request.cart.total_quantity as cart_quantity %}1 item{% plural %}{{ cart_quantity }} items{% endblocktrans %}
-                {% trans "in cart" %}:
-                {{ request.cart.total_price|currency }}</a><br>
-                {% if request.cart.total_quantity != 0 %}
-                <a href="{% url "shop_checkout" %}" class="btn btn-primary">
-                    {% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}
-                </a>
-                <!--<br>-->
-                {% endif %}
-                <!--{% if settings.SHOP_USE_WISHLIST %}
-                <a href="{% url "shop_wishlist" %}" class="btn-wishlist white">
-                <span class="glyphicon glyphicon-star"></span>
-                {% blocktrans count request.wishlist|length as wishlist_count %}Wishlist contains 1 item{% plural %} Wishlist contains {{ wishlist_count }} items{% endblocktrans %}</a>
-                {% endif %}!-->
                 {% ifinstalled mezzanine.accounts %}
-                <!--<br>-->
-                {% include "accounts/includes/user_panel.html" %}
+                    <div class="btn-group-vertical" role="group">
+                    {% if request.cart.total_quantity != 0 %}
+                       <a href="{% url "shop_checkout" %}" class="btn btn-sm btn-primary">
+                       {% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}</a>      
+                    {% endif %}
+                    {% include "accounts/includes/user_panel.html" %}
+                </div>
                 {% endifinstalled %}
             </div>
         </div>
@@ -175,11 +197,13 @@
             <div class="row">
                 <p class="visible-md visible-lg site-info text-center">
                     Efforia Tecnologia Ltda
+                    <span class="separator">|</span> CNPJ: 15.436.865/0001-72
                     <span class="separator">|</span> Telefone: (51) 3516-2367
                     <span class="separator">|</span> Rua Vigário José Inácio, 399/409 - Porto Alegre/RS - Brasil
                 </p>
                 <p class="visible-xs visible-sm site-info text-center">
                     Efforia Tecnologia Ltda<br/>
+                    CNPJ: 15.436.865/0001-72<br />
                     Telefone: (51) 3516-2367<br/>
                     Rua Vigário José Inácio, 399/409<br/>
                     Porto Alegre/RS - Brasil
