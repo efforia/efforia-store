@@ -21,8 +21,7 @@
     <PythonRunWebServerCommandArguments>runserver --noreload --settings store.settings 0.0.0.0:%SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
     <PythonDebugWebServerCommandArguments>runserver --settings store.settings 0.0.0.0:%SERVER_PORT% $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <WebBrowserUrl>
-    </WebBrowserUrl>
+    <WebBrowserUrl>/</WebBrowserUrl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -214,7 +213,7 @@
     <Content Include="store\templates\pages\index.html" />
     <Content Include="store\templates\pages\menus\admin.html" />
     <Content Include="store\templates\pages\menus\breadcrumb.html" />
-    <Content Include="store\templates\pages\menus\dropdown.html" />
+    <Content Include="store\templates\pages\menus\dropdown_store.html" />
     <Content Include="store\templates\pages\menus\footer.html" />
     <Content Include="store\templates\pages\menus\footer_tree.html" />
     <Content Include="store\templates\pages\menus\mobile.html" />

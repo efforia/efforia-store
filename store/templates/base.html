@@ -85,7 +85,7 @@
 </head>
 
 <body id="{% block body_id %}body{% endblock %}" style="padding:0px;">
-    <nav class="parent visible-lg visible-md navbar navbar-default fixed-navbar" style="background:#6EC497; color:white; min-height:28px; max-height:28px;">
+    <nav class="parent visible-lg visible-md navbar navbar-default fixed-navbar" style="padding-top:1px; background:#6EC497; color:white; min-height:28px; max-height:28px;">
         <div class="child col-md-6 leftaligned">
             Fale conosco: &nbsp;    
             <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;+555198485888&nbsp;&nbsp;
@@ -96,7 +96,9 @@
                 {% if settings.SHOP_USE_WISHLIST %}
                     <a href="{% url "shop_wishlist" %}" class="btn-wishlist white">
                     <span class="glyphicon glyphicon-star"></span>
-                    {% blocktrans count request.wishlist|length as wishlist_count %}Wishlist contains 1 item{% plural %} Wishlist contains {{ wishlist_count }} items{% endblocktrans %}</a>&nbsp;&nbsp;
+                    {% blocktrans count request.wishlist|length as wishlist_count %}
+                        Wishlist contains 1 item{% plural %} Wishlist contains {{ wishlist_count }} items
+                    {% endblocktrans %}</a>&nbsp;&nbsp;
                 {% endif %}
                 <a href="{% url "shop_cart" %}" class="btn-cart white">
                     <span class="glyphicon glyphicon-shopping-cart"></span>
@@ -166,6 +168,11 @@
                 </div>
                 {% endifinstalled %}
             </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default fixed-navbar navbar-inverse" style="background:#3398CC;">
+        <div id="collapse" class="collapse navbar-collapse navbar-left none">
+             {% page_menu "pages/menus/dropdown_store.html" %}
         </div>
     </nav>
     <div class="content">
