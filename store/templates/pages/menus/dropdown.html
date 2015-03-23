@@ -5,7 +5,6 @@
 {% if branch_level == 0 %}
 <style>
 .dropdown-toggle { background:transparent !important; }
-a:hover { background:white !important; font-color:black !important; } 
 .caret { display:none; }
 </style>
 <ul class="nav navbar-nav navbar-height navbar-padding" style="float:none; margin: 0 auto; display:table; table-layout:fixed;">
@@ -20,7 +19,7 @@ a:hover { background:white !important; font-color:black !important; }
             <li class="{% if page.has_children_in_menu %}dropdown{% endif %}
                        {% if page.is_current_or_ascendant %}active{% endif %}"
                 id="{{ page.html_id }}">
-                <a class="white centered" style="font-size:1.2em" href="{{ page.get_absolute_url }}"
+                <a class="centered" style="font-size:1.2em; color:white" href="{{ page.get_absolute_url }}"
                 {% if page.has_children_in_menu %}
                 class="dropdown-toggle disabled" data-toggle="dropdown"
                 {% endif %}>
@@ -37,7 +36,6 @@ a:hover { background:white !important; font-color:black !important; }
 {% else %}
 <style>
 .dropdown-toggle { background:transparent !important; } 
-a:hover { background:white !important; color:black !important; }
 .caret { display:none; }
 </style>
 <ul class="dropdown-menu" style="background:#222; box-shadow:none; border:none;">
