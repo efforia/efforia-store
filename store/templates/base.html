@@ -115,21 +115,12 @@
                 {% else %}
                     {% trans "Sem itens no carrinho" %}
                 {% endif %}
-            </a>
+            </a>&nbsp;&nbsp;
+            {% if request.cart.total_quantity != 0 %}
+                <a href="{% url "shop_checkout" %}" style="text-decoration:none; color:white">{% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}</a>
+            {% endif %}
         </div>
         <div class="visible-sm visible-xs col-xs-12 centered">
-            {% if settings.SHOP_USE_WISHLIST %}
-                <a href="{% url "shop_wishlist" %}" class="btn-wishlist white">
-                <span class="glyphicon glyphicon-star"></span>
-                {% if request.wishlist|length < 1 %}
-                    {% trans "Sem itens na lista" %}
-                {% else %}
-                    {% blocktrans count request.wishlist|length as wishlist_count %}
-                        Lista contem 1 item{% plural %} Lista contém {{ wishlist_count }} items
-                    {% endblocktrans %}
-                {% endif %}
-                </a>&nbsp;&nbsp;
-            {% endif %}
             <a href="{% url "shop_cart" %}" class="btn-cart white">
                 <span class="glyphicon glyphicon-shopping-cart"></span>
                 {% if request.cart.total_quantity > 0 %}
@@ -140,7 +131,10 @@
                 {% else %}
                     {% trans "Sem itens no carrinho" %}
                 {% endif %}
-            </a>
+            </a>&nbsp;&nbsp;
+            {% if request.cart.total_quantity != 0 %}
+                <a href="{% url "shop_checkout" %}" style="text-decoration:none; color:white">{% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}</a>      
+            {% endif %}
         </div>
 
         </div>
@@ -175,12 +169,8 @@
             <div class="hidden-xs hidden-sm navbar-right centered rightmargin leftmargin" style="height:3em; margin:12px;">
                 {% ifinstalled mezzanine.accounts %}
                     <div class="btn-group-vertical" role="group">
-                    {% if request.cart.total_quantity != 0 %}
-                       <a href="{% url "shop_checkout" %}" class="btn btn-sm btn-primary">
-                       {% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}</a>      
-                    {% endif %}
-                    {% include "accounts/includes/user_panel.html" %}
-                </div>
+                        {% include "accounts/includes/user_panel.html" %}
+                    </div>
                 {% endifinstalled %}
             </div>
         </div>
