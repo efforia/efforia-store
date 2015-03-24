@@ -7,3 +7,9 @@ local_settings.py
 gunicorn*
 last*
 store/static
+/bin
+/env
+/obj/Debug
+*.suo
+*.config
+/ptvs_virtualenv_proxy.py

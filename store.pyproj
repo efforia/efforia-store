@@ -18,9 +18,10 @@
     <InterpreterId>{40855384-d6ff-4ac2-83db-2e18a82f189c}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
     <WebBrowserPort>8000</WebBrowserPort>
-    <PythonRunWebServerCommandArguments>runserver --noreload --settings store.settings %SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
-    <PythonDebugWebServerCommandArguments>runserver --settings store.settings %SERVER_PORT% $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
+    <PythonRunWebServerCommandArguments>runserver --noreload --settings store.settings 0.0.0.0:%SERVER_PORT% $(CommandLineArguments)</PythonRunWebServerCommandArguments>
+    <PythonDebugWebServerCommandArguments>runserver --settings store.settings 0.0.0.0:%SERVER_PORT% $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <WebBrowserUrl>/</WebBrowserUrl>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -43,19 +44,14 @@
     <Compile Include="store\views.py" />
     <Compile Include="store\__init__.py" />
     <Content Include="store\public\css\efforia.css" />
-    <Content Include="store\public\filebrowser\css\filebrowser.css" />
-    <Content Include="store\public\img\efforialogo.png" />
-    <Content Include="store\public\img\efforia_logo.png" />
-    <Content Include="store\public\img\efforia_nebula.png" />
-    <Content Include="store\public\img\efforia_old.png" />
-    <Content Include="store\public\img\facebook.png" />
-    <Content Include="store\public\img\foursquare.png" />
-    <Content Include="store\public\img\github.png" />
-    <Content Include="store\public\img\nebula.png" />
-    <Content Include="store\public\img\pagseguro.png" />
-    <Content Include="store\public\img\paypal.png" />
-    <Content Include="store\public\img\twitter.png" />
-    <Content Include="store\public\img\youtube.png" />
+    <Content Include="store\public\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="store\public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="store\public\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="store\public\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="store\public\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="store\public\fonts\ubuntu-bold.ttf" />
+    <Content Include="store\public\fonts\ubuntul.ttf" />
+    <Content Include="store\public\fonts\ubuntur.ttf" />
     <Content Include="store\public\media\product\.thumbnails\blue-0x300.png" />
     <Content Include="store\public\media\product\.thumbnails\blue-48x48.png" />
     <Content Include="store\public\media\product\.thumbnails\blue-75x75.png" />
@@ -149,9 +145,6 @@
     <Content Include="store\public\svg\television.svg" />
     <Content Include="store\public\svg\torrent.svg" />
     <Content Include="store\public\svg\What.svg" />
-    <Content Include="store\public\ttf\ubuntu-bold.ttf" />
-    <Content Include="store\public\ttf\ubuntul.ttf" />
-    <Content Include="store\public\ttf\ubuntur.ttf" />
     <Content Include="store\public\uploads\galleries\file" />
     <Content Include="store\templates\accounts\account_form.html" />
     <Content Include="store\templates\accounts\account_login.html" />
@@ -213,6 +206,7 @@
     <Content Include="store\templates\pages\menus\admin.html" />
     <Content Include="store\templates\pages\menus\breadcrumb.html" />
     <Content Include="store\templates\pages\menus\dropdown.html" />
+    <Content Include="store\templates\pages\menus\dropdown_store.html" />
     <Content Include="store\templates\pages\menus\footer.html" />
     <Content Include="store\templates\pages\menus\footer_tree.html" />
     <Content Include="store\templates\pages\menus\mobile.html" />
@@ -235,7 +229,7 @@
     <Content Include="store\templates\shop\order_history.html" />
     <Content Include="store\templates\shop\order_invoice.html" />
     <Content Include="store\templates\shop\payment.html" />
-    <Content Include="store\templates\shop\bank_confirmation.html" />
+    <Content Include="store\templates\shop\slip_confirmation.html" />
     <Content Include="store\templates\shop\product.html" />
     <Content Include="store\templates\shop\wishlist.html" />
     <Content Include="store\templates\twitter\tweets.html" />
@@ -245,15 +239,12 @@
     <Folder Include="store" />
     <Folder Include="store\public\" />
     <Folder Include="store\public\css\" />
-    <Folder Include="store\public\filebrowser\" />
-    <Folder Include="store\public\filebrowser\css\" />
-    <Folder Include="store\public\img\" />
+    <Folder Include="store\public\fonts\" />
     <Folder Include="store\public\media\" />
     <Folder Include="store\public\media\product\" />
     <Folder Include="store\public\media\product\.thumbnails\" />
     <Folder Include="store\public\media\uploads\" />
     <Folder Include="store\public\svg\" />
-    <Folder Include="store\public\ttf\" />
     <Folder Include="store\public\uploads\" />
     <Folder Include="store\public\uploads\galleries\" />
     <Folder Include="store\templates\" />

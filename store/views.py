@@ -42,13 +42,8 @@ def payment_slip(request):
 	order = Order.objects.filter(id=orderid)[0]
 	send_mail('Pedido de boleto', 'Pedido de boleto. Order ID: %s' % order.id, 'oi@efforia.com.br',
     [order.billing_detail_email,'contato@efforia.com.br'], fail_silently=False)
-	context = { 
-		"order": order,
-		"agency": settings.BANK_AGENCY,
-		"account": settings.BANK_ACCOUNT,
-		"socname": settings.BANK_SOCIALNAME
-	}
-	resp = render(request,"shop/bank_confirmation.html",context)
+	context = { "order": order }
+	resp = render(request,"shop/slip_confirmation.html",context)
 	return resp
 
 def payment_bank(request):

@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 from django.utils.translation import ugettext_lazy as _
-from django.forms import Form,CharField,ChoiceField,RadioSelect,BooleanField
+from django.forms import Form,CharField,ChoiceField,RadioSelect,BooleanField,CheckboxInput
 from cartridge.shop.forms import OrderForm
 
 class ExternalPaymentOrderForm(OrderForm):
@@ -14,7 +14,8 @@ class ExternalPaymentOrderForm(OrderForm):
 	# Billing and shipping step
 	billing_detail_complement = CharField(max_length=100,label="Número ou complemento do endereço")
 	shipping_detail_complement = CharField(max_length=100,label="Número ou complemento do endereço")
-	# same_billing_shipping = BooleanField(required=True,initial=True,label=_("My delivery details are the same as my billing details"))
+	same_billing_shipping = BooleanField(required=False,initial=True,label=_("My delivery details are the same as my billing details"),
+									     widget=CheckboxInput(attrs={'checked':'checked'}))
 	# Online payment step
 	card_pay_option = ChoiceField(widget=RadioSelect,choices=GATEWAYS,label="Forma de pagamento online")
 	def __init__(self,*args,**kwargs):
