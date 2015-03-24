@@ -27,7 +27,7 @@ EXTRA_MODEL_FIELDS = ((
 
 USE_SOUTH = True
 SITE_TITLE = 'Efforia Nanocomputadores'
-JQUERY_FILENAME = 'jquery-2.1.3.min.js'
+JQUERY_FILENAME = 'jquery-1.7.1.min.js'
 LOCALE_DATE = ('Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dec')
 STORE_POSTCODE = '90020110'
 STORE_COUNTRY = 'Brasil'
