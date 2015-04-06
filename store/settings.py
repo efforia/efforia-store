@@ -6,7 +6,7 @@ SHOP_CHECKOUT_STEPS_SPLIT = True
 SHOP_CHECKOUT_STEPS_CONFIRMATION = False
 SHOP_CURRENCY_LOCALE = 'ptb' if 'posix' not in os.name else 'pt_BR.UTF-8'
 SHOP_HANDLER_BILLING_SHIPPING = 'store.hooks.sedex_shipping_handler'
-SHOP_HANDLER_TAX = 'cartridge.shop.checkout.default_tax_handler'
+SHOP_HANDLER_TAX = None
 SHOP_HANDLER_ORDER = None
 SHOP_HANDLER_PAYMENT = 'store.hooks.multiple_payment_handler'
 
