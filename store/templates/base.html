@@ -85,60 +85,6 @@
 </head>
 
 <body id="{% block body_id %}body{% endblock %}" style="padding:0px;">
-    <nav class="navbar navbar-default fixed-navbar" style="padding-top:1px; background:#6EC497; color:white; min-height:28px; max-height:28px;">
-        <div class="col-md-6 leftaligned visible-lg visible-md">
-            Fale conosco: &nbsp;    
-            <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;+555198485888&nbsp;&nbsp;
-            <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforianano&nbsp;&nbsp;
-            <img src="{% static "svg/phone.svg" %}" height="18"/>&nbsp;(51) 3516-2367&nbsp;&nbsp;
-        </div>
-        <div class="visible-lg visible-md col-md-6 rightaligned">
-            {% if settings.SHOP_USE_WISHLIST %}
-                <a href="{% url "shop_wishlist" %}" class="btn-wishlist white">
-                <span class="glyphicon glyphicon-star"></span>
-                {% if request.wishlist|length < 1 %}
-                    {% trans "Sem itens na lista" %}
-                {% else %}
-                    {% blocktrans count request.wishlist|length as wishlist_count %}
-                        Lista contem 1 item{% plural %} Lista contém {{ wishlist_count }} items
-                    {% endblocktrans %}
-                {% endif %}
-                </a>&nbsp;&nbsp;
-            {% endif %}
-            <a href="{% url "shop_cart" %}" class="btn-cart white">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-                {% if request.cart.total_quantity > 0 %}
-                    {% blocktrans count request.cart.total_quantity as cart_quantity %}
-                        1 item{% plural %}{{ cart_quantity }} items
-                    {% endblocktrans %}
-                    {% trans "in cart" %}: {{ request.cart.total_price|currency }}
-                {% else %}
-                    {% trans "Sem itens no carrinho" %}
-                {% endif %}
-            </a>&nbsp;&nbsp;
-            {% if request.cart.total_quantity != 0 %}
-                <a href="{% url "shop_checkout" %}" style="text-decoration:none; color:white">{% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}</a>
-            {% endif %}
-        </div>
-        <div class="visible-sm visible-xs col-xs-12 centered">
-            <a href="{% url "shop_cart" %}" class="btn-cart white">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-                {% if request.cart.total_quantity > 0 %}
-                    {% blocktrans count request.cart.total_quantity as cart_quantity %}
-                        1 item{% plural %}{{ cart_quantity }} items
-                    {% endblocktrans %}
-                    {% trans "in cart" %}: {{ request.cart.total_price|currency }}
-                {% else %}
-                    {% trans "Sem itens no carrinho" %}
-                {% endif %}
-            </a>&nbsp;&nbsp;
-            {% if request.cart.total_quantity != 0 %}
-                <a href="{% url "shop_checkout" %}" style="text-decoration:none; color:white">{% if request.session.order.step %}{% trans "Return to Checkout" %}{% else %}{% trans "Go to Checkout" %}{% endif %}</a>      
-            {% endif %}
-        </div>
-
-        </div>
-    </nav>
     <nav class="navbar navbar-default fixed-navbar navbar-inverse">
         <div class="container-fluid">
             <a class="hidden-md hidden-lg navbar-brand navbar-left" style="background:transparent !important; padding-left:0px;" href="/">
@@ -148,7 +94,7 @@
                 <img src="{% static "svg/efforialogo.svg" %}" alt="Efforia" class="navbar-height"/>
             </a>
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed bordered navbar-height" data-toggle="collapse" data-target="#collapse" style="margin: 20px 15px;">
+                <button type="button" class="navbar-toggle collapsed bordered navbar-height" data-toggle="collapse" data-target="#collapsed" style="margin: 20px 15px;">
                     <span class="sr-only">{% trans "Toggle Navigation" %}</span>
                     <span class="icon-bar bar"></span>
                     <span class="icon-bar bar"></span>
@@ -165,35 +111,15 @@
                     </div>
             </form>
             </div>
-            <div id="collapsed" class="collapse navbar-collapse navbar-left none"> {% page_menu "pages/menus/dropdown.html" %} </div>
-            <div class="hidden-xs hidden-sm navbar-right centered rightmargin leftmargin" style="height:3em; margin:12px;">
-                {% ifinstalled mezzanine.accounts %}
-                    <div class="btn-group-vertical" role="group">
-                        {% include "accounts/includes/user_panel.html" %}
-                    </div>
-                {% endifinstalled %}
+            <div id="collapsed" class="collapse navbar-collapse navbar-left none"> 
+                {% page_menu "pages/menus/dropdown.html" %} 
             </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-default fixed-navbar navbar-inverse" style="background:#3398CC;">
-        <div id="collapse" class="collapse navbar-collapse navbar-left none">
-            <div class="visible-xs visible-sm"> {% page_menu "pages/menus/dropdown.html" %} </div>
-            {% page_menu "pages/menus/dropdown_store.html" %}
-            <div class="hidden-lg hidden-md centered rightmargin leftmargin" style="height:3em;">
-                    {% ifinstalled mezzanine.accounts %}
-                        <div class="btn-group" role="group">
-                        {% if request.cart.total_quantity != 0 %}
-                            <a href="{% url "shop_checkout" %}" class="btn btn-sm btn-primary">
-                            {% if request.session.order.step %}
-                                {% trans "Return to Checkout" %}
-                            {% else %}
-                                {% trans "Go to Checkout" %}
-                            {% endif %}</a>
-                        {% endif %}
-                        {% include "accounts/includes/user_panel.html" %}
-                        </div>
-                    {% endifinstalled %}
-                </div>
+            <div class="navbar-right centered rightmargin leftmargin" style="height:3em; margin:18px;">
+                <button onclick="window.location = '{% url "shop_cart" %}';" class="btn btn-lg btn-block" style="background:#6EC498; color:white;">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    &nbsp;&nbsp;{{ request.cart.total_quantity }}
+                </button>
+            </div>
         </div>
     </nav>
     <div class="content">
@@ -220,6 +146,20 @@
         </div>
     </div>
     <footer class="footer">
+        <nav style="padding-top:1px; margin-top:-15px; margin-bottom:15px; background:#6EC497; color:white; min-height:28px; max-height:28px;">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 centered visible-lg visible-md" style="font-size:0.9em; font-weight:normal;">
+                <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;+555198485888&nbsp;&nbsp;
+                <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforianano&nbsp;&nbsp;
+                <img src="{% static "svg/phone.svg" %}" height="18"/>&nbsp;(51) 3516-2367&nbsp;&nbsp;
+            </div>
+            <div class="col-md-6 centered visible-xs visible-sm" style="font-size:0.8em; font-weight:normal;">
+                <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;+555198485888&nbsp;&nbsp;
+                <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforianano&nbsp;&nbsp;
+                <img src="{% static "svg/phone.svg" %}" height="18"/>&nbsp;(51) 3516-2367&nbsp;&nbsp;
+            </div>
+            <div class="col-md-3"></div>
+        </nav>
         <div class="container">
             <div class="hidden-xs">{% page_menu "pages/menus/footer.html" %}</div>
             <div class="row">

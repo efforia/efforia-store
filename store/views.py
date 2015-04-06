@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 import paypalrestsdk,urlparse,urllib2
 from xml.etree import ElementTree as ETree
 from hooks import paypal_api,pagseguro_api
@@ -40,7 +42,7 @@ def payment_redirect(request, order_id):
 def payment_slip(request):
 	orderid = request.GET['id']
 	order = Order.objects.filter(id=orderid)[0]
-	send_mail('Pedido de boleto', 'Pedido de boleto. Order ID: %s' % order.id, 'oi@efforia.com.br',
+	send_mail('Pedido de boleto', 'O pedido de boleto foi solicitado ao Efforia para o pedido %s. Em instantes você estará recebendo pelo e-mail. Aguarde instruções.' % order.id, 'oi@efforia.com.br',
     [order.billing_detail_email,'contato@efforia.com.br'], fail_silently=False)
 	context = { "order": order }
 	resp = render(request,"shop/slip_confirmation.html",context)
