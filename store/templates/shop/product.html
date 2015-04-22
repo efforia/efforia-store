@@ -60,7 +60,7 @@ $(document).ready(function() {
     {% for image in images %}
     <li id="image-{{ image.id }}-large"{% if not forloop.first %}style="display:none;"{% endif %}>
         <a class="product-image-large" href="{{ MEDIA_URL }}{{ image.file }}">
-            <img alt="{{ image.description }}" src="{{ MEDIA_URL }}{% thumbnail image.file 0 300 %}" class="img-responsive col-xs-12" style="border-radius:15px; padding:0px;">
+            <img alt="{{ image.description }}" src="{{ MEDIA_URL }}{% thumbnail image.file 0 300 %}" class="img-responsive col-xs-12" style="border-radius:5px; padding:0px;">
         </a>
     </li>
     {% endfor %}
@@ -129,8 +129,8 @@ $(document).ready(function() {
     <div class="panel-body">{% rating_for product %}</div>
 </div>
 {% endif %}
-
 {% if related_products %}
+<div class="col-md-12">
 <h2>{% trans "Related Products" %}</h2>
 <div class="row related-products">
     {% for product in related_products %}
@@ -156,6 +156,7 @@ $(document).ready(function() {
         </a>
     </div>
     {% endfor %}
+</div>
 </div>
 {% endif %}
 </div>
