@@ -51,7 +51,8 @@ $(document).ready(function() {
 {% endblock %}
 
 {% block main %}
-
+<div class="text-center">
+<div class="col-md-6 col-sm-6">
 {% if images %}
 {% spaceless %}
 <ul id="product-images-large" class="list-unstyled list-inline">
@@ -82,7 +83,8 @@ $(document).ready(function() {
 {% editable product.content %}
 {{ product.content|richtext_filters|safe }}
 {% endeditable %}
-
+</div>
+<div class="col-md-6 col-sm-6">
 {% if product.available and has_available_variations %}
 <ul id="variations" class="list-unstyled">
     {% for variation in variations %}
@@ -90,10 +92,10 @@ $(document).ready(function() {
         {% if not variation.default %}style="display:none;"{% endif %}>
         {% if variation.has_price %}
             {% if variation.on_sale %}
-                <span class="old-price">{{ variation.unit_price|currency }}</span>
+                <h3 class="text-center"><span class="old-price">{{ variation.unit_price|currency }}</span></h3>
                 {% trans "On sale:" %}
             {% endif %}
-            <span class="price">{{ variation.price|currency }}</span>
+            <h1 class="text-center"><span class="price">{{ variation.price|currency }}</span></h1>
         {% else %}
             {% if has_available_variations %}
             <span class="error-msg">
@@ -104,24 +106,25 @@ $(document).ready(function() {
     </li>
     {% endfor %}
 </ul>
-
 {% errors_for add_product_form %}
 
 <form method="post" id="add-cart" class="shop-form">
-    {% fields_for add_product_form %}
+    <div class="text-left">
+        {% fields_for add_product_form %}
+    </div>
     <div class="form-actions">
-        <input type="submit" class="btn btn-primary btn-lg pull-right" name="add_cart" value="{% trans "Buy" %}">
+        <input type="submit" class="btn btn-primary btn-lg pull-left" name="add_cart" value="{% trans "Buy" %}">
         {% if settings.SHOP_USE_WISHLIST %}
-        <input type="submit" class="btn btn-default btn-lg pull-left" name="add_wishlist" value="{% trans "Save for later" %}">
+        <input type="submit" class="btn btn-default btn-lg pull-right" name="add_wishlist" value="{% trans "Save for later" %}">
         {% endif %}
     </div>
 </form>
 {% else %}
 <p class="error-msg">{% trans "This product is currently unavailable." %}</p>
 {% endif %}
-
+</div>
 {% if settings.SHOP_USE_RATINGS %}
-<div class="panel panel-default rating">
+<div class="panel panel-default rating col-md-12">
     <div class="panel-body">{% rating_for product %}</div>
 </div>
 {% endif %}
@@ -154,5 +157,5 @@ $(document).ready(function() {
     {% endfor %}
 </div>
 {% endif %}
-
+</div>
 {% endblock %}
