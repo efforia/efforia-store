@@ -11,14 +11,14 @@
     {% for page in page_branch %}
     {% if not has_home and page.is_primary and forloop.first %}
     <!--<li{% if on_home %} class=""{% endif %} id="dropdown-menu-home">
-        <a style="color:white" href="{% url "home" %}">{% trans "Home" %}</a>
+        <a style="color:black" href="{% url "home" %}">{% trans "Home" %}</a>
     </li>!-->
     {% endif %}
     {% if page.in_menu %}
             <li class="{% if page.has_children_in_menu %}dropdown{% endif %}
                        {% if page.is_current_or_ascendant %}active{% endif %}"
                 id="{{ page.html_id }}">
-                <a class="centered" style="font-size:1.2em; color:white" href="{{ page.get_absolute_url }}"
+                <a class="centered" style="font-size:1.2em; color:black" href="{{ page.get_absolute_url }}"
                 {% if page.has_children_in_menu %}
                 class="dropdown-toggle disabled" data-toggle="dropdown"
                 onclick="window.location = {{ page.get_absolute_url }};"
@@ -30,13 +30,13 @@
                 {% endif %}
             </li>
     {% endfor %}
-    <li id="#blog"><a class="centered" href="/blog/" style="font-size:1.2em; color:white" class="dropdown-toggle disable" data-toggle="dropdown" onclick="window.location = '/blog';">Blog</a></li>
+    <!--<li id="#blog"><a class="centered" href="/blog/" style="font-size:1.2em; color:black" class="dropdown-toggle disable" data-toggle="dropdown" onclick="window.location = '/blog';">Blog</a></li>!-->
     <li class="dropdown" id="#account">
-        <a class="centered" href="/account/" style="font-size:1.2em; color:white" class="dropdown-toggle disabled" data-toggle="dropdown" onclick="window.location = '/account';"> Minha Conta </a>
-        <ul style="background:#222; box-shadow:none; border:none;" class="dropdown-menu">
-            <li class=""><a href="/account/orders" style="color:white; font-size:1.2em">Meus Pedidos</a></li>
-            <li class=""><a href="/account/update" style="color:white; font-size:1.2em">Atualizar Perfil</a></li>
-            <li class=""><a href="/shop/wishlist" style="color:white; font-size:1.2em">Lista de Desejos</a></li>
+        <a class="centered" href="/account/" style="font-size:1.2em; color:black" class="dropdown-toggle disabled" data-toggle="dropdown" onclick="window.location = '/account';"> Minha Conta </a>
+        <ul style="background:#F8F8F8; box-shadow:none; border:none;" class="dropdown-menu">
+            <li class=""><a href="/account/orders" style="color:black; font-size:1.2em">Meus Pedidos</a></li>
+            <li class=""><a href="/account/update" style="color:black; font-size:1.2em">Atualizar Perfil</a></li>
+            <li class=""><a href="/shop/wishlist" style="color:black; font-size:1.2em">Lista de Desejos</a></li>
         </ul>
 
     </li>
@@ -47,13 +47,13 @@
 .dropdown-toggle { background:transparent !important; } 
 .caret { display:none; }
 </style>
-<ul class="dropdown-menu" style="background:#222; box-shadow:none; border:none;">
+<ul class="dropdown-menu" style="background:#F8F8F8; box-shadow:none; border:none;">
     {% for page in page_branch %}
     {% if page.in_menu %}
     <li class="{% if page.has_children_in_menu %}dropdown-submenu{% endif %}
                {% if page.is_current_or_ascendant %}active{% endif %}"
         id="{{ page.html_id }}">
-        <a style="color:white; font-size:1.2em" href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+        <a style="color:black; font-size:1.2em" href="{{ page.get_absolute_url }}">{{ page.title }}</a>
         {% if page.has_children_in_menu %}{% page_menu page %}{% endif %}
     </li>
     {% endif %}
