@@ -65,7 +65,7 @@ LANGUAGES = (
 	('pt-BR', _('Brazilian Portuguese')),
 	('en', _('English'))
 )
-DEBUG = True if 'posix' not in os.name else False
+DEBUG = True
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SITE_ID = 1
 USE_I18N = True
@@ -77,7 +77,7 @@ TEMPLATE_LOADERS = (
 )
 
 AUTHENTICATION_BACKENDS = (
-    'mezzanine.core.auth_backends.MezzanineBackend', 
+    'mezzanine.core.auth_backends.MezzanineBackend',
     'django.contrib.auth.backends.ModelBackend'
 )
 
@@ -89,33 +89,33 @@ STATICFILES_FINDERS = (
 FILE_UPLOAD_PERMISSIONS = 420
 DATABASES = {}
 
-if 'posix' not in os.name:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': 'dev.db',
-            'USER': '',
-            'PASSWORD': '',
-            'HOST': '',
-            'PORT': ''
-        }
+
+GRAPPELLI_INSTALLED = True
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "efforia.db"
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'efforia',
-            'USER': 'efforia',
-            'PASSWORD': 'mk28to#$',
-            'HOST': '127.0.0.1',
-            'PORT': ''
-        }
-    }
-    CACHE_MIDDLEWARE_SECONDS = 60
-    CACHE_MIDDLEWARE_KEY_PREFIX = 'efforia'
-    CACHES = {'default': {'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-                  'LOCATION': '127.0.0.1:11211'}}
-    SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+}
+
+# PostgreSQL Connection for Django
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'efforia',
+#        'USER': 'efforia',
+#        'PASSWORD': 'mk28to#$',
+#        'HOST': '127.0.0.1',
+#        'PORT': ''
+#    }
+#}
+
+CACHE_MIDDLEWARE_SECONDS = 60
+CACHE_MIDDLEWARE_KEY_PREFIX = 'efforia'
+CACHES = {'default': {'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+              'LOCATION': '127.0.0.1:11211'}}
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
 LOGGING = {
     'version': 1,
@@ -135,28 +135,28 @@ ROOT_URLCONF = 'store.urls'
 TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, 'templates'),)
 
 INSTALLED_APPS = (
-    'django.contrib.admin', 
-    'django.contrib.auth', 
-    'django.contrib.contenttypes', 
-    'django.contrib.redirects', 
-    'django.contrib.sessions', 
-    'django.contrib.sites', 
-    'django.contrib.sitemaps', 
-    'django.contrib.staticfiles', 
-    'cartridge.shop', 
-    'mezzanine.boot', 
-    'mezzanine.conf', 
-    'mezzanine.core', 
-    'mezzanine.generic', 
-    'mezzanine.blog', 
-    'mezzanine.forms', 
-    'mezzanine.pages', 
-    'mezzanine.galleries', 
-    'mezzanine.twitter', 
-    'mezzanine.accounts',  
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.redirects',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    'django.contrib.staticfiles',
+    'cartridge.shop',
+    'mezzanine.boot',
+    'mezzanine.conf',
+    'mezzanine.core',
+    'mezzanine.generic',
+    'mezzanine.blog',
+    'mezzanine.forms',
+    'mezzanine.pages',
+    'mezzanine.galleries',
+    'mezzanine.twitter',
+    'mezzanine.accounts',
     'shipping',
-    'store', 
-    'south', 
+    'store',
+    'south',
     'gunicorn'
 )
 
