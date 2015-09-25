@@ -92,24 +92,17 @@ DATABASES = {}
 
 GRAPPELLI_INSTALLED = True
 
+# PostgreSQL Connection for Django
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "efforia.db"
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'efforia',
+        'USER': 'efforia',
+        'PASSWORD': 'mk28to#$',
+        'HOST': '127.0.0.1',
+        'PORT': ''
     }
 }
-
-# PostgreSQL Connection for Django
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'efforia',
-#        'USER': 'efforia',
-#        'PASSWORD': 'mk28to#$',
-#        'HOST': '127.0.0.1',
-#        'PORT': ''
-#    }
-#}
 
 CACHE_MIDDLEWARE_SECONDS = 60
 CACHE_MIDDLEWARE_KEY_PREFIX = 'efforia'
