@@ -17,11 +17,11 @@ RUN echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
 RUN locale-gen
 
 RUN pip install --no-cache-dir -r requirements.txt
-RUN python manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput --settings="store.production"
 
 RUN psql -U postgres -h db -c "create database efforia;"
-RUN python manage.py syncdb --noinput
-RUN python manage.py migrate --noinput
+RUN python manage.py syncdb --noinput --settings="store.production"
+RUN python manage.py migrate --noinput --settings="store.production"
 
 EXPOSE 8080
 CMD ["apache2ctl", "-D", "FOREGROUND"]
