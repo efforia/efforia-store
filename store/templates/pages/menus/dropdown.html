@@ -32,7 +32,7 @@
     {% endfor %}
     <!--<li id="#blog"><a class="centered" href="/blog/" style="font-size:1.2em; color:black" class="dropdown-toggle disable" data-toggle="dropdown" onclick="window.location = '/blog';">Blog</a></li>!-->
     <li class="dropdown" id="#account">
-        <a class="centered" href="/account/" style="font-size:1.2em; color:black" class="dropdown-toggle disabled" data-toggle="dropdown" onclick="window.location = '/account';"> Minha Conta </a>
+        <a class="centered" href="/account/" style="font-size:1.2em; color:black" class="dropdown-toggle disabled" data-toggle="dropdown" onclick="window.location = '/account';">{% trans "My Account" %}</a>
         <ul style="background:#F8F8F8; box-shadow:none; border:none;" class="dropdown-menu">
             <li class=""><a href="/account/orders" style="color:black; font-size:1.2em">Meus Pedidos</a></li>
             <li class=""><a href="/account/update" style="color:black; font-size:1.2em">Atualizar Perfil</a></li>
@@ -44,7 +44,7 @@
 
 {% else %}
 <style>
-.dropdown-toggle { background:transparent !important; } 
+.dropdown-toggle { background:transparent !important; }
 .caret { display:none; }
 </style>
 <ul class="dropdown-menu" style="background:#F8F8F8; box-shadow:none; border:none;">

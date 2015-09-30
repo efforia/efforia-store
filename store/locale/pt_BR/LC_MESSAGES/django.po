@@ -1,0 +1,745 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-30 18:21-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: store/forms.py:17
+msgid "My delivery details are the same as my billing details"
+msgstr ""
+
+#: store/hooks.py:73 store/hooks.py:114
+msgid "Correios"
+msgstr ""
+
+#: store/hooks.py:127
+msgid ""
+"Credenciais de acesso ao paypal estao faltando, isso inclui "
+"PAYPAL_SANDBOX_MODE, PAYPAL_CLIENT_ID e PAYPAL_CLIENT_SECRET basta inclui-"
+"las no settings.py para serem utilizadas no processador de pagamentos do "
+"paypal."
+msgstr ""
+
+#: store/hooks.py:146
+msgid ""
+"Credenciais de acesso ao pagseguro estao faltando, isso inclui "
+"PAGSEGURO_SANDBOX_MODE, PAGSEGURO_CLIENT_ID e PAGSEGURO_CLIENT_SECRET basta "
+"inclui-las no settings.py para serem utilizadas no processador de pagamentos "
+"do pagseguro."
+msgstr ""
+
+#: store/production.py:65 store/settings.py:65
+msgid "Brazilian Portuguese"
+msgstr ""
+
+#: store/production.py:66 store/settings.py:66
+msgid "English"
+msgstr ""
+
+#: store/templates/base.html:98
+msgid "Toggle Navigation"
+msgstr ""
+
+#: store/templates/index.html:63
+msgid "\n"
+msgstr ""
+
+#: store/templates/search_results.html:5 store/templates/search_results.html:6
+#: store/templates/search_results.html:15
+msgid "Search Results"
+msgstr ""
+
+#: store/templates/search_results.html:13
+#: store/templates/pages/menus/breadcrumb.html:4
+#: store/templates/pages/menus/breadcrumb.html:10
+#: store/templates/pages/menus/dropdown.html:14
+#: store/templates/pages/menus/footer_tree.html:11
+#: store/templates/pages/menus/mobile.html:10
+#: store/templates/pages/menus/primary.html:8
+#: store/templates/pages/menus/tree.html:9
+msgid "Home"
+msgstr ""
+
+#: store/templates/search_results.html:22
+#, python-format
+msgid ""
+"\n"
+"No results were found in %(search_type)s matching your query: %(query)s\n"
+msgstr ""
+
+#: store/templates/search_results.html:26
+#, python-format
+msgid ""
+"\n"
+"Showing %(start)s to %(end)s of %(total)s results in %(search_type)s "
+"matching your query: %(query)s\n"
+msgstr ""
+
+#: store/templates/search_results.html:37
+#: store/templates/blog/blog_post_list.html:128
+msgid "read more"
+msgstr ""
+
+#: store/templates/accounts/account_login.html:7
+msgid ""
+"You're already logged in. If you'd like to log in as a different user, "
+"you'll need to log out first."
+msgstr ""
+
+#: store/templates/accounts/account_login.html:11
+#, python-format
+msgid ""
+"If you don't have an account you can <a href=\"%(signup_url)s?next=%(next)s"
+"\">sign up</a> for one now."
+msgstr ""
+
+#: store/templates/accounts/account_login.html:14
+#, python-format
+msgid ""
+"<p>You can also <a href=\"%(password_reset_url)s?next=%(profile_update_url)s"
+"\">reset your password</a> if you've forgotten it.</p>"
+msgstr ""
+
+#: store/templates/accounts/account_password_reset.html:6
+msgid ""
+"Enter your username or email address and you'll receive an email with a link "
+"you need to click, in order to log in and change your password."
+msgstr ""
+
+#: store/templates/accounts/account_profile.html:18
+#: store/templates/accounts/includes/user_panel.html:5
+msgid "Update profile"
+msgstr ""
+
+#: store/templates/accounts/account_signup.html:7
+msgid ""
+"You're already logged in. If you'd like to create a new account, you'll need "
+"to log out first."
+msgstr ""
+
+#: store/templates/accounts/account_signup.html:11
+msgid ""
+"After signing up, your account will be reviewed for approval. You'll receive "
+"an email when your account is activated."
+msgstr ""
+
+#: store/templates/accounts/account_signup.html:13
+msgid ""
+"After signing up, you'll receive an email with a link you need to click, in "
+"order to activate your account."
+msgstr ""
+
+#: store/templates/accounts/includes/user_panel.html:7
+#: store/templates/accounts/includes/user_panel_nav.html:11
+#: store/templates/includes/editable_toolbar.html:9
+msgid "Log out"
+msgstr ""
+
+#: store/templates/accounts/includes/user_panel.html:10
+#: store/templates/accounts/includes/user_panel_nav.html:14
+msgid "Log in"
+msgstr ""
+
+#: store/templates/accounts/includes/user_panel.html:12
+#: store/templates/accounts/includes/user_panel_nav.html:16
+msgid "Sign up"
+msgstr ""
+
+#: store/templates/blog/blog_post_detail.html:29
+#: store/templates/blog/blog_post_list.html:83
+msgid "Posted by"
+msgstr ""
+
+#: store/templates/blog/blog_post_detail.html:33
+#: store/templates/blog/blog_post_list.html:95
+#: store/templates/generic/includes/comment.html:22
+#: store/templates/generic/includes/comment.html:59
+#: store/templates/twitter/tweets.html:19
+#, python-format
+msgid "%(sometime)s ago"
+msgstr ""
+
+#: store/templates/blog/blog_post_detail.html:43
+#: store/templates/blog/blog_post_list.html:134
+#: store/templates/generic/includes/comments.html:3
+msgid "Comments"
+msgstr ""
+
+#: store/templates/blog/blog_post_detail.html:46
+#: store/templates/blog/blog_post_list.html:138
+#, python-format
+msgid "%(comments_count)s comment"
+msgid_plural "%(comments_count)s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: store/templates/blog/blog_post_detail.html:74
+#: store/templates/blog/blog_post_list.html:119
+#: store/templates/blog/includes/filter_panel.html:48
+msgid "Tags"
+msgstr ""
+
+#: store/templates/blog/blog_post_detail.html:93
+msgid "Share on Twitter"
+msgstr ""
+
+#: store/templates/blog/blog_post_detail.html:94
+msgid "Share on Facebook"
+msgstr ""
+
+#: store/templates/blog/blog_post_detail.html:119
+msgid "Related posts"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:4
+#: store/templates/blog/blog_post_list.html:22
+msgid "Blog"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:31
+msgid "Tag:"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:33
+msgid "Category:"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:37
+msgid "Author:"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:50
+msgid "Viewing posts tagged"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:52
+msgid "Viewing posts for the category"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:54
+msgid "Viewing posts from"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:57
+msgid "Viewing posts by"
+msgstr ""
+
+#: store/templates/blog/blog_post_list.html:89
+msgid "in"
+msgstr ""
+
+#: store/templates/blog/includes/filter_panel.html:6
+msgid "Recent Posts"
+msgstr ""
+
+#: store/templates/blog/includes/filter_panel.html:19
+msgid "Archive"
+msgstr ""
+
+#: store/templates/blog/includes/filter_panel.html:35
+msgid "Categories"
+msgstr ""
+
+#: store/templates/blog/includes/filter_panel.html:64
+msgid "Authors"
+msgstr ""
+
+#: store/templates/blog/includes/filter_panel.html:76
+msgid "Feeds"
+msgstr ""
+
+#: store/templates/blog/includes/filter_panel.html:78
+#: store/templates/blog/includes/filter_panel.html:82
+#: store/templates/blog/includes/filter_panel.html:86
+#: store/templates/blog/includes/filter_panel.html:90
+msgid "RSS"
+msgstr ""
+
+#: store/templates/blog/includes/filter_panel.html:79
+#: store/templates/blog/includes/filter_panel.html:83
+#: store/templates/blog/includes/filter_panel.html:87
+#: store/templates/blog/includes/filter_panel.html:91
+msgid "Atom"
+msgstr ""
+
+#: store/templates/email/account_approve.html:3
+msgid "Hey there, a new account has been created and requires activation."
+msgstr ""
+
+#: store/templates/email/account_approve.html:5
+msgid "Name"
+msgstr ""
+
+#: store/templates/email/account_approve.html:6
+msgid "Email"
+msgstr ""
+
+#: store/templates/email/account_approve.html:11
+#: store/templates/email/signup_verify.html:4
+msgid "Please use the link below to activate it."
+msgstr ""
+
+#: store/templates/email/account_approved.html:3
+msgid "Hey there, your account has been activated."
+msgstr ""
+
+#: store/templates/email/account_approved.html:4
+msgid "Please use the link below to log in."
+msgstr ""
+
+#: store/templates/email/comment_notification.html:6
+msgid "A new comment has been posted on"
+msgstr ""
+
+#: store/templates/email/comment_notification.html:10
+#, python-format
+msgid ""
+"\n"
+"    At %(submit_date)s %(user_name)s wrote:\n"
+"    "
+msgstr ""
+
+#: store/templates/email/password_reset_verify.html:3
+msgid "Hey there, the password reset form was used for your account."
+msgstr ""
+
+#: store/templates/email/password_reset_verify.html:4
+msgid "Please use the link below to log in and update your password."
+msgstr ""
+
+#: store/templates/email/password_reset_verify.html:6
+msgid ""
+"If you didn't request for your password to be reset, please ignore this "
+"email."
+msgstr ""
+
+#: store/templates/email/receipt.html:3
+#: store/templates/email/receipt_rtl.html:3
+msgid "Dear"
+msgstr ""
+
+#: store/templates/email/receipt.html:4
+#: store/templates/email/receipt_rtl.html:4
+msgid "Your order has been successful, details are below."
+msgstr ""
+
+#: store/templates/email/signup_verify.html:3
+msgid "Hey there, thanks for creating your account."
+msgstr ""
+
+#: store/templates/errors/404.html:6 store/templates/errors/404.html.py:10
+#: store/templates/errors/404.html:15
+msgid "Page not found"
+msgstr ""
+
+#: store/templates/errors/404.html:16
+msgid "The page you requested does not exist."
+msgstr ""
+
+#: store/templates/errors/500.html:6 store/templates/errors/500.html.py:10
+#: store/templates/errors/500.html:15
+msgid "Error"
+msgstr ""
+
+#: store/templates/errors/500.html:16
+msgid "Sorry, an error occurred."
+msgstr ""
+
+#: store/templates/generic/includes/comment.html:30
+msgid "Link"
+msgstr ""
+
+#: store/templates/generic/includes/comment.html:33
+#: store/templates/generic/includes/comment.html:49
+msgid "Reply"
+msgstr ""
+
+#: store/templates/generic/includes/comment.html:55
+msgid "Comment deleted"
+msgstr ""
+
+#: store/templates/generic/includes/comment.html:57
+msgid "Comment awaiting approval"
+msgstr ""
+
+#: store/templates/generic/includes/comment.html:71
+msgid "There are currently no comments"
+msgstr ""
+
+#: store/templates/generic/includes/comments.html:17
+msgid "New Comment"
+msgstr ""
+
+#: store/templates/generic/includes/comments.html:25
+msgid "Comment"
+msgstr ""
+
+#: store/templates/generic/includes/rating.html:5
+msgid "Current rating"
+msgstr ""
+
+#: store/templates/generic/includes/rating.html:7
+msgid "Currently unrated"
+msgstr ""
+
+#: store/templates/generic/includes/rating.html:17
+msgid "Rate"
+msgstr ""
+
+#: store/templates/includes/editable_form.html:16
+msgid "Save"
+msgstr ""
+
+#: store/templates/includes/editable_form.html:17
+msgid "Cancel"
+msgstr ""
+
+#: store/templates/includes/editable_form.html:25
+msgid "Edit"
+msgstr ""
+
+#: store/templates/includes/editable_toolbar.html:8
+msgid "Admin"
+msgstr ""
+
+#: store/templates/includes/form_errors.html:8
+msgid "Please correct the errors below."
+msgstr ""
+
+#: store/templates/includes/pagination.html:7
+msgid "Page"
+msgstr ""
+
+#: store/templates/includes/pagination.html:7
+#: store/templates/shop/checkout.html:5
+msgid "of"
+msgstr ""
+
+#: store/templates/includes/search_form.html:5
+msgid "Search"
+msgstr ""
+
+#: store/templates/includes/search_form.html:14
+msgid "Everything"
+msgstr ""
+
+#: store/templates/includes/search_form.html:26
+msgid "Go"
+msgstr ""
+
+#: store/templates/pages/category.html:45
+msgid "Sort by"
+msgstr ""
+
+#: store/templates/pages/category.html:75 store/templates/shop/cart.html:93
+#: store/templates/shop/product.html:97 store/templates/shop/product.html:148
+msgid "On sale:"
+msgstr ""
+
+#: store/templates/pages/category.html:79 store/templates/shop/cart.html:97
+#: store/templates/shop/product.html:152
+msgid "Coming soon"
+msgstr ""
+
+#: store/templates/pages/menus/admin.html:31
+msgid "Add"
+msgstr ""
+
+#: store/templates/pages/menus/dropdown.html:35
+msgid "My Account"
+msgstr "Minha Conta"
+
+#: store/templates/shop/bank_confirmation.html:4
+#: store/templates/shop/bank_confirmation.html:6
+#: store/templates/shop/payment_confirmation.html:4
+#: store/templates/shop/payment_confirmation.html:6
+#: store/templates/shop/slip_confirmation.html:4
+#: store/templates/shop/slip_confirmation.html:6
+msgid "Confirmação de Pagamento"
+msgstr ""
+
+#: store/templates/shop/bank_confirmation.html:9
+#: store/templates/shop/payment_confirmation.html:9
+#: store/templates/shop/slip_confirmation.html:9
+msgid "Thank you for shopping with us, your order is complete."
+msgstr ""
+
+#: store/templates/shop/bank_confirmation.html:10
+msgid "Seu pedido será processado assim que houver a comprovação do pagamento"
+msgstr ""
+
+#: store/templates/shop/bank_confirmation.html:11
+msgid ""
+"Para depósito bancário ou transferência eletrônica, favor enviar comprovante "
+"de transação para o e-mail oi@efforia.com.br. Seguem os dados:"
+msgstr ""
+
+#: store/templates/shop/bank_confirmation.html:18
+msgid "Pagar com o boleto bancário"
+msgstr ""
+
+#: store/templates/shop/bank_confirmation.html:19
+#: store/templates/shop/payment_confirmation.html:13
+#: store/templates/shop/slip_confirmation.html:13
+msgid "Download PDF invoice"
+msgstr ""
+
+#: store/templates/shop/bank_confirmation.html:20
+#: store/templates/shop/payment_confirmation.html:14
+#: store/templates/shop/slip_confirmation.html:14
+msgid "View invoice in your browser"
+msgstr ""
+
+#: store/templates/shop/billing_shipping.html:17
+#, python-format
+msgid ""
+"\n"
+"If you have an existing account or would like to create one, please\n"
+"<a href=\"%(login_url)s?next=%(next)s\">log in</a> or\n"
+"<a href=\"%(signup_url)s?next=%(next)s\">sign up</a>.\n"
+msgstr ""
+
+#: store/templates/shop/billing_shipping.html:30
+#: store/templates/shop/confirmation.html:10
+#: store/templates/shop/includes/order_details.html:15
+#: store/templates/shop/includes/order_details_rtl.html:15
+msgid "Billing Details"
+msgstr ""
+
+#: store/templates/shop/billing_shipping.html:35
+msgid "Delivery Details"
+msgstr ""
+
+#: store/templates/shop/cart.html:4 store/templates/shop/cart.html.py:5
+#: store/templates/shop/cart.html:10
+msgid "Your Cart"
+msgstr ""
+
+#: store/templates/shop/cart.html:26
+#: store/templates/shop/includes/order_details.html:39
+#: store/templates/shop/includes/order_details_rtl.html:45
+msgid "Item"
+msgstr ""
+
+#: store/templates/shop/cart.html:27
+#: store/templates/shop/includes/order_details.html:40
+#: store/templates/shop/includes/order_details_rtl.html:44
+msgid "Unit Price"
+msgstr ""
+
+#: store/templates/shop/cart.html:28
+#: store/templates/shop/order_history.html:20
+#: store/templates/shop/includes/order_details.html:41
+#: store/templates/shop/includes/order_details_rtl.html:43
+msgid "Qty"
+msgstr ""
+
+#: store/templates/shop/cart.html:29
+#: store/templates/shop/includes/order_details.html:42
+#: store/templates/shop/includes/order_details_rtl.html:42
+msgid "Price"
+msgstr ""
+
+#: store/templates/shop/cart.html:30
+msgid "Remove?"
+msgstr ""
+
+#: store/templates/shop/cart.html:64
+msgid "Return to Checkout"
+msgstr ""
+
+#: store/templates/shop/cart.html:64
+msgid "Go to Checkout"
+msgstr ""
+
+#: store/templates/shop/cart.html:66
+msgid "Update Cart"
+msgstr ""
+
+#: store/templates/shop/cart.html:73
+msgid "Apply"
+msgstr ""
+
+#: store/templates/shop/cart.html:79
+msgid "You may also like:"
+msgstr ""
+
+#: store/templates/shop/cart.html:109
+msgid "Your Cart is empty."
+msgstr ""
+
+#: store/templates/shop/checkout.html:4 store/templates/shop/checkout.html:5
+msgid "Checkout"
+msgstr ""
+
+#: store/templates/shop/checkout.html:5
+msgid "Step"
+msgstr ""
+
+#: store/templates/shop/checkout.html:25 store/templates/shop/complete.html:70
+msgid "Complete"
+msgstr ""
+
+#: store/templates/shop/checkout.html:40
+msgid "Next"
+msgstr ""
+
+#: store/templates/shop/checkout.html:42
+msgid "Back"
+msgstr ""
+
+#: store/templates/shop/checkout.html:46
+msgid "Your cart is empty."
+msgstr ""
+
+#: store/templates/shop/checkout.html:47
+msgid ""
+"This may be due to your session timing out after a period of inactivity."
+msgstr ""
+
+#: store/templates/shop/checkout.html:48
+msgid "We apologize for the inconvenience."
+msgstr ""
+
+#: store/templates/shop/checkout.html:50 store/templates/shop/wishlist.html:44
+msgid "Continue Shopping"
+msgstr ""
+
+#: store/templates/shop/checkout.html:75
+msgid "Edit Cart"
+msgstr ""
+
+#: store/templates/shop/complete.html:5 store/templates/shop/complete.html:61
+msgid "Order Complete"
+msgstr ""
+
+#: store/templates/shop/confirmation.html:23
+#: store/templates/shop/includes/order_details.html:16
+#: store/templates/shop/includes/order_details_rtl.html:16
+msgid "Shipping Details"
+msgstr ""
+
+#: store/templates/shop/order_history.html:4
+#: store/templates/shop/order_history.html:5
+#: store/templates/shop/order_history.html:9
+msgid "Order History"
+msgstr ""
+
+#: store/templates/shop/order_history.html:19
+msgid "Date / time"
+msgstr ""
+
+#: store/templates/shop/order_history.html:21
+msgid "Paid"
+msgstr ""
+
+#: store/templates/shop/order_history.html:22
+msgid "Status"
+msgstr ""
+
+#: store/templates/shop/order_history.html:33
+msgid "Download PDF"
+msgstr ""
+
+#: store/templates/shop/order_history.html:34
+msgid "View invoice"
+msgstr ""
+
+#: store/templates/shop/order_history.html:43
+msgid "You have not ordered anything from us yet."
+msgstr ""
+
+#: store/templates/shop/payment_confirmation.html:10
+msgid "Seu pagamento foi confirmado e seu produto será enviado em breve."
+msgstr ""
+
+#: store/templates/shop/product.html:103
+msgid "The selected options are currently unavailable."
+msgstr ""
+
+#: store/templates/shop/product.html:117 store/templates/shop/wishlist.html:34
+msgid "Buy"
+msgstr ""
+
+#: store/templates/shop/product.html:119
+msgid "Save for later"
+msgstr ""
+
+#: store/templates/shop/product.html:124
+msgid "This product is currently unavailable."
+msgstr ""
+
+#: store/templates/shop/product.html:134
+msgid "Related Products"
+msgstr ""
+
+#: store/templates/shop/slip_confirmation.html:10
+msgid ""
+"Seu pedido para boleto será processado em breve. Você receberá o documento "
+"por e-mail."
+msgstr ""
+
+#: store/templates/shop/wishlist.html:4 store/templates/shop/wishlist.html:5
+#: store/templates/shop/wishlist.html:9
+msgid "Your Wishlist"
+msgstr ""
+
+#: store/templates/shop/wishlist.html:35
+msgid "Remove"
+msgstr ""
+
+#: store/templates/shop/wishlist.html:42
+msgid "Your wishlist is empty."
+msgstr ""
+
+#: store/templates/shop/includes/order_details.html:7
+#: store/templates/shop/includes/order_details_rtl.html:8
+msgid "Order ID:"
+msgstr ""
+
+#: store/templates/shop/includes/order_details.html:12
+#: store/templates/shop/includes/order_details_rtl.html:12
+msgid "Your Details"
+msgstr ""
+
+#: store/templates/shop/includes/order_details.html:36
+#: store/templates/shop/includes/order_details_rtl.html:36
+msgid "Items Ordered"
+msgstr ""
+
+#: store/templates/shop/includes/order_totals.html:4
+msgid "Sub total"
+msgstr ""
+
+#: store/templates/shop/includes/order_totals.html:12
+msgid "Discount"
+msgstr ""
+
+#: store/templates/shop/includes/order_totals.html:23
+msgid "Shipping"
+msgstr ""
+
+#: store/templates/shop/includes/order_totals.html:34
+msgid "Tax"
+msgstr ""
+
+#: store/templates/shop/includes/order_totals.html:39
+msgid "Total"
+msgstr ""
+
+#: store/templates/twitter/tweets.html:7
+msgid "Recent Tweets"
+msgstr ""
