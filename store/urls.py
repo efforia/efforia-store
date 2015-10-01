@@ -18,6 +18,7 @@ urlpatterns += patterns(u'',
                         url(u'^store/execute', u'store.views.payment_execute', name=u'payment_execute'),
                         url(u'^store/pay/(?P<order_id>\\d+)/$', u'store.views.payment_redirect', name=u'payment_redirect'),
                         url(u'^account/orders/$', u'cartridge.shop.views.order_history', name=u'shop_order_history'),
+                        url(r'^i18n/', include('django.conf.urls.i18n'),name='set_language'),
                         url(u'^$', direct_to_template, {u'template': u'index.html'}, name=u'home'),
 						url("^$", "mezzanine.pages.views.page", {"slug": "/"}, name="home"),
                         (u'^', include(u'mezzanine.urls'))
