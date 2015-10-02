@@ -63,6 +63,7 @@ LANGUAGE_CODE = 'pt-br'
 _ = lambda s: s
 LANGUAGES = (
 	('pt-br', _('Brazilian Portuguese')),
+    ('es-ar', _('Argentinian Spanish')),
 	('en', _('English'))
 )
 DEBUG = True

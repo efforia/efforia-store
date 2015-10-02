@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 11:17-0300\n"
+"POT-Creation-Date: 2015-10-02 14:53-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,11 +45,15 @@ msgstr ""
 msgid "Brazilian Portuguese"
 msgstr ""
 
-#: store/production.py:66 store/settings.py:66
+#: store/production.py:66 store/settings.py:67
 msgid "English"
 msgstr ""
 
-#: store/templates/base.html:98
+#: store/settings.py:66
+msgid "Argentinian Spanish"
+msgstr ""
+
+#: store/templates/base.html:100
 msgid "Toggle Navigation"
 msgstr ""
 
@@ -61,7 +65,7 @@ msgstr "CHEGOU O APARELHO"
 msgid "GOING TO GIVE WHAT TO TALK"
 msgstr "QUE VAI DAR O QUE FALAR"
 
-#: store/templates/index.html:63
+#: store/templates/index.html:64
 msgid "\n"
 msgstr ""
 
@@ -466,7 +470,11 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: store/templates/pages/menus/dropdown.html:35
+#: store/templates/pages/menus/dropdown.html:27
+msgid "Shop"
+msgstr "Loja"
+
+#: store/templates/pages/menus/dropdown.html:39
 msgid "My Account"
 msgstr "Minha Conta"
 
