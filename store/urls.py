@@ -4,6 +4,7 @@ from django.conf.urls import patterns, include, url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.conf.urls.static import static
+from django.views.generic.base import TemplateView
 from mezzanine.core.views import direct_to_template
 
 admin.autodiscover()
@@ -19,6 +20,10 @@ urlpatterns += patterns(u'',
                         url(u'^store/pay/(?P<order_id>\\d+)/$', u'store.views.payment_redirect', name=u'payment_redirect'),
                         url(u'^account/orders/$', u'cartridge.shop.views.order_history', name=u'shop_order_history'),
                         url(r'^i18n/', include('django.conf.urls.i18n'),name='set_language'),
+                        url(r'^hub/', TemplateView.as_view(template_name='hub.html'),name='hub'),
+                        url(r'^aplicacoes/', TemplateView.as_view(template_name='applications.html'),name='app'),
+                        url(r'^suporte/', TemplateView.as_view(template_name='support.html'),name='support'),
+                        url(r'^sobre/', TemplateView.as_view(template_name='about.html'),name='about'),
                         url(u'^$', direct_to_template, {u'template': u'index.html'}, name=u'home'),
 						url("^$", "mezzanine.pages.views.page", {"slug": "/"}, name="home"),
                         (u'^', include(u'mezzanine.urls'))

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-02 14:53-0300\n"
+"POT-Creation-Date: 2015-10-05 15:11-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,12 +45,12 @@ msgstr ""
 msgid "Brazilian Portuguese"
 msgstr ""
 
-#: store/production.py:66 store/settings.py:67
-msgid "English"
+#: store/production.py:66 store/settings.py:66
+msgid "Argentinian Spanish"
 msgstr ""
 
-#: store/settings.py:66
-msgid "Argentinian Spanish"
+#: store/production.py:67 store/settings.py:67
+msgid "English"
 msgstr ""
 
 #: store/templates/base.html:100
@@ -65,7 +65,7 @@ msgstr ""
 msgid "GOING TO GIVE WHAT TO TALK"
 msgstr ""
 
-#: store/templates/index.html:64
+#: store/templates/index.html:70
 msgid "\n"
 msgstr ""
 
@@ -77,7 +77,7 @@ msgstr ""
 #: store/templates/search_results.html:13
 #: store/templates/pages/menus/breadcrumb.html:4
 #: store/templates/pages/menus/breadcrumb.html:10
-#: store/templates/pages/menus/dropdown.html:14
+#: store/templates/pages/menus/dropdown.html:78
 #: store/templates/pages/menus/footer_tree.html:11
 #: store/templates/pages/menus/mobile.html:10
 #: store/templates/pages/menus/primary.html:8
@@ -470,11 +470,27 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: store/templates/pages/menus/dropdown.html:27
-msgid "Shop"
+#: store/templates/pages/menus/dropdown.html:30
+msgid "HUB"
 msgstr ""
 
 #: store/templates/pages/menus/dropdown.html:39
+msgid "Applications"
+msgstr ""
+
+#: store/templates/pages/menus/dropdown.html:49
+msgid "Support"
+msgstr ""
+
+#: store/templates/pages/menus/dropdown.html:58
+msgid "About"
+msgstr ""
+
+#: store/templates/pages/menus/dropdown.html:91
+msgid "Shop"
+msgstr ""
+
+#: store/templates/pages/menus/dropdown.html:102
 msgid "My Account"
 msgstr ""
 
