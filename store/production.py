@@ -59,10 +59,11 @@ MANAGERS = ADMINS
 ALLOWED_HOSTS = ['*']
 TIME_ZONE = 'America/Sao_Paulo'
 USE_TZ = True
-LANGUAGE_CODE = 'pt-BR'
+LANGUAGE_CODE = 'pt-br'
 _ = lambda s: s
 LANGUAGES = (
-	('pt-BR', _('Brazilian Portuguese')),
+	('pt-br', _('Brazilian Portuguese')),
+    ('es-ar', _('Argentinian Spanish')),
 	('en', _('English'))
 )
 DEBUG = False
