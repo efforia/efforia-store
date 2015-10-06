@@ -5,26 +5,48 @@ from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.conf.urls.static import static
 from django.views.generic.base import TemplateView
-from mezzanine.core.views import direct_to_template
+from django.utils.translation import ugettext_lazy as _
 
 admin.autodiscover()
 
 urlpatterns = i18n_patterns(u'', (u'^admin/', include(admin.site.urls)))
 
 urlpatterns += patterns(u'',
-                        (u'^shop/', include(u'cartridge.shop.urls')),
+                        url(_(r'^shop/volumes/'),TemplateView.as_view(template_name='volumes.html'),name='volumes'),
+                        url(_(u'^shop/'), include(u'cartridge.shop.urls'), name='shop'),
 			            url(u'^store/slip', u'store.views.payment_slip'),
 			            url(u'^store/bank', u'store.views.payment_bank'),
                         url(u'^store/cancel', u'store.views.payment_cancel'),
                         url(u'^store/execute', u'store.views.payment_execute', name=u'payment_execute'),
                         url(u'^store/pay/(?P<order_id>\\d+)/$', u'store.views.payment_redirect', name=u'payment_redirect'),
                         url(u'^account/orders/$', u'cartridge.shop.views.order_history', name=u'shop_order_history'),
-                        url(r'^i18n/', include('django.conf.urls.i18n'),name='set_language'),
-                        url(r'^hub/', TemplateView.as_view(template_name='hub.html'),name='hub'),
-                        url(r'^aplicacoes/', TemplateView.as_view(template_name='applications.html'),name='app'),
-                        url(r'^suporte/', TemplateView.as_view(template_name='support.html'),name='support'),
-                        url(r'^sobre/', TemplateView.as_view(template_name='about.html'),name='about'),
-                        url(u'^$', direct_to_template, {u'template': u'index.html'}, name=u'home'),
+                        url(r'^i18n/', include('django.conf.urls.i18n'), name='set_language'),
+
+                        url(_(r'^hub/howitworks'), TemplateView.as_view(template_name='howitworks.html'), name='howitworks'),
+                        url(_(r'^hub/whatisitfor'), TemplateView.as_view(template_name='whatisitfor.html'), name='whatisitfor'),
+                        url(_(r'^hub/devices'), TemplateView.as_view(template_name='devices.html'), name='devices'),
+                        url(_(r'^hub/apps'), TemplateView.as_view(template_name='apps.html'), name='apps'),
+                        url(r'^hub/', TemplateView.as_view(template_name='hub.html'), name='hub'),
+
+                        url(_(r'^uses/personalcomputing'), TemplateView.as_view(template_name='personalcomputing.html'), name='personalcomputing'),
+                        url(_(r'^uses/internetofthings'), TemplateView.as_view(template_name='internetofthings.html'), name='internetofthings'),
+                        url(_(r'^uses/mediacenter'), TemplateView.as_view(template_name='mediacenter.html'), name='mediacenter'),
+                        url(_(r'^uses/videogame'), TemplateView.as_view(template_name='videogame.html'), name='videogame'),
+                        url(_(r'^uses/server'), TemplateView.as_view(template_name='server.html'), name='server'),
+                        url(_(r'^uses/'), TemplateView.as_view(template_name='applications.html'), name='uses'),
+
+                        url(_(r'^support/documentation'), TemplateView.as_view(template_name='documentation.html'), name='documentation'),
+                        url(_(r'^support/developer'), TemplateView.as_view(template_name='developer.html'), name='developer'),
+                        url(_(r'^support/services'), TemplateView.as_view(template_name='services.html'), name='services'),
+                        url(_(r'^support/warranty'), TemplateView.as_view(template_name='warranty.html'), name='warranty'),
+                        url(_(r'^support/'), TemplateView.as_view(template_name='support.html'), name='support'),
+
+                        url(_(r'^about/opensource'), TemplateView.as_view(template_name='opensource.html'), name='opensource'),
+                        url(_(r'^about/localization'), TemplateView.as_view(template_name='localization.html'), name='localization'),
+                        url(_(r'^about/partners'), TemplateView.as_view(template_name='partners.html'), name='partners'),
+                        url(_(r'^about/'), TemplateView.as_view(template_name='about.html'), name='about'),
+
+                        url(u'^$', TemplateView.as_view(template_name='index.html'), name=u'home'),
 						url("^$", "mezzanine.pages.views.page", {"slug": "/"}, name="home"),
                         (u'^', include(u'mezzanine.urls'))
 )

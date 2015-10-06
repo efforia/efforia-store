@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block main %}
+
+<div id="container" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-center" style="padding: 0px 50px;">
+      <h1 id="title" style="text-align:center;"> Código Aberto </h1>
+      <p>A Efforia acredita que o desenvolvimento do Software Livre como um todo é um processo de extrema importância para a nossa evolução tecnológica, dado que boa parte de nossos produtos e serviços usufruem disso. Por isso, a companhia retribui regularmente contribuições em Código Aberto, sejam no âmbito de projetos de terceiros, como componentes do Django, assim como alguns softwares de apoio a desenvolvimento para a plataforma do Raspberry Pi e outras placas-base.</p>
+    </div>
+    <p><br><br></p>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>Uma companhia que apoia o software livre.</h2>
+        <p>Temos uma fundação basicamente em tecnologias livres, como o Python, uma linguagem de programação, o Qt, um framework para construção de aplicativos com e sem interface gráfica, o Linux, um núcleo de sistema operacional e o Arch, um sistema operacional baseado no GNU/Linux. Assim como temos estas fundações, respeitamos padrões de engenharia de software e de sistemas para todas as nossas soluções; o EOS, para exemplo, cumpre as especificações dispostas na LSB (Linux Standard Base), em praticamente toda sua totalidade.</p>
+        <p><img src="/static/svg/eosfoundations.svg" width="90%"></p>
+        <p>Se tem interesse em seguir nossos projetos open source, basta acessar nosso perfil no GitHub.</p>
+      </div>
+    </div>
+  </div>
+  <p><br><br></p><p><br></p>
+</div>
+
+{% endblock %}

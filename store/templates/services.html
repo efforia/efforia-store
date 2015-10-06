@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block main %}
+
+<div id="container" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 id="title" style="text-align:center;"> Serviços </h1>
+      <div style="padding: 0px 50px;">
+        <p>A Efforia disponibiliza serviços na nuvem para você expandir ainda mais as possibilidades de seus nanocomputadores. Desde a publicação de websites até a integração de projetos de IoT (Internet of Things), dispomos de boa infraestrutura e bom atendimento para você hospedar o seu próximo projeto aqui.</p>
+      </div>
+      <h1>Efforia Cloud Service</h1>
+      <p><br><br></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-center" style="height: 600px;">
+      <img src="/static/svg/hcs.svg" height="400" width="90%">
+      <h2>Integrável aos nanocomputadores</h2>
+      <p>Pensando na integração dos nanocomputadores com a Internet, a Efforia disponibiliza o serviço chamado Efforia Cloud Service, que possibilita a hospedagem de sites e aplicativos Web dentro do nanocomputador, economizando drasticamente custos na nuvem. Isso tudo se dá por um serviço de DDNS do EOS que se conecta a nossa nuvem, e divulga seu website ou webapp para a Internet. Consulte tarifas do serviço contatando por contato@efforia.com.br.</p>
+    </div>
+    <div class="col-md-6 text-center" style="height: 600px;">
+      <img src="/static/svg/microcloud.svg" height="400" width="90%">
+      <h2>Seu nanocomputador pode ser usado como micro-nuvem</h2>
+      <p>Pensado para nuvens privadas e acesso remoto, o serviço, juntamente com a tecnologia exclusiva EOS, já vem com um bom número de softwares para formar uma micro-nuvem para o seu negócio, possibilitando a criação de intranets, ftps, sites internos e até mesmo desenvolvimento web.</p>
+    </div>
+  </div>
+  <p><br><br></p>
+  <div class="row">
+    <div class="col-md-6 text-center" style="height: 600px;">
+      <img src="/static/svg/server.svg" height="400" width="90%">
+      <h2>Seu micro-servidor pode ser acessado remotamente</h2>
+      <p>Graças à publicação na Internet, serviços que você costumava apenas acessar em sua rede interna podem ser acessíveis por outros locais de rede fora de sua empresa. Com o ECS é possível habilitar a publicação de serviços como de compartilhamento de arquivos e impressoras, autenticação em rede, firewall e proxy, quando e como você quiser.</p>
+    </div>
+    <div class="col-md-6 text-center" style="height: 600px;">
+      <img src="/static/svg/cloud_combinated.svg" height="400" width="90%">
+      <h2>Acoplável por design</h2>
+      <p>Além de poder atuar como micro-servidor remoto e micro-nuvem com o ECS, é possível acoplar dois ou mais nanocomputadores para formar um micro-cluster de aparelhos, possibilitando assim maior escalabilidade nos seus negócios e cada vez mais reduzindo a dependência de locação de espaços na nuvem como Amazon e Microsoft Azure.</p>
+    </div>
+  </div>
+  <p><br><br></p>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Efforia Beta Service</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-center" style="height: 600px;">
+      <img src="/static/svg/beta_program.svg" height="400" width="90%">
+      <h2>Serviço de integração a projetos de IoT</h2>
+      <p>Por meio do Efforia Beta Service, oferecemos uma maneira simples e barata de integrar os mais diversos projetos de Internet das Coisas desenvolvidos em nossos nanocomputadores com a nuvem. Graças a este serviço, é possível expandir o alcance de seu próximo projeto com a Efforia a não mais apenas o seu lar ou trabalho, mas a todos os lugares conectados à Internet.</p>
+    </div>
+    <div class="col-md-6 text-center" style="height: 600px;">
+      <img src="/static/svg/beta_cables.svg" height="400" width="90%">
+      <h2>Possibilidade de software e hardware customizado</h2>
+      <p>O software utilizado para a integração com nossos nanocomputadores pela nuvem também possuem soluções customizadas, sempre de acordo com a demanda que está sendo necessária para determinado projeto. Para a integração à micro-nuvem, também há a possibilidade de customização da solução de hardware. Os custos e tarifas podem variar de projeto a projeto. Para saber mais, contate-nos em contato@efforia.com.br.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-center" style="height: 600px;">
+      <img src="/static/svg/betas.svg" height="400" width="90%">
+      <h2>Possibilidade de distribuição em diversos lugares</h2>
+      <p>Com o Efforia Beta Service, seus nanocomputadores não ficam restritos a apenas um lugar para atuar sobre a Internet das Coisas; você pode distribuir geograficamente. Graças a interconexão pela Internet oferecida por este serviço, você pode ter um nanocomputador instalado em Porto Alegre e outro em Nova Iorque, ambos atuando com o mesmo objetivo.</p>
+    </div>
+    <div class="col-md-6 text-center" style="height: 600px;">
+      <img src="/static/svg/applications.svg" height="400" width="90%">
+      <h2>Serviços de micro-nuvem com EOS disponíveis</h2>
+      <p>Com o EBS, há a possibilidade de usufruir de serviços de micro-nuvem da Efforia. Pré-instalado com a tecnologia EOS, projetado especificamente para a nossa plataforma de nanocomputadores, contempla diversos aplicativos e serviços desenvolvidos exclusivamente pela Efforia: Torrent, Hotspot, Sync, Sound e Store como aplicativos, e Docker, Fabric, Remote, Runtime e Build como serviços.</p>
+    </div>
+  </div>
+  <p><br><br></p><p><br></p>
+</div>
+
+{% endblock %}

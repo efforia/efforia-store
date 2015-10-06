@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block main %}
+
+<div id="container" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-center" style="padding: 0px 50px;">
+      <h1 id="title" style="text-align:center;"> Vídeo Game </h1>
+      <p>Todos os nanocomputadores da Efforia possuem um potencial gráfico bastante avançado, o que dá espaço para o desenvolvimento de games para a plataforma. É pensando nisso que desenvolvemos o cartão EMC Retro, para demonstrar o potencial de nossos equipamentos executando 10 sistemas de emulação de videogames (Playstation, Nintendo 64, Game Boy Advance, Game Boy Color, Game Boy, Super Nintendo, Nintendo 8-bit, Sega Mega Drive, Sega Game Gear e Sega Master System) com jogos à título de demonstração (necessário ter a cópia original do jogo para executar).&nbsp;</p>
+    </div>
+  </div>
+  <p><br><br></p>
+  <div class="row">
+    <div class="col-md-6 col-sm-6 text-center"><img src="/static/svg/videogame.svg" height="400" width="90%">
+      <h2>Interface de fácil acesso e instalação de jogos prática</h2>
+      <p>No Retro você dispõe de uma interface de uso bastante prático, bastando selecionar o sistema de emulação que você deseja, e em seguida, o game que você quer jogar. Graças à tecnologia EOS desenvolvida pela Efforia, boa parte dos controles de jogos são compatíveis com nossos nanocomputadores, a incluir nosso teclado sem fio, ergonomicamente fabricado para funcionar como um gamepad. Para a instalação de jogos novos no Retro, é muito fácil: basta acessar o ponto de rede pelo computador chamado RETRO e copiar as roms (tendo em posse a cópia original do jogo) para a pasta respectiva e pronto! O software trata de procurar, catalogar e colocar a arte do jogo, bastando apenas selecioná-lo na interface para jogar.</p>
+    </div>
+    <div class="col-md-6 col-sm-6 text-center"><img src="/static/svg/videogame_develop.svg" height="400" width="90%">
+      <h2>Ótima solução para desenvolvimento de jogos</h2>
+      <p>Tendo à disposição diversas tecnologias multi-plataforma para gráficos, áudio e física, a criação de jogos para a plataforma torna-se bastante fácil e prática para os estúdios de jogos. O Retro torna-se uma boa ferramenta para o desenvolvimento de soluções de entretenimento digital. Temos um acervo de outras tecnologias disponíveis para instalação no Retro em caso de demanda especial, bem como kits de programação contendo controles de jogo e nanocomputadores. Contate-nos para saber mais.</p>
+    </div>
+  </div>
+  <p><br><br></p><p><br></p>
+</div>
+
+{% endblock %}

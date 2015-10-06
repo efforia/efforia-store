@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block main %}
+
+<div id="container" class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 id="title" style="text-align:center;"> Dispositivos </h1>
+      <h1>Veja quais aparelhos você pode ligar ao HUB</h1>
+    </div>
+    <div class="col-md-6 text-center"><img src="/static/svg/laptop.svg" width="90%">
+      <h2>Computador</h2>
+      <p>Com o computador, é possível copiar arquivos para o HUB através de uma rede, seja ela com fio ou sem fio.</p>
+    </div>
+    <div class="col-md-6 text-center"><img src="/static/svg/smartphone.svg" width="90%">
+      <h2>Smartphone</h2>
+      <p>Dispositivo mais recomendado para transmitir músicas, via EOS ou AirPlay. Também serve de controle remoto para o HUB através de aplicativos encontrados nas Appstores.</p>
+    </div>
+  </div>
+  <p><br><br></p>
+  <div class="row">
+    <div class="col-md-6 text-center"><img src="/static/svg/tablet.svg" width="90%">
+      <h2>Tablet</h2>
+      <p>Dispositivo mais recomendado para transmitir vídeos, via EOS ou AirPlay. Também possui aplicativos disponíveis para o controle do HUB.</p>
+    </div>
+    <div class="col-md-6 text-center"><img src="/static/svg/router.svg" width="90%">
+      <h2>Roteador</h2>
+      <p>Permite que o HUB converse com todos os outros dispositivos ligados ao roteador, sejam eles computadores, players (DVD e Blu-Ray), ou dispositivos móveis (smartphones e tablets)</p>
+    </div>
+  </div>
+  <p><br><br></p>
+  <div class="row">
+    <div class="col-md-6 text-center"><img src="/static/svg/hubs.svg" width="90%">
+      <h2>Outro HUB</h2>
+      <p>Via tecnologia exclusiva EOS, você pode enviar ou receber conteúdo de arquivos e multimídia entre HUBs.</p>
+    </div>
+    <div class="col-md-6 text-center"><img src="/static/svg/peripherals.svg" width="90%">
+      <h2>Periféricos</h2>
+      <p>Boa parte de mouses, teclados e controles de jogo que você encontra hoje no mercado conseguem interagir com a tecnologia EOS. Recomendamos utilizar a guia de documentação e nossa loja virtual para adquirir acessórios compatíveis com o HUB.</p>
+    </div>
+  </div>
+  <p><br><br></p><p><br></p>
+</div>
+
+{% endblock %}

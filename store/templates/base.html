@@ -181,40 +181,40 @@
               <!--{% page_menu "pages/menus/footer.html" %}!-->
               <div class="nav-footer">
                 <ul class="list-unstyled">
-                  <li class="active" id="footer-menu-hub"><a href="/hub/">HUB</a></li>
-                  <li id="footer-menu-hub-como-funciona"><a href="/hub/como-funciona/">Como funciona</a></li>
-                  <li id="footer-menu-hub-para-que-serve"><a href="/hub/para-que-serve/">Para que serve</a></li>
-                  <li id="footer-menu-hub-dispositivos"><a href="/hub/dispositivos/">Dispositivos</a></li>
-                  <li id="footer-menu-hub-aplicativos"><a href="/hub/aplicativos/">Aplicativos</a></li>
+                  <li><a href="{% url 'hub' %}">{% trans "HUB" %}</a></li>
+                  <li><a href="{% url 'howitworks' %}">Como funciona</a></li>
+                  <li><a href="{% url 'whatisitfor' %}">Para que serve</a></li>
+                  <li><a href="{% url 'devices' %}">Dispositivos</a></li>
+                  <li><a href="{% url 'apps' %}">Aplicativos</a></li>
                 </ul>
                 <ul class="list-unstyled">
-                  <li id="footer-menu-aplicações"><a href="/aplica%C3%A7%C3%B5es/">Aplicações</a></li>
-                  <li id="footer-menu-aplicações-computador-pessoal"><a href="/aplica%C3%A7%C3%B5es/computador-pessoal/">Computador Pessoal</a></li>
-                  <li id="footer-menu-aplicações-internet-das-coisas"><a href="/aplica%C3%A7%C3%B5es/internet-das-coisas/">Internet das Coisas</a></li>
-                  <li id="footer-menu-aplicações-mídia-center"><a href="/aplica%C3%A7%C3%B5es/m%C3%ADdia-center/">Mídia Center</a></li>
-                  <li id="footer-menu-aplicações-vídeo-game"><a href="/aplica%C3%A7%C3%B5es/v%C3%ADdeo-game/">Vídeo Game</a></li>
-                  <li id="footer-menu-aplicações-servidor"><a href="/aplica%C3%A7%C3%B5es/servidor/">Servidor</a></li>
+                  <li><a href="{% url 'uses' %}">{% trans "Applications" %}</a></li>
+                  <li><a href="{% url 'personalcomputing' %}">Computador Pessoal</a></li>
+                  <li><a href="{% url 'internetofthings' %}">Internet das Coisas</a></li>
+                  <li><a href="{% url 'mediacenter' %}">Mídia Center</a></li>
+                  <li><a href="{% url 'videogame' %}">Vídeo Game</a></li>
+                  <li><a href="{% url 'server' %}">Servidor</a></li>
                 </ul>
                 <ul class="list-unstyled">
-                  <li id="footer-menu-suporte"><a href="/suporte/">Suporte</a></li>
-                  <li id="footer-menu-suporte-documentação"><a href="/suporte/documenta%C3%A7%C3%A3o/">Documentação</a></li>
-                  <li id="footer-menu-suporte-desenvolvedor"><a href="/suporte/desenvolvedor/">Desenvolvedor</a></li>
-                  <li id="footer-menu-suporte-serviços"><a href="/suporte/servi%C3%A7os/">Serviços</a></li>
-                  <li id="footer-menu-suporte-garantia"><a href="/suporte/garantia/">Garantia</a></li>
+                  <li><a href="{% url 'support' %}">{% trans "Support" %}</a></li>
+                  <li><a href="{% url 'documentation' %}">Documentação</a></li>
+                  <li><a href="{% url 'developer' %}">Desenvolvedor</a></li>
+                  <li><a href="{% url 'services' %}">Serviços</a></li>
+                  <li><a href="{% url 'warranty' %}">Garantia</a></li>
                 </ul>
                 <ul class="list-unstyled">
-                  <li id="footer-menu-sobre"><a href="/sobre/">Sobre</a></li>
-                  <li id="footer-menu-suporte-código-aberto"><a href="/suporte/c%C3%B3digo-aberto/">Código Aberto</a></li>
-                  <li id="footer-menu-sobre-localização"><a href="/sobre/localiza%C3%A7%C3%A3o/">Localização</a></li>
-                  <li id="footer-menu-sobre-parceiros"><a href="/sobre/parceiros/">Parceiros</a></li>
+                  <li><a href="{% url 'about' %}">{% trans "About" %}</a></li>
+                  <li><a href="{% url 'opensource' %}">Código Aberto</a></li>
+                  <li><a href="{% url 'localization' %}">Localização</a></li>
+                  <li><a href="{% url 'partners' %}">Parceiros</a></li>
                 </ul>
                 <ul class="list-unstyled">
-                  <li id="footer-menu-shop"><a href="/shop/">Loja</a></li>
-                  <li id="footer-menu-shop-hub"><a href="/shop/hub/">HUB</a></li>
-                  <li id="footer-menu-shop-emc"><a href="/shop/emc/">EMC</a></li>
-                  <li id="footer-menu-shop-cabos"><a href="/shop/cabos/">Cabos</a></li>
-                  <li id="footer-menu-shop-acessórios"><a href="/shop/acess%C3%B3rios/">Acessórios</a></li>
-                  <li id="footer-menu-shop-volumes"><a href="/shop/volumes/">Volumes</a></li>
+                  <li><a href="/shop/">{% trans "Shop" %}</a></li>
+                  <li><a href="/shop/hub/">HUB</a></li>
+                  <li><a href="/shop/emc/">EMC</a></li>
+                  <li><a href="/shop/cabos/">Cabos</a></li>
+                  <li><a href="/shop/acess%C3%B3rios/">Acessórios</a></li>
+                  <li><a href="{% url 'volumes' %}">Volumes</a></li>
                 </ul>
               </div>
             </div>
