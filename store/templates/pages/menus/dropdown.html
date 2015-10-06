@@ -12,7 +12,8 @@
     border:none;
   }
   .menuitem {
-    color:#000000 !important;
+    /*color:#000000 !important;*/
+    color:#FFFFFF !important;
     font-size:1.2em
   }
   .nav-default {
@@ -80,7 +81,7 @@
           <li class="{% if page.has_children_in_menu %}dropdown{% endif %}
                      {% if page.is_current_or_ascendant %}active{% endif %}"
               id="{{ page.html_id }}">
-              <a class="centered" style="font-size:1.2em; color:black" href="{{ page.get_absolute_url }}"
+              <a class="centered menuitem" style="font-size:1.2em; color:black" href="{{ page.get_absolute_url }}"
               {% if page.has_children_in_menu %}
               class="dropdown-toggle disabled" data-toggle="dropdown"
               onclick="window.location = {{ page.get_absolute_url }};"
