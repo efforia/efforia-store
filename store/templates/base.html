@@ -89,6 +89,17 @@
         min-height:28px;
         max-height:28px;
     }
+    .navbar-flag {
+        height:2em;
+        margin:27px;
+    }
+    .navbar-cart {
+        height:3em;
+        margin:18px;
+        margin-left:15px;
+        margin-right:15px;
+        text-align:center;
+    }
 </style>
 {% block extra_head %}{% endblock %}
 </head>
@@ -122,32 +133,15 @@
             </div>
             <div id="collapsed" class="collapse navbar-collapse navbar-left none">
                 {% page_menu "pages/menus/dropdown.html" %}
+                <div class="hidden-lg hidden-md centered"> {% include "includes/flags.html" %} </div>
             </div>
-            <div class="navbar-right centered rightmargin leftmargin" style="height:3em; margin:18px;">
-              <form id="locale" class="navbar-form navbar-padding none nomargin hidden" action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                  <input name="next" type="hidden" value="{{ redirect_to }}" />
-                  <select id="language" name="language">
-                      {% get_current_language as LANGUAGE_CODE %}
-                      {% get_available_languages as LANGUAGES %}
-                      {% get_language_info_list for LANGUAGES as languages %}
-                      {% for language in languages %}
-                          <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
-                              {{ language.name_local }} ({{ language.code }})
-                          </option>
-                      {% endfor %}
-                  </select>
-                  <input type="submit" value="Go" />
-              </form>
+            <div class="navbar-right navbar-cart">
               <button onclick="window.location = '{% url "shop_cart" %}';" class="btn btn-lg btn-block" style="background:#6EC498; color:white;">
                   <span class="glyphicon glyphicon-shopping-cart"></span>
                   &nbsp;&nbsp;{{ request.cart.total_quantity }}
               </button>
             </div>
-            <div class="navbar-right centered rightmargin leftmargin" style="height:2em; margin:27px;">
-              <img class="flag" src="{% static "img/brazil.png" %}" onclick="changeLocale('pt-br');"/>
-              <img class="flag" src="{% static "img/spain.png" %}" onclick="changeLocale('es-ar');"/>
-              <img class="flag" src="{% static "img/usa.png" %}" onclick="changeLocale('en');"/>
-            </div>
+            <div id="flags" class="navbar-right navbar-flag hidden-xs hidden-sm"> {% include "includes/flags.html" %} </div>
         </div>
     </nav>
 
