@@ -9,7 +9,7 @@
   font-size:1.3em;
   line-height:1.5em
 }
-.jumbo-img { height:3em; }
+.jumbo-img { height:7em; }
 .jumbo-heading { font-size:3em; }
 .jumbo-p {
   font-size:1.4em;
@@ -17,17 +17,33 @@
   width:50%;
   margin:auto;
 }
-.blackbg { background-color: #000000 !important; }
+.background {
+  background: url("{% static 'img/HUB.png' %}");
+  background-size: cover;
+}
+.transparent-overlay {
+  position: relative;
+  background: rgba(0,0,0,0.7);
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 </style>
-<script> $(document).ready(function(){ $('.page').removeClass('container'); }); </script>
-<div class="jumbotron blackbg">
-  <h1><img class="jumbo-img" src="{% static "svg/hubwhite.svg" %}"/></h1>
-  <h2 class="jumbo-heading white">{% trans "ARRIVED THE MACHINE" %}<br>{% trans "GOING TO GIVE WHAT TO TALK" %}</h2>
-  <p class="white">__________________________________________________________________</p>
-  <p class="jumbo-p white">Hub é um nanocomputador com capacidade para reproduzir
-  e transmitir vídeos, músicas e fotos, além de infinitas possibilidades, o céu
-  é o limite.</p><br><br>
+<div class="jumbotron background">
+  <div class="transparent-overlay">
+    <div class="container">
+      <img class="jumbo-img" src="{% static "svg/hubwhite.svg" %}"/>
+      <h2 class="jumbo-heading white">{% trans "ARRIVED THE MACHINE" %}<br>{% trans "GOING TO GIVE WHAT TO TALK" %}</h2>
+      <p class="white">__________________________________________________________________</p>
+      <p class="jumbo-p white">Hub é um nanocomputador com capacidade para reproduzir
+      e transmitir vídeos, músicas e fotos, além de infinitas possibilidades, o céu
+      é o limite.</p>
+    </div>
+  </div>
 </div>
+
 <div class="container">
   <div class="centered row">
     <div class="col-md-4 col-sm-6 block-padding">
