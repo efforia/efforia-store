@@ -82,6 +82,13 @@
         border:none;
         box-shadow:none;
     }
+    .footer-nav {
+        margin-bottom:15px;
+        background:#6EC497;
+        color:white;
+        min-height:28px;
+        max-height:28px;
+    }
 </style>
 {% block extra_head %}{% endblock %}
 </head>
@@ -136,34 +143,19 @@
                   &nbsp;&nbsp;{{ request.cart.total_quantity }}
               </button>
             </div>
-            <div class="navbar-right centered rightmargin leftmargin hidden" style="height:2em; margin:27px;">
+            <div class="navbar-right centered rightmargin leftmargin" style="height:2em; margin:27px;">
               <img class="flag" src="{% static "img/brazil.png" %}" onclick="changeLocale('pt-br');"/>
               <img class="flag" src="{% static "img/spain.png" %}" onclick="changeLocale('es-ar');"/>
               <img class="flag" src="{% static "img/usa.png" %}" onclick="changeLocale('en');"/>
             </div>
         </div>
     </nav>
-    <div class="content">
-        <div class="container">
-            {% nevercache %}
-            {% if messages %}
-            <div class="messages">
-            {% for message in messages %}
-            <div class="alert alert-dismissable alert-{{ message.tags }}" data-alert="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                {{ message }}
-            </div>
-            {% endfor %}
-            </div>
-            {% endif %}
-            {% endnevercache %}
 
-            <h1 id="title" style="text-align:center;">{% block title %}{% endblock %}</h1>
-        </div>
-	<div id="container" class="container-fluid">{% block main %}{% endblock %}<p><br/></p></div>
-    </div>
+    <!-- Main block for pages container !-->
+    {% block main %} {% endblock %}
+
     <footer class="footer">
-        <nav style="padding-top:1px; margin-top:-25px; margin-bottom:15px; background:#6EC497; color:white; min-height:28px; max-height:28px;">
+        <nav class="footer-nav">
             <div class="col-md-3"></div>
             <div class="col-md-6 centered visible-lg visible-md" style="font-size:0.9em; font-weight:normal;">
                 <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;+555198485888&nbsp;&nbsp;

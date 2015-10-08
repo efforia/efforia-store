@@ -8,7 +8,7 @@ html,body
 }
 body {
 	font-family:Ubuntu;
-	background:#222222;
+	/* background:#222222; */
 }
 h1,h2,h3,h4,h5,h6,ul.nav { font-family: Ubuntu; /*font-weight:bold;*/ }
 a,a:hover,a:active,a:focus { text-decoration:none !important; }
@@ -23,7 +23,15 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
 .inline { display:inline; color:white; }
 .hidden { display:none; }
 .centered { text-align:center; }
-.footer { background-color:#222222; color:#969696; margin-top:0; font-size: 1.2em; border-top:0; font-weight: bold }
+.footer {
+  background-color:#222222;
+  color:#969696;
+  margin-top:0;
+  font-size: 1.2em;
+  border-top:0;
+  font-weight: bold;
+  padding:0px;
+}
 
 .input_id_card_pay_option_0 { display:none; }
 .turquoise { color:turquoise; }
@@ -38,7 +46,7 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
 	padding:0px;
 	margin-bottom:0px;
 }
-.nebula-jumbotron {
+.jumbotron {
 	text-align:center;
 	color:white;
 	padding:2em 0em;

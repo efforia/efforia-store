@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-06 10:37-0300\n"
+"POT-Creation-Date: 2015-10-08 13:16-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,13 +53,116 @@ msgstr ""
 msgid "English"
 msgstr ""
 
+#: store/urls.py:15
+msgid "^shop/volumes/"
+msgstr ""
+
+#: store/urls.py:16
+msgid "^shop/"
+msgstr ""
+
+#: store/urls.py:25
+msgid "^hub/howitworks"
+msgstr ""
+
 #: store/urls.py:26
+msgid "^hub/whatisitfor"
+msgstr ""
+
+#: store/urls.py:27
+msgid "^hub/devices"
+msgstr ""
+
+#: store/urls.py:28
+msgid "^hub/apps"
+msgstr ""
+
+#: store/urls.py:31
+msgid "^uses/personalcomputing"
+msgstr ""
+
+#: store/urls.py:32
+msgid "^uses/internetofthings"
+msgstr ""
+
+#: store/urls.py:33
+msgid "^uses/mediacenter"
+msgstr ""
+
+#: store/urls.py:34
+msgid "^uses/videogame"
+msgstr ""
+
+#: store/urls.py:35
+#, fuzzy
+msgid "^uses/server"
+msgstr "^usos/"
+
+#: store/urls.py:36
 msgid "^uses/"
 msgstr "^usos/"
+
+#: store/urls.py:38
+msgid "^support/documentation"
+msgstr ""
+
+#: store/urls.py:39
+msgid "^support/developer"
+msgstr ""
+
+#: store/urls.py:40
+msgid "^support/services"
+msgstr ""
+
+#: store/urls.py:41
+msgid "^support/warranty"
+msgstr ""
+
+#: store/urls.py:42
+#, fuzzy
+msgid "^support/"
+msgstr "Suporte"
+
+#: store/urls.py:44
+msgid "^about/opensource"
+msgstr ""
+
+#: store/urls.py:45
+msgid "^about/localization"
+msgstr ""
+
+#: store/urls.py:46
+msgid "^about/partners"
+msgstr ""
+
+#: store/urls.py:47
+#, fuzzy
+msgid "^about/"
+msgstr "Sobre"
 
 #: store/templates/base.html:100
 msgid "Toggle Navigation"
 msgstr ""
+
+#: store/templates/base.html:184 store/templates/pages/menus/dropdown.html:28
+msgid "HUB"
+msgstr "HUB"
+
+#: store/templates/base.html:191
+msgid "Applications"
+msgstr "Aplicações"
+
+#: store/templates/base.html:199 store/templates/pages/menus/dropdown.html:55
+msgid "Support"
+msgstr "Suporte"
+
+#: store/templates/base.html:206
+msgid "About"
+msgstr "Sobre"
+
+#: store/templates/base.html:212 store/templates/pages/menus/dropdown.html:89
+msgid "Shop"
+msgstr "Loja"
 
 #: store/templates/index.html:17
 msgid "ARRIVED THE MACHINE"
@@ -474,25 +577,13 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: store/templates/pages/menus/dropdown.html:28
-msgid "HUB"
-msgstr "HUB"
-
 #: store/templates/pages/menus/dropdown.html:37
-msgid "Applications"
-msgstr "Aplicações"
+msgid "HUB Pro"
+msgstr ""
 
 #: store/templates/pages/menus/dropdown.html:47
-msgid "Support"
-msgstr "Suporte"
-
-#: store/templates/pages/menus/dropdown.html:56
-msgid "About"
-msgstr "Sobre"
-
-#: store/templates/pages/menus/dropdown.html:89
-msgid "Shop"
-msgstr "Loja"
+msgid "Services"
+msgstr "Serviços"
 
 #: store/templates/pages/menus/dropdown.html:100
 msgid "My Account"
