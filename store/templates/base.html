@@ -100,6 +100,9 @@
         margin-right:15px;
         text-align:center;
     }
+    .dropdown-white {
+      background-color: #FFFFFF !important;
+    }
 </style>
 {% block extra_head %}{% endblock %}
 </head>
@@ -135,11 +138,25 @@
                 {% page_menu "pages/menus/dropdown.html" %}
                 <div class="hidden-lg hidden-md centered"> {% include "includes/flags.html" %} </div>
             </div>
-            <div class="navbar-right navbar-cart">
+            <!--<div class="navbar-right navbar-cart">
               <button onclick="window.location = '{% url "shop_cart" %}';" class="btn btn-lg btn-block" style="background:#6EC498; color:white;">
                   <span class="glyphicon glyphicon-shopping-cart"></span>
                   &nbsp;&nbsp;{{ request.cart.total_quantity }}
               </button>
+            </div>!-->
+            <div class="navbar-right navbar-cart">
+              <div class="dropdown" id="pop">
+                <a class="btn btn-lg btn-block btn-default" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-shopping-cart"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-white centered btn-block menu">
+                  <li class="menuitem"><a href="/account">Minha Conta</a></li>
+                  <li class="menuitem"><a href="{% url "shop_cart" %}">Meu carrinho</a></li>
+                  <li class="menuitem"><a href="/account/orders">Meus Pedidos</a></li>
+                  <li class="menuitem"><a href="/account/update">Atualizar Perfil</a></li>
+                  <li class="menuitem"><a href="/shop/wishlist">Lista de Desejos</a></li>
+                </ul>
+              </div>
             </div>
             <div id="flags" class="navbar-right navbar-flag hidden-xs hidden-sm"> {% include "includes/flags.html" %} </div>
         </div>
