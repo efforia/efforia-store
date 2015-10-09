@@ -1,15 +1,11 @@
-html,body
-{
+html,body {
     width: 100%;
-    /*height: 100%;*/
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
 }
-body {
-	font-family:Ubuntu;
-	/* background:#222222; */
-}
+body { font-family:Ubuntu; }
 h1,h2,h3,h4,h5,h6,ul.nav { font-family: Ubuntu; /*font-weight:bold;*/ }
 a,a:hover,a:active,a:focus { text-decoration:none !important; }
 
@@ -23,6 +19,27 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
 .inline { display:inline; color:white; }
 .hidden { display:none; }
 .centered { text-align:center; }
+.input_id_card_pay_option_0 { display:none; }
+.turquoise { color:turquoise; }
+.pink { color: pink; }
+.gold { color: lightgreen; }
+.black:hover { color:black; }
+.white:hover { color:white; }
+.white { color:white; }
+.centered { text-align:center; }
+.bar { background:white; }
+.bordered { border: 1px solid white; }
+.leftmargin { margin-left: 15px; }
+.rightmargin { margin-right:15px; }
+.leftaligned { text-align:left; }
+.rightaligned { text-align:right; }
+.navbar-height { height:3em; }
+.navbar-padding { padding:15px; }
+.nomargin { margin:0px; }
+.dropdown-white { background-color: #FFFFFF !important; }
+.content { min-height:200px; }
+.info { font-weight:normal !important; }
+
 .footer {
   background-color:#222222;
   color:#969696;
@@ -33,19 +50,13 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
   padding:0px;
 }
 
-.input_id_card_pay_option_0 { display:none; }
-.turquoise { color:turquoise; }
-.pink { color: pink; }
-.gold { color: lightgreen; }
-.black:hover { color:black; }
-.white:hover { color:white; }
-
 .fixed-navbar {
 	border:0px;
 	border-radius:0px;
 	padding:0px;
 	margin-bottom:0px;
 }
+
 .jumbotron {
 	text-align:center;
 	color:white;
@@ -53,6 +64,45 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
   min-height:720px;
 }
 
-#inner{
-	background:white;
+.nebula-cover {
+  background-color:white;
+  color:black;
+}
+
+.parent {
+    display: table;
+    table-layout: fixed;
+}
+
+.child {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+
+.none {
+    border:none;
+    box-shadow:none;
+}
+
+.footer-nav {
+    margin-bottom:15px;
+    background:#6EC497;
+    color:white;
+    min-height:28px;
+    max-height:28px;
+}
+
+.navbar-flag {
+    height:2em;
+    margin:27px;
+}
+
+.navbar-cart {
+    height:3em;
+    margin:18px;
+    margin-left:15px;
+    margin-right:15px;
+    text-align:center;
 }

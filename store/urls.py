@@ -4,7 +4,7 @@ from django.conf.urls import patterns, include, url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.conf.urls.static import static
-from django.views.generic.base import TemplateView
+from django.views.generic.base import TemplateView,RedirectView
 from django.utils.translation import ugettext_lazy as _
 
 admin.autodiscover()
@@ -14,12 +14,13 @@ urlpatterns = i18n_patterns(u'', (u'^admin/', include(admin.site.urls)))
 urlpatterns += patterns(u'',
                         url(_(r'^shop/volumes/'),TemplateView.as_view(template_name='volumes.html'),name='volumes'),
                         url(_(u'^shop/'), include(u'cartridge.shop.urls'), name='shop'),
-			            url(u'^store/slip', u'store.views.payment_slip'),
-			            url(u'^store/bank', u'store.views.payment_bank'),
-                        url(u'^store/cancel', u'store.views.payment_cancel'),
-                        url(u'^store/execute', u'store.views.payment_execute', name=u'payment_execute'),
-                        url(u'^store/pay/(?P<order_id>\\d+)/$', u'store.views.payment_redirect', name=u'payment_redirect'),
-                        url(u'^account/orders/$', u'cartridge.shop.views.order_history', name=u'shop_order_history'),
+
+			            url(u'^store/slip', "store.views.payment_slip"),
+			            url(u'^store/bank', "store.views.payment_bank"),
+                        url(u'^store/cancel', "store.views.payment_cancel"),
+                        url(u'^store/execute', "store.views.payment_execute", name=u'payment_execute'),
+                        url(u'^store/pay/(?P<order_id>\\d+)/$', "store.views.payment_redirect", name=u'payment_redirect'),
+                        url(u'^store/orders/$', "cartridge.shop.views.order_history", name=u'order_history'),
                         url(r'^i18n/', include('django.conf.urls.i18n'), name='set_language'),
 
                         url(_(r'^hub/howitworks'), TemplateView.as_view(template_name='howitworks.html'), name='howitworks'),

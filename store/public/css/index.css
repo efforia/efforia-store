@@ -1,0 +1,29 @@
+.jumbo-paragraph {
+  font-size:1.3em;
+  line-height:1.5em
+}
+
+.jumbo-img { height:7em; }
+
+.jumbo-heading { font-size:3em; }
+
+.jumbo-p {
+  font-size:1.4em;
+  line-height:1.4em;
+  width:50%;
+  margin:auto;
+}
+
+.transparent-overlay {
+  position: relative;
+  background: rgba(0,0,0,0.7);
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spaces {
+  margin-top:30px;
+  margin-bottom:30px;
+}
