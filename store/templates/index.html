@@ -7,7 +7,7 @@
 <style>
 
 .background {
-  background: url("{% static 'img/HUB.png' %}");
+  background: url("{% static 'img/efforiabg.png' %}") center center;
   background-size: cover;
 }
 
@@ -30,16 +30,19 @@
 
 <div class="container spaces">
   <div class="centered row">
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-4">
       <h1>{% trans "Audiovisual" %}</h1>
+      <img src="{% static "svg/audiovisual.svg" %}"/>
       <p>{% trans "Applications for audiovisual integration" %}</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-4">
       <h1>{% trans "Entertainment" %}</h1>
+      <img src="{% static "svg/entertainment.svg" %}"/>
       <p>{% trans "Applications for entertainment systems" %}</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-4">
       <h1>{% trans "Automation" %}</h1>
+      <img src="{% static "svg/automation.svg" %}"/>
       <p>{% trans "Applications for automation with IoT" %}</p>
     </div>
   </div>
@@ -47,32 +50,37 @@
 
 <div class="container spaces">
   <div class="centered row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-6">
       <h1>{% trans "Homes" %}</h1>
+      <img src="{% static "svg/home.svg" %}"/>
       <p>{% trans "Domestic application of IoT" %}</p>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-6">
       <h1>{% trans "Enterprises" %}</h1>
+      <img src="{% static "svg/commerce.svg" %}"/>
       <p>{% trans "Corporate application of IoT" %}</p>
     </div>
   </div>
 </div>
 
-<div class="container spaces">
+<!--<div class="container spaces">
   <div class="centered row">
     <div class="col-md-4">
       <h1>{% trans "HUB" %}</h1>
+      <img src="{% static "svg/hubdev.svg" %}"/>
       <p>{% trans "Basic solution for Internet of Things" %}</p>
     </div>
     <div class="col-md-4">
       <h1>{% trans "HUB Pro" %}</h1>
+      <img src="{% static "svg/hubpro.svg" %}"/>
       <p>{% trans "Professional solution for Internet of Things" %}</p>
     </div>
     <div class="col-md-4">
       <h1>{% trans "Services" %}</h1>
+      <img src="{% static "svg/services.svg" %}"/>
       <p>{% trans "Services for Internet of Things" %}</p>
     </div>
   </div>
-</div>
+</div>!-->
 
 {% endblock %}
