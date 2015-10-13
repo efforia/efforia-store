@@ -4,7 +4,6 @@ function changeLocale(locale) {
 }
 
 $(window).load(function(){
-  var viewport = $(window).height();
 
   // Footer offsetting for fixed width on Bootstrap
   /* var height = $("body").height();
@@ -19,5 +18,8 @@ $(window).load(function(){
   }); */
 
   // Jumbotron offsetting on home page based on viewport and jumbotron min-height
-  if(viewport >= 720) $('.jumbotron').css({'min-height': $(window).height() - 84});
+  var navbar = 84; /* Navbar actual size */
+  var minheight = 450; /* Minimum actual height */
+  var viewport = $(window).height(); /* Viewport height */
+  if(viewport >= minheight) $('.jumbotron').css({'min-height': viewport - navbar});
 });

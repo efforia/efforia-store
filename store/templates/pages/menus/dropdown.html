@@ -27,17 +27,16 @@
   <li class="dropdown" id="hub">
     <a class="centered menuitem" href="{% url 'hub' %}" data-toggle="dropdown" onclick="redirect('{% url 'hub' %}');"> {% trans "HUB" %} </a>
     <ul class="dropdown-menu menu">
+      <li class="menuitem"><a href="{% url 'internetofthings' %}">Internet das Coisas</a></li>
       <li class="menuitem"><a href="{% url 'howitworks' %}">Como funciona</a></li>
       <li class="menuitem"><a href="{% url 'whatisitfor' %}">Para que serve</a></li>
       <li class="menuitem"><a href="{% url 'devices' %}">Dispositivos</a></li>
-      <li class="menuitem"><a href="{% url 'apps' %}">Aplicativos</a></li>
     </ul>
   </li>
   <li class="dropdown" id="aplicacoes">
     <a class="centered menuitem" href="{% url 'uses' %}" data-toggle="dropdown" onclick="redirect('{% url 'uses' %}');"> {% trans "HUB Pro" %} </a>
     <ul class="dropdown-menu menu">
       <li class="menuitem"><a href="{% url 'personalcomputing' %}">Computador Pessoal</a></li>
-      <li class="menuitem"><a href="{% url 'internetofthings' %}">Internet das Coisas</a></li>
       <li class="menuitem"><a href="{% url 'mediacenter' %}">Mídia Center</a></li>
       <li class="menuitem"><a href="{% url 'videogame' %}">Vídeo Game</a></li>
       <li class="menuitem"><a href="{% url 'server' %}">Servidor</a></li>
@@ -46,18 +45,19 @@
   <li class="dropdown" id="sobre">
     <a class="centered menuitem" href="{% url 'about' %}" data-toggle="dropdown" onclick="redirect('{% url 'about' %}');"> {% trans "Services" %} </a>
     <ul class="dropdown-menu menu">
+      <li class="menuitem"><a href="{% url 'apps' %}">Aplicativos</a></li>
       <li class="menuitem"><a href="{% url 'opensource' %}">Código Aberto</a></li>
-      <li class="menuitem"><a href="{% url 'localization' %}">Localização</a></li>
+      <li class="menuitem"><a href="{% url 'services' %}">Nuvem</a></li>
       <li class="menuitem"><a href="{% url 'partners' %}">Parceiros</a></li>
     </ul>
   </li>
   <li class="dropdown" id="suporte">
-    <a class="centered menuitem" href="{% url 'support' %}" data-toggle="dropdown" onclick="redirect('{% url 'support' %}');"> {% trans "Support" %} </a>
+    <a class="centered menuitem" href="{% url 'support' %}" data-toggle="dropdown" onclick="redirect('{% url 'support' %}');"> {% trans "Help" %} </a>
     <ul class="dropdown-menu menu">
       <li class="menuitem"><a href="{% url 'documentation' %}">Documentação</a></li>
       <li class="menuitem"><a href="{% url 'developer' %}">Desenvolvedor</a></li>
-      <li class="menuitem"><a href="{% url 'services' %}">Serviços</a></li>
       <li class="menuitem"><a href="{% url 'warranty' %}">Garantia</a></li>
+      <li class="menuitem"><a href="{% url 'localization' %}">Localização</a></li>
     </ul>
   </li>
   <!--<li class="dropdown" id="shop">

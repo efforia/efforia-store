@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-09 12:19-0300\n"
+"POT-Creation-Date: 2015-10-13 16:00-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,121 +148,133 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: store/templates/base.html:90 store/templates/pages/menus/dropdown.html:100
-msgid "My Account"
-msgstr "Minha Conta"
-
-#: store/templates/base.html:91
-msgid "My Bag"
-msgstr "Meu Carrinho"
-
-#: store/templates/base.html:92
-msgid "My Orders"
-msgstr "Meus Pedidos"
-
-#: store/templates/base.html:93
-msgid "Profile"
-msgstr "Perfil"
-
-#: store/templates/base.html:94
-msgid "Wishlist"
-msgstr "Lista de Desejos"
-
-#: store/templates/base.html:110 store/templates/base.html.py:115
+#: store/templates/base.html:98 store/templates/base.html.py:103
 msgid "+5551 9848 5888"
 msgstr "(51) 9848-5888"
 
-#: store/templates/base.html:112 store/templates/base.html.py:131
-#: store/templates/base.html:137
+#: store/templates/base.html:100 store/templates/base.html.py:119
+#: store/templates/base.html:125
 msgid "+5551 3516 2367"
 msgstr "(51) 3516-2367"
 
-#: store/templates/base.html:131 store/templates/base.html.py:137
+#: store/templates/base.html:119 store/templates/base.html.py:125
 msgid "Phone"
 msgstr "Telefone"
 
-#: store/templates/index.html:24
+#: store/templates/index.html:25 store/templates/index.html.py:26
 msgid "WE ARE"
 msgstr "SOMOS A"
 
-#: store/templates/index.html:24
+#: store/templates/index.html:25
 msgid "EFFORIA NANOCOMPUTERS"
 msgstr "EFFORIA NANOCOMPUTADORES"
 
-#: store/templates/index.html:26
+#: store/templates/index.html:30
 msgid "And we want the computers present at every moment of people's lives"
 msgstr ""
 "E queremos a computação presente em todos os momentos da vida das pessoas"
 
-#: store/templates/index.html:34
+#: store/templates/index.html:39
 msgid "Audiovisual"
 msgstr "Audiovisual"
 
-#: store/templates/index.html:35
-msgid "Applications for audiovisual integration"
+#: store/templates/index.html:40
+msgid ""
+"At Efforia we design and build automated audiovisual systems, all wirelessly "
+"connected and tightly integrated."
 msgstr ""
+"Na Efforia nós projetamos e montamos sistemas audiovisuais automatizados, "
+"todos conectados sem fio e muito bem integrados."
 
-#: store/templates/index.html:38
+#: store/templates/index.html:44
 msgid "Entertainment"
 msgstr "Entretenimento"
 
-#: store/templates/index.html:39
-msgid "Applications for entertainment systems"
+#: store/templates/index.html:45
+msgid ""
+"We also develop full-featured entertainment systems, ready to play every "
+"video content, music, or videogame."
 msgstr ""
+"Nós também desenvolvemos sistemas de entretenimento completos, prontos para "
+"reproduzir qualquer vídeo, música ou vídeogame."
 
-#: store/templates/index.html:42
+#: store/templates/index.html:49
 msgid "Automation"
 msgstr "Automação"
 
-#: store/templates/index.html:43
-msgid "Applications for automation with IoT"
+#: store/templates/index.html:50
+msgid ""
+"At the heart of our nanocomputers, we have the IoT concept, reaching the "
+"next level of automation."
 msgstr ""
+"No coração de nossos nanocomputadores, há o conceito da Internet das Coisas, "
+"alcançando assim a próxima nível da automação."
 
-#: store/templates/index.html:51
+#: store/templates/index.html:61 store/templates/index.html.py:68
 msgid "Homes"
 msgstr "Casas"
 
-#: store/templates/index.html:52
-msgid "Domestic application of IoT"
+#: store/templates/index.html:62 store/templates/index.html.py:69
+msgid ""
+"We automate houses with our own finest technology of IoT, connecting your "
+"home to the world."
 msgstr ""
+"Nós automatizamos casas com a nossa melhor tecnologia em IoT, conectando o "
+"seular ao mundo."
 
-#: store/templates/index.html:55
+#: store/templates/index.html:78 store/templates/index.html.py:84
 msgid "Enterprises"
 msgstr "Empresas"
 
-#: store/templates/index.html:56
-msgid "Corporate application of IoT"
+#: store/templates/index.html:79 store/templates/index.html.py:85
+msgid ""
+"With the Internet of Things platform of Efforia, your company will have the "
+"power to do more."
 msgstr ""
+"Com a plataforma da Internet das Coisas da Efforia, sua empresa terá o poder "
+"de fazer muito mais."
 
-#: store/templates/index.html:64 store/templates/includes/sitemap.html:5
+#: store/templates/index.html:96 store/templates/includes/sitemap.html:5
 #: store/templates/pages/menus/dropdown.html:28
 msgid "HUB"
 msgstr "HUB"
 
-#: store/templates/index.html:65
-msgid "Basic solution for Internet of Things"
+#: store/templates/index.html:97
+msgid ""
+"Know more about our efficient solution for Internet of Things automation and "
+"its numerous possibilities."
 msgstr ""
+"Saiba mais sobre a nossa solução eficiente de automação em Internet das "
+"Coisas e suas inúmeras possibilidades."
 
-#: store/templates/index.html:68 store/templates/pages/menus/dropdown.html:37
-msgid "HUB Pro"
-msgstr ""
-
-#: store/templates/index.html:69
-msgid "Professional solution for Internet of Things"
-msgstr ""
-
-#: store/templates/index.html:72 store/templates/pages/menus/dropdown.html:47
+#: store/templates/index.html:101 store/templates/pages/menus/dropdown.html:46
 msgid "Services"
 msgstr "Serviços"
 
-#: store/templates/index.html:73
-msgid "Services for Internet of Things"
+#: store/templates/index.html:102
+msgid ""
+"Ultimate services and plans that we can do more for you at Efforia "
+"Nanocomputers."
 msgstr ""
+"Os melhores serviços e planos que podemos oferecer a você na Efforia "
+"Nanocomputadores."
+
+#: store/templates/index.html:106 store/templates/pages/menus/dropdown.html:37
+msgid "HUB Pro"
+msgstr "HUB Pro"
+
+#: store/templates/index.html:107
+msgid ""
+"Discover about our outstanding solution for Internet of Things automation "
+"and its infinite possibilities."
+msgstr ""
+"Descubra mais sobre nossa incrível solução para automação baseada em IoT e "
+"suas infinitas possibilidades."
 
 #: store/templates/search_results.html:5 store/templates/search_results.html:6
 #: store/templates/search_results.html:15
 msgid "Search Results"
-msgstr ""
+msgstr "Resultados da busca"
 
 #: store/templates/search_results.html:13
 #: store/templates/pages/menus/breadcrumb.html:4
@@ -630,6 +642,27 @@ msgstr ""
 msgid "of"
 msgstr ""
 
+#: store/templates/includes/profile.html:8
+#: store/templates/pages/menus/dropdown.html:100
+msgid "My Account"
+msgstr "Minha Conta"
+
+#: store/templates/includes/profile.html:9
+msgid "My Bag"
+msgstr "Meu Carrinho"
+
+#: store/templates/includes/profile.html:10
+msgid "My Orders"
+msgstr "Meus Pedidos"
+
+#: store/templates/includes/profile.html:11
+msgid "Profile"
+msgstr "Perfil"
+
+#: store/templates/includes/profile.html:12
+msgid "Wishlist"
+msgstr "Lista de Desejos"
+
 #: store/templates/includes/search_form.html:14
 msgid "Everything"
 msgstr ""
@@ -643,7 +676,6 @@ msgid "Applications"
 msgstr "Aplicações"
 
 #: store/templates/includes/sitemap.html:20
-#: store/templates/pages/menus/dropdown.html:55
 msgid "Support"
 msgstr "Suporte"
 
@@ -673,6 +705,10 @@ msgstr ""
 #: store/templates/pages/menus/admin.html:31
 msgid "Add"
 msgstr ""
+
+#: store/templates/pages/menus/dropdown.html:55
+msgid "Help"
+msgstr "Ajuda"
 
 #: store/templates/shop/bank_confirmation.html:4
 #: store/templates/shop/bank_confirmation.html:6
