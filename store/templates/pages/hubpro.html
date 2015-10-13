@@ -4,6 +4,25 @@
 
 {% block main %}
 
+<style>
+
+.background {
+  background: url("{% static 'img/hubpro.jpg' %}") center center;
+  background-size: cover;
+}
+
+</style>
+
+<div class="jumbotron background">
+  <div class="transparent-overlay bottom">
+    <div class="container">
+      <!--<img class="jumbo-img" src="{% static "svg/efforialogo.svg" %}"/>!-->
+      <h2 class="jumbo-heading white">TODO O PODER NA PALMA DE SUA MÃO.</h2>
+      <p class="jumbo-p white"> {% trans "And we want the computers present at every moment of people's lives" %}. </p>
+    </div>
+  </div>
+</div>
+
 <div id="container" class="container-fluid">
   <h1 id="title" style="text-align:center;"> Aplicações </h1>
   <div class="row">

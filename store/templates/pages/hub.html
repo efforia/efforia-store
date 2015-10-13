@@ -4,14 +4,29 @@
 
 {% block main %}
 
+<style>
+
+.background {
+  background: url("{% static 'img/hub.jpg' %}") center center;
+  background-size: cover;
+}
+
+</style>
+
+<div class="jumbotron background">
+  <div class="transparent-overlay bottom">
+    <div class="container">
+      <!--<img class="jumbo-img" src="{% static "svg/efforialogo.svg" %}"/>!-->
+      <h2 class="jumbo-heading white">O FUTURO DA COMPUTAÇÃO PESSOAL COMEÇA AQUI</h2>
+      <p class="jumbo-p white"> {% trans "And we want the computers present at every moment of people's lives" %}. </p>
+    </div>
+  </div>
+</div>
+
 <div id="container" class="">
-  <script type="text/javascript">
-  $('#title').remove();
-  $('#container').removeClass('container-fluid');
-  </script>
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
-      <h1 class="text-center">Todo o poder na palma de sua mão.</h1>
+      <h1 class="text-center">Todo o poder na palma de sua mão, agora.</h1>
       <img src="/static/svg/television.svg" width="100%"></div>
     </div>
   <div class="row">
