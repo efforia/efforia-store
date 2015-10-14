@@ -7,48 +7,55 @@
 <style>
 
 .background {
-  background: url("{% static 'img/hub.jpg' %}") center center;
+  /* background: url("{% static 'img/hubabg.png' %}") center center; */
+  background: url("{% static 'img/orange-nebula.jpg' %}") center center;
   background-size: cover;
 }
 
 </style>
 
 <div class="jumbotron background">
-  <div class="transparent-overlay bottom">
+  <!--<div class="overlay bottom">!-->
+  <div class="transparent-white overlay middle">
     <div class="container">
-      <!--<img class="jumbo-img" src="{% static "svg/efforialogo.svg" %}"/>!-->
-      <h2 class="jumbo-heading white">O FUTURO DA COMPUTAÇÃO PESSOAL COMEÇA AQUI</h2>
-      <p class="jumbo-p white"> {% trans "And we want the computers present at every moment of people's lives" %}. </p>
+      <img style="height:21em" src="{% static 'img/huba.png' %}"/><br>
+      <!--<img style="height:9em;" src="{% static 'svg/hubwhite.svg' %}"/>!-->
+      <h2 style="font-size:3em" class="black">UM UNIVERSO <br>DE GRANDES POSSIBILIDADES.</h2><br>
+      <button type="button" class="btn btn-default btn-lg">Compre agora e faça a diferença</button>
     </div>
   </div>
 </div>
 
+<ul class="nav nav-pills hidden-xs">
+  <li role="presentation" class="right rightmargin"><button class="btn btn-default" style="height:43px;">Comprar</button></li>
+  <li role="presentation" class="active right rightmargin"><a href="#">Home</a></li>
+  <li role="presentation" class="right"><a href="#">Profile</a></li>
+  <li role="presentation" class="right"><a href="#">Messages</a></li>
+  <li role="presentation" class="left leftmargin"><img height="43" src="{% static 'svg/hublogo.svg' %}"/></li><br>
+</ul>
+
 <div class="container">
+  <div class="row"></div>
   <div class="row">
     <div class="col-md-12">
-      <div class="col-md-8 col-md-offset-2">
-        <h1 class="text-center">Todo o poder na palma de sua mão, agora.</h1>
-        <img src="/static/svg/television.svg" width="100%">
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-md-4 col-sm-4" style="padding: 0px;"><img src="/static/svg/cool.svg" width="100%">
+      <div class="col-md-4 col-sm-4" style="padding:15px">
+        <img src="/static/svg/cool.svg" style="border-radius:15px" width="100%"/>
         <div class="text-center" style="padding: 0px 15px;">
           <h1>Refrigerado</h1>
           <h3>Não esquenta</h3>
           <p>O HUB representa o futuro da computação pessoal: ele não esquenta; graças à boa temperatura que ele opera, o HUB é uma ótima opção para qualquer ambiente, seja ele externo ou interno.&nbsp;</p>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4" style="padding: 0px;"><img src="/static/svg/quiet.svg" width="100%">
+      <div class="col-md-4 col-sm-4" style="padding:15px">
+        <img src="/static/svg/quiet.svg" style="border-radius:15px" width="100%">
         <div class="text-center" style="padding: 0px 15px;">
           <h1>Silencioso</h1>
           <h3>Não faz barulho</h3>
           <p>Como o HUB aquece muito pouco, ele não possui ventoinhas, o que o torna bastante silencioso, podendo operar por horas sem você nem perceber</p>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4" style="padding: 0px;"><img src="/static/svg/economic.svg" width="100%">
+      <div class="col-md-4 col-sm-4" style="padding: 15px">
+        <img src="/static/svg/economic.svg" style="border-radius:15px" width="100%"/>
         <div class="text-center" style="padding: 0px 15px;">
           <h1>Econômico</h1>
           <h3>Utiliza pouca energia</h3>
@@ -60,28 +67,44 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-lg-offset-1 col-lg-5 col-md-6 col-sm-6"><img src="/static/svg/hublateral.svg" height="400" width="100%">
+    <div class="col-md-4">
+      <img src="/static/svg/hublateral.svg" class="box" height="400" width="100%">
       <div class="text-center" style="padding: 0px 15px;">
         <h1>Portátil</h1>
         <h3>Carregue para onde quiser</h3>
         <p>O HUB possui um tamanho bastante pequeno se comparado a computadores de modo em geral. Sendo assim, é muito fácil de carregá-lo para a praia, para o campo, e para onde você precisar.</p>
       </div>
     </div>
-    <div class="col-lg-5 col-md-6 col-sm-6"><img src="/static/svg/anything.svg" height="400" width="100%">
+    <div class="col-md-4"><img src="/static/svg/anything.svg" class="box" height="400" width="100%">
       <div class="text-center" style="padding: 0px 15px;">
         <h1>Versátil</h1>
         <h3>Baterias inclusas</h3>
         <p>Graças a tecnologia exclusiva EOS, que habilita o uso multifuncional do nanocomputador HUB, você tem um equipamento completo em suas mãos, podendo atuar das mais diversas maneiras, desde um mídia center até um computador completo com teclado, mouse e monitor.</p>
       </div>
     </div>
+    <div class="col-md-4">
+      <div class="text-center" style="padding:0px 15px;">
+        <img src="/static/svg/television.svg" class="box" height="400" width="100%">
+        <h1>Poderoso</h1>
+        <h3 class="text-center">Tudo na palma de sua mão</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
   </div>
   <p><br><br></p>
   <div class="row">
-    <div class="col-md-12 text-center"><img src="/static/svg/combinated.svg" width="90%">
+    <div class="col-md-6 text-center"><img src="/static/svg/combinated.svg" class="box" width="90%">
       <div style="padding: 0px 50px;">
         <h1>Sem fios</h1>
         <h3>Adeus embaraço</h3>
         <p>A tecnologia EOS, juntamente com o sistema de conexão sem fio do HUB, reduz drasticamente a necessidade de ter fios circulando pela sua casa ou trabalho. Isso torna o nanocomputador fácil de carregar e prático de ligar para uso. Muitas vezes necessitará apenas da tomada ligada e pronto! Seu HUB estará disponível para o que precisar.</p>
+      </div>
+    </div>
+    <div class="col-md-6 text-center"><img src="/static/svg/coloured.svg" class="box" width="90%">
+      <div style="padding: 0px 50px;">
+        <h1>Customizável</h1>
+        <h3>Escolha como você quer</h3>
+        <p>Nós da Efforia acreditamos que você pode ter um HUB para chamar de seu. Por isso temos diversas opções de acessórios, cores e outros adicionais, disponíveis para você em nossa loja virtual.</p>
       </div>
     </div>
   </div>
@@ -121,15 +144,7 @@
     <img class="col-md-2 col-sm-3 col-xs-4 visible-sm visible-xs" src="/static/svg/specs-07.svg" style="padding: 0px;" width="100%"> <img class="col-md-2 col-sm-3 col-xs-4 visible-sm visible-xs" src="/static/svg/specs-08.svg" style="padding: 0px;" width="100%"> <!--<img class="col-md-2 col-sm-3 col-xs-4 visible-xs" src="/static/svg/specs-08.svg" width="100%" style="padding:0px;"/>!-->
   </div>
   <p><br><br></p>
-  <div class="row">
-    <div class="col-md-12 text-center"><img src="/static/svg/coloured.svg" width="90%">
-      <div style="padding: 0px 50px;">
-        <h1>Customizável</h1>
-        <h3>Escolha como você quer</h3>
-        <p>Nós da Efforia acreditamos que você pode ter um HUB para chamar de seu. Por isso temos diversas opções de acessórios, cores e outros adicionais, disponíveis para você em nossa loja virtual.</p>
-      </div>
-    </div>
-  </div>
+  <div class="row"></div>
   <p><br><br></p><p><br></p>
 </div>
 

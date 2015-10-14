@@ -7,23 +7,33 @@
 <style>
 
 .background {
-  background: url("{% static 'img/hubpro.jpg' %}") center center;
+  /* background: url("{% static 'img/hubpabg.png' %}") center center; */
+  background: url("{% static 'img/explosion.jpg' %}") center center;
   background-size: cover;
 }
 
 </style>
 
 <div class="jumbotron background">
-  <div class="transparent-overlay bottom">
-    <div class="container">
-      <!--<img class="jumbo-img" src="{% static "svg/efforialogo.svg" %}"/>!-->
-      <h2 class="jumbo-heading white">TODO O PODER NA PALMA DE SUA MÃO.</h2>
-      <p class="jumbo-p white"> {% trans "And we want the computers present at every moment of people's lives" %}. </p>
+  <!--<div class="overlay bottom">!-->
+  <div class="transparent-black overlay middle">
+    <div class="container centered">
+      <img style="height:27em" src="{% static 'img/hubpa.png' %}"/>
+      <!--<img style="height:9em" src="{% static "svg/hubwhite.svg" %}"/>!-->
+      <h2 style="font-size:3em" class="white">TODO O PODER <br>NA PALMA DE SUA MÃO.</h2>
     </div>
   </div>
 </div>
 
-<div id="container" class="container-fluid">
+<ul class="nav nav-pills hidden-xs">
+  <li role="presentation" class="right rightmargin"><button class="btn btn-default" style="height:43px;">Comprar</button></li>
+  <li role="presentation" class="active right rightmargin"><a href="#">Home</a></li>
+  <li role="presentation" class="right"><a href="#">Profile</a></li>
+  <li role="presentation" class="right"><a href="#">Messages</a></li>
+  <li role="presentation" class="left leftmargin"><img height="43" src="{% static 'svg/hublogo.svg' %}"/></li><br>
+</ul>
+
+<div id="container" class="container">
   <h1 id="title" style="text-align:center;"> Aplicações </h1>
   <div class="row">
     <div class="col-md-12 text-center" style="padding: 0px 50px;">
@@ -37,6 +47,8 @@
       <p>Graças a este diferencial, nossos nanocomputadores possuem diversas funcionalidades, todas elas divididas em cartões EMCs. Com isso, podemos utilizar um cartão para que o dispositivo funcione como um computador pessoal, dispondo de teclado, mouse e monitor, outro cartão para mídia center, conectado a uma televisão e a um controle sem fio, entre muitas outras possibilidades. Você escolhe como seu aparelho irá operar.</p>
     </div>
   </div>
+</div>
+<div class="container">
   <div class="row centered">
     <div class="col-md-4 col-sm-6 block-padding">
       <div class="block white" style="background-color:#996699;">
@@ -60,6 +72,8 @@
       </div>
     </div>
   </div>
+</div>
+<div class="container">
   <div class="centered row">
     <div class="col-md-4 col-sm-6 block-padding">
       <div class="block white" style="background-color:#6EC497;">

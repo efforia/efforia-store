@@ -23,14 +23,9 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
 .turquoise { color:turquoise; }
 .pink { color: pink; }
 .gold { color: lightgreen; }
-.black:hover { color:black; }
-.white:hover { color:white; }
-.white { color:white; }
 .centered { text-align:center; }
 .bar { background:white; }
 .bordered { border: 1px solid white; }
-.leftmargin { margin-left: 15px; }
-.rightmargin { margin-right:15px; }
 .leftaligned { text-align:left; }
 .rightaligned { text-align:right; }
 .navbar-height { height:3em; }
@@ -39,16 +34,6 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
 .dropdown-white { background-color: #FFFFFF !important; }
 .content { min-height:200px; }
 .info { font-weight:normal !important; }
-
-.footer {
-  background-color:#222222;
-  color:#969696;
-  margin-top:0;
-  font-size: 1.2em;
-  border-top:0;
-  font-weight: bold;
-  padding:0px;
-}
 
 .fixed-navbar {
 	border:0px;

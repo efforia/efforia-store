@@ -9,11 +9,17 @@
   border-radius:15px;
 }
 
-.block-padding { padding:10px !important; }
+.footer {
+  background-color:#222222;
+  margin-top:0;
+  font-size: 1.2em;
+  border-top:0;
+  font-weight: regular;
+  padding:0px;
+}
 
-.transparent-overlay {
+.overlay {
   position: relative;
-  background: rgba(0,0,0,0.7);
   min-height: inherit;
 }
 
@@ -28,3 +34,25 @@
   align-items: flex-end;
   justify-content: center;
 }
+
+.box {
+  border:1px solid #000000;
+  border-radius:15px;
+}
+
+/* Bootstrap Overriding CSS rules and others oneliners */
+
+.block-padding { padding:10px !important; }
+
+.right { float:right !important; }
+.left { float:left !important; }
+.leftmargin { margin-left:15px !important; }
+.rightmargin { margin-right:15px !important; }
+
+.black { color:#000000 !important; }
+.black:hover { color:#000000 !important; }
+.transparent-black { background: rgba(0,0,0,0.7); }
+
+.white { color:#FFFFFF !important; }
+.white:hover { color:#FFFFFF !important; }
+.transparent-white { background: rgba(255,255,255,0.7); }
