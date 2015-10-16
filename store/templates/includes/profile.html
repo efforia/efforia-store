@@ -1,14 +1,7 @@
 {% load shop_tags pages_tags mezzanine_tags i18n future staticfiles %}
 
-<div class="dropdown" id="pop">
-  <a class="btn btn-lg btn-block btn-default" data-toggle="dropdown">
-    <span class="glyphicon glyphicon-shopping-cart"></span>
-  </a>
-  <ul class="dropdown-menu dropdown-white centered btn-block menu">
-    <li class="menuitem"><a href="{% url 'old_account_redirect' %}">{% trans "My Account" %}</a></li>
-    <li class="menuitem"><a href="{% url 'shop_cart' %}">{% trans "My Bag" %}</a></li>
-    <li class="menuitem"><a href="{% url 'order_history' %}">{% trans "My Orders" %}</a></li>
-    <li class="menuitem"><a href="{% url 'profile_update' %}">{% trans "Profile" %}</a></li>
-    <li class="menuitem"><a href="{% url 'shop_wishlist' %}">{% trans "Wishlist" %}</a></li>
-  </ul>
-</div>
+<li class="menuitem"><a class="black" href="{% url 'old_account_redirect' %}">{% trans "My Account" %}</a></li>
+<li class="menuitem"><a class="black" href="{% url 'shop_cart' %}">{% trans "My Bag" %}</a></li>
+<li class="menuitem"><a class="black" href="{% url 'order_history' %}">{% trans "My Orders" %}</a></li>
+<li class="menuitem"><a class="black" href="{% url 'profile_update' %}">{% trans "Profile" %}</a></li>
+<li class="menuitem"><a class="black" href="{% url 'shop_wishlist' %}">{% trans "Wishlist" %}</a></li>

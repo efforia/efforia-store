@@ -40,6 +40,12 @@
   border-radius:15px;
 }
 
+.account {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CCCCCC !important;
+  /* box-shadow: 1px 1px 10px #FFFFFF !important; */
+}
+
 /* Bootstrap Overriding CSS rules and others oneliners */
 
 .block-padding { padding:10px !important; }
@@ -56,3 +62,43 @@
 .white { color:#FFFFFF !important; }
 .white:hover { color:#FFFFFF !important; }
 .transparent-white { background: rgba(255,255,255,0.7); }
+
+.navbar-toggle {
+  margin: 20px 15px;
+  float: left;
+  padding: 14px 12px;
+  border-radius: 6px;
+  background: #FFFFFF;
+}
+
+.icon-bar { background-color: #000000 !important; }
+
+.navbar-brand-center {
+  padding:17px;
+  float:none !important;
+  position:absolute;
+  text-align:center;
+  height:100%;
+  width:40%;
+  left:30%;
+}
+
+.navbar-img {
+  height:50px;
+  display:inline !important;
+}
+
+.navbar-select {
+  height:100% !important;
+  padding:17px !important;
+}
+
+.navbar-corner-left {
+  margin:20px 15px;
+  float:left;
+}
+
+.navbar-corner-right {
+  margin:20px 15px;
+  float:right;
+}

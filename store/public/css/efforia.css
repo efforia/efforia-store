@@ -5,7 +5,7 @@ html,body {
     padding: 0px;
     overflow-x: hidden;
 }
-body { font-family:Ubuntu; }
+body { font-family:Ubuntu; padding:0px; }
 h1,h2,h3,h4,h5,h6,ul.nav { font-family: Ubuntu; /*font-weight:bold;*/ }
 a,a:hover,a:active,a:focus { text-decoration:none !important; }
 
@@ -28,10 +28,8 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
 .bordered { border: 1px solid white; }
 .leftaligned { text-align:left; }
 .rightaligned { text-align:right; }
-.navbar-height { height:3em; }
 .navbar-padding { padding:15px; }
 .nomargin { margin:0px; }
-.dropdown-white { background-color: #FFFFFF !important; }
 .content { min-height:200px; }
 .info { font-weight:normal !important; }
 

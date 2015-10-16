@@ -52,83 +52,104 @@
 {% block header %}{% endblock %}
 </head>
 
-<body id="{% block body_id %}body{% endblock %}" style="padding:0px;">
-    <nav class="navbar navbar-default fixed-navbar">
-        <div class="container-fluid">
-            <a class="hidden-md hidden-lg navbar-brand navbar-left" style="background:transparent !important; padding-left:0px;" href="/">
-                <img src="{% static "svg/logo.svg" %}" alt="Efforia" class="navbar-height"/></a>
-            <a class="hidden-xs hidden-sm navbar-brand navbar-left" style="background:transparent !important;" href="/">
-                <img src="{% static "svg/logo.svg" %}" alt="Efforia" class="navbar-height"/></a>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed bordered navbar-height" data-toggle="collapse" data-target="#collapsed" style="margin: 20px 15px;">
-                    <span class="sr-only">{% trans "Toggle Navigation" %}</span>
-                    <span class="icon-bar bar"></span>
-                    <span class="icon-bar bar"></span>
-                    <span class="icon-bar bar"></span>
-                </button>
-                <form class="navbar-form navbar-padding none nomargin" action="/search/" role="search">
-                    <div class="input-group input-group-lg">
-                        <input class="form-control" placeholder="{% trans "Search" %}" name="q" value="" type="text" style="height:3em;">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default navbar-height" value="" type="submit" style="height:3em;">
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-            <div id="collapsed" class="collapse navbar-collapse navbar-left none">
-                {% page_menu "pages/menus/dropdown.html" %}
-                <div class="hidden-lg hidden-md centered"> {% include "includes/flags.html" %} </div>
-                <div class="hidden-lg hidden-md navbar-right navbar-cart"> {% include "includes/profile.html" %} </div>
-            </div>
-            <div id="profile" class="navbar-right navbar-cart hidden-xs hidden-sm"> {% include "includes/profile.html" %} </div>
-            <div id="flags" class="navbar-right navbar-flag hidden-xs hidden-sm"> {% include "includes/flags.html" %} </div>
-        </div>
-    </nav>
+<body>
 
-    <!-- Main block for pages container !-->
-    <div class="content"> {% block main %} {% endblock %} </div>
-
-    <!-- Common footer for all pages, including scripts !-->
-    <footer class="footer">
-      <nav class="footer-nav">
-        <div class="col-md-3"></div>
-        <div class="col-md-6 centered visible-lg visible-md" style="font-size:0.9em; font-weight:normal;">
-          <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
-          <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforiaca&nbsp;&nbsp;
-          <img src="{% static "svg/phone.svg" %}" height="18"/>&nbsp;{% trans "+5551 3516 2367" %}&nbsp;&nbsp;
+  <!-- Common navbar for all sizes and pages of the website !-->
+  <nav class="navbar navbar-default fixed-navbar">
+    <div class="container-fluid">
+      <a class="hidden-xs hidden-sm navbar-brand navbar-select" href="/">
+        <img src="{% static "svg/logo.svg" %}" class="navbar-img" alt="Efforia"/>
+      </a>
+      <div class="navbar-header hidden-md">
+        <div id="search" class="hidden-xs hidden-sm">
+          {% include "includes/search_form.html" %}
         </div>
-        <div class="col-md-6 centered visible-xs visible-sm" style="font-size:0.8em; font-weight:normal;">
-          <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
-          <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforiaca&nbsp;&nbsp;
-        </div>
-        <div class="col-md-3"></div>
-      </nav>
-      <div class="container">
-        <div class="hidden-xs"> {% include "includes/sitemap.html" %} </div>
-        <div class="row">
-          <div class="visible-sm"><img src="{% static "svg/options.svg" %}" style="width:90%; margin:1% 5%"/></div>
-          <div class="visible-xs"><img src="{% static "svg/optionsv.svg" %}" style="width:90%; margin:1% 5%"/></div>
-          <div class="visible-md visible-lg"><img src="{% static "svg/optionsd.svg" %}" style="width:90%; margin:1% 5%"/></div>
-        </div>
-        <div class="row info">
-          <p class="visible-md visible-lg site-info text-center">
-            Efforia Tecnologia Ltda - ME
-            <span class="separator">|</span> CNPJ: 15.436.865/0001-72
-            <span class="separator">|</span> {% trans "Phone" %}: {% trans "+5551 3516 2367" %}
-            <span class="separator">|</span> Rua Vigário José Inácio, 399/409 - Porto Alegre/RS - Brasil
-          </p>
-          <p class="visible-xs visible-sm site-info text-center">
-            Efforia Tecnologia Ltda - ME<br/>
-            CNPJ: 15.436.865/0001-72<br/>
-            {% trans "Phone" %}: {% trans "+5551 3516 2367" %}<br/>
-            Rua Vigário José Inácio, 399/409<br/>
-            Porto Alegre/RS - Brasil
-          </p>
+        <button class="navbar-toggle collapsed bordered navbar-height navbar-corner-left"
+                type="button" data-toggle="collapse" data-target="#collapsed">
+          <span class="sr-only">{% trans "Toggle Navigation" %}</span>
+          <span class="icon-bar bar"></span>
+          <span class="icon-bar bar"></span>
+          <span class="icon-bar bar"></span>
+        </button>
+        <a class="visible-xs visible-sm navbar-brand-center" href="/">
+          <img src="{% static "svg/logo.svg" %}" class="navbar-img" alt="Efforia"/>
+        </a>
+        <div class="visible-xs visible-sm navbar-cart navbar-corner-right">
+          <button type="button" class="btn btn-lg btn-default" data-toggle="collapse" data-target="#profile">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+          </button>
         </div>
       </div>
-    </footer>
-    {% include "includes/footer_scripts.html" %}
+      <div id="profile" class="collapse hidden-lg hidden-md">
+        <ul class="nav navbar-nav navbar-height navbar-padding nav-default centered">
+          {% include "includes/profile.html" %}
+        </ul>
+      </div>
+      <div id="collapsed" class="collapse navbar-collapse navbar-left none">
+        {% page_menu "pages/menus/dropdown.html" %}
+        <div class="visible-xs visible-sm centered"> {% include "includes/search_form.html" %} </div>
+      </div>
+      <div id="profile" class="navbar-right navbar-cart hidden-xs hidden-sm">
+        <div class="dropdown" id="pop">
+          <a class="btn btn-lg btn-default" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+          </a>
+          <ul class="dropdown-menu btn-block account centered menu">
+            {% include "includes/profile.html" %}
+          </ul>
+        </div>
+      </div>
+      <div id="flags" class="navbar-right navbar-flag hidden-xs hidden-sm">
+        {% include "includes/flags.html" %}
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main block for pages container !-->
+  <div class="content"> {% block main %} {% endblock %} </div>
+
+  <!-- Common footer for all pages, including scripts !-->
+  <footer class="footer">
+    <nav class="footer-nav">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 centered visible-lg visible-md" style="font-size:0.9em; font-weight:normal;">
+        <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
+        <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforiaca&nbsp;&nbsp;
+        <img src="{% static "svg/phone.svg" %}" height="18"/>&nbsp;{% trans "+5551 3516 2367" %}&nbsp;&nbsp;
+      </div>
+      <div class="col-md-6 centered visible-xs visible-sm" style="font-size:0.8em; font-weight:normal;">
+        <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
+        <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforiaca&nbsp;&nbsp;
+      </div>
+      <div class="col-md-3"></div>
+    </nav>
+    <div class="container">
+      <div class="hidden-xs"> {% include "includes/sitemap.html" %} </div>
+      <div class="row">
+        <div class="visible-sm"><img src="{% static "svg/options.svg" %}" style="width:90%; margin:1% 5%"/></div>
+        <div class="visible-xs"><img src="{% static "svg/optionsv.svg" %}" style="width:90%; margin:1% 5%"/></div>
+        <div class="visible-md visible-lg"><img src="{% static "svg/optionsd.svg" %}" style="width:90%; margin:1% 5%"/></div>
+      </div>
+      <div class="visible-xs visible-sm row mini-spaces">
+        <div class="centered"> {% include "includes/flags.html" %} </div>
+      </div>
+      <div class="row info white">
+        <p class="visible-md visible-lg site-info text-center">
+          Efforia Tecnologia Ltda - ME
+          <span class="separator">|</span> CNPJ: 15.436.865/0001-72
+          <span class="separator">|</span> {% trans "Phone" %}: {% trans "+5551 3516 2367" %}
+          <span class="separator">|</span> Rua Vigário José Inácio, 399/409 - Porto Alegre/RS - Brasil
+        </p>
+        <p class="visible-xs visible-sm site-info text-center">
+          Efforia Tecnologia Ltda - ME<br/>
+          CNPJ: 15.436.865/0001-72<br/>
+          {% trans "Phone" %}: {% trans "+5551 3516 2367" %}<br/>
+          Rua Vigário José Inácio, 399/409<br/>
+          Porto Alegre/RS - Brasil
+        </p>
+      </div>
+    </div>
+  </footer>
+  {% include "includes/footer_scripts.html" %}
 </body>
 </html>

@@ -1,14 +1,18 @@
 .dropdown-toggle { background:transparent !important; }
+
 .caret { display:none; }
+
 .menu {
   background:#F8F8F8;
   box-shadow:none;
   border:none;
 }
+
 .menuitem {
   color:#000000 !important;
   font-size:1.2em
 }
+
 .nav-default {
   float:none;
   margin: 0 auto;
