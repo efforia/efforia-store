@@ -1,7 +1,26 @@
 {% load shop_tags pages_tags mezzanine_tags i18n future staticfiles %}
 
-<li class="menuitem"><a class="black" href="{% url 'old_account_redirect' %}">{% trans "My Account" %}</a></li>
-<li class="menuitem"><a class="black" href="{% url 'shop_cart' %}">{% trans "My Bag" %}</a></li>
-<li class="menuitem"><a class="black" href="{% url 'order_history' %}">{% trans "My Orders" %}</a></li>
-<li class="menuitem"><a class="black" href="{% url 'profile_update' %}">{% trans "Profile" %}</a></li>
-<li class="menuitem"><a class="black" href="{% url 'shop_wishlist' %}">{% trans "Wishlist" %}</a></li>
+<li class="menuitem">
+  <a class="black" href="{% url 'old_account_redirect' %}">
+    <span class="glyphicon glyphicon-user"></span>
+    &nbsp;{% trans "Account" %}
+  </a>
+</li>
+<li class="menuitem">
+  <a class="black" href="{% url 'shop_cart' %}">
+    <span class="glyphicon glyphicon-shopping-cart"></span>
+    &nbsp;{% trans "Bag" %}
+  </a>
+</li>
+<li class="menuitem">
+  <a class="black" href="{% url 'shop_wishlist' %}">
+    <span class="glyphicon glyphicon-gift"></span>
+    &nbsp;{% trans "List" %}
+  </a>
+</li>
+<li class="menuitem">
+  <a class="black" href="{% url 'order_history' %}">
+    <span class="glyphicon glyphicon-list-alt"></span>
+    &nbsp;{% trans "Orders" %}
+  </a>
+</li>
