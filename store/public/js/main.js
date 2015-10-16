@@ -3,6 +3,17 @@ function changeLocale(locale) {
   $('#locale').submit();
 }
 
+function submenuOnTop() {
+  console.log('scroll');
+  if ($(this).scrollTop() >= 84) $('.submenu').css({'top':'0px'});
+  else $('.submenu').css({'top':'84px'});
+}
+
+$(document).ready(function(){
+  $('body').scroll(submenuOnTop());
+  $(document).scroll(submenuOnTop());
+})
+
 $(window).load(function(){
 
   // Footer offsetting for fixed width on Bootstrap
