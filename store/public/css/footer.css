@@ -1,0 +1,9 @@
+.list {
+  display: inline-block;
+  width: 150px !important;
+  margin-left: 20px !important;
+  vertical-align: top;
+  text-align: center;
+}
+
+.gray { color: #CCCCCC !important; }

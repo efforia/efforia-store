@@ -1,40 +1,42 @@
 {% load i18n staticfiles %}
 
+<link rel="stylesheet" href="{% static "css/footer.css" %}">
+
 <div class="nav-footer">
-  <ul class="list-unstyled">
-    <li><a href="{% url 'hub' %}">{% trans "HUB" %}</a></li>
-    <li><a href="{% url 'howitworks' %}">Como funciona</a></li>
-    <li><a href="{% url 'whatisitfor' %}">Para que serve</a></li>
-    <li><a href="{% url 'devices' %}">Dispositivos</a></li>
-    <li><a href="{% url 'apps' %}">Aplicativos</a></li>
+  <ul class="list list-unstyled">
+    <li><h2><a class="white" href="{% url 'hub' %}">{% trans "HUB" %}</a></h2></li>
+    <li><a class="gray" href="{% url 'howitworks' %}">Como funciona</a></li>
+    <li><a class="gray" href="{% url 'whatisitfor' %}">Para que serve</a></li>
+    <li><a class="gray" href="{% url 'devices' %}">Dispositivos</a></li>
+    <li><a class="gray" href="{% url 'apps' %}">Aplicativos</a></li>
   </ul>
-  <ul class="list-unstyled">
-    <li><a href="{% url 'uses' %}">{% trans "Applications" %}</a></li>
-    <li><a href="{% url 'personalcomputing' %}">Computador Pessoal</a></li>
-    <li><a href="{% url 'internetofthings' %}">Internet das Coisas</a></li>
-    <li><a href="{% url 'mediacenter' %}">Mídia Center</a></li>
-    <li><a href="{% url 'videogame' %}">Vídeo Game</a></li>
-    <li><a href="{% url 'server' %}">Servidor</a></li>
+  <ul class="list list-unstyled">
+    <li><h2><a class="white" href="{% url 'uses' %}">{% trans "HUB Pro" %}</a></h2></li>
+    <li><a class="gray" href="{% url 'personalcomputing' %}">Computador</a></li>
+    <li><a class="gray" href="{% url 'internetofthings' %}">Internet das Coisas</a></li>
+    <li><a class="gray" href="{% url 'mediacenter' %}">Mídia Center</a></li>
+    <li><a class="gray" href="{% url 'videogame' %}">Vídeo Game</a></li>
   </ul>
-  <ul class="list-unstyled">
-    <li><a href="{% url 'support' %}">{% trans "Support" %}</a></li>
-    <li><a href="{% url 'documentation' %}">Documentação</a></li>
-    <li><a href="{% url 'developer' %}">Desenvolvedor</a></li>
-    <li><a href="{% url 'services' %}">Serviços</a></li>
-    <li><a href="{% url 'warranty' %}">Garantia</a></li>
+  <ul class="list list-unstyled">
+    <li><h2><a class="white" href="{% url 'support' %}">{% trans "Services" %}</a></h2></li>
+    <li><a class="gray" href="{% url 'documentation' %}">Documentação</a></li>
+    <li><a class="gray" href="{% url 'developer' %}">Desenvolvedor</a></li>
+    <li><a class="gray" href="{% url 'services' %}">Serviços</a></li>
+    <li><a class="gray" href="{% url 'warranty' %}">Garantia</a></li>
   </ul>
-  <ul class="list-unstyled">
-    <li><a href="{% url 'about' %}">{% trans "About" %}</a></li>
-    <li><a href="{% url 'opensource' %}">Código Aberto</a></li>
-    <li><a href="{% url 'localization' %}">Localização</a></li>
-    <li><a href="{% url 'partners' %}">Parceiros</a></li>
+  <ul class="list list-unstyled">
+    <li><h2><a class="white" href="{% url 'about' %}">{% trans "Help" %}</a></h2></li>
+    <li><a class="gray" href="{% url 'opensource' %}">Código Aberto</a></li>
+    <li><a class="gray" href="{% url 'localization' %}">Localização</a></li>
+    <li><a class="gray" href="{% url 'partners' %}">Parceiros</a></li>
+    <li><a class="gray" href="{% url 'server' %}">Servidor</a></li>
   </ul>
-  <ul class="list-unstyled">
-    <li><a href="/shop/">{% trans "Shop" %}</a></li>
-    <li><a href="/shop/hub/">HUB</a></li>
-    <li><a href="/shop/emc/">EMC</a></li>
-    <li><a href="/shop/cabos/">Cabos</a></li>
-    <li><a href="/shop/acessorios/">Acessórios</a></li>
-    <li><a href="{% url 'volumes' %}">Volumes</a></li>
-  </ul>
+  <!--<ul class="list-unstyled">
+    <li><a class="gray" href="/shop/">{% trans "Shop" %}</a></li>
+    <li><a class="gray" href="/shop/hub/">HUB</a></li>
+    <li><a class="gray" href="/shop/emc/">EMC</a></li>
+    <li><a class="gray" href="/shop/cabos/">Cabos</a></li>
+    <li><a class="gray" href="/shop/acessorios/">Acessórios</a></li>
+    <li><a class="gray" href="{% url 'volumes' %}">Volumes</a></li>
+  </ul>!-->
 </div>

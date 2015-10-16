@@ -46,6 +46,26 @@
   /* box-shadow: 1px 1px 10px #FFFFFF !important; */
 }
 
+.payments {
+  width:90%;
+  margin:1% 5%;
+}
+
+.spaces {
+  margin-top:70px;
+  margin-bottom:70px;
+}
+
+.mini-spaces {
+  margin-top:35px;
+  margin-bottom:35px;
+}
+
+.xs-spaces {
+  margin-top:18px;
+  margin-bottom:18px;
+}
+
 /* Bootstrap Overriding CSS rules and others oneliners */
 
 .block-padding { padding:10px !important; }
