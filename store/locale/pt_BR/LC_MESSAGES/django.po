@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-13 16:00-0300\n"
+"POT-Creation-Date: 2015-10-16 17:26-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,8 +99,8 @@ msgid "^uses/server"
 msgstr "^usos/"
 
 #: store/urls.py:37
-msgid "^uses/"
-msgstr "^usos/"
+msgid "^hubpro/"
+msgstr ""
 
 #: store/urls.py:39
 msgid "^support/documentation"
@@ -140,24 +140,20 @@ msgstr ""
 msgid "^about/"
 msgstr "Sobre"
 
-#: store/templates/base.html:64
+#: store/templates/base.html:69
 msgid "Toggle Navigation"
 msgstr ""
 
-#: store/templates/base.html:71 store/templates/includes/search_form.html:5
-msgid "Search"
-msgstr ""
-
-#: store/templates/base.html:98 store/templates/base.html.py:103
+#: store/templates/base.html:116 store/templates/base.html.py:121
 msgid "+5551 9848 5888"
 msgstr "(51) 9848-5888"
 
-#: store/templates/base.html:100 store/templates/base.html.py:119
-#: store/templates/base.html:125
+#: store/templates/base.html:118 store/templates/base.html.py:146
+#: store/templates/base.html:152
 msgid "+5551 3516 2367"
 msgstr "(51) 3516-2367"
 
-#: store/templates/base.html:119 store/templates/base.html.py:125
+#: store/templates/base.html:146 store/templates/base.html.py:152
 msgid "Phone"
 msgstr "Telefone"
 
@@ -234,8 +230,8 @@ msgstr ""
 "Com a plataforma da Internet das Coisas da Efforia, sua empresa terá o poder "
 "de fazer muito mais."
 
-#: store/templates/index.html:96 store/templates/includes/sitemap.html:5
-#: store/templates/pages/menus/dropdown.html:28
+#: store/templates/index.html:96 store/templates/includes/sitemap.html:7
+#: store/templates/pages/menus/dropdown.html:11
 msgid "HUB"
 msgstr "HUB"
 
@@ -247,7 +243,8 @@ msgstr ""
 "Saiba mais sobre a nossa solução eficiente de automação em Internet das "
 "Coisas e suas inúmeras possibilidades."
 
-#: store/templates/index.html:101 store/templates/pages/menus/dropdown.html:46
+#: store/templates/index.html:101 store/templates/includes/sitemap.html:21
+#: store/templates/pages/menus/dropdown.html:29
 msgid "Services"
 msgstr "Serviços"
 
@@ -259,7 +256,8 @@ msgstr ""
 "Os melhores serviços e planos que podemos oferecer a você na Efforia "
 "Nanocomputadores."
 
-#: store/templates/index.html:106 store/templates/pages/menus/dropdown.html:37
+#: store/templates/index.html:106 store/templates/includes/sitemap.html:14
+#: store/templates/pages/menus/dropdown.html:20
 msgid "HUB Pro"
 msgstr "HUB Pro"
 
@@ -279,7 +277,7 @@ msgstr "Resultados da busca"
 #: store/templates/search_results.html:13
 #: store/templates/pages/menus/breadcrumb.html:4
 #: store/templates/pages/menus/breadcrumb.html:10
-#: store/templates/pages/menus/dropdown.html:76
+#: store/templates/pages/menus/dropdown.html:59
 #: store/templates/pages/menus/footer_tree.html:11
 #: store/templates/pages/menus/mobile.html:10
 #: store/templates/pages/menus/primary.html:8
@@ -642,49 +640,33 @@ msgstr ""
 msgid "of"
 msgstr ""
 
-#: store/templates/includes/profile.html:8
-#: store/templates/pages/menus/dropdown.html:100
-msgid "My Account"
-msgstr "Minha Conta"
-
-#: store/templates/includes/profile.html:9
-msgid "My Bag"
-msgstr "Meu Carrinho"
-
-#: store/templates/includes/profile.html:10
-msgid "My Orders"
-msgstr "Meus Pedidos"
-
-#: store/templates/includes/profile.html:11
-msgid "Profile"
-msgstr "Perfil"
+#: store/templates/includes/profile.html:6
+msgid "Account"
+msgstr "Conta"
 
 #: store/templates/includes/profile.html:12
-msgid "Wishlist"
-msgstr "Lista de Desejos"
+msgid "Bag"
+msgstr "Carrinho"
 
-#: store/templates/includes/search_form.html:14
-msgid "Everything"
+#: store/templates/includes/profile.html:18
+msgid "List"
+msgstr "Lista"
+
+#: store/templates/includes/profile.html:24
+msgid "Orders"
+msgstr "Pedidos"
+
+#: store/templates/includes/search_form.html:5
+msgid "Search"
 msgstr ""
 
-#: store/templates/includes/search_form.html:26
-msgid "Go"
-msgstr ""
+#: store/templates/includes/sitemap.html:28
+#: store/templates/pages/menus/dropdown.html:38
+msgid "Help"
+msgstr "Ajuda"
 
-#: store/templates/includes/sitemap.html:12
-msgid "Applications"
-msgstr "Aplicações"
-
-#: store/templates/includes/sitemap.html:20
-msgid "Support"
-msgstr "Suporte"
-
-#: store/templates/includes/sitemap.html:27
-msgid "About"
-msgstr "Sobre"
-
-#: store/templates/includes/sitemap.html:33
-#: store/templates/pages/menus/dropdown.html:89
+#: store/templates/includes/sitemap.html:35
+#: store/templates/pages/menus/dropdown.html:72
 msgid "Shop"
 msgstr "Loja"
 
@@ -706,9 +688,9 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: store/templates/pages/menus/dropdown.html:55
-msgid "Help"
-msgstr "Ajuda"
+#: store/templates/pages/menus/dropdown.html:83
+msgid "My Account"
+msgstr "Minha Conta"
 
 #: store/templates/shop/bank_confirmation.html:4
 #: store/templates/shop/bank_confirmation.html:6
@@ -991,6 +973,24 @@ msgstr ""
 #: store/templates/twitter/tweets.html:7
 msgid "Recent Tweets"
 msgstr ""
+
+#~ msgid "^uses/"
+#~ msgstr "^usos/"
+
+#~ msgid "Profile"
+#~ msgstr "Perfil"
+
+#~ msgid "Wishlist"
+#~ msgstr "Lista de Desejos"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicações"
+
+#~ msgid "Support"
+#~ msgstr "Suporte"
+
+#~ msgid "About"
+#~ msgstr "Sobre"
 
 #~ msgid "ARRIVED THE MACHINE"
 #~ msgstr "CHEGOU O APARELHO"
