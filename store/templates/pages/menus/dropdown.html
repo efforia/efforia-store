@@ -69,7 +69,7 @@
               onclick="window.location = {{ page.get_absolute_url }};"
               {% endif %}>
               {% if "Shop" in page.title %}
-                  {% trans "Shop" %}
+                  {# {% trans "Shop" %} #}
               {% else %}
                   {{ page.title }}
               {% endif %}
