@@ -40,70 +40,121 @@
 {% endblock %}
 
 {% block main %}
-
-<div id="container" class="container spaces-sm">
-  <h1 id="title" style="text-align:center;"> Aplicações </h1>
+<div class="container">
+  <div class="row"></div>
   <div class="row">
-    <div class="col-md-12 text-center" style="padding: 0px 50px;">
-      <p>A tecnologia exclusiva EOS, desenvolvida para os nanocomputadores da Efforia, garante a versatilidade a partir de um sistema de troca de cartões. Os programas desenvolvidos para a plataforma ficam auto-contidos em um cartão de memória, denominado de EOS Memory Card (EMC), compostos de um sistema básico específico para cada nanocomputador, um sistema intermediário idêntico para todos os nanocomputadores, e por fim, o aplicativo propriamente dito.</p>
-    </div>
-  </div>
-  <div class="row centered">
-    <div class="col-md-4 col-sm-4 block-padding">
-      <div class="block">
-        <img src="{% static "svg/cloud.svg" %}" width="70%" height="300"/><br>
-        <h1>Para o infinito e além</h1>
-        <br><p class="jumbo-paragraph">HUBs com o cartão EOS Cloud podem usufruir de um serviço chamado Efforia Cloud Service. Este serviço permite que seu HUB possa ser acessado remotamente pela internet, como e onde quiser.</p><br>
+    <div class="col-md-12">
+      <div class="col-md-4 col-sm-4" style="padding:15px">
+        <img src="{% static 'svg/cool.svg' %}" style="border-radius:15px" width="100%"/>
+        <div class="text-center" style="padding: 0px 15px;">
+          <h1>Refrigerado</h1>
+          <h3>Não esquenta</h3>
+          <p>O HUB representa o futuro da computação pessoal: ele não esquenta; graças à boa temperatura que ele opera, o HUB é uma ótima opção para qualquer ambiente, seja ele externo ou interno.&nbsp;</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-4 block-padding">
-      <div class="block">
-        <img src="/static/svg/applications.svg" width="90%" height="300"/><br>
-        <h1>Um nanocomputador, múltiplas possibilidades</h1>
-        <p>Graças a este diferencial, nossos nanocomputadores possuem diversas funcionalidades, todas elas divididas em cartões EMCs. Com isso, podemos utilizar um cartão para que o dispositivo funcione como um computador pessoal, dispondo de teclado, mouse e monitor, outro cartão para mídia center, conectado a uma televisão e a um controle sem fio, entre muitas outras possibilidades. Você escolhe como seu aparelho irá operar.</p>
+      <div class="col-md-4 col-sm-4" style="padding:15px">
+        <img src="{% static 'svg/quiet.svg' %}" style="border-radius:15px" width="100%">
+        <div class="text-center" style="padding: 0px 15px;">
+          <h1>Silencioso</h1>
+          <h3>Não faz barulho</h3>
+          <p>Como o HUB aquece muito pouco, ele não possui ventoinhas, o que o torna bastante silencioso, podendo operar por horas sem você nem perceber</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-4 block-padding">
-      <div class="block">
-        <img src="{% static "svg/eos.svg" %}" width="90%" height="300"/><br>
-        <h1>Com baterias inclusas</h1>
-        <br><p class="jumbo-paragraph">O HUB, equipado com a tecnologia EOS, consegue dispor o nanocomputador mais versátil para você através do sistema de troca de cartões. Desde um reprodutor multimídia até um computador multiuso, o sistema mostra toda a sua robustez.</p><br>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container spaces-sm">
-  <div class="row centered">
-    <div class="col-md-3 col-sm-6 block-padding">
-      <div class="block">
-        <img src="{% static "svg/eosplay.svg" %}" width="70%" height="300"/><br>
-        <h1>Experiência surpreendente</h1>
-        <br><p class="jumbo-paragraph">Surpreenda-se com a experiência audiovisual que o HUB com EOS Play te proporciona. Reproduza filmes em até Full HD a partir de qualquer mídia que imaginar: interna, externa, pendrive, smartphone, tablet, entre muitas outras opções, tudo sem fio.</p><br>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 block-padding">
-      <div class="block">
-        <img src="{% static "svg/box.svg" %}" width="70%" height="300"/><br>
-        <h1>Carregue para onde quiser</h1>
-        <br><p class="jumbo-paragraph">Cabendo na palma de sua mão, o HUB é um dispositivo muito conveniente para carregar para todos os lados. Contatabém com suporte a tecnologia USB e HDMI, você consegue ligar vários periféricos a ele, como controles de jogo, teclados, pendrives e televisões.</p><br>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 block-padding">
-      <div class="block">
-        <img src="{% static "svg/eosretro.svg" %}" width="70%" height="300"/><br>
-        <h1>Diversão ilimitada</h1>
-        <br><p class="jumbo-paragraph">O HUB possui uma extensa compatibilidade com os mais diversos sistemas de entretenimento, do Super Nintendo ao Playstation, tudo em uma pequena embalagem, sem contar com a gama de jogos disponíveis pelo HUB Pro através da plataforma Android.</p><br>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 block-padding">
-      <div class="block ">
-        <img src="{% static "svg/eosbeta.svg" %}" width="70%" height="300"/><br>
-        <h1>Para os criativos e curiosos</h1>
-        <br><p class="jumbo-paragraph">Com o cartão EOS Beta para HUB e HUB Pro, você será capaz de explorar muito mais o potencial de seu aparelho, podendo utilizá-lo para diversas outras funções como a criação de programas e aplicações educacionais.</p><br>
+      <div class="col-md-4 col-sm-4" style="padding: 15px">
+        <img src="{% static 'svg/economic.svg' %}" style="border-radius:15px" width="100%"/>
+        <div class="text-center" style="padding: 0px 15px;">
+          <h1>Econômico</h1>
+          <h3>Utiliza pouca energia</h3>
+          <p>A Efforia, comprometida com a natureza, construiu o HUB com o que há de mais moderno no mercado, garantindo uma ótima eficiência energética ao consumir apenas 5W de potência. Isso dá a possibilidade de ligá-lo em televisores, tomadas de celulares e até baterias portáteis.</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-6 text-center"><img src="{% static 'svg/combinated.svg' %}" class="box" width="90%">
+      <div style="padding: 0px 50px;">
+        <h1>Sem fios</h1>
+        <h3>Adeus embaraço</h3>
+        <p>A tecnologia EOS, juntamente com o sistema de conexão sem fio do HUB, reduz drasticamente a necessidade de ter fios circulando pela sua casa ou trabalho. Isso torna o nanocomputador fácil de carregar e prático de ligar para uso. Muitas vezes necessitará apenas da tomada ligada e pronto! Seu HUB estará disponível para o que precisar.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6 text-center"><img src="{% static 'svg/coloured.svg' %}" class="box" width="90%">
+      <div style="padding: 0px 50px;">
+        <h1>Customizável</h1>
+        <h3>Escolha como você quer</h3>
+        <p>Nós da Efforia acreditamos que você pode ter um HUB para chamar de seu. Por isso temos diversas opções de acessórios, cores e outros adicionais, disponíveis para você em nossa loja virtual.</p>
+      </div>
+    </div>
+  </div>
+  <p><br><br></p>
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      <img src="{% static 'svg/hublateral.svg' %}" class="box" height="" width="100%">
+      <div class="text-center" style="padding: 0px 15px;">
+        <h1>Portátil</h1>
+        <h3>Carregue para onde quiser</h3>
+        <p>O HUB possui um tamanho bastante pequeno se comparado a computadores de modo em geral. Sendo assim, é muito fácil de carregá-lo para a praia, para o campo, e para onde você precisar.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <img src="{% static 'svg/anything.svg' %}" class="box" height="" width="100%">
+      <div class="text-center" style="padding: 0px 15px;">
+        <h1>Versátil</h1>
+        <h3>Baterias inclusas</h3>
+        <p>Graças a tecnologia exclusiva EOS, que habilita o uso multifuncional do nanocomputador HUB, você tem um equipamento completo em suas mãos, podendo atuar das mais diversas maneiras, desde um mídia center até um computador completo com teclado, mouse e monitor.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <img src="{% static 'svg/television.svg' %}" class="box" height="" width="100%">
+      <div class="text-center" style="padding:0px 15px;">
+        <h1>Poderoso</h1>
+        <h3 class="text-center">Tudo na palma de sua mão</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+  <p><br><br></p>
+  <div class="row">
+    <h1 style="text-align: center;">Especificações técnicas</h1>
+    <div class="col-md-2 col-sm-3 col-xs-4" style="padding: 0px;"><img src="{% static 'svg/specs-01.svg' %}" width="100%">
+      <div class="visible-lg visible-md text-center" style="padding: 0px 15px;">
+        <h3>CPU</h3>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-4" style="padding: 0px;"><img src="{% static 'svg/specs-02.svg' %}" width="100%">
+      <div class="visible-lg visible-md text-center" style="padding: 0px 15px;">
+        <h3>Armazenamento</h3>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-4" style="padding: 0px;"><img src="{% static 'svg/specs-03.svg' %}" width="100%">
+      <div class="visible-lg visible-md text-center" style="padding: 0px 15px;">
+        <h3>Memória RAM</h3>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-4" style="padding: 0px;"><img src="{% static 'svg/specs-04.svg' %}" width="100%">
+      <div class="visible-lg visible-md text-center" style="padding: 0px 15px;">
+        <h3>Entrada para TV</h3>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-4" style="padding: 0px;"><img src="{% static 'svg/specs-05.svg' %}" width="100%">
+      <div class="visible-lg visible-md text-center" style="padding: 0px 15px;">
+        <h3>Ethernet</h3>
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-4" style="padding: 0px;"><img src="{% static 'svg/specs-06.svg' %}" width="100%">
+      <div class="visible-lg visible-md text-center" style="padding: 0px 15px;">
+        <h3>Wi-Fi</h3>
+      </div>
+    </div>
+    <img class="col-md-2 col-sm-3 col-xs-4 visible-sm visible-xs" src="{% static 'svg/specs-07.svg' %}" style="padding: 0px;" width="100%"> <img class="col-md-2 col-sm-3 col-xs-4 visible-sm visible-xs" src="{% static 'svg/specs-08.svg' %}" style="padding: 0px;" width="100%"> <!--<img class="col-md-2 col-sm-3 col-xs-4 visible-xs" src="{% static 'svg/specs-08.svg' %}" width="100%" style="padding:0px;"/>!-->
+  </div>
+  <p><br><br></p>
+  <div class="row"></div>
+  <p><br><br></p><p><br></p>
+</div>
+
 <div class="container spaces-sm">
   <div class="centered row">
 

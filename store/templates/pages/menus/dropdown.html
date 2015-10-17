@@ -11,27 +11,27 @@
     <a class="centered menuitem" href="{% url 'hub' %}" data-toggle="dropdown" onclick="redirect('{% url 'hub' %}');"> {% trans "HUB" %} </a>
     <ul class="dropdown-menu menu">
       <li class="menuitem"><a href="{% url 'internetofthings' %}">Internet das Coisas</a></li>
-      <li class="menuitem"><a href="{% url 'howitworks' %}">Como funciona</a></li>
-      <li class="menuitem"><a href="{% url 'whatisitfor' %}">Para que serve</a></li>
-      <li class="menuitem"><a href="{% url 'devices' %}">Dispositivos</a></li>
+      <li class="menuitem"><a href="{% url 'howitworks' %}">Tecnologia EOS</a></li>
+      <li class="menuitem"><a href="{% url 'whatisitfor' %}">Automação</a></li>
+      <li class="menuitem"><a href="{% url 'sensors' %}">Sensores</a></li>
     </ul>
   </li>
   <li class="dropdown" id="aplicacoes">
     <a class="centered menuitem" href="{% url 'uses' %}" data-toggle="dropdown" onclick="redirect('{% url 'uses' %}');"> {% trans "HUB Pro" %} </a>
     <ul class="dropdown-menu menu">
-      <li class="menuitem"><a href="{% url 'personalcomputing' %}">Computador Pessoal</a></li>
-      <li class="menuitem"><a href="{% url 'mediacenter' %}">Mídia Center</a></li>
-      <li class="menuitem"><a href="{% url 'videogame' %}">Vídeo Game</a></li>
-      <li class="menuitem"><a href="{% url 'server' %}">Servidor</a></li>
+      <li class="menuitem"><a href="{% url 'personalcomputing' %}">Audiovisual</a></li>
+      <li class="menuitem"><a href="{% url 'mediacenter' %}">TV por Internet</a></li>
+      <li class="menuitem"><a href="{% url 'videogame' %}">Entretenimento</a></li>
+      <li class="menuitem"><a href="{% url 'server' %}">Nuvem</a></li>
     </ul>
   </li>
   <li class="dropdown" id="sobre">
     <a class="centered menuitem" href="{% url 'about' %}" data-toggle="dropdown" onclick="redirect('{% url 'about' %}');"> {% trans "Services" %} </a>
     <ul class="dropdown-menu menu">
       <li class="menuitem"><a href="{% url 'apps' %}">Aplicativos</a></li>
-      <li class="menuitem"><a href="{% url 'opensource' %}">Código Aberto</a></li>
-      <li class="menuitem"><a href="{% url 'services' %}">Nuvem</a></li>
+      <li class="menuitem"><a href="{% url 'services' %}">Hospedagem</a></li>
       <li class="menuitem"><a href="{% url 'partners' %}">Parceiros</a></li>
+      <li class="menuitem"><a href="{% url 'plans' %}">Planos</a></li>
     </ul>
   </li>
   <li class="dropdown" id="suporte">
@@ -43,16 +43,6 @@
       <li class="menuitem"><a href="{% url 'localization' %}">Localização</a></li>
     </ul>
   </li>
-  <!--<li class="dropdown" id="shop">
-    <a class="centered menu" href="/shop/" data-toggle="dropdown" onclick="window.location = '/shop/';"> Loja </a>
-    <ul class="dropdown-menu menu">
-      <li class="menuitem" id="shop-hub"><a href="/shop/hub/">HUB</a></li>
-      <li class="menuitem" id="shop-emc"><a href="/shop/emc/">EMC</a></li>
-      <li class="menuitem" id="shop-cabos"><a href="/shop/cabos/">Cabos</a></li>
-      <li class="menuitem" id="shop-acessorios"><a href="/shop/acessorios/">Acessórios</a></li>
-      <li class="menuitem" id="shop-volumes"><a href="/shop/volumes/">Volumes</a></li>
-    </ul>
-  </li>!-->
   {% for page in page_branch %}
   {% if not has_home and page.is_primary and forloop.first %}
   <!--<li{% if on_home %} class="dropdown"{% endif %} id="dropdown-menu-home">
