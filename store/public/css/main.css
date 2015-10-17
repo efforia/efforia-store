@@ -51,7 +51,7 @@
   margin:1% 5%;
 }
 
-.submenu {
+.submenu-top {
   position:absolute;
   top:84px;
   left:0px;
@@ -60,7 +60,16 @@
   width:100%;
 }
 
-.subnavbar {
+.submenu {
+  position:absolute;
+  top:387px;
+  left:0px;
+  background:rgba(255, 255, 255, 0.7);
+  padding:10px;
+  width:100%;
+}
+
+.subnavbar,.subnavbar-top {
   position:static;
 }
 

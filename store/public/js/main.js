@@ -6,9 +6,21 @@ function changeLocale(locale) {
   $('#locale').submit();
 }
 
+function submenuOnBottom() {
+  // Put submenu on bottom after scrolling navbar; returns when scrolls back
+  var submenu = $('.subnavbar');
+  var viewport = $(window).height();
+  $(document).scroll(function(event){
+    var scrollsTop = $(this).scrollTop();
+    if(scrollsTop >= viewport - navbar) submenu.addClass('navbar-fixed-top').css('position','fixed').children().css('top',0);
+    else submenu.removeClass('navbar-fixed-top').css('position','static').children().css('top',viewport-63);
+  });
+}
+
 function submenuOnTop() {
   // Put submenu on top after scrolling navbar; returns when scrolls back
-  var submenu = $('.subnavbar');
+  var submenu = $('.subnavbar-top');
+  var viewport = $(window).height();
   $(document).scroll(function(event){
     var scrollsTop = $(this).scrollTop();
     if(scrollsTop >= navbar) submenu.addClass('navbar-fixed-top').css('position','fixed').children().css('top',0);
@@ -19,7 +31,10 @@ function submenuOnTop() {
 function jumbotronOffset() {
   // Jumbotron offsetting on home page based on viewport and jumbotron min-height
   var viewport = $(window).height(); /* Viewport height */
-  if(viewport >= minheight) $('.jumbotron').css({'min-height': viewport - navbar});
+  if(viewport >= minheight){
+    $('.jumbotron').css({'min-height':viewport-navbar});
+    $('.submenu').css({'top':viewport-63});
+  }
 }
 
 function minimumHeight() {
@@ -35,6 +50,7 @@ function minimumHeight() {
 }
 
 function main() {
+  submenuOnBottom();
   submenuOnTop();
   jumbotronOffset();
 }
