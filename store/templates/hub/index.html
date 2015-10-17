@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% extends "hub/base.html" %}
 {% load i18n %}
 {% load staticfiles %}
 
-{% block main %}
+{% block header %}
 
 <style>
 
@@ -14,12 +14,14 @@
 
 </style>
 
+{% endblock %}
+
+{% block start %}
+
 <div class="jumbotron background" style="margin-bottom:0px;">
-  <!--<div class="overlay bottom">!-->
   <div class="transparent-white overlay middle">
     <div class="container">
       <img style="height:21em" src="{% static 'img/huba.png' %}"/><br>
-      <!--<img style="height:9em;" src="{% static 'svg/hubwhite.svg' %}"/>!-->
       <h2 style="font-size:3em" class="black">UM UNIVERSO <br>DE GRANDES POSSIBILIDADES.</h2><br>
     </div>
   </div>
@@ -34,6 +36,10 @@
     <li role="presentation" class="left leftmargin"><img height="43" src="{% static 'svg/hublogo.svg' %}"/></li><br>
   </ul>
 </nav>
+
+{% endblock %}
+
+{% block main %}
 
 <div class="container">
   <div class="row"></div>
