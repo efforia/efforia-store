@@ -106,7 +106,11 @@
   </nav>
 
   <!-- Main block for pages container !-->
-  <div class="content"> {% block main %} {% endblock %} </div>
+  <div class="content">
+    {% block start %} {% endblock %}
+    {% block main %} {% endblock %}
+    {% block end %} {% endblock %}
+  </div>
 
   <!-- Common footer for all pages, including scripts !-->
   <footer class="footer">

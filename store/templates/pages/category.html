@@ -24,7 +24,7 @@
             <h4>{{ category.title }}</h4>
         </div>
     </a>
-    </div>  
+    </div>
     {% endfor %}
 {% else %}
     {% for category in child_categories %}
@@ -79,10 +79,12 @@
             <h3><span class="coming-soon">{% trans "Coming soon" %}</span></h3>
         {% endif %}
 	    <p></p>
-	    <div style="padding:0px; background:#6EC498; color:white; border-radius:5px; width:80%; margin-left:10%;">
-		<p style="margin:0px;">Ou em 12x no cartão sem juros</p>
-	        <p style="margin:0px; padding:0px; background:#3399CC; color:white; border-radius: 0px 0px 5px 5px; font-weight:bold;">Desconto de 12% no boleto</p>
-	    </div>
+      {% comment %}
+      <div style="padding:0px; background:#6EC498; color:white; border-radius:5px; width:80%; margin-left:10%;">
+    <p style="margin:0px;">Ou em 12x no cartão sem juros</p>
+          <p style="margin:0px; padding:0px; background:#3399CC; color:white; border-radius: 0px 0px 5px 5px; font-weight:bold;">Desconto de 12% no boleto</p>
+      </div>
+      {% endcomment %}
         </div>
         </div>
 	</div>
