@@ -97,14 +97,16 @@
 .leftmargin { margin-left:15px !important; }
 .rightmargin { margin-right:15px !important; }
 .right li { float:right; }
+.lalign { text-align:left !important; }
+.ralign { text-align:right !important; }
 
 .black { color:#000000 !important; }
 .black:hover { color:#000000 !important; }
-.transparent-black { background: rgba(0,0,0,0.7); }
+.transparent-black { background: rgba(0,0,0,0.5); }
 
 .white { color:#FFFFFF !important; }
 .white:hover { color:#FFFFFF !important; }
-.transparent-white { background: rgba(255,255,255,0.7); }
+.transparent-white { background: rgba(255,255,255,0.5); }
 
 .purplebg { background-color:#996699; }
 .yellowbg { background-color:#FFCD09; }

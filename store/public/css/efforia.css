@@ -24,8 +24,6 @@ a,a:hover,a:active,a:focus { text-decoration:none !important; }
 .centered { text-align:center; }
 .bar { background:white; }
 .bordered { border: 1px solid white; }
-.leftaligned { text-align:left; }
-.rightaligned { text-align:right; }
 .navbar-padding { padding:15px; }
 .nomargin { margin:0px; }
 .content { min-height:200px; }
