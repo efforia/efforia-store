@@ -96,6 +96,7 @@
 .left { float:left !important; }
 .leftmargin { margin-left:15px !important; }
 .rightmargin { margin-right:15px !important; }
+.right li { float:right; }
 
 .black { color:#000000 !important; }
 .black:hover { color:#000000 !important; }

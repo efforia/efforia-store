@@ -8,7 +8,8 @@
   border:none;
 }
 
-.menuitem {
+.menu a, .menuitem a {
+  text-align:center;
   color:#000000 !important;
   font-size:1.2em
 }

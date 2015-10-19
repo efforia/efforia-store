@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-16 17:26-0300\n"
+"POT-Creation-Date: 2015-10-19 12:45-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,97 +62,99 @@ msgid "^shop/"
 msgstr ""
 
 #: store/urls.py:26
-msgid "^hub/howitworks"
+msgid "^hub/iot"
 msgstr ""
 
 #: store/urls.py:27
-msgid "^hub/whatisitfor"
+msgid "^hub/howitworks"
 msgstr ""
 
 #: store/urls.py:28
-msgid "^hub/devices"
+msgid "^hub/whatisitfor"
 msgstr ""
 
 #: store/urls.py:29
-msgid "^hub/apps"
+msgid "^hub/sensors"
 msgstr ""
 
 #: store/urls.py:32
-msgid "^uses/personalcomputing"
+msgid "^hubpro/personalcomputing"
 msgstr ""
 
 #: store/urls.py:33
-msgid "^uses/internetofthings"
+msgid "^hubpro/mediacenter"
 msgstr ""
 
 #: store/urls.py:34
-msgid "^uses/mediacenter"
+msgid "^hubpro/videogame"
 msgstr ""
 
 #: store/urls.py:35
-msgid "^uses/videogame"
+msgid "^hubpro/server"
 msgstr ""
 
 #: store/urls.py:36
-msgid "^uses/server"
-msgstr ""
-
-#: store/urls.py:37
 msgid "^hubpro/"
 msgstr ""
 
+#: store/urls.py:38
+#, fuzzy
+msgid "^services/plans"
+msgstr "Servicios"
+
 #: store/urls.py:39
-msgid "^support/documentation"
-msgstr ""
+#, fuzzy
+msgid "^services/cloud"
+msgstr "Servicios"
 
 #: store/urls.py:40
-msgid "^support/developer"
+msgid "^services/partners"
 msgstr ""
 
 #: store/urls.py:41
-msgid "^support/services"
-msgstr ""
+#, fuzzy
+msgid "^services/apps"
+msgstr "Servicios"
 
 #: store/urls.py:42
-msgid "^support/warranty"
+#, fuzzy
+msgid "^services/"
+msgstr "Servicios"
+
+#: store/urls.py:44
+msgid "^help/localization"
 msgstr ""
 
-#: store/urls.py:43
-#, fuzzy
-msgid "^support/"
-msgstr "Soporte"
-
 #: store/urls.py:45
-msgid "^about/opensource"
+msgid "^help/warranty"
 msgstr ""
 
 #: store/urls.py:46
-msgid "^about/localization"
+msgid "^help/documentation"
 msgstr ""
 
 #: store/urls.py:47
-msgid "^about/partners"
+msgid "^help/developer"
 msgstr ""
 
 #: store/urls.py:48
-#, fuzzy
-msgid "^about/"
-msgstr "Sobre"
+msgid "^help/"
+msgstr ""
 
 #: store/templates/base.html:69
 msgid "Toggle Navigation"
 msgstr ""
 
-#: store/templates/base.html:116 store/templates/base.html.py:121
+#: store/templates/base.html:120 store/templates/base.html.py:125
 msgid "+5551 9848 5888"
 msgstr "+5551 9848-5888"
 
-#: store/templates/base.html:118 store/templates/base.html.py:146
-#: store/templates/base.html:152
+#: store/templates/base.html:122 store/templates/base.html.py:150
+#: store/templates/base.html:156
 msgid "+5551 3516 2367"
 msgstr "+5551 3516-2367"
 
-#: store/templates/base.html:146 store/templates/base.html.py:152
+#: store/templates/base.html:150 store/templates/base.html.py:156
 msgid "Phone"
 msgstr "Teléfono"
 
@@ -170,7 +172,7 @@ msgstr ""
 "Y queremos la computación presente en todos los momentos de la vida de las "
 "personas"
 
-#: store/templates/index.html:39
+#: store/templates/index.html:39 store/templates/hubpro/nav.html:3
 msgid "Audiovisual"
 msgstr "Audiovisual"
 
@@ -182,7 +184,7 @@ msgstr ""
 "En Efforia diseñamos e montamos sistemas audiovisuales automatizados, todos "
 "conectados inalámbricamente e muy bien integrados."
 
-#: store/templates/index.html:44
+#: store/templates/index.html:44 store/templates/hubpro/nav.html:5
 msgid "Entertainment"
 msgstr "Entretenimiento"
 
@@ -194,7 +196,7 @@ msgstr ""
 "Nosotros también desarrollamos sistemas de entretenimiento completos, listos "
 "para reproducir vídeos, músicas e vídeo juegos."
 
-#: store/templates/index.html:49
+#: store/templates/index.html:49 store/templates/hub/nav.html:5
 msgid "Automation"
 msgstr "Automación"
 
@@ -231,7 +233,7 @@ msgstr ""
 "poder de hacer mucho más."
 
 #: store/templates/index.html:96 store/templates/includes/sitemap.html:7
-#: store/templates/pages/menus/dropdown.html:11
+#: store/templates/pages/menus/dropdown.html:10
 msgid "HUB"
 msgstr "HUB"
 
@@ -243,8 +245,8 @@ msgstr ""
 "Aprenda más acerca de nuestra solución eficiente de automatización de "
 "Internet de las Cosas y sus muchas posibilidades."
 
-#: store/templates/index.html:101 store/templates/includes/sitemap.html:21
-#: store/templates/pages/menus/dropdown.html:29
+#: store/templates/index.html:101 store/templates/includes/sitemap.html:15
+#: store/templates/pages/menus/dropdown.html:18
 msgid "Services"
 msgstr "Servicios"
 
@@ -256,8 +258,8 @@ msgstr ""
 "Los mejores servicios y planos por lo que podemos ayudar más en Efforia "
 "Nanocomputadoras."
 
-#: store/templates/index.html:106 store/templates/includes/sitemap.html:14
-#: store/templates/pages/menus/dropdown.html:20
+#: store/templates/index.html:106 store/templates/includes/sitemap.html:11
+#: store/templates/pages/menus/dropdown.html:14
 msgid "HUB Pro"
 msgstr "HUB Pro"
 
@@ -274,14 +276,16 @@ msgstr ""
 msgid "Search Results"
 msgstr "Resultados de la búsqueda"
 
-#: store/templates/search_results.html:13
+#: store/templates/search_results.html:13 store/templates/help/base.html:13
+#: store/templates/hub/index.html:36 store/templates/hubpro/base.html:13
+#: store/templates/hubpro/index.html:36
 #: store/templates/pages/menus/breadcrumb.html:4
 #: store/templates/pages/menus/breadcrumb.html:10
-#: store/templates/pages/menus/dropdown.html:59
 #: store/templates/pages/menus/footer_tree.html:11
 #: store/templates/pages/menus/mobile.html:10
 #: store/templates/pages/menus/primary.html:8
 #: store/templates/pages/menus/tree.html:9
+#: store/templates/services/base.html:13
 msgid "Home"
 msgstr ""
 
@@ -611,6 +615,52 @@ msgstr ""
 msgid "Rate"
 msgstr ""
 
+#: store/templates/help/base.html:10 store/templates/services/base.html:10
+msgid "Subscribe"
+msgstr ""
+
+#: store/templates/help/nav.html:3
+msgid "Documentation"
+msgstr "Documentación"
+
+#: store/templates/help/nav.html:4
+msgid "Developer"
+msgstr "Programador"
+
+#: store/templates/help/nav.html:5
+msgid "Localization"
+msgstr "Ubicación"
+
+#: store/templates/help/nav.html:6
+msgid "Warranty"
+msgstr "Garantía"
+
+#: store/templates/hub/base.html:10 store/templates/hub/index.html:33
+#: store/templates/hubpro/base.html:10 store/templates/hubpro/index.html:33
+#: store/templates/shop/product.html:117 store/templates/shop/wishlist.html:34
+msgid "Buy"
+msgstr "Comprar"
+
+#: store/templates/hub/nav.html:3
+msgid "Internet of Things"
+msgstr "Internet de las Cosas"
+
+#: store/templates/hub/nav.html:4
+msgid "EOS Technology"
+msgstr "Tecnología EOS"
+
+#: store/templates/hub/nav.html:6
+msgid "Sensors"
+msgstr "Sensores"
+
+#: store/templates/hubpro/nav.html:4
+msgid "Internet TV"
+msgstr "TV por Internet"
+
+#: store/templates/hubpro/nav.html:6
+msgid "Cloud"
+msgstr "Cloud"
+
 #: store/templates/includes/editable_form.html:16
 msgid "Save"
 msgstr ""
@@ -650,7 +700,7 @@ msgstr "Compras"
 
 #: store/templates/includes/profile.html:18
 msgid "List"
-msgstr ""
+msgstr "Lista"
 
 #: store/templates/includes/profile.html:24
 msgid "Orders"
@@ -658,17 +708,12 @@ msgstr "Pedidos"
 
 #: store/templates/includes/search_form.html:5
 msgid "Search"
-msgstr ""
+msgstr "Búsqueda"
 
-#: store/templates/includes/sitemap.html:28
-#: store/templates/pages/menus/dropdown.html:38
+#: store/templates/includes/sitemap.html:19
+#: store/templates/pages/menus/dropdown.html:22
 msgid "Help"
 msgstr "Ayuda"
-
-#: store/templates/includes/sitemap.html:35
-#: store/templates/pages/menus/dropdown.html:72
-msgid "Shop"
-msgstr "Tienda"
 
 #: store/templates/pages/category.html:45
 msgid "Sort by"
@@ -688,9 +733,21 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: store/templates/pages/menus/dropdown.html:83
-msgid "My Account"
-msgstr "Mi Cuenta"
+#: store/templates/services/nav.html:3
+msgid "Applications"
+msgstr "Aplicaciones"
+
+#: store/templates/services/nav.html:4
+msgid "Hosting"
+msgstr "Hosting"
+
+#: store/templates/services/nav.html:5
+msgid "Partners"
+msgstr "Socios"
+
+#: store/templates/services/nav.html:6
+msgid "Plans"
+msgstr "Planes"
 
 #: store/templates/shop/bank_confirmation.html:4
 #: store/templates/shop/bank_confirmation.html:6
@@ -900,10 +957,6 @@ msgstr ""
 msgid "The selected options are currently unavailable."
 msgstr ""
 
-#: store/templates/shop/product.html:117 store/templates/shop/wishlist.html:34
-msgid "Buy"
-msgstr ""
-
 #: store/templates/shop/product.html:119
 msgid "Save for later"
 msgstr ""
@@ -974,14 +1027,25 @@ msgstr ""
 msgid "Recent Tweets"
 msgstr ""
 
+#, fuzzy
+#~ msgid "^support/"
+#~ msgstr "Soporte"
+
+#, fuzzy
+#~ msgid "^about/"
+#~ msgstr "Sobre"
+
+#~ msgid "Shop"
+#~ msgstr "Tienda"
+
+#~ msgid "My Account"
+#~ msgstr "Mi Cuenta"
+
 #~ msgid "Profile"
 #~ msgstr "Perfil"
 
 #~ msgid "Wishlist"
 #~ msgstr "Lista de deseos"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicaciones"
 
 #~ msgid "Support"
 #~ msgstr "Soporte"

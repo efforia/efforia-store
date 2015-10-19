@@ -1,6 +1,10 @@
 var navbar = 84; /* Navbar actual size */
 var minheight = 450; /* Minimum actual height */
 
+function redirect(addr){
+  window.location = addr;
+}
+
 function changeLocale(locale) {
   $('#language').val(locale);
   $('#locale').submit();

@@ -33,7 +33,7 @@ urlpatterns += patterns(u'',
                         url(_(r'^hubpro/mediacenter'), TemplateView.as_view(template_name='hubpro/mediacenter.html'), name='mediacenter'),
                         url(_(r'^hubpro/videogame'), TemplateView.as_view(template_name='hubpro/videogame.html'), name='videogame'),
                         url(_(r'^hubpro/server'), TemplateView.as_view(template_name='hubpro/server.html'), name='server'),
-                        url(_(r'^hubpro/'), TemplateView.as_view(template_name='hubpro/index.html'), name='uses'),
+                        url(_(r'^hubpro/'), TemplateView.as_view(template_name='hubpro/index.html'), name='hubpro'),
 
                         url(_(r'^services/plans'), TemplateView.as_view(template_name='services/plans.html'), name='plans'),
                         url(_(r'^services/cloud'), TemplateView.as_view(template_name='services/cloud.html'), name='services'),

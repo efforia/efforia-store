@@ -27,15 +27,19 @@
   </div>
 </div>
 
-<nav class="navbar subnavbar hidden-xs">
-  <ul class="nav nav-pills submenu">
-    <li role="presentation" class="right rightmargin"><button class="btn btn-default" style="height:43px;">Comprar</button></li>
-    <li role="presentation" class="right rightmargin"><a href="#">Início</a></li>
-    <li role="presentation" class="right"><a href="#">Internet das Coisas</a></li>
-    <li role="presentation" class="right"><a href="#">Tecnologia EOS</a></li>
-    <li role="presentation" class="right"><a href="#">Automação</a></li>
-    <li role="presentation" class="right"><a href="#">Sensores</a></li>
-    <li role="presentation" class="left leftmargin"><img height="43" src="{% static 'svg/hublogo.svg' %}"/></li><br>
+<nav class="navbar subnavbar hidden-xs hidden-sm">
+  <ul class="nav nav-pills submenu right">
+    <li class="rightmargin">
+      <button class="btn btn-default" style="height:43px;">{% trans "Buy" %}</button>
+    </li>
+    <li class="rightmargin">
+      <a href="{% url 'hub' %}">{% trans "Home" %}</a>
+    </li>
+    {% include "hub/nav.html" %}
+    <li class="left leftmargin">
+      <img height="43" src="{% static 'svg/hublogo.svg' %}"/>
+    </li>
+    <br>
   </ul>
 </nav>
 

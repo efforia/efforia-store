@@ -2,53 +2,27 @@
 {% spaceless %}
 {% if page_branch_in_menu %}
 
-<script> function redirect(addr){ window.location = addr; } </script>
 <link rel="stylesheet" href="{% static "css/dropdown.css" %}">
 
 {% if branch_level == 0 %}
 <ul class="nav navbar-nav navbar-height navbar-padding nav-default">
-  <li class="dropdown" id="hub">
-    <a class="centered menuitem" href="{% url 'hub' %}" data-toggle="dropdown" onclick="redirect('{% url 'hub' %}');"> {% trans "HUB" %} </a>
-    <ul class="dropdown-menu menu">
-      <li class="menuitem"><a href="{% url 'internetofthings' %}">Internet das Coisas</a></li>
-      <li class="menuitem"><a href="{% url 'howitworks' %}">Tecnologia EOS</a></li>
-      <li class="menuitem"><a href="{% url 'whatisitfor' %}">Automação</a></li>
-      <li class="menuitem"><a href="{% url 'sensors' %}">Sensores</a></li>
-    </ul>
+  <li class="dropdown menuitem">
+    <a id="hub" href="{% url 'hub' %}"> {% trans "HUB" %} </a>
+    <ul class="dropdown-menu menu"> {% include "hub/nav.html" %} </ul>
   </li>
-  <li class="dropdown" id="aplicacoes">
-    <a class="centered menuitem" href="{% url 'uses' %}" data-toggle="dropdown" onclick="redirect('{% url 'uses' %}');"> {% trans "HUB Pro" %} </a>
-    <ul class="dropdown-menu menu">
-      <li class="menuitem"><a href="{% url 'personalcomputing' %}">Audiovisual</a></li>
-      <li class="menuitem"><a href="{% url 'mediacenter' %}">TV por Internet</a></li>
-      <li class="menuitem"><a href="{% url 'videogame' %}">Entretenimento</a></li>
-      <li class="menuitem"><a href="{% url 'server' %}">Nuvem</a></li>
-    </ul>
+  <li class="dropdown menuitem">
+    <a id="hubpro" href="{% url 'hubpro' %}"> {% trans "HUB Pro" %} </a>
+    <ul class="dropdown-menu menu"> {% include "hubpro/nav.html" %} </ul>
   </li>
-  <li class="dropdown" id="sobre">
-    <a class="centered menuitem" href="{% url 'about' %}" data-toggle="dropdown" onclick="redirect('{% url 'about' %}');"> {% trans "Services" %} </a>
-    <ul class="dropdown-menu menu">
-      <li class="menuitem"><a href="{% url 'apps' %}">Aplicativos</a></li>
-      <li class="menuitem"><a href="{% url 'services' %}">Hospedagem</a></li>
-      <li class="menuitem"><a href="{% url 'partners' %}">Parceiros</a></li>
-      <li class="menuitem"><a href="{% url 'plans' %}">Planos</a></li>
-    </ul>
+  <li class="dropdown menuitem">
+    <a id="services" href="{% url 'about' %}"> {% trans "Services" %} </a>
+    <ul class="dropdown-menu menu"> {% include "services/nav.html" %} </ul>
   </li>
-  <li class="dropdown" id="suporte">
-    <a class="centered menuitem" href="{% url 'support' %}" data-toggle="dropdown" onclick="redirect('{% url 'support' %}');"> {% trans "Help" %} </a>
-    <ul class="dropdown-menu menu">
-      <li class="menuitem"><a href="{% url 'documentation' %}">Documentação</a></li>
-      <li class="menuitem"><a href="{% url 'developer' %}">Desenvolvedor</a></li>
-      <li class="menuitem"><a href="{% url 'warranty' %}">Garantia</a></li>
-      <li class="menuitem"><a href="{% url 'localization' %}">Localização</a></li>
-    </ul>
+  <li class="dropdown menuitem">
+    <a id="help" href="{% url 'support' %}"> {% trans "Help" %} </a>
+    <ul class="dropdown-menu menu"> {% include "help/nav.html" %} </ul>
   </li>
   {% for page in page_branch %}
-  {% if not has_home and page.is_primary and forloop.first %}
-  <!--<li{% if on_home %} class="dropdown"{% endif %} id="dropdown-menu-home">
-      <a style="color:black" href="{% url "home" %}">{% trans "Home" %}</a>
-  </li>!-->
-  {% endif %}
   {% if page.in_menu %}
           <li class="{% if page.has_children_in_menu %}dropdown{% endif %}
                      {% if page.is_current_or_ascendant %}active{% endif %}"
@@ -69,14 +43,6 @@
               {% endif %}
           </li>
   {% endfor %}
-  <!--<li class="dropdown" id="account">
-    <a class="centered menuitem" href="/account" class="dropdown-toggle disabled" data-toggle="dropdown" onclick="window.location = '/account';">{% trans "My Account" %}</a>
-    <ul class="dropdown-menu menu">
-      <li class="menuitem"><a href="/account/orders">Meus Pedidos</a></li>
-      <li class="menuitem"><a href="/account/update">Atualizar Perfil</a></li>
-      <li class="menuitem"><a href="/shop/wishlist">Lista de Desejos</a></li>
-    </ul>
-  </li>!-->
 </ul>
 
 {% else %}

@@ -3,40 +3,20 @@
 <link rel="stylesheet" href="{% static "css/footer.css" %}">
 
 <div class="nav-footer">
-  <ul class="list list-unstyled">
-    <li><h2><a class="white" href="{% url 'hub' %}">{% trans "HUB" %}</a></h2></li>
-    <li><a class="gray" href="{% url 'internetofthings' %}">Internet das Coisas</a></li>
-    <li><a class="gray" href="{% url 'howitworks' %}">Tecnologia EOS</a></li>
-    <li><a class="gray" href="{% url 'whatisitfor' %}">Automação</a></li>
-    <li><a class="gray" href="{% url 'sensors' %}">Sensores</a></li>
+  <ul class="list list-unstyled white">
+    <li><h2><a href="{% url 'hub' %}">{% trans "HUB" %}</a></h2></li>
+    {% include "hub/nav.html" %}
   </ul>
-  <ul class="list list-unstyled">
-    <li><h2><a class="white" href="{% url 'uses' %}">{% trans "HUB Pro" %}</a></h2></li>
-    <li><a class="gray" href="{% url 'personalcomputing' %}">Audiovisual</a></li>
-    <li><a class="gray" href="{% url 'mediacenter' %}">TV por Internet</a></li>
-    <li><a class="gray" href="{% url 'videogame' %}">Entretenimento</a></li>
-    <li><a class="gray" href="{% url 'server' %}">Nuvem</a></li>
+  <ul class="list list-unstyled white">
+    <li><h2><a href="{% url 'hubpro' %}">{% trans "HUB Pro" %}</a></h2></li>
+    {% include "hubpro/nav.html" %}
   </ul>
-  <ul class="list list-unstyled">
-    <li><h2><a class="white" href="{% url 'support' %}">{% trans "Services" %}</a></h2></li>
-    <li><a class="gray" href="{% url 'apps' %}">Aplicativos</a></li>
-    <li><a class="gray" href="{% url 'services' %}">Hospedagem</a></li>
-    <li><a class="gray" href="{% url 'partners' %}">Parceiros</a></li>
-    <li><a class="gray" href="{% url 'plans' %}">Planos</a></li>
+  <ul class="list list-unstyled white">
+    <li><h2><a href="{% url 'support' %}">{% trans "Services" %}</a></h2></li>
+    {% include "services/nav.html" %}
   </ul>
-  <ul class="list list-unstyled">
-    <li><h2><a class="white" href="{% url 'about' %}">{% trans "Help" %}</a></h2></li>
-    <li><a class="gray" href="{% url 'documentation' %}">Documentação</a></li>
-    <li><a class="gray" href="{% url 'developer' %}">Desenvolvedor</a></li>
-    <li><a class="gray" href="{% url 'localization' %}">Localização</a></li>
-    <li><a class="gray" href="{% url 'warranty' %}">Garantia</a></li>
+  <ul class="list list-unstyled white">
+    <li><h2><a href="{% url 'about' %}">{% trans "Help" %}</a></h2></li>
+    {% include "help/nav.html" %}
   </ul>
-  <!--<ul class="list-unstyled">
-    <li><a class="gray" href="/shop/">{% trans "Shop" %}</a></li>
-    <li><a class="gray" href="/shop/hub/">HUB</a></li>
-    <li><a class="gray" href="/shop/emc/">EMC</a></li>
-    <li><a class="gray" href="/shop/cabos/">Cabos</a></li>
-    <li><a class="gray" href="/shop/acessorios/">Acessórios</a></li>
-    <li><a class="gray" href="{% url 'volumes' %}">Volumes</a></li>
-  </ul>!-->
 </div>
