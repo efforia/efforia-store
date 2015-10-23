@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-205 272 200 250" style="enable-background:new -205 272 200 250;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EE3968;}
+	.st1{fill:none;stroke:#7F0B3B;stroke-width:15;stroke-miterlimit:10;stroke-dasharray:2,10;}
+	.st2{fill:#EF8FB2;}
+	.st3{fill:#7F0B3B;}
+</style>
+<rect x="-205" y="272" class="st0" width="200" height="250"/>
+<g>
+	<line class="st1" x1="-159.7" y1="330.5" x2="-42.3" y2="330.5"/>
+	<line class="st1" x1="-159.7" y1="463.5" x2="-42.3" y2="463.5"/>
+</g>
+<g>
+	<g>
+		<rect x="-165" y="351.9" class="st2" width="120" height="74.2"/>
+		<polygon class="st2" points="-101.8,435.7 -101.8,429.1 -108.2,429.1 -108.2,435.7 -162.8,435.7 -162.8,442.1 -47.6,442.1 
+			-47.6,435.7 		"/>
+	</g>
+	<rect x="-159.3" y="359.9" class="st3" width="108.7" height="10.7"/>
+	<rect x="-159.3" y="378.9" class="st3" width="30" height="30"/>
+	<rect x="-120" y="378.9" class="st3" width="30" height="30"/>
+	<rect x="-80.7" y="378.9" class="st3" width="30" height="30"/>
+</g>
+</svg>
