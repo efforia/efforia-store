@@ -5,13 +5,15 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-5 197 600 400"
 	 style="enable-background:new -5 197 600 400;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:0.7692;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#000000;stroke-width:0.9414;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#000000;stroke-width:2.2556;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#3398CC;stroke-width:2.1958;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#FFCE0C;stroke-width:2.2636;stroke-miterlimit:10;}
-	.st6{fill:#FFCE0C;}
+	.st0{fill:#F8C18F;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#6FC498;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:#F7D5BA;stroke:#000000;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#000000;stroke-width:0.7692;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:0.9414;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:2.2556;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#3398CC;stroke-width:2.1958;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#FFCE0C;stroke-width:2.2636;stroke-miterlimit:10;}
+	.st8{fill:#FFCE0C;}
 </style>
 <sodipodi:namedview  id="namedview39" inkscape:window-maximized="1" inkscape:window-y="24" inkscape:window-x="0" inkscape:pageopacity="0" inkscape:current-layer="Layer_1" inkscape:window-width="1680" inkscape:pageshadow="2" inkscape:window-height="1026" borderopacity="1" gridtolerance="10" bordercolor="#666666" objecttolerance="10" inkscape:zoom="0.67428571" inkscape:cx="3.8559322" inkscape:cy="175" pagecolor="#ffffff" guidetolerance="10" showgrid="false">
 	</sodipodi:namedview>
@@ -19,37 +21,37 @@
 	<path id="path33_2_" inkscape:connector-curvature="0" class="st0" d="M182.6,524.9h195.8c4.5,0,9.1-1.5,13-4.6l97.9-70.9
 		c9.1-7.4,10.7-21,3.5-30.4c-7.2-9.4-20.5-11-29.6-3.6l-73.1,46.1c-2.3,1.8-5.2,2.9-8.1,2.9h-89.6c-7.3,0-13.1-6-13.1-13.4
 		s5.9-13.5,13.1-13.5H372c11.7,0,21.1-9.7,21.1-21.6c0-12-9.4-21.6-21.1-21.6H262.1c-17.8,0-34.9,6.9-47.9,19.4L182.6,444"/>
-	<rect id="rect35" x="92.7" y="433.4" class="st0" width="90" height="101.5"/>
+	<rect id="rect35" x="92.7" y="433.4" class="st1" width="90" height="101.5"/>
 	
-		<ellipse id="circle37" sodipodi:cx="299.73801" sodipodi:cy="240.57201" sodipodi:ry="10.75" sodipodi:rx="10.75" class="st0" cx="368.6" cy="416" rx="13.1" ry="13.4">
+		<ellipse id="circle37" sodipodi:cx="299.73801" sodipodi:cy="240.57201" sodipodi:ry="10.75" sodipodi:rx="10.75" class="st2" cx="368.6" cy="416" rx="13.1" ry="13.4">
 	</ellipse>
 </g>
 <g>
-	<rect x="242.9" y="271.7" class="st1" width="223.8" height="96.5"/>
-	<rect x="467.4" y="277.5" class="st1" width="12.6" height="85.1"/>
-	<rect x="230" y="277.5" class="st1" width="12.6" height="85.1"/>
+	<rect x="242.9" y="271.7" class="st3" width="223.8" height="96.5"/>
+	<rect x="467.4" y="277.5" class="st3" width="12.6" height="85.1"/>
+	<rect x="230" y="277.5" class="st3" width="12.6" height="85.1"/>
 	<rect x="232.5" y="270" width="10.7" height="100"/>
 	<rect x="466.5" y="270" width="10.7" height="100"/>
 	<rect x="294.8" y="361" width="34.3" height="3.5"/>
 	<rect x="375.4" y="361" width="34.3" height="3.5"/>
-	<rect id="rect9_1_" x="361.9" y="317.9" class="st2" width="105.5" height="4.3"/>
+	<rect id="rect9_1_" x="361.9" y="317.9" class="st4" width="105.5" height="4.3"/>
 	<g>
 		
-			<ellipse id="circle21_1_" sodipodi:cx="244.869" sodipodi:cy="158.104" sodipodi:ry="8.7279997" sodipodi:rx="8.7279997" class="st3" cx="280.4" cy="320" rx="8.9" ry="9.1">
+			<ellipse id="circle21_1_" sodipodi:cx="244.869" sodipodi:cy="158.104" sodipodi:ry="8.7279997" sodipodi:rx="8.7279997" class="st5" cx="280.4" cy="320" rx="8.9" ry="9.1">
 		</ellipse>
 		
-			<ellipse id="circle23_1_" sodipodi:cx="244.869" sodipodi:cy="158.104" sodipodi:ry="5.4569998" sodipodi:rx="5.4569998" class="st4" cx="280.4" cy="320" rx="5.6" ry="5.7">
+			<ellipse id="circle23_1_" sodipodi:cx="244.869" sodipodi:cy="158.104" sodipodi:ry="5.4569998" sodipodi:rx="5.4569998" class="st6" cx="280.4" cy="320" rx="5.6" ry="5.7">
 		</ellipse>
 	</g>
 	<g>
 		
-			<ellipse id="circle19_1_" sodipodi:cx="288.50699" sodipodi:cy="158.104" sodipodi:ry="14.11" sodipodi:rx="14.11" class="st3" cx="320.8" cy="320" rx="14.4" ry="14.8">
+			<ellipse id="circle19_1_" sodipodi:cx="288.50699" sodipodi:cy="158.104" sodipodi:ry="14.11" sodipodi:rx="14.11" class="st5" cx="320.8" cy="320" rx="14.4" ry="14.8">
 		</ellipse>
 		
-			<ellipse id="circle25_1_" sodipodi:cx="288.50699" sodipodi:cy="158.104" sodipodi:ry="8.7279997" sodipodi:rx="8.7279997" class="st5" cx="320.8" cy="320" rx="8.9" ry="9.1">
+			<ellipse id="circle25_1_" sodipodi:cx="288.50699" sodipodi:cy="158.104" sodipodi:ry="8.7279997" sodipodi:rx="8.7279997" class="st7" cx="320.8" cy="320" rx="8.9" ry="9.1">
 		</ellipse>
 		
-			<ellipse id="circle27_1_" sodipodi:cx="288.50699" sodipodi:cy="158.104" sodipodi:ry="5.4569998" sodipodi:rx="5.4569998" class="st6" cx="320.8" cy="320" rx="5.6" ry="5.7">
+			<ellipse id="circle27_1_" sodipodi:cx="288.50699" sodipodi:cy="158.104" sodipodi:ry="5.4569998" sodipodi:rx="5.4569998" class="st8" cx="320.8" cy="320" rx="5.6" ry="5.7">
 		</ellipse>
 	</g>
 </g>
