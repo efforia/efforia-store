@@ -99,9 +99,6 @@
           </ul>
         </div>
       </div>
-      <div id="flags" class="navbar-right navbar-flag hidden-xs hidden-sm">
-        {% include "includes/flags.html" %}
-      </div>
     </div>
   </nav>
 
@@ -114,46 +111,41 @@
 
   <!-- Common footer for all pages, including scripts !-->
   <footer class="footer">
-    <nav class="footer-nav">
-      <div class="col-md-3"></div>
-      <div class="col-md-6 centered visible-lg visible-md" style="font-size:0.9em; font-weight:normal;">
-        <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
-        <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforiaca&nbsp;&nbsp;
-        <img src="{% static "svg/phone.svg" %}" height="18"/>&nbsp;{% trans "+5551 3516 2367" %}&nbsp;&nbsp;
-      </div>
-      <div class="col-md-6 centered visible-xs visible-sm" style="font-size:0.8em; font-weight:normal;">
-        <img src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
-        <img src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforiaca&nbsp;&nbsp;
-      </div>
-      <div class="col-md-3"></div>
-    </nav>
-    <div class="container">
-      <div class="hidden-xs spaces-xs"> {% include "includes/sitemap.html" %} </div>
-      <div class="row spaces-xs">
-        <div class="visible-sm">
-          <img class="payments" src="{% static "svg/options.svg" %}"/>
+    <div class="container-fluid">
+      <nav class="row footer-nav">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 centered visible-lg visible-md" style="font-size:0.9em; font-weight:normal;">
+          <img class="navicon" src="{% static "svg/whatsapp.svg" %}"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
+          <img class="navicon" src="{% static "svg/skype.svg" %}"/>&nbsp;efforiaca&nbsp;&nbsp;
+          <img class="navicon" src="{% static "svg/phone.svg" %}"/>&nbsp;{% trans "+5551 3516 2367" %}&nbsp;&nbsp;
         </div>
-        <div class="visible-xs">
-          <img class="payments" src="{% static "svg/optionsv.svg" %}"/>
+        <div class="col-md-6 centered visible-xs visible-sm" style="font-size:0.8em; font-weight:normal;">
+          <img class="navicon" src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
+          <img class="navicon" src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforiaca&nbsp;&nbsp;
         </div>
-        <div class="visible-md visible-lg">
-          <img class="payments" src="{% static "svg/optionsd.svg" %}"/>
+        <div class="col-md-3"></div>
+      </nav>
+      <div class="row flex">
+        <div class="col-md-8 col-sm-6 centered hidden-xs spaces-xs"> {% include "includes/sitemap.html" %} </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 middle">
+          <div class="visible-xs">
+            <img class="payments-xs" src="{% static "svg/optionsv.svg" %}"/></div>
+          <div class="visible-sm visible-md">
+            <img class="payments-sm" src="{% static "svg/optionsv.svg" %}"/></div>
+          <div class="visible-lg">
+            <img class="payments-md" src="{% static "svg/options.svg" %}"/></div>
         </div>
       </div>
-      <div class="visible-xs visible-sm row spaces-xs">
-        <div class="centered"> {% include "includes/flags.html" %} </div>
-      </div>
-      <div class="row info white">
-        <p class="visible-md visible-lg site-info text-center">
+      <div class="row middle centered whitebg">{% include "includes/flags.html" %}</div>
+      <div class="row info whitebg">
+        <p class="visible-md visible-lg visible-sm site-info text-center">
           Efforia Tecnologia Ltda - ME
           <span class="separator">|</span> CNPJ: 15.436.865/0001-72
-          <span class="separator">|</span> {% trans "Phone" %}: {% trans "+5551 3516 2367" %}
-          <span class="separator">|</span> Rua Vigário José Inácio, 399/409 - Porto Alegre/RS - Brasil
+          <span class="separator">|</span> Vigário José Inácio, 399/409 - Porto Alegre/RS - Brasil
         </p>
-        <p class="visible-xs visible-sm site-info text-center">
+        <p class="visible-xs site-info text-center">
           Efforia Tecnologia Ltda - ME<br/>
           CNPJ: 15.436.865/0001-72<br/>
-          {% trans "Phone" %}: {% trans "+5551 3516 2367" %}<br/>
           Rua Vigário José Inácio, 399/409<br/>
           Porto Alegre/RS - Brasil
         </p>

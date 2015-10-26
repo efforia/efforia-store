@@ -14,6 +14,19 @@
     </select>
     <input type="submit" value="Go" />
 </form>
-<img class="flag" src="{% static "img/brazil.png" %}" onclick="changeLocale('pt-br');"/>
-<img class="flag" src="{% static "img/spain.png" %}" onclick="changeLocale('es-ar');"/>
-<img class="flag" src="{% static "img/usa.png" %}" onclick="changeLocale('en');"/>
+
+<div class="spaces-xs">
+  <div class="hidden-xs">
+    <img class="flag" src="{% static "img/brazil.png" %}" onclick="changeLocale('pt-br');"/>
+    &nbsp;<h4 class="inline nomargin">&nbsp;Brasil <div class="hidden-sm inline">(Português)</div>&nbsp;</h4>&nbsp;
+    <img class="flag" src="{% static "img/spain.png" %}" onclick="changeLocale('es-ar');"/>
+    &nbsp;<h4 class="inline nomargin">&nbsp;América Latina <div class="hidden-sm inline">(Español)</div>&nbsp;</h4>&nbsp;
+    <img class="flag" src="{% static "img/usa.png" %}" onclick="changeLocale('en');"/>
+    &nbsp;<h4 class="inline nomargin">&nbsp;United States <div class="hidden-sm inline">(English)</div>&nbsp;</h4>&nbsp;
+  </div>
+  <div class="visible-xs">
+    <img class="flag flagicon" src="{% static "img/brazil.png" %}" onclick="changeLocale('pt-br');"/>
+    <img class="flag flagicon" src="{% static "img/spain.png" %}" onclick="changeLocale('es-ar');"/>
+    <img class="flag flagicon" src="{% static "img/usa.png" %}" onclick="changeLocale('en');"/>
+  </div>
+</div>

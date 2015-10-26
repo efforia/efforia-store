@@ -20,6 +20,8 @@
 
 .full-width { width:100% }
 
+.third-width { width:70%; margin-left:15% }
+
 </style>
 
 {% endblock %}
@@ -38,7 +40,7 @@
 <nav class="navbar subnavbar hidden-xs hidden-sm" style="margin:0px; min-height:0px">
   <ul class="nav nav-pills submenu right">
     <li class="rightmargin">
-      <button class="btn btn-default" style="height:43px;">{% trans "Buy" %}</button>
+      <button class="btn btn-info" style="height:43px;">{% trans "Buy" %}</button>
     </li>
     <li class="rightmargin">
       <a href="{% url 'hub' %}">{% trans "Home" %}</a>
@@ -72,7 +74,9 @@
         <div class="text-center">
           <h1>Sem Fios</h1>
           <h3>Adeus embaraço</h3>
-          <p>O HUB representa o futuro da computação pessoal: ele não esquenta; graças à boa temperatura que ele opera, o HUB é uma ótima opção para qualquer ambiente, seja ele externo ou interno.&nbsp;</p>
+          <p>O sistema de conexão sem fio do HUB reduz drasticamente a necessidade
+            de ter fios circulando pela sua casa ou empresa. Muitas vezes necessitará
+            apenas da tomada ligada e seu HUB estará disponível para o que precisar.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-4">
@@ -80,7 +84,9 @@
         <div class="text-center">
           <h1>Versátil</h1>
           <h3>Baterias inclusas</h3>
-          <p>Como o HUB aquece muito pouco, ele não possui ventoinhas, o que o torna bastante silencioso, podendo operar por horas sem você nem perceber</p>
+          <p>Graças a tecnologia EOS que habilita o uso multifuncional do HUB,
+            você tem um equipamento completo em suas mãos, podendo servir de
+            mídia center, servidor e </p>
         </div>
       </div>
       <div class="col-md-4 col-sm-4">
@@ -88,36 +94,36 @@
         <div class="text-center">
           <h1>Eficiente</h1>
           <h3>Utiliza baixa energia</h3>
-          <p>A Efforia, comprometida com a natureza, construiu o HUB com o que há de mais moderno no mercado, garantindo uma ótima eficiência energética ao consumir apenas 5W de potência. Isso dá a possibilidade de ligá-lo em televisores, tomadas de celulares e até baterias portáteis.</p>
+          <p>Comprometido com a natureza, garantimos uma ótima eficiência energética
+            ao consumir apenas 5W de potência. Isso dá a possibilidade de ligá-lo em
+            televisores, tomadas de celulares e até baterias portáteis.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
+<div class="container spaces-sm">
+  <div class="row spaces-md">
     <div class="col-md-6 col-sm-6 text-center"><img src="{% static 'svg/combinatedsimple.svg' %}" class="box" width="90%">
       <div style="padding: 0px 50px;">
         <h1>Sem fios</h1>
         <h3>Adeus embaraço</h3>
-        <p>A tecnologia EOS, juntamente com o sistema de conexão sem fio do HUB, reduz drasticamente a necessidade de ter fios circulando pela sua casa ou trabalho. Isso torna o nanocomputador fácil de carregar e prático de ligar para uso. Muitas vezes necessitará apenas da tomada ligada e pronto! Seu HUB estará disponível para o que precisar.</p>
+        <p></p>
       </div>
     </div>
     <div class="col-md-6 col-sm-6 text-center"><img src="{% static 'svg/colouredsimple.svg' %}" class="box" width="90%">
       <div style="padding: 0px 50px;">
         <h1>Customizável</h1>
         <h3>Escolha como você quer</h3>
-        <p>Nós da Efforia acreditamos que você pode ter um HUB para chamar de seu. Por isso temos diversas opções de acessórios, cores e outros adicionais, disponíveis para você em nossa loja virtual.</p>
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row spaces-md">
     <div class="col-md-4 col-sm-4">
       <img src="{% static 'svg/hublateralsimple.svg' %}" class="box img-responsive">
       <div class="text-center" style="padding: 0px 15px;">
         <h1>Portátil</h1>
         <h3>Carregue para onde quiser</h3>
-        <p>O HUB possui um tamanho bastante pequeno se comparado a computadores de modo em geral. Sendo assim, é muito fácil de carregá-lo para a praia, para o campo, e para onde você precisar.</p>
       </div>
     </div>
     <div class="col-md-4 col-sm-4">
@@ -125,7 +131,6 @@
       <div class="text-center" style="padding: 0px 15px;">
         <h1>Versátil</h1>
         <h3>Baterias inclusas</h3>
-        <p>Graças a tecnologia exclusiva EOS, que habilita o uso multifuncional do nanocomputador HUB, você tem um equipamento completo em suas mãos, podendo atuar das mais diversas maneiras, desde um mídia center até um computador completo com teclado, mouse e monitor.</p>
       </div>
     </div>
     <div class="col-md-4 col-sm-4">
@@ -133,28 +138,31 @@
       <div class="text-center" style="padding:0px 15px;">
         <h1>Poderoso</h1>
         <h3 class="text-center">Tudo na palma de sua mão</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
   </div>
-  <p><br><br></p>
-  <p><br><br></p>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-      <h1 class="centered">Especificações</h1>
-      <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-01.svg' %}">
-      <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-02.svg' %}">
-      <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-03.svg' %}">
-      <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-04.svg' %}">
-      <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-05.svg' %}">
-      <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-06.svg' %}">
-      <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-07.svg' %}">
-      <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-08.svg' %}">
+</div>
+<div class="container spaces-sm">
+  <div class="row spaces-md">
+    <img src="{% static 'img/huba.png' %}" class="img-responsive third-width visible-xs"/>
+    <div class="middle">
+      <div class="col-md-6 col-sm-6 col-xs-12 hidden-xs">
+        <img src="{% static 'img/huba.png' %}" class="img-responsive third-width"/>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <h1 class="centered">Especificações</h1>
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-01.svg' %}">
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-02.svg' %}">
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-03.svg' %}">
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-04.svg' %}">
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-05.svg' %}">
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-06.svg' %}">
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-07.svg' %}">
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-08.svg' %}">
+        <img class="col-md-4 col-sm-4 col-xs-4" src="{% static 'svg/specs-08.svg' %}">
+      </div>
     </div>
   </div>
-  <p><br><br></p>
-  <div class="row"></div>
-  <p><br><br></p><p><br></p>
 </div>
 
 {% endblock %}
