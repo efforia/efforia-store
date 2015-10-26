@@ -1,0 +1,73 @@
+{% extends "hub/base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <h1 class="text-center">Design</h1>
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <img src="{% static 'img/hubs4.png' %}" class="img-responsive"/>
+      <h1>Único</h1>
+      <h2>Design incomparável</h2>
+      <p>Construído em tampas de acrílico translúcido e em laterais de transparente
+        colorido, por padrão em tom de cinza escuro, todos os nanocomputadores
+        foram concebidos com um desenho inigualável, com um ar profissional e limpo,
+        e o mais importante, padronizado às devidas necessidades e customizado de
+        acordo com cada demanda.</p>
+    </div>
+    <div class="col-md-6 col-sm-6">
+      <div class="text-center col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+        <img src="{% static 'img/hub-a.png' %}" class="img-responsive"/>
+      </div>
+      <div class="col-md-12 text-center">
+        <h2>Sustentável</h2>
+        <h3>Desenho total em acrílico</h3>
+        <p>A sustentabilidade é um assunto muito importante para a Efforia em todos
+          os sentidos, e é pensando na conservação do planeta que nossos nanocomputadores
+          são encapsulados com material acrílico 100% reciclável.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6">
+      <div class="text-center col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+        <img src="{% static 'img/hub2.png' %}" class="img-responsive"/>
+      </div>
+      <div class="col-md-12 text-center">
+        <h2>Nacional</h2>
+        <h3>Montado no Brasil</h3>
+        <p>Todo o processo, à exceção da produção do circuito integrado, é realizado
+           no Rio Grande do Sul, desde o desenho e recorte dos acrílicos até a montagem
+           do nanocomputador, onde fica pronto para ser despachado para toda a América.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <div class="text-center col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+        <img src="{% static 'img/hub1.png' %}" class="img-responsive"/>
+      </div>
+      <div class="col-md-12 text-center">
+        <h2>Refrigerado</h2>
+        <h3>Projetado para qualquer ambiente</h3>
+        <p>A cápsula acrílica foi pensada de modo que obtivesse a melhor capacidade
+           térmica possível para os nanocomputadores, de modo que pudesse ser obtido
+           a melhor performance para cada unidade.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6">
+      <div class="text-center col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+        <img src="{% static 'img/hub4.png' %}" class="img-responsive"/>
+      </div>
+      <div class="col-md-12 text-center">
+        <h2>Preciso</h2>
+        <h3>Saídas e placa firmes</h3>
+        <p>A Efforia Nanocomputadores teve um cuidado sobre a qualidade e espessura
+           das telas acrílicas, assim como a firmeza nos furos de conexões, de maneira
+           que nosso cliente sempre tenha a melhor impressão física sobre todos os produtos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
