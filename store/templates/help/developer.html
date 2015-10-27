@@ -4,59 +4,67 @@
 
 {% block main %}
 
-<div id="container" class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h1 id="title" style="text-align:center;"> Desenvolvedor </h1>
-      <img src="/static/svg/eostechnology.svg" width="70%">
-      <div style="padding: 0px 50px;">
-        <h1>Uma plataforma cheia de oportunidades para o desenvolvedor</h1>
-        <p>Com a tecnologia exclusiva EOS, o desenvolvedor possui diversas vantagens que facilitam o trabalho de criação de novos serviços e aplicativos. A Efforia traz aos seus nanocomputadores tudo o que há de mais moderno para a engenharia de software e hardware, disponibilizando um sistema operacional multiplataforma, versátil e cheio de opções para você pré-instaladas, como a containerização, a implantação, o acesso remoto, a execução multilinguagem e a compilação distribuída.</p>
-      </div>
-      <p><br><br></p>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <h1>Desenvolvedor</h1>
+      <img src="{% static 'svg/eostechnology.svg' %}" class="img-responsive third-width"/>
+      <h1>Uma plataforma cheia de oportunidades para o desenvolvedor</h1>
+      <p>Com a tecnologia exclusiva EOS, o desenvolvedor possui diversas vantagens
+        que facilitam o trabalho de criação de novos serviços e aplicativos. A Efforia
+        traz aos seus nanocomputadores tudo o que há de mais moderno para a engenharia
+        de software e hardware, disponibilizando um sistema operacional multiplataforma,
+        versátil e cheio de opções para você pré-instaladas, como a containerização,
+        a implantação, o acesso remoto, a execução multilinguagem e a compilação
+        distribuída.</p>
     </div>
   </div>
+</div>
+<div class="container">
   <div class="row">
-    <div class="col-md-4 col-sm-6 text-center" style="height: 600px;">
-      <img src="/static/svg/docker.svg" height="300" width="90%">
-      <h2>Docker</h2>
-      <p>O Docker é um serviço que disponibiliza virtualização leve para todos os nanocomputadores da Efforia. Fácil e prático de utilizar, ele faz uso da tecnologia de containers do Linux, responsável por trazer isolamento de contexto para os seus ambientes virtuais. Serviço indispensável para desenvolver ambientes com requisitos complexos a partir de poucos comandos e scripts, e manter a performance praticamente a mesma devida à fina camada de virtualização. Exemplo de uso é na instalação e na configuração de bancos de dados e servidores web.</p>
-      <p><br><br></p>
-    </div>
-    <div class="col-md-4 col-sm-6 text-center" style="height: 600px;">
-      <img src="/static/svg/fabric.svg" height="300" width="90%">
-      <h2>Fabric</h2>
-      <p>Com o serviço de implantação Fabric, é possível automatizar toda a instalação de configuração de componentes de software remotamente para o seu nanocomputador. Bastando a escrita de um script com os comandos necessários, muito do processo de entrada no modo produção do aplicativo desenvolvido é facilitado. Integrando o serviço com um controle de versão como o Git temos uma integração contínua perfeita para todos os softwares que deseja desenvolver para nossa plataforma.</p>
-      <p><br><br></p>
-    </div>
-    <div class="col-md-4 col-sm-6 text-center" style="height: 600px;">
-      <img src="/static/svg/remote.svg" height="300" width="90%">
-      <div style="padding: 0px 15px;">
-        <h2>Remote</h2>
-        <p>O Remote mostra-se essencial para o acesso e administração remota de seu nanocomputador. Dispondo de serviço remoto de linha de comando (SSH), de acesso a arquivos por compartilhamentos do Windows (Samba), e de acesso a tela remota (VNC - quando o EMC possui interface gráfica), o Remote torna-se indispensável para o administrador de sistemas e para o programador realizar suas tarefas de manutenção e instalação de componentes no equipamento com a tecnologia EOS.</p>
-        <p><br><br></p>
+    <div class="col-md-6 col-sm-6 middle">
+      <div class="col-md-4 col-sm-4">
+        <img src="{% static 'svg/docker.svg' %}" class="img-responsive full-width">
+      </div>
+      <div class="col-md-8 col-sm-8">
+        <h2>Docker</h2>
+        <p>O Docker é um serviço que disponibiliza virtualização leve para todos os nanocomputadores da Efforia. Fácil e prático de utilizar, ele faz uso da tecnologia de containers do Linux, responsável por trazer isolamento de contexto para os seus ambientes virtuais. Serviço indispensável para desenvolver ambientes com requisitos complexos a partir de poucos comandos e scripts, e manter a performance praticamente a mesma devida à fina camada de virtualização. Exemplo de uso é na instalação e na configuração de bancos de dados e servidores web.</p>
       </div>
     </div>
-    <div class="col-md-4 col-sm-6 text-center" style="height: 600px;">
-      <img src="/static/svg/runtime.svg" height="300" width="90%">
+    <div class="col-md-6 col-sm-6 middle">
+      <div class="col-md-8 col-sm-8 ralign">
+        <h2>Fabric</h2>
+        <p>Com o serviço de implantação Fabric, é possível automatizar toda a instalação de configuração de componentes de software remotamente para o seu nanocomputador. Bastando a escrita de um script com os comandos necessários, muito do processo de entrada no modo produção do aplicativo desenvolvido é facilitado. Integrando o serviço com um controle de versão como o Git temos uma integração contínua perfeita para todos os softwares que deseja desenvolver para nossa plataforma.</p>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <img src="{% static 'svg/fabric.svg' %}" class="img-responsive full-width">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-4 col-sm-6">
+      <img src="{% static 'svg/remote.svg' %}" class="img-responsive third-width">
+      <h2>Remote</h2>
+      <p>O Remote mostra-se essencial para o acesso e administração remota de seu nanocomputador. Dispondo de serviço remoto de linha de comando (SSH), de acesso a arquivos por compartilhamentos do Windows (Samba), e de acesso a tela remota (VNC - quando o EMC possui interface gráfica), o Remote torna-se indispensável para o administrador de sistemas e para o programador realizar suas tarefas de manutenção e instalação de componentes no equipamento com a tecnologia EOS.</p>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="{% static 'svg/runtime.svg' %}" class="img-responsive third-width">
       <h2>Runtime</h2>
       <p>Com o Runtime, é possível realizar a execução de diversas linguagens de programação em seu nanocomputador. O EOS vem preparado para ser utilizado para programação em Python, Perl, Ruby, Java, Node, PHP, C/C++ e C#, e um bom acervo de bibliotecas auxiliares para o desenvolvimento de aplicativos Web e com interface gráfica, como, respectivamente, o Django e o Qt. É com este serviço que nossos nanocomputadores demonstram a maior versatilidade, ao permitir diversas tecnologias a serem rodadas graças à tecnologia EOS.</p>
-      <p><br><br></p>
     </div>
-    <div class="col-md-4 col-sm-6 text-center" style="height: 600px;">
-      <img src="/static/svg/build.svg" height="300" width="90%">
+    <div class="col-md-4 col-sm-6">
+      <img src="{% static 'svg/build.svg' %}" class="img-responsive third-width">
       <h2>Build</h2>
       <p>Tem um projeto grande demais para compilar com apenas um nanocomputador? Não se preocupe, o EOS conta com um sistema de compilação distribuída, o Build. O serviço conta com diversos mecanismos já instalados e configurados que dão a possibilidade de distribuir o processo em diversos outros nanocomputadores e computadores com a ferramenta EOS SDK instalada.</p>
-      <p><br><br></p>
     </div>
-    <div class="col-md-4 col-sm-6 text-center" style="height: 600px;">
-      <img src="/static/svg/eos.svg" height="300" width="90%">
+    <div class="col-md-4 col-sm-6">
+      <img src="{% static 'svg/eos.svg' %}" class="img-responsive third-width">
       <h2>EOS SDK</h2>
       <p>A Efforia Nanocomputadores, pensando em você, desenvolvedor, disponibilizou um kit de desenvolvimento de aplicativos para a plataforma EOS. Neste conjunto há bibliotecas que compõem uma pequena camada sobre os principais componentes-chave de nossa tecnologia. O kit é complementado com uma máquina virtual em formato OVF (Podendo ser aberto em VMware, VirtualBox, Parallels e outros) que contém todos os itens do EOS mais a integração com os nanocomputadores, essencial para o uso do sistema Build. O SDK pode ser encontrado em nossa página do GitHub, e a VM pelo link:<a href="http://1drv.ms/1HoR5hN" target="_blank"><span>&nbsp;http://1drv.ms/1HoR5hN</span></a></p>
-      <p><br><br></p>
     </div>
   </div>
-  <p><br><br></p><p><br></p>
 </div>
 
 {% endblock %}

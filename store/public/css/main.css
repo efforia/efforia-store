@@ -110,10 +110,32 @@
 .navicon { height:18px; }
 .flagicon { height:47px; }
 
-.nomargin { margin: 0px; }
+.nomargin,
+.nomargin p,
+.nomargin h1,
+.nomargin h2,
+.nomargin h3 { margin:0px !important; }
+
+.nopadding { padding:0px !important;}
 
 .inline { display:inline; }
 .flex { display:flex; }
+
+.photo-lg {
+  height:500px !important;
+  margin:0 auto;
+}
+.photo-md {
+  height:400px !important;
+  margin:0 auto;
+}
+.photo-sm {
+  height:300px !important;
+  margin:0 auto;
+}
+
+.full-width { width:100% }
+.third-width { width:70%; margin-left:15% }
 
 /* Bootstrap Overriding CSS rules and others oneliners */
 
