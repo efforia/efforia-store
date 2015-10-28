@@ -4,95 +4,224 @@
 
 {% block main %}
 
-<div id="container" class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col-md-12 col-sm-12 text-center" style="padding: 0px 50px;">
-      <h1 id="title" style="text-align:center;"> Aplicativos </h1>
-      <p>Seu tablet e smartphone consegue interagir com o HUB com tecnologia exclusiva EOS a partir de diversos aplicativos que podem ser encontrados nas Appstores. Aqui citamos alguns exemplos e suas aplicações.</p>
+    <div class="col-md-12 col-sm-12 text-center">
+      <h1>Aplicativos</h1>
+      <p>Seu tablet e smartphone consegue interagir com o HUB com tecnologia
+        exclusiva EOS a partir de diversos aplicativos que podem ser encontrados
+        nas Appstores. Aqui citamos alguns exemplos e suas aplicações.</p>
     </div>
   </div>
-  <p></p>
+</div>
+
+<div class="container spaces-sm">
   <div class="row">
-    <div class="col-md-6 col-sm-12 text-center">
-      <h1>Android</h1>
-      <p><br><br></p>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="https://play.google.com/store/apps/details?id=nextapp.fx"><img src="/static/img/fileexplorer.webp" width="35%"></a>
-        <h2>File Explorer</h2>
-        <p>Com este gerenciador de arquivos instalado em seu tablet ou smartphone Android, é possível acessar e/ou modificar remotamente todo o conteúdo de arquivos disponibilizado no HUB ou em dispositivos de armazenamento conectados a ele.</p>
+    <h1 class="text-center">Aplicativos para iOS</h1>
+    <div class="col-md-6 middle">
+      <div class="col-md-3 col-sm-3">
+        <img src="{% static 'img/itunes.jpg' %}" class="img-responsive img-margin"/>
       </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="https://play.google.com/store/apps/details?id=com.bubblesoft.android.bubbleupnp"><img src="/static/img/bubbleupnp.webp" width="35%"></a>
-        <h2>BubbleUPNP</h2>
-        <p>Conecte o seu smartphone ou tablet Android com o HUB para transmitir sem fio músicas, vídeos e fotos a partir do BubbleUPNP. É possível controlar a transmissão e reprodução de diversos HUBs num só dispositivo com este aplicativo instalado.</p>
-      </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="https://play.google.com/store/apps/details?id=com.doubleTwist.androidPlayerProKey"><img src="/static/img/airsync.webp" width="35%"></a>
-        <h2>DoubleTwist AirSync</h2>
-        <p>Com este reprodutor de mídia mais o adicional AirSync, é possível também transmitir via AirPlay conteúdos multimídia, dentre eles músicas e filmes.</p>
-      </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="https://play.google.com/store/apps/details?id=org.leetzone.android.yatsewidgetfree"><img src="/static/img/yatse.webp" width="35%"></a>
-        <h2>Yatse</h2>
-        <p>Este aplicativo possibilita o uso de seu smartphone ou tablet Android como um controle remoto para o HUB, dando as opções de navegação, reprodução e transmissão.</p>
-      </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="https://play.google.com/store/apps/details?id=com.bianor.amspersonal"><img src="/static/img/imediashare.webp" width="35%"></a>
-        <h2>iMediaShare</h2>
-        <!--<p>https://itunes.apple.com/app/id302026401?mt=8&amp;&amp;referrer=click%3D6014170e-b085-4ab1-a2ff-47aa625ebb5d</p>!-->
-        <p>Disponível para dispositivos Android e iOS, o iMediaShare utiliza da tecnologia EOS para a transmissão de vídeos, músicas e fotos.</p>
-      </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="https://play.google.com/store/apps/details?id=com.neogb.rtac"><img src="/static/img/transmission.webp" width="35%"></a>
-        <h2>Remote Transmission</h2>
-        <p>O Remote Transmission possibilita o controle remoto do serviço Torrent, podendo iniciar, pausar ou encerrar downloads ou uploads no HUB.</p>
-      </div>
-    </div>
-    <div class="col-md-6 col-sm-12 text-center">
-      <h1>iOS</h1>
-      <p><br><br></p>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><img src="/static/img/itunes.jpg" width="35%">
+      <div class="col-md-9 col-sm-9">
         <h2>iTunes</h2>
-        <p>O iTunes da Apple em dispositivos iOS possibilita a transmissão de conteúdo via tecnologia AirPlay, compatível com o HUB para músicas e vídeoclipes.</p>
+        <p>O iTunes da Apple em dispositivos iOS possibilita a transmissão de
+          conteúdo via tecnologia AirPlay, compatível com o HUB para músicas e
+          vídeoclipes.</p>
       </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="https://itunes.apple.com/br/app/sybu-for-kodi-and-xbmc/id567524653?mt=8"><img src="/static/img/sybu.jpg" style="border-radius: 35px;" width="35%"></a>
+    </div>
+    <div class="col-md-6 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://itunes.apple.com/br/app/sybu-for-kodi-and-xbmc/id567524653?mt=8">
+          <img src="{% static 'img/sybu.jpg' %}" class="img-responsive img-rounded img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
         <h2>Sybu Remote</h2>
-        <p>Com o Sybu, seu iPad, iPhone ou iPod pode funcionar como um controle remoto para navegar e reproduzir conteúdo no HUB.</p>
-      </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="http://itunes.apple.com/us/app/transmission-rpc/id527302090?mt=8"><img src="/static/img/transmission.jpg" style="border-radius: 35px;" width="35%"></a>
-        <h2>Transmission RPC</h2>
-        <p>Seu iPad, iPhone ou iPod pode controlar os downloads e uploads do serviço Torrent habilitado no seu HUB, podendo pausar, iniciar ou encerrar.</p>
-      </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="https://itunes.apple.com/br/app/fileexplorer-free/id510282524?mt=8"><img src="/static/img/fileexplorer.jpg" style="border-radius: 35px;" width="35%"></a>
-        <h2>FileExplorer Free</h2>
-        <p>A partir desta ferramenta de gerenciamento de arquivos, seu iPad, iPhone ou iPod pode acessar ou alterar de forma remota arquivos armazenados no HUB e em dispositivos conectados a ele (HD, Flash Drive ou SD).&nbsp;</p>
+        <p>Com o Sybu, seu iPad, iPhone ou iPod pode funcionar como um controle
+          remoto para navegar e reproduzir conteúdo no HUB.</p>
       </div>
     </div>
   </div>
-  <p></p>
+  <div class="row spaces-sm">
+    <div class="col-md-6 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="http://itunes.apple.com/us/app/transmission-rpc/id527302090?mt=8">
+          <img src="{% static 'img/transmission.jpg' %}" class="img-responsive img-rounded img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>Transmission RPC</h2>
+        <p>Seu iPad, iPhone ou iPod pode controlar os downloads e uploads do serviço
+          Torrent habilitado no seu HUB, podendo pausar, iniciar ou encerrar.</p>
+      </div>
+    </div>
+    <div class="col-md-6 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://itunes.apple.com/br/app/fileexplorer-free/id510282524?mt=8">
+          <img src="{% static 'img/fileexplorer.jpg' %}" class="img-responsive img-rounded img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>FileExplorer Free</h2>
+        <p>A partir desta ferramenta de gerenciamento de arquivos, seu iPad,
+          iPhone ou iPod pode acessar ou alterar de forma remota arquivos armazenados
+          no HUB e em dispositivos conectados a ele (HD, Flash Drive ou SD).&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container spaces-sm">
   <div class="row">
-    <div class="col-md-offset-3 col-md-6 col-sm-12 text-center">
-      <h1>Windows Phone</h1>
-      <p><br><br></p>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="http://www.windowsphone.com/pt-br/store/app/av-remote/ed2de477-b31a-46dc-b297-11d9a8873cdf"><img src="/static/img/avremote.png" width="35%"></a>
-        <h2>AV Remote</h2>
-        <p>O AV Remote dá a possibilidade de transmissão e reprodução de conteúdo multimídia pelo Windows Phone.</p>
+    <h1 class="text-center">Aplicativos para Windows Phone</h1>
+    <div class="col-md-4 col-sm-12 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="http://www.windowsphone.com/pt-br/store/app/xbmc-assist-remote/3897b459-b11b-41eb-9cea-dd9e53c55b78">
+          <img src="{% static 'img/xbmcassist.png' %}" class="img-responsive img-margin"/>
+        </a>
       </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="http://www.windowsphone.com/pt-br/store/app/xbmc-assist-remote/3897b459-b11b-41eb-9cea-dd9e53c55b78"><img src="/static/img/xbmcassist.png" width="35%"></a>
+      <div class="col-md-9 col-sm-9">
         <h2>XBMC Remote</h2>
-        <p>Seu Windows Phone pode ser utilizado como controle remoto para reprodução e navegação na interface do HUB com o aplicativo XBMC Remote.</p>
+        <p>Seu Windows Phone pode ser utilizado como controle remoto para reprodução
+          e navegação na interface do HUB com o aplicativo XBMC Remote.</p>
       </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="http://www.windowsphone.com/pt-br/store/app/metrotransmission/43651c70-d785-492e-ac38-66d7d6b7a20c"><img src="/static/img/metrotransmission.png" width="35%"></a>
+    </div>
+    <div class="col-md-4 col-sm-6 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="http://www.windowsphone.com/pt-br/store/app/av-remote/ed2de477-b31a-46dc-b297-11d9a8873cdf">
+          <img src="{% static 'img/avremote.png' %}" class="img-responsive img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>AV Remote</h2>
+        <p>O AV Remote dá a possibilidade de transmissão e reprodução de conteúdo
+          multimídia pelo Windows Phone.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="http://www.windowsphone.com/pt-br/store/app/metrotransmission/43651c70-d785-492e-ac38-66d7d6b7a20c">
+          <img src="{% static 'img/metrotransmission.png' %}" class="img-responsive img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
         <h2>MetroTransmission</h2>
         <p>A partir deste aplicativo o seu Windows Phone pode controlar o serviço Torrent, de forma a encerrar, iniciar ou pausar downloads ou uploads do HUB.</p>
       </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="http://www.windowsphone.com/en-us/store/app/sharefolder-explorer/e2b9c82e-eaa1-4a3b-9d4a-8a2933a8bdb4"><img src="/static/img/sharefolder.png" width="35%"></a>
-        <h2>ShareFolder Explorer</h2>
-        <p>Com este aplicativo de gerenciamento de arquivos instalado em seu Windows Phone, é possível acessar e modificar arquivos remotamente armazenados no HUB e em todos os dispositivos de armazenamento conectados a ele.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2 col-sm-6 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="http://www.windowsphone.com/en-us/store/app/sharefolder-explorer/e2b9c82e-eaa1-4a3b-9d4a-8a2933a8bdb4">
+          <img src="{% static 'img/sharefolder.png' %}" class="img-responsive img-margin"/>
+        </a>
       </div>
-      <div class="col-md-6 col-sm-6" style="height: 400px;"><a href="http://www.windowsphone.com/s?appid=61b549d6-0d88-4db3-b336-670473e4b7ef"><img src="/static/img/sync.png" width="35%"></a>
+      <div class="col-md-9 col-sm-9">
+        <h2>ShareFolder Explorer</h2>
+        <p>Com este aplicativo de gerenciamento de arquivos instalado em seu Windows
+          Phone, é possível acessar e modificar arquivos remotamente armazenados no
+          HUB e em todos os dispositivos de armazenamento conectados a ele.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="http://www.windowsphone.com/s?appid=61b549d6-0d88-4db3-b336-670473e4b7ef">
+          <img src="{% static 'img/sync.png' %}" class="img-responsive img-margin">
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
         <h2>Sync</h2>
-        <!--<p>https://play.google.com/store/apps/details?id=com.bittorrent.sync&amp;referrer=utm_source%3Dbittorrent%26utm_medium%3Ddownloads%26utm_campaign%3Dhome</p>
-        <p>https://itunes.apple.com/us/app/bittorrent-sync/id665156116</p>!-->
-        <p>Através deste aplicativo multiplataforma, é possível enviar arquivos de um dispositivo para o outro, graças ao serviço Sync habilitado em todos os HUBs.</p>
+        <p>Através deste aplicativo multiplataforma, é possível enviar arquivos de
+          um dispositivo para o outro, graças ao serviço Sync habilitado em todos
+          os HUBs.</p>
       </div>
     </div>
   </div>
-  <p><br><br></p><p><br></p>
+</div>
+
+<div class="container spaces-sm">
+  <div class="row">
+    <h1 class="text-center">Aplicativos para Android</h1>
+    <div class="col-md-4 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://play.google.com/store/apps/details?id=nextapp.fx">
+          <img src="{% static 'img/fileexplorer.webp' %}" class="img-responsive img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>File Explorer</h2>
+        <p>Com este gerenciador de arquivos instalado em seu tablet ou smartphone
+          Android, é possível acessar e/ou modificar remotamente todo o conteúdo
+          de arquivos disponibilizado no HUB ou em dispositivos de armazenamento
+          conectados a ele.</p>
+      </div>
+    </div>
+    <div class="col-md-4 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://play.google.com/store/apps/details?id=com.bubblesoft.android.bubbleupnp">
+          <img src="{% static 'img/bubbleupnp.webp' %}" class="img-responsive img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>BubbleUPNP</h2>
+        <p>Conecte o seu smartphone ou tablet Android com o HUB para transmitir
+          sem fio músicas, vídeos e fotos a partir do BubbleUPNP. É possível
+          controlar a transmissão e reprodução de diversos HUBs num só dispositivo
+          com este aplicativo instalado.</p>
+      </div>
+    </div>
+    <div class="col-md-4 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://play.google.com/store/apps/details?id=com.doubleTwist.androidPlayerProKey">
+          <img src="{% static 'img/airsync.webp' %}" class="img-responsive img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>DoubleTwist AirSync</h2>
+        <p>Com este reprodutor de mídia mais o adicional AirSync, é possível também transmitir via AirPlay conteúdos multimídia, dentre eles músicas e filmes.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row spaces-sm">
+    <div class="col-md-4 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://play.google.com/store/apps/details?id=org.leetzone.android.yatsewidgetfree">
+          <img src="{% static 'img/yatse.webp' %}" class="img-responsive img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>Yatse</h2>
+        <p>Este aplicativo possibilita o uso de seu smartphone ou tablet Android
+          como um controle remoto para o HUB, dando as opções de navegação, reprodução
+          e transmissão.</p>
+      </div>
+    </div>
+    <div class="col-md-4 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://play.google.com/store/apps/details?id=com.bianor.amspersonal">
+          <img src="{% static 'img/imediashare.webp' %}" class="img-responsive img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>iMediaShare</h2>
+        <p>Disponível para dispositivos Android e iOS, o iMediaShare utiliza da
+          tecnologia EOS para a transmissão de vídeos, músicas e fotos.</p>
+      </div>
+    </div>
+    <div class="col-md-4 middle">
+      <div class="col-md-3 col-sm-3">
+        <a href="https://play.google.com/store/apps/details?id=com.neogb.rtac">
+          <img src="{% static 'img/transmission.webp' %}" class="img-responsive img-margin"/>
+        </a>
+      </div>
+      <div class="col-md-9 col-sm-9">
+        <h2>Remote Transmission</h2>
+        <p>O Remote Transmission possibilita o controle remoto do serviço Torrent,
+          podendo iniciar, pausar ou encerrar downloads ou uploads no HUB.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endblock %}

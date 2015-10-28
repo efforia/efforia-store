@@ -24,8 +24,8 @@ urlpatterns += patterns(u'',
                         url(r'^i18n/', include('django.conf.urls.i18n'), name='set_language'),
 
                         url(_(r'^hub/design'), TemplateView.as_view(template_name='hub/design.html'), name='hubdesign'),
-                        url(_(r'^hub/iot'), TemplateView.as_view(template_name='hub/iot.html'), name='internetofthings'),
-                        url(_(r'^hub/howitworks'), TemplateView.as_view(template_name='hub/howitworks.html'), name='howitworks'),
+                        url(_(r'^hub/iot'), TemplateView.as_view(template_name='hub/iot.html'), name='iot'),
+                        url(_(r'^hub/eos'), TemplateView.as_view(template_name='hub/eos.html'), name='eos'),
                         url(_(r'^hub/sensors'), TemplateView.as_view(template_name='hub/sensors.html'), name='sensors'),
                         url(r'^hub/', TemplateView.as_view(template_name='hub/index.html'), name='hub'),
 
