@@ -19,15 +19,15 @@
 {% block start %}
 
 <div class="jumbotron background">
-  <div class="transparent-black overlay middle">
+  <div class="transparent-black overlay middle" style="margin-bottom:0px">
     <div class="container centered">
-      <img style="height:27em" src="{% static 'img/hubpa.png' %}"/>
+      <img style="height:20em" src="{% static 'img/hubpa.png' %}"/>
       <h2 style="font-size:3em" class="white">TODO O PODER <br>NA PALMA DE SUA MÃO.</h2>
     </div>
   </div>
 </div>
 
-<nav class="navbar subnavbar hidden-xs hidden-sm">
+<nav class="navbar subnavbar hidden-xs hidden-sm" style="margin:0px; min-height:0px">
   <ul class="nav nav-pills submenu submenu-inverse right" style="background: rgba(0,0,0,0.7)">
     <li class="rightmargin">
       <button class="btn btn-default" style="height:43px;">{% trans "Buy" %}</button>
@@ -45,38 +45,45 @@
 {% endblock %}
 
 {% block main %}
-<div class="container">
-  <div class="row"></div>
+
+<div class="container spaces-sm">
   <div class="row">
     <div class="col-md-12">
-      <div class="col-md-4 col-sm-4" style="padding:15px">
-        <img src="{% static 'svg/fastsimple.svg' %}" style="border-radius:15px" width="100%"/>
-        <div class="text-center" style="padding: 0px 15px;">
+      <div class="col-md-4 col-sm-4">
+        <img src="{% static 'svg/fastsimple.svg' %}" class="img-responsive img-rounded full-width"/>
+        <div class="text-center">
           <h1>Robusto</h1>
           <h3>Tudo na palma de sua mão</h3>
-          <p>O HUB representa o futuro da computação pessoal: ele não esquenta; graças à boa temperatura que ele opera, o HUB é uma ótima opção para qualquer ambiente, seja ele externo ou interno.&nbsp;</p>
+          <p>O HUB Pro representa o futuro da automação doméstica e corporativa:
+          ele dispensa o uso de computadores para o sistema graças ao seu bom desempenho,
+          sendo uma ótima opção para qualquer ambiente externo ou interno.</p>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4" style="padding:15px">
-        <img src="{% static 'svg/spectacularsimple.svg' %}" style="border-radius:15px" width="100%">
-        <div class="text-center" style="padding: 0px 15px;">
+      <div class="col-md-4 col-sm-4">
+        <img src="{% static 'svg/spectacularsimple.svg' %}" class="img-responsive img-rounded full-width">
+        <div class="text-center">
           <h1>Espetacular</h1>
-          <h3>Grande experiência audiovisual</h3>
-          <p>Como o HUB aquece muito pouco, ele não possui ventoinhas, o que o torna bastante silencioso, podendo operar por horas sem você nem perceber</p>
+          <h3>Ótima experiência audiovisual</h3>
+          <p>Com a tecnologia EOS-D baseada na plataforma Android, o HUB Pro traz
+            uma experiência audiovisual sem par, somado à sua operação silenciosa,
+            aproveitando o que há de melhor por horas sem você nem perceber.</p>
         </div>
       </div>
-      <div class="col-md-4 col-sm-4" style="padding: 15px">
-        <img src="{% static 'svg/connectedsimple.svg' %}" style="border-radius:15px" width="100%"/>
-        <div class="text-center" style="padding: 0px 15px;">
+      <div class="col-md-4 col-sm-4">
+        <img src="{% static 'svg/connectedsimple.svg' %}" class="img-responsive img-rounded full-width"/>
+        <div class="text-center">
           <h1>Ligado</h1>
           <h3>Amplamente conectável</h3>
-          <p>A Efforia, comprometida com a natureza, construiu o HUB com o que há de mais moderno no mercado, garantindo uma ótima eficiência energética ao consumir apenas 5W de potência. Isso dá a possibilidade de ligá-lo em televisores, tomadas de celulares e até baterias portáteis.</p>
+          <p>Com as conexões sem fio (Wi-Fi), com fio (Ethernet), e de redes móveis
+            (HSPA+) por padrão, seu HUB Pro está conectado com o que há de mais moderno,
+            garantindo uma ótima saída de Internet para qualquer situação.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="container">
+
+<div class="container spaces-sm">
   <div class="row">
     <div class="col-md-6 col-sm-6 text-center"><img src="{% static 'svg/combinated.svg' %}" class="box" width="90%">
       <div style="padding: 0px 50px;">

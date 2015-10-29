@@ -29,7 +29,7 @@ urlpatterns += patterns(u'',
                         url(_(r'^hub/sensors'), TemplateView.as_view(template_name='hub/sensors.html'), name='sensors'),
                         url(r'^hub/', TemplateView.as_view(template_name='hub/index.html'), name='hub'),
 
-                        url(_(r'^hubpro/design'), TemplateView.as_view(template_name='hubpro/design.html'), name='hubpdesign'),
+                        url(_(r'^hubpro/eosd'), TemplateView.as_view(template_name='hubpro/eosd.html'), name='eosd'),
                         url(_(r'^hubpro/mediacenter'), TemplateView.as_view(template_name='hubpro/mediacenter.html'), name='mediacenter'),
                         url(_(r'^hubpro/videogame'), TemplateView.as_view(template_name='hubpro/videogame.html'), name='videogame'),
                         url(_(r'^hubpro/server'), TemplateView.as_view(template_name='hubpro/server.html'), name='server'),

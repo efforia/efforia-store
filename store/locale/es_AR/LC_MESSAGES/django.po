@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-19 12:45-0200\n"
+"POT-Creation-Date: 2015-10-29 19:57-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,15 +62,15 @@ msgid "^shop/"
 msgstr ""
 
 #: store/urls.py:26
-msgid "^hub/iot"
+msgid "^hub/design"
 msgstr ""
 
 #: store/urls.py:27
-msgid "^hub/howitworks"
+msgid "^hub/iot"
 msgstr ""
 
 #: store/urls.py:28
-msgid "^hub/whatisitfor"
+msgid "^hub/eos"
 msgstr ""
 
 #: store/urls.py:29
@@ -78,7 +78,7 @@ msgid "^hub/sensors"
 msgstr ""
 
 #: store/urls.py:32
-msgid "^hubpro/personalcomputing"
+msgid "^hubpro/eosd"
 msgstr ""
 
 #: store/urls.py:33
@@ -145,18 +145,13 @@ msgstr ""
 msgid "Toggle Navigation"
 msgstr ""
 
-#: store/templates/base.html:120 store/templates/base.html.py:125
+#: store/templates/base.html:118 store/templates/base.html.py:123
 msgid "+5551 9848 5888"
 msgstr "+5551 9848-5888"
 
-#: store/templates/base.html:122 store/templates/base.html.py:150
-#: store/templates/base.html:156
+#: store/templates/base.html:120
 msgid "+5551 3516 2367"
 msgstr "+5551 3516-2367"
-
-#: store/templates/base.html:150 store/templates/base.html.py:156
-msgid "Phone"
-msgstr "Teléfono"
 
 #: store/templates/index.html:25 store/templates/index.html.py:26
 msgid "WE ARE"
@@ -172,7 +167,7 @@ msgstr ""
 "Y queremos la computación presente en todos los momentos de la vida de las "
 "personas"
 
-#: store/templates/index.html:39 store/templates/hubpro/nav.html:3
+#: store/templates/index.html:39
 msgid "Audiovisual"
 msgstr "Audiovisual"
 
@@ -196,7 +191,7 @@ msgstr ""
 "Nosotros también desarrollamos sistemas de entretenimiento completos, listos "
 "para reproducir vídeos, músicas e vídeo juegos."
 
-#: store/templates/index.html:49 store/templates/hub/nav.html:5
+#: store/templates/index.html:49
 msgid "Automation"
 msgstr "Automación"
 
@@ -277,7 +272,7 @@ msgid "Search Results"
 msgstr "Resultados de la búsqueda"
 
 #: store/templates/search_results.html:13 store/templates/help/base.html:13
-#: store/templates/hub/index.html:36 store/templates/hubpro/base.html:13
+#: store/templates/hub/index.html:38 store/templates/hubpro/base.html:13
 #: store/templates/hubpro/index.html:36
 #: store/templates/pages/menus/breadcrumb.html:4
 #: store/templates/pages/menus/breadcrumb.html:10
@@ -635,23 +630,31 @@ msgstr "Ubicación"
 msgid "Warranty"
 msgstr "Garantía"
 
-#: store/templates/hub/base.html:10 store/templates/hub/index.html:33
+#: store/templates/hub/base.html:12 store/templates/hub/index.html:35
 #: store/templates/hubpro/base.html:10 store/templates/hubpro/index.html:33
 #: store/templates/shop/product.html:117 store/templates/shop/wishlist.html:34
 msgid "Buy"
 msgstr "Comprar"
 
 #: store/templates/hub/nav.html:3
-msgid "Internet of Things"
-msgstr "Internet de las Cosas"
+msgid "Design"
+msgstr ""
 
 #: store/templates/hub/nav.html:4
 msgid "EOS Technology"
 msgstr "Tecnología EOS"
 
+#: store/templates/hub/nav.html:5
+msgid "Internet of Things"
+msgstr "Internet de las Cosas"
+
 #: store/templates/hub/nav.html:6
 msgid "Sensors"
 msgstr "Sensores"
+
+#: store/templates/hubpro/nav.html:3
+msgid "EOS-D Technology"
+msgstr "Tecnología EOS-D"
 
 #: store/templates/hubpro/nav.html:4
 msgid "Internet TV"
@@ -1026,6 +1029,9 @@ msgstr ""
 #: store/templates/twitter/tweets.html:7
 msgid "Recent Tweets"
 msgstr ""
+
+#~ msgid "Phone"
+#~ msgstr "Teléfono"
 
 #, fuzzy
 #~ msgid "^support/"

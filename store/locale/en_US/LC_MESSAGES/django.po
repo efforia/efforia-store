@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-19 12:45-0200\n"
+"POT-Creation-Date: 2015-10-29 19:57-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,15 +62,15 @@ msgid "^shop/"
 msgstr ""
 
 #: store/urls.py:26
-msgid "^hub/iot"
+msgid "^hub/design"
 msgstr ""
 
 #: store/urls.py:27
-msgid "^hub/howitworks"
+msgid "^hub/iot"
 msgstr ""
 
 #: store/urls.py:28
-msgid "^hub/whatisitfor"
+msgid "^hub/eos"
 msgstr ""
 
 #: store/urls.py:29
@@ -78,7 +78,7 @@ msgid "^hub/sensors"
 msgstr ""
 
 #: store/urls.py:32
-msgid "^hubpro/personalcomputing"
+msgid "^hubpro/eosd"
 msgstr ""
 
 #: store/urls.py:33
@@ -141,17 +141,12 @@ msgstr ""
 msgid "Toggle Navigation"
 msgstr ""
 
-#: store/templates/base.html:120 store/templates/base.html.py:125
+#: store/templates/base.html:118 store/templates/base.html.py:123
 msgid "+5551 9848 5888"
 msgstr ""
 
-#: store/templates/base.html:122 store/templates/base.html.py:150
-#: store/templates/base.html:156
+#: store/templates/base.html:120
 msgid "+5551 3516 2367"
-msgstr ""
-
-#: store/templates/base.html:150 store/templates/base.html.py:156
-msgid "Phone"
 msgstr ""
 
 #: store/templates/index.html:25 store/templates/index.html.py:26
@@ -166,7 +161,7 @@ msgstr ""
 msgid "And we want the computers present at every moment of people's lives"
 msgstr ""
 
-#: store/templates/index.html:39 store/templates/hubpro/nav.html:3
+#: store/templates/index.html:39
 msgid "Audiovisual"
 msgstr ""
 
@@ -186,7 +181,7 @@ msgid ""
 "video content, music, or videogame."
 msgstr ""
 
-#: store/templates/index.html:49 store/templates/hub/nav.html:5
+#: store/templates/index.html:49
 msgid "Automation"
 msgstr ""
 
@@ -255,7 +250,7 @@ msgid "Search Results"
 msgstr ""
 
 #: store/templates/search_results.html:13 store/templates/help/base.html:13
-#: store/templates/hub/index.html:36 store/templates/hubpro/base.html:13
+#: store/templates/hub/index.html:38 store/templates/hubpro/base.html:13
 #: store/templates/hubpro/index.html:36
 #: store/templates/pages/menus/breadcrumb.html:4
 #: store/templates/pages/menus/breadcrumb.html:10
@@ -613,22 +608,30 @@ msgstr ""
 msgid "Warranty"
 msgstr ""
 
-#: store/templates/hub/base.html:10 store/templates/hub/index.html:33
+#: store/templates/hub/base.html:12 store/templates/hub/index.html:35
 #: store/templates/hubpro/base.html:10 store/templates/hubpro/index.html:33
 #: store/templates/shop/product.html:117 store/templates/shop/wishlist.html:34
 msgid "Buy"
 msgstr ""
 
 #: store/templates/hub/nav.html:3
-msgid "Internet of Things"
+msgid "Design"
 msgstr ""
 
 #: store/templates/hub/nav.html:4
 msgid "EOS Technology"
 msgstr ""
 
+#: store/templates/hub/nav.html:5
+msgid "Internet of Things"
+msgstr ""
+
 #: store/templates/hub/nav.html:6
 msgid "Sensors"
+msgstr ""
+
+#: store/templates/hubpro/nav.html:3
+msgid "EOS-D Technology"
 msgstr ""
 
 #: store/templates/hubpro/nav.html:4
