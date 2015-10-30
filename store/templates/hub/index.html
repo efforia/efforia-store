@@ -20,26 +20,26 @@
 
 <link rel="stylesheet" href="{% static 'css/hub.css' %}">
 
-<div class="jumbotron background" style="margin-bottom:0px;">
+<div class="jumbotron background nobottom">
   <div class="transparent-white overlay middle">
     <div class="container">
-      <img style="height:21em" src="{% static 'img/huba.png' %}"/><br>
-      <h2 style="font-size:3em" class="black">UM UNIVERSO <br>DE GRANDES POSSIBILIDADES.</h2><br>
+      <img class="hub-size" src="{% static 'img/huba.png' %}"/><br>
+      <h2 class="jumbo-highlight black">UM UNIVERSO <br>DE GRANDES POSSIBILIDADES.</h2><br>
     </div>
   </div>
 </div>
 
-<nav class="navbar subnavbar hidden-xs hidden-sm" style="margin:0px; min-height:0px">
+<nav class="navbar subnavbar hidden-xs hidden-sm nooverlay">
   <ul class="nav nav-pills submenu right">
     <li class="rightmargin">
-      <button class="btn btn-info" style="height:43px;">{% trans "Buy" %}</button>
+      <button class="btn btn-info hub-btn">{% trans "Buy" %}</button>
     </li>
     <li class="rightmargin">
       <a href="{% url 'hub' %}">{% trans "Home" %}</a>
     </li>
     {% include "hub/nav.html" %}
     <li class="left leftmargin">
-      <img height="43" src="{% static 'svg/hublogo.svg' %}"/>
+      <img class="hub-logo" src="{% static 'svg/hublogo.svg' %}"/>
     </li>
     <br>
   </ul>

@@ -19,26 +19,26 @@
 {% block start %}
 
 <div class="jumbotron background">
-  <div class="transparent-black overlay middle" style="margin-bottom:0px">
+  <div class="transparent-black overlay middle nobottom">
     <div class="container centered">
-      <img style="height:20em" src="{% static 'img/hubpa.png' %}"/>
-      <h2 style="font-size:3em" class="white">TODO O PODER <br>NA PALMA DE SUA MÃO.</h2>
+      <img class="hubpro-size" src="{% static 'img/hubpa.png' %}"/>
+      <h2 class="jumbo-highlight white">TODO O PODER <br>NA PALMA DE SUA MÃO.</h2>
     </div>
   </div>
 </div>
 
-<nav class="navbar subnavbar hidden-xs hidden-sm" style="margin:0px; min-height:0px">
-  <ul class="nav nav-pills submenu submenu-inverse right" style="background: rgba(0,0,0,0.7)">
+<nav class="navbar subnavbar hidden-xs hidden-sm nooverlay">
+  <ul class="nav nav-pills submenu submenu-inverse right">
     <li class="rightmargin">
-      <button class="btn btn-default" style="height:43px;">{% trans "Buy" %}</button>
+      <button class="btn btn-default hub-btn">{% trans "Buy" %}</button>
     </li>
     <li class="rightmargin">
       <a href="{% url 'hubpro' %}">{% trans "Home" %}</a>
     </li>
     {% include "hubpro/nav.html" %}
     <li class="left leftmargin">
-      <img height="43" src="{% static 'svg/hubwhitepro.svg' %}"/>
-    </li><br>
+      <img class="hub-logo" src="{% static 'svg/hubwhitepro.svg' %}"/>
+    </li>
   </ul>
 </nav>
 
@@ -48,7 +48,7 @@
 
 <link rel="stylesheet" href="{% static 'css/hub.css' %}">
 
-<div class="container spaces-sm">
+<div class="container">
   <div class="row">
     <div class="col-md-12 spaces-md">
       <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
