@@ -133,13 +133,21 @@
   height:500px !important;
   margin:0 auto;
 }
+
 .photo-md {
   height:400px !important;
   margin:0 auto;
 }
+
 .photo-sm {
   height:300px !important;
   margin:0 auto;
+}
+
+.highlight {
+  margin-top:50px;
+  line-height:1.5em;
+  text-align:center;
 }
 
 .full-width { width:100% }

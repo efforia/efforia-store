@@ -4,25 +4,33 @@
 
 {% block main %}
 
-<div id="container" class="container-fluid">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h1 id="title" style="text-align:center;"> Serviços </h1>
-      <div style="padding: 0px 50px;">
-        <p>A Efforia disponibiliza serviços na nuvem para você expandir ainda mais as possibilidades de seus nanocomputadores. Desde a publicação de websites até a integração de projetos de IoT (Internet of Things), dispomos de boa infraestrutura e bom atendimento para você hospedar o seu próximo projeto aqui.</p>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <h1>Serviços</h1>
+      <h2 class="highlight">A Efforia disponibiliza serviços na nuvem para você
+        expandir ainda mais as possibilidades de seus nanocomputadores. Desde a
+        publicação de websites até a integração de projetos de IoT (Internet of
+        Things), dispomos de boa infraestrutura e bom atendimento para você hospedar
+        o seu próximo projeto aqui.</h2>
       </div>
-      <h1>Efforia Cloud Service</h1>
-      <p><br><br></p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6 text-center" style="height: 600px;">
-      <img src="/static/svg/hcs.svg" height="400" width="90%">
+</div>
+<div class="container spaces-sm">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <h1>Efforia Cloud Service</h1>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-6 col-sm-6">
+      <img src="{% static 'svg/hcs.svg' %}" style="height:400px !important;" class="img-responsive full-width">
       <h2>Integrável aos nanocomputadores</h2>
       <p>Pensando na integração dos nanocomputadores com a Internet, a Efforia disponibiliza o serviço chamado Efforia Cloud Service, que possibilita a hospedagem de sites e aplicativos Web dentro do nanocomputador, economizando drasticamente custos na nuvem. Isso tudo se dá por um serviço de DDNS do EOS que se conecta a nossa nuvem, e divulga seu website ou webapp para a Internet. Consulte tarifas do serviço contatando por contato@efforia.com.br.</p>
     </div>
-    <div class="col-md-6 text-center" style="height: 600px;">
-      <img src="/static/svg/microcloud.svg" height="400" width="90%">
+    <div class="col-md-6 col-sm-6">
+      <img src="{% static 'svg/microcloud.svg' %}" style="height:400px !important;" class="img-responsive full-width">
       <h2>Seu nanocomputador pode ser usado como micro-nuvem</h2>
       <p>Pensado para nuvens privadas e acesso remoto, o serviço, juntamente com a tecnologia exclusiva EOS, já vem com um bom número de softwares para formar uma micro-nuvem para o seu negócio, possibilitando a criação de intranets, ftps, sites internos e até mesmo desenvolvimento web.</p>
     </div>
