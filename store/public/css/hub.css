@@ -9,6 +9,9 @@
   min-height:0px;
 }
 
+.inverse { filter:invert(100%); }
+.rounded { border-radius:15px; }
+.allpadding { padding:15px; }
 .jumbo-highlight { font-size:3em; }
 .hub-size { height:21em; }
 .hubpro-size { height:20em; }

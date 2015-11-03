@@ -96,6 +96,10 @@
   color:white;
 }
 
+.submenu-inverse > li > a:hover {
+  color:black !important;
+}
+
 .spaces-md {
   margin-top:70px;
   margin-bottom:70px;
@@ -161,6 +165,7 @@
 .white:hover { color:#FFFFFF !important; }
 .transparent-white { background: rgba(255,255,255,0.5); }
 
+.blackbg { background-color:#000000; }
 .whitebg { background-color:#FFFFFF; }
 .purplebg { background-color:#996699; }
 .yellowbg { background-color:#FFCD09; }
