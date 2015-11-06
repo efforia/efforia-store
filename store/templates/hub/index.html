@@ -24,7 +24,9 @@
   <div class="transparent-white overlay middle">
     <div class="container">
       <img class="hub-size" src="{% static 'img/huba.png' %}"/><br>
-      <h2 class="jumbo-highlight black">UM UNIVERSO <br>DE GRANDES POSSIBILIDADES.</h2><br>
+      <h2 class="jumbo-highlight black">
+        {% blocktrans %} UM UNIVERSO <br>DE GRANDES POSSIBILIDADES. {% endblocktrans %}
+      </h2><br>
     </div>
   </div>
 </div>
@@ -64,11 +66,11 @@
       <div class="col-md-4 col-sm-4">
         <img src="{% static 'svg/wirelesssimple.svg' %}" class="img-responsive img-rounded full-width"/>
         <div class="text-center">
-          <h1>Sem Fios</h1>
-          <h3>Adeus embaraço</h3>
-          <p>O sistema de conexão sem fio do HUB reduz drasticamente a necessidade
+          <h1>{% trans "Sem Fios" %}</h1>
+          <h3>{% trans "Adeus Embaraço" %}</h3>
+          <p>{% blocktrans %} O sistema de conexão sem fio do HUB reduz drasticamente a necessidade
             de ter fios circulando pela sua casa ou empresa. Muitas vezes necessitará
-            apenas da tomada e já estará pronto para operar.</p>
+            apenas da tomada e já estará pronto para operar. {% endblocktrans %}</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-4">

@@ -737,11 +737,11 @@ msgstr ""
 
 #: store/templates/services/base.html:10
 msgid "Hire"
-msgstr ""
+msgstr "Contratar"
 
 #: store/templates/services/nav.html:3
 msgid "Apps"
-msgstr ""
+msgstr "Aplicativos"
 
 #: store/templates/services/nav.html:4
 msgid "Hosting"
