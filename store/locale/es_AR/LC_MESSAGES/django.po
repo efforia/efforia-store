@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 19:57-0200\n"
+"POT-Creation-Date: 2015-11-06 07:04-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,7 +167,7 @@ msgstr ""
 "Y queremos la computación presente en todos los momentos de la vida de las "
 "personas"
 
-#: store/templates/index.html:39
+#: store/templates/index.html:39 store/templates/hubpro/nav.html:4
 msgid "Audiovisual"
 msgstr "Audiovisual"
 
@@ -191,7 +191,7 @@ msgstr ""
 "Nosotros también desarrollamos sistemas de entretenimiento completos, listos "
 "para reproducir vídeos, músicas e vídeo juegos."
 
-#: store/templates/index.html:49
+#: store/templates/index.html:49 store/templates/services/nav.html:5
 msgid "Automation"
 msgstr "Automación"
 
@@ -271,8 +271,8 @@ msgstr ""
 msgid "Search Results"
 msgstr "Resultados de la búsqueda"
 
-#: store/templates/search_results.html:13 store/templates/help/base.html:13
-#: store/templates/hub/index.html:38 store/templates/hubpro/base.html:13
+#: store/templates/search_results.html:13 store/templates/help/base.html:10
+#: store/templates/hub/index.html:38 store/templates/hubpro/base.html:15
 #: store/templates/hubpro/index.html:36
 #: store/templates/pages/menus/breadcrumb.html:4
 #: store/templates/pages/menus/breadcrumb.html:10
@@ -610,10 +610,6 @@ msgstr ""
 msgid "Rate"
 msgstr ""
 
-#: store/templates/help/base.html:10 store/templates/services/base.html:10
-msgid "Subscribe"
-msgstr ""
-
 #: store/templates/help/nav.html:3
 msgid "Documentation"
 msgstr "Documentación"
@@ -631,10 +627,16 @@ msgid "Warranty"
 msgstr "Garantía"
 
 #: store/templates/hub/base.html:12 store/templates/hub/index.html:35
-#: store/templates/hubpro/base.html:10 store/templates/hubpro/index.html:33
+#: store/templates/hubpro/base.html:12 store/templates/hubpro/index.html:33
 #: store/templates/shop/product.html:117 store/templates/shop/wishlist.html:34
 msgid "Buy"
 msgstr "Comprar"
+
+#: store/templates/hub/index.html:58
+msgid ""
+" O HUB é a solução eficiente que você esperava em\n"
+"        praticidade e facilidade em automação doméstica ou corporativa. "
+msgstr ""
 
 #: store/templates/hub/nav.html:3
 msgid "Design"
@@ -655,10 +657,6 @@ msgstr "Sensores"
 #: store/templates/hubpro/nav.html:3
 msgid "EOS-D Technology"
 msgstr "Tecnología EOS-D"
-
-#: store/templates/hubpro/nav.html:4
-msgid "Internet TV"
-msgstr "TV por Internet"
 
 #: store/templates/hubpro/nav.html:6
 msgid "Cloud"
@@ -736,21 +734,21 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
+#: store/templates/services/base.html:10
+msgid "Hire"
+msgstr ""
+
 #: store/templates/services/nav.html:3
-msgid "Applications"
-msgstr "Aplicaciones"
+msgid "Apps"
+msgstr ""
 
 #: store/templates/services/nav.html:4
 msgid "Hosting"
 msgstr "Hosting"
 
-#: store/templates/services/nav.html:5
+#: store/templates/services/nav.html:6
 msgid "Partners"
 msgstr "Socios"
-
-#: store/templates/services/nav.html:6
-msgid "Plans"
-msgstr "Planes"
 
 #: store/templates/shop/bank_confirmation.html:4
 #: store/templates/shop/bank_confirmation.html:6
@@ -1029,6 +1027,15 @@ msgstr ""
 #: store/templates/twitter/tweets.html:7
 msgid "Recent Tweets"
 msgstr ""
+
+#~ msgid "Internet TV"
+#~ msgstr "TV por Internet"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
+
+#~ msgid "Plans"
+#~ msgstr "Planes"
 
 #~ msgid "Phone"
 #~ msgstr "Teléfono"
