@@ -153,6 +153,18 @@
 .full-width { width:100% }
 .third-width { width:70%; margin-left:15% }
 
+.whatsapp { background:#6EC497; }
+.skype { background:#3398CC; }
+.telephone { background:#F79838; }
+.email { background: #FFCD09; }
+
+.call-icon {
+  padding: 15px;
+  border-radius: 5px;
+  height:75px !important;
+  width:75px !important;
+}
+
 /* Bootstrap Overriding CSS rules and others oneliners */
 
 .block-padding { padding:10px !important; }
