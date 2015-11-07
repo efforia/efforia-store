@@ -1043,10 +1043,15 @@ msgid ""
 "próxima\n"
 "        grande onda tecnológica. "
 msgstr ""
+"Efforia Nanocomputers is a company established in January 2012, and it has the vision "
+"of making the difference on creation of various integrated solutions of software and hardware "
+"for your home, work or elsewhere, through turning your appliances, electronics or smartdevices "
+"into smart and integrable objects. That's what our company have firm commitment with the future "
+"and the Internet of Things, which we consider to be the next great technological wave. "
 
 #: store/templates/help/index.html:26
 msgid "Atendimento"
-msgstr ""
+msgstr "Customer Service"
 
 #: store/templates/help/index.html:27
 msgid ""
@@ -1064,60 +1069,66 @@ msgid ""
 "que\n"
 "        dispomos para quem possui nossos nanocomputadores. "
 msgstr ""
+"Efforia Nanocomputers has a serious commitment with you: from your request, passing the "
+"production to delivery and after-sales for all of our products, services and designs, we "
+"are always there to serve you better. That's why we have this support section, specially "
+"prepared for you, client of our company. Here we show ours most important service channels "
+"and other ways to help through documentation and the exclusive services we have for anyone "
+"who owns our nanocomputers."
 
 #: store/templates/help/index.html:38
 msgid "WhatsApp"
-msgstr ""
+msgstr "WhatsApp"
 
 #: store/templates/help/index.html:39
 msgid " +555198485888 "
-msgstr ""
+msgstr "+5551 98485888"
 
 #: store/templates/help/index.html:43
 msgid "Skype"
-msgstr ""
+msgstr "Skype"
 
 #: store/templates/help/index.html:44
 msgid " efforiaca "
-msgstr ""
+msgstr "efforiaca"
 
 #: store/templates/help/index.html:48
 #: store/templates/help/localization.html:35
 #: store/templates/help/localization.html:49
 msgid "Telefone"
-msgstr ""
+msgstr "Telephone"
 
 #: store/templates/help/index.html:49
 msgid " (51) 3516-2367 "
-msgstr ""
+msgstr "+5551 35162367"
 
 #: store/templates/help/index.html:53
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: store/templates/help/index.html:54
 msgid " /efforianano "
-msgstr ""
+msgstr "/efforianano"
 
 #: store/templates/help/index.html:58
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: store/templates/help/index.html:59
 msgid " @efforianano "
-msgstr ""
+msgstr "@efforianano"
 
 #: store/templates/help/index.html:63
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: store/templates/help/index.html:64
 msgid " oi@efforia.com.br "
-msgstr ""
+msgstr "oi@efforia.com.br"
 
 #: store/templates/help/localization.html:10
 msgid "Nossa localização"
-msgstr ""
+msgstr "Our location"
 
 #: store/templates/help/localization.html:11
 msgid ""
@@ -1133,6 +1144,12 @@ msgid ""
 "demandas\n"
 "        especiais desenhando projetos diferenciados para cada demanda. "
 msgstr ""
+"We currently have headquarters in Porto Alegre, Brazil, and we set up and distribute "
+"our nanocomputers to all the country and America, with the HUB platform as our flagship "
+"capable of performing and endless amount of amazing projects, such as turning commons televisions "
+"into smart to the automation of a micro-brewery. We have a industrial model for large scale "
+"manufacturing in certain key areas, as well as we server special demands with distinctive designs "
+"for every demand."
 
 #: store/templates/help/localization.html:25
 msgid ""
@@ -1147,11 +1164,16 @@ msgid ""
 "Grande do Sul).\n"
 "        Esperamos sua visita! "
 msgstr ""
+"Our company cultivates the idea that we can create more in a plural and collective "
+"environment, and that's why we established our head office at a coworoking named Fábrica "
+"de Ideias Coworking, located at the historic center of Porto Alegre/RS. We are open to visits "
+"if you want to see more about our nanocomputers and services as well as take a good cup of "
+"coffee, tea or mate (typical drink of Rio Grande do Sul. We look forward to your visit!"
 
 #: store/templates/help/localization.html:33
 #: store/templates/help/localization.html:47
 msgid "Brasil"
-msgstr ""
+msgstr "Brazil"
 
 #: store/templates/help/localization.html:34
 #: store/templates/help/localization.html:48
