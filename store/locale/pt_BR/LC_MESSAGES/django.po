@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-06 07:04-0200\n"
+"POT-Creation-Date: 2015-11-07 02:59-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,85 +61,85 @@ msgstr ""
 msgid "^shop/"
 msgstr ""
 
-#: store/urls.py:26
+#: store/urls.py:28
 msgid "^hub/design"
 msgstr ""
 
-#: store/urls.py:27
+#: store/urls.py:29
 msgid "^hub/iot"
 msgstr ""
 
-#: store/urls.py:28
+#: store/urls.py:30
 msgid "^hub/eos"
 msgstr ""
 
-#: store/urls.py:29
+#: store/urls.py:31
 msgid "^hub/sensors"
 msgstr ""
 
-#: store/urls.py:32
+#: store/urls.py:34
 #, fuzzy
 msgid "^hubpro/eosd"
 msgstr "^usos/"
 
-#: store/urls.py:33
+#: store/urls.py:35
 msgid "^hubpro/mediacenter"
 msgstr ""
 
-#: store/urls.py:34
+#: store/urls.py:36
 msgid "^hubpro/videogame"
 msgstr ""
 
-#: store/urls.py:35
+#: store/urls.py:37
 #, fuzzy
 msgid "^hubpro/server"
 msgstr "^usos/"
 
-#: store/urls.py:36
+#: store/urls.py:38
 msgid "^hubpro/"
 msgstr ""
 
-#: store/urls.py:38
+#: store/urls.py:40
 #, fuzzy
 msgid "^services/plans"
 msgstr "Serviços"
 
-#: store/urls.py:39
+#: store/urls.py:41
 #, fuzzy
 msgid "^services/cloud"
 msgstr "Serviços"
 
-#: store/urls.py:40
+#: store/urls.py:42
 msgid "^services/partners"
 msgstr ""
 
-#: store/urls.py:41
+#: store/urls.py:43
 #, fuzzy
 msgid "^services/apps"
 msgstr "Serviços"
 
-#: store/urls.py:42
+#: store/urls.py:44
 #, fuzzy
 msgid "^services/"
 msgstr "Serviços"
 
-#: store/urls.py:44
+#: store/urls.py:46
 msgid "^help/localization"
 msgstr ""
 
-#: store/urls.py:45
+#: store/urls.py:47
 msgid "^help/warranty"
 msgstr ""
 
-#: store/urls.py:46
+#: store/urls.py:48
 msgid "^help/documentation"
 msgstr ""
 
-#: store/urls.py:47
+#: store/urls.py:49
 msgid "^help/developer"
 msgstr ""
 
-#: store/urls.py:48
+#: store/urls.py:50
 msgid "^help/"
 msgstr ""
 
@@ -168,7 +168,8 @@ msgid "And we want the computers present at every moment of people's lives"
 msgstr ""
 "E queremos a computação presente em todos os momentos da vida das pessoas"
 
-#: store/templates/index.html:39 store/templates/hubpro/nav.html:4
+#: store/templates/index.html:39 store/templates/hubpro/mediacenter.html:10
+#: store/templates/hubpro/nav.html:4
 msgid "Audiovisual"
 msgstr "Audiovisual"
 
@@ -273,8 +274,8 @@ msgid "Search Results"
 msgstr "Resultados da busca"
 
 #: store/templates/search_results.html:13 store/templates/help/base.html:10
-#: store/templates/hub/index.html:38 store/templates/hubpro/base.html:15
-#: store/templates/hubpro/index.html:36
+#: store/templates/hub/base.html:15 store/templates/hub/index.html:40
+#: store/templates/hubpro/base.html:15 store/templates/hubpro/index.html:36
 #: store/templates/pages/menus/breadcrumb.html:4
 #: store/templates/pages/menus/breadcrumb.html:10
 #: store/templates/pages/menus/footer_tree.html:11
@@ -627,20 +628,521 @@ msgstr "Localização"
 msgid "Warranty"
 msgstr "Garantia"
 
-#: store/templates/hub/base.html:12 store/templates/hub/index.html:35
+#: store/templates/hub/base.html:12 store/templates/hub/index.html:37
 #: store/templates/hubpro/base.html:12 store/templates/hubpro/index.html:33
 #: store/templates/shop/product.html:117 store/templates/shop/wishlist.html:34
 msgid "Buy"
 msgstr "Comprar"
 
-#: store/templates/hub/index.html:58
+#: store/templates/hub/design.html:9 store/templates/hub/nav.html:3
+msgid "Design"
+msgstr ""
+
+#: store/templates/hub/design.html:12
+msgid "Único"
+msgstr ""
+
+#: store/templates/hub/design.html:13
+msgid "Design incomparável"
+msgstr ""
+
+#: store/templates/hub/design.html:14
+msgid ""
+" Construído em tampas de acrílico translúcido e em laterais de transparente\n"
+"        colorido, por padrão em tom de cinza escuro, todos os "
+"nanocomputadores\n"
+"        foram concebidos com um desenho inigualável, com um ar profissional "
+"e limpo,\n"
+"        e o mais importante, padronizado às devidas necessidades e "
+"customizado de\n"
+"        acordo com cada demanda. "
+msgstr ""
+
+#: store/templates/hub/design.html:29
+msgid "Sustentável"
+msgstr ""
+
+#: store/templates/hub/design.html:30
+msgid "Desenho total em acrílico"
+msgstr ""
+
+#: store/templates/hub/design.html:31
+#, python-format
+msgid ""
+" A sustentabilidade é um assunto muito importante para a Efforia em todos\n"
+"          os sentidos, e é pensando na conservação do planeta que nossos "
+"nanocomputadores\n"
+"          são encapsulados com material acrílico 100%% reciclável. "
+msgstr ""
+
+#: store/templates/hub/design.html:41
+msgid "Refrigerado"
+msgstr ""
+
+#: store/templates/hub/design.html:42
+msgid "Projetado para qualquer ambiente"
+msgstr ""
+
+#: store/templates/hub/design.html:43
+msgid ""
+" A cápsula acrílica foi pensada de modo que obtivesse a melhor capacidade\n"
+"           térmica possível para os nanocomputadores, de modo que pudesse "
+"ser obtido\n"
+"           a melhor performance para cada unidade. "
+msgstr ""
+
+#: store/templates/hub/design.html:57
+msgid "Nacional"
+msgstr ""
+
+#: store/templates/hub/design.html:58
+msgid "Montado no Brasil"
+msgstr ""
+
+#: store/templates/hub/design.html:59
+msgid ""
+" Todo o processo, à exceção da produção do circuito integrado, é realizado\n"
+"           no Rio Grande do Sul, desde o desenho e recorte dos acrílicos até "
+"a montagem\n"
+"           do nanocomputador, onde fica pronto para ser despachado para toda "
+"a América. "
+msgstr ""
+
+#: store/templates/hub/design.html:69
+msgid "Preciso"
+msgstr ""
+
+#: store/templates/hub/design.html:70
+msgid "Saídas e placas firmes"
+msgstr ""
+
+#: store/templates/hub/design.html:71
+msgid ""
+" A Efforia Nanocomputadores teve um cuidado sobre a qualidade e espessura\n"
+"           das telas acrílicas, assim como a firmeza nos furos de conexões, "
+"de maneira\n"
+"           que nosso cliente sempre tenha a melhor impressão física sobre "
+"todos os produtos. "
+msgstr ""
+
+#: store/templates/hub/eos.html:11
+msgid ""
+" Todos vem equipados com a tecnologia EOS, desenvolvida pela Efforia,\n"
+"      que garante diferenciais que tornam nossos nanocomputadores "
+"singulares. "
+msgstr ""
+
+#: store/templates/hub/eos.html:21
+msgid "Cloud Computing"
+msgstr ""
+
+#: store/templates/hub/eos.html:22
+msgid ""
+" Possuindo recursos próprios para hospedar aplicativos web e serviços de\n"
+"      nuvem, o sistema pode usufruir de serviços da Efforia para a conexão "
+"com a\n"
+"      Internet, que permite que seu HUB possa ser acessado remotamente ou "
+"que possa\n"
+"      consumir serviços online, como e onde quiser. "
+msgstr ""
+
+#: store/templates/hub/eos.html:29
+msgid "Soluções Integradas"
+msgstr ""
+
+#: store/templates/hub/eos.html:30
+msgid ""
+" O EOS é um sistema operacional completo, com recursos de interface "
+"gráfica,\n"
+"      processamento de dados, e conexão com rede. Graças a esse diferencial, "
+"é possível\n"
+"      construir soluções robustas e versáteis, sempre de acordo com a "
+"demanda que\n"
+"      você está precisando para você. "
+msgstr ""
+
+#: store/templates/hub/eos.html:37 store/templates/hub/iot.html:10
+#, fuzzy
+msgid "Internet das Coisas"
+msgstr "Internet das Coisas"
+
+#: store/templates/hub/eos.html:38
+msgid ""
+" A tecnologia integrada ao seu HUB garante o máximo de potencial para o\n"
+"      seu próximo projeto de automação, garantindo total conexão à Internet "
+"para\n"
+"      os seus sensores e atuadores. Isso possibilita um tempo de construção "
+"menor\n"
+"      e um número muito maior de possibilidades. "
+msgstr ""
+
+#: store/templates/hub/eos.html:50 store/templates/hubpro/eosd.html:45
+msgid "Torrent"
+msgstr ""
+
+#: store/templates/hub/eos.html:51 store/templates/hubpro/eosd.html:46
+msgid ""
+" Faça downloads e uploads com este serviço de forma ilimitada para o seu\n"
+"        nanocomputador ou para qualquer armazenamento removível, por meio da "
+"tecnologia\n"
+"        ponto a ponto BitTorrent. "
+msgstr ""
+
+#: store/templates/hub/eos.html:64 store/templates/hubpro/eosd.html:59
+msgid "Sync"
+msgstr ""
+
+#: store/templates/hub/eos.html:65 store/templates/hubpro/eosd.html:60
+msgid ""
+" Sincronize quantos arquivos quiser, do tamanho e jeito que achar melhor.\n"
+"        Você pode compartilhar arquivos entre o seu nanocomputador e "
+"qualquer outro\n"
+"        dispositivo com a tecnologia BitTorrent Sync. "
+msgstr ""
+
+#: store/templates/hub/eos.html:78
+msgid "Dados compartilháveis"
+msgstr ""
+
+#: store/templates/hub/eos.html:79
+msgid ""
+" O compartilhamento de arquivos na sua rede ficou muito mais fácil. Você\n"
+"        pluga um pendrive, HD externo ou cartão de memória no HUB e pronto! "
+"Seus\n"
+"        dados começam a ser compartilhados automaticamente na sua rede. "
+msgstr ""
+
+#: store/templates/hub/eos.html:85
+msgid "Ponto de acesso sem fio"
+msgstr ""
+
+#: store/templates/hub/eos.html:86
+msgid ""
+" Está na praia ou no campo e não tem rede sem fio? Sem problemas, o EOS\n"
+"        cuida disso para você. Você consegue criar um ponto de acesso para "
+"que todos\n"
+"        possam compartilhar conteúdos entre si e para o seu HUB. "
+msgstr ""
+
+#: store/templates/hub/eos.html:92
+msgid "Transmissão sem fio de som"
+msgstr ""
+
+#: store/templates/hub/eos.html:93
+msgid ""
+" A tecnologia presente no HUB dá a possibilidade de transmitir músicas\n"
+"        e podcasts e streaming de música, de seu tablet, laptop ou "
+"smartphone para\n"
+"        o HUB e vice-versa, de maneira fácil e rápida. "
+msgstr ""
+
+#: store/templates/hub/eos.html:108
+msgid "Experiência surpreendente"
+msgstr ""
+
+#: store/templates/hub/eos.html:109
+msgid ""
+" Surpreenda-se com a experiência audiovisual que o EOS te proporciona.\n"
+"        Reproduza filmes em Full HD a partir de qualquer mídia que imaginar: "
+"externa,\n"
+"        pendrive, smartphone, tablet, entre muitas outras opções, tudo sem "
+"fio. "
+msgstr ""
+
+#: store/templates/hub/eos.html:116
+msgid "Carregue para onde quiser"
+msgstr ""
+
+#: store/templates/hub/eos.html:117
+msgid ""
+" Desde nanocomputadores até PCs de modo geral, o EOS é um sistema robusto\n"
+"        e compacto para instalar e usar em diversos dispositivos. Contando "
+"com suporte\n"
+"        a tecnologias USB e HDMI, é possível conectar diversos periféricos a "
+"ele. "
+msgstr ""
+
+#: store/templates/hub/eos.html:135
+msgid "Diversão ilimitada"
+msgstr ""
+
+#: store/templates/hub/eos.html:136
+msgid ""
+" O EOS possui uma extensa compatibilidade com os mais diversos sistemas\n"
+"        de entretenimento e emuladores, como Super Nintendo, Nintendo 8-bit, "
+"Sega\n"
+"        Mega Drive, Playstation, entre outros sistemas de emulação. "
+msgstr ""
+
+#: store/templates/hub/eos.html:143
+msgid "Baterias Inclusas"
+msgstr ""
+
+#: store/templates/hub/eos.html:144
+msgid ""
+" O sistema operacional possui diversos recursos prontos para uso nas\n"
+"        mais diversas aplicações, dispondo de um vasto repositório de "
+"aplicativos,\n"
+"        bibliotecas e ferramentas para ajudar a criar novas soluções "
+"rapidamente. "
+msgstr ""
+
+#: store/templates/hub/index.html:28
+msgid " UM UNIVERSO <br>DE GRANDES POSSIBILIDADES. "
+msgstr ""
+
+#: store/templates/hub/index.html:60
 msgid ""
 " O HUB é a solução eficiente que você esperava em\n"
 "        praticidade e facilidade em automação doméstica ou corporativa. "
 msgstr ""
 
-#: store/templates/hub/nav.html:3
-msgid "Design"
+#: store/templates/hub/index.html:69
+msgid "Sem Fios"
+msgstr ""
+
+#: store/templates/hub/index.html:70
+msgid "Adeus Embaraço"
+msgstr ""
+
+#: store/templates/hub/index.html:71
+msgid ""
+" O sistema de conexão sem fio do HUB reduz drasticamente a necessidade\n"
+"            de ter fios circulando pela sua casa ou empresa. Muitas vezes "
+"necessitará\n"
+"            apenas da tomada e já estará pronto para operar. "
+msgstr ""
+
+#: store/templates/hub/index.html:79
+msgid "Versátil"
+msgstr ""
+
+#: store/templates/hub/index.html:80
+msgid "Baterias inclusas"
+msgstr ""
+
+#: store/templates/hub/index.html:81
+msgid ""
+" Graças a tecnologia EOS que habilita o uso multifuncional do HUB,\n"
+"            você tem um equipamento completo em suas mãos, podendo servir "
+"de\n"
+"            computador de nuvem, módulo de IoT e até centro de multimídia. "
+msgstr ""
+
+#: store/templates/hub/index.html:89
+msgid "Eficiente"
+msgstr ""
+
+#: store/templates/hub/index.html:90
+msgid "Consome pouco"
+msgstr ""
+
+#: store/templates/hub/index.html:91
+msgid ""
+" Comprometido com a natureza, garantimos uma ótima eficiência energética\n"
+"            ao consumir apenas 5W de potência. Isso dá a possibilidade de "
+"ligá-lo em\n"
+"            televisores, tomadas de celulares e até baterias portáteis. "
+msgstr ""
+
+#: store/templates/hub/index.html:104
+msgid "Flexível"
+msgstr ""
+
+#: store/templates/hub/index.html:105
+msgid "Funcional em diversas maneiras."
+msgstr ""
+
+#: store/templates/hub/index.html:106
+msgid ""
+" Pensado completamente sobre uma arquitetura modular, o que permite ser\n"
+"          conectado de forma independente a dispositivos, o que permite "
+"utilizá-lo\n"
+"          com apenas um cabo de energia se preciso. "
+msgstr ""
+
+#: store/templates/hub/index.html:114
+msgid "Customizável"
+msgstr ""
+
+#: store/templates/hub/index.html:115
+msgid "Escolha o HUB com a sua cara."
+msgstr ""
+
+#: store/templates/hub/index.html:116
+msgid ""
+" Nossos nanocomputadores podem sair de fábrica com uma série de "
+"customizações\n"
+"          como cores laterais do case e uma gama de acessórios como "
+"pendrives e cabos\n"
+"          adicionais, todos de acordo com o seu gosto. "
+msgstr ""
+
+#: store/templates/hub/index.html:129
+msgid "Portátil"
+msgstr ""
+
+#: store/templates/hub/index.html:130
+msgid "Tudo na palma de sua mão."
+msgstr ""
+
+#: store/templates/hub/index.html:131
+msgid ""
+" Graças ao tamanho compacto do HUB e à tecnologia EOS, o seu próximo\n"
+"          sistema de automação poderá ser muito menor do que imagina, e o "
+"seu\n"
+"          controle, ao alcance de um smartphone. "
+msgstr ""
+
+#: store/templates/hub/index.html:139
+msgid "Integrável"
+msgstr ""
+
+#: store/templates/hub/index.html:140
+msgid "Conteúdo em qualquer lugar."
+msgstr ""
+
+#: store/templates/hub/index.html:141
+msgid ""
+" Para automação audiovisual, o HUB permite concentrar e distribuir seu\n"
+"           conteúdo multimídia para toda a sua empresa ou lar, garantindo "
+"conforto\n"
+"           e facilidade para ver vídeos, músicas e imagens. "
+msgstr ""
+
+#: store/templates/hub/index.html:149
+msgid "Incrível"
+msgstr ""
+
+#: store/templates/hub/index.html:150
+msgid "Ótima experiência audiovisual."
+msgstr ""
+
+#: store/templates/hub/index.html:151
+msgid ""
+" Com o potente processador gráfico instalado no coração do HUB, é possível\n"
+"           reproduzir conteúdos em full HD e imagens de alta resolução, "
+"assim como\n"
+"           processar gráficos 3D em alta qualidade. "
+msgstr ""
+
+#: store/templates/hub/index.html:167 store/templates/hubpro/index.html:150
+msgid "Especificações"
+msgstr ""
+
+#: store/templates/hub/iot.html:11
+msgid ""
+" Com o nanocomputador HUB equipado com a tecnologia exclusiva EOS, suas\n"
+"      possibilidades se multiplicam de acordo com os dispositivos que deseja "
+"integrar\n"
+"      em sua casa ou trabalho para ter um ambiente completamente "
+"inteligente. "
+msgstr ""
+
+#: store/templates/hub/iot.html:23
+msgid "Ótima solução de Automação Audiovisual"
+msgstr ""
+
+#: store/templates/hub/iot.html:24
+msgid ""
+" Você está perto de conhecer uma das melhores soluções de automação "
+"audiovisual\n"
+"        do mercado. Ao ligar o HUB a uma TV, você consegue reproduzir "
+"vídeos, músicas,\n"
+"        e fotos de outros dispositivos via rede sem fio, além de controlar "
+"sua coleção.\n"
+"        Através de controle remoto por smartphone também consegue interagir "
+"com\n"
+"        o aparelho, dando comandos de navegação, reprodução e transmissão "
+"sem fio. "
+msgstr ""
+
+#: store/templates/hub/iot.html:35
+msgid "Com o HUB seus dispositivos tornam-se inteligentes"
+msgstr ""
+
+#: store/templates/hub/iot.html:41
+msgid "HD"
+msgstr ""
+
+#: store/templates/hub/iot.html:42
+msgid ""
+" Um disco rígido externo conectado a um HUB dá a possibilidade de "
+"compartilhar\n"
+"        os seus arquivos para a rede, de forma simples e prática, para Mac, "
+"PC e outro\n"
+"        HUB, bem como para dispositivos móveis. "
+msgstr ""
+
+#: store/templates/hub/iot.html:52
+msgid "Projetor"
+msgstr ""
+
+#: store/templates/hub/iot.html:53
+msgid ""
+" Realize as suas apresentações sem fio com seu tablet, smartphone ou laptop\n"
+"        a partir da transmissão de slides em fotos, vídeos, ou documentos "
+"Microsoft Office,\n"
+"        através de um HUB conectado ao projetor. "
+msgstr ""
+
+#: store/templates/hub/iot.html:63
+msgid "Impressora"
+msgstr ""
+
+#: store/templates/hub/iot.html:64
+msgid ""
+" Conecte sua impressora comum cabeada a um HUB e desfrute do "
+"compartilhamento\n"
+"        automático sem fio para toda a sua rede interna, simples e prático. "
+"Adeus embaraço\n"
+"        e complicações na configuração de impressora em rede. "
+msgstr ""
+
+#: store/templates/hub/iot.html:76
+msgid "Melhor escolha para laboratórios"
+msgstr ""
+
+#: store/templates/hub/iot.html:77
+msgid ""
+" Contando com um bom acervo de aplicativos nas áreas de Matemática, Lógica,\n"
+"      Programação e Eletrônica, mais aplicativos de navegação Web, os "
+"nanocomputadores\n"
+"      tornam-se uma ótima opção para seu laboratório. Temos um conjunto de "
+"outros\n"
+"      programas que podem ser instalados conforme a demanda que precisar. "
+"Consulte-nos\n"
+"      para que possamos ver a melhor solução para o seu laboratório de "
+"informática\n"
+"      ou eletrônica. "
+msgstr ""
+
+#: store/templates/hub/iot.html:86
+msgid "Projetos especiais para a sua demanda"
+msgstr ""
+
+#: store/templates/hub/iot.html:87
+msgid ""
+" Está precisando automatizar algo e nossas soluções atuais ainda não "
+"encaixam\n"
+"      para sua demanda? Não se preocupe, a Efforia por meio da tecnologia "
+"EOS\n"
+"      garante a criação de projetos especiais de acordo com o que você está\n"
+"      precisando. Desde uma automação de micro-cervejaria até a de "
+"fresadoras CNCs,\n"
+"      a Efforia vai até o seu estabelecimento, avalia sua necessidade, e "
+"realiza\n"
+"      um projeto diferenciado para o seu negócio. "
+msgstr ""
+
+#: store/templates/hub/iot.html:100
+msgid ""
+" A grande especialidade e potencial de nossos nanocomputadores\n"
+"      na Efforia está na Internet das Coisas (IoT), em tornar seus "
+"equipamentos\n"
+"      mais inteligentes. Isso se dá por meio de diversos projetos que "
+"desenvolvemos\n"
+"      de forma a interagir os mais diversos eletrônicos com a Internet. "
 msgstr ""
 
 #: store/templates/hub/nav.html:4
@@ -655,6 +1157,441 @@ msgstr "Internet das Coisas"
 msgid "Sensors"
 msgstr "Sensores"
 
+#: store/templates/hub/sensors.html:10
+msgid "Sensores para o HUB"
+msgstr ""
+
+#: store/templates/hub/sensors.html:15
+msgid ""
+" Graças à tecnologia de barramento presente em nossos\n"
+"        nanocomputadores, é possível acrescentar uma série de sensores para "
+"o HUB\n"
+"        de modo a fechar o sistema de automação, complementando o seu "
+"próximo projeto\n"
+"        de IoT. "
+msgstr ""
+
+#: store/templates/hub/sensors.html:28
+msgid "Temperatura e Umidade"
+msgstr ""
+
+#: store/templates/hub/sensors.html:29
+msgid ""
+" Com o monitoramento de temperatura, o HUB é capaz de atuar no ambiente\n"
+"        emitindo avisos de ultrapassagem de limites e o controlar unidades "
+"de\n"
+"        condicionamento de ar para refrigerar o ambiente. "
+msgstr ""
+
+#: store/templates/hub/sensors.html:42
+msgid "Distância e presença"
+msgstr ""
+
+#: store/templates/hub/sensors.html:43
+msgid ""
+" Através do sensor de presença e distância de pessoas e/ou objetos em\n"
+"        um ambiente, é possível automatizar luzes e acionar avisos e eventos "
+"pertinentes\n"
+"        para cada projeto, podendo ser muito útil para a segurança em "
+"alarmes. "
+msgstr ""
+
+#: store/templates/hub/sensors.html:52
+msgid "Presença de gás"
+msgstr ""
+
+#: store/templates/hub/sensors.html:53
+msgid ""
+" O controle de gás por um determinado fluxo pode ser um sensor adicional\n"
+"        de grande utilidade para indústrias que utilizam este ativo, e "
+"possibilitar\n"
+"        a automatização de válvulas de escape em uma micro-cervejaria, por "
+"exemplo. "
+msgstr ""
+
+#: store/templates/hub/sensors.html:66
+msgid "Presença de água"
+msgstr ""
+
+#: store/templates/hub/sensors.html:67
+msgid ""
+" Tal como a presença de gás, permite o monitoramento e controle de válvulas\n"
+"        da água, que, assim como o outro, o processo de automatização pode "
+"trazer\n"
+"        maior eficiência no fluxo de indústrias que fazem uso desse ativo. "
+msgstr ""
+
+#: store/templates/hub/sensors.html:76
+msgid "Câmera"
+msgstr ""
+
+#: store/templates/hub/sensors.html:77
+msgid ""
+" Ótimo recurso especialmente para a área da segurança, o sensor de imagem\n"
+"        permite a captura de fotografias e filmagens de determinados "
+"ambientes,\n"
+"        podendo ser usado para diversos fins de automação. "
+msgstr ""
+
+#: store/templates/hub/sensors.html:90
+msgid "Eletricidade"
+msgstr ""
+
+#: store/templates/hub/sensors.html:91
+msgid ""
+" Através de sensores e atuadores adicionais de eletricidade, é possível\n"
+"        obter todo o controle de chaves de luz e equipamentos bem na palma "
+"de sua\n"
+"        mão, por meio de comandos enviados direto de um smartphone ou "
+"tablet. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:11
+msgid ""
+" Nossos nanocomputadores mais versáteis e robustos\n"
+"        vem equipados com a tecnologia EOS-D, desenvolvida pela Efforia e "
+"baseado\n"
+"        na plataforma Android. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:21
+msgid "Grid Computing"
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:22
+msgid ""
+" Com a tecnologia exclusiva EOS embutida no sistema operacional, é possível\n"
+"      utilizá-lo para montar clusters de nanocomputadores com extrema "
+"eficiência\n"
+"      energética e com recursos acessíveis remotamente. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:27
+#, fuzzy
+msgid "Streaming Audiovisual"
+msgstr "Audiovisual"
+
+#: store/templates/hubpro/eosd.html:28
+msgid ""
+" Graças à base na plataforma Android, é possível acessar diversos recursos,\n"
+"      aplicativos e canais por Streaming, tornando os nanocomputadores com "
+"EOS-D\n"
+"      muito mais interessantes para uso em TV por Internet. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:33
+msgid "Diversão Ilimitada"
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:34
+msgid ""
+" Através de tecnologias próprias da Efforia Nanocomputadores e as "
+"compatíveis\n"
+"      com a plataforma Android, é possível acessar e desenvolver uma gama "
+"muito\n"
+"      maior de games preparados para a televisão. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:71
+msgid "Compatível"
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:72
+msgid ""
+" Para as mais diversas demandas, a Efforia desenvolveu o EOS-D, que "
+"possibilita\n"
+"        os nanocomputadores usarem da plataforma Android e ainda manterem a "
+"compatibilidade\n"
+"        com funções da tecnologia EOS. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:77
+#, fuzzy
+msgid "Aplicativos"
+msgstr "Aplicações"
+
+#: store/templates/hubpro/eosd.html:78
+msgid ""
+" Com a plataforma Android e seus aplicativos, você pode ter uma solução\n"
+"        completa para o seu escritório ou casa, com suíte de produtividade, "
+"navegador\n"
+"        de Internet e explorador de arquivos. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:83
+msgid "Plugável"
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:84
+msgid ""
+" Aproveitando as saídas que nossos nanocomputadores possuem, há o sistema\n"
+"        Plug 'n Play para qualquer dispositivo removível (pendrive, disco "
+"rígido\n"
+"        externo e cartão de memória) e periféricos. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:95
+msgid "Soluções customizadas para automação audiovisual."
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:96
+msgid ""
+" A Efforia disponibiliza para você uma soluções de encapsulamento "
+"diferenciado\n"
+"        para a sua demanda, como o case com acoplamento padrão VESA. Ele é "
+"perfeito\n"
+"        para conectar os nanocomputadores na traseira do monitor ou "
+"televisor,\n"
+"        tornando a conexão do vídeo fácil e prática pela sua proximidade. "
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:103
+msgid "O próximo parque de computadores de sua empresa."
+msgstr ""
+
+#: store/templates/hubpro/eosd.html:104
+msgid ""
+" Com a possibilidade de usar a tecnologia EOS-D para construir terminais\n"
+"        remotos inteligentes, a Efforia dispõe para você uma solução de alto "
+"desempenho\n"
+"        e moderna a partir de uma rede de nanocomputadores interligados a um "
+"servidor\n"
+"        de alta potência com a tecnologia EOS desenvolvida para o Efforia. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:57
+msgid ""
+" O HUB Pro é a solução profissional que você esperava em\n"
+"        robustez e versatilidade em automação doméstica ou corporativa. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:67
+msgid "Robusto"
+msgstr ""
+
+#: store/templates/hubpro/index.html:68
+msgid "Tudo na palma de sua mão"
+msgstr ""
+
+#: store/templates/hubpro/index.html:69
+msgid ""
+" O HUB Pro representa o futuro da automação doméstica e corporativa:\n"
+"      ele dispensa o uso de computadores para o sistema graças ao seu bom "
+"desempenho,\n"
+"      sendo uma ótima opção para qualquer ambiente externo ou interno. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:75
+msgid "Espetacular"
+msgstr ""
+
+#: store/templates/hubpro/index.html:76
+msgid "Ótima experiência audiovisual"
+msgstr ""
+
+#: store/templates/hubpro/index.html:77
+msgid ""
+" Com a tecnologia EOS-D baseada na plataforma Android, o HUB Pro traz\n"
+"      uma experiência audiovisual sem par, somado à sua operação "
+"silenciosa,\n"
+"      aproveitando o que há de melhor por horas sem você nem perceber. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:83
+msgid "Ligado"
+msgstr ""
+
+#: store/templates/hubpro/index.html:84
+msgid "Amplamente conectável"
+msgstr ""
+
+#: store/templates/hubpro/index.html:85
+msgid ""
+" Com as conexões sem fio (Wi-Fi), com fio (Ethernet), e de redes móveis\n"
+"      (HSPA+) por padrão, seu HUB Pro está conectado com o que há de mais "
+"moderno,\n"
+"      garantindo uma ótima saída de Internet para qualquer situação. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:96
+msgid "Appstacular"
+msgstr ""
+
+#: store/templates/hubpro/index.html:97
+msgid "Um mundo de possibilidades"
+msgstr ""
+
+#: store/templates/hubpro/index.html:98
+msgid ""
+" A tecnologia EOS-D é baseada na plataforma Android, o que te permite o uso\n"
+"        de milhares de aplicativos que você estava acostumado a utilizar em "
+"seu\n"
+"        smartphone, tablet ou outros gadgets, direto na sua televisão. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:104
+msgid "O Futuro da TV"
+msgstr ""
+
+#: store/templates/hubpro/index.html:105
+msgid "Canais de streaming"
+msgstr ""
+
+#: store/templates/hubpro/index.html:106
+msgid ""
+" Nós da Efforia acreditamos que o HUB Pro representa o futuro da televisão.\n"
+"        Para isso temos diversas opções de canais de streaming, que oferecem "
+"diversos\n"
+"        conteúdos, entre gratuitos e disponíveis para assinatura. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:117
+msgid "A TV fora da TV"
+msgstr ""
+
+#: store/templates/hubpro/index.html:118
+msgid "Ótima companhia para CATV"
+msgstr ""
+
+#: store/templates/hubpro/index.html:119
+msgid ""
+" Montado com um design compacto, a opção de acessar aplicativos de canais\n"
+"        de TV a cabo (CATV) e a gravação digital de programas de TV (DVR), "
+"ele é uma ótima\n"
+"        opção para levar para onde você precisar. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:125
+msgid "Super Versátil"
+msgstr ""
+
+#: store/templates/hubpro/index.html:126
+msgid "Tecnologias EOS e EOS-D"
+msgstr ""
+
+#: store/templates/hubpro/index.html:127
+msgid ""
+" Graças a compatibilidade com as tecnologias EOS e EOS-D, o HUB Pro possui\n"
+"        um uso completamente multifuncional, garantindo o equipamento mais "
+"completo\n"
+"        da Efforia em suas mãos, dando asas à sua imaginação. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:133
+msgid "Expansível"
+msgstr ""
+
+#: store/templates/hubpro/index.html:134
+msgid "HD, SSD para maior capacidade"
+msgstr ""
+
+#: store/templates/hubpro/index.html:135
+msgid ""
+" Com mais tecnologias de entrada e saída que o HUB convencional, há como\n"
+"        expandir as possibilidades do HUB Pro, seja aumentando a sua "
+"capacidade\n"
+"        de memória ou adicionando outras opções de conexão. "
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:11
+msgid ""
+" Temos a solução ideal para reprodução multimídia e transmissão\n"
+"        sem fio de conteúdo audiovisual. No HUB Pro é possível assistir aos "
+"mais\n"
+"        diversos canais de streaming, reproduzir suas fotos, vídeos e "
+"músicas e\n"
+"        apresentar documentos. "
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:22
+msgid "Sua coleção aonde quiser."
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:23
+msgid ""
+" Com o HUB Pro, você consegue ter controle sobre a sua coleção de vídeos,\n"
+"        músicas, e fotos de seu nanocomputador e de todas as unidades de "
+"armazenamento\n"
+"        ligadas a ele, podendo assim reproduzir em televisores e transmitir "
+"sem fio\n"
+"        para smartphones, tablets, laptops e vice-versa. "
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:29
+msgid "Canais de streaming à disposição."
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:30
+msgid ""
+" Com a tecnologia exclusiva EOS-D, há disponibilidade de populares canais\n"
+"        de vídeos e filmes pela Internet como o YouTube e Netflix, assim "
+"como músicas\n"
+"        e podcasts, como Spotify e SoundCloud. Para sua comodidade, "
+"oferecemos a\n"
+"        assinatura dos serviços em conjunto com o nanocomputador. "
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:41
+msgid "Organize a sua coleção do seu jeito."
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:42
+msgid ""
+" Equipado com a tecnologia EOS-D, você consegue integrá-lo\n"
+"      aos mais diversos smartphones e tablets do mercado por meio de "
+"aplicativos\n"
+"      encontrados nas Appstores. Além de ser uma boa opção para streaming de "
+"canais,\n"
+"      o HUB Pro é uma ótima escolha para você que possui um conjunto "
+"considerável\n"
+"      de filmes, músicas, podcasts e fotos e gostaria de organizá-los em "
+"coleções\n"
+"      e catalogá-los. "
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:56
+msgid "Solução ideal para automação audiovisual."
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:57
+msgid ""
+" Este equipamento é a melhor opção que oferecemos a você que deseja "
+"apresentar\n"
+"        suas fotos, vídeos e músicas em seu televisor e/ou sistema de som, "
+"sem a\n"
+"        necessidade de fios sendo passados pela sua sala, quarto, ou "
+"cozinha, sem\n"
+"        contar com a boa oferta de canais de streaming que o aparelho tem. "
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:64
+msgid "A solução para apresentações sem fio."
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:65
+msgid ""
+" Com sua capacidade de transmissão de conteúdo sem fio, o HUB Pro torna-se\n"
+"        uma ótima opção para ligar no projetor ou televisor e apresentar "
+"documentos\n"
+"        ou transmitir slides em formato de imagens e vídeos, tudo isso "
+"podendo ser\n"
+"        controlado em smartphones e tablets de maneira fácil e prática. "
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:76
+msgid "Adeus embaraço e demora na apresentação."
+msgstr ""
+
+#: store/templates/hubpro/mediacenter.html:77
+msgid ""
+" É uma ótima escolha para eliminar a quantidade infindável\n"
+"        de fios em sua sala de projeção ou reuniões, e de quebra poder "
+"utilizar\n"
+"        dispositivos mais portáteis para a realização das apresentações, "
+"dispensando\n"
+"        o uso de laptops ou desktops. "
+msgstr ""
+
 #: store/templates/hubpro/nav.html:3
 msgid "EOS-D Technology"
 msgstr "Tecnologia EOS-D"
@@ -662,6 +1599,198 @@ msgstr "Tecnologia EOS-D"
 #: store/templates/hubpro/nav.html:6
 msgid "Cloud"
 msgstr "Nuvem"
+
+#: store/templates/hubpro/server.html:10
+msgid "Nuvem"
+msgstr ""
+
+#: store/templates/hubpro/server.html:11
+msgid ""
+" Visando a oportunidade de comercializar nanocomputadores para a nuvem e\n"
+"        servidores, nós desenvolvemos uma solução versátil e de baixo custo "
+"de manutenção,\n"
+"        o HUB Pro com tecnologia exclusiva EOS. Com esse sistema, é possível "
+"hospedar\n"
+"        websites, compartilhar impressoras e arquivos, constituir um "
+"firewall, dentre\n"
+"        outras muitas possibilidades. "
+msgstr ""
+
+#: store/templates/hubpro/server.html:24
+msgid "Tecnologia Exclusiva EOS"
+msgstr ""
+
+#: store/templates/hubpro/server.html:25
+msgid ""
+" Muito além de um servidor comum, o HUB Pro para nuvem\n"
+"        conta com o diferencial da robustez e versatilidade da tecnologia "
+"EOS que\n"
+"        garante recursos como containerização, implantação contínua, acesso "
+"e execução\n"
+"        remoto e compilação distribuída, além de um grande acervo de "
+"aplicativos\n"
+"        e serviços já pré-instalados. "
+msgstr ""
+
+#: store/templates/hubpro/server.html:33
+msgid "Ótimo para Volumes"
+msgstr ""
+
+#: store/templates/hubpro/server.html:34
+msgid ""
+" Contando com as vantagens de comprar um nanocomputador da Efforia "
+"(Econômico,\n"
+"        portátil, silencioso, refrigerado e versátil), temos valores "
+"especiais para\n"
+"        aquisição de diversas unidades, ótimo para a construção de micro-"
+"nuvens.\n"
+"        Caso tenha interesse comprar em volume, contate-nos. "
+msgstr ""
+
+#: store/templates/hubpro/server.html:45
+msgid "Uma Pletora de Serviços para Nuvem"
+msgstr ""
+
+#: store/templates/hubpro/server.html:46
+msgid ""
+" Caso necessite hospedar websites e aplicativos web que\n"
+"        precisam ser publicados, dispomos de serviços para que o seu "
+"nanocomputador\n"
+"        conectado em sua rede interna consiga ser acessado de fora, pela "
+"Internet.\n"
+"        Temos também aplicações inclusas no HUB Pro de fácil integração com "
+"nossos\n"
+"        e outros serviços de nuvem, tornando este nanocomputador uma solução "
+"de alto\n"
+"        desempenho para Cloud Computing ou IoT. "
+msgstr ""
+
+#: store/templates/hubpro/server.html:60
+msgid "Solução ideal para micro-nuvem e micro-servidor"
+msgstr ""
+
+#: store/templates/hubpro/server.html:61
+msgid ""
+" O HUB Pro é a solução ideal para substituir seu servidor antigo e grande\n"
+"        por algo moderno, rápido e compacto. Graças a tecnologia exclusiva "
+"EOS e à\n"
+"        sua versatilidade, garantimos toda a funcionalidade que você já "
+"possuía em\n"
+"        sua solução anterior e muito mais. "
+msgstr ""
+
+#: store/templates/hubpro/server.html:68
+msgid "Acoplável por design, preparado para clusterização"
+msgstr ""
+
+#: store/templates/hubpro/server.html:69
+msgid ""
+" A tecnologia EOS possui serviços que são facilmente acopláveis entre si,\n"
+"        garantindo uma maior paralelização. É uma situação perfeita para "
+"quando\n"
+"        um nanocomputador não é o suficiente para atender determinada "
+"demanda;\n"
+"        assim&nbsp;disponibilizamos a compra em volumes para sua empresa. "
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:10
+#, fuzzy
+msgid "Entretenimento"
+msgstr "Entretenimento"
+
+#: store/templates/hubpro/videogame.html:11
+msgid ""
+" Nossos nanocomputadores possuem um potencial gráfico bastante avançado,\n"
+"        o que dá espaço para a criação de games para a plataforma. Pensando "
+"em demonstrar\n"
+"        as possibilidades disso, instalamos em todos nossos equipamentos "
+"diversos\n"
+"        sistemas de emulação de videogames com jogos à título de "
+"demonstração*<br/>\n"
+"      <small>(Necessário ter a cópia original do jogo para executar).</"
+"small> "
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:24
+msgid "Interface de fácil acesso"
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:25
+msgid ""
+" Através do controle do teclado sem fio incluso no HUB Pro, ergonomicamente\n"
+"        fabricado para funcionar como um gampepad, o Retro dispõe de uma "
+"interface\n"
+"        de uso bastante prático, bastando selecionar o sistema de emulação "
+"que você\n"
+"        deseja, e em seguida, o game que você quer jogar. Boa parte dos "
+"jogos são\n"
+"        compatíveis com os emuladores. "
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:32
+msgid "A solução para criação de jogos"
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:33
+msgid ""
+" Tendo à disposição diversas tecnologias multi-plataforma para gráficos,\n"
+"        áudio e física, a criação de jogos para a plataforma torna-se "
+"bastante fácil\n"
+"        e prática para os estúdios de jogos. Graças à tecnologia EOS-D "
+"somada ao\n"
+"        nosso kit de programação, é possível conectar o HUB Pro ao notebook "
+"e\n"
+"        utilizá-lo para testes e desenvolvimento. "
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:45
+msgid "Instalação de jogos prática"
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:46
+msgid ""
+" Para a instalação de jogos novos no Retro, é muito fácil: basta acessar\n"
+"        o ponto de rede pelo computador chamado RETRO e copiar as roms para "
+"a pasta\n"
+"        respectiva. O software trata de procurar, catalogar e colocar a arte "
+"do\n"
+"        jogo, bastando apenas selecioná-lo na interface para jogar. Para "
+"outros,\n"
+"        é mais fácil ainda: basta instalar diretamente na Google Play Store. "
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:53
+msgid "Entretenimento sob demanda"
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:54
+msgid ""
+" Nossos nanocomputadores, através de ferramentas como o Retro e a "
+"plataforma\n"
+"        Android oferecida através da tecnologia EOS-D, tornam-se uma boa "
+"solução para\n"
+"        entretenimento digital. Temos um acervo de outras soluções "
+"disponíveis para\n"
+"        implantação no seu ambiente em caso de demanda especial, Contate-nos "
+"para\n"
+"        saber mais. "
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:66
+msgid "Baterias inclusas para diversão"
+msgstr ""
+
+#: store/templates/hubpro/videogame.html:67
+msgid ""
+" A Interface Retro instalada no coração de nossos nanocomputadores dispõe,\n"
+"        através de um conjunto de tecnologias, acesso para 10 sistemas de "
+"emulação\n"
+"        distintos, como Playstation, Nintendo 64, Game Boy Advance, Game Boy "
+"Color,\n"
+"        Game Boy, Super Nintendo, Nintendo 8-bit, Sega Mega Drive, Sega Game "
+"Gear\n"
+"        e Sega Master System. É diversão sem fim. "
+msgstr ""
 
 #: store/templates/includes/editable_form.html:16
 msgid "Save"
@@ -729,6 +1858,136 @@ msgstr ""
 #: store/templates/pages/category.html:79 store/templates/shop/cart.html:97
 #: store/templates/shop/product.html:152
 msgid "Coming soon"
+msgstr ""
+
+#: store/templates/pages/choose.html:9 store/templates/pages/services.html:9
+msgid "Perfeito, estamos aqui para ajudar você."
+msgstr ""
+
+#: store/templates/pages/choose.html:10
+msgid ""
+" A Efforia Nanocomputadores pode lhe atender de várias maneiras,\n"
+"      sempre pensando na melhor solução para o seu problema. Para isso, "
+"oferecemos\n"
+"      nossos equipamentos, instalações e integrações de diferentes formas. "
+msgstr ""
+
+#: store/templates/pages/choose.html:23
+msgid "Quero uma solução de automação."
+msgstr ""
+
+#: store/templates/pages/choose.html:24
+msgid ""
+" Esta opção é perfeita caso esteja procurando por uma solução personalizada\n"
+"      de automação, ou pretende integrar a uma existente. Temos a expertise "
+"e tecnologia\n"
+"      para as mais diversas demandas, com valores flexíveis. "
+msgstr ""
+
+#: store/templates/pages/choose.html:32
+msgid "Vou precisar da tecnologia de vocês."
+msgstr ""
+
+#: store/templates/pages/choose.html:33
+msgid ""
+" É a escolha certa para quem tem um orçamento enxuto e gostaria\n"
+"      de desfrutar de nossa tecnologia de automação em seu ambiente. "
+"Oferecemos nossos\n"
+"      nanocomputadores por meio de contratos de cessão ou <em>leasing.</em> "
+msgstr ""
+
+#: store/templates/pages/choose.html:41
+msgid "Apenas quero meu nanocomputador."
+msgstr ""
+
+#: store/templates/pages/choose.html:42
+msgid ""
+" Há também como adquirir nossos nanocomputadores com condições\n"
+"      especiais na compra à vista, parcelada ou em volume. Confira na nossa "
+"loja\n"
+"      virtual as possibilidades que temos na customização de nossos "
+"produtos. "
+msgstr ""
+
+#: store/templates/pages/choose.html:54
+msgid "Entrega de graça"
+msgstr ""
+
+#: store/templates/pages/choose.html:62 store/templates/pages/services.html:61
+msgid "Visite-nos"
+msgstr ""
+
+#: store/templates/pages/choose.html:63 store/templates/pages/services.html:62
+msgid ""
+" Achou legal nosso trabalho? Visite-nos em nosso espaço de coworking ao "
+"centro\n"
+"        de Porto Alegre/RS - Brasil. Quem sabe não surge uma boa ideia ou "
+"parceria. "
+msgstr ""
+
+#: store/templates/pages/choose.html:71 store/templates/pages/services.html:70
+msgid "Ajuda para comprar"
+msgstr ""
+
+#: store/templates/pages/choose.html:72 store/templates/pages/services.html:71
+msgid ""
+" Não sabe ainda bem o que está precisando? Não se preocupe, estamos aqui\n"
+"        para isso. Contate-nos pelos nossos mais diversos canais de "
+"atendimento. "
+msgstr ""
+
+#: store/templates/pages/services.html:10
+msgid ""
+" Na Efforia Nanocomputadores, oferecemos todos os nossos serviços\n"
+"        de diferentes formas, sempre pensando na melhor solução para o seu "
+"problema. "
+msgstr ""
+
+#: store/templates/pages/services.html:22
+msgid "Quero melhorar a automação audiovisual."
+msgstr ""
+
+#: store/templates/pages/services.html:23
+msgid ""
+" A Efforia oferece planos para consumo de canais de <em>streaming</em> e\n"
+"      acompanhantes de TV a cabo, tudo para que sua automação audiovisual em "
+"seu\n"
+"      ambiente possa ficar mais qualificada ainda. "
+msgstr ""
+
+#: store/templates/pages/services.html:31
+msgid "Preciso hospedar meus aplicativos."
+msgstr ""
+
+#: store/templates/pages/services.html:32
+msgid ""
+" Oferecemos uma opção de hospedagem de aplicativos, serviços e funções\n"
+"      abastecidas com a tecnologia exclusiva EOS e com uma excelente relação "
+"custo\n"
+"      por benefício, trazendo a você soluções eficientes para a nuvem. "
+msgstr ""
+
+#: store/templates/pages/services.html:40
+msgid "Quero meu equipamento protegido."
+msgstr ""
+
+#: store/templates/pages/services.html:41
+msgid ""
+" Há a possibilidade de adquirir nossos nanocomputadores com planos de "
+"garantia\n"
+"      estendida, protegendo os equipamentos em caso de acidentes, assim como "
+"a oferta\n"
+"      de suporte especializado. "
+msgstr ""
+
+#: store/templates/pages/services.html:53
+msgid "Todos os lugares"
+msgstr ""
+
+#: store/templates/pages/services.html:54
+msgid ""
+" Atendemos a qualquer demanda conforme disponibilidade para toda a América,\n"
+"        através de videoconferência, transações e encomendas internacionais. "
 msgstr ""
 
 #: store/templates/pages/menus/admin.html:31
@@ -1034,9 +2293,6 @@ msgstr ""
 
 #~ msgid "Internet TV"
 #~ msgstr "TV por Internet"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicações"
 
 #~ msgid "Plans"
 #~ msgstr "Planos"

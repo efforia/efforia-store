@@ -6,10 +6,10 @@
 <div class="container">
   <div class="row text-center">
     <div class="col-md-12">
-      <h1>Perfeito, estamos aqui para ajudar você.</h1>
-      <p class="lead">A Efforia Nanocomputadores pode lhe atender de várias maneiras,
+      <h1>{% trans "Perfeito, estamos aqui para ajudar você." %}</h1>
+      <p class="lead">{% blocktrans %} A Efforia Nanocomputadores pode lhe atender de várias maneiras,
       sempre pensando na melhor solução para o seu problema. Para isso, oferecemos
-      nossos equipamentos, instalações e integrações de diferentes formas.</p>
+      nossos equipamentos, instalações e integrações de diferentes formas. {% endblocktrans %}</p>
     </div>
   </div>
 </div>
@@ -20,28 +20,28 @@
       <a href="mailto:contato@efforia.com.br">
         <img src="{% static 'svg/fastsimple.svg' %}" class="img-responsive img-rounded full-width"/>
       </a>
-      <h2>Quero uma solução de automação.</h2>
-      <p>Esta opção é perfeita caso esteja procurando por uma solução personalizada
+      <h2>{% trans "Quero uma solução de automação." %}</h2>
+      <p>{% blocktrans %} Esta opção é perfeita caso esteja procurando por uma solução personalizada
       de automação, ou pretende integrar a uma existente. Temos a expertise e tecnologia
-      para as mais diversas demandas, com valores flexíveis.</p>
+      para as mais diversas demandas, com valores flexíveis. {% endblocktrans %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
       <a href="mailto:oi@efforia.com.br">
         <img src="{% static 'svg/spectacularsimple.svg' %}" class="img-responsive img-rounded full-width"/>
       </a>
-      <h2>Vou precisar da tecnologia de vocês.</h2>
-      <p>É a escolha certa para quem tem um orçamento enxuto e gostaria
+      <h2>{% trans "Vou precisar da tecnologia de vocês." %}</h2>
+      <p>{% blocktrans %} É a escolha certa para quem tem um orçamento enxuto e gostaria
       de desfrutar de nossa tecnologia de automação em seu ambiente. Oferecemos nossos
-      nanocomputadores por meio de contratos de cessão ou <em>leasing.</em></p>
+      nanocomputadores por meio de contratos de cessão ou <em>leasing.</em> {% endblocktrans %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
       <a href="/shop/">
         <img src="{% static 'svg/connectedsimple.svg' %}" class="img-responsive img-rounded full-width"/>
       </a>
-      <h2>Apenas quero meu nanocomputador.</h2>
-      <p>Há também como adquirir nossos nanocomputadores com condições
+      <h2>{% trans "Apenas quero meu nanocomputador." %}</h2>
+      <p>{% blocktrans %} Há também como adquirir nossos nanocomputadores com condições
       especiais na compra à vista, parcelada ou em volume. Confira na nossa loja
-      virtual as possibilidades que temos na customização de nossos produtos.</p>
+      virtual as possibilidades que temos na customização de nossos produtos. {% endblocktrans %}</p>
     </div>
   </div>
 </div>
@@ -51,26 +51,26 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="col-md-4 col-sm-4">
         <img src="{% static 'svg/box.svg' %}" class="img-responsive"/>
-        <h3>Entrega de graça</h3>
+        <h3>{% trans "Entrega de graça" %}</h3>
         <p>Temos frete grátis para todo o Brasil. Para encomendas internacionais,
         o valor cobrado varia para cada região e tamanho do produto adquirido.</p>
       </div>
       <div class="col-md-4 col-sm-4">
-        <a href="/help/localization/">
+        <a href="{% url 'localization' %}">
           <img src="{% static 'svg/box.svg' %}" class="img-responsive"/>
         </a>
-        <h3>Visite-nos</h3>
-        <p>Achou legal nosso trabalho? Visite-nos em nosso espaço de coworking ao centro
-        de Porto Alegre/RS - Brasil. Quem sabe não surge uma boa ideia ou parceria.</p>
+        <h3>{% trans "Visite-nos" %}</h3>
+        <p>{% blocktrans %} Achou legal nosso trabalho? Visite-nos em nosso espaço de coworking ao centro
+        de Porto Alegre/RS - Brasil. Quem sabe não surge uma boa ideia ou parceria. {% endblocktrans %}</p>
       </div>
       <div class="col-md-4 col-sm-4">
-        <a href="/help/">
+        <a href="{% url 'support' %}">
           <img src="{% static 'svg/box.svg' %}" class="img-responsive"/>
         </a>
         <div class="col-md-offset-3"></div>
-        <h3>Ajuda para comprar</h3>
-        <p>Não sabe ainda bem o que está precisando? Não se preocupe, estamos aqui
-        para isso. Contate-nos pelos nossos mais diversos canais de atendimento.</p>
+        <h3>{% trans "Ajuda para comprar" %}</h3>
+        <p>{% blocktrans %} Não sabe ainda bem o que está precisando? Não se preocupe, estamos aqui
+        para isso. Contate-nos pelos nossos mais diversos canais de atendimento. {% endblocktrans %}</p>
       </div>
     </div>
   </div>
