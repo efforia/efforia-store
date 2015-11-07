@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-07 02:59-0200\n"
+"POT-Creation-Date: 2015-11-07 03:28-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -789,6 +789,7 @@ msgid ""
 msgstr ""
 
 #: store/templates/hub/eos.html:64 store/templates/hubpro/eosd.html:59
+#: store/templates/services/apps.html:138
 msgid "Sync"
 msgstr ""
 
@@ -1117,7 +1118,7 @@ msgid ""
 "      ou eletrônica. "
 msgstr ""
 
-#: store/templates/hub/iot.html:86
+#: store/templates/hub/iot.html:86 store/templates/services/index.html:22
 msgid "Projetos especiais para a sua demanda"
 msgstr ""
 
@@ -1305,7 +1306,7 @@ msgid ""
 "        com funções da tecnologia EOS. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:77
+#: store/templates/hubpro/eosd.html:77 store/templates/services/apps.html:10
 #, fuzzy
 msgid "Aplicativos"
 msgstr "Aplicações"
@@ -1994,9 +1995,450 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
+#: store/templates/services/apps.html:11
+msgid ""
+" Seu tablet e smartphone consegue interagir com os nanocomputadores\n"
+"        com as tecnologias exclusivas EOS e EOS-D a partir de diversos "
+"aplicativos\n"
+"        que podem ser encontrados nas Appstores. Aqui citamos alguns "
+"exemplos e\n"
+"        suas aplicações. "
+msgstr ""
+
+#: store/templates/services/apps.html:21
+#, fuzzy
+msgid "Aplicativos para iOS"
+msgstr "Aplicações"
+
+#: store/templates/services/apps.html:27
+msgid "iTunes"
+msgstr ""
+
+#: store/templates/services/apps.html:28
+msgid ""
+" O iTunes da Apple em dispositivos iOS possibilita a transmissão de "
+"conteúdo\n"
+"          via tecnologia Apple AirPlay, compatível com o seu nanocomputador "
+"para\n"
+"          músicas e vídeoclipes. "
+msgstr ""
+
+#: store/templates/services/apps.html:40
+msgid "Sybu Remote"
+msgstr ""
+
+#: store/templates/services/apps.html:41
+msgid ""
+" Com o Sybu Remote, seu iPad, iPhone ou iPod pode funcionar como um "
+"controle\n"
+"          remoto para navegar e reproduzir conteúdo no seu nanocomputador "
+"através\n"
+"          de uma interface limpa. "
+msgstr ""
+
+#: store/templates/services/apps.html:55
+msgid "Transmission RPC"
+msgstr ""
+
+#: store/templates/services/apps.html:56
+msgid ""
+" Seu iPad, iPhone ou iPod pode controlar os downloads e uploads do serviço\n"
+"          Torrent habilitado no seu nanocomputador, podendo pausar, iniciar "
+"ou encerrar\n"
+"          operações. "
+msgstr ""
+
+#: store/templates/services/apps.html:68
+msgid "FileExplorer Free"
+msgstr ""
+
+#: store/templates/services/apps.html:69
+msgid ""
+" A partir desta ferramenta de gerenciamento de arquivos, seu iPad,\n"
+"          iPhone ou iPod pode acessar ou alterar de forma remota arquivos "
+"armazenados\n"
+"          no nanocomputador. "
+msgstr ""
+
+#: store/templates/services/apps.html:79
+msgid "Aplicativos para Windows Phone"
+msgstr ""
+
+#: store/templates/services/apps.html:87
+msgid "XBMC Remote"
+msgstr ""
+
+#: store/templates/services/apps.html:88
+msgid ""
+" Seu Windows Phone pode ser usado como controle para reprodução e navegação\n"
+"          no nanocomputador com o aplicativo XBMC Remote. "
+msgstr ""
+
+#: store/templates/services/apps.html:99
+msgid "AV Remote"
+msgstr ""
+
+#: store/templates/services/apps.html:100
+msgid ""
+" O aplicativo AV Remote dá a possibilidade de transmissão e reprodução\n"
+"          de vídeos, músicas, e fotos pelo Windows Phone. "
+msgstr ""
+
+#: store/templates/services/apps.html:111
+msgid "MetroTransmission"
+msgstr ""
+
+#: store/templates/services/apps.html:112
+msgid ""
+" A partir deste aplicativo o seu Windows Phone pode controlar o serviço\n"
+"          Torrent, de forma a encerrar, iniciar ou pausar downloads ou "
+"uploads. "
+msgstr ""
+
+#: store/templates/services/apps.html:125
+msgid "ShareFolder"
+msgstr ""
+
+#: store/templates/services/apps.html:126
+msgid ""
+" Com este aplicativo de gerenciamento de arquivos instalado em seu Windows\n"
+"          Phone, é possível acessar e modificar arquivos remotamente "
+"armazenados no\n"
+"          seu nanocomputador. "
+msgstr ""
+
+#: store/templates/services/apps.html:139
+msgid ""
+" Através deste aplicativo multiplataforma, é possível enviar arquivos de\n"
+"          um dispositivo para o outro, graças ao serviço Sync habilitado em "
+"todos\n"
+"          os nanocomputadores. "
+msgstr ""
+
+#: store/templates/services/apps.html:149
+#, fuzzy
+msgid "Aplicativos para Android"
+msgstr "Aplicações"
+
+#: store/templates/services/apps.html:157
+msgid "File Explorer"
+msgstr ""
+
+#: store/templates/services/apps.html:158
+msgid ""
+" Com este gerenciador de arquivos instalado em seu tablet ou smartphone\n"
+"          Android, é possível acessar e/ou modificar remotamente todo o "
+"conteúdo\n"
+"          de arquivos disponibilizado no nanocomputador. "
+msgstr ""
+
+#: store/templates/services/apps.html:170
+msgid "BubbleUPNP"
+msgstr ""
+
+#: store/templates/services/apps.html:171
+msgid ""
+" Use seu smartphone ou tablet para transmitir sem fio músicas, vídeos\n"
+"          e fotos para nanocomputadores a partir do BubbleUPNP. É possível "
+"controlar\n"
+"          a transmissão e reprodução de diversos nanocomputadores. "
+msgstr ""
+
+#: store/templates/services/apps.html:183
+msgid "AirSync"
+msgstr ""
+
+#: store/templates/services/apps.html:184
+msgid ""
+" Com o reprodutor de mídia DoubleTwist mais o adicional AirSync, é possível\n"
+"          também transmitir via tecnologia Apple AirPlay conteúdos "
+"multimídia, dentre\n"
+"          eles músicas, fotos e vídeos. "
+msgstr ""
+
+#: store/templates/services/apps.html:198
+msgid "Yatse"
+msgstr ""
+
+#: store/templates/services/apps.html:199
+msgid ""
+" Este aplicativo possibilita o uso de seu smartphone ou tablet Android\n"
+"          como um controle remoto para o seu nanocomputador, dando as opções "
+"de\n"
+"          navegação, reprodução e transmissão. "
+msgstr ""
+
+#: store/templates/services/apps.html:211
+msgid "iMediaShare"
+msgstr ""
+
+#: store/templates/services/apps.html:212
+msgid ""
+" Disponível para os dispositivos Android e iOS, o aplicativo iMediaShare\n"
+"          utiliza das tecnologias EOS e EOS-D para a transmissão e a "
+"reprodução de\n"
+"          vídeos, músicas e fotos. "
+msgstr ""
+
+#: store/templates/services/apps.html:224
+msgid "Transmission"
+msgstr ""
+
+#: store/templates/services/apps.html:225
+msgid ""
+" O Remote Transmission possibilita o controle remoto do serviço Torrent,\n"
+"          podendo iniciar, pausar ou encerrar downloads ou uploads no seu "
+"nanocomputador. "
+msgstr ""
+
 #: store/templates/services/base.html:10
 msgid "Hire"
 msgstr "Contratar"
+
+#: store/templates/services/cloud.html:10
+msgid "Hospedagem de Nanocomputadores"
+msgstr ""
+
+#: store/templates/services/cloud.html:11
+msgid ""
+" A Efforia disponibiliza serviços na nuvem para você\n"
+"        expandir ainda mais as possibilidades de seus nanocomputadores. "
+"Desde a\n"
+"        publicação de websites até a integração de projetos de IoT (Internet "
+"of\n"
+"        Things), dispomos de boa infraestrutura e bom atendimento para você "
+"hospedar\n"
+"        o seu próximo projeto aqui. "
+msgstr ""
+
+#: store/templates/services/cloud.html:25
+msgid "Efforia IoT"
+msgstr ""
+
+#: store/templates/services/cloud.html:26
+msgid ""
+" Por meio deste serviço, oferecemos uma maneira simples e eficiente de\n"
+"          integrar os mais diversos projetos de Internet das Coisas "
+"desenvolvidos\n"
+"          em nossos nanocomputadores com a nuvem. "
+msgstr ""
+
+#: store/templates/services/cloud.html:34
+msgid "Automação mais universal."
+msgstr ""
+
+#: store/templates/services/cloud.html:35
+msgid ""
+" Graças ao serviço Efforia IoT, é possível expandir o alcance de seu "
+"próximo\n"
+"          projeto com a Efforia a não mais apenas o seu lar ou trabalho, mas "
+"a todos\n"
+"          os lugares conectados à Internet no mundo. "
+msgstr ""
+
+#: store/templates/services/cloud.html:41
+msgid "Flexível em software/hardware."
+msgstr ""
+
+#: store/templates/services/cloud.html:42
+msgid ""
+" Possuímos soluções integradas e personalizadas entre nossos "
+"nanocomputadores,\n"
+"          sistema de automação implantado em seu ambiente e a nuvem, de "
+"acordo com\n"
+"          cada demanda. "
+msgstr ""
+
+#: store/templates/services/cloud.html:50
+msgid "Massivamente distribuído."
+msgstr ""
+
+#: store/templates/services/cloud.html:51
+msgid ""
+" Com o Efforia IoT, seus nanocomputadores não ficam restritos a apenas um\n"
+"          ambiente para atuar sobre a Internet das Coisas; você pode "
+"distribuir a\n"
+"          sua solução geograficamente. "
+msgstr ""
+
+#: store/templates/services/cloud.html:60
+#: store/templates/services/cloud.html:156
+msgid "PP"
+msgstr ""
+
+#: store/templates/services/cloud.html:61
+#: store/templates/services/cloud.html:157
+#: store/templates/services/plans.html:59
+msgid "P"
+msgstr ""
+
+#: store/templates/services/cloud.html:62
+#: store/templates/services/cloud.html:158
+#: store/templates/services/plans.html:60
+msgid "M"
+msgstr ""
+
+#: store/templates/services/cloud.html:63
+#: store/templates/services/cloud.html:159
+#: store/templates/services/plans.html:61
+msgid "G"
+msgstr ""
+
+#: store/templates/services/cloud.html:64
+#: store/templates/services/cloud.html:160
+msgid "GG"
+msgstr ""
+
+#: store/templates/services/cloud.html:67
+#: store/templates/services/cloud.html:163
+msgid "Mensal"
+msgstr ""
+
+#: store/templates/services/cloud.html:75
+#: store/templates/services/cloud.html:171
+msgid "Diário"
+msgstr ""
+
+#: store/templates/services/cloud.html:83
+#: store/templates/services/cloud.html:179
+msgid "Hora"
+msgstr ""
+
+#: store/templates/services/cloud.html:115
+#: store/templates/services/cloud.html:211
+msgid ""
+"Valores na moeda Real Brasileiro, conversíveis em dólar para transações "
+"internacionais."
+msgstr ""
+
+#: store/templates/services/cloud.html:121
+msgid "Efforia Cloud"
+msgstr ""
+
+#: store/templates/services/cloud.html:122
+msgid ""
+" Através deste serviço, há como utilizar a tecnologia exclusiva EOS na\n"
+"          nuvem do Efforia para hospedar configurações, aplicativos e "
+"serviços que\n"
+"          o seu negócio está precisando. "
+msgstr ""
+
+#: store/templates/services/cloud.html:130
+msgid "Escale conforme a sua necessidade."
+msgstr ""
+
+#: store/templates/services/cloud.html:131
+msgid ""
+" Com a nuvem do Efforia, não há com o que se preocupar com os custos.\n"
+"        Funcionamos de acordo com o que precisa de recursos de máquina para "
+"cada\n"
+"        momento, seja P, M ou G. "
+msgstr ""
+
+#: store/templates/services/cloud.html:137
+msgid "Configure para o que precisar."
+msgstr ""
+
+#: store/templates/services/cloud.html:138
+msgid ""
+" Graças à tecnologia EOS, você possui um sistema operacional GNU/Linux\n"
+"          completo com todos os recursos modernos que precisa e pronto para "
+"a configuração\n"
+"          que necessitar. "
+msgstr ""
+
+#: store/templates/services/cloud.html:146
+msgid "Tecnologia EOS em todos os lugares."
+msgstr ""
+
+#: store/templates/services/cloud.html:147
+msgid ""
+" O Efforia Cloud utiliza a tecnologia exclusiva EOS, ficando assim presente\n"
+"          em todos os ambientes que quiser, aproveitando o máximo de seu "
+"potencial\n"
+"          em serviços e aplicativos. "
+msgstr ""
+
+#: store/templates/services/index.html:10
+#, fuzzy
+msgid "Serviços"
+msgstr "Serviços"
+
+#: store/templates/services/index.html:11
+msgid ""
+" A Efforia oferece um bom número de serviços para você\n"
+"        ter mais opções para aproveitar o que há de melhor em nossos "
+"nanocomputadores,\n"
+"        sempre de acordo com o que você está mais precisando no momento. "
+msgstr ""
+
+#: store/templates/services/index.html:23
+msgid ""
+" Está precisando automatizar algo e nossas soluções atuais ainda não "
+"encaixam\n"
+"        para sua demanda? Não se preocupe, a Efforia por meio da tecnologia "
+"exclusiva\n"
+"        EOS garante a criação de projetos especiais de acordo com o que você "
+"está\n"
+"        precisando. Desde uma automação de micro-cervejaria até a de "
+"fresadoras,\n"
+"        a Efforia vai até o seu estabelecimento, avalia sua necessidade, e "
+"realiza\n"
+"        um projeto diferenciado para o seu negócio. "
+msgstr ""
+
+#: store/templates/services/index.html:32
+msgid "Planos de garantia estendida"
+msgstr ""
+
+#: store/templates/services/index.html:33
+msgid ""
+" Disponibilizamos para você uma garantia especial para seu equipamento por\n"
+"        um ano ou mais, sendo cobrado uma taxa única para cada "
+"nanocomputador, tendo\n"
+"        atendimento exclusivo e valores inclusos os serviços de conserto, "
+"troca e\n"
+"        fretamento. Através disso, você mantém todas as unidades adquiridas "
+"da Efforia\n"
+"        sob proteção de defeitos de fábrica, hardware e software, desde que "
+"comprovadamente\n"
+"        não causados pelo usuário. "
+msgstr ""
+
+#: store/templates/services/index.html:47
+msgid "Serviços de hospedagem"
+msgstr ""
+
+#: store/templates/services/index.html:48
+msgid ""
+" Para suprir as necessidades de conexão à Internet de nossas instalações\n"
+"        de automação doméstica ou corporativa, a Efforia disponibiliza "
+"serviços\n"
+"        de hospedagem de serviços de IoT, assim como a publicação de "
+"serviços web\n"
+"        instalados neles, a Efforia disponibiliza diversos serviços de nuvem "
+"para\n"
+"        conectar os nanocomputadores aos smartphones, tablets, laptops, e ao "
+"mundo. "
+msgstr ""
+
+#: store/templates/services/index.html:56
+msgid "Planos de assinatura de Streaming"
+msgstr ""
+
+#: store/templates/services/index.html:57
+msgid ""
+" Quer ter mais opções de canais pelo nosso sistema de automação "
+"audiovisual?\n"
+"        Não se preocupe, a Efforia disponibiliza planos de assinatura de "
+"serviços\n"
+"        de streaming mensais e melhor, aceitamos pagamento por boleto "
+"bancário,\n"
+"        opção normalmente indisponível quando contratado direto com a "
+"operadora.\n"
+"        Aproveite e assine agora e receba nossos nanocomputadores sem custo\n"
+"        adicional. "
+msgstr ""
 
 #: store/templates/services/nav.html:3
 msgid "Apps"
@@ -2009,6 +2451,363 @@ msgstr "Hospedagem"
 #: store/templates/services/nav.html:6
 msgid "Partners"
 msgstr "Parceiros"
+
+#: store/templates/services/partners.html:10
+msgid "Parceiros"
+msgstr ""
+
+#: store/templates/services/partners.html:11
+msgid ""
+" Nós da Efforia Nanocomputadores acreditamos que trabalhando\n"
+"        unido com parceiros, crescemos mais forte. E é por isso que dispomos "
+"de diversos\n"
+"        em nosso catálogo, de forma a estruturar e ajudar nosso "
+"empreendimento, onde\n"
+"        quer que seja. "
+msgstr ""
+
+#: store/templates/services/partners.html:22
+msgid "Projeto Cauã"
+msgstr ""
+
+#: store/templates/services/partners.html:23
+msgid ""
+" O Projeto Cauã trata-se de uma iniciativa empreendedora de incentivo da\n"
+"        constituição de novos empreendimentos que façam uso de "
+"nanocomputadores\n"
+"        para as mais diversas áreas. A Efforia é apoiadora desta iniciativa "
+"e o\n"
+"        projeto, nosso parceiro de negócios para diversas atividades-chave "
+"de nosso\n"
+"        empreendimento. "
+msgstr ""
+
+#: store/templates/services/partners.html:30
+msgid "Fábrica de Ideias"
+msgstr ""
+
+#: store/templates/services/partners.html:31
+msgid ""
+" Através do programa de mentoria para startups, o projeto embrionário do\n"
+"        Efforia, antes chamado de Caokzu, surgiu na Fábrica de Ideias "
+"Coworking\n"
+"        o nosso negócio. Graças a todo o apoio que é dado até hoje para a "
+"companhia,\n"
+"        seguimos como clientes e oferecemos o suporte sobre TI com os nossos "
+"produtos\n"
+"        e serviços para o espaço coletivo. "
+msgstr ""
+
+#: store/templates/services/partners.html:38
+msgid "Fundação Raspberry Pi"
+msgstr ""
+
+#: store/templates/services/partners.html:39
+msgid ""
+" Graças a fundação foi possível realizar boa parte dos mais diversos "
+"projetos\n"
+"        da empresa, devido a fabricação das placas Model B, uma de nossas "
+"plataformas\n"
+"        base precursoras para o início do Projeto Pandora, hoje conhecido "
+"como HUB,\n"
+"        da qual é trazida a você hoje pelos nossos diversos "
+"nanocomputadores. "
+msgstr ""
+
+#: store/templates/services/partners.html:47
+msgid "Arch Linux ARM"
+msgstr ""
+
+#: store/templates/services/partners.html:48
+msgid ""
+" A partir do Arch Linux ARM é que foi possível constituir nossas bases de\n"
+"        fundação de nossa tecnologia exclusiva EOS. Como forma de "
+"contribuição a\n"
+"        tudo o que a comunidade ofereceu para a nossa plataforma, a Efforia "
+"tem\n"
+"        um compromisso sério com o código aberto e disponibiliza sempre que "
+"possível\n"
+"        tecnologias que podem ser utilizadas em favor deste sistema "
+"operacional. "
+msgstr ""
+
+#: store/templates/services/partners.html:55
+msgid "Microsoft BizSpark"
+msgstr ""
+
+#: store/templates/services/partners.html:56
+msgid ""
+" A partir deste programa estruturante de startups da, tivemos uma "
+"disponibilidade\n"
+"        de recursos de nuvem e software que foram ofertados de forma "
+"gratuita por\n"
+"        três anos. Costumamos desde então recomendar o uso do serviço dos "
+"mesmos\n"
+"        toda a vez que acreditamos que há uma oportunidade para nossos "
+"coworkers\n"
+"        no espaço onde a Efforia Nanocomputadores encontra-se instalada. "
+msgstr ""
+
+#: store/templates/services/partners.html:63
+msgid "Código Aberto"
+msgstr ""
+
+#: store/templates/services/partners.html:64
+msgid ""
+" Na Efforia, o desenvolvimento do Software Livre como um todo é um processo\n"
+"        de importância para a evolução tecnológica da, dado que nossos "
+"produtos e\n"
+"        serviços usufruem disso. Pensando nisso que contribuímos "
+"regularmente em\n"
+"        Código Aberto, sejam para terceiros, como componentes do Django, "
+"assim como\n"
+"        para softwares de apoio a desenvolvimento para a plataformas como o "
+"Pi. "
+msgstr ""
+
+#: store/templates/services/partners.html:77
+msgid "Uma companhia que apoia o software livre."
+msgstr ""
+
+#: store/templates/services/partners.html:78
+msgid ""
+" Temos uma fundação sólida em tecnologias livres, como o Python, uma "
+"linguagem\n"
+"        de programação, o Qt, um framework para construção de aplicativos "
+"com e sem\n"
+"        interface gráfica, o Linux, um núcleo de sistema operacional e o "
+"Arch, um\n"
+"        sistema operacional baseado no GNU/Linux. Assim como temos estas "
+"fundações,\n"
+"        respeitamos padrões de engenharia de software e de sistemas para "
+"todas as\n"
+"        nossas soluções; o EOS, para exemplo, cumpre as especificações "
+"dispostas\n"
+"        na LSB (Linux Standard Base), em praticamente toda sua totalidade. "
+"Se tem\n"
+"        interesse em seguir nossos projetos open source, basta acessar nosso "
+"perfil\n"
+"        no GitHub em <a href=\"http://github.com/efforia/\">github.com/"
+"efforia</a> "
+msgstr ""
+
+#: store/templates/services/plans.html:10
+msgid "Serviços para automação"
+msgstr ""
+
+#: store/templates/services/plans.html:11
+msgid ""
+" A Efforia Nanocomputadores oferece serviços adicionais\n"
+"        que podem trazer diversos benefícios para a sua solução de "
+"automação, seja\n"
+"        ela audiovisual, doméstica ou corporativa, em todos os tamanhos. "
+msgstr ""
+
+#: store/templates/services/plans.html:21
+msgid "Efforia Play"
+msgstr ""
+
+#: store/templates/services/plans.html:22
+msgid ""
+" A Efforia, sempre comprometida em oferecer a você o\n"
+"        que há de melhor em automação audiovisual, comercializa pacotes de "
+"canais\n"
+"        de filmes e músicas para uso em nossos nanocomputadores, com "
+"condições especiais\n"
+"        na compra de sua solução de automação. "
+msgstr ""
+
+#: store/templates/services/plans.html:36
+msgid "Atendemos de P a G"
+msgstr ""
+
+#: store/templates/services/plans.html:37
+msgid ""
+" Com tamanhos como P, M e G, contemplando diversas ofertas de canais de "
+"streaming\n"
+"      e suas variações, a Efforia tem o plano perfeito para você e, se "
+"precisar,\n"
+"      para sua família, colegas ou amigos. "
+msgstr ""
+
+#: store/templates/services/plans.html:42
+msgid "Companhia para CATV"
+msgstr ""
+
+#: store/templates/services/plans.html:43
+msgid ""
+" Oferecemos a possibilidade de acessar os mais diversos canais "
+"acompanhantes\n"
+"      da programação da TV a Cabo, para que você possa assistir o filme, "
+"partida,\n"
+"      debates ou documentários que quiser aonde quiser. "
+msgstr ""
+
+#: store/templates/services/plans.html:62
+msgid "TV"
+msgstr ""
+
+#: store/templates/services/plans.html:65
+msgid "Nanocomputador incluso"
+msgstr ""
+
+#: store/templates/services/plans.html:66
+#: store/templates/services/plans.html:67
+#: store/templates/services/plans.html:68
+#: store/templates/services/plans.html:69
+#: store/templates/services/plans.html:73
+#: store/templates/services/plans.html:74
+#: store/templates/services/plans.html:75
+#: store/templates/services/plans.html:80
+#: store/templates/services/plans.html:81
+#: store/templates/services/plans.html:82
+#: store/templates/services/plans.html:83
+#: store/templates/services/plans.html:87
+#: store/templates/services/plans.html:88
+#: store/templates/services/plans.html:89
+#: store/templates/services/plans.html:94
+#: store/templates/services/plans.html:95
+#: store/templates/services/plans.html:96
+msgid "Sim"
+msgstr ""
+
+#: store/templates/services/plans.html:72
+msgid "Plex incluso"
+msgstr ""
+
+#: store/templates/services/plans.html:76
+#: store/templates/services/plans.html:90
+#: store/templates/services/plans.html:97
+msgid "Não"
+msgstr ""
+
+#: store/templates/services/plans.html:79
+msgid "Google Play"
+msgstr ""
+
+#: store/templates/services/plans.html:86
+msgid "Canais de Vídeo Gratuitos"
+msgstr ""
+
+#: store/templates/services/plans.html:93
+msgid "Canais de Música Gratuitos"
+msgstr ""
+
+#: store/templates/services/plans.html:100
+msgid "Canal de Vídeo Premium"
+msgstr ""
+
+#: store/templates/services/plans.html:101
+msgid "Crackle"
+msgstr ""
+
+#: store/templates/services/plans.html:102
+msgid "Netflix"
+msgstr ""
+
+#: store/templates/services/plans.html:103
+msgid "Netflix Família"
+msgstr ""
+
+#: store/templates/services/plans.html:104
+msgid "Canais de CATV online"
+msgstr ""
+
+#: store/templates/services/plans.html:107
+msgid "Canal de Música Premium"
+msgstr ""
+
+#: store/templates/services/plans.html:108
+msgid "Rdio"
+msgstr ""
+
+#: store/templates/services/plans.html:109
+msgid "Spotify"
+msgstr ""
+
+#: store/templates/services/plans.html:110
+msgid "Spotify Família"
+msgstr ""
+
+#: store/templates/services/plans.html:111
+msgid "Não possui"
+msgstr ""
+
+#: store/templates/services/plans.html:114
+msgid "Mensal por 1 ano em Reais"
+msgstr ""
+
+#: store/templates/services/plans.html:128
+msgid "Efforia Grid"
+msgstr ""
+
+#: store/templates/services/plans.html:129
+msgid ""
+" Pensando na integração dos nanocomputadores com a Internet\n"
+"        é que disponibilizamos o serviço Efforia Grid, que possibilita a "
+"hospedagem\n"
+"        de sites, aplicativos e conteúdos dentro do nanocomputador, "
+"economizando\n"
+"        drasticamente em custos de computação em nuvem. "
+msgstr ""
+
+#: store/templates/services/plans.html:141
+msgid "Chame-os pelo seu nome."
+msgstr ""
+
+#: store/templates/services/plans.html:142
+msgid ""
+" O Grid te permite registrar um nome na Internet para o seu nanocomputador.\n"
+"        Através de nossa tecnologia, o aparelho conecta-se ao serviço, "
+"divulga os\n"
+"        dados, sites ou aplicativos que quiser através do domínio *.grid."
+"efforia.com.br. "
+msgstr ""
+
+#: store/templates/services/plans.html:148
+msgid "Nanocomputadores como micronuvens."
+msgstr ""
+
+#: store/templates/services/plans.html:149
+msgid ""
+" Pensado também para negócios, o serviço é muito útil para nuvens privadas,\n"
+"        acesso remoto, intranets, compartilhamento de arquivos e de "
+"impressoras,\n"
+"        graças à tecnologia exclusiva EOS presente em todos nossos "
+"nanocomputadores. "
+msgstr ""
+
+#: store/templates/services/plans.html:155
+msgid "Acessíveis remotamente."
+msgstr ""
+
+#: store/templates/services/plans.html:156
+msgid ""
+" Graças à publicação na Internet, serviços e automações que você costumava\n"
+"        apenas acessar em sua residência ou empresa podem ser acessíveis e "
+"controláveis\n"
+"        por outros locais de rede fora de seu ambiente, trazendo mais "
+"praticidade. "
+msgstr ""
+
+#: store/templates/services/plans.html:162
+msgid "Acopláveis por design."
+msgstr ""
+
+#: store/templates/services/plans.html:163
+msgid ""
+" É possível juntar dois ou mais nanocomputadores seus para formar um volume\n"
+"        de aparelhos, possibilitando assim maior escalabilidade para o "
+"sistema de\n"
+"        automação desejado e reduzindo o custo de locação de espaços na "
+"nuvem. "
+msgstr ""
+
+#: store/templates/services/plans.html:172
+msgid ""
+" Aproveite a tarifa única de R$ 14,90 por nanocomputador\n"
+"      por mês para ligar ao Efforia Grid. "
+msgstr ""
 
 #: store/templates/shop/bank_confirmation.html:4
 #: store/templates/shop/bank_confirmation.html:6

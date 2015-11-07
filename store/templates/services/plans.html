@@ -7,10 +7,10 @@
 <div class="container">
   <div class="row text-center">
     <div class="col-md-12">
-      <h1>Serviços para automação</h1>
-      <h2 class="highlight">A Efforia Nanocomputadores oferece serviços adicionais
+      <h1>{% trans "Serviços para automação" %}</h1>
+      <h2 class="highlight">{% blocktrans %} A Efforia Nanocomputadores oferece serviços adicionais
         que podem trazer diversos benefícios para a sua solução de automação, seja
-        ela audiovisual, doméstica ou corporativa, em todos os tamanhos.</h2>
+        ela audiovisual, doméstica ou corporativa, em todos os tamanhos. {% endblocktrans %}</h2>
     </div>
   </div>
 </div>
@@ -18,11 +18,11 @@
 <div class="container spaces-sm">
   <div class="row text-center">
     <div class="col-md-12">
-      <h1>Efforia Play</h1>
-      <h3 class="highlight">A Efforia, sempre comprometida em oferecer a você o
+      <h1>{% trans "Efforia Play" %}</h1>
+      <h3 class="highlight">{% blocktrans %} A Efforia, sempre comprometida em oferecer a você o
         que há de melhor em automação audiovisual, comercializa pacotes de canais
         de filmes e músicas para uso em nossos nanocomputadores, com condições especiais
-        na compra de sua solução de automação.</h3>
+        na compra de sua solução de automação. {% endblocktrans %}</h3>
     </div>
   </div>
 </div>
@@ -33,16 +33,16 @@
       <img src="{% static 'svg/microcloud.svg' %}" style="height:200px !important;" class="img-responsive full-width">
     </div>
     <div class="col-md-4 lalign">
-      <h2>Atendemos de P a G</h2>
-      <p>Com tamanhos como P, M e G, contemplando diversas ofertas de canais de streaming
+      <h2>{% trans "Atendemos de P a G" %}</h2>
+      <p>{% blocktrans %} Com tamanhos como P, M e G, contemplando diversas ofertas de canais de streaming
       e suas variações, a Efforia tem o plano perfeito para você e, se precisar,
-      para sua família, colegas ou amigos.  </p>
+      para sua família, colegas ou amigos. {% endblocktrans %}</p>
     </div>
     <div class="col-md-4 ralign">
-      <h2>Companhia para CATV</h2>
-      <p>Oferecemos a possibilidade de acessar os mais diversos canais acompanhantes
+      <h2>{% trans "Companhia para CATV" %}</h2>
+      <p>{% blocktrans %} Oferecemos a possibilidade de acessar os mais diversos canais acompanhantes
       da programação da TV a Cabo, para que você possa assistir o filme, partida,
-      debates ou documentários que quiser aonde quiser.</p>
+      debates ou documentários que quiser aonde quiser. {% endblocktrans %}</p>
     </div>
     <div class="col-md-2">
       <img src="{% static 'svg/microcloud.svg' %}" style="height:200px !important;" class="img-responsive full-width">
@@ -56,62 +56,62 @@
       <table class="table table-responsive">
         <tr class="nomargin">
           <th></th>
-          <td><h2><strong>P</strong></h2></td>
-          <td><h2><strong>M</strong></h2></td>
-          <td><h2><strong>G</strong></h2></td>
-          <td><h2><strong>TV</strong></h2></td>
+          <td><h2><strong>{% trans "P" %} </strong></h2></td>
+          <td><h2><strong>{% trans "M" %} </strong></h2></td>
+          <td><h2><strong>{% trans "G" %} </strong></h2></td>
+          <td><h2><strong>{% trans "TV" %}</strong></h2></td>
         </tr>
         <tr>
-          <th>Nanocomputador incluso</th>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Sim</td>
+          <th>{% trans "Nanocomputador incluso" %}</th>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
         </tr>
         <tr>
-          <th>Plex incluso</th>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Não</td>
+          <th>{% trans "Plex incluso" %}</th>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Não" %}</td>
         </tr>
         <tr>
-          <th>Google Play</th>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Sim</td>
+          <th>{% trans "Google Play" %}</th>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
         </tr>
         <tr>
-          <th>Canais de Vídeo Gratuitos</th>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Não</td>
+          <th>{% trans "Canais de Vídeo Gratuitos" %}</th>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Não" %}</td>
         </tr>
         <tr>
-          <th>Canais de Música Gratuitos</th>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Sim</td>
-          <td>Não</td>
+          <th>{% trans "Canais de Música Gratuitos" %}</th>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Sim" %}</td>
+          <td>{% trans "Não" %}</td>
         </tr>
         <tr>
-          <th>Canal de Vídeo Premium</th>
-          <td>Crackle</td>
-          <td>Netflix</td>
-          <td>Netflix Family</td>
-          <td>Canais de CATV online</td>
+          <th>{% trans "Canal de Vídeo Premium" %}</th>
+          <td>{% trans "Crackle" %}</td>
+          <td>{% trans "Netflix" %}</td>
+          <td>{% trans "Netflix Família" %}</td>
+          <td>{% trans "Canais de CATV online" %}</td>
         </tr>
         <tr>
-          <th>Canal de Música Premium</th>
-          <td>Rdio</td>
-          <td>Spotify</td>
-          <td>Spotify Family</td>
-          <td>Não possui</td>
+          <th>{% trans "Canal de Música Premium" %}</th>
+          <td>{% trans "Rdio" %}</td>
+          <td>{% trans "Spotify" %}</td>
+          <td>{% trans "Spotify Família" %}</td>
+          <td>{% trans "Não possui" %}</td>
         </tr>
         <tr class="nomargin">
-          <th>Valor mensal por 1 ano</th>
+          <th>{% trans "Mensal por 1 ano em Reais" %}</th>
           <td><h3><strong>R$ 49,90</strong></h3></td>
           <td><h3><strong>R$ 79,90</strong></h3></td>
           <td><h3><strong>R$ 99,90</strong></h3></td>
@@ -125,11 +125,11 @@
 <div class="container spaces-sm">
   <div class="row text-center">
     <div class="col-md-12">
-      <h1>Efforia Grid</h1>
-      <h3 class="highlight">Pensando na integração dos nanocomputadores com a Internet
+      <h1>{% trans "Efforia Grid" %}</h1>
+      <h3 class="highlight">{% blocktrans %} Pensando na integração dos nanocomputadores com a Internet
         é que disponibilizamos o serviço Efforia Grid, que possibilita a hospedagem
         de sites, aplicativos e conteúdos dentro do nanocomputador, economizando
-        drasticamente em custos de computação em nuvem.</h3>
+        drasticamente em custos de computação em nuvem. {% endblocktrans %}</h3>
     </div>
   </div>
 </div>
@@ -138,38 +138,39 @@
   <div class="row text-center">
     <div class="col-md-3 col-sm-6">
       <img src="{% static 'svg/hcs.svg' %}" style="height:200px !important;" class="img-responsive full-width">
-      <h2>Chame-os pelo seu nome.</h2>
-      <p>O Grid te permite registrar um nome na Internet para o seu nanocomputador.
+      <h2>{% trans "Chame-os pelo seu nome." %}</h2>
+      <p>{% blocktrans %} O Grid te permite registrar um nome na Internet para o seu nanocomputador.
         Através de nossa tecnologia, o aparelho conecta-se ao serviço, divulga os
-        dados, sites ou aplicativos que quiser através do domínio *.grid.efforia.com.br.</p>
+        dados, sites ou aplicativos que quiser através do domínio *.grid.efforia.com.br. {% endblocktrans %}</p>
     </div>
     <div class="col-md-3 col-sm-6">
       <img src="{% static 'svg/microcloud.svg' %}" style="height:200px !important;" class="img-responsive full-width">
-      <h2>Nanocomputadores como micronuvens.</h2>
-      <p>Pensado também para negócios, o serviço é muito útil para nuvens privadas,
+      <h2>{% trans "Nanocomputadores como micronuvens." %}</h2>
+      <p>{% blocktrans %} Pensado também para negócios, o serviço é muito útil para nuvens privadas,
         acesso remoto, intranets, compartilhamento de arquivos e de impressoras,
-        graças à tecnologia exclusiva EOS presente em todos nossos nanocomputadores.</p>
+        graças à tecnologia exclusiva EOS presente em todos nossos nanocomputadores. {% endblocktrans %}</p>
     </div>
     <div class="col-md-3 col-sm-6">
       <img src="{% static 'svg/server.svg' %}" style="height:200px !important;" class="img-responsive full-width">
-      <h2>Acessíveis remotamente.</h2>
-      <p>Graças à publicação na Internet, serviços e automações que você costumava
+      <h2>{% trans "Acessíveis remotamente." %}</h2>
+      <p>{% blocktrans %} Graças à publicação na Internet, serviços e automações que você costumava
         apenas acessar em sua residência ou empresa podem ser acessíveis e controláveis
-        por outros locais de rede fora de seu ambiente, trazendo mais praticidade.</p>
+        por outros locais de rede fora de seu ambiente, trazendo mais praticidade. {% endblocktrans %}</p>
     </div>
     <div class="col-md-3 col-sm-6">
       <img src="/static/svg/cloud_combinated.svg" style="height:200px !important;" class="img-responsive full-width">
-      <h2>Acopláveis por design.</h2>
-      <p>É possível juntar dois ou mais nanocomputadores seus para formar um volume
+      <h2>{% trans "Acopláveis por design." %}</h2>
+      <p>{% blocktrans %} É possível juntar dois ou mais nanocomputadores seus para formar um volume
         de aparelhos, possibilitando assim maior escalabilidade para o sistema de
-        automação desejado e reduzindo o custo de locação de espaços na nuvem.</p>
+        automação desejado e reduzindo o custo de locação de espaços na nuvem. {% endblocktrans %}</p>
     </div>
   </div>
 </div>
 
 <div class="container spaces-sm">
   <div class="row text-center">
-    <h3>Aproveite a tarifa única de R$ 14,90 por nanocomputador por mês para ligar ao Efforia Grid.</h2>
+    <h3>{% blocktrans %} Aproveite a tarifa única de R$ 14,90 por nanocomputador
+      por mês para ligar ao Efforia Grid. {% endblocktrans %}</h2>
   </div>
 </div>
 
