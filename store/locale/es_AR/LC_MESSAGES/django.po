@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-07 03:28-0200\n"
+"POT-Creation-Date: 2015-11-07 03:45-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -611,6 +611,513 @@ msgstr ""
 msgid "Rate"
 msgstr ""
 
+#: store/templates/help/developer.html:10
+msgid "Desenvolvedor"
+msgstr ""
+
+#: store/templates/help/developer.html:12
+msgid "Uma plataforma cheia de oportunidades para o desenvolvedor"
+msgstr ""
+
+#: store/templates/help/developer.html:13
+msgid ""
+" Com a tecnologia exclusiva EOS, o desenvolvedor possui diversas vantagens\n"
+"        que facilitam o trabalho de criação de novos serviços e aplicativos. "
+"A Efforia\n"
+"        traz aos seus nanocomputadores tudo o que há de mais moderno para a "
+"engenharia\n"
+"        de software e hardware, disponibilizando um sistema operacional "
+"multiplataforma,\n"
+"        versátil e cheio de opções para você pré-instaladas, como a "
+"containerização,\n"
+"        a implantação contínua, o acesso remoto, a execução multilinguagem e "
+"a compilação\n"
+"        distribuída. "
+msgstr ""
+
+#: store/templates/help/developer.html:31
+msgid "Docker"
+msgstr ""
+
+#: store/templates/help/developer.html:32
+msgid ""
+" É um serviço que disponibiliza virtualização leve para todos os "
+"nanocomputadores.\n"
+"          Fácil e prático de utilizar, ele faz uso da tecnologia de "
+"containers do Linux,\n"
+"          responsável por trazer isolamento de contexto para os seus "
+"ambientes virtuais.\n"
+"          Serviço indispensável para desenvolver ambientes com requisitos "
+"complexos\n"
+"          a partir de poucos comandos e manter a performance praticamente a "
+"mesma\n"
+"          devida à fina camada de virtualização. Exemplo de uso é na "
+"instalação e\n"
+"          na configuração de bancos de dados e servidores web. "
+msgstr ""
+
+#: store/templates/help/developer.html:43
+msgid "Fabric"
+msgstr ""
+
+#: store/templates/help/developer.html:44
+msgid ""
+" Com o serviço de implantação Fabric, é possível automatizar toda a "
+"instalação\n"
+"          de configuração de componentes de software remotamente para o seu "
+"nanocomputador.\n"
+"          Bastando a escrita de um script com os comandos necessários, muito "
+"do processo\n"
+"          de entrada no modo produção do aplicativo desenvolvido é "
+"facilitado. Integrando\n"
+"          o serviço com um controle de versão como o Git temos uma "
+"integração contínua\n"
+"          perfeita para todos os softwares que deseja desenvolver para nossa "
+"plataforma. "
+msgstr ""
+
+#: store/templates/help/developer.html:65
+msgid "Remote"
+msgstr ""
+
+#: store/templates/help/developer.html:66
+msgid ""
+" O Remote mostra-se essencial para o acesso e administração remota de\n"
+"          seu nanocomputador. Dispondo de serviço remoto de linha de comando "
+"(SSH),\n"
+"          de acesso a arquivos por compartilhamentos do Windows (Samba), e "
+"de acesso\n"
+"          a tela remota (VNC - quando o EMC possui interface gráfica), o "
+"Remote\n"
+"          torna-se indispensável para o administrador de sistemas e para o\n"
+"          programador realizar suas tarefas de manutenção e instalação de\n"
+"          componentes no equipamento com a tecnologia EOS. "
+msgstr ""
+
+#: store/templates/help/developer.html:77
+msgid "Runtime"
+msgstr ""
+
+#: store/templates/help/developer.html:78
+msgid ""
+" Com o Runtime, é possível realizar a execução de diversas linguagens de\n"
+"          programação em seu nanocomputador. O EOS vem preparado para ser "
+"utilizado\n"
+"          para programação em Python, Perl, Ruby, Java, Node, PHP, C/C++ e "
+"C#, e um\n"
+"          bom acervo de bibliotecas auxiliares para o desenvolvimento de "
+"aplicativos\n"
+"          Web e com interface gráfica, como, respectivamente, o Django e o "
+"Qt. É com\n"
+"          este serviço que nossos nanocomputadores demonstram a maior "
+"versatilidade,\n"
+"          ao viabilizar diversas tecnologias. "
+msgstr ""
+
+#: store/templates/help/developer.html:100
+msgid "Build"
+msgstr ""
+
+#: store/templates/help/developer.html:101
+msgid ""
+" Tem um projeto grande demais para compilar com apenas um nanocomputador?\n"
+"          Não se preocupe, o EOS conta com um sistema de compilação "
+"distribuída, o\n"
+"          Build. O serviço conta com diversos mecanismos já instalados e "
+"configurados\n"
+"          que dão a possibilidade de distribuir o processo em diversos "
+"outros nanocomputadores\n"
+"          e computadores com a ferramenta EOS SDK instalada. "
+msgstr ""
+
+#: store/templates/help/developer.html:110
+msgid "EOS SDK"
+msgstr ""
+
+#: store/templates/help/developer.html:111
+msgid ""
+" Disponibilizamos um kit de programação de aplicativos para a plataforma\n"
+"          EOS. Neste conjunto há bibliotecas que compõem uma pequena camada "
+"sobre\n"
+"          os principais componentes-chave de nossa tecnologia. O kit é "
+"complementado\n"
+"          com uma máquina virtual em formato OVF que contém todos os itens "
+"do EOS\n"
+"          mais a integração com os nanocomputadores, essencial para o uso do "
+"sistema\n"
+"          Build. "
+msgstr ""
+
+#: store/templates/help/developer.html:123
+msgid "O SDK pode ser encontrado em nossa página do GitHub, e a VM pelo link:"
+msgstr ""
+
+#: store/templates/help/developer.html:136
+msgid "Desenvolva uma vez, rode em todos os lugares"
+msgstr ""
+
+#: store/templates/help/developer.html:137
+msgid ""
+" O EOS garante a interoperabilidade de seus aplicativos através de "
+"ferramentas\n"
+"      compatíveis com diversos sistemas (Android, Windows, Mac, entre "
+"outros) e\n"
+"      de uma plataforma, composta de um sistema básico específico para cada "
+"nanocomputador,\n"
+"      um sistema intermediário idêntico para todos os modelos, e por fim, o "
+"aplicativo\n"
+"      propriamente dito. "
+msgstr ""
+
+#: store/templates/help/documentation.html:10
+#, fuzzy
+msgid "Documentação"
+msgstr "Documentación"
+
+#: store/templates/help/documentation.html:11
+msgid ""
+" Neste local, disponibilizamos todo o material essencial para\n"
+"        que você possa desfrutar o máximo de nossos equipamentos. Para "
+"começar, veja\n"
+"        nosso guia de início rápido e quais aparelhos podem interagir com os "
+"nanocomputadores. "
+msgstr ""
+
+#: store/templates/help/documentation.html:21
+msgid "Guia de Início Rápido"
+msgstr ""
+
+#: store/templates/help/documentation.html:22
+msgid ""
+" Este guia demonstra os primeiros passos ao utilizar um de nossos "
+"nanocomputadores.\n"
+"      De forma a facilitar a experiência de usuário, nós priorizamos para "
+"que todos os\n"
+"      nossos dispositivos possuam a mesma maneira de interação, de forma que "
+"facilite\n"
+"      o uso do sistema de automação como um todo, independente de ser "
+"audiovisual,\n"
+"      doméstico, ou corporativo. "
+msgstr ""
+
+#: store/templates/help/documentation.html:35
+msgid "O que vem na embalagem?"
+msgstr ""
+
+#: store/templates/help/documentation.html:36
+msgid ""
+" O seu nanocomputador, este Guia, uma Fonte de alimentação, um Cabo HDMI,\n"
+"        um Cartão SD, um Wi-Fi USB, e um Adesivo do seu nanocomputador. "
+msgstr ""
+
+#: store/templates/help/documentation.html:41
+msgid "O que há dentro do seu nanocomputador?"
+msgstr ""
+
+#: store/templates/help/documentation.html:42
+msgid ""
+" O que há de mais recente, robusto e eficiente para um computador está "
+"dentro\n"
+"        deste pequeno dispositivo, pronto para funcionamento. "
+msgstr ""
+
+#: store/templates/help/documentation.html:47
+msgid " Ligar <br>os motores. "
+msgstr ""
+
+#: store/templates/help/documentation.html:48
+msgid ""
+" Para ligar o seu nanocomputador, deve-se conectar na seguinte ordem: o\n"
+"        cabo HDMI, o cartão SD, as conexões de rede e a fonte 5V Micro-USB. "
+msgstr ""
+
+#: store/templates/help/documentation.html:53
+msgid " Calibrar <br>Acessórios. "
+msgstr ""
+
+#: store/templates/help/documentation.html:54
+msgid ""
+" O seu nanocomputador dispõe de portas USB, que são utilizadas para ligar\n"
+"        pendrives, leitores, adaptadores e HDs externos. "
+msgstr ""
+
+#: store/templates/help/documentation.html:61
+msgid " Preparar <br>para a Largada. "
+msgstr ""
+
+#: store/templates/help/documentation.html:62
+msgid ""
+" O seu nanocomputador consegue operar sem televisão, assim como sem "
+"roteador\n"
+"        sem fio. Para a última opção, use o Hotspot. "
+msgstr ""
+
+#: store/templates/help/documentation.html:67
+msgid " Dada <br>a largada! "
+msgstr ""
+
+#: store/templates/help/documentation.html:68
+msgid ""
+" Se você conseguiu efetuar todos os passos com sucesso, já poderá ligar\n"
+"        seus dispositivos no seu nanocomputador, incluindo periféricos. "
+msgstr ""
+
+#: store/templates/help/documentation.html:73
+msgid " Como usar o <br>EOS? "
+msgstr ""
+
+#: store/templates/help/documentation.html:74
+msgid ""
+" Para navegar, um controle ou um teclado conectado ao seu nanocomputador\n"
+"        já basta. Mouse e trackball são recomendados. "
+msgstr ""
+
+#: store/templates/help/documentation.html:79
+msgid "Meu nanocomputador vem preparado?"
+msgstr ""
+
+#: store/templates/help/documentation.html:80
+msgid ""
+" Pré-instalado com EOS, o que traz um conjunto de aplicativos, o seu "
+"nanocomputador\n"
+"        também é expansível por meio de cartões SD. "
+msgstr ""
+
+#: store/templates/help/documentation.html:86
+msgid "Possibilidades Infinitas"
+msgstr ""
+
+#: store/templates/help/documentation.html:87
+msgid ""
+" Para poder ligar os seus dispositivos, basta acessar nosso site oficial\n"
+"        para descobrir aplicativos para isso. "
+msgstr ""
+
+#: store/templates/help/documentation.html:97
+msgid "Expanda as possibilidades"
+msgstr ""
+
+#: store/templates/help/documentation.html:98
+msgid ""
+" O Efforia disponibiliza diversos acessórios certificados para você a "
+"partir\n"
+"        de nosso site. "
+msgstr ""
+
+#: store/templates/help/documentation.html:107
+msgid "Veja quais aparelhos você pode ligar a um nanocomputador"
+msgstr ""
+
+#: store/templates/help/documentation.html:116
+msgid "Computador"
+msgstr ""
+
+#: store/templates/help/documentation.html:117
+msgid ""
+" Com o computador, é possível copiar arquivos para o seu nanocomputador\n"
+"        através de uma rede local, seja ela com fio ou wireless. "
+msgstr ""
+
+#: store/templates/help/documentation.html:122
+msgid "Smartphone"
+msgstr ""
+
+#: store/templates/help/documentation.html:123
+msgid ""
+" Dispositivo mais recomendado para transmitir músicas, via EOS ou AirPlay.\n"
+"        Também serve de controle remoto para o seu nanocomputador através de "
+"apps. "
+msgstr ""
+
+#: store/templates/help/documentation.html:128
+msgid "Tablet"
+msgstr ""
+
+#: store/templates/help/documentation.html:129
+msgid ""
+" Dispositivo mais recomendado para transmitir vídeos, via EOS ou AirPlay.\n"
+"        Também possui aplicativos disponíveis para o controle do seu "
+"nanocomputador. "
+msgstr ""
+
+#: store/templates/help/documentation.html:136
+msgid "Roteador"
+msgstr ""
+
+#: store/templates/help/documentation.html:137
+msgid ""
+" Permite que o seu nanocomputador converse com todos os outros dispositivos\n"
+"        ligados ao roteador, sejam eles computadores, players, ou mobile. "
+msgstr ""
+
+#: store/templates/help/documentation.html:142
+msgid "Nanocomputador"
+msgstr ""
+
+#: store/templates/help/documentation.html:143
+msgid ""
+" Através da tecnologia exclusiva EOS, você pode enviar ou receber conteúdo\n"
+"        de arquivos, documentos e multimídia entre seus nanocomputadores. "
+msgstr ""
+
+#: store/templates/help/documentation.html:148
+msgid "Periféricos"
+msgstr ""
+
+#: store/templates/help/documentation.html:149
+msgid ""
+" Boa parte de mouses, teclados e controles de jogo que você encontra hoje\n"
+"        no mercado conseguem interagir com a tecnologia EOS. "
+msgstr ""
+
+#: store/templates/help/index.html:10
+msgid "Sobre a Companhia"
+msgstr ""
+
+#: store/templates/help/index.html:12
+msgid ""
+" A Efforia Nanocomputadores, estabelecida em janeiro de 2012, tem como o\n"
+"        seu norte fazer a diferença na criação de diversos produtos e "
+"serviços que\n"
+"        integrem à sua casa, trabalho ou outros lugares e tornem os objetos, "
+"sejam\n"
+"        eles eletrodomésticos, eletrônicos ou&nbsp;<em>smartdevices</em>, "
+"inteligentes\n"
+"        e integráveis. E é com isso que a companhia firma seu compromisso "
+"com o\n"
+"        futuro, e com a Internet das Coisas, do qual consideramos ser a "
+"próxima\n"
+"        grande onda tecnológica. "
+msgstr ""
+
+#: store/templates/help/index.html:26
+#, fuzzy
+msgid "Atendimento"
+msgstr "Entretenimiento"
+
+#: store/templates/help/index.html:27
+msgid ""
+" A Efforia Nanocomputadores tem um compromisso sério: desde o pedido, "
+"passando\n"
+"        pela produção até a entrega e pós-venda de todos os nossos produtos, "
+"serviços\n"
+"        e projetos, estamos sempre presentes para melhor lhe atender. E "
+"pensando nisso\n"
+"        que temos esta seção de suporte, preparada especialmente para você, "
+"cliente\n"
+"        da nossa empresa. Aqui apresentamos nossos principais canais de "
+"atendimento,\n"
+"        formas de ajuda por meio de documentação, e os serviços exclusivos "
+"que\n"
+"        dispomos para quem possui nossos nanocomputadores. "
+msgstr ""
+
+#: store/templates/help/index.html:38
+msgid "WhatsApp"
+msgstr ""
+
+#: store/templates/help/index.html:39
+#, fuzzy
+msgid " +555198485888 "
+msgstr "+5551 9848-5888"
+
+#: store/templates/help/index.html:43
+msgid "Skype"
+msgstr ""
+
+#: store/templates/help/index.html:44
+msgid " efforiaca "
+msgstr ""
+
+#: store/templates/help/index.html:48
+#: store/templates/help/localization.html:35
+#: store/templates/help/localization.html:49
+msgid "Telefone"
+msgstr ""
+
+#: store/templates/help/index.html:49
+#, fuzzy
+msgid " (51) 3516-2367 "
+msgstr "+5551 3516-2367"
+
+#: store/templates/help/index.html:53
+msgid "Facebook"
+msgstr ""
+
+#: store/templates/help/index.html:54
+msgid " /efforianano "
+msgstr ""
+
+#: store/templates/help/index.html:58
+msgid "Twitter"
+msgstr ""
+
+#: store/templates/help/index.html:59
+msgid " @efforianano "
+msgstr ""
+
+#: store/templates/help/index.html:63
+msgid "E-mail"
+msgstr ""
+
+#: store/templates/help/index.html:64
+msgid " oi@efforia.com.br "
+msgstr ""
+
+#: store/templates/help/localization.html:10
+msgid "Nossa localização"
+msgstr ""
+
+#: store/templates/help/localization.html:11
+msgid ""
+" Atualmente possuímos sede em Porto Alegre, montamos e\n"
+"        distribuímos para todo o Brasil nanocomputadores como o nosso carro-"
+"chefe,\n"
+"        o HUB, capazes de realizar uma quantidade infindável de incríveis "
+"projetos,\n"
+"        desde tornar televisores comums em smart TVs até a automação de uma\n"
+"        micro-cervejaria. Temos um modelo industrial de fabricação para "
+"larga\n"
+"        escala para determinadas áreas-chave, assim como atendemos a "
+"demandas\n"
+"        especiais desenhando projetos diferenciados para cada demanda. "
+msgstr ""
+
+#: store/templates/help/localization.html:25
+msgid ""
+" A Efforia Nanocomputadores cultiva a ideia de que conseguimos criar mais\n"
+"        em um ambiente plural e coletivo, e por isso ficamos estabelecidos "
+"na Fábrica\n"
+"        de Ideias Coworking, localizada no centro de Porto Alegre/RS. "
+"Estamos abertos\n"
+"        a visitas caso queira ver mais sobre nossos nanocomputadores e "
+"serviços, bem\n"
+"        como tomar um bom café, chá ou chimarrão (bebida típica do Rio "
+"Grande do Sul).\n"
+"        Esperamos sua visita! "
+msgstr ""
+
+#: store/templates/help/localization.html:33
+#: store/templates/help/localization.html:47
+msgid "Brasil"
+msgstr ""
+
+#: store/templates/help/localization.html:34
+#: store/templates/help/localization.html:48
+msgid "Rua Vigário José Inácio, 399/409"
+msgstr ""
+
+#: store/templates/help/localization.html:35
+#: store/templates/help/localization.html:49
+msgid "F"
+msgstr ""
+
+#: store/templates/help/localization.html:35
+#: store/templates/help/localization.html:49
+#, fuzzy
+msgid "(51) 3516-2367"
+msgstr "+5551 3516-2367"
+
 #: store/templates/help/nav.html:3
 msgid "Documentation"
 msgstr "Documentación"
@@ -626,6 +1133,102 @@ msgstr "Ubicación"
 #: store/templates/help/nav.html:6
 msgid "Warranty"
 msgstr "Garantía"
+
+#: store/templates/help/warranty.html:10
+#, fuzzy
+msgid "Serviços de Garantia"
+msgstr "Servicios"
+
+#: store/templates/help/warranty.html:11
+msgid ""
+" Todos os nanocomputadores possuem garantia do circuito integrado de 1 ano,\n"
+"        excetuando os acessórios (Wi-Fi, Ethernet, Micro-USB, HD, Teclado "
+"Sem Fio,\n"
+"        Pendrive, Cartão de Memória e outros periféricos), tendo estes "
+"garantias\n"
+"        diferenciadas para cada um. O encapsulamento acrílico que está fora "
+"de qualquer\n"
+"        garantia para os equipamentos. Para realizar o procedimento de "
+"acionamento\n"
+"        de garantia, basta enviar os seguintes dados para garantia@efforia."
+"com.br: "
+msgstr ""
+
+#: store/templates/help/warranty.html:18
+msgid "Nome completo do comprador, CPF e cópia digitalizada da Nota Fiscal"
+msgstr ""
+
+#: store/templates/help/warranty.html:19
+msgid "Nome do modelo (Pode ser visualizado na traseira do nanocomputador)"
+msgstr ""
+
+#: store/templates/help/warranty.html:20
+msgid ""
+"Nome do software (Pode ser visto no cartão de memória encaixado no "
+"nanocomputador)"
+msgstr ""
+
+#: store/templates/help/warranty.html:21
+msgid "Descrição do problema que está enfrentando"
+msgstr ""
+
+#: store/templates/help/warranty.html:23
+msgid ""
+" Tendo estes dados em mãos, poderemos lhe atender com a maior agilidade\n"
+"        possível e, muito provavelmente, resolver seu problema. Garantindo a "
+"transparência\n"
+"        de nosso processo, explicamos como funciona nosso atendimento quanto "
+"à garantia.\n"
+"        Tudo o que for possível agilizar durante este processo será feito, "
+"de maneira\n"
+"        que você esteja sempre bem atendido, seja na pré-venda, venda e pós-"
+"venda. "
+msgstr ""
+
+#: store/templates/help/warranty.html:35
+msgid "Atendimento na garantia dos produtos"
+msgstr ""
+
+#: store/templates/help/warranty.html:36
+msgid ""
+" Verificamos a possibilidade de resolução remotamente por meio de nossos\n"
+"        canais de atendimento; caso não haja resolução, o componente com "
+"problema\n"
+"        é encaminhado de volta para a nossa planta de fabricação, e passa "
+"por uma\n"
+"        segunda bateria de testes; em caso de correção, o componente retorna "
+"para\n"
+"        você; em caso de problema, o equipamento é trocado e assim é enviado "
+"um\n"
+"        novo produto para você, desde que coberto pela garantia. Caso o "
+"produto\n"
+"        não seja coberto por algum plano de garantia, taxas adicionais serão "
+"cobradas\n"
+"        quando no fretamento e serviço dependendo do equipamento. "
+msgstr ""
+
+#: store/templates/help/warranty.html:46
+#: store/templates/services/index.html:32
+msgid "Planos de garantia estendida"
+msgstr ""
+
+#: store/templates/help/warranty.html:47
+msgid ""
+" Caso tenha interesse em um serviços adicionais, a Efforia Nanocomputadores\n"
+"        disponibiliza para você uma cobertura de garantia para seu "
+"nanocomputador\n"
+"        e todos os seus componentes de um ano ou mais, sendo cobrado da "
+"seguinte\n"
+"        forma: é cobrada uma taxa única de R$ 100,00/mês para cada "
+"nanocomputador,\n"
+"        tendo atendimento exclusivo e valores inclusos os serviços de "
+"conserto,\n"
+"        troca e fretamento. Com este plano, você mantém todos os "
+"equipamentos adquiridos\n"
+"        da Efforia sob proteção de defeitos de fábrica, hardware e software, "
+"desde\n"
+"        que comprovadamente não causados pelo usuário. "
+msgstr ""
 
 #: store/templates/hub/base.html:12 store/templates/hub/index.html:37
 #: store/templates/hubpro/base.html:12 store/templates/hubpro/index.html:33
@@ -2384,10 +2987,6 @@ msgid ""
 "        a Efforia vai até o seu estabelecimento, avalia sua necessidade, e "
 "realiza\n"
 "        um projeto diferenciado para o seu negócio. "
-msgstr ""
-
-#: store/templates/services/index.html:32
-msgid "Planos de garantia estendida"
 msgstr ""
 
 #: store/templates/services/index.html:33
