@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <h1>Perfeito, estamos aqui para ajudar você.</h1>
+      <p class="lead">Na Efforia Nanocomputadores, oferecemos todos os nossos serviços
+        de diferentes formas, sempre pensando na melhor solução para o seu problema.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container spaces-sm">
+  <div class="row text-center">
+    <div class="col-md-4 col-sm-4">
+      <a href="mailto:oi@efforia.com.br">
+        <img src="{% static 'svg/fastsimple.svg' %}" class="img-responsive img-rounded full-width"/>
+      </a>
+      <h2>Quero melhorar a automação audivisual.</h2>
+      <p>A Efforia oferece planos para consumo de canais de <em>streaming</em> e
+      acompanhantes de TV a cabo, tudo para que sua automação audiovisual em seu
+      ambiente possa ficar mais qualificada ainda.</p>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <a href="mailto:volumes@efforia.com.br">
+        <img src="{% static 'svg/spectacularsimple.svg' %}" class="img-responsive img-rounded full-width"/>
+      </a>
+      <h2>Preciso hospedar meus aplicativos.</h2>
+      <p>Oferecemos uma opção de hospedagem de aplicativos, serviços e funções
+      abastecidas com a tecnologia exclusiva EOS e com uma excelente relação custo
+      por benefício, trazendo a você soluções eficientes para a nuvem.</p>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <a href="mailto:garantia@efforia.com.br">
+        <img src="{% static 'svg/connectedsimple.svg' %}" class="img-responsive img-rounded full-width"/>
+      </a>
+      <h2>Quero meu equipamento protegido.</h2>
+      <p>Há a possibilidade de adquirir nossos nanocomputadores com planos de garantia
+      estendida, protegendo os equipamentos em caso de acidentes, assim como a oferta
+      de suporte especializado.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container spaces-sm">
+  <div class="row text-center">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-4 col-sm-4">
+        <img src="{% static 'svg/box.svg' %}" class="img-responsive"/>
+        <h3>Todos os lugares</h3>
+        <p>Atendemos a qualquer demanda conforme disponibilidade para toda a América,
+        através de videoconferência, transações e encomendas internacionais.</p>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <a href="/help/localization/">
+          <img src="{% static 'svg/box.svg' %}" class="img-responsive"/>
+        </a>
+        <h3>Visite-nos</h3>
+        <p>Achou legal nosso trabalho? Visite-nos em nosso espaço de coworking ao centro
+        de Porto Alegre/RS - Brasil. Quem sabe não surge uma boa ideia ou parceria.</p>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <a href="/help/">
+          <img src="{% static 'svg/box.svg' %}" class="img-responsive"/>
+        </a>
+        <div class="col-md-offset-3"></div>
+        <h3>Ajuda para comprar</h3>
+        <p>Não sabe ainda bem o que está precisando? Não se preocupe, estamos aqui
+        para isso. Contate-nos pelos nossos mais diversos canais de atendimento.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

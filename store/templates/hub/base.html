@@ -9,14 +9,14 @@
 <nav class="navbar subnavbar-top hidden-xs hidden-sm">
   <ul class="nav nav-pills submenu-top right">
     <li class="rightmargin">
-      <button class="btn btn-default" style="height:43px;">{% trans "Buy" %}</button>
+      <button class="btn btn-info hub-btn" onclick="redirect('/store/choose');">{% trans "Buy" %}</button>
     </li>
     <li class="rightmargin">
       <a href="{% url 'hub' %}">Início</a>
     </li>
     {% include "hub/nav.html" %}
     <li class="left leftmargin">
-      <img height="43" src="{% static 'svg/hublogo.svg' %}"/>
+      <img class="hub-logo" src="{% static 'svg/hublogo.svg' %}"/>
     </li><br>
   </ul>
 </nav>

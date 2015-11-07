@@ -15,6 +15,8 @@ urlpatterns += patterns(u'',
                         url(_(r'^shop/volumes/'),TemplateView.as_view(template_name='volumes.html'),name='volumes'),
                         url(_(u'^shop/'), include(u'cartridge.shop.urls'), name='shop'),
 
+                        url(u'^store/services',TemplateView.as_view(template_name='pages/services.html')),
+                        url(u'^store/choose',TemplateView.as_view(template_name='pages/choose.html')),
 			            url(u'^store/slip', "store.views.payment_slip"),
 			            url(u'^store/bank', "store.views.payment_bank"),
                         url(u'^store/cancel', "store.views.payment_cancel"),
