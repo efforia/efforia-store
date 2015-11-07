@@ -23,7 +23,7 @@ msgstr ""
 
 #: store/hooks.py:73 store/hooks.py:114
 msgid "Correios"
-msgstr ""
+msgstr "Post Office"
 
 #: store/hooks.py:127
 msgid ""
@@ -591,11 +591,11 @@ msgstr ""
 
 #: store/templates/help/developer.html:10
 msgid "Desenvolvedor"
-msgstr ""
+msgstr "Developer"
 
 #: store/templates/help/developer.html:12
 msgid "Uma plataforma cheia de oportunidades para o desenvolvedor"
-msgstr ""
+msgstr "A platform full of opportunities for the developer"
 
 #: store/templates/help/developer.html:13
 msgid ""
@@ -612,6 +612,11 @@ msgid ""
 "a compilação\n"
 "        distribuída. "
 msgstr ""
+"With EOS unique technology, the developer has several advantages that ease "
+"the work of creating new services and applications. Efforia brings its nanocomputers "
+"with the most modern technologies for hardware and software making, providing to "
+"you a multiplatform, versatile operating system with a hand of features, like "
+"containerization, continuous deployment, multilingual execution and distributed compiling."
 
 #: store/templates/help/developer.html:31
 msgid "Docker"
