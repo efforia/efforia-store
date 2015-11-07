@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-07 03:45-0200\n"
+"POT-Creation-Date: 2015-11-07 04:57-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -613,14 +613,15 @@ msgid ""
 "        distribuída. "
 msgstr ""
 "With EOS unique technology, the developer has several advantages that ease "
-"the work of creating new services and applications. Efforia brings its nanocomputers "
-"with the most modern technologies for hardware and software making, providing to "
-"you a multiplatform, versatile operating system with a hand of features, like "
-"containerization, continuous deployment, multilingual execution and distributed compiling."
+"the work of creating new services and applications. Efforia brings its "
+"nanocomputers with the most modern technologies for hardware and software "
+"making, providing to you a multiplatform, versatile operating system with a "
+"hand of features, like containerization, continuous deployment, multilingual "
+"execution and distributed compiling."
 
 #: store/templates/help/developer.html:31
 msgid "Docker"
-msgstr ""
+msgstr "Docker"
 
 #: store/templates/help/developer.html:32
 msgid ""
@@ -638,10 +639,16 @@ msgid ""
 "instalação e\n"
 "          na configuração de bancos de dados e servidores web. "
 msgstr ""
+"It's a service that provides lightweight virtualization for all nanocomputers. "
+"Easy and convenient to use, it makes use of Linux containers technology, which is "
+"responsible for bringing context isolation for your virtual environments. Essential "
+"service for building environments with complex requirements iwth just a few commands. "
+"This technology mantains much of the nanocomputer performance due to its thin virtualization "
+"layer. A example usage is at installation and configuration of databases and web servers. "
 
 #: store/templates/help/developer.html:43
 msgid "Fabric"
-msgstr ""
+msgstr "Fabric"
 
 #: store/templates/help/developer.html:44
 msgid ""
@@ -658,10 +665,15 @@ msgid ""
 "          perfeita para todos os softwares que deseja desenvolver para nossa "
 "plataforma. "
 msgstr ""
+"With the Fabric deployment service, EOS can automate remotely the entire installation and "
+"configuration of software components to your nanocomputer. Just by writing a script with "
+"the least commands, a lot of processes can be eased in the production mode. By integrating "
+"this service with a version control system like Git you'll have the continuous integration "
+"cycle, perfect for software development at out platform."
 
 #: store/templates/help/developer.html:65
 msgid "Remote"
-msgstr ""
+msgstr "Remote"
 
 #: store/templates/help/developer.html:66
 msgid ""
@@ -676,10 +688,15 @@ msgid ""
 "          programador realizar suas tarefas de manutenção e instalação de\n"
 "          componentes no equipamento com a tecnologia EOS. "
 msgstr ""
+"The remote service proves its significance for the access and remote administration "
+"of your nanocomputer. Featuring command line remote service (SSH), file acess for Windows "
+"shares (SAMBA), and remote display access (VNC - when EOS has GUI mode), this service is "
+"essential for the system administrator and for the programmer when performing their maintenance "
+"tasks and installation of components in the device equipped with EOS technology."
 
 #: store/templates/help/developer.html:77
 msgid "Runtime"
-msgstr ""
+msgstr "Runtime"
 
 #: store/templates/help/developer.html:78
 msgid ""
@@ -696,10 +713,15 @@ msgid ""
 "versatilidade,\n"
 "          ao viabilizar diversas tecnologias. "
 msgstr ""
+"With Runtime, you can run a hand of programming languages at your nanocomputer. EOS "
+"comes ready to be used for programming in Python, Perl, Ruby, Java, Node, PHP, C/C++, "
+"and has a good collection of libraries to help for developing new Web and GUI applications. "
+"A good sample for this is Django and Qt, respectively. This service shows the greatest "
+"versatility that our nanocomputers has, when enabling a number of different technologies. "
 
 #: store/templates/help/developer.html:100
 msgid "Build"
-msgstr ""
+msgstr "Build"
 
 #: store/templates/help/developer.html:101
 msgid ""
@@ -712,10 +734,14 @@ msgid ""
 "outros nanocomputadores\n"
 "          e computadores com a ferramenta EOS SDK instalada. "
 msgstr ""
+"Do you have a too big project to compile with just one nanocomputer. Don't worry, EOS "
+"has a distributed build system called Build. This service has several already installed "
+"and configured mechanisms that give the possibility of distributing the process in a number "
+"of other nanocomputers and other computers with the EOS SDK installed."
 
 #: store/templates/help/developer.html:110
 msgid "EOS SDK"
-msgstr ""
+msgstr "EOS SDK"
 
 #: store/templates/help/developer.html:111
 msgid ""
@@ -730,14 +756,18 @@ msgid ""
 "sistema\n"
 "          Build. "
 msgstr ""
+"We provide an application programming kit for the EOS platform. In this kit there are "
+"libreires that compose a small layer on the main key components of our technology. The kit "
+"is complemented with a virtual machine in OVF format that contains all the EOS items plus "
+"the integration with nanocomputers, essential for using the Build system."
 
 #: store/templates/help/developer.html:123
 msgid "O SDK pode ser encontrado em nossa página do GitHub, e a VM pelo link:"
-msgstr ""
+msgstr "The SDK can be found at our GitHub page, and the VM on this link:"
 
 #: store/templates/help/developer.html:136
 msgid "Desenvolva uma vez, rode em todos os lugares"
-msgstr ""
+msgstr "Develop one time, run at all systems"
 
 #: store/templates/help/developer.html:137
 msgid ""
@@ -751,10 +781,14 @@ msgid ""
 "aplicativo\n"
 "      propriamente dito. "
 msgstr ""
+"The EOS ensure interoperability of their applications through tools and frameworks compatible "
+"with several systems (Android, Windows, Mac, etc) and a software platform, consisting in a "
+"basic system for each specific nanocomputer, intermediate system for all models, and finally "
+"the application itself."
 
 #: store/templates/help/documentation.html:10
 msgid "Documentação"
-msgstr ""
+msgstr "Documentation"
 
 #: store/templates/help/documentation.html:11
 msgid ""
@@ -764,10 +798,13 @@ msgid ""
 "        nosso guia de início rápido e quais aparelhos podem interagir com os "
 "nanocomputadores. "
 msgstr ""
+"Here we provide all the essential material about our technology. So you can enjoy as much "
+"of our equipment. For start, see our quick start guide and which devices can interact with the "
+"nanocomputers."
 
 #: store/templates/help/documentation.html:21
 msgid "Guia de Início Rápido"
-msgstr ""
+msgstr "Quick Start Guide"
 
 #: store/templates/help/documentation.html:22
 msgid ""
@@ -781,20 +818,26 @@ msgid ""
 "audiovisual,\n"
 "      doméstico, ou corporativo. "
 msgstr ""
+"This guide shows the first steps to use one of our nanocomputers. In order to ease the user "
+"experience, we gave priority to all of our devices to have the same way of interaction, so it "
+"facilitates the use of ours automation systems as a whole, regardless of whether audiovisual, "
+"domestic or corporate."
 
 #: store/templates/help/documentation.html:35
 msgid "O que vem na embalagem?"
-msgstr ""
+msgstr "What's in the box?"
 
 #: store/templates/help/documentation.html:36
 msgid ""
 " O seu nanocomputador, este Guia, uma Fonte de alimentação, um Cabo HDMI,\n"
 "        um Cartão SD, um Wi-Fi USB, e um Adesivo do seu nanocomputador. "
 msgstr ""
+"Your nanocomputer, this guide, a power supply, a HDMI cable, a SD card an USB Wi-Fi adapter, "
+"and stickers of the nanocomputer."
 
 #: store/templates/help/documentation.html:41
 msgid "O que há dentro do seu nanocomputador?"
-msgstr ""
+msgstr "What's inside of your nanocomputer?"
 
 #: store/templates/help/documentation.html:42
 msgid ""
@@ -802,30 +845,36 @@ msgid ""
 "dentro\n"
 "        deste pequeno dispositivo, pronto para funcionamento. "
 msgstr ""
+"It has the most recent, robust and efficient features to be used in a small package, "
+"ready for operation."
 
 #: store/templates/help/documentation.html:47
 msgid " Ligar <br>os motores. "
-msgstr ""
+msgstr "Turn on <br>the engine."
 
 #: store/templates/help/documentation.html:48
 msgid ""
 " Para ligar o seu nanocomputador, deve-se conectar na seguinte ordem: o\n"
 "        cabo HDMI, o cartão SD, as conexões de rede e a fonte 5V Micro-USB. "
 msgstr ""
+"To turn on your nanocomputer you must connect the cables in the following order: "
+"HDMI cable, SD card, network connections and a 5V Micro-USB source."
 
 #: store/templates/help/documentation.html:53
 msgid " Calibrar <br>Acessórios. "
-msgstr ""
+msgstr "Calibrate <br>Accessories"
 
 #: store/templates/help/documentation.html:54
 msgid ""
 " O seu nanocomputador dispõe de portas USB, que são utilizadas para ligar\n"
 "        pendrives, leitores, adaptadores e HDs externos. "
 msgstr ""
+"Your nanocomputer has USB ports, which are used to connect USB flash drives, readers, "
+"external adapters and hard drives."
 
 #: store/templates/help/documentation.html:61
 msgid " Preparar <br>para a Largada. "
-msgstr ""
+msgstr "Preparing for the Start."
 
 #: store/templates/help/documentation.html:62
 msgid ""
@@ -833,10 +882,12 @@ msgid ""
 "roteador\n"
 "        sem fio. Para a última opção, use o Hotspot. "
 msgstr ""
+"Your nanocomputer can operate without TV and without wireless router. For the latter, "
+"use the Hotspot application."
 
 #: store/templates/help/documentation.html:67
 msgid " Dada <br>a largada! "
-msgstr ""
+msgstr "Given the start!"
 
 #: store/templates/help/documentation.html:68
 msgid ""
@@ -846,17 +897,19 @@ msgstr ""
 
 #: store/templates/help/documentation.html:73
 msgid " Como usar o <br>EOS? "
-msgstr ""
+msgstr "How to use EOS?"
 
 #: store/templates/help/documentation.html:74
 msgid ""
 " Para navegar, um controle ou um teclado conectado ao seu nanocomputador\n"
 "        já basta. Mouse e trackball são recomendados. "
 msgstr ""
+"To navigate, a control or a wireless keyboard included with your nanocomputer is enough. "
+"Mouse and trackball are recommended."
 
 #: store/templates/help/documentation.html:79
 msgid "Meu nanocomputador vem preparado?"
-msgstr ""
+msgstr "My nanocomputer comes ready?"
 
 #: store/templates/help/documentation.html:80
 msgid ""
@@ -864,20 +917,24 @@ msgid ""
 "nanocomputador\n"
 "        também é expansível por meio de cartões SD. "
 msgstr ""
+"Pre-installed with EOS, which brings a set of services and applications. This nanocomputer "
+"is also expandable by the change of SD memory card."
 
 #: store/templates/help/documentation.html:86
 msgid "Possibilidades Infinitas"
-msgstr ""
+msgstr "Infinite possibilities"
 
 #: store/templates/help/documentation.html:87
 msgid ""
 " Para poder ligar os seus dispositivos, basta acessar nosso site oficial\n"
 "        para descobrir aplicativos para isso. "
 msgstr ""
+"In order to connect your devices to the nanocomputer, visit our page about applications "
+"at our official website."
 
 #: store/templates/help/documentation.html:97
 msgid "Expanda as possibilidades"
-msgstr ""
+msgstr "Expand the possibilities"
 
 #: store/templates/help/documentation.html:98
 msgid ""
@@ -885,24 +942,28 @@ msgid ""
 "partir\n"
 "        de nosso site. "
 msgstr ""
+"Efforia offers to you several certified accessories to be used in our nanocomputers. It can "
+"be bought at our online store."
 
 #: store/templates/help/documentation.html:107
 msgid "Veja quais aparelhos você pode ligar a um nanocomputador"
-msgstr ""
+msgstr "See what devices you can connect to a nanocomputer"
 
 #: store/templates/help/documentation.html:116
 msgid "Computador"
-msgstr ""
+msgstr "Computer"
 
 #: store/templates/help/documentation.html:117
 msgid ""
 " Com o computador, é possível copiar arquivos para o seu nanocomputador\n"
 "        através de uma rede local, seja ela com fio ou wireless. "
 msgstr ""
+"With the computer, you can copy files to your nanocomputer over a local network, "
+"whether wired or wireless."
 
 #: store/templates/help/documentation.html:122
 msgid "Smartphone"
-msgstr ""
+msgstr "Smartphone"
 
 #: store/templates/help/documentation.html:123
 msgid ""
@@ -910,10 +971,12 @@ msgid ""
 "        Também serve de controle remoto para o seu nanocomputador através de "
 "apps. "
 msgstr ""
+"Most recommended device to stream music via AirPlay or EOS. It also serves "
+"as a remote control for your nanocomputer through apps."
 
 #: store/templates/help/documentation.html:128
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: store/templates/help/documentation.html:129
 msgid ""
@@ -921,40 +984,49 @@ msgid ""
 "        Também possui aplicativos disponíveis para o controle do seu "
 "nanocomputador. "
 msgstr ""
+"Most recommended device to stream videos via EOS or AirPlay. It also has applications "
+"available for controlling your nanocomputer."
+
 
 #: store/templates/help/documentation.html:136
 msgid "Roteador"
-msgstr ""
+msgstr "Router"
 
 #: store/templates/help/documentation.html:137
 msgid ""
 " Permite que o seu nanocomputador converse com todos os outros dispositivos\n"
 "        ligados ao roteador, sejam eles computadores, players, ou mobile. "
 msgstr ""
+"Allows the communication between your nanocomputer and all devices that are attached "
+"to the router, be they computers, players or mobile."
 
 #: store/templates/help/documentation.html:142
 msgid "Nanocomputador"
-msgstr ""
+msgstr "Nanocomputer"
 
 #: store/templates/help/documentation.html:143
 msgid ""
 " Através da tecnologia exclusiva EOS, você pode enviar ou receber conteúdo\n"
 "        de arquivos, documentos e multimídia entre seus nanocomputadores. "
 msgstr ""
+"Through EOS unique technology, you can send or receive content, files, documents and "
+"multimedia among its nanocomputers."
 
 #: store/templates/help/documentation.html:148
 msgid "Periféricos"
-msgstr ""
+msgstr "Peripherals"
 
 #: store/templates/help/documentation.html:149
 msgid ""
 " Boa parte de mouses, teclados e controles de jogo que você encontra hoje\n"
 "        no mercado conseguem interagir com a tecnologia EOS. "
 msgstr ""
+"A lot of mices, gamepads and keyboard that you can find today can interact "
+"with the EOS technology."
 
 #: store/templates/help/index.html:10
 msgid "Sobre a Companhia"
-msgstr ""
+msgstr "About the Company"
 
 #: store/templates/help/index.html:12
 msgid ""
@@ -1934,6 +2006,10 @@ msgid ""
 "        e moderna a partir de uma rede de nanocomputadores interligados a um "
 "servidor\n"
 "        de alta potência com a tecnologia EOS desenvolvida para o Efforia. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:25
+msgid " TODO O PODER <br>NA PALMA DE SUA MÃO. "
 msgstr ""
 
 #: store/templates/hubpro/index.html:57

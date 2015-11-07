@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-07 03:45-0200\n"
+"POT-Creation-Date: 2015-11-07 04:57-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1961,6 +1961,10 @@ msgid ""
 "        e moderna a partir de uma rede de nanocomputadores interligados a um "
 "servidor\n"
 "        de alta potência com a tecnologia EOS desenvolvida para o Efforia. "
+msgstr ""
+
+#: store/templates/hubpro/index.html:25
+msgid " TODO O PODER <br>NA PALMA DE SUA MÃO. "
 msgstr ""
 
 #: store/templates/hubpro/index.html:57
