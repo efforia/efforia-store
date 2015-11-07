@@ -1178,17 +1178,17 @@ msgstr "Brazil"
 #: store/templates/help/localization.html:34
 #: store/templates/help/localization.html:48
 msgid "Rua Vigário José Inácio, 399/409"
-msgstr ""
+msgstr "Vigário José Inácio Street, 399/409"
 
 #: store/templates/help/localization.html:35
 #: store/templates/help/localization.html:49
 msgid "F"
-msgstr ""
+msgstr "P"
 
 #: store/templates/help/localization.html:35
 #: store/templates/help/localization.html:49
 msgid "(51) 3516-2367"
-msgstr ""
+msgstr "+5551 35162367"
 
 #: store/templates/help/nav.html:3
 msgid "Documentation"
@@ -1208,7 +1208,7 @@ msgstr ""
 
 #: store/templates/help/warranty.html:10
 msgid "Serviços de Garantia"
-msgstr ""
+msgstr "Warranty Services"
 
 #: store/templates/help/warranty.html:11
 msgid ""
