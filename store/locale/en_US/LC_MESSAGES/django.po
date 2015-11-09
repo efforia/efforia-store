@@ -1458,6 +1458,10 @@ msgid ""
 "que possa\n"
 "      consumir serviços online, como e onde quiser. "
 msgstr ""
+"Having its own resources to host web applications and cloud services, the system "
+"can take advantage of Efforia services for connecting with Internet, which allows "
+"resources like remote access and web service consumption for your HUB, how and "
+"where you want."
 
 #: store/templates/hub/eos.html:29
 msgid "Soluções Integradas"
@@ -1473,6 +1477,10 @@ msgid ""
 "demanda que\n"
 "      você está precisando para você. "
 msgstr ""
+"EOS is a complete operating system, with graphical interface, data processing and "
+"network connection capabilities. Thanks to this advantage on a IoT device, it is "
+"possible to build robust and versatile solutions, always according to the demand "
+"that you're needing now."
 
 #: store/templates/hub/eos.html:37 store/templates/hub/iot.html:10
 msgid "Internet das Coisas"
@@ -1487,10 +1495,14 @@ msgid ""
 "menor\n"
 "      e um número muito maior de possibilidades. "
 msgstr ""
+"This technology integrated to your HUB ensures the maximum potential for your "
+"next automation project, granting full connection to the Internet for all of your "
+"sensors and actuators. This enables a minor construction time and many more "
+"possibilities."
 
 #: store/templates/hub/eos.html:50 store/templates/hubpro/eosd.html:45
 msgid "Torrent"
-msgstr ""
+msgstr "BitTorrent"
 
 #: store/templates/hub/eos.html:51 store/templates/hubpro/eosd.html:46
 msgid ""
@@ -1499,11 +1511,13 @@ msgid ""
 "tecnologia\n"
 "        ponto a ponto BitTorrent. "
 msgstr ""
+"Do uploads and downloads with this unlimited service for your nanocomputer or any "
+"removable storage attached to it, through the BitTorrent peer-to-peer technology."
 
 #: store/templates/hub/eos.html:64 store/templates/hubpro/eosd.html:59
 #: store/templates/services/apps.html:138
 msgid "Sync"
-msgstr ""
+msgstr "BitTorrent Sync"
 
 #: store/templates/hub/eos.html:65 store/templates/hubpro/eosd.html:60
 msgid ""
@@ -1512,10 +1526,13 @@ msgid ""
 "qualquer outro\n"
 "        dispositivo com a tecnologia BitTorrent Sync. "
 msgstr ""
+"Synchronize as many files as you want, size and way you see fit better. You can "
+"share files between your nanocomputer and any other device with BitTorrent Sync "
+"transfer technology."
 
 #: store/templates/hub/eos.html:78
 msgid "Dados compartilháveis"
-msgstr ""
+msgstr "Shared data"
 
 #: store/templates/hub/eos.html:79
 msgid ""
@@ -1524,10 +1541,13 @@ msgid ""
 "Seus\n"
 "        dados começam a ser compartilhados automaticamente na sua rede. "
 msgstr ""
+"The file sharing on your network has become much easier. Plug a flash drive, "
+"external hard drive or memory card on nanocomputer and you're ready to go! "
+"Your data automatically begins to be shared on local network."
 
 #: store/templates/hub/eos.html:85
 msgid "Ponto de acesso sem fio"
-msgstr ""
+msgstr "Wireless access point"
 
 #: store/templates/hub/eos.html:86
 msgid ""
@@ -1536,10 +1556,13 @@ msgid ""
 "que todos\n"
 "        possam compartilhar conteúdos entre si e para o seu HUB. "
 msgstr ""
+"Are you on the beach or on countryside, and doesn't have a wireless network? No "
+"problem, EOS takes care of it. You can create an access point so that everyone "
+"can share content with each other with the HUB."
 
 #: store/templates/hub/eos.html:92
 msgid "Transmissão sem fio de som"
-msgstr ""
+msgstr "Wireless sound streaming"
 
 #: store/templates/hub/eos.html:93
 msgid ""
@@ -1548,10 +1571,13 @@ msgid ""
 "smartphone para\n"
 "        o HUB e vice-versa, de maneira fácil e rápida. "
 msgstr ""
+"This technology in the HUB makes it possible to stream music, podcasts and music "
+"streaming service from your tablet, laptop or smartphone for HUB and vice versa, "
+"quickly and easily."
 
 #: store/templates/hub/eos.html:108
 msgid "Experiência surpreendente"
-msgstr ""
+msgstr "Amazing experience"
 
 #: store/templates/hub/eos.html:109
 msgid ""
@@ -1561,10 +1587,13 @@ msgid ""
 "        pendrive, smartphone, tablet, entre muitas outras opções, tudo sem "
 "fio. "
 msgstr ""
+"Surprise yourself with the audiovisual experience that EOS provides to you. Play "
+"movies in high definition from any media you can imagine, external hard drive, "
+"flash drive, smartphone, tablet, among many other options, all free of wires."
 
 #: store/templates/hub/eos.html:116
 msgid "Carregue para onde quiser"
-msgstr ""
+msgstr "Take it anywhere you want"
 
 #: store/templates/hub/eos.html:117
 msgid ""
@@ -1574,10 +1603,13 @@ msgid ""
 "        a tecnologias USB e HDMI, é possível conectar diversos periféricos a "
 "ele. "
 msgstr ""
+"From nanocomputers to general personal computers, EOS is a robust and compact "
+"system to install and use on various devices. Counting with USB and HDMI output "
+"technologies, you can connect various peripherals to it."
 
 #: store/templates/hub/eos.html:135
 msgid "Diversão ilimitada"
-msgstr ""
+msgstr "Unlimited entertainment"
 
 #: store/templates/hub/eos.html:136
 msgid ""
@@ -1586,10 +1618,13 @@ msgid ""
 "Sega\n"
 "        Mega Drive, Playstation, entre outros sistemas de emulação. "
 msgstr ""
+"EOS has an extensive compatibility with several entertainment and emulation "
+"systems, such as Super Nintendo, Nintendo 8-bit, Sega Mega Drive, Playstation, "
+"among others emulation systems."
 
 #: store/templates/hub/eos.html:143
 msgid "Baterias Inclusas"
-msgstr ""
+msgstr "Batteries Included"
 
 #: store/templates/hub/eos.html:144
 msgid ""
@@ -1599,24 +1634,29 @@ msgid ""
 "        bibliotecas e ferramentas para ajudar a criar novas soluções "
 "rapidamente. "
 msgstr ""
+"This operating system has several features ready to use in most diverse "
+"applications, offering a vast repository of apps, libraries and tools to help "
+"create new solutions rapidly."
 
 #: store/templates/hub/index.html:28
 msgid " UM UNIVERSO <br>DE GRANDES POSSIBILIDADES. "
-msgstr ""
+msgstr "A UNIVERSE <br>OF GREAT POSSIBILITIES."
 
 #: store/templates/hub/index.html:60
 msgid ""
 " O HUB é a solução eficiente que você esperava em\n"
 "        praticidade e facilidade em automação doméstica ou corporativa. "
 msgstr ""
+"HUB is the efficient solution that you always expected in practicality and ease in "
+"domestice or corporate automation."
 
 #: store/templates/hub/index.html:69
 msgid "Sem Fios"
-msgstr ""
+msgstr "Wireless"
 
 #: store/templates/hub/index.html:70
 msgid "Adeus Embaraço"
-msgstr ""
+msgstr "Bye tangled wires"
 
 #: store/templates/hub/index.html:71
 msgid ""
@@ -1625,14 +1665,17 @@ msgid ""
 "necessitará\n"
 "            apenas da tomada e já estará pronto para operar. "
 msgstr ""
+"The HUB wireless system dramatically reduces the need of having wires hanging on "
+"your home or business. In many cases you'll need only the outlet and it'll be "
+"ready to operate."
 
 #: store/templates/hub/index.html:79
 msgid "Versátil"
-msgstr ""
+msgstr "Versatile"
 
 #: store/templates/hub/index.html:80
 msgid "Baterias inclusas"
-msgstr ""
+msgstr "Batteries included"
 
 #: store/templates/hub/index.html:81
 msgid ""
@@ -1641,14 +1684,17 @@ msgid ""
 "de\n"
 "            computador de nuvem, módulo de IoT e até centro de multimídia. "
 msgstr ""
+"Thanks to the EOS technology which enables the multifunctional use of the HUB, you "
+"have a complete equipment in hands, that could serves as a cloud computer, an IoT "
+"module and even a multimedia center."
 
 #: store/templates/hub/index.html:89
 msgid "Eficiente"
-msgstr ""
+msgstr "Efficient"
 
 #: store/templates/hub/index.html:90
 msgid "Consome pouco"
-msgstr ""
+msgstr "Consumes little"
 
 #: store/templates/hub/index.html:91
 msgid ""
@@ -1657,14 +1703,17 @@ msgid ""
 "ligá-lo em\n"
 "            televisores, tomadas de celulares e até baterias portáteis. "
 msgstr ""
+"Committed to environment, we guarantee a great energy efficiency, while consuming "
+"only 5W of power. This gives the possibility of plug it in televisions, mobile "
+"outlets and even portable batteries."
 
 #: store/templates/hub/index.html:104
 msgid "Flexível"
-msgstr ""
+msgstr "Flexible"
 
 #: store/templates/hub/index.html:105
 msgid "Funcional em diversas maneiras."
-msgstr ""
+msgstr "Functional in many ways."
 
 #: store/templates/hub/index.html:106
 msgid ""
@@ -1673,14 +1722,17 @@ msgid ""
 "utilizá-lo\n"
 "          com apenas um cabo de energia se preciso. "
 msgstr ""
+"Designed completely on a modular architecture, which enables it to be independently "
+"connected to another devices, giving the possibility to use it with only a power "
+"cord if necessary."
 
 #: store/templates/hub/index.html:114
 msgid "Customizável"
-msgstr ""
+msgstr "Customizable"
 
 #: store/templates/hub/index.html:115
 msgid "Escolha o HUB com a sua cara."
-msgstr ""
+msgstr "Choose the HUB as you like."
 
 #: store/templates/hub/index.html:116
 msgid ""
@@ -1690,14 +1742,17 @@ msgid ""
 "pendrives e cabos\n"
 "          adicionais, todos de acordo com o seu gosto. "
 msgstr ""
+"Our nanocomputers can leave the factory with a number of customizations as the "
+"colors of the sides of case and a range of accessories as USB sticks and cables, "
+"all according to your taste."
 
 #: store/templates/hub/index.html:129
 msgid "Portátil"
-msgstr ""
+msgstr "Portable"
 
 #: store/templates/hub/index.html:130
 msgid "Tudo na palma de sua mão."
-msgstr ""
+msgstr "All in the palm of your hand."
 
 #: store/templates/hub/index.html:131
 msgid ""
@@ -1706,14 +1761,17 @@ msgid ""
 "seu\n"
 "          controle, ao alcance de um smartphone. "
 msgstr ""
+"Thanks to the compact size of the HUB and to the EOS technology, your next "
+"automation system can be much smaller than you think, and your control at the "
+"reach of a smartphone."
 
 #: store/templates/hub/index.html:139
 msgid "Integrável"
-msgstr ""
+msgstr "Integrable"
 
 #: store/templates/hub/index.html:140
 msgid "Conteúdo em qualquer lugar."
-msgstr ""
+msgstr "Content anywhere."
 
 #: store/templates/hub/index.html:141
 msgid ""
@@ -1722,14 +1780,17 @@ msgid ""
 "conforto\n"
 "           e facilidade para ver vídeos, músicas e imagens. "
 msgstr ""
+"For audiovisual automation, the HUB allows to concentrate and distribute your "
+"multimedia content for all your business or home, ensuring comfort and ease to "
+"view videos, music and images."
 
 #: store/templates/hub/index.html:149
 msgid "Incrível"
-msgstr ""
+msgstr "Incredible"
 
 #: store/templates/hub/index.html:150
 msgid "Ótima experiência audiovisual."
-msgstr ""
+msgstr "Great audiovisual experience."
 
 #: store/templates/hub/index.html:151
 msgid ""
@@ -1738,10 +1799,13 @@ msgid ""
 "assim como\n"
 "           processar gráficos 3D em alta qualidade. "
 msgstr ""
+"With the powerful graphics processor installed at the heart of the HUB, it is "
+"possible to reproduce content in high definition and display high resolution "
+"images, as well as render three-dimensional graphics in high quality."
 
 #: store/templates/hub/index.html:167 store/templates/hubpro/index.html:150
 msgid "Especificações"
-msgstr ""
+msgstr "Specifications"
 
 #: store/templates/hub/iot.html:11
 msgid ""
@@ -1751,10 +1815,13 @@ msgid ""
 "      em sua casa ou trabalho para ter um ambiente completamente "
 "inteligente. "
 msgstr ""
+"With the HUB nanocomputer equipped with the exclusive technology EOS, your "
+"possibilities are multiplied according to the device you want to integrate "
+"at your home or work to have a complete and inteligent environment."
 
 #: store/templates/hub/iot.html:23
 msgid "Ótima solução de Automação Audiovisual"
-msgstr ""
+msgstr "Great solution of Audiovisual Automation"
 
 #: store/templates/hub/iot.html:24
 msgid ""
@@ -1769,14 +1836,20 @@ msgid ""
 "        o aparelho, dando comandos de navegação, reprodução e transmissão "
 "sem fio. "
 msgstr ""
+"You're close to know one of the best audiovisual automation solutions of the "
+"market. When you connect the HUB to a TV, it can play videos, music and photos "
+"from other devices via wireless network, in addition to controlling your own "
+"multimedia collection. Through a remote control app on smartphone, you can also "
+"interact with the device by doing navigation, playback and transmission commands, "
+"all without wires."
 
 #: store/templates/hub/iot.html:35
 msgid "Com o HUB seus dispositivos tornam-se inteligentes"
-msgstr ""
+msgstr "With the HUB your appliaces become intelligent"
 
 #: store/templates/hub/iot.html:41
 msgid "HD"
-msgstr ""
+msgstr "HD"
 
 #: store/templates/hub/iot.html:42
 msgid ""
@@ -1786,10 +1859,13 @@ msgid ""
 "PC e outro\n"
 "        HUB, bem como para dispositivos móveis. "
 msgstr ""
+"An external hard drive attached to the HUB gives the possibility to share its "
+"files to the network in a simple and practical way for Macs, PCs, other HUBs and "
+"mobile devices."
 
 #: store/templates/hub/iot.html:52
 msgid "Projetor"
-msgstr ""
+msgstr "Projector"
 
 #: store/templates/hub/iot.html:53
 msgid ""
@@ -1798,10 +1874,13 @@ msgid ""
 "Microsoft Office,\n"
 "        através de um HUB conectado ao projetor. "
 msgstr ""
+"Do your wireless presentations with your tablet, smartphone or laptop with slide "
+"transmission in photos, videos, or Microsoft Office documents through a HUB "
+"connected to the projector."
 
 #: store/templates/hub/iot.html:63
 msgid "Impressora"
-msgstr ""
+msgstr "Printer"
 
 #: store/templates/hub/iot.html:64
 msgid ""
@@ -1811,10 +1890,13 @@ msgid ""
 "Adeus embaraço\n"
 "        e complicações na configuração de impressora em rede. "
 msgstr ""
+"Connect all of your wired common printers to a HUB and enjoy the automatic "
+"wireless sharing for the entire local network, simple and practical. Goodbye "
+"tangled wires and complications in network printer configuration."
 
 #: store/templates/hub/iot.html:76
 msgid "Melhor escolha para laboratórios"
-msgstr ""
+msgstr "Best choice for laboratories"
 
 #: store/templates/hub/iot.html:77
 msgid ""
@@ -1829,10 +1911,15 @@ msgid ""
 "informática\n"
 "      ou eletrônica. "
 msgstr ""
+"Counting on a good collection of applications in the areas of Mathematics, Logic, "
+"Programming and Electronics, plus web browsing applications, our nanocomputers "
+"become a great choice for your laboratory. We have a set of other programs and "
+"libraries that can be installed according to your demand. Ask us, so we can see "
+"the best solution for your computer or electronic lab."
 
 #: store/templates/hub/iot.html:86 store/templates/services/index.html:22
 msgid "Projetos especiais para a sua demanda"
-msgstr ""
+msgstr "Special designs to your demand"
 
 #: store/templates/hub/iot.html:87
 msgid ""
@@ -1847,6 +1934,11 @@ msgid ""
 "realiza\n"
 "      um projeto diferenciado para o seu negócio. "
 msgstr ""
+"Do you need to automate something that our current solutions don't yet fit to your "
+"demand? Don't worry, Efforia through EOS technology ensures the creation of "
+"special projects according to what you are needing. From micro-brewery automation "
+"to the CNC milling machines, the company goes to your establishment, assess your "
+"needs, and performs a different design for your business."
 
 #: store/templates/hub/iot.html:100
 msgid ""
@@ -1857,6 +1949,10 @@ msgid ""
 "desenvolvemos\n"
 "      de forma a interagir os mais diversos eletrônicos com a Internet. "
 msgstr ""
+"The great expertise and potential of our nanocomputers of Efforia is in the "
+"Internet of Things (IoT), to make your devices smarter. This is achieved through "
+"various projects which we develop to interact over the Internet with various "
+"electronics."
 
 #: store/templates/hub/nav.html:4
 msgid "EOS Technology"
@@ -1872,7 +1968,7 @@ msgstr ""
 
 #: store/templates/hub/sensors.html:10
 msgid "Sensores para o HUB"
-msgstr ""
+msgstr "Sensors for the HUB"
 
 #: store/templates/hub/sensors.html:15
 msgid ""
@@ -1883,10 +1979,13 @@ msgid ""
 "próximo projeto\n"
 "        de IoT. "
 msgstr ""
+"Thanks to the bus technology present in all of our nanocomputers, it's possibile "
+"to add a number of sensors for HUB, making the ideal automation system, "
+"complementing your next project of IoT."
 
 #: store/templates/hub/sensors.html:28
 msgid "Temperatura e Umidade"
-msgstr ""
+msgstr "Temperature and Humidity"
 
 #: store/templates/hub/sensors.html:29
 msgid ""
@@ -1895,10 +1994,13 @@ msgid ""
 "de\n"
 "        condicionamento de ar para refrigerar o ambiente. "
 msgstr ""
+"With temperature monitoring, the HUB is able to act on the environment, such as "
+"issuing limits overtaking warnings and controlling air conditioning units to "
+"refrigerate the environment."
 
 #: store/templates/hub/sensors.html:42
 msgid "Distância e presença"
-msgstr ""
+msgstr "Distance and presence"
 
 #: store/templates/hub/sensors.html:43
 msgid ""
@@ -1908,10 +2010,13 @@ msgid ""
 "        para cada projeto, podendo ser muito útil para a segurança em "
 "alarmes. "
 msgstr ""
+"Through the presence and distance sensor of people and/or objects on an "
+"environment, it can automate lights and trigger warnings and relevant events "
+"for each project and can be very useful for security designs."
 
 #: store/templates/hub/sensors.html:52
 msgid "Presença de gás"
-msgstr ""
+msgstr "Gas detection"
 
 #: store/templates/hub/sensors.html:53
 msgid ""
@@ -1924,7 +2029,7 @@ msgstr ""
 
 #: store/templates/hub/sensors.html:66
 msgid "Presença de água"
-msgstr ""
+msgstr "Water detection"
 
 #: store/templates/hub/sensors.html:67
 msgid ""
@@ -1936,7 +2041,7 @@ msgstr ""
 
 #: store/templates/hub/sensors.html:76
 msgid "Câmera"
-msgstr ""
+msgstr "Camera"
 
 #: store/templates/hub/sensors.html:77
 msgid ""
@@ -1948,7 +2053,7 @@ msgstr ""
 
 #: store/templates/hub/sensors.html:90
 msgid "Eletricidade"
-msgstr ""
+msgstr "Electricity"
 
 #: store/templates/hub/sensors.html:91
 msgid ""
