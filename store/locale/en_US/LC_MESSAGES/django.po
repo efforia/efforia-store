@@ -1224,24 +1224,29 @@ msgid ""
 "        de garantia, basta enviar os seguintes dados para garantia@efforia."
 "com.br: "
 msgstr ""
+"All of our nanocomputers are warranted on the integrated circuit for a year, "
+"except the accessories (Wi-Fi, Ethernet, Micro-USB, HD, Wireless Keyboard, Flash "
+"Drive, Memory Card and other peripherals) that have different warranties for each. "
+"The acrylic finish is outside of any guarantee for the equipment. To perform the "
+"warranty drive, send the following data to garantia@efforia.com.br:"
 
 #: store/templates/help/warranty.html:18
 msgid "Nome completo do comprador, CPF e cópia digitalizada da Nota Fiscal"
-msgstr ""
+msgstr "Buyer full name, social security number and scanned copy of the invoice"
 
 #: store/templates/help/warranty.html:19
 msgid "Nome do modelo (Pode ser visualizado na traseira do nanocomputador)"
-msgstr ""
+msgstr "Model name (Can be seen on the back of the nanocomputer)"
 
 #: store/templates/help/warranty.html:20
 msgid ""
 "Nome do software (Pode ser visto no cartão de memória encaixado no "
 "nanocomputador)"
-msgstr ""
+msgstr "Software name (Can be seen on the memory card attached to the nanocomputer)"
 
 #: store/templates/help/warranty.html:21
 msgid "Descrição do problema que está enfrentando"
-msgstr ""
+msgstr "Description of the problem you are facing"
 
 #: store/templates/help/warranty.html:23
 msgid ""
@@ -1255,10 +1260,15 @@ msgid ""
 "        que você esteja sempre bem atendido, seja na pré-venda, venda e pós-"
 "venda. "
 msgstr ""
+"With these data in hand, we can help you with greater agility and most likely "
+"solve your problem. Ensuring transparency on our process, we explain how our "
+"service works as a warranty. Whatever is possible to speed up during this process "
+"surely will be done, so you are always well attended, both in pre sales, sales and "
+"after sales."
 
 #: store/templates/help/warranty.html:35
 msgid "Atendimento na garantia dos produtos"
-msgstr ""
+msgstr "Product warranty service"
 
 #: store/templates/help/warranty.html:36
 msgid ""
@@ -1277,11 +1287,18 @@ msgid ""
 "cobradas\n"
 "        quando no fretamento e serviço dependendo do equipamento. "
 msgstr ""
+"We check the possibility of solution remotely through our service channels; if "
+"there is no resolution available, the failing component is routed back to our "
+"manufacturing plant and are tested again; in case of correction, the component "
+"returns for you, but in case of another problem, the equipment is exchanged and "
+"sent, since covered under warranty. If the product or component isn't covered by "
+"any warranty plan, additional fees will be charged when in the charter and service,  "
+"always depending on the equipment."
 
 #: store/templates/help/warranty.html:46
 #: store/templates/services/index.html:32
 msgid "Planos de garantia estendida"
-msgstr ""
+msgstr "Extended warranty plans"
 
 #: store/templates/help/warranty.html:47
 msgid ""
@@ -1300,6 +1317,12 @@ msgid ""
 "desde\n"
 "        que comprovadamente não causados pelo usuário. "
 msgstr ""
+"If you are interested in additional services, Efforia Nanocomputers offers "
+"to you a special warranty coverage for your nanocomputer and all its components "
+"for a fixed monthly fee of R$ 100,00 for each unit, having exclusive service and "
+"included values for fix, exchange and freight rates. Hiring this plan, you keep "
+"all of your equipment purchased on Efforia under any manufacturing defects, "
+"whether hardware and software, if proven not caused by the user."
 
 #: store/templates/hub/base.html:12 store/templates/hub/index.html:37
 #: store/templates/hubpro/base.html:12 store/templates/hubpro/index.html:33
@@ -1313,11 +1336,11 @@ msgstr ""
 
 #: store/templates/hub/design.html:12
 msgid "Único"
-msgstr ""
+msgstr "Unique"
 
 #: store/templates/hub/design.html:13
 msgid "Design incomparável"
-msgstr ""
+msgstr "Unmatched design"
 
 #: store/templates/hub/design.html:14
 msgid ""
@@ -1330,14 +1353,18 @@ msgid ""
 "customizado de\n"
 "        acordo com cada demanda. "
 msgstr ""
+"Built with translucent acrylic covers and colorful transparent sides, by default "
+"in dark gray tone, all of our nanocomputers were intended with unparalleled design, "
+"with a professional and clean finish, and most importantly, standardized due to "
+"various needs and customized according to every different demand."
 
 #: store/templates/hub/design.html:29
 msgid "Sustentável"
-msgstr ""
+msgstr "Sustainable"
 
 #: store/templates/hub/design.html:30
 msgid "Desenho total em acrílico"
-msgstr ""
+msgstr "Overall design in acrylic"
 
 #: store/templates/hub/design.html:31
 #, python-format
@@ -1347,14 +1374,17 @@ msgid ""
 "nanocomputadores\n"
 "          são encapsulados com material acrílico 100%% reciclável. "
 msgstr ""
+"Sustainability is a very important issue for Efforia in all senses, and thinking "
+"about the preservation of our planet that the nanocomputers are encapsulated with "
+"100%% recyclable acrylic material."
 
 #: store/templates/hub/design.html:41
 msgid "Refrigerado"
-msgstr ""
+msgstr "Refrigerated"
 
 #: store/templates/hub/design.html:42
 msgid "Projetado para qualquer ambiente"
-msgstr ""
+msgstr "Designed for any environment"
 
 #: store/templates/hub/design.html:43
 msgid ""
@@ -1363,14 +1393,16 @@ msgid ""
 "ser obtido\n"
 "           a melhor performance para cada unidade. "
 msgstr ""
+"The acrylic capsule is designed so that obtain the best thermal ability possible "
+"for nanocomputers so that it could obtain the best performance for each unit. "
 
 #: store/templates/hub/design.html:57
 msgid "Nacional"
-msgstr ""
+msgstr "National"
 
 #: store/templates/hub/design.html:58
 msgid "Montado no Brasil"
-msgstr ""
+msgstr "Assembled in Brazil"
 
 #: store/templates/hub/design.html:59
 msgid ""
@@ -1380,14 +1412,17 @@ msgid ""
 "           do nanocomputador, onde fica pronto para ser despachado para toda "
 "a América. "
 msgstr ""
+"Except the manufacturing process of the integrated circuit, the whole process is "
+"performed in Rio Grande do Sul, Brazil, from design and acrylic cut to the nanocomputer "
+"assembly, when is ready to be dispatched to all America."
 
 #: store/templates/hub/design.html:69
 msgid "Preciso"
-msgstr ""
+msgstr "Accurate"
 
 #: store/templates/hub/design.html:70
 msgid "Saídas e placas firmes"
-msgstr ""
+msgstr "Firm outputs and boards"
 
 #: store/templates/hub/design.html:71
 msgid ""
@@ -1397,6 +1432,9 @@ msgid ""
 "           que nosso cliente sempre tenha a melhor impressão física sobre "
 "todos os produtos. "
 msgstr ""
+"The Efforia Nanocomputers had care about the quality and thickness of the acrylic "
+"fabrics, as well as the firmly connection holes, in order that our customers always "
+"has the best physical impression on all of our products."
 
 #: store/templates/hub/eos.html:11
 msgid ""
@@ -1404,6 +1442,8 @@ msgid ""
 "      que garante diferenciais que tornam nossos nanocomputadores "
 "singulares. "
 msgstr ""
+"All of our device comes equipped with EOS technology, developed by Efforia, "
+"ensuring advantages that make our nanocomputers unique."
 
 #: store/templates/hub/eos.html:21
 msgid "Cloud Computing"
@@ -1421,7 +1461,7 @@ msgstr ""
 
 #: store/templates/hub/eos.html:29
 msgid "Soluções Integradas"
-msgstr ""
+msgstr "Integrated Solutions"
 
 #: store/templates/hub/eos.html:30
 msgid ""
@@ -1436,7 +1476,7 @@ msgstr ""
 
 #: store/templates/hub/eos.html:37 store/templates/hub/iot.html:10
 msgid "Internet das Coisas"
-msgstr ""
+msgstr "Internet of Things"
 
 #: store/templates/hub/eos.html:38
 msgid ""
