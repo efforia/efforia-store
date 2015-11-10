@@ -2026,6 +2026,9 @@ msgid ""
 "        a automatização de válvulas de escape em uma micro-cervejaria, por "
 "exemplo. "
 msgstr ""
+"The gas control for a certain flow may be and useful additional sensor for "
+"industries that use this asset, as in a micro-brewery for automating exhaust "
+"valves."
 
 #: store/templates/hub/sensors.html:66
 msgid "Presença de água"
@@ -2038,6 +2041,9 @@ msgid ""
 "trazer\n"
 "        maior eficiência no fluxo de indústrias que fazem uso desse ativo. "
 msgstr ""
+"As in the presence of gas, it allows monitoring and water valve control, "
+"which, like the other, the automation process can bring greater efficiency "
+"in the manufacturing flow of industries that make use of this asset."
 
 #: store/templates/hub/sensors.html:76
 msgid "Câmera"
@@ -2050,6 +2056,9 @@ msgid ""
 "ambientes,\n"
 "        podendo ser usado para diversos fins de automação. "
 msgstr ""
+"Great feature specially for the security field, the image sensor allows you "
+"to capture photographs and footage of certain environments, and it may be "
+"used for various purposes automation."
 
 #: store/templates/hub/sensors.html:90
 msgid "Eletricidade"
@@ -2063,6 +2072,9 @@ msgid ""
 "        mão, por meio de comandos enviados direto de um smartphone ou "
 "tablet. "
 msgstr ""
+"Through additional sensors and actuators of electricity, you can get all the "
+"light switches and control equipment right in the palm of your hand through "
+"direct commands sent from a smartphone or tablet."
 
 #: store/templates/hubpro/eosd.html:11
 msgid ""
@@ -2071,6 +2083,8 @@ msgid ""
 "baseado\n"
 "        na plataforma Android. "
 msgstr ""
+"Our most versatile and robust nanocomputers comes equipped with EOS-D "
+"technology, developed by Efforia and based on Android platform."
 
 #: store/templates/hubpro/eosd.html:21
 msgid "Grid Computing"
@@ -2083,10 +2097,13 @@ msgid ""
 "eficiência\n"
 "      energética e com recursos acessíveis remotamente. "
 msgstr ""
+"With the EOS exclusive technology embedded right on the operating system, it's "
+"possible using it for mounting clusters of nanocomputers with the highest "
+"energy efficiency and remotely resources available."
 
 #: store/templates/hubpro/eosd.html:27
 msgid "Streaming Audiovisual"
-msgstr ""
+msgstr "Audiovisual Streaming"
 
 #: store/templates/hubpro/eosd.html:28
 msgid ""
@@ -2095,10 +2112,13 @@ msgid ""
 "EOS-D\n"
 "      muito mais interessantes para uso em TV por Internet. "
 msgstr ""
+"Thanks to the Android platform base, it's possible to access a number of "
+"resources, apps and channels of streaming, making the nanocomputers with "
+"EOS-D much more interesting for use on Internet TV."
 
 #: store/templates/hubpro/eosd.html:33
 msgid "Diversão Ilimitada"
-msgstr ""
+msgstr "Unlimited Entertainment"
 
 #: store/templates/hubpro/eosd.html:34
 msgid ""
@@ -2108,10 +2128,12 @@ msgid ""
 "muito\n"
 "      maior de games preparados para a televisão. "
 msgstr ""
+"Through our own technologies and Android platform compatible, it's possible "
+"to access and develop a bigger range of games for television."
 
 #: store/templates/hubpro/eosd.html:71
 msgid "Compatível"
-msgstr ""
+msgstr "Compatible"
 
 #: store/templates/hubpro/eosd.html:72
 msgid ""
@@ -2121,10 +2143,13 @@ msgid ""
 "compatibilidade\n"
 "        com funções da tecnologia EOS. "
 msgstr ""
+"For the most diverse demands, Efforia developed the EOS-D, a technology "
+"that allows the use of Android platform for nanocomputers and still mantain "
+"compatibility with base functions of EOS exclusive technology."
 
 #: store/templates/hubpro/eosd.html:77 store/templates/services/apps.html:10
 msgid "Aplicativos"
-msgstr ""
+msgstr "Apps"
 
 #: store/templates/hubpro/eosd.html:78
 msgid ""
@@ -2133,10 +2158,13 @@ msgid ""
 "navegador\n"
 "        de Internet e explorador de arquivos. "
 msgstr ""
+"With the Android platform and its apps, you can have a complete solution for "
+"your office or home, with a productivity suite, an Internet browser and a "
+"file explorer."
 
 #: store/templates/hubpro/eosd.html:83
 msgid "Plugável"
-msgstr ""
+msgstr "Plugable"
 
 #: store/templates/hubpro/eosd.html:84
 msgid ""
