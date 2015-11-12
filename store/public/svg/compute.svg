@@ -1,63 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="Layer_1"
-   x="0px"
-   y="0px"
-   width="640"
-   height="400"
-   viewBox="-171.654 -165.986 640 400"
-   enable-background="new -171.654 -165.986 400 400"
-   xml:space="preserve"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="compute.svg"><metadata
-     id="metadata21"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
-     id="defs19" /><sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="1026"
-     id="namedview17"
-     showgrid="false"
-     inkscape:zoom="0.59"
-     inkscape:cx="-35.59322"
-     inkscape:cy="200"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="Layer_1" /><g
-     id="g6412"
-     transform="translate(119.9995,0)"><polygon
-       points="195.024,134.026 28.358,234.014 -138.331,134.026 -138.331,-65.98 28.358,-165.986 195.024,-65.98 "
-       id="polygon5"
-       style="fill:#000000" /><g
-       id="g7"><polygon
-         points="28.346,124.08 116.557,71.315 28.346,18.556 -59.842,71.315 "
-         id="polygon9"
-         style="fill:#f48e30" /><polygon
-         points="28.346,99.199 116.557,46.446 28.346,-6.331 -59.842,46.446 "
-         id="polygon11"
-         style="fill:#f3a156" /><polygon
-         points="28.346,74.335 116.557,21.571 28.346,-31.183 -59.842,21.571 "
-         id="polygon13"
-         style="fill:#f3b47a" /><polygon
-         points="28.346,49.46 116.557,-3.31 28.346,-56.058 -59.842,-3.31 "
-         id="polygon15"
-         style="fill:#ffffff" /></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" sodipodi:docname="compute.svg" inkscape:version="0.48.4 r9939" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="14 197 640 400"
+	 style="enable-background:new 14 197 640 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<sodipodi:namedview  inkscape:current-layer="Layer_1" inkscape:window-maximized="1" inkscape:window-y="24" inkscape:window-x="0" inkscape:window-height="1026" inkscape:window-width="1680" inkscape:pageopacity="0" inkscape:pageshadow="2" borderopacity="1" id="namedview17" bordercolor="#666666" pagecolor="#ffffff" objecttolerance="10" inkscape:zoom="0.59" inkscape:cx="-35.59322" guidetolerance="10" showgrid="false" gridtolerance="10" inkscape:cy="200">
+	</sodipodi:namedview>
+<polygon id="polygon5" class="st0" points="500.7,497 334,597 167.3,497 167.3,297 334,197 500.7,297 "/>
+<g id="g7">
+	<polygon id="polygon9" class="st1" points="334,511 445.6,444.2 334,377.4 222.4,444.2 	"/>
+	<polygon id="polygon11" class="st1" points="334,479.5 445.6,412.7 334,345.9 222.4,412.7 	"/>
+	<polygon id="polygon13" class="st1" points="334,448 445.6,381.3 334,314.5 222.4,381.3 	"/>
+	<polygon id="polygon15" class="st1" points="334,416.6 445.6,349.8 334,283 222.4,349.8 	"/>
+</g>
+</svg>

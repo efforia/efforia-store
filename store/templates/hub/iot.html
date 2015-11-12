@@ -4,20 +4,36 @@
 
 {% block main %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center">
+<style>
+
+.iot-background {
+  background:url('{% static 'img/constellation.jpg' %}') center center;
+  background-size:cover;
+}
+
+.con-background {
+  background:url('{% static 'img/connected.jpg' %}') center center;
+  background-size:cover;
+}
+
+</style>
+
+<div class="container-fluid iot-background">
+  <div class="row text-center transparent-black white">
+    <div class="col-md-8 col-md-offset-2 spaces-lg">
       <h1>{% trans "Internet das Coisas" %}</h1>
       <h2 class="highlight">{% blocktrans %} Com o nanocomputador HUB equipado com a tecnologia exclusiva EOS, suas
       possibilidades se multiplicam de acordo com os dispositivos que deseja integrar
       em sua casa ou trabalho para ter um ambiente completamente inteligente. {% endblocktrans %}</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
       <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 spaces-sm">
-        <div class="col-md-6 col-sm-6 col-xs-6 nopadding">
-          <img src="{% static 'svg/devices-01.svg' %}" class="img-responsive full-width">
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-6 nopadding">
-          <img src="{% static 'svg/devices-02.svg' %}" class="img-responsive full-width">
-        </div>
+        <img src="{% static 'svg/audiovisual.svg' %}" class="img-responsive full-width"/>
       </div>
       <div class="col-md-12 col-sm-12">
         <h2>{% trans "Ótima solução de Automação Audiovisual" %}</h2>
@@ -26,6 +42,7 @@
         e fotos de outros dispositivos via rede sem fio, além de controlar sua coleção.
         Através de controle remoto por smartphone também consegue interagir com
         o aparelho, dando comandos de navegação, reprodução e transmissão sem fio. {% endblocktrans %}</p>
+      </div>
     </div>
   </div>
 </div>
@@ -94,10 +111,10 @@
   </div>
 </div>
 
-<div class="container spaces-sm">
-  <div class="row text-center">
-    <div class="col-md-12">
-      <h2 class="highlight">{% blocktrans %} A grande especialidade e potencial de nossos nanocomputadores
+<div class="container-fluid con-background">
+  <div class="row text-center transparent-black white">
+    <div class="col-md-8 col-md-offset-2 spaces-lg">
+      <h2 class="highlight nomargin">{% blocktrans %} A grande especialidade e potencial de nossos nanocomputadores
       na Efforia está na Internet das Coisas (IoT), em tornar seus equipamentos
       mais inteligentes. Isso se dá por meio de diversos projetos que desenvolvemos
       de forma a interagir os mais diversos eletrônicos com a Internet. {% endblocktrans %}</h2>
