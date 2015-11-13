@@ -149,6 +149,11 @@
   margin:0 auto;
 }
 
+.photo-xs {
+  height:200px !important;
+  margin:0 auto;
+}
+
 .highlight {
   margin-top:50px;
   line-height:1.5em;
