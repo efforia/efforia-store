@@ -35,17 +35,17 @@
 <div class="container spaces-md">
   <div class="centered row">
     <div class="col-md-4 col-sm-4">
-      <img src="{% static "svg/audiovisual.svg" %}"/>
+      <a href="{% url 'mediacenter' %}"><img src="{% static "svg/audiovisual.svg" %}"/></a>
       <h1>{% trans "Audiovisual" %}</h1>
       <p>{% trans "At Efforia we design and build automated audiovisual systems, all wirelessly connected and tightly integrated." %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
-      <img src="{% static "svg/entertainment.svg" %}"/>
+      <a href="{% url 'videogame' %}"><img src="{% static "svg/entertainment.svg" %}"/></a>
       <h1>{% trans "Entertainment" %}</h1>
       <p>{% trans "We also develop full-featured entertainment systems, ready to play every video content, music, or videogame." %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
-      <img src="{% static "svg/automation.svg" %}"/>
+      <a href="{% url 'plans' %}"><img src="{% static "svg/automation.svg" %}"/></a>
       <h1>{% trans "Automation" %}</h1>
       <p>{% trans "At the heart of our nanocomputers, we have the IoT concept, reaching the next level of automation." %}</p>
     </div>
@@ -92,17 +92,17 @@
 <div class="container spaces-md">
   <div class="centered row">
     <div class="col-md-4 col-sm-4">
-      <img src="{% static "svg/hubdev.svg" %}" width="80%"/>
+      <a href="{% url 'hub' %}"><img src="{% static "svg/hubdev.svg" %}" width="80%"/></a>
       <h1>{% trans "HUB" %}</h1>
       <p>{% trans "Know more about our efficient solution for Internet of Things automation and its numerous possibilities." %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
-      <img src="{% static "svg/services.svg" %}" width="80%"/>
+      <a href="{% url 'about' %}"><img src="{% static "svg/services.svg" %}" width="80%"/></a>
       <h1>{% trans "Services" %}</h1>
       <p>{% trans "Ultimate services and plans that we can do more for you at Efforia Nanocomputers." %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
-      <img src="{% static "svg/hubpro.svg" %}" width="80%"/>
+      <a href="{% url 'hubpro' %}"><img src="{% static "svg/hubpro.svg" %}" width="80%"/></a>
       <h1>{% trans "HUB Pro" %}</h1>
       <p>{% trans "Discover about our outstanding solution for Internet of Things automation and its infinite possibilities." %}</p>
     </div>
