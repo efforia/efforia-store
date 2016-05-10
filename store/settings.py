@@ -72,11 +72,6 @@ SITE_ID = 1
 USE_I18N = True
 INTERNAL_IPS = ('127.0.0.1',)
 
-TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader'
-)
-
 AUTHENTICATION_BACKENDS = (
     'mezzanine.core.auth_backends.MezzanineBackend',
     'django.contrib.auth.backends.ModelBackend'
@@ -123,17 +118,42 @@ LOGGING = {
     'disable_existing_loggers': True
 }
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-PROJECT_DIRNAME = PROJECT_ROOT.split(os.sep)[-1]
-if 'posix' not in os.name: CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_DIRNAME
-BASE_DIR = os.path.dirname(os.path.abspath(__file__)) if 'posix' not in os.name else os.path.abspath('store')
+BASE_DIR = PROJECT_ROOT = os.path.abspath('')
+CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_ROOT.split(os.sep)[-1]
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, *STATIC_URL.strip('/').split('/'))
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'public'),)
-MEDIA_URL = '/static/media/'
+STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip('/'))
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'store/public'),)
+MEDIA_URL = STATIC_URL + 'media/'
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip('/').split('/'))
 ROOT_URLCONF = 'store.urls'
-TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, 'templates'),)
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [ os.path.join(PROJECT_ROOT, 'templates') ],
+        'OPTIONS': {
+            'context_processors': [
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+                'django.core.context_processors.debug',
+                'django.core.context_processors.i18n',
+                'django.core.context_processors.static',
+                'django.core.context_processors.media',
+                'django.core.context_processors.request',
+                'django.core.context_processors.tz',
+                'mezzanine.conf.context_processors.settings',
+                'mezzanine.pages.context_processors.page'
+            ],
+            'loaders': [
+                'django.template.loaders.filesystem.Loader',
+                'django.template.loaders.app_directories.Loader'
+            ],
+            'builtins': [
+                'mezzanine.template.loader_tags',
+            ],
+        }
+    }
+]
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -157,7 +177,6 @@ INSTALLED_APPS = (
     'mezzanine.accounts',
     'shipping',
     'store',
-    'south',
     'gunicorn'
 )
 
@@ -169,19 +188,6 @@ EXTENSIONS = {
     'Audio': ['.mp3','.mp4','.wav','.aiff','.midi','.m4p'],
     'Code': ['.html','.py','.js','.css']
 }
-
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.contrib.auth.context_processors.auth',
-    'django.contrib.messages.context_processors.messages',
-    'django.core.context_processors.debug',
-    'django.core.context_processors.i18n',
-    'django.core.context_processors.static',
-    'django.core.context_processors.media',
-    'django.core.context_processors.request',
-    'django.core.context_processors.tz',
-    'mezzanine.conf.context_processors.settings',
-    'mezzanine.pages.context_processors.page'
-)
 
 MIDDLEWARE_CLASSES = (
     'mezzanine.core.middleware.UpdateCacheMiddleware',
