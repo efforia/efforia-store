@@ -6,7 +6,7 @@
 local_settings.py
 gunicorn*
 last*
-store/static
+/static
 /bin
 /env
 /obj/Debug

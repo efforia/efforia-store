@@ -4,7 +4,7 @@ services:
     image: postgres
   store:
     image: efforia/cartridge
-    command: bash -c "python manage.py collectstatic --noinput && python manage.py migrate --settings=\"store.production\" && gunicorn store.wsgi -b 0.0.0.0:8000"
+    command: deploy/entrypoint.sh
     working_dir: /app 
     volumes:
       - .:/app/
