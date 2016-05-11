@@ -2,7 +2,7 @@ version: '2'
 services:
   db:
     image: postgres
-  web:
+  store:
     image: efforia/cartridge
     command: bash -c "python manage.py collectstatic --noinput && python manage.py migrate --settings=\"store.production\" && gunicorn store.wsgi -b 0.0.0.0:8000"
     working_dir: /app 
@@ -22,6 +22,6 @@ services:
       - "80:80"
       - "443:443"
     links:
-      - web
+      - store
     depends_on:
-      - web
+      - store
