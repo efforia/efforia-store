@@ -12,9 +12,7 @@ COPY deploy/ports.conf /etc/apache2/ports.conf
 COPY deploy/envvars /etc/apache2/envvars
 RUN a2dissite 000-default && a2ensite django
 
-RUN apt-get install libffi-dev -y
-RUN apt-get install locales -y
-RUN apt-get install mime-support -y
+RUN apt-get install libffi-dev locales mime-support memcached -y
 RUN echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
 RUN locale-gen
 

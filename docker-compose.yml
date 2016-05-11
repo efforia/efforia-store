@@ -1,0 +1,27 @@
+version: '2'
+services:
+  db:
+    image: postgres
+  web:
+    image: efforia/cartridge
+    command: bash -c "python manage.py collectstatic --noinput && python manage.py migrate --settings=\"store.production\" && gunicorn store.wsgi -b 0.0.0.0:8000"
+    working_dir: /app 
+    volumes:
+      - .:/app/
+    links:
+      - db
+    depends_on:
+      - db
+  proxy:
+    image: nginx
+    volumes:
+      - .:/store/
+      - ./deploy/:/etc/nginx/conf.d/
+      - ./deploy/keys:/etc/nginx/keys/
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - web
+    depends_on:
+      - web
