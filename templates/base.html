@@ -18,6 +18,7 @@
 {% compress css %}
 <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
+<link rel="stylesheet" href="{% static "css/dropdown.css" %}">
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/rtl.css" %}">
 {% endif %}
@@ -86,7 +87,25 @@
         </ul>
       </div>
       <div id="collapsed" class="collapse navbar-collapse navbar-left none">
-        {% page_menu "pages/menus/dropdown.html" %}
+        <ul class="nav navbar-nav navbar-height navbar-padding nav-default">
+          <li class="dropdown menuitem">
+            <a id="hub" href="{% url 'hub' %}"> {% trans "HUB" %} </a>
+            <ul class="dropdown-menu menu"> {% include "hub/nav.html" %} </ul>
+          </li>
+          <li class="dropdown menuitem">
+            <a id="hubpro" href="{% url 'hubpro' %}"> {% trans "HUB Pro" %} </a>
+            <ul class="dropdown-menu menu"> {% include "hubpro/nav.html" %} </ul>
+          </li>
+          <li class="dropdown menuitem">
+            <a id="services" href="{% url 'about' %}"> {% trans "Services" %} </a>
+            <ul class="dropdown-menu menu"> {% include "services/nav.html" %} </ul>
+          </li>
+          <li class="dropdown menuitem">
+            <a id="help" href="{% url 'support' %}"> {% trans "Help" %} </a>
+            <ul class="dropdown-menu menu"> {% include "help/nav.html" %} </ul>
+          </li>
+          {% page_menu "pages/menus/dropdown.html" %}
+        </ul>
         <div class="visible-xs visible-sm centered"> {% include "includes/search_form.html" %} </div>
       </div>
       <div id="profile" class="navbar-right navbar-cart hidden-xs hidden-sm">
