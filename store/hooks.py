@@ -54,7 +54,7 @@ def fretefacil_shipping_handler(request, form, order=None):
     if request.session.get("free_shipping"): return
     settings.use_editable()
     if form is not None: user_postcode = form.cleaned_data['shipping_detail_postcode']
-    else: user_postcode = settings.STORE_POSTCODE 
+    else: user_postcode = settings.STORE_POSTCODE
     shippingservice = FreteFacilShippingService()
     cart = Cart.objects.from_request(request)
     delivery_value = 0.0
@@ -93,7 +93,7 @@ def sedex_shipping_handler(request, form, order=None):
     if request.session.get("free_shipping"): return
     settings.use_editable()
     if form is not None: user_postcode = form.cleaned_data['shipping_detail_postcode']
-    else: user_postcode = settings.STORE_POSTCODE 
+    else: user_postcode = settings.STORE_POSTCODE
     shippingservice = CorreiosShippingService()
     cart = Cart.objects.from_request(request)
     delivery_value = 0.0
@@ -115,7 +115,7 @@ def sedex_shipping_handler(request, form, order=None):
 
 def paypal_api():
 	try:
-		if settings.PAYPAL_SANDBOX_MODE: 
+		if settings.PAYPAL_SANDBOX_MODE:
 			mode = 'sandbox'
 			client_id = settings.PAYPAL_SANDBOX_CLIENT_ID
 			client_secret = settings.PAYPAL_SANDBOX_CLIENT_SECRET
@@ -136,7 +136,7 @@ def paypal_api():
 
 def pagseguro_api():
 	try:
-		if settings.PAGSEGURO_SANDBOX_MODE: 
+		if settings.PAGSEGURO_SANDBOX_MODE:
 			email = settings.PAGSEGURO_SANDBOX_EMAIL_COBRANCA
 			token = settings.PAGSEGURO_SANDBOX_TOKEN
 		else:
@@ -155,10 +155,12 @@ def multiple_payment_handler(request, order_form, order):
 	data = order_form.cleaned_data
 	shipping = order.shipping_total
 	code = CorreiosCode()
-	shipping_data = code.consulta(order.billing_detail_postcode)[0]
-	order.billing_detail_street  = '%s %s' % (shipping_data['Logradouro'],data['billing_detail_complement'])
-	order.billing_detail_city    = shipping_data['Localidade']
-	order.billing_detail_state   = shipping_data['UF']
+	shipping_data = code.consulta(order.billing_detail_postcode)
+	order.billing_detail_street  = '%s %s %s' % (shipping_data['tipo_logradouro'],
+												 shipping_data['logradouro'],
+												 data['billing_detail_complement'])
+	order.billing_detail_city    = shipping_data['cidade']
+	order.billing_detail_state   = shipping_data['uf']
 	order.billing_detail_country = settings.STORE_COUNTRY
 	order.save()
 	cart = Cart.objects.from_request(request)
@@ -201,9 +203,9 @@ def pagseguro_payment(request,items,price,order):
 	server_host = request.get_host()
 	payment = pagseguro_api()
 	for product in items:
-		payment.add_item(id=product['sku'], 
-        				 description=product['name'], 
-        				 amount=product['price'], 
+		payment.add_item(id=product['sku'],
+        				 description=product['name'],
+        				 amount=product['price'],
         				 quantity=product['quantity'])
 	payment.redirect_url = "http://%s/store/execute" % server_host
 	payment.reference_prefix = None
