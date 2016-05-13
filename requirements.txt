@@ -6,7 +6,7 @@ dj-static==0.0.6
 django-crispy-forms==1.6.0
 django-feedly==0.6.4
 django-pure-pagination==0.3.0
-django-ship==0.2.2
+django-ship==0.2.3
 django-social-auth==0.7.28
 django-socialize==0.5.0
 django-storages==1.1.8
