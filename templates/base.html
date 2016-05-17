@@ -89,17 +89,17 @@
       <div id="collapsed" class="collapse navbar-collapse navbar-left none">
         <ul class="nav navbar-nav navbar-height navbar-padding nav-default">
           <li class="dropdown menuitem">
-            <a id="hub" href="{% url 'hub' %}"> {% trans "HUB" %} </a>
-            <ul class="dropdown-menu menu"> {% include "hub/nav.html" %} </ul>
-          </li>
-          <li class="dropdown menuitem">
-            <a id="hubpro" href="{% url 'hubpro' %}"> {% trans "HUB Pro" %} </a>
+            <a id="hubpro" href="{% url 'hubpro' %}"> {% trans "TV" %} </a>
             <ul class="dropdown-menu menu"> {% include "hubpro/nav.html" %} </ul>
           </li>
           <li class="dropdown menuitem">
+            <a id="hub" href="{% url 'hub' %}"> {% trans "HUB" %} </a>
+            <ul class="dropdown-menu menu"> {% include "hub/nav.html" %} </ul>
+          </li>
+          <!--<li class="dropdown menuitem">
             <a id="services" href="{% url 'about' %}"> {% trans "Services" %} </a>
             <ul class="dropdown-menu menu"> {% include "services/nav.html" %} </ul>
-          </li>
+          </li>!-->
           <li class="dropdown menuitem">
             <a id="help" href="{% url 'support' %}"> {% trans "Help" %} </a>
             <ul class="dropdown-menu menu"> {% include "help/nav.html" %} </ul>
