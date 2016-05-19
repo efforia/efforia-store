@@ -46,8 +46,8 @@
 <link rel="stylesheet" href="{% static "css/efforia.css" %}">
 <link rel="stylesheet" href="{% static "css/main.css" %}">
 <style>
-@font-face { font-family: "Ubuntu"; src: url("{% static "fonts/ubuntul.ttf" %}"); }
-@font-face { font-family: "Ubuntu"; src: url("{% static "fonts/ubuntu-bold.ttf" %}"); font-weight: bold; }
+@font-face { font-family: "Ubuntu"; src: url("{% static "ttf/ubuntu-l.ttf" %}"); }
+@font-face { font-family: "Ubuntu"; src: url("{% static "ttf/ubuntu-b.ttf" %}"); font-weight: bold; }
 </style>
 
 {% block header %}{% endblock %}
@@ -89,12 +89,12 @@
       <div id="collapsed" class="collapse navbar-collapse navbar-left none">
         <ul class="nav navbar-nav navbar-height navbar-padding nav-default">
           <li class="dropdown menuitem">
-            <a id="hubpro" href="{% url 'hubpro' %}"> {% trans "TV" %} </a>
-            <ul class="dropdown-menu menu"> {% include "hubpro/nav.html" %} </ul>
-          </li>
-          <li class="dropdown menuitem">
             <a id="hub" href="{% url 'hub' %}"> {% trans "HUB" %} </a>
             <ul class="dropdown-menu menu"> {% include "hub/nav.html" %} </ul>
+          </li>
+          <li class="dropdown menuitem">
+            <a id="hubpro" href="{% url 'hubpro' %}"> {% trans "TV" %} </a>
+            <ul class="dropdown-menu menu"> {% include "hubpro/nav.html" %} </ul>
           </li>
           <!--<li class="dropdown menuitem">
             <a id="services" href="{% url 'about' %}"> {% trans "Services" %} </a>
