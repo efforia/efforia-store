@@ -89,6 +89,10 @@
       <div id="collapsed" class="collapse navbar-collapse navbar-left none">
         <ul class="nav navbar-nav navbar-height navbar-padding nav-default">
           <li class="dropdown menuitem">
+            <a id="hub" href="{% url 'hub' %}"> {% trans "ATOM" %} </a>
+            <ul class="dropdown-menu menu"> Em breve </ul>
+          </li>
+          <li class="dropdown menuitem">
             <a id="hub" href="{% url 'hub' %}"> {% trans "HUB" %} </a>
             <ul class="dropdown-menu menu"> {% include "hub/nav.html" %} </ul>
           </li>
@@ -101,7 +105,7 @@
             <ul class="dropdown-menu menu"> {% include "services/nav.html" %} </ul>
           </li>!-->
           <li class="dropdown menuitem">
-            <a id="help" href="{% url 'support' %}"> {% trans "Help" %} </a>
+            <a id="help" href="{% url 'support' %}"> {% trans "Support" %} </a>
             <ul class="dropdown-menu menu"> {% include "help/nav.html" %} </ul>
           </li>
           {% page_menu "pages/menus/dropdown.html" %}
