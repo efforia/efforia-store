@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-07 04:57-0200\n"
+"POT-Creation-Date: 2016-05-25 10:33-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,507 +17,257 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: store/forms.py:17
-msgid "My delivery details are the same as my billing details"
-msgstr ""
-
-#: store/hooks.py:73 store/hooks.py:114
-msgid "Correios"
-msgstr ""
-
-#: store/hooks.py:127
-msgid ""
-"Credenciais de acesso ao paypal estao faltando, isso inclui "
-"PAYPAL_SANDBOX_MODE, PAYPAL_CLIENT_ID e PAYPAL_CLIENT_SECRET basta inclui-"
-"las no settings.py para serem utilizadas no processador de pagamentos do "
-"paypal."
-msgstr ""
-
-#: store/hooks.py:146
-msgid ""
-"Credenciais de acesso ao pagseguro estao faltando, isso inclui "
-"PAGSEGURO_SANDBOX_MODE, PAGSEGURO_CLIENT_ID e PAGSEGURO_CLIENT_SECRET basta "
-"inclui-las no settings.py para serem utilizadas no processador de pagamentos "
-"do pagseguro."
-msgstr ""
-
-#: store/production.py:65 store/settings.py:65
-msgid "Brazilian Portuguese"
-msgstr ""
-
-#: store/production.py:66 store/settings.py:66
-msgid "Argentinian Spanish"
-msgstr ""
-
-#: store/production.py:67 store/settings.py:67
-msgid "English"
-msgstr ""
-
-#: store/urls.py:15
-msgid "^shop/volumes/"
-msgstr ""
-
-#: store/urls.py:16
-msgid "^shop/"
-msgstr ""
-
-#: store/urls.py:28
-msgid "^hub/design"
-msgstr ""
-
-#: store/urls.py:29
-msgid "^hub/iot"
-msgstr ""
-
-#: store/urls.py:30
-msgid "^hub/eos"
-msgstr ""
-
-#: store/urls.py:31
-msgid "^hub/sensors"
-msgstr ""
-
-#: store/urls.py:34
-#, fuzzy
-msgid "^hubpro/eosd"
-msgstr "^usos/"
-
-#: store/urls.py:35
-msgid "^hubpro/mediacenter"
-msgstr ""
-
-#: store/urls.py:36
-msgid "^hubpro/videogame"
-msgstr ""
-
-#: store/urls.py:37
-#, fuzzy
-msgid "^hubpro/server"
-msgstr "^usos/"
-
-#: store/urls.py:38
-msgid "^hubpro/"
-msgstr ""
-
-#: store/urls.py:40
-#, fuzzy
-msgid "^services/plans"
-msgstr "Serviços"
-
-#: store/urls.py:41
-#, fuzzy
-msgid "^services/cloud"
-msgstr "Serviços"
-
-#: store/urls.py:42
-msgid "^services/partners"
-msgstr ""
-
-#: store/urls.py:43
-#, fuzzy
-msgid "^services/apps"
-msgstr "Serviços"
-
-#: store/urls.py:44
-#, fuzzy
-msgid "^services/"
-msgstr "Serviços"
-
-#: store/urls.py:46
-msgid "^help/localization"
-msgstr ""
-
-#: store/urls.py:47
-msgid "^help/warranty"
-msgstr ""
-
-#: store/urls.py:48
-msgid "^help/documentation"
-msgstr ""
-
-#: store/urls.py:49
-msgid "^help/developer"
-msgstr ""
-
-#: store/urls.py:50
-msgid "^help/"
-msgstr ""
-
-#: store/templates/base.html:69
-msgid "Toggle Navigation"
-msgstr ""
-
-#: store/templates/base.html:118 store/templates/base.html.py:123
-msgid "+5551 9848 5888"
-msgstr "(51) 9848-5888"
-
-#: store/templates/base.html:120
-msgid "+5551 3516 2367"
-msgstr "(51) 3516-2367"
-
-#: store/templates/index.html:25 store/templates/index.html.py:26
-msgid "WE ARE"
-msgstr "SOMOS A"
-
-#: store/templates/index.html:25
-msgid "EFFORIA NANOCOMPUTERS"
-msgstr "EFFORIA NANOCOMPUTADORES"
-
-#: store/templates/index.html:30
-msgid "And we want the computers present at every moment of people's lives"
-msgstr ""
-"E queremos a computação presente em todos os momentos da vida das pessoas"
-
-#: store/templates/index.html:39 store/templates/hubpro/mediacenter.html:10
-#: store/templates/hubpro/nav.html:4
-msgid "Audiovisual"
-msgstr "Audiovisual"
-
-#: store/templates/index.html:40
-msgid ""
-"At Efforia we design and build automated audiovisual systems, all wirelessly "
-"connected and tightly integrated."
-msgstr ""
-"Na Efforia nós projetamos e montamos sistemas audiovisuais automatizados, "
-"todos conectados sem fio e muito bem integrados."
-
-#: store/templates/index.html:44 store/templates/hubpro/nav.html:5
-msgid "Entertainment"
-msgstr "Entretenimento"
-
-#: store/templates/index.html:45
-msgid ""
-"We also develop full-featured entertainment systems, ready to play every "
-"video content, music, or videogame."
-msgstr ""
-"Nós também desenvolvemos sistemas de entretenimento completos, prontos para "
-"reproduzir qualquer vídeo, música ou vídeogame."
-
-#: store/templates/index.html:49 store/templates/services/nav.html:5
-msgid "Automation"
-msgstr "Automação"
-
-#: store/templates/index.html:50
-msgid ""
-"At the heart of our nanocomputers, we have the IoT concept, reaching the "
-"next level of automation."
-msgstr ""
-"No coração de nossos nanocomputadores, há o conceito da Internet das Coisas, "
-"alcançando assim a próxima nível da automação."
-
-#: store/templates/index.html:61 store/templates/index.html.py:68
-msgid "Homes"
-msgstr "Casas"
-
-#: store/templates/index.html:62 store/templates/index.html.py:69
-msgid ""
-"We automate houses with our own finest technology of IoT, connecting your "
-"home to the world."
-msgstr ""
-"Nós automatizamos casas com a nossa melhor tecnologia em IoT, conectando o "
-"seular ao mundo."
-
-#: store/templates/index.html:78 store/templates/index.html.py:84
-msgid "Enterprises"
-msgstr "Empresas"
-
-#: store/templates/index.html:79 store/templates/index.html.py:85
-msgid ""
-"With the Internet of Things platform of Efforia, your company will have the "
-"power to do more."
-msgstr ""
-"Com a plataforma da Internet das Coisas da Efforia, sua empresa terá o poder "
-"de fazer muito mais."
-
-#: store/templates/index.html:96 store/templates/includes/sitemap.html:7
-#: store/templates/pages/menus/dropdown.html:10
-msgid "HUB"
-msgstr "HUB"
-
-#: store/templates/index.html:97
-msgid ""
-"Know more about our efficient solution for Internet of Things automation and "
-"its numerous possibilities."
-msgstr ""
-"Saiba mais sobre a nossa solução eficiente de automação em Internet das "
-"Coisas e suas inúmeras possibilidades."
-
-#: store/templates/index.html:101 store/templates/includes/sitemap.html:15
-#: store/templates/pages/menus/dropdown.html:18
-msgid "Services"
-msgstr "Serviços"
-
-#: store/templates/index.html:102
-msgid ""
-"Ultimate services and plans that we can do more for you at Efforia "
-"Nanocomputers."
-msgstr ""
-"Os melhores serviços e planos que podemos oferecer a você na Efforia "
-"Nanocomputadores."
-
-#: store/templates/index.html:106 store/templates/includes/sitemap.html:11
-#: store/templates/pages/menus/dropdown.html:14
-msgid "HUB Pro"
-msgstr "HUB Pro"
-
-#: store/templates/index.html:107
-msgid ""
-"Discover about our outstanding solution for Internet of Things automation "
-"and its infinite possibilities."
-msgstr ""
-"Descubra mais sobre nossa incrível solução para automação baseada em IoT e "
-"suas infinitas possibilidades."
-
-#: store/templates/search_results.html:5 store/templates/search_results.html:6
-#: store/templates/search_results.html:15
-msgid "Search Results"
-msgstr "Resultados da busca"
-
-#: store/templates/search_results.html:13 store/templates/help/base.html:10
-#: store/templates/hub/base.html:15 store/templates/hub/index.html:40
-#: store/templates/hubpro/base.html:15 store/templates/hubpro/index.html:36
-#: store/templates/pages/menus/breadcrumb.html:4
-#: store/templates/pages/menus/breadcrumb.html:10
-#: store/templates/pages/menus/footer_tree.html:11
-#: store/templates/pages/menus/mobile.html:10
-#: store/templates/pages/menus/primary.html:8
-#: store/templates/pages/menus/tree.html:9
-#: store/templates/services/base.html:13
-msgid "Home"
-msgstr "Casas"
-
-#: store/templates/search_results.html:22
-#, python-format
-msgid ""
-"\n"
-"No results were found in %(search_type)s matching your query: %(query)s\n"
-msgstr ""
-
-#: store/templates/search_results.html:26
-#, python-format
-msgid ""
-"\n"
-"Showing %(start)s to %(end)s of %(total)s results in %(search_type)s "
-"matching your query: %(query)s\n"
-msgstr ""
-
-#: store/templates/search_results.html:37
-#: store/templates/blog/blog_post_list.html:128
-msgid "read more"
-msgstr ""
-
-#: store/templates/accounts/account_login.html:7
+#: templates/accounts/account_login.html:7
 msgid ""
 "You're already logged in. If you'd like to log in as a different user, "
 "you'll need to log out first."
 msgstr ""
 
-#: store/templates/accounts/account_login.html:11
+#: templates/accounts/account_login.html:11
 #, python-format
 msgid ""
 "If you don't have an account you can <a href=\"%(signup_url)s?next=%(next)s"
 "\">sign up</a> for one now."
 msgstr ""
 
-#: store/templates/accounts/account_login.html:14
+#: templates/accounts/account_login.html:14
 #, python-format
 msgid ""
 "<p>You can also <a href=\"%(password_reset_url)s?next=%(profile_update_url)s"
 "\">reset your password</a> if you've forgotten it.</p>"
 msgstr ""
 
-#: store/templates/accounts/account_password_reset.html:6
+#: templates/accounts/account_password_reset.html:6
 msgid ""
 "Enter your username or email address and you'll receive an email with a link "
 "you need to click, in order to log in and change your password."
 msgstr ""
 
-#: store/templates/accounts/account_profile.html:18
-#: store/templates/accounts/includes/user_panel.html:5
+#: templates/accounts/account_profile.html:18
+#: templates/accounts/includes/user_panel.html:5
 msgid "Update profile"
 msgstr ""
 
-#: store/templates/accounts/account_signup.html:7
+#: templates/accounts/account_signup.html:7
 msgid ""
 "You're already logged in. If you'd like to create a new account, you'll need "
 "to log out first."
 msgstr ""
 
-#: store/templates/accounts/account_signup.html:11
+#: templates/accounts/account_signup.html:11
 msgid ""
 "After signing up, your account will be reviewed for approval. You'll receive "
 "an email when your account is activated."
 msgstr ""
 
-#: store/templates/accounts/account_signup.html:13
+#: templates/accounts/account_signup.html:13
 msgid ""
 "After signing up, you'll receive an email with a link you need to click, in "
 "order to activate your account."
 msgstr ""
 
-#: store/templates/accounts/includes/user_panel.html:7
-#: store/templates/accounts/includes/user_panel_nav.html:11
-#: store/templates/includes/editable_toolbar.html:9
+#: templates/accounts/includes/user_panel.html:7
+#: templates/accounts/includes/user_panel_nav.html:11
+#: templates/includes/editable_toolbar.html:9
 msgid "Log out"
 msgstr ""
 
-#: store/templates/accounts/includes/user_panel.html:10
-#: store/templates/accounts/includes/user_panel_nav.html:14
+#: templates/accounts/includes/user_panel.html:10
+#: templates/accounts/includes/user_panel_nav.html:14
 msgid "Log in"
 msgstr ""
 
-#: store/templates/accounts/includes/user_panel.html:12
-#: store/templates/accounts/includes/user_panel_nav.html:16
+#: templates/accounts/includes/user_panel.html:12
+#: templates/accounts/includes/user_panel_nav.html:16
 msgid "Sign up"
 msgstr ""
 
-#: store/templates/blog/blog_post_detail.html:29
-#: store/templates/blog/blog_post_list.html:83
+#: templates/base.html:70
+msgid "Toggle Navigation"
+msgstr ""
+
+#: templates/base.html:92
+msgid "ATOM"
+msgstr ""
+
+#: templates/base.html:96 templates/includes/sitemap.html:7
+#: templates/index.html:96
+msgid "HUB"
+msgstr "HUB"
+
+#: templates/base.html:100 templates/includes/sitemap.html:11
+#: templates/index.html:106 templates/services/plans.html:62
+msgid "TV"
+msgstr ""
+
+#: templates/base.html:104 templates/includes/sitemap.html:15
+#: templates/index.html:101
+msgid "Services"
+msgstr "Serviços"
+
+#: templates/base.html:108
+msgid "Support"
+msgstr "Suporte"
+
+#: templates/base.html:141 templates/base.html:146
+msgid "+5551 9848 5888"
+msgstr "(51) 9848-5888"
+
+#: templates/base.html:143
+#, fuzzy
+#| msgid "+5551 9848 5888"
+msgid "+5551 4042 3888"
+msgstr "(51) 9848-5888"
+
+#: templates/blog/blog_post_detail.html:29
+#: templates/blog/blog_post_list.html:83
 msgid "Posted by"
 msgstr ""
 
-#: store/templates/blog/blog_post_detail.html:33
-#: store/templates/blog/blog_post_list.html:95
-#: store/templates/generic/includes/comment.html:22
-#: store/templates/generic/includes/comment.html:59
-#: store/templates/twitter/tweets.html:19
+#: templates/blog/blog_post_detail.html:33
+#: templates/blog/blog_post_list.html:95
+#: templates/generic/includes/comment.html:22
+#: templates/generic/includes/comment.html:59 templates/twitter/tweets.html:19
 #, python-format
 msgid "%(sometime)s ago"
 msgstr ""
 
-#: store/templates/blog/blog_post_detail.html:43
-#: store/templates/blog/blog_post_list.html:134
-#: store/templates/generic/includes/comments.html:3
+#: templates/blog/blog_post_detail.html:43
+#: templates/blog/blog_post_list.html:134
+#: templates/generic/includes/comments.html:3
 msgid "Comments"
 msgstr ""
 
-#: store/templates/blog/blog_post_detail.html:46
-#: store/templates/blog/blog_post_list.html:138
+#: templates/blog/blog_post_detail.html:46
+#: templates/blog/blog_post_list.html:138
 #, python-format
 msgid "%(comments_count)s comment"
 msgid_plural "%(comments_count)s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: store/templates/blog/blog_post_detail.html:74
-#: store/templates/blog/blog_post_list.html:119
-#: store/templates/blog/includes/filter_panel.html:48
+#: templates/blog/blog_post_detail.html:74
+#: templates/blog/blog_post_list.html:119
+#: templates/blog/includes/filter_panel.html:48
 msgid "Tags"
 msgstr ""
 
-#: store/templates/blog/blog_post_detail.html:93
+#: templates/blog/blog_post_detail.html:93
 msgid "Share on Twitter"
 msgstr ""
 
-#: store/templates/blog/blog_post_detail.html:94
+#: templates/blog/blog_post_detail.html:94
 msgid "Share on Facebook"
 msgstr ""
 
-#: store/templates/blog/blog_post_detail.html:119
+#: templates/blog/blog_post_detail.html:119
 msgid "Related posts"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:4
-#: store/templates/blog/blog_post_list.html:22
+#: templates/blog/blog_post_list.html:4 templates/blog/blog_post_list.html:22
 msgid "Blog"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:31
+#: templates/blog/blog_post_list.html:31
 msgid "Tag:"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:33
+#: templates/blog/blog_post_list.html:33
 msgid "Category:"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:37
+#: templates/blog/blog_post_list.html:37
 msgid "Author:"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:50
+#: templates/blog/blog_post_list.html:50
 msgid "Viewing posts tagged"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:52
+#: templates/blog/blog_post_list.html:52
 msgid "Viewing posts for the category"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:54
+#: templates/blog/blog_post_list.html:54
 msgid "Viewing posts from"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:57
+#: templates/blog/blog_post_list.html:57
 msgid "Viewing posts by"
 msgstr ""
 
-#: store/templates/blog/blog_post_list.html:89
+#: templates/blog/blog_post_list.html:89
 msgid "in"
 msgstr ""
 
-#: store/templates/blog/includes/filter_panel.html:6
+#: templates/blog/blog_post_list.html:128 templates/search_results.html:37
+msgid "read more"
+msgstr ""
+
+#: templates/blog/includes/filter_panel.html:6
 msgid "Recent Posts"
 msgstr ""
 
-#: store/templates/blog/includes/filter_panel.html:19
+#: templates/blog/includes/filter_panel.html:19
 msgid "Archive"
 msgstr ""
 
-#: store/templates/blog/includes/filter_panel.html:35
+#: templates/blog/includes/filter_panel.html:35
 msgid "Categories"
 msgstr ""
 
-#: store/templates/blog/includes/filter_panel.html:64
+#: templates/blog/includes/filter_panel.html:64
 msgid "Authors"
 msgstr ""
 
-#: store/templates/blog/includes/filter_panel.html:76
+#: templates/blog/includes/filter_panel.html:76
 msgid "Feeds"
 msgstr ""
 
-#: store/templates/blog/includes/filter_panel.html:78
-#: store/templates/blog/includes/filter_panel.html:82
-#: store/templates/blog/includes/filter_panel.html:86
-#: store/templates/blog/includes/filter_panel.html:90
+#: templates/blog/includes/filter_panel.html:78
+#: templates/blog/includes/filter_panel.html:82
+#: templates/blog/includes/filter_panel.html:86
+#: templates/blog/includes/filter_panel.html:90
 msgid "RSS"
 msgstr ""
 
-#: store/templates/blog/includes/filter_panel.html:79
-#: store/templates/blog/includes/filter_panel.html:83
-#: store/templates/blog/includes/filter_panel.html:87
-#: store/templates/blog/includes/filter_panel.html:91
+#: templates/blog/includes/filter_panel.html:79
+#: templates/blog/includes/filter_panel.html:83
+#: templates/blog/includes/filter_panel.html:87
+#: templates/blog/includes/filter_panel.html:91
 msgid "Atom"
 msgstr ""
 
-#: store/templates/email/account_approve.html:3
+#: templates/email/account_approve.html:3
 msgid "Hey there, a new account has been created and requires activation."
 msgstr ""
 
-#: store/templates/email/account_approve.html:5
+#: templates/email/account_approve.html:5
 msgid "Name"
 msgstr ""
 
-#: store/templates/email/account_approve.html:6
+#: templates/email/account_approve.html:6
 msgid "Email"
 msgstr ""
 
-#: store/templates/email/account_approve.html:11
-#: store/templates/email/signup_verify.html:4
+#: templates/email/account_approve.html:11
+#: templates/email/signup_verify.html:4
 msgid "Please use the link below to activate it."
 msgstr ""
 
-#: store/templates/email/account_approved.html:3
+#: templates/email/account_approved.html:3
 msgid "Hey there, your account has been activated."
 msgstr ""
 
-#: store/templates/email/account_approved.html:4
+#: templates/email/account_approved.html:4
 msgid "Please use the link below to log in."
 msgstr ""
 
-#: store/templates/email/comment_notification.html:6
+#: templates/email/comment_notification.html:6
 msgid "A new comment has been posted on"
 msgstr ""
 
-#: store/templates/email/comment_notification.html:10
+#: templates/email/comment_notification.html:10
 #, python-format
 msgid ""
 "\n"
@@ -525,102 +275,111 @@ msgid ""
 "    "
 msgstr ""
 
-#: store/templates/email/password_reset_verify.html:3
+#: templates/email/password_reset_verify.html:3
 msgid "Hey there, the password reset form was used for your account."
 msgstr ""
 
-#: store/templates/email/password_reset_verify.html:4
+#: templates/email/password_reset_verify.html:4
 msgid "Please use the link below to log in and update your password."
 msgstr ""
 
-#: store/templates/email/password_reset_verify.html:6
+#: templates/email/password_reset_verify.html:6
 msgid ""
 "If you didn't request for your password to be reset, please ignore this "
 "email."
 msgstr ""
 
-#: store/templates/email/receipt.html:3
-#: store/templates/email/receipt_rtl.html:3
+#: templates/email/receipt.html:3 templates/email/receipt_rtl.html:3
 msgid "Dear"
 msgstr ""
 
-#: store/templates/email/receipt.html:4
-#: store/templates/email/receipt_rtl.html:4
+#: templates/email/receipt.html:4 templates/email/receipt_rtl.html:4
 msgid "Your order has been successful, details are below."
 msgstr ""
 
-#: store/templates/email/signup_verify.html:3
+#: templates/email/signup_verify.html:3
 msgid "Hey there, thanks for creating your account."
 msgstr ""
 
-#: store/templates/errors/404.html:6 store/templates/errors/404.html.py:10
-#: store/templates/errors/404.html:15
+#: templates/errors/404.html:6 templates/errors/404.html:10
+#: templates/errors/404.html:15
 msgid "Page not found"
 msgstr ""
 
-#: store/templates/errors/404.html:16
+#: templates/errors/404.html:16
 msgid "The page you requested does not exist."
 msgstr ""
 
-#: store/templates/errors/500.html:6 store/templates/errors/500.html.py:10
-#: store/templates/errors/500.html:15
+#: templates/errors/500.html:6 templates/errors/500.html:10
+#: templates/errors/500.html:15
 msgid "Error"
 msgstr ""
 
-#: store/templates/errors/500.html:16
+#: templates/errors/500.html:16
 msgid "Sorry, an error occurred."
 msgstr ""
 
-#: store/templates/generic/includes/comment.html:30
+#: templates/generic/includes/comment.html:30
 msgid "Link"
 msgstr ""
 
-#: store/templates/generic/includes/comment.html:33
-#: store/templates/generic/includes/comment.html:49
+#: templates/generic/includes/comment.html:33
+#: templates/generic/includes/comment.html:49
 msgid "Reply"
 msgstr ""
 
-#: store/templates/generic/includes/comment.html:55
+#: templates/generic/includes/comment.html:55
 msgid "Comment deleted"
 msgstr ""
 
-#: store/templates/generic/includes/comment.html:57
+#: templates/generic/includes/comment.html:57
 msgid "Comment awaiting approval"
 msgstr ""
 
-#: store/templates/generic/includes/comment.html:71
+#: templates/generic/includes/comment.html:71
 msgid "There are currently no comments"
 msgstr ""
 
-#: store/templates/generic/includes/comments.html:17
+#: templates/generic/includes/comments.html:17
 msgid "New Comment"
 msgstr ""
 
-#: store/templates/generic/includes/comments.html:25
+#: templates/generic/includes/comments.html:25
 msgid "Comment"
 msgstr ""
 
-#: store/templates/generic/includes/rating.html:5
+#: templates/generic/includes/rating.html:5
 msgid "Current rating"
 msgstr ""
 
-#: store/templates/generic/includes/rating.html:7
+#: templates/generic/includes/rating.html:7
 msgid "Currently unrated"
 msgstr ""
 
-#: store/templates/generic/includes/rating.html:17
+#: templates/generic/includes/rating.html:17
 msgid "Rate"
 msgstr ""
 
-#: store/templates/help/developer.html:10
+#: templates/help/base.html:10 templates/hub/base.html:15
+#: templates/hub/index.html:40 templates/hubpro/base.html:15
+#: templates/hubpro/index.html:36 templates/pages/menus/breadcrumb.html:4
+#: templates/pages/menus/breadcrumb.html:10
+#: templates/pages/menus/footer_tree.html:11
+#: templates/pages/menus/mobile.html:10 templates/pages/menus/primary.html:8
+#: templates/pages/menus/tree.html:9 templates/search_results.html:13
+#: templates/services/base.html:13
+msgid "Home"
+msgstr "Casas"
+
+#: templates/help/developer.html:10
 msgid "Desenvolvedor"
 msgstr ""
 
-#: store/templates/help/developer.html:12
+#: templates/help/developer.html:12
 msgid "Uma plataforma cheia de oportunidades para o desenvolvedor"
 msgstr ""
 
-#: store/templates/help/developer.html:13
+#: templates/help/developer.html:13
 msgid ""
 " Com a tecnologia exclusiva EOS, o desenvolvedor possui diversas vantagens\n"
 "        que facilitam o trabalho de criação de novos serviços e aplicativos. "
@@ -636,11 +395,11 @@ msgid ""
 "        distribuída. "
 msgstr ""
 
-#: store/templates/help/developer.html:31
+#: templates/help/developer.html:31
 msgid "Docker"
 msgstr ""
 
-#: store/templates/help/developer.html:32
+#: templates/help/developer.html:32
 msgid ""
 " É um serviço que disponibiliza virtualização leve para todos os "
 "nanocomputadores.\n"
@@ -657,11 +416,11 @@ msgid ""
 "          na configuração de bancos de dados e servidores web. "
 msgstr ""
 
-#: store/templates/help/developer.html:43
+#: templates/help/developer.html:43
 msgid "Fabric"
 msgstr ""
 
-#: store/templates/help/developer.html:44
+#: templates/help/developer.html:44
 msgid ""
 " Com o serviço de implantação Fabric, é possível automatizar toda a "
 "instalação\n"
@@ -677,11 +436,11 @@ msgid ""
 "plataforma. "
 msgstr ""
 
-#: store/templates/help/developer.html:65
+#: templates/help/developer.html:65
 msgid "Remote"
 msgstr ""
 
-#: store/templates/help/developer.html:66
+#: templates/help/developer.html:66
 msgid ""
 " O Remote mostra-se essencial para o acesso e administração remota de\n"
 "          seu nanocomputador. Dispondo de serviço remoto de linha de comando "
@@ -695,11 +454,11 @@ msgid ""
 "          componentes no equipamento com a tecnologia EOS. "
 msgstr ""
 
-#: store/templates/help/developer.html:77
+#: templates/help/developer.html:77
 msgid "Runtime"
 msgstr ""
 
-#: store/templates/help/developer.html:78
+#: templates/help/developer.html:78
 msgid ""
 " Com o Runtime, é possível realizar a execução de diversas linguagens de\n"
 "          programação em seu nanocomputador. O EOS vem preparado para ser "
@@ -715,11 +474,11 @@ msgid ""
 "          ao viabilizar diversas tecnologias. "
 msgstr ""
 
-#: store/templates/help/developer.html:100
+#: templates/help/developer.html:100
 msgid "Build"
 msgstr ""
 
-#: store/templates/help/developer.html:101
+#: templates/help/developer.html:101
 msgid ""
 " Tem um projeto grande demais para compilar com apenas um nanocomputador?\n"
 "          Não se preocupe, o EOS conta com um sistema de compilação "
@@ -731,11 +490,11 @@ msgid ""
 "          e computadores com a ferramenta EOS SDK instalada. "
 msgstr ""
 
-#: store/templates/help/developer.html:110
+#: templates/help/developer.html:110
 msgid "EOS SDK"
 msgstr ""
 
-#: store/templates/help/developer.html:111
+#: templates/help/developer.html:111
 msgid ""
 " Disponibilizamos um kit de programação de aplicativos para a plataforma\n"
 "          EOS. Neste conjunto há bibliotecas que compõem uma pequena camada "
@@ -749,15 +508,15 @@ msgid ""
 "          Build. "
 msgstr ""
 
-#: store/templates/help/developer.html:123
+#: templates/help/developer.html:123
 msgid "O SDK pode ser encontrado em nossa página do GitHub, e a VM pelo link:"
 msgstr ""
 
-#: store/templates/help/developer.html:136
+#: templates/help/developer.html:136
 msgid "Desenvolva uma vez, rode em todos os lugares"
 msgstr ""
 
-#: store/templates/help/developer.html:137
+#: templates/help/developer.html:137
 msgid ""
 " O EOS garante a interoperabilidade de seus aplicativos através de "
 "ferramentas\n"
@@ -770,12 +529,12 @@ msgid ""
 "      propriamente dito. "
 msgstr ""
 
-#: store/templates/help/documentation.html:10
+#: templates/help/documentation.html:10
 #, fuzzy
 msgid "Documentação"
 msgstr "Documentação"
 
-#: store/templates/help/documentation.html:11
+#: templates/help/documentation.html:11
 msgid ""
 " Neste local, disponibilizamos todo o material essencial para\n"
 "        que você possa desfrutar o máximo de nossos equipamentos. Para "
@@ -784,11 +543,11 @@ msgid ""
 "nanocomputadores. "
 msgstr ""
 
-#: store/templates/help/documentation.html:21
+#: templates/help/documentation.html:21
 msgid "Guia de Início Rápido"
 msgstr ""
 
-#: store/templates/help/documentation.html:22
+#: templates/help/documentation.html:22
 msgid ""
 " Este guia demonstra os primeiros passos ao utilizar um de nossos "
 "nanocomputadores.\n"
@@ -801,181 +560,181 @@ msgid ""
 "      doméstico, ou corporativo. "
 msgstr ""
 
-#: store/templates/help/documentation.html:35
+#: templates/help/documentation.html:35
 msgid "O que vem na embalagem?"
 msgstr ""
 
-#: store/templates/help/documentation.html:36
+#: templates/help/documentation.html:36
 msgid ""
 " O seu nanocomputador, este Guia, uma Fonte de alimentação, um Cabo HDMI,\n"
 "        um Cartão SD, um Wi-Fi USB, e um Adesivo do seu nanocomputador. "
 msgstr ""
 
-#: store/templates/help/documentation.html:41
+#: templates/help/documentation.html:41
 msgid "O que há dentro do seu nanocomputador?"
 msgstr ""
 
-#: store/templates/help/documentation.html:42
+#: templates/help/documentation.html:42
 msgid ""
 " O que há de mais recente, robusto e eficiente para um computador está "
 "dentro\n"
 "        deste pequeno dispositivo, pronto para funcionamento. "
 msgstr ""
 
-#: store/templates/help/documentation.html:47
+#: templates/help/documentation.html:47
 msgid " Ligar <br>os motores. "
 msgstr ""
 
-#: store/templates/help/documentation.html:48
+#: templates/help/documentation.html:48
 msgid ""
 " Para ligar o seu nanocomputador, deve-se conectar na seguinte ordem: o\n"
 "        cabo HDMI, o cartão SD, as conexões de rede e a fonte 5V Micro-USB. "
 msgstr ""
 
-#: store/templates/help/documentation.html:53
+#: templates/help/documentation.html:53
 msgid " Calibrar <br>Acessórios. "
 msgstr ""
 
-#: store/templates/help/documentation.html:54
+#: templates/help/documentation.html:54
 msgid ""
 " O seu nanocomputador dispõe de portas USB, que são utilizadas para ligar\n"
 "        pendrives, leitores, adaptadores e HDs externos. "
 msgstr ""
 
-#: store/templates/help/documentation.html:61
+#: templates/help/documentation.html:61
 msgid " Preparar <br>para a Largada. "
 msgstr ""
 
-#: store/templates/help/documentation.html:62
+#: templates/help/documentation.html:62
 msgid ""
 " O seu nanocomputador consegue operar sem televisão, assim como sem "
 "roteador\n"
 "        sem fio. Para a última opção, use o Hotspot. "
 msgstr ""
 
-#: store/templates/help/documentation.html:67
+#: templates/help/documentation.html:67
 msgid " Dada <br>a largada! "
 msgstr ""
 
-#: store/templates/help/documentation.html:68
+#: templates/help/documentation.html:68
 msgid ""
 " Se você conseguiu efetuar todos os passos com sucesso, já poderá ligar\n"
 "        seus dispositivos no seu nanocomputador, incluindo periféricos. "
 msgstr ""
 
-#: store/templates/help/documentation.html:73
+#: templates/help/documentation.html:73
 msgid " Como usar o <br>EOS? "
 msgstr ""
 
-#: store/templates/help/documentation.html:74
+#: templates/help/documentation.html:74
 msgid ""
 " Para navegar, um controle ou um teclado conectado ao seu nanocomputador\n"
 "        já basta. Mouse e trackball são recomendados. "
 msgstr ""
 
-#: store/templates/help/documentation.html:79
+#: templates/help/documentation.html:79
 msgid "Meu nanocomputador vem preparado?"
 msgstr ""
 
-#: store/templates/help/documentation.html:80
+#: templates/help/documentation.html:80
 msgid ""
 " Pré-instalado com EOS, o que traz um conjunto de aplicativos, o seu "
 "nanocomputador\n"
 "        também é expansível por meio de cartões SD. "
 msgstr ""
 
-#: store/templates/help/documentation.html:86
+#: templates/help/documentation.html:86
 msgid "Possibilidades Infinitas"
 msgstr ""
 
-#: store/templates/help/documentation.html:87
+#: templates/help/documentation.html:87
 msgid ""
 " Para poder ligar os seus dispositivos, basta acessar nosso site oficial\n"
 "        para descobrir aplicativos para isso. "
 msgstr ""
 
-#: store/templates/help/documentation.html:97
+#: templates/help/documentation.html:97
 msgid "Expanda as possibilidades"
 msgstr ""
 
-#: store/templates/help/documentation.html:98
+#: templates/help/documentation.html:98
 msgid ""
 " O Efforia disponibiliza diversos acessórios certificados para você a "
 "partir\n"
 "        de nosso site. "
 msgstr ""
 
-#: store/templates/help/documentation.html:107
+#: templates/help/documentation.html:107
 msgid "Veja quais aparelhos você pode ligar a um nanocomputador"
 msgstr ""
 
-#: store/templates/help/documentation.html:116
+#: templates/help/documentation.html:116
 msgid "Computador"
 msgstr ""
 
-#: store/templates/help/documentation.html:117
+#: templates/help/documentation.html:117
 msgid ""
 " Com o computador, é possível copiar arquivos para o seu nanocomputador\n"
 "        através de uma rede local, seja ela com fio ou wireless. "
 msgstr ""
 
-#: store/templates/help/documentation.html:122
+#: templates/help/documentation.html:122
 msgid "Smartphone"
 msgstr ""
 
-#: store/templates/help/documentation.html:123
+#: templates/help/documentation.html:123
 msgid ""
 " Dispositivo mais recomendado para transmitir músicas, via EOS ou AirPlay.\n"
 "        Também serve de controle remoto para o seu nanocomputador através de "
 "apps. "
 msgstr ""
 
-#: store/templates/help/documentation.html:128
+#: templates/help/documentation.html:128
 msgid "Tablet"
 msgstr ""
 
-#: store/templates/help/documentation.html:129
+#: templates/help/documentation.html:129
 msgid ""
 " Dispositivo mais recomendado para transmitir vídeos, via EOS ou AirPlay.\n"
 "        Também possui aplicativos disponíveis para o controle do seu "
 "nanocomputador. "
 msgstr ""
 
-#: store/templates/help/documentation.html:136
+#: templates/help/documentation.html:136
 msgid "Roteador"
 msgstr ""
 
-#: store/templates/help/documentation.html:137
+#: templates/help/documentation.html:137
 msgid ""
 " Permite que o seu nanocomputador converse com todos os outros dispositivos\n"
 "        ligados ao roteador, sejam eles computadores, players, ou mobile. "
 msgstr ""
 
-#: store/templates/help/documentation.html:142
+#: templates/help/documentation.html:142
 msgid "Nanocomputador"
 msgstr ""
 
-#: store/templates/help/documentation.html:143
+#: templates/help/documentation.html:143
 msgid ""
 " Através da tecnologia exclusiva EOS, você pode enviar ou receber conteúdo\n"
 "        de arquivos, documentos e multimídia entre seus nanocomputadores. "
 msgstr ""
 
-#: store/templates/help/documentation.html:148
+#: templates/help/documentation.html:148
 msgid "Periféricos"
 msgstr ""
 
-#: store/templates/help/documentation.html:149
+#: templates/help/documentation.html:149
 msgid ""
 " Boa parte de mouses, teclados e controles de jogo que você encontra hoje\n"
 "        no mercado conseguem interagir com a tecnologia EOS. "
 msgstr ""
 
-#: store/templates/help/index.html:10
+#: templates/help/index.html:10
 msgid "Sobre a Companhia"
 msgstr ""
 
-#: store/templates/help/index.html:12
+#: templates/help/index.html:12
 msgid ""
 " A Efforia Nanocomputadores, estabelecida em janeiro de 2012, tem como o\n"
 "        seu norte fazer a diferença na criação de diversos produtos e "
@@ -991,12 +750,12 @@ msgid ""
 "        grande onda tecnológica. "
 msgstr ""
 
-#: store/templates/help/index.html:26
+#: templates/help/index.html:26
 #, fuzzy
 msgid "Atendimento"
 msgstr "Entretenimento"
 
-#: store/templates/help/index.html:27
+#: templates/help/index.html:27
 msgid ""
 " A Efforia Nanocomputadores tem um compromisso sério: desde o pedido, "
 "passando\n"
@@ -1013,63 +772,62 @@ msgid ""
 "        dispomos para quem possui nossos nanocomputadores. "
 msgstr ""
 
-#: store/templates/help/index.html:38
+#: templates/help/index.html:38
 msgid "WhatsApp"
 msgstr ""
 
-#: store/templates/help/index.html:39
+#: templates/help/index.html:39
 #, fuzzy
 msgid " +555198485888 "
 msgstr "(51) 9848-5888"
 
-#: store/templates/help/index.html:43
+#: templates/help/index.html:43
 msgid "Skype"
 msgstr ""
 
-#: store/templates/help/index.html:44
+#: templates/help/index.html:44
 msgid " efforiaca "
 msgstr ""
 
-#: store/templates/help/index.html:48
-#: store/templates/help/localization.html:35
-#: store/templates/help/localization.html:49
+#: templates/help/index.html:48 templates/help/localization.html:35
+#: templates/help/localization.html:49
 msgid "Telefone"
 msgstr ""
 
-#: store/templates/help/index.html:49
+#: templates/help/index.html:49
 #, fuzzy
 msgid " (51) 3516-2367 "
 msgstr "(51) 3516-2367"
 
-#: store/templates/help/index.html:53
+#: templates/help/index.html:53
 msgid "Facebook"
 msgstr ""
 
-#: store/templates/help/index.html:54
+#: templates/help/index.html:54
 msgid " /efforianano "
 msgstr ""
 
-#: store/templates/help/index.html:58
+#: templates/help/index.html:58
 msgid "Twitter"
 msgstr ""
 
-#: store/templates/help/index.html:59
+#: templates/help/index.html:59
 msgid " @efforianano "
 msgstr ""
 
-#: store/templates/help/index.html:63
+#: templates/help/index.html:63
 msgid "E-mail"
 msgstr ""
 
-#: store/templates/help/index.html:64
+#: templates/help/index.html:64
 msgid " oi@efforia.com.br "
 msgstr ""
 
-#: store/templates/help/localization.html:10
+#: templates/help/localization.html:10
 msgid "Nossa localização"
 msgstr ""
 
-#: store/templates/help/localization.html:11
+#: templates/help/localization.html:11
 msgid ""
 " Atualmente possuímos sede em Porto Alegre, montamos e\n"
 "        distribuímos para todo o Brasil nanocomputadores como o nosso carro-"
@@ -1084,7 +842,7 @@ msgid ""
 "        especiais desenhando projetos diferenciados para cada demanda. "
 msgstr ""
 
-#: store/templates/help/localization.html:25
+#: templates/help/localization.html:25
 msgid ""
 " A Efforia Nanocomputadores cultiva a ideia de que conseguimos criar mais\n"
 "        em um ambiente plural e coletivo, e por isso ficamos estabelecidos "
@@ -1098,49 +856,44 @@ msgid ""
 "        Esperamos sua visita! "
 msgstr ""
 
-#: store/templates/help/localization.html:33
-#: store/templates/help/localization.html:47
+#: templates/help/localization.html:33 templates/help/localization.html:47
 msgid "Brasil"
 msgstr ""
 
-#: store/templates/help/localization.html:34
-#: store/templates/help/localization.html:48
+#: templates/help/localization.html:34 templates/help/localization.html:48
 msgid "Rua Vigário José Inácio, 399/409"
 msgstr ""
 
-#: store/templates/help/localization.html:35
-#: store/templates/help/localization.html:49
+#: templates/help/localization.html:35 templates/help/localization.html:49
 msgid "F"
 msgstr ""
 
-#: store/templates/help/localization.html:35
-#: store/templates/help/localization.html:49
-#, fuzzy
-msgid "(51) 3516-2367"
-msgstr "(51) 3516-2367"
+#: templates/help/localization.html:35 templates/help/localization.html:49
+msgid "(51) 4042-3888"
+msgstr ""
 
-#: store/templates/help/nav.html:3
+#: templates/help/nav.html:3
 msgid "Documentation"
 msgstr "Documentação"
 
-#: store/templates/help/nav.html:4
+#: templates/help/nav.html:4
 msgid "Developer"
 msgstr "Desenvolvedor"
 
-#: store/templates/help/nav.html:5
+#: templates/help/nav.html:5
 msgid "Localization"
 msgstr "Localização"
 
-#: store/templates/help/nav.html:6
+#: templates/help/nav.html:6
 msgid "Warranty"
 msgstr "Garantia"
 
-#: store/templates/help/warranty.html:10
+#: templates/help/warranty.html:10
 #, fuzzy
 msgid "Serviços de Garantia"
 msgstr "Serviços"
 
-#: store/templates/help/warranty.html:11
+#: templates/help/warranty.html:11
 msgid ""
 " Todos os nanocomputadores possuem garantia do circuito integrado de 1 ano,\n"
 "        excetuando os acessórios (Wi-Fi, Ethernet, Micro-USB, HD, Teclado "
@@ -1155,25 +908,25 @@ msgid ""
 "com.br: "
 msgstr ""
 
-#: store/templates/help/warranty.html:18
+#: templates/help/warranty.html:18
 msgid "Nome completo do comprador, CPF e cópia digitalizada da Nota Fiscal"
 msgstr ""
 
-#: store/templates/help/warranty.html:19
+#: templates/help/warranty.html:19
 msgid "Nome do modelo (Pode ser visualizado na traseira do nanocomputador)"
 msgstr ""
 
-#: store/templates/help/warranty.html:20
+#: templates/help/warranty.html:20
 msgid ""
 "Nome do software (Pode ser visto no cartão de memória encaixado no "
 "nanocomputador)"
 msgstr ""
 
-#: store/templates/help/warranty.html:21
+#: templates/help/warranty.html:21
 msgid "Descrição do problema que está enfrentando"
 msgstr ""
 
-#: store/templates/help/warranty.html:23
+#: templates/help/warranty.html:23
 msgid ""
 " Tendo estes dados em mãos, poderemos lhe atender com a maior agilidade\n"
 "        possível e, muito provavelmente, resolver seu problema. Garantindo a "
@@ -1186,11 +939,11 @@ msgid ""
 "venda. "
 msgstr ""
 
-#: store/templates/help/warranty.html:35
+#: templates/help/warranty.html:35
 msgid "Atendimento na garantia dos produtos"
 msgstr ""
 
-#: store/templates/help/warranty.html:36
+#: templates/help/warranty.html:36
 msgid ""
 " Verificamos a possibilidade de resolução remotamente por meio de nossos\n"
 "        canais de atendimento; caso não haja resolução, o componente com "
@@ -1208,12 +961,11 @@ msgid ""
 "        quando no fretamento e serviço dependendo do equipamento. "
 msgstr ""
 
-#: store/templates/help/warranty.html:46
-#: store/templates/services/index.html:32
+#: templates/help/warranty.html:46 templates/services/index.html:32
 msgid "Planos de garantia estendida"
 msgstr ""
 
-#: store/templates/help/warranty.html:47
+#: templates/help/warranty.html:47
 msgid ""
 " Caso tenha interesse em um serviços adicionais, a Efforia Nanocomputadores\n"
 "        disponibiliza para você uma cobertura de garantia para seu "
@@ -1231,25 +983,25 @@ msgid ""
 "        que comprovadamente não causados pelo usuário. "
 msgstr ""
 
-#: store/templates/hub/base.html:12 store/templates/hub/index.html:37
-#: store/templates/hubpro/base.html:12 store/templates/hubpro/index.html:33
-#: store/templates/shop/product.html:117 store/templates/shop/wishlist.html:34
+#: templates/hub/base.html:12 templates/hub/index.html:37
+#: templates/hubpro/base.html:12 templates/hubpro/index.html:33
+#: templates/shop/product.html:117 templates/shop/wishlist.html:34
 msgid "Buy"
 msgstr "Comprar"
 
-#: store/templates/hub/design.html:9 store/templates/hub/nav.html:3
+#: templates/hub/design.html:9 templates/hub/nav.html:3
 msgid "Design"
 msgstr ""
 
-#: store/templates/hub/design.html:12
+#: templates/hub/design.html:12
 msgid "Único"
 msgstr ""
 
-#: store/templates/hub/design.html:13
+#: templates/hub/design.html:13
 msgid "Design incomparável"
 msgstr ""
 
-#: store/templates/hub/design.html:14
+#: templates/hub/design.html:14
 msgid ""
 " Construído em tampas de acrílico translúcido e em laterais de transparente\n"
 "        colorido, por padrão em tom de cinza escuro, todos os "
@@ -1261,15 +1013,15 @@ msgid ""
 "        acordo com cada demanda. "
 msgstr ""
 
-#: store/templates/hub/design.html:29
+#: templates/hub/design.html:29
 msgid "Sustentável"
 msgstr ""
 
-#: store/templates/hub/design.html:30
+#: templates/hub/design.html:30
 msgid "Desenho total em acrílico"
 msgstr ""
 
-#: store/templates/hub/design.html:31
+#: templates/hub/design.html:31
 #, python-format
 msgid ""
 " A sustentabilidade é um assunto muito importante para a Efforia em todos\n"
@@ -1278,15 +1030,15 @@ msgid ""
 "          são encapsulados com material acrílico 100%% reciclável. "
 msgstr ""
 
-#: store/templates/hub/design.html:41
+#: templates/hub/design.html:41
 msgid "Refrigerado"
 msgstr ""
 
-#: store/templates/hub/design.html:42
+#: templates/hub/design.html:42
 msgid "Projetado para qualquer ambiente"
 msgstr ""
 
-#: store/templates/hub/design.html:43
+#: templates/hub/design.html:43
 msgid ""
 " A cápsula acrílica foi pensada de modo que obtivesse a melhor capacidade\n"
 "           térmica possível para os nanocomputadores, de modo que pudesse "
@@ -1294,15 +1046,15 @@ msgid ""
 "           a melhor performance para cada unidade. "
 msgstr ""
 
-#: store/templates/hub/design.html:57
+#: templates/hub/design.html:57
 msgid "Nacional"
 msgstr ""
 
-#: store/templates/hub/design.html:58
+#: templates/hub/design.html:58
 msgid "Montado no Brasil"
 msgstr ""
 
-#: store/templates/hub/design.html:59
+#: templates/hub/design.html:59
 msgid ""
 " Todo o processo, à exceção da produção do circuito integrado, é realizado\n"
 "           no Rio Grande do Sul, desde o desenho e recorte dos acrílicos até "
@@ -1311,15 +1063,15 @@ msgid ""
 "a América. "
 msgstr ""
 
-#: store/templates/hub/design.html:69
+#: templates/hub/design.html:69
 msgid "Preciso"
 msgstr ""
 
-#: store/templates/hub/design.html:70
+#: templates/hub/design.html:70
 msgid "Saídas e placas firmes"
 msgstr ""
 
-#: store/templates/hub/design.html:71
+#: templates/hub/design.html:71
 msgid ""
 " A Efforia Nanocomputadores teve um cuidado sobre a qualidade e espessura\n"
 "           das telas acrílicas, assim como a firmeza nos furos de conexões, "
@@ -1328,18 +1080,18 @@ msgid ""
 "todos os produtos. "
 msgstr ""
 
-#: store/templates/hub/eos.html:11
+#: templates/hub/eos.html:11
 msgid ""
 " Todos vem equipados com a tecnologia EOS, desenvolvida pela Efforia,\n"
 "      que garante diferenciais que tornam nossos nanocomputadores "
 "singulares. "
 msgstr ""
 
-#: store/templates/hub/eos.html:21
+#: templates/hub/eos.html:21
 msgid "Cloud Computing"
 msgstr ""
 
-#: store/templates/hub/eos.html:22
+#: templates/hub/eos.html:22
 msgid ""
 " Possuindo recursos próprios para hospedar aplicativos web e serviços de\n"
 "      nuvem, o sistema pode usufruir de serviços da Efforia para a conexão "
@@ -1349,11 +1101,11 @@ msgid ""
 "      consumir serviços online, como e onde quiser. "
 msgstr ""
 
-#: store/templates/hub/eos.html:29
+#: templates/hub/eos.html:29
 msgid "Soluções Integradas"
 msgstr ""
 
-#: store/templates/hub/eos.html:30
+#: templates/hub/eos.html:30
 msgid ""
 " O EOS é um sistema operacional completo, com recursos de interface "
 "gráfica,\n"
@@ -1364,12 +1116,12 @@ msgid ""
 "      você está precisando para você. "
 msgstr ""
 
-#: store/templates/hub/eos.html:37 store/templates/hub/iot.html:10
+#: templates/hub/eos.html:37 templates/hub/iot.html:24
 #, fuzzy
 msgid "Internet das Coisas"
 msgstr "Internet das Coisas"
 
-#: store/templates/hub/eos.html:38
+#: templates/hub/eos.html:38
 msgid ""
 " A tecnologia integrada ao seu HUB garante o máximo de potencial para o\n"
 "      seu próximo projeto de automação, garantindo total conexão à Internet "
@@ -1379,11 +1131,11 @@ msgid ""
 "      e um número muito maior de possibilidades. "
 msgstr ""
 
-#: store/templates/hub/eos.html:50 store/templates/hubpro/eosd.html:45
+#: templates/hub/eos.html:50 templates/hubpro/eosd.html:45
 msgid "Torrent"
 msgstr ""
 
-#: store/templates/hub/eos.html:51 store/templates/hubpro/eosd.html:46
+#: templates/hub/eos.html:51 templates/hubpro/eosd.html:46
 msgid ""
 " Faça downloads e uploads com este serviço de forma ilimitada para o seu\n"
 "        nanocomputador ou para qualquer armazenamento removível, por meio da "
@@ -1391,12 +1143,12 @@ msgid ""
 "        ponto a ponto BitTorrent. "
 msgstr ""
 
-#: store/templates/hub/eos.html:64 store/templates/hubpro/eosd.html:59
-#: store/templates/services/apps.html:138
+#: templates/hub/eos.html:64 templates/hubpro/eosd.html:59
+#: templates/services/apps.html:138
 msgid "Sync"
 msgstr ""
 
-#: store/templates/hub/eos.html:65 store/templates/hubpro/eosd.html:60
+#: templates/hub/eos.html:65 templates/hubpro/eosd.html:60
 msgid ""
 " Sincronize quantos arquivos quiser, do tamanho e jeito que achar melhor.\n"
 "        Você pode compartilhar arquivos entre o seu nanocomputador e "
@@ -1404,11 +1156,11 @@ msgid ""
 "        dispositivo com a tecnologia BitTorrent Sync. "
 msgstr ""
 
-#: store/templates/hub/eos.html:78
+#: templates/hub/eos.html:78
 msgid "Dados compartilháveis"
 msgstr ""
 
-#: store/templates/hub/eos.html:79
+#: templates/hub/eos.html:79
 msgid ""
 " O compartilhamento de arquivos na sua rede ficou muito mais fácil. Você\n"
 "        pluga um pendrive, HD externo ou cartão de memória no HUB e pronto! "
@@ -1416,11 +1168,11 @@ msgid ""
 "        dados começam a ser compartilhados automaticamente na sua rede. "
 msgstr ""
 
-#: store/templates/hub/eos.html:85
+#: templates/hub/eos.html:85
 msgid "Ponto de acesso sem fio"
 msgstr ""
 
-#: store/templates/hub/eos.html:86
+#: templates/hub/eos.html:86
 msgid ""
 " Está na praia ou no campo e não tem rede sem fio? Sem problemas, o EOS\n"
 "        cuida disso para você. Você consegue criar um ponto de acesso para "
@@ -1428,11 +1180,11 @@ msgid ""
 "        possam compartilhar conteúdos entre si e para o seu HUB. "
 msgstr ""
 
-#: store/templates/hub/eos.html:92
+#: templates/hub/eos.html:92
 msgid "Transmissão sem fio de som"
 msgstr ""
 
-#: store/templates/hub/eos.html:93
+#: templates/hub/eos.html:93
 msgid ""
 " A tecnologia presente no HUB dá a possibilidade de transmitir músicas\n"
 "        e podcasts e streaming de música, de seu tablet, laptop ou "
@@ -1440,11 +1192,11 @@ msgid ""
 "        o HUB e vice-versa, de maneira fácil e rápida. "
 msgstr ""
 
-#: store/templates/hub/eos.html:108
+#: templates/hub/eos.html:108
 msgid "Experiência surpreendente"
 msgstr ""
 
-#: store/templates/hub/eos.html:109
+#: templates/hub/eos.html:109
 msgid ""
 " Surpreenda-se com a experiência audiovisual que o EOS te proporciona.\n"
 "        Reproduza filmes em Full HD a partir de qualquer mídia que imaginar: "
@@ -1453,11 +1205,11 @@ msgid ""
 "fio. "
 msgstr ""
 
-#: store/templates/hub/eos.html:116
+#: templates/hub/eos.html:116
 msgid "Carregue para onde quiser"
 msgstr ""
 
-#: store/templates/hub/eos.html:117
+#: templates/hub/eos.html:117
 msgid ""
 " Desde nanocomputadores até PCs de modo geral, o EOS é um sistema robusto\n"
 "        e compacto para instalar e usar em diversos dispositivos. Contando "
@@ -1466,11 +1218,11 @@ msgid ""
 "ele. "
 msgstr ""
 
-#: store/templates/hub/eos.html:135
+#: templates/hub/eos.html:135
 msgid "Diversão ilimitada"
 msgstr ""
 
-#: store/templates/hub/eos.html:136
+#: templates/hub/eos.html:136
 msgid ""
 " O EOS possui uma extensa compatibilidade com os mais diversos sistemas\n"
 "        de entretenimento e emuladores, como Super Nintendo, Nintendo 8-bit, "
@@ -1478,11 +1230,11 @@ msgid ""
 "        Mega Drive, Playstation, entre outros sistemas de emulação. "
 msgstr ""
 
-#: store/templates/hub/eos.html:143
+#: templates/hub/eos.html:143
 msgid "Baterias Inclusas"
 msgstr ""
 
-#: store/templates/hub/eos.html:144
+#: templates/hub/eos.html:144
 msgid ""
 " O sistema operacional possui diversos recursos prontos para uso nas\n"
 "        mais diversas aplicações, dispondo de um vasto repositório de "
@@ -1491,25 +1243,25 @@ msgid ""
 "rapidamente. "
 msgstr ""
 
-#: store/templates/hub/index.html:28
-msgid " UM UNIVERSO <br>DE GRANDES POSSIBILIDADES. "
+#: templates/hub/index.html:28
+msgid " TODO O PODER <br>NA PALMA DE SUA MÃO. "
 msgstr ""
 
-#: store/templates/hub/index.html:60
+#: templates/hub/index.html:60
 msgid ""
 " O HUB é a solução eficiente que você esperava em\n"
 "        praticidade e facilidade em automação doméstica ou corporativa. "
 msgstr ""
 
-#: store/templates/hub/index.html:69
+#: templates/hub/index.html:69
 msgid "Sem Fios"
 msgstr ""
 
-#: store/templates/hub/index.html:70
+#: templates/hub/index.html:70
 msgid "Adeus Embaraço"
 msgstr ""
 
-#: store/templates/hub/index.html:71
+#: templates/hub/index.html:71
 msgid ""
 " O sistema de conexão sem fio do HUB reduz drasticamente a necessidade\n"
 "            de ter fios circulando pela sua casa ou empresa. Muitas vezes "
@@ -1517,15 +1269,15 @@ msgid ""
 "            apenas da tomada e já estará pronto para operar. "
 msgstr ""
 
-#: store/templates/hub/index.html:79
+#: templates/hub/index.html:79
 msgid "Versátil"
 msgstr ""
 
-#: store/templates/hub/index.html:80
+#: templates/hub/index.html:80
 msgid "Baterias inclusas"
 msgstr ""
 
-#: store/templates/hub/index.html:81
+#: templates/hub/index.html:81
 msgid ""
 " Graças a tecnologia EOS que habilita o uso multifuncional do HUB,\n"
 "            você tem um equipamento completo em suas mãos, podendo servir "
@@ -1533,15 +1285,15 @@ msgid ""
 "            computador de nuvem, módulo de IoT e até centro de multimídia. "
 msgstr ""
 
-#: store/templates/hub/index.html:89
+#: templates/hub/index.html:89
 msgid "Eficiente"
 msgstr ""
 
-#: store/templates/hub/index.html:90
+#: templates/hub/index.html:90
 msgid "Consome pouco"
 msgstr ""
 
-#: store/templates/hub/index.html:91
+#: templates/hub/index.html:91
 msgid ""
 " Comprometido com a natureza, garantimos uma ótima eficiência energética\n"
 "            ao consumir apenas 5W de potência. Isso dá a possibilidade de "
@@ -1549,15 +1301,15 @@ msgid ""
 "            televisores, tomadas de celulares e até baterias portáteis. "
 msgstr ""
 
-#: store/templates/hub/index.html:104
+#: templates/hub/index.html:104
 msgid "Flexível"
 msgstr ""
 
-#: store/templates/hub/index.html:105
+#: templates/hub/index.html:105
 msgid "Funcional em diversas maneiras."
 msgstr ""
 
-#: store/templates/hub/index.html:106
+#: templates/hub/index.html:106
 msgid ""
 " Pensado completamente sobre uma arquitetura modular, o que permite ser\n"
 "          conectado de forma independente a dispositivos, o que permite "
@@ -1565,15 +1317,15 @@ msgid ""
 "          com apenas um cabo de energia se preciso. "
 msgstr ""
 
-#: store/templates/hub/index.html:114
+#: templates/hub/index.html:114
 msgid "Customizável"
 msgstr ""
 
-#: store/templates/hub/index.html:115
+#: templates/hub/index.html:115
 msgid "Escolha o HUB com a sua cara."
 msgstr ""
 
-#: store/templates/hub/index.html:116
+#: templates/hub/index.html:116
 msgid ""
 " Nossos nanocomputadores podem sair de fábrica com uma série de "
 "customizações\n"
@@ -1582,15 +1334,15 @@ msgid ""
 "          adicionais, todos de acordo com o seu gosto. "
 msgstr ""
 
-#: store/templates/hub/index.html:129
+#: templates/hub/index.html:129
 msgid "Portátil"
 msgstr ""
 
-#: store/templates/hub/index.html:130
+#: templates/hub/index.html:130
 msgid "Tudo na palma de sua mão."
 msgstr ""
 
-#: store/templates/hub/index.html:131
+#: templates/hub/index.html:131
 msgid ""
 " Graças ao tamanho compacto do HUB e à tecnologia EOS, o seu próximo\n"
 "          sistema de automação poderá ser muito menor do que imagina, e o "
@@ -1598,15 +1350,15 @@ msgid ""
 "          controle, ao alcance de um smartphone. "
 msgstr ""
 
-#: store/templates/hub/index.html:139
+#: templates/hub/index.html:139
 msgid "Integrável"
 msgstr ""
 
-#: store/templates/hub/index.html:140
+#: templates/hub/index.html:140
 msgid "Conteúdo em qualquer lugar."
 msgstr ""
 
-#: store/templates/hub/index.html:141
+#: templates/hub/index.html:141
 msgid ""
 " Para automação audiovisual, o HUB permite concentrar e distribuir seu\n"
 "           conteúdo multimídia para toda a sua empresa ou lar, garantindo "
@@ -1614,15 +1366,15 @@ msgid ""
 "           e facilidade para ver vídeos, músicas e imagens. "
 msgstr ""
 
-#: store/templates/hub/index.html:149
+#: templates/hub/index.html:149
 msgid "Incrível"
 msgstr ""
 
-#: store/templates/hub/index.html:150
+#: templates/hub/index.html:150
 msgid "Ótima experiência audiovisual."
 msgstr ""
 
-#: store/templates/hub/index.html:151
+#: templates/hub/index.html:151
 msgid ""
 " Com o potente processador gráfico instalado no coração do HUB, é possível\n"
 "           reproduzir conteúdos em full HD e imagens de alta resolução, "
@@ -1630,11 +1382,11 @@ msgid ""
 "           processar gráficos 3D em alta qualidade. "
 msgstr ""
 
-#: store/templates/hub/index.html:167 store/templates/hubpro/index.html:150
+#: templates/hub/index.html:167 templates/hubpro/index.html:150
 msgid "Especificações"
 msgstr ""
 
-#: store/templates/hub/iot.html:11
+#: templates/hub/iot.html:25
 msgid ""
 " Com o nanocomputador HUB equipado com a tecnologia exclusiva EOS, suas\n"
 "      possibilidades se multiplicam de acordo com os dispositivos que deseja "
@@ -1643,11 +1395,11 @@ msgid ""
 "inteligente. "
 msgstr ""
 
-#: store/templates/hub/iot.html:23
+#: templates/hub/iot.html:39
 msgid "Ótima solução de Automação Audiovisual"
 msgstr ""
 
-#: store/templates/hub/iot.html:24
+#: templates/hub/iot.html:40
 msgid ""
 " Você está perto de conhecer uma das melhores soluções de automação "
 "audiovisual\n"
@@ -1661,15 +1413,15 @@ msgid ""
 "sem fio. "
 msgstr ""
 
-#: store/templates/hub/iot.html:35
+#: templates/hub/iot.html:52
 msgid "Com o HUB seus dispositivos tornam-se inteligentes"
 msgstr ""
 
-#: store/templates/hub/iot.html:41
+#: templates/hub/iot.html:58
 msgid "HD"
 msgstr ""
 
-#: store/templates/hub/iot.html:42
+#: templates/hub/iot.html:59
 msgid ""
 " Um disco rígido externo conectado a um HUB dá a possibilidade de "
 "compartilhar\n"
@@ -1678,11 +1430,11 @@ msgid ""
 "        HUB, bem como para dispositivos móveis. "
 msgstr ""
 
-#: store/templates/hub/iot.html:52
+#: templates/hub/iot.html:69
 msgid "Projetor"
 msgstr ""
 
-#: store/templates/hub/iot.html:53
+#: templates/hub/iot.html:70
 msgid ""
 " Realize as suas apresentações sem fio com seu tablet, smartphone ou laptop\n"
 "        a partir da transmissão de slides em fotos, vídeos, ou documentos "
@@ -1690,11 +1442,11 @@ msgid ""
 "        através de um HUB conectado ao projetor. "
 msgstr ""
 
-#: store/templates/hub/iot.html:63
+#: templates/hub/iot.html:80
 msgid "Impressora"
 msgstr ""
 
-#: store/templates/hub/iot.html:64
+#: templates/hub/iot.html:81
 msgid ""
 " Conecte sua impressora comum cabeada a um HUB e desfrute do "
 "compartilhamento\n"
@@ -1703,11 +1455,11 @@ msgid ""
 "        e complicações na configuração de impressora em rede. "
 msgstr ""
 
-#: store/templates/hub/iot.html:76
+#: templates/hub/iot.html:93
 msgid "Melhor escolha para laboratórios"
 msgstr ""
 
-#: store/templates/hub/iot.html:77
+#: templates/hub/iot.html:94
 msgid ""
 " Contando com um bom acervo de aplicativos nas áreas de Matemática, Lógica,\n"
 "      Programação e Eletrônica, mais aplicativos de navegação Web, os "
@@ -1721,11 +1473,11 @@ msgid ""
 "      ou eletrônica. "
 msgstr ""
 
-#: store/templates/hub/iot.html:86 store/templates/services/index.html:22
+#: templates/hub/iot.html:103 templates/services/index.html:22
 msgid "Projetos especiais para a sua demanda"
 msgstr ""
 
-#: store/templates/hub/iot.html:87
+#: templates/hub/iot.html:104
 msgid ""
 " Está precisando automatizar algo e nossas soluções atuais ainda não "
 "encaixam\n"
@@ -1739,7 +1491,7 @@ msgid ""
 "      um projeto diferenciado para o seu negócio. "
 msgstr ""
 
-#: store/templates/hub/iot.html:100
+#: templates/hub/iot.html:117
 msgid ""
 " A grande especialidade e potencial de nossos nanocomputadores\n"
 "      na Efforia está na Internet das Coisas (IoT), em tornar seus "
@@ -1749,23 +1501,27 @@ msgid ""
 "      de forma a interagir os mais diversos eletrônicos com a Internet. "
 msgstr ""
 
-#: store/templates/hub/nav.html:4
+#: templates/hub/nav.html:4
 msgid "EOS Technology"
 msgstr "Tecnologia EOS"
 
-#: store/templates/hub/nav.html:5
+#: templates/hub/nav.html:5
 msgid "Internet of Things"
 msgstr "Internet das Coisas"
 
-#: store/templates/hub/nav.html:6
+#: templates/hub/nav.html:6
 msgid "Sensors"
 msgstr "Sensores"
 
-#: store/templates/hub/sensors.html:10
+#: templates/hub/nav.html:7
+msgid "Cloud"
+msgstr "Nuvem"
+
+#: templates/hub/sensors.html:10
 msgid "Sensores para o HUB"
 msgstr ""
 
-#: store/templates/hub/sensors.html:15
+#: templates/hub/sensors.html:12
 msgid ""
 " Graças à tecnologia de barramento presente em nossos\n"
 "        nanocomputadores, é possível acrescentar uma série de sensores para "
@@ -1775,11 +1531,11 @@ msgid ""
 "        de IoT. "
 msgstr ""
 
-#: store/templates/hub/sensors.html:28
+#: templates/hub/sensors.html:24
 msgid "Temperatura e Umidade"
 msgstr ""
 
-#: store/templates/hub/sensors.html:29
+#: templates/hub/sensors.html:25
 msgid ""
 " Com o monitoramento de temperatura, o HUB é capaz de atuar no ambiente\n"
 "        emitindo avisos de ultrapassagem de limites e o controlar unidades "
@@ -1787,11 +1543,11 @@ msgid ""
 "        condicionamento de ar para refrigerar o ambiente. "
 msgstr ""
 
-#: store/templates/hub/sensors.html:42
+#: templates/hub/sensors.html:38
 msgid "Distância e presença"
 msgstr ""
 
-#: store/templates/hub/sensors.html:43
+#: templates/hub/sensors.html:39
 msgid ""
 " Através do sensor de presença e distância de pessoas e/ou objetos em\n"
 "        um ambiente, é possível automatizar luzes e acionar avisos e eventos "
@@ -1800,11 +1556,11 @@ msgid ""
 "alarmes. "
 msgstr ""
 
-#: store/templates/hub/sensors.html:52
+#: templates/hub/sensors.html:48
 msgid "Presença de gás"
 msgstr ""
 
-#: store/templates/hub/sensors.html:53
+#: templates/hub/sensors.html:49
 msgid ""
 " O controle de gás por um determinado fluxo pode ser um sensor adicional\n"
 "        de grande utilidade para indústrias que utilizam este ativo, e "
@@ -1813,11 +1569,11 @@ msgid ""
 "exemplo. "
 msgstr ""
 
-#: store/templates/hub/sensors.html:66
+#: templates/hub/sensors.html:62
 msgid "Presença de água"
 msgstr ""
 
-#: store/templates/hub/sensors.html:67
+#: templates/hub/sensors.html:63
 msgid ""
 " Tal como a presença de gás, permite o monitoramento e controle de válvulas\n"
 "        da água, que, assim como o outro, o processo de automatização pode "
@@ -1825,11 +1581,11 @@ msgid ""
 "        maior eficiência no fluxo de indústrias que fazem uso desse ativo. "
 msgstr ""
 
-#: store/templates/hub/sensors.html:76
+#: templates/hub/sensors.html:72
 msgid "Câmera"
 msgstr ""
 
-#: store/templates/hub/sensors.html:77
+#: templates/hub/sensors.html:73
 msgid ""
 " Ótimo recurso especialmente para a área da segurança, o sensor de imagem\n"
 "        permite a captura de fotografias e filmagens de determinados "
@@ -1837,11 +1593,11 @@ msgid ""
 "        podendo ser usado para diversos fins de automação. "
 msgstr ""
 
-#: store/templates/hub/sensors.html:90
+#: templates/hub/sensors.html:86
 msgid "Eletricidade"
 msgstr ""
 
-#: store/templates/hub/sensors.html:91
+#: templates/hub/sensors.html:87
 msgid ""
 " Através de sensores e atuadores adicionais de eletricidade, é possível\n"
 "        obter todo o controle de chaves de luz e equipamentos bem na palma "
@@ -1850,7 +1606,7 @@ msgid ""
 "tablet. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:11
+#: templates/hubpro/eosd.html:11
 msgid ""
 " Nossos nanocomputadores mais versáteis e robustos\n"
 "        vem equipados com a tecnologia EOS-D, desenvolvida pela Efforia e "
@@ -1858,11 +1614,11 @@ msgid ""
 "        na plataforma Android. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:21
+#: templates/hubpro/eosd.html:21
 msgid "Grid Computing"
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:22
+#: templates/hubpro/eosd.html:22
 msgid ""
 " Com a tecnologia exclusiva EOS embutida no sistema operacional, é possível\n"
 "      utilizá-lo para montar clusters de nanocomputadores com extrema "
@@ -1870,12 +1626,12 @@ msgid ""
 "      energética e com recursos acessíveis remotamente. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:27
+#: templates/hubpro/eosd.html:27
 #, fuzzy
 msgid "Streaming Audiovisual"
 msgstr "Audiovisual"
 
-#: store/templates/hubpro/eosd.html:28
+#: templates/hubpro/eosd.html:28
 msgid ""
 " Graças à base na plataforma Android, é possível acessar diversos recursos,\n"
 "      aplicativos e canais por Streaming, tornando os nanocomputadores com "
@@ -1883,11 +1639,11 @@ msgid ""
 "      muito mais interessantes para uso em TV por Internet. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:33
+#: templates/hubpro/eosd.html:33
 msgid "Diversão Ilimitada"
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:34
+#: templates/hubpro/eosd.html:34
 msgid ""
 " Através de tecnologias próprias da Efforia Nanocomputadores e as "
 "compatíveis\n"
@@ -1896,11 +1652,11 @@ msgid ""
 "      maior de games preparados para a televisão. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:71
+#: templates/hubpro/eosd.html:71
 msgid "Compatível"
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:72
+#: templates/hubpro/eosd.html:72
 msgid ""
 " Para as mais diversas demandas, a Efforia desenvolveu o EOS-D, que "
 "possibilita\n"
@@ -1909,12 +1665,12 @@ msgid ""
 "        com funções da tecnologia EOS. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:77 store/templates/services/apps.html:10
+#: templates/hubpro/eosd.html:77 templates/services/apps.html:10
 #, fuzzy
 msgid "Aplicativos"
 msgstr "Aplicações"
 
-#: store/templates/hubpro/eosd.html:78
+#: templates/hubpro/eosd.html:78
 msgid ""
 " Com a plataforma Android e seus aplicativos, você pode ter uma solução\n"
 "        completa para o seu escritório ou casa, com suíte de produtividade, "
@@ -1922,11 +1678,11 @@ msgid ""
 "        de Internet e explorador de arquivos. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:83
+#: templates/hubpro/eosd.html:83
 msgid "Plugável"
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:84
+#: templates/hubpro/eosd.html:84
 msgid ""
 " Aproveitando as saídas que nossos nanocomputadores possuem, há o sistema\n"
 "        Plug 'n Play para qualquer dispositivo removível (pendrive, disco "
@@ -1934,11 +1690,11 @@ msgid ""
 "        externo e cartão de memória) e periféricos. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:95
+#: templates/hubpro/eosd.html:95
 msgid "Soluções customizadas para automação audiovisual."
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:96
+#: templates/hubpro/eosd.html:96
 msgid ""
 " A Efforia disponibiliza para você uma soluções de encapsulamento "
 "diferenciado\n"
@@ -1949,11 +1705,11 @@ msgid ""
 "        tornando a conexão do vídeo fácil e prática pela sua proximidade. "
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:103
+#: templates/hubpro/eosd.html:103
 msgid "O próximo parque de computadores de sua empresa."
 msgstr ""
 
-#: store/templates/hubpro/eosd.html:104
+#: templates/hubpro/eosd.html:104
 msgid ""
 " Com a possibilidade de usar a tecnologia EOS-D para construir terminais\n"
 "        remotos inteligentes, a Efforia dispõe para você uma solução de alto "
@@ -1963,105 +1719,106 @@ msgid ""
 "        de alta potência com a tecnologia EOS desenvolvida para o Efforia. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:25
-msgid " TODO O PODER <br>NA PALMA DE SUA MÃO. "
+#: templates/hubpro/index.html:25
+msgid " CONTROLE TOTAL <br>SOBRE SUA TELEVISÃO. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:57
+#: templates/hubpro/index.html:57
 msgid ""
-" O HUB Pro é a solução profissional que você esperava em\n"
+" O Efforia TV é a solução profissional que você esperava em\n"
 "        robustez e versatilidade em automação doméstica ou corporativa. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:67
+#: templates/hubpro/index.html:67
 msgid "Robusto"
 msgstr ""
 
-#: store/templates/hubpro/index.html:68
+#: templates/hubpro/index.html:68
 msgid "Tudo na palma de sua mão"
 msgstr ""
 
-#: store/templates/hubpro/index.html:69
+#: templates/hubpro/index.html:69
 msgid ""
-" O HUB Pro representa o futuro da automação doméstica e corporativa:\n"
+" O Efforia TV representa o futuro da automação doméstica e corporativa:\n"
 "      ele dispensa o uso de computadores para o sistema graças ao seu bom "
 "desempenho,\n"
 "      sendo uma ótima opção para qualquer ambiente externo ou interno. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:75
+#: templates/hubpro/index.html:75
 msgid "Espetacular"
 msgstr ""
 
-#: store/templates/hubpro/index.html:76
+#: templates/hubpro/index.html:76
 msgid "Ótima experiência audiovisual"
 msgstr ""
 
-#: store/templates/hubpro/index.html:77
+#: templates/hubpro/index.html:77
 msgid ""
-" Com a tecnologia EOS-D baseada na plataforma Android, o HUB Pro traz\n"
+" Com a tecnologia baseada na plataforma Android, o Efforia TV traz\n"
 "      uma experiência audiovisual sem par, somado à sua operação "
 "silenciosa,\n"
 "      aproveitando o que há de melhor por horas sem você nem perceber. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:83
+#: templates/hubpro/index.html:83
 msgid "Ligado"
 msgstr ""
 
-#: store/templates/hubpro/index.html:84
+#: templates/hubpro/index.html:84
 msgid "Amplamente conectável"
 msgstr ""
 
-#: store/templates/hubpro/index.html:85
+#: templates/hubpro/index.html:85
 msgid ""
 " Com as conexões sem fio (Wi-Fi), com fio (Ethernet), e de redes móveis\n"
-"      (HSPA+) por padrão, seu HUB Pro está conectado com o que há de mais "
+"      (HSPA+) por padrão, seu Efforia TV está conectado com o que há de mais "
 "moderno,\n"
 "      garantindo uma ótima saída de Internet para qualquer situação. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:96
+#: templates/hubpro/index.html:96
 msgid "Appstacular"
 msgstr ""
 
-#: store/templates/hubpro/index.html:97
+#: templates/hubpro/index.html:97
 msgid "Um mundo de possibilidades"
 msgstr ""
 
-#: store/templates/hubpro/index.html:98
+#: templates/hubpro/index.html:98
 msgid ""
-" A tecnologia EOS-D é baseada na plataforma Android, o que te permite o uso\n"
+" A tecnologia é baseada na plataforma Android, o que te permite o uso\n"
 "        de milhares de aplicativos que você estava acostumado a utilizar em "
 "seu\n"
 "        smartphone, tablet ou outros gadgets, direto na sua televisão. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:104
+#: templates/hubpro/index.html:104
 msgid "O Futuro da TV"
 msgstr ""
 
-#: store/templates/hubpro/index.html:105
+#: templates/hubpro/index.html:105
 msgid "Canais de streaming"
 msgstr ""
 
-#: store/templates/hubpro/index.html:106
+#: templates/hubpro/index.html:106
 msgid ""
-" Nós da Efforia acreditamos que o HUB Pro representa o futuro da televisão.\n"
+" Nós da Efforia acreditamos que o Efforia TV representa o futuro da "
+"televisão.\n"
 "        Para isso temos diversas opções de canais de streaming, que oferecem "
 "diversos\n"
 "        conteúdos, entre gratuitos e disponíveis para assinatura. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:117
+#: templates/hubpro/index.html:117
 msgid "A TV fora da TV"
 msgstr ""
 
-#: store/templates/hubpro/index.html:118
+#: templates/hubpro/index.html:118
 msgid "Ótima companhia para CATV"
 msgstr ""
 
-#: store/templates/hubpro/index.html:119
+#: templates/hubpro/index.html:119
 msgid ""
 " Montado com um design compacto, a opção de acessar aplicativos de canais\n"
 "        de TV a cabo (CATV) e a gravação digital de programas de TV (DVR), "
@@ -2069,39 +1826,45 @@ msgid ""
 "        opção para levar para onde você precisar. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:125
+#: templates/hubpro/index.html:125
 msgid "Super Versátil"
 msgstr ""
 
-#: store/templates/hubpro/index.html:126
-msgid "Tecnologias EOS e EOS-D"
+#: templates/hubpro/index.html:126
+msgid "Tecnologias EOS e Android"
 msgstr ""
 
-#: store/templates/hubpro/index.html:127
+#: templates/hubpro/index.html:127
 msgid ""
-" Graças a compatibilidade com as tecnologias EOS e EOS-D, o HUB Pro possui\n"
+" Graças a compatibilidade com as tecnologias EOS e Android, o Efforia TV "
+"possui\n"
 "        um uso completamente multifuncional, garantindo o equipamento mais "
 "completo\n"
 "        da Efforia em suas mãos, dando asas à sua imaginação. "
 msgstr ""
 
-#: store/templates/hubpro/index.html:133
+#: templates/hubpro/index.html:133
 msgid "Expansível"
 msgstr ""
 
-#: store/templates/hubpro/index.html:134
+#: templates/hubpro/index.html:134
 msgid "HD, SSD para maior capacidade"
 msgstr ""
 
-#: store/templates/hubpro/index.html:135
+#: templates/hubpro/index.html:135
 msgid ""
 " Com mais tecnologias de entrada e saída que o HUB convencional, há como\n"
-"        expandir as possibilidades do HUB Pro, seja aumentando a sua "
+"        expandir as possibilidades do Efforia TV, seja aumentando a sua "
 "capacidade\n"
 "        de memória ou adicionando outras opções de conexão. "
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:11
+#: templates/hubpro/mediacenter.html:10 templates/hubpro/nav.html:4
+#: templates/index.html:39
+msgid "Audiovisual"
+msgstr "Audiovisual"
+
+#: templates/hubpro/mediacenter.html:11
 msgid ""
 " Temos a solução ideal para reprodução multimídia e transmissão\n"
 "        sem fio de conteúdo audiovisual. No HUB Pro é possível assistir aos "
@@ -2111,11 +1874,11 @@ msgid ""
 "        apresentar documentos. "
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:22
+#: templates/hubpro/mediacenter.html:22
 msgid "Sua coleção aonde quiser."
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:23
+#: templates/hubpro/mediacenter.html:23
 msgid ""
 " Com o HUB Pro, você consegue ter controle sobre a sua coleção de vídeos,\n"
 "        músicas, e fotos de seu nanocomputador e de todas as unidades de "
@@ -2125,11 +1888,11 @@ msgid ""
 "        para smartphones, tablets, laptops e vice-versa. "
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:29
+#: templates/hubpro/mediacenter.html:29
 msgid "Canais de streaming à disposição."
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:30
+#: templates/hubpro/mediacenter.html:30
 msgid ""
 " Com a tecnologia exclusiva EOS-D, há disponibilidade de populares canais\n"
 "        de vídeos e filmes pela Internet como o YouTube e Netflix, assim "
@@ -2139,11 +1902,11 @@ msgid ""
 "        assinatura dos serviços em conjunto com o nanocomputador. "
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:41
+#: templates/hubpro/mediacenter.html:41
 msgid "Organize a sua coleção do seu jeito."
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:42
+#: templates/hubpro/mediacenter.html:42
 msgid ""
 " Equipado com a tecnologia EOS-D, você consegue integrá-lo\n"
 "      aos mais diversos smartphones e tablets do mercado por meio de "
@@ -2157,11 +1920,11 @@ msgid ""
 "      e catalogá-los. "
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:56
+#: templates/hubpro/mediacenter.html:56
 msgid "Solução ideal para automação audiovisual."
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:57
+#: templates/hubpro/mediacenter.html:57
 msgid ""
 " Este equipamento é a melhor opção que oferecemos a você que deseja "
 "apresentar\n"
@@ -2172,11 +1935,11 @@ msgid ""
 "        contar com a boa oferta de canais de streaming que o aparelho tem. "
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:64
+#: templates/hubpro/mediacenter.html:64
 msgid "A solução para apresentações sem fio."
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:65
+#: templates/hubpro/mediacenter.html:65
 msgid ""
 " Com sua capacidade de transmissão de conteúdo sem fio, o HUB Pro torna-se\n"
 "        uma ótima opção para ligar no projetor ou televisor e apresentar "
@@ -2186,11 +1949,11 @@ msgid ""
 "        controlado em smartphones e tablets de maneira fácil e prática. "
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:76
+#: templates/hubpro/mediacenter.html:76
 msgid "Adeus embaraço e demora na apresentação."
 msgstr ""
 
-#: store/templates/hubpro/mediacenter.html:77
+#: templates/hubpro/mediacenter.html:77
 msgid ""
 " É uma ótima escolha para eliminar a quantidade infindável\n"
 "        de fios em sua sala de projeção ou reuniões, e de quebra poder "
@@ -2200,19 +1963,19 @@ msgid ""
 "        o uso de laptops ou desktops. "
 msgstr ""
 
-#: store/templates/hubpro/nav.html:3
-msgid "EOS-D Technology"
-msgstr "Tecnologia EOS-D"
+#: templates/hubpro/nav.html:3
+msgid "Android"
+msgstr ""
 
-#: store/templates/hubpro/nav.html:6
-msgid "Cloud"
-msgstr "Nuvem"
+#: templates/hubpro/nav.html:5 templates/index.html:44
+msgid "Entertainment"
+msgstr "Entretenimento"
 
-#: store/templates/hubpro/server.html:10
+#: templates/hubpro/server.html:10
 msgid "Nuvem"
 msgstr ""
 
-#: store/templates/hubpro/server.html:11
+#: templates/hubpro/server.html:11
 msgid ""
 " Visando a oportunidade de comercializar nanocomputadores para a nuvem e\n"
 "        servidores, nós desenvolvemos uma solução versátil e de baixo custo "
@@ -2224,11 +1987,11 @@ msgid ""
 "        outras muitas possibilidades. "
 msgstr ""
 
-#: store/templates/hubpro/server.html:24
+#: templates/hubpro/server.html:24
 msgid "Tecnologia Exclusiva EOS"
 msgstr ""
 
-#: store/templates/hubpro/server.html:25
+#: templates/hubpro/server.html:25
 msgid ""
 " Muito além de um servidor comum, o HUB Pro para nuvem\n"
 "        conta com o diferencial da robustez e versatilidade da tecnologia "
@@ -2240,11 +2003,11 @@ msgid ""
 "        e serviços já pré-instalados. "
 msgstr ""
 
-#: store/templates/hubpro/server.html:33
+#: templates/hubpro/server.html:33
 msgid "Ótimo para Volumes"
 msgstr ""
 
-#: store/templates/hubpro/server.html:34
+#: templates/hubpro/server.html:34
 msgid ""
 " Contando com as vantagens de comprar um nanocomputador da Efforia "
 "(Econômico,\n"
@@ -2255,11 +2018,11 @@ msgid ""
 "        Caso tenha interesse comprar em volume, contate-nos. "
 msgstr ""
 
-#: store/templates/hubpro/server.html:45
+#: templates/hubpro/server.html:45
 msgid "Uma Pletora de Serviços para Nuvem"
 msgstr ""
 
-#: store/templates/hubpro/server.html:46
+#: templates/hubpro/server.html:46
 msgid ""
 " Caso necessite hospedar websites e aplicativos web que\n"
 "        precisam ser publicados, dispomos de serviços para que o seu "
@@ -2273,11 +2036,11 @@ msgid ""
 "        desempenho para Cloud Computing ou IoT. "
 msgstr ""
 
-#: store/templates/hubpro/server.html:60
+#: templates/hubpro/server.html:60
 msgid "Solução ideal para micro-nuvem e micro-servidor"
 msgstr ""
 
-#: store/templates/hubpro/server.html:61
+#: templates/hubpro/server.html:61
 msgid ""
 " O HUB Pro é a solução ideal para substituir seu servidor antigo e grande\n"
 "        por algo moderno, rápido e compacto. Graças a tecnologia exclusiva "
@@ -2287,11 +2050,11 @@ msgid ""
 "        sua solução anterior e muito mais. "
 msgstr ""
 
-#: store/templates/hubpro/server.html:68
+#: templates/hubpro/server.html:68
 msgid "Acoplável por design, preparado para clusterização"
 msgstr ""
 
-#: store/templates/hubpro/server.html:69
+#: templates/hubpro/server.html:69
 msgid ""
 " A tecnologia EOS possui serviços que são facilmente acopláveis entre si,\n"
 "        garantindo uma maior paralelização. É uma situação perfeita para "
@@ -2301,12 +2064,12 @@ msgid ""
 "        assim&nbsp;disponibilizamos a compra em volumes para sua empresa. "
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:10
+#: templates/hubpro/videogame.html:10
 #, fuzzy
 msgid "Entretenimento"
 msgstr "Entretenimento"
 
-#: store/templates/hubpro/videogame.html:11
+#: templates/hubpro/videogame.html:11
 msgid ""
 " Nossos nanocomputadores possuem um potencial gráfico bastante avançado,\n"
 "        o que dá espaço para a criação de games para a plataforma. Pensando "
@@ -2319,11 +2082,11 @@ msgid ""
 "small> "
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:24
+#: templates/hubpro/videogame.html:24
 msgid "Interface de fácil acesso"
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:25
+#: templates/hubpro/videogame.html:25
 msgid ""
 " Através do controle do teclado sem fio incluso no HUB Pro, ergonomicamente\n"
 "        fabricado para funcionar como um gampepad, o Retro dispõe de uma "
@@ -2335,11 +2098,11 @@ msgid ""
 "        compatíveis com os emuladores. "
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:32
+#: templates/hubpro/videogame.html:32
 msgid "A solução para criação de jogos"
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:33
+#: templates/hubpro/videogame.html:33
 msgid ""
 " Tendo à disposição diversas tecnologias multi-plataforma para gráficos,\n"
 "        áudio e física, a criação de jogos para a plataforma torna-se "
@@ -2351,11 +2114,11 @@ msgid ""
 "        utilizá-lo para testes e desenvolvimento. "
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:45
+#: templates/hubpro/videogame.html:45
 msgid "Instalação de jogos prática"
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:46
+#: templates/hubpro/videogame.html:46
 msgid ""
 " Para a instalação de jogos novos no Retro, é muito fácil: basta acessar\n"
 "        o ponto de rede pelo computador chamado RETRO e copiar as roms para "
@@ -2367,11 +2130,11 @@ msgid ""
 "        é mais fácil ainda: basta instalar diretamente na Google Play Store. "
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:53
+#: templates/hubpro/videogame.html:53
 msgid "Entretenimento sob demanda"
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:54
+#: templates/hubpro/videogame.html:54
 msgid ""
 " Nossos nanocomputadores, através de ferramentas como o Retro e a "
 "plataforma\n"
@@ -2384,11 +2147,11 @@ msgid ""
 "        saber mais. "
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:66
+#: templates/hubpro/videogame.html:66
 msgid "Baterias inclusas para diversão"
 msgstr ""
 
-#: store/templates/hubpro/videogame.html:67
+#: templates/hubpro/videogame.html:67
 msgid ""
 " A Interface Retro instalada no coração de nossos nanocomputadores dispõe,\n"
 "        através de um conjunto de tecnologias, acesso para 10 sistemas de "
@@ -2400,79 +2163,166 @@ msgid ""
 "        e Sega Master System. É diversão sem fim. "
 msgstr ""
 
-#: store/templates/includes/editable_form.html:16
+#: templates/includes/editable_form.html:16
 msgid "Save"
 msgstr "Salvar"
 
-#: store/templates/includes/editable_form.html:17
+#: templates/includes/editable_form.html:17
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: store/templates/includes/editable_form.html:25
+#: templates/includes/editable_form.html:25
 msgid "Edit"
 msgstr "Editar"
 
-#: store/templates/includes/editable_toolbar.html:8
+#: templates/includes/editable_toolbar.html:8
 msgid "Admin"
 msgstr "Admin"
 
-#: store/templates/includes/form_errors.html:8
+#: templates/includes/form_errors.html:8
 msgid "Please correct the errors below."
 msgstr "Favor corrigir os erros abaixo."
 
-#: store/templates/includes/pagination.html:7
+#: templates/includes/pagination.html:7
 msgid "Page"
 msgstr ""
 
-#: store/templates/includes/pagination.html:7
-#: store/templates/shop/checkout.html:5
+#: templates/includes/pagination.html:7 templates/shop/checkout.html:5
 msgid "of"
 msgstr ""
 
-#: store/templates/includes/profile.html:6
+#: templates/includes/profile.html:6
 msgid "Account"
 msgstr "Conta"
 
-#: store/templates/includes/profile.html:12
+#: templates/includes/profile.html:12
 msgid "Bag"
 msgstr "Carrinho"
 
-#: store/templates/includes/profile.html:18
+#: templates/includes/profile.html:18
 msgid "List"
 msgstr "Lista"
 
-#: store/templates/includes/profile.html:24
+#: templates/includes/profile.html:24
 msgid "Orders"
 msgstr "Pedidos"
 
-#: store/templates/includes/search_form.html:5
+#: templates/includes/search_form.html:5
 msgid "Search"
 msgstr "Buscar"
 
-#: store/templates/includes/sitemap.html:19
-#: store/templates/pages/menus/dropdown.html:22
+#: templates/includes/sitemap.html:19
 msgid "Help"
 msgstr "Ajuda"
 
-#: store/templates/pages/category.html:45
+#: templates/index.html:25 templates/index.html:26
+msgid "WE ARE"
+msgstr "SOMOS A"
+
+#: templates/index.html:25
+msgid "EFFORIA NANOCOMPUTERS"
+msgstr "EFFORIA NANOCOMPUTADORES"
+
+#: templates/index.html:30
+msgid "And we want the computers present at every moment of people's lives"
+msgstr ""
+"E queremos a computação presente em todos os momentos da vida das pessoas"
+
+#: templates/index.html:40
+msgid ""
+"At Efforia we design and build automated audiovisual systems, all wirelessly "
+"connected and tightly integrated."
+msgstr ""
+"Na Efforia nós projetamos e montamos sistemas audiovisuais automatizados, "
+"todos conectados sem fio e muito bem integrados."
+
+#: templates/index.html:45
+msgid ""
+"We also develop full-featured entertainment systems, ready to play every "
+"video content, music, or videogame."
+msgstr ""
+"Nós também desenvolvemos sistemas de entretenimento completos, prontos para "
+"reproduzir qualquer vídeo, música ou vídeogame."
+
+#: templates/index.html:49 templates/services/nav.html:5
+msgid "Automation"
+msgstr "Automação"
+
+#: templates/index.html:50
+msgid ""
+"At the heart of our nanocomputers, we have the IoT concept, reaching the "
+"next level of automation."
+msgstr ""
+"No coração de nossos nanocomputadores, há o conceito da Internet das Coisas, "
+"alcançando assim a próxima nível da automação."
+
+#: templates/index.html:61 templates/index.html:68
+msgid "Homes"
+msgstr "Casas"
+
+#: templates/index.html:62 templates/index.html:69
+msgid ""
+"We automate houses with our own finest technology of IoT, connecting your "
+"home to the world."
+msgstr ""
+"Nós automatizamos casas com a nossa melhor tecnologia em IoT, conectando o "
+"seular ao mundo."
+
+#: templates/index.html:78 templates/index.html:84
+msgid "Enterprises"
+msgstr "Empresas"
+
+#: templates/index.html:79 templates/index.html:85
+msgid ""
+"With the Internet of Things platform of Efforia, your company will have the "
+"power to do more."
+msgstr ""
+"Com a plataforma da Internet das Coisas da Efforia, sua empresa terá o poder "
+"de fazer muito mais."
+
+#: templates/index.html:97
+msgid ""
+"Know more about our efficient solution for Internet of Things automation and "
+"its numerous possibilities."
+msgstr ""
+"Saiba mais sobre a nossa solução eficiente de automação em Internet das "
+"Coisas e suas inúmeras possibilidades."
+
+#: templates/index.html:102
+msgid ""
+"Ultimate services and plans that we can do more for you at Efforia "
+"Nanocomputers."
+msgstr ""
+"Os melhores serviços e planos que podemos oferecer a você na Efforia "
+"Nanocomputadores."
+
+#: templates/index.html:107
+msgid ""
+"Discover about our outstanding solution for Internet of Things automation "
+"and its infinite possibilities."
+msgstr ""
+"Descubra mais sobre nossa incrível solução para automação baseada em IoT e "
+"suas infinitas possibilidades."
+
+#: templates/pages/category.html:45
 msgid "Sort by"
 msgstr ""
 
-#: store/templates/pages/category.html:75 store/templates/shop/cart.html:93
-#: store/templates/shop/product.html:97 store/templates/shop/product.html:148
+#: templates/pages/category.html:75 templates/shop/cart.html:93
+#: templates/shop/product.html:97 templates/shop/product.html:148
 msgid "On sale:"
 msgstr ""
 
-#: store/templates/pages/category.html:79 store/templates/shop/cart.html:97
-#: store/templates/shop/product.html:152
+#: templates/pages/category.html:79 templates/shop/cart.html:97
+#: templates/shop/product.html:152
 msgid "Coming soon"
 msgstr ""
 
-#: store/templates/pages/choose.html:9 store/templates/pages/services.html:9
+#: templates/pages/choose.html:9 templates/pages/services.html:9
 msgid "Perfeito, estamos aqui para ajudar você."
 msgstr ""
 
-#: store/templates/pages/choose.html:10
+#: templates/pages/choose.html:10
 msgid ""
 " A Efforia Nanocomputadores pode lhe atender de várias maneiras,\n"
 "      sempre pensando na melhor solução para o seu problema. Para isso, "
@@ -2480,11 +2330,11 @@ msgid ""
 "      nossos equipamentos, instalações e integrações de diferentes formas. "
 msgstr ""
 
-#: store/templates/pages/choose.html:23
+#: templates/pages/choose.html:23
 msgid "Quero uma solução de automação."
 msgstr ""
 
-#: store/templates/pages/choose.html:24
+#: templates/pages/choose.html:24
 msgid ""
 " Esta opção é perfeita caso esteja procurando por uma solução personalizada\n"
 "      de automação, ou pretende integrar a uma existente. Temos a expertise "
@@ -2492,11 +2342,11 @@ msgid ""
 "      para as mais diversas demandas, com valores flexíveis. "
 msgstr ""
 
-#: store/templates/pages/choose.html:32
+#: templates/pages/choose.html:32
 msgid "Vou precisar da tecnologia de vocês."
 msgstr ""
 
-#: store/templates/pages/choose.html:33
+#: templates/pages/choose.html:33
 msgid ""
 " É a escolha certa para quem tem um orçamento enxuto e gostaria\n"
 "      de desfrutar de nossa tecnologia de automação em seu ambiente. "
@@ -2504,11 +2354,11 @@ msgid ""
 "      nanocomputadores por meio de contratos de cessão ou <em>leasing.</em> "
 msgstr ""
 
-#: store/templates/pages/choose.html:41
+#: templates/pages/choose.html:41
 msgid "Apenas quero meu nanocomputador."
 msgstr ""
 
-#: store/templates/pages/choose.html:42
+#: templates/pages/choose.html:42
 msgid ""
 " Há também como adquirir nossos nanocomputadores com condições\n"
 "      especiais na compra à vista, parcelada ou em volume. Confira na nossa "
@@ -2517,15 +2367,15 @@ msgid ""
 "produtos. "
 msgstr ""
 
-#: store/templates/pages/choose.html:54
+#: templates/pages/choose.html:54
 msgid "Entrega de graça"
 msgstr ""
 
-#: store/templates/pages/choose.html:62 store/templates/pages/services.html:61
+#: templates/pages/choose.html:62 templates/pages/services.html:61
 msgid "Visite-nos"
 msgstr ""
 
-#: store/templates/pages/choose.html:63 store/templates/pages/services.html:62
+#: templates/pages/choose.html:63 templates/pages/services.html:62
 msgid ""
 " Achou legal nosso trabalho? Visite-nos em nosso espaço de coworking ao "
 "centro\n"
@@ -2533,29 +2383,33 @@ msgid ""
 "parceria. "
 msgstr ""
 
-#: store/templates/pages/choose.html:71 store/templates/pages/services.html:70
+#: templates/pages/choose.html:71 templates/pages/services.html:70
 msgid "Ajuda para comprar"
 msgstr ""
 
-#: store/templates/pages/choose.html:72 store/templates/pages/services.html:71
+#: templates/pages/choose.html:72 templates/pages/services.html:71
 msgid ""
 " Não sabe ainda bem o que está precisando? Não se preocupe, estamos aqui\n"
 "        para isso. Contate-nos pelos nossos mais diversos canais de "
 "atendimento. "
 msgstr ""
 
-#: store/templates/pages/services.html:10
+#: templates/pages/menus/admin.html:31
+msgid "Add"
+msgstr ""
+
+#: templates/pages/services.html:10
 msgid ""
 " Na Efforia Nanocomputadores, oferecemos todos os nossos serviços\n"
 "        de diferentes formas, sempre pensando na melhor solução para o seu "
 "problema. "
 msgstr ""
 
-#: store/templates/pages/services.html:22
+#: templates/pages/services.html:22
 msgid "Quero melhorar a automação audiovisual."
 msgstr ""
 
-#: store/templates/pages/services.html:23
+#: templates/pages/services.html:23
 msgid ""
 " A Efforia oferece planos para consumo de canais de <em>streaming</em> e\n"
 "      acompanhantes de TV a cabo, tudo para que sua automação audiovisual em "
@@ -2563,11 +2417,11 @@ msgid ""
 "      ambiente possa ficar mais qualificada ainda. "
 msgstr ""
 
-#: store/templates/pages/services.html:31
+#: templates/pages/services.html:31
 msgid "Preciso hospedar meus aplicativos."
 msgstr ""
 
-#: store/templates/pages/services.html:32
+#: templates/pages/services.html:32
 msgid ""
 " Oferecemos uma opção de hospedagem de aplicativos, serviços e funções\n"
 "      abastecidas com a tecnologia exclusiva EOS e com uma excelente relação "
@@ -2575,11 +2429,11 @@ msgid ""
 "      por benefício, trazendo a você soluções eficientes para a nuvem. "
 msgstr ""
 
-#: store/templates/pages/services.html:40
+#: templates/pages/services.html:40
 msgid "Quero meu equipamento protegido."
 msgstr ""
 
-#: store/templates/pages/services.html:41
+#: templates/pages/services.html:41
 msgid ""
 " Há a possibilidade de adquirir nossos nanocomputadores com planos de "
 "garantia\n"
@@ -2588,21 +2442,37 @@ msgid ""
 "      de suporte especializado. "
 msgstr ""
 
-#: store/templates/pages/services.html:53
+#: templates/pages/services.html:53
 msgid "Todos os lugares"
 msgstr ""
 
-#: store/templates/pages/services.html:54
+#: templates/pages/services.html:54
 msgid ""
 " Atendemos a qualquer demanda conforme disponibilidade para toda a América,\n"
 "        através de videoconferência, transações e encomendas internacionais. "
 msgstr ""
 
-#: store/templates/pages/menus/admin.html:31
-msgid "Add"
+#: templates/search_results.html:5 templates/search_results.html:6
+#: templates/search_results.html:15
+msgid "Search Results"
+msgstr "Resultados da busca"
+
+#: templates/search_results.html:22
+#, python-format
+msgid ""
+"\n"
+"No results were found in %(search_type)s matching your query: %(query)s\n"
 msgstr ""
 
-#: store/templates/services/apps.html:11
+#: templates/search_results.html:26
+#, python-format
+msgid ""
+"\n"
+"Showing %(start)s to %(end)s of %(total)s results in %(search_type)s "
+"matching your query: %(query)s\n"
+msgstr ""
+
+#: templates/services/apps.html:11
 msgid ""
 " Seu tablet e smartphone consegue interagir com os nanocomputadores\n"
 "        com as tecnologias exclusivas EOS e EOS-D a partir de diversos "
@@ -2612,16 +2482,16 @@ msgid ""
 "        suas aplicações. "
 msgstr ""
 
-#: store/templates/services/apps.html:21
+#: templates/services/apps.html:21
 #, fuzzy
 msgid "Aplicativos para iOS"
 msgstr "Aplicações"
 
-#: store/templates/services/apps.html:27
+#: templates/services/apps.html:27
 msgid "iTunes"
 msgstr ""
 
-#: store/templates/services/apps.html:28
+#: templates/services/apps.html:28
 msgid ""
 " O iTunes da Apple em dispositivos iOS possibilita a transmissão de "
 "conteúdo\n"
@@ -2630,11 +2500,11 @@ msgid ""
 "          músicas e vídeoclipes. "
 msgstr ""
 
-#: store/templates/services/apps.html:40
+#: templates/services/apps.html:40
 msgid "Sybu Remote"
 msgstr ""
 
-#: store/templates/services/apps.html:41
+#: templates/services/apps.html:41
 msgid ""
 " Com o Sybu Remote, seu iPad, iPhone ou iPod pode funcionar como um "
 "controle\n"
@@ -2643,11 +2513,11 @@ msgid ""
 "          de uma interface limpa. "
 msgstr ""
 
-#: store/templates/services/apps.html:55
+#: templates/services/apps.html:55
 msgid "Transmission RPC"
 msgstr ""
 
-#: store/templates/services/apps.html:56
+#: templates/services/apps.html:56
 msgid ""
 " Seu iPad, iPhone ou iPod pode controlar os downloads e uploads do serviço\n"
 "          Torrent habilitado no seu nanocomputador, podendo pausar, iniciar "
@@ -2655,11 +2525,11 @@ msgid ""
 "          operações. "
 msgstr ""
 
-#: store/templates/services/apps.html:68
+#: templates/services/apps.html:68
 msgid "FileExplorer Free"
 msgstr ""
 
-#: store/templates/services/apps.html:69
+#: templates/services/apps.html:69
 msgid ""
 " A partir desta ferramenta de gerenciamento de arquivos, seu iPad,\n"
 "          iPhone ou iPod pode acessar ou alterar de forma remota arquivos "
@@ -2667,46 +2537,46 @@ msgid ""
 "          no nanocomputador. "
 msgstr ""
 
-#: store/templates/services/apps.html:79
+#: templates/services/apps.html:79
 msgid "Aplicativos para Windows Phone"
 msgstr ""
 
-#: store/templates/services/apps.html:87
+#: templates/services/apps.html:87
 msgid "XBMC Remote"
 msgstr ""
 
-#: store/templates/services/apps.html:88
+#: templates/services/apps.html:88
 msgid ""
 " Seu Windows Phone pode ser usado como controle para reprodução e navegação\n"
 "          no nanocomputador com o aplicativo XBMC Remote. "
 msgstr ""
 
-#: store/templates/services/apps.html:99
+#: templates/services/apps.html:99
 msgid "AV Remote"
 msgstr ""
 
-#: store/templates/services/apps.html:100
+#: templates/services/apps.html:100
 msgid ""
 " O aplicativo AV Remote dá a possibilidade de transmissão e reprodução\n"
 "          de vídeos, músicas, e fotos pelo Windows Phone. "
 msgstr ""
 
-#: store/templates/services/apps.html:111
+#: templates/services/apps.html:111
 msgid "MetroTransmission"
 msgstr ""
 
-#: store/templates/services/apps.html:112
+#: templates/services/apps.html:112
 msgid ""
 " A partir deste aplicativo o seu Windows Phone pode controlar o serviço\n"
 "          Torrent, de forma a encerrar, iniciar ou pausar downloads ou "
 "uploads. "
 msgstr ""
 
-#: store/templates/services/apps.html:125
+#: templates/services/apps.html:125
 msgid "ShareFolder"
 msgstr ""
 
-#: store/templates/services/apps.html:126
+#: templates/services/apps.html:126
 msgid ""
 " Com este aplicativo de gerenciamento de arquivos instalado em seu Windows\n"
 "          Phone, é possível acessar e modificar arquivos remotamente "
@@ -2714,7 +2584,7 @@ msgid ""
 "          seu nanocomputador. "
 msgstr ""
 
-#: store/templates/services/apps.html:139
+#: templates/services/apps.html:139
 msgid ""
 " Através deste aplicativo multiplataforma, é possível enviar arquivos de\n"
 "          um dispositivo para o outro, graças ao serviço Sync habilitado em "
@@ -2722,16 +2592,16 @@ msgid ""
 "          os nanocomputadores. "
 msgstr ""
 
-#: store/templates/services/apps.html:149
+#: templates/services/apps.html:149
 #, fuzzy
 msgid "Aplicativos para Android"
 msgstr "Aplicações"
 
-#: store/templates/services/apps.html:157
+#: templates/services/apps.html:157
 msgid "File Explorer"
 msgstr ""
 
-#: store/templates/services/apps.html:158
+#: templates/services/apps.html:158
 msgid ""
 " Com este gerenciador de arquivos instalado em seu tablet ou smartphone\n"
 "          Android, é possível acessar e/ou modificar remotamente todo o "
@@ -2739,11 +2609,11 @@ msgid ""
 "          de arquivos disponibilizado no nanocomputador. "
 msgstr ""
 
-#: store/templates/services/apps.html:170
+#: templates/services/apps.html:170
 msgid "BubbleUPNP"
 msgstr ""
 
-#: store/templates/services/apps.html:171
+#: templates/services/apps.html:171
 msgid ""
 " Use seu smartphone ou tablet para transmitir sem fio músicas, vídeos\n"
 "          e fotos para nanocomputadores a partir do BubbleUPNP. É possível "
@@ -2751,11 +2621,11 @@ msgid ""
 "          a transmissão e reprodução de diversos nanocomputadores. "
 msgstr ""
 
-#: store/templates/services/apps.html:183
+#: templates/services/apps.html:183
 msgid "AirSync"
 msgstr ""
 
-#: store/templates/services/apps.html:184
+#: templates/services/apps.html:184
 msgid ""
 " Com o reprodutor de mídia DoubleTwist mais o adicional AirSync, é possível\n"
 "          também transmitir via tecnologia Apple AirPlay conteúdos "
@@ -2763,11 +2633,11 @@ msgid ""
 "          eles músicas, fotos e vídeos. "
 msgstr ""
 
-#: store/templates/services/apps.html:198
+#: templates/services/apps.html:198
 msgid "Yatse"
 msgstr ""
 
-#: store/templates/services/apps.html:199
+#: templates/services/apps.html:199
 msgid ""
 " Este aplicativo possibilita o uso de seu smartphone ou tablet Android\n"
 "          como um controle remoto para o seu nanocomputador, dando as opções "
@@ -2775,11 +2645,11 @@ msgid ""
 "          navegação, reprodução e transmissão. "
 msgstr ""
 
-#: store/templates/services/apps.html:211
+#: templates/services/apps.html:211
 msgid "iMediaShare"
 msgstr ""
 
-#: store/templates/services/apps.html:212
+#: templates/services/apps.html:212
 msgid ""
 " Disponível para os dispositivos Android e iOS, o aplicativo iMediaShare\n"
 "          utiliza das tecnologias EOS e EOS-D para a transmissão e a "
@@ -2787,26 +2657,26 @@ msgid ""
 "          vídeos, músicas e fotos. "
 msgstr ""
 
-#: store/templates/services/apps.html:224
+#: templates/services/apps.html:224
 msgid "Transmission"
 msgstr ""
 
-#: store/templates/services/apps.html:225
+#: templates/services/apps.html:225
 msgid ""
 " O Remote Transmission possibilita o controle remoto do serviço Torrent,\n"
 "          podendo iniciar, pausar ou encerrar downloads ou uploads no seu "
 "nanocomputador. "
 msgstr ""
 
-#: store/templates/services/base.html:10
+#: templates/services/base.html:10
 msgid "Hire"
 msgstr "Contratar"
 
-#: store/templates/services/cloud.html:10
+#: templates/services/cloud.html:10
 msgid "Hospedagem de Nanocomputadores"
 msgstr ""
 
-#: store/templates/services/cloud.html:11
+#: templates/services/cloud.html:11
 msgid ""
 " A Efforia disponibiliza serviços na nuvem para você\n"
 "        expandir ainda mais as possibilidades de seus nanocomputadores. "
@@ -2818,11 +2688,11 @@ msgid ""
 "        o seu próximo projeto aqui. "
 msgstr ""
 
-#: store/templates/services/cloud.html:25
+#: templates/services/cloud.html:25
 msgid "Efforia IoT"
 msgstr ""
 
-#: store/templates/services/cloud.html:26
+#: templates/services/cloud.html:26
 msgid ""
 " Por meio deste serviço, oferecemos uma maneira simples e eficiente de\n"
 "          integrar os mais diversos projetos de Internet das Coisas "
@@ -2830,11 +2700,11 @@ msgid ""
 "          em nossos nanocomputadores com a nuvem. "
 msgstr ""
 
-#: store/templates/services/cloud.html:34
+#: templates/services/cloud.html:34
 msgid "Automação mais universal."
 msgstr ""
 
-#: store/templates/services/cloud.html:35
+#: templates/services/cloud.html:35
 msgid ""
 " Graças ao serviço Efforia IoT, é possível expandir o alcance de seu "
 "próximo\n"
@@ -2843,11 +2713,11 @@ msgid ""
 "          os lugares conectados à Internet no mundo. "
 msgstr ""
 
-#: store/templates/services/cloud.html:41
+#: templates/services/cloud.html:41
 msgid "Flexível em software/hardware."
 msgstr ""
 
-#: store/templates/services/cloud.html:42
+#: templates/services/cloud.html:42
 msgid ""
 " Possuímos soluções integradas e personalizadas entre nossos "
 "nanocomputadores,\n"
@@ -2856,11 +2726,11 @@ msgid ""
 "          cada demanda. "
 msgstr ""
 
-#: store/templates/services/cloud.html:50
+#: templates/services/cloud.html:50
 msgid "Massivamente distribuído."
 msgstr ""
 
-#: store/templates/services/cloud.html:51
+#: templates/services/cloud.html:51
 msgid ""
 " Com o Efforia IoT, seus nanocomputadores não ficam restritos a apenas um\n"
 "          ambiente para atuar sobre a Internet das Coisas; você pode "
@@ -2868,61 +2738,52 @@ msgid ""
 "          sua solução geograficamente. "
 msgstr ""
 
-#: store/templates/services/cloud.html:60
-#: store/templates/services/cloud.html:156
+#: templates/services/cloud.html:60 templates/services/cloud.html:156
 msgid "PP"
 msgstr ""
 
-#: store/templates/services/cloud.html:61
-#: store/templates/services/cloud.html:157
-#: store/templates/services/plans.html:59
+#: templates/services/cloud.html:61 templates/services/cloud.html:157
+#: templates/services/plans.html:59
 msgid "P"
 msgstr ""
 
-#: store/templates/services/cloud.html:62
-#: store/templates/services/cloud.html:158
-#: store/templates/services/plans.html:60
+#: templates/services/cloud.html:62 templates/services/cloud.html:158
+#: templates/services/plans.html:60
 msgid "M"
 msgstr ""
 
-#: store/templates/services/cloud.html:63
-#: store/templates/services/cloud.html:159
-#: store/templates/services/plans.html:61
+#: templates/services/cloud.html:63 templates/services/cloud.html:159
+#: templates/services/plans.html:61
 msgid "G"
 msgstr ""
 
-#: store/templates/services/cloud.html:64
-#: store/templates/services/cloud.html:160
+#: templates/services/cloud.html:64 templates/services/cloud.html:160
 msgid "GG"
 msgstr ""
 
-#: store/templates/services/cloud.html:67
-#: store/templates/services/cloud.html:163
+#: templates/services/cloud.html:67 templates/services/cloud.html:163
 msgid "Mensal"
 msgstr ""
 
-#: store/templates/services/cloud.html:75
-#: store/templates/services/cloud.html:171
+#: templates/services/cloud.html:75 templates/services/cloud.html:171
 msgid "Diário"
 msgstr ""
 
-#: store/templates/services/cloud.html:83
-#: store/templates/services/cloud.html:179
+#: templates/services/cloud.html:83 templates/services/cloud.html:179
 msgid "Hora"
 msgstr ""
 
-#: store/templates/services/cloud.html:115
-#: store/templates/services/cloud.html:211
+#: templates/services/cloud.html:115 templates/services/cloud.html:211
 msgid ""
 "Valores na moeda Real Brasileiro, conversíveis em dólar para transações "
 "internacionais."
 msgstr ""
 
-#: store/templates/services/cloud.html:121
+#: templates/services/cloud.html:121
 msgid "Efforia Cloud"
 msgstr ""
 
-#: store/templates/services/cloud.html:122
+#: templates/services/cloud.html:122
 msgid ""
 " Através deste serviço, há como utilizar a tecnologia exclusiva EOS na\n"
 "          nuvem do Efforia para hospedar configurações, aplicativos e "
@@ -2930,11 +2791,11 @@ msgid ""
 "          o seu negócio está precisando. "
 msgstr ""
 
-#: store/templates/services/cloud.html:130
+#: templates/services/cloud.html:130
 msgid "Escale conforme a sua necessidade."
 msgstr ""
 
-#: store/templates/services/cloud.html:131
+#: templates/services/cloud.html:131
 msgid ""
 " Com a nuvem do Efforia, não há com o que se preocupar com os custos.\n"
 "        Funcionamos de acordo com o que precisa de recursos de máquina para "
@@ -2942,11 +2803,11 @@ msgid ""
 "        momento, seja P, M ou G. "
 msgstr ""
 
-#: store/templates/services/cloud.html:137
+#: templates/services/cloud.html:137
 msgid "Configure para o que precisar."
 msgstr ""
 
-#: store/templates/services/cloud.html:138
+#: templates/services/cloud.html:138
 msgid ""
 " Graças à tecnologia EOS, você possui um sistema operacional GNU/Linux\n"
 "          completo com todos os recursos modernos que precisa e pronto para "
@@ -2954,11 +2815,11 @@ msgid ""
 "          que necessitar. "
 msgstr ""
 
-#: store/templates/services/cloud.html:146
+#: templates/services/cloud.html:146
 msgid "Tecnologia EOS em todos os lugares."
 msgstr ""
 
-#: store/templates/services/cloud.html:147
+#: templates/services/cloud.html:147
 msgid ""
 " O Efforia Cloud utiliza a tecnologia exclusiva EOS, ficando assim presente\n"
 "          em todos os ambientes que quiser, aproveitando o máximo de seu "
@@ -2966,12 +2827,12 @@ msgid ""
 "          em serviços e aplicativos. "
 msgstr ""
 
-#: store/templates/services/index.html:10
+#: templates/services/index.html:10
 #, fuzzy
 msgid "Serviços"
 msgstr "Serviços"
 
-#: store/templates/services/index.html:11
+#: templates/services/index.html:11
 msgid ""
 " A Efforia oferece um bom número de serviços para você\n"
 "        ter mais opções para aproveitar o que há de melhor em nossos "
@@ -2979,7 +2840,7 @@ msgid ""
 "        sempre de acordo com o que você está mais precisando no momento. "
 msgstr ""
 
-#: store/templates/services/index.html:23
+#: templates/services/index.html:23
 msgid ""
 " Está precisando automatizar algo e nossas soluções atuais ainda não "
 "encaixam\n"
@@ -2994,7 +2855,7 @@ msgid ""
 "        um projeto diferenciado para o seu negócio. "
 msgstr ""
 
-#: store/templates/services/index.html:33
+#: templates/services/index.html:33
 msgid ""
 " Disponibilizamos para você uma garantia especial para seu equipamento por\n"
 "        um ano ou mais, sendo cobrado uma taxa única para cada "
@@ -3008,11 +2869,11 @@ msgid ""
 "        não causados pelo usuário. "
 msgstr ""
 
-#: store/templates/services/index.html:47
+#: templates/services/index.html:47
 msgid "Serviços de hospedagem"
 msgstr ""
 
-#: store/templates/services/index.html:48
+#: templates/services/index.html:48
 msgid ""
 " Para suprir as necessidades de conexão à Internet de nossas instalações\n"
 "        de automação doméstica ou corporativa, a Efforia disponibiliza "
@@ -3025,11 +2886,11 @@ msgid ""
 "mundo. "
 msgstr ""
 
-#: store/templates/services/index.html:56
+#: templates/services/index.html:56
 msgid "Planos de assinatura de Streaming"
 msgstr ""
 
-#: store/templates/services/index.html:57
+#: templates/services/index.html:57
 msgid ""
 " Quer ter mais opções de canais pelo nosso sistema de automação "
 "audiovisual?\n"
@@ -3043,23 +2904,23 @@ msgid ""
 "        adicional. "
 msgstr ""
 
-#: store/templates/services/nav.html:3
+#: templates/services/nav.html:3
 msgid "Apps"
 msgstr "Aplicativos"
 
-#: store/templates/services/nav.html:4
+#: templates/services/nav.html:4
 msgid "Hosting"
 msgstr "Hospedagem"
 
-#: store/templates/services/nav.html:6
+#: templates/services/nav.html:6
 msgid "Partners"
 msgstr "Parceiros"
 
-#: store/templates/services/partners.html:10
+#: templates/services/partners.html:10
 msgid "Parceiros"
 msgstr ""
 
-#: store/templates/services/partners.html:11
+#: templates/services/partners.html:11
 msgid ""
 " Nós da Efforia Nanocomputadores acreditamos que trabalhando\n"
 "        unido com parceiros, crescemos mais forte. E é por isso que dispomos "
@@ -3069,11 +2930,11 @@ msgid ""
 "        quer que seja. "
 msgstr ""
 
-#: store/templates/services/partners.html:22
+#: templates/services/partners.html:22
 msgid "Projeto Cauã"
 msgstr ""
 
-#: store/templates/services/partners.html:23
+#: templates/services/partners.html:23
 msgid ""
 " O Projeto Cauã trata-se de uma iniciativa empreendedora de incentivo da\n"
 "        constituição de novos empreendimentos que façam uso de "
@@ -3085,11 +2946,11 @@ msgid ""
 "        empreendimento. "
 msgstr ""
 
-#: store/templates/services/partners.html:30
+#: templates/services/partners.html:30
 msgid "Fábrica de Ideias"
 msgstr ""
 
-#: store/templates/services/partners.html:31
+#: templates/services/partners.html:31
 msgid ""
 " Através do programa de mentoria para startups, o projeto embrionário do\n"
 "        Efforia, antes chamado de Caokzu, surgiu na Fábrica de Ideias "
@@ -3101,11 +2962,11 @@ msgid ""
 "        e serviços para o espaço coletivo. "
 msgstr ""
 
-#: store/templates/services/partners.html:38
+#: templates/services/partners.html:38
 msgid "Fundação Raspberry Pi"
 msgstr ""
 
-#: store/templates/services/partners.html:39
+#: templates/services/partners.html:39
 msgid ""
 " Graças a fundação foi possível realizar boa parte dos mais diversos "
 "projetos\n"
@@ -3117,11 +2978,11 @@ msgid ""
 "nanocomputadores. "
 msgstr ""
 
-#: store/templates/services/partners.html:47
+#: templates/services/partners.html:47
 msgid "Arch Linux ARM"
 msgstr ""
 
-#: store/templates/services/partners.html:48
+#: templates/services/partners.html:48
 msgid ""
 " A partir do Arch Linux ARM é que foi possível constituir nossas bases de\n"
 "        fundação de nossa tecnologia exclusiva EOS. Como forma de "
@@ -3134,11 +2995,11 @@ msgid ""
 "operacional. "
 msgstr ""
 
-#: store/templates/services/partners.html:55
+#: templates/services/partners.html:55
 msgid "Microsoft BizSpark"
 msgstr ""
 
-#: store/templates/services/partners.html:56
+#: templates/services/partners.html:56
 msgid ""
 " A partir deste programa estruturante de startups da, tivemos uma "
 "disponibilidade\n"
@@ -3151,11 +3012,11 @@ msgid ""
 "        no espaço onde a Efforia Nanocomputadores encontra-se instalada. "
 msgstr ""
 
-#: store/templates/services/partners.html:63
+#: templates/services/partners.html:63
 msgid "Código Aberto"
 msgstr ""
 
-#: store/templates/services/partners.html:64
+#: templates/services/partners.html:64
 msgid ""
 " Na Efforia, o desenvolvimento do Software Livre como um todo é um processo\n"
 "        de importância para a evolução tecnológica da, dado que nossos "
@@ -3168,11 +3029,11 @@ msgid ""
 "Pi. "
 msgstr ""
 
-#: store/templates/services/partners.html:77
+#: templates/services/partners.html:77
 msgid "Uma companhia que apoia o software livre."
 msgstr ""
 
-#: store/templates/services/partners.html:78
+#: templates/services/partners.html:78
 msgid ""
 " Temos uma fundação sólida em tecnologias livres, como o Python, uma "
 "linguagem\n"
@@ -3194,11 +3055,11 @@ msgid ""
 "efforia</a> "
 msgstr ""
 
-#: store/templates/services/plans.html:10
+#: templates/services/plans.html:10
 msgid "Serviços para automação"
 msgstr ""
 
-#: store/templates/services/plans.html:11
+#: templates/services/plans.html:11
 msgid ""
 " A Efforia Nanocomputadores oferece serviços adicionais\n"
 "        que podem trazer diversos benefícios para a sua solução de "
@@ -3206,11 +3067,11 @@ msgid ""
 "        ela audiovisual, doméstica ou corporativa, em todos os tamanhos. "
 msgstr ""
 
-#: store/templates/services/plans.html:21
+#: templates/services/plans.html:21
 msgid "Efforia Play"
 msgstr ""
 
-#: store/templates/services/plans.html:22
+#: templates/services/plans.html:22
 msgid ""
 " A Efforia, sempre comprometida em oferecer a você o\n"
 "        que há de melhor em automação audiovisual, comercializa pacotes de "
@@ -3220,11 +3081,11 @@ msgid ""
 "        na compra de sua solução de automação. "
 msgstr ""
 
-#: store/templates/services/plans.html:36
+#: templates/services/plans.html:36
 msgid "Atendemos de P a G"
 msgstr ""
 
-#: store/templates/services/plans.html:37
+#: templates/services/plans.html:37
 msgid ""
 " Com tamanhos como P, M e G, contemplando diversas ofertas de canais de "
 "streaming\n"
@@ -3233,11 +3094,11 @@ msgid ""
 "      para sua família, colegas ou amigos. "
 msgstr ""
 
-#: store/templates/services/plans.html:42
+#: templates/services/plans.html:42
 msgid "Companhia para CATV"
 msgstr ""
 
-#: store/templates/services/plans.html:43
+#: templates/services/plans.html:43
 msgid ""
 " Oferecemos a possibilidade de acessar os mais diversos canais "
 "acompanhantes\n"
@@ -3246,105 +3107,92 @@ msgid ""
 "      debates ou documentários que quiser aonde quiser. "
 msgstr ""
 
-#: store/templates/services/plans.html:62
-msgid "TV"
-msgstr ""
-
-#: store/templates/services/plans.html:65
+#: templates/services/plans.html:65
 msgid "Nanocomputador incluso"
 msgstr ""
 
-#: store/templates/services/plans.html:66
-#: store/templates/services/plans.html:67
-#: store/templates/services/plans.html:68
-#: store/templates/services/plans.html:69
-#: store/templates/services/plans.html:73
-#: store/templates/services/plans.html:74
-#: store/templates/services/plans.html:75
-#: store/templates/services/plans.html:80
-#: store/templates/services/plans.html:81
-#: store/templates/services/plans.html:82
-#: store/templates/services/plans.html:83
-#: store/templates/services/plans.html:87
-#: store/templates/services/plans.html:88
-#: store/templates/services/plans.html:89
-#: store/templates/services/plans.html:94
-#: store/templates/services/plans.html:95
-#: store/templates/services/plans.html:96
+#: templates/services/plans.html:66 templates/services/plans.html:67
+#: templates/services/plans.html:68 templates/services/plans.html:69
+#: templates/services/plans.html:73 templates/services/plans.html:74
+#: templates/services/plans.html:75 templates/services/plans.html:80
+#: templates/services/plans.html:81 templates/services/plans.html:82
+#: templates/services/plans.html:83 templates/services/plans.html:87
+#: templates/services/plans.html:88 templates/services/plans.html:89
+#: templates/services/plans.html:94 templates/services/plans.html:95
+#: templates/services/plans.html:96
 msgid "Sim"
 msgstr ""
 
-#: store/templates/services/plans.html:72
+#: templates/services/plans.html:72
 msgid "Plex incluso"
 msgstr ""
 
-#: store/templates/services/plans.html:76
-#: store/templates/services/plans.html:90
-#: store/templates/services/plans.html:97
+#: templates/services/plans.html:76 templates/services/plans.html:90
+#: templates/services/plans.html:97
 msgid "Não"
 msgstr ""
 
-#: store/templates/services/plans.html:79
+#: templates/services/plans.html:79
 msgid "Google Play"
 msgstr ""
 
-#: store/templates/services/plans.html:86
+#: templates/services/plans.html:86
 msgid "Canais de Vídeo Gratuitos"
 msgstr ""
 
-#: store/templates/services/plans.html:93
+#: templates/services/plans.html:93
 msgid "Canais de Música Gratuitos"
 msgstr ""
 
-#: store/templates/services/plans.html:100
+#: templates/services/plans.html:100
 msgid "Canal de Vídeo Premium"
 msgstr ""
 
-#: store/templates/services/plans.html:101
+#: templates/services/plans.html:101
 msgid "Crackle"
 msgstr ""
 
-#: store/templates/services/plans.html:102
+#: templates/services/plans.html:102
 msgid "Netflix"
 msgstr ""
 
-#: store/templates/services/plans.html:103
+#: templates/services/plans.html:103
 msgid "Netflix Família"
 msgstr ""
 
-#: store/templates/services/plans.html:104
+#: templates/services/plans.html:104
 msgid "Canais de CATV online"
 msgstr ""
 
-#: store/templates/services/plans.html:107
+#: templates/services/plans.html:107
 msgid "Canal de Música Premium"
 msgstr ""
 
-#: store/templates/services/plans.html:108
+#: templates/services/plans.html:108
 msgid "Rdio"
 msgstr ""
 
-#: store/templates/services/plans.html:109
+#: templates/services/plans.html:109
 msgid "Spotify"
 msgstr ""
 
-#: store/templates/services/plans.html:110
+#: templates/services/plans.html:110
 msgid "Spotify Família"
 msgstr ""
 
-#: store/templates/services/plans.html:111
+#: templates/services/plans.html:111
 msgid "Não possui"
 msgstr ""
 
-#: store/templates/services/plans.html:114
+#: templates/services/plans.html:114
 msgid "Mensal por 1 ano em Reais"
 msgstr ""
 
-#: store/templates/services/plans.html:128
+#: templates/services/plans.html:128
 msgid "Efforia Grid"
 msgstr ""
 
-#: store/templates/services/plans.html:129
+#: templates/services/plans.html:129
 msgid ""
 " Pensando na integração dos nanocomputadores com a Internet\n"
 "        é que disponibilizamos o serviço Efforia Grid, que possibilita a "
@@ -3354,11 +3202,11 @@ msgid ""
 "        drasticamente em custos de computação em nuvem. "
 msgstr ""
 
-#: store/templates/services/plans.html:141
+#: templates/services/plans.html:141
 msgid "Chame-os pelo seu nome."
 msgstr ""
 
-#: store/templates/services/plans.html:142
+#: templates/services/plans.html:142
 msgid ""
 " O Grid te permite registrar um nome na Internet para o seu nanocomputador.\n"
 "        Através de nossa tecnologia, o aparelho conecta-se ao serviço, "
@@ -3367,11 +3215,11 @@ msgid ""
 "efforia.com.br. "
 msgstr ""
 
-#: store/templates/services/plans.html:148
+#: templates/services/plans.html:148
 msgid "Nanocomputadores como micronuvens."
 msgstr ""
 
-#: store/templates/services/plans.html:149
+#: templates/services/plans.html:149
 msgid ""
 " Pensado também para negócios, o serviço é muito útil para nuvens privadas,\n"
 "        acesso remoto, intranets, compartilhamento de arquivos e de "
@@ -3380,11 +3228,11 @@ msgid ""
 "nanocomputadores. "
 msgstr ""
 
-#: store/templates/services/plans.html:155
+#: templates/services/plans.html:155
 msgid "Acessíveis remotamente."
 msgstr ""
 
-#: store/templates/services/plans.html:156
+#: templates/services/plans.html:156
 msgid ""
 " Graças à publicação na Internet, serviços e automações que você costumava\n"
 "        apenas acessar em sua residência ou empresa podem ser acessíveis e "
@@ -3393,11 +3241,11 @@ msgid ""
 "praticidade. "
 msgstr ""
 
-#: store/templates/services/plans.html:162
+#: templates/services/plans.html:162
 msgid "Acopláveis por design."
 msgstr ""
 
-#: store/templates/services/plans.html:163
+#: templates/services/plans.html:163
 msgid ""
 " É possível juntar dois ou mais nanocomputadores seus para formar um volume\n"
 "        de aparelhos, possibilitando assim maior escalabilidade para o "
@@ -3406,54 +3254,54 @@ msgid ""
 "nuvem. "
 msgstr ""
 
-#: store/templates/services/plans.html:172
+#: templates/services/plans.html:172
 msgid ""
 " Aproveite a tarifa única de R$ 14,90 por nanocomputador\n"
 "      por mês para ligar ao Efforia Grid. "
 msgstr ""
 
-#: store/templates/shop/bank_confirmation.html:4
-#: store/templates/shop/bank_confirmation.html:6
-#: store/templates/shop/payment_confirmation.html:4
-#: store/templates/shop/payment_confirmation.html:6
-#: store/templates/shop/slip_confirmation.html:4
-#: store/templates/shop/slip_confirmation.html:6
+#: templates/shop/bank_confirmation.html:4
+#: templates/shop/bank_confirmation.html:6
+#: templates/shop/payment_confirmation.html:4
+#: templates/shop/payment_confirmation.html:6
+#: templates/shop/slip_confirmation.html:4
+#: templates/shop/slip_confirmation.html:6
 msgid "Confirmação de Pagamento"
 msgstr ""
 
-#: store/templates/shop/bank_confirmation.html:9
-#: store/templates/shop/payment_confirmation.html:9
-#: store/templates/shop/slip_confirmation.html:9
+#: templates/shop/bank_confirmation.html:9
+#: templates/shop/payment_confirmation.html:9
+#: templates/shop/slip_confirmation.html:9
 msgid "Thank you for shopping with us, your order is complete."
 msgstr ""
 
-#: store/templates/shop/bank_confirmation.html:10
+#: templates/shop/bank_confirmation.html:10
 msgid "Seu pedido será processado assim que houver a comprovação do pagamento"
 msgstr ""
 
-#: store/templates/shop/bank_confirmation.html:11
+#: templates/shop/bank_confirmation.html:11
 msgid ""
 "Para depósito bancário ou transferência eletrônica, favor enviar comprovante "
 "de transação para o e-mail oi@efforia.com.br. Seguem os dados:"
 msgstr ""
 
-#: store/templates/shop/bank_confirmation.html:18
+#: templates/shop/bank_confirmation.html:18
 msgid "Pagar com o boleto bancário"
 msgstr ""
 
-#: store/templates/shop/bank_confirmation.html:19
-#: store/templates/shop/payment_confirmation.html:13
-#: store/templates/shop/slip_confirmation.html:13
+#: templates/shop/bank_confirmation.html:19
+#: templates/shop/payment_confirmation.html:13
+#: templates/shop/slip_confirmation.html:13
 msgid "Download PDF invoice"
 msgstr ""
 
-#: store/templates/shop/bank_confirmation.html:20
-#: store/templates/shop/payment_confirmation.html:14
-#: store/templates/shop/slip_confirmation.html:14
+#: templates/shop/bank_confirmation.html:20
+#: templates/shop/payment_confirmation.html:14
+#: templates/shop/slip_confirmation.html:14
 msgid "View invoice in your browser"
 msgstr ""
 
-#: store/templates/shop/billing_shipping.html:17
+#: templates/shop/billing_shipping.html:17
 #, python-format
 msgid ""
 "\n"
@@ -3462,233 +3310,264 @@ msgid ""
 "<a href=\"%(signup_url)s?next=%(next)s\">sign up</a>.\n"
 msgstr ""
 
-#: store/templates/shop/billing_shipping.html:30
-#: store/templates/shop/confirmation.html:10
-#: store/templates/shop/includes/order_details.html:15
-#: store/templates/shop/includes/order_details_rtl.html:15
+#: templates/shop/billing_shipping.html:30 templates/shop/confirmation.html:10
+#: templates/shop/includes/order_details.html:15
+#: templates/shop/includes/order_details_rtl.html:15
 msgid "Billing Details"
 msgstr ""
 
-#: store/templates/shop/billing_shipping.html:35
+#: templates/shop/billing_shipping.html:35
 msgid "Delivery Details"
 msgstr ""
 
-#: store/templates/shop/cart.html:4 store/templates/shop/cart.html.py:5
-#: store/templates/shop/cart.html:10
+#: templates/shop/cart.html:4 templates/shop/cart.html:5
+#: templates/shop/cart.html:10
 msgid "Your Cart"
 msgstr ""
 
-#: store/templates/shop/cart.html:26
-#: store/templates/shop/includes/order_details.html:39
-#: store/templates/shop/includes/order_details_rtl.html:45
+#: templates/shop/cart.html:26 templates/shop/includes/order_details.html:39
+#: templates/shop/includes/order_details_rtl.html:45
 msgid "Item"
 msgstr ""
 
-#: store/templates/shop/cart.html:27
-#: store/templates/shop/includes/order_details.html:40
-#: store/templates/shop/includes/order_details_rtl.html:44
+#: templates/shop/cart.html:27 templates/shop/includes/order_details.html:40
+#: templates/shop/includes/order_details_rtl.html:44
 msgid "Unit Price"
 msgstr ""
 
-#: store/templates/shop/cart.html:28
-#: store/templates/shop/order_history.html:20
-#: store/templates/shop/includes/order_details.html:41
-#: store/templates/shop/includes/order_details_rtl.html:43
+#: templates/shop/cart.html:28 templates/shop/includes/order_details.html:41
+#: templates/shop/includes/order_details_rtl.html:43
+#: templates/shop/order_history.html:20
 msgid "Qty"
 msgstr ""
 
-#: store/templates/shop/cart.html:29
-#: store/templates/shop/includes/order_details.html:42
-#: store/templates/shop/includes/order_details_rtl.html:42
+#: templates/shop/cart.html:29 templates/shop/includes/order_details.html:42
+#: templates/shop/includes/order_details_rtl.html:42
 msgid "Price"
 msgstr ""
 
-#: store/templates/shop/cart.html:30
+#: templates/shop/cart.html:30
 msgid "Remove?"
 msgstr ""
 
-#: store/templates/shop/cart.html:64
+#: templates/shop/cart.html:64
 msgid "Return to Checkout"
 msgstr ""
 
-#: store/templates/shop/cart.html:64
+#: templates/shop/cart.html:64
 msgid "Go to Checkout"
 msgstr ""
 
-#: store/templates/shop/cart.html:66
+#: templates/shop/cart.html:66
 msgid "Update Cart"
 msgstr ""
 
-#: store/templates/shop/cart.html:73
+#: templates/shop/cart.html:73
 msgid "Apply"
 msgstr ""
 
-#: store/templates/shop/cart.html:79
+#: templates/shop/cart.html:79
 msgid "You may also like:"
 msgstr ""
 
-#: store/templates/shop/cart.html:109
+#: templates/shop/cart.html:109
 msgid "Your Cart is empty."
 msgstr ""
 
-#: store/templates/shop/checkout.html:4 store/templates/shop/checkout.html:5
+#: templates/shop/checkout.html:4 templates/shop/checkout.html:5
 msgid "Checkout"
 msgstr ""
 
-#: store/templates/shop/checkout.html:5
+#: templates/shop/checkout.html:5
 msgid "Step"
 msgstr ""
 
-#: store/templates/shop/checkout.html:25 store/templates/shop/complete.html:70
+#: templates/shop/checkout.html:25 templates/shop/complete.html:70
 msgid "Complete"
 msgstr ""
 
-#: store/templates/shop/checkout.html:40
+#: templates/shop/checkout.html:40
 msgid "Next"
 msgstr ""
 
-#: store/templates/shop/checkout.html:42
+#: templates/shop/checkout.html:42
 msgid "Back"
 msgstr ""
 
-#: store/templates/shop/checkout.html:46
+#: templates/shop/checkout.html:46
 msgid "Your cart is empty."
 msgstr ""
 
-#: store/templates/shop/checkout.html:47
+#: templates/shop/checkout.html:47
 msgid ""
 "This may be due to your session timing out after a period of inactivity."
 msgstr ""
 
-#: store/templates/shop/checkout.html:48
+#: templates/shop/checkout.html:48
 msgid "We apologize for the inconvenience."
 msgstr ""
 
-#: store/templates/shop/checkout.html:50 store/templates/shop/wishlist.html:44
+#: templates/shop/checkout.html:50 templates/shop/wishlist.html:44
 msgid "Continue Shopping"
 msgstr ""
 
-#: store/templates/shop/checkout.html:75
+#: templates/shop/checkout.html:75
 msgid "Edit Cart"
 msgstr ""
 
-#: store/templates/shop/complete.html:5 store/templates/shop/complete.html:61
+#: templates/shop/complete.html:5 templates/shop/complete.html:61
 msgid "Order Complete"
 msgstr ""
 
-#: store/templates/shop/confirmation.html:23
-#: store/templates/shop/includes/order_details.html:16
-#: store/templates/shop/includes/order_details_rtl.html:16
+#: templates/shop/confirmation.html:23
+#: templates/shop/includes/order_details.html:16
+#: templates/shop/includes/order_details_rtl.html:16
 msgid "Shipping Details"
 msgstr ""
 
-#: store/templates/shop/order_history.html:4
-#: store/templates/shop/order_history.html:5
-#: store/templates/shop/order_history.html:9
+#: templates/shop/includes/order_details.html:7
+#: templates/shop/includes/order_details_rtl.html:8
+msgid "Order ID:"
+msgstr ""
+
+#: templates/shop/includes/order_details.html:12
+#: templates/shop/includes/order_details_rtl.html:12
+msgid "Your Details"
+msgstr ""
+
+#: templates/shop/includes/order_details.html:36
+#: templates/shop/includes/order_details_rtl.html:36
+msgid "Items Ordered"
+msgstr ""
+
+#: templates/shop/includes/order_totals.html:4
+msgid "Sub total"
+msgstr ""
+
+#: templates/shop/includes/order_totals.html:12
+msgid "Discount"
+msgstr ""
+
+#: templates/shop/includes/order_totals.html:23
+msgid "Shipping"
+msgstr ""
+
+#: templates/shop/includes/order_totals.html:34
+msgid "Tax"
+msgstr ""
+
+#: templates/shop/includes/order_totals.html:39
+msgid "Total"
+msgstr ""
+
+#: templates/shop/order_history.html:4 templates/shop/order_history.html:5
+#: templates/shop/order_history.html:9
 msgid "Order History"
 msgstr ""
 
-#: store/templates/shop/order_history.html:19
+#: templates/shop/order_history.html:19
 msgid "Date / time"
 msgstr ""
 
-#: store/templates/shop/order_history.html:21
+#: templates/shop/order_history.html:21
 msgid "Paid"
 msgstr ""
 
-#: store/templates/shop/order_history.html:22
+#: templates/shop/order_history.html:22
 msgid "Status"
 msgstr ""
 
-#: store/templates/shop/order_history.html:33
+#: templates/shop/order_history.html:33
 msgid "Download PDF"
 msgstr ""
 
-#: store/templates/shop/order_history.html:34
+#: templates/shop/order_history.html:34
 msgid "View invoice"
 msgstr ""
 
-#: store/templates/shop/order_history.html:43
+#: templates/shop/order_history.html:43
 msgid "You have not ordered anything from us yet."
 msgstr ""
 
-#: store/templates/shop/payment_confirmation.html:10
+#: templates/shop/payment_confirmation.html:10
 msgid "Seu pagamento foi confirmado e seu produto será enviado em breve."
 msgstr ""
 
-#: store/templates/shop/product.html:103
+#: templates/shop/product.html:103
 msgid "The selected options are currently unavailable."
 msgstr ""
 
-#: store/templates/shop/product.html:119
+#: templates/shop/product.html:119
 msgid "Save for later"
 msgstr ""
 
-#: store/templates/shop/product.html:124
+#: templates/shop/product.html:124
 msgid "This product is currently unavailable."
 msgstr ""
 
-#: store/templates/shop/product.html:134
+#: templates/shop/product.html:134
 msgid "Related Products"
 msgstr ""
 
-#: store/templates/shop/slip_confirmation.html:10
+#: templates/shop/slip_confirmation.html:10
 msgid ""
 "Seu pedido para boleto será processado em breve. Você receberá o documento "
 "por e-mail."
 msgstr ""
 
-#: store/templates/shop/wishlist.html:4 store/templates/shop/wishlist.html:5
-#: store/templates/shop/wishlist.html:9
+#: templates/shop/wishlist.html:4 templates/shop/wishlist.html:5
+#: templates/shop/wishlist.html:9
 msgid "Your Wishlist"
 msgstr ""
 
-#: store/templates/shop/wishlist.html:35
+#: templates/shop/wishlist.html:35
 msgid "Remove"
 msgstr ""
 
-#: store/templates/shop/wishlist.html:42
+#: templates/shop/wishlist.html:42
 msgid "Your wishlist is empty."
 msgstr ""
 
-#: store/templates/shop/includes/order_details.html:7
-#: store/templates/shop/includes/order_details_rtl.html:8
-msgid "Order ID:"
-msgstr ""
-
-#: store/templates/shop/includes/order_details.html:12
-#: store/templates/shop/includes/order_details_rtl.html:12
-msgid "Your Details"
-msgstr ""
-
-#: store/templates/shop/includes/order_details.html:36
-#: store/templates/shop/includes/order_details_rtl.html:36
-msgid "Items Ordered"
-msgstr ""
-
-#: store/templates/shop/includes/order_totals.html:4
-msgid "Sub total"
-msgstr ""
-
-#: store/templates/shop/includes/order_totals.html:12
-msgid "Discount"
-msgstr ""
-
-#: store/templates/shop/includes/order_totals.html:23
-msgid "Shipping"
-msgstr ""
-
-#: store/templates/shop/includes/order_totals.html:34
-msgid "Tax"
-msgstr ""
-
-#: store/templates/shop/includes/order_totals.html:39
-msgid "Total"
-msgstr ""
-
-#: store/templates/twitter/tweets.html:7
+#: templates/twitter/tweets.html:7
 msgid "Recent Tweets"
 msgstr ""
+
+#, fuzzy
+#~ msgid "^hubpro/eosd"
+#~ msgstr "^usos/"
+
+#, fuzzy
+#~ msgid "^hubpro/server"
+#~ msgstr "^usos/"
+
+#, fuzzy
+#~ msgid "^services/plans"
+#~ msgstr "Serviços"
+
+#, fuzzy
+#~ msgid "^services/cloud"
+#~ msgstr "Serviços"
+
+#, fuzzy
+#~ msgid "^services/apps"
+#~ msgstr "Serviços"
+
+#, fuzzy
+#~ msgid "^services/"
+#~ msgstr "Serviços"
+
+#~ msgid "+5551 3516 2367"
+#~ msgstr "(51) 3516-2367"
+
+#~ msgid "HUB Pro"
+#~ msgstr "HUB Pro"
+
+#, fuzzy
+#~ msgid "(51) 3516-2367"
+#~ msgstr "(51) 3516-2367"
+
+#~ msgid "EOS-D Technology"
+#~ msgstr "Tecnologia EOS-D"
 
 #~ msgid "Subscribe"
 #~ msgstr "Assinar"
@@ -3724,9 +3603,6 @@ msgstr ""
 
 #~ msgid "Wishlist"
 #~ msgstr "Lista de Desejos"
-
-#~ msgid "Support"
-#~ msgstr "Suporte"
 
 #~ msgid "About"
 #~ msgstr "Sobre"

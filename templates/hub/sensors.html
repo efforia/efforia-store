@@ -2,13 +2,41 @@
 {% load i18n %}
 {% load staticfiles %}
 
-{% block main %}
+{% block header %}
+
+<style>
+
+.background {
+  /* background: url("{% static 'img/hubabg.png' %}") center center; */
+  background: url("{% static 'img/explosion.jpg' %}") center center;
+  background-size: cover;
+}
+
+</style>
+
+{% endblock %}
+
+{% block start %}
+
+<link rel="stylesheet" href="{% static 'css/hub.css' %}">
+
+<div class="jumbotron background nobottom">
+  <div class="transparent-black overlay middle">
+    <div class="container">
+      <img src="{% static 'svg/atomsimple.svg' %}" style="height:8em"/>
+      <!--<img class="hub-size" src="{% static 'img/huba.png' %}"/><br>!-->
+      <h2 class="jumbo-highlight white" style="margin-top:1em;">
+          {% blocktrans %} TODO O PODER NA PALMA DE SUA MÃO. {% endblocktrans %}
+      </h2><br>
+    </div>
+  </div>
+</div>
 
 <div class="container">
   <div class="row text-center">
     <div class="col-md-10 col-md-offset-1">
-      <h1>{% trans "Sensores para o HUB" %}</h1>
-      <img src="{% static 'svg/sensors.svg' %}" class="img-responsive img-rounded half-width center-block">
+      <h1>{% trans "Novo Efforia ATOM" %}</h1>
+      <!--<img src="{% static 'svg/sensors.svg' %}" class="img-responsive img-rounded half-width center-block">!-->
       <h2 class="highlight nomargin">{% blocktrans %} Graças à tecnologia de barramento presente em nossos
         nanocomputadores, é possível acrescentar uma série de sensores para o HUB
         de modo a fechar o sistema de automação, complementando o seu próximo projeto

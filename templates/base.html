@@ -59,7 +59,7 @@
   <nav class="navbar navbar-default fixed-navbar">
     <div class="container-fluid">
       <a class="hidden-xs hidden-sm navbar-brand navbar-select" href="/">
-        <img src="{% static "svg/logo.svg" %}" class="navbar-img" alt="Efforia"/>
+        <img src="{% static "svg/blacklogo.svg" %}" class="navbar-img" alt="Efforia"/>
       </a>
       <div class="navbar-header hidden-md">
         <div id="search" class="hidden-xs hidden-sm">
@@ -89,8 +89,7 @@
       <div id="collapsed" class="collapse navbar-collapse navbar-left none">
         <ul class="nav navbar-nav navbar-height navbar-padding nav-default">
           <li class="dropdown menuitem">
-            <a id="hub" href="{% url 'hub' %}"> {% trans "ATOM" %} </a>
-            <ul class="dropdown-menu menu"> Em breve </ul>
+            <a id="hub" href="{% url 'sensors' %}"> {% trans "ATOM" %} </a>
           </li>
           <li class="dropdown menuitem">
             <a id="hub" href="{% url 'hub' %}"> {% trans "HUB" %} </a>
