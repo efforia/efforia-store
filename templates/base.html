@@ -86,7 +86,7 @@
           {% include "includes/profile.html" %}
         </ul>
       </div>
-      <div id="collapsed" class="collapse navbar-collapse navbar-left none">
+      <div id="collapsed" class="collapse navbar-collapse navbar-left none" style="padding:0px">
         <ul class="nav navbar-nav navbar-height navbar-padding nav-default">
           <li class="dropdown menuitem">
             <a id="hub" href="{% url 'sensors' %}"> {% trans "ATOM" %} </a>
@@ -99,17 +99,13 @@
             <a id="hubpro" href="{% url 'hubpro' %}"> {% trans "TV" %} </a>
             <ul class="dropdown-menu menu"> {% include "hubpro/nav.html" %} </ul>
           </li>
-          <!--<li class="dropdown menuitem">
-            <a id="services" href="{% url 'about' %}"> {% trans "Services" %} </a>
-            <ul class="dropdown-menu menu"> {% include "services/nav.html" %} </ul>
-          </li>!-->
           <li class="dropdown menuitem">
             <a id="help" href="{% url 'support' %}"> {% trans "Support" %} </a>
             <ul class="dropdown-menu menu"> {% include "help/nav.html" %} </ul>
           </li>
           {% page_menu "pages/menus/dropdown.html" %}
         </ul>
-        <div class="visible-xs visible-sm centered"> {% include "includes/search_form.html" %} </div>
+        <div class="visible-xs visible-sm centered" style="padding: 0px 5px;"> {% include "includes/search_form.html" %} </div>
       </div>
       <div id="profile" class="navbar-right navbar-cart hidden-xs hidden-sm">
         <div class="dropdown" id="pop">

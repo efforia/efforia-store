@@ -26,17 +26,18 @@ urlpatterns += [
     url(u'^store/orders/$', "cartridge.shop.views.order_history", name=u'order_history'),
     url(r'^i18n/', include('django.conf.urls.i18n'), name='set_language'),
 
+    url(_(r'^atom/'), TemplateView.as_view(template_name='hub/sensors.html'), name='sensors'),
+
     url(_(r'^hub/design'), TemplateView.as_view(template_name='hub/design.html'), name='hubdesign'),
     url(_(r'^hub/iot'), TemplateView.as_view(template_name='hub/iot.html'), name='iot'),
     url(_(r'^hub/eos'), TemplateView.as_view(template_name='hub/eos.html'), name='eos'),
-    url(_(r'^hub/sensors'), TemplateView.as_view(template_name='hub/sensors.html'), name='sensors'),
+    url(_(r'^hub/server'), TemplateView.as_view(template_name='hubpro/server.html'), name='server'),
     url(r'^hub/', TemplateView.as_view(template_name='hub/index.html'), name='hub'),
 
-    url(_(r'^hubpro/eosd'), TemplateView.as_view(template_name='hubpro/eosd.html'), name='eosd'),
-    url(_(r'^hubpro/mediacenter'), TemplateView.as_view(template_name='hubpro/mediacenter.html'), name='mediacenter'),
-    url(_(r'^hubpro/videogame'), TemplateView.as_view(template_name='hubpro/videogame.html'), name='videogame'),
-    url(_(r'^hubpro/server'), TemplateView.as_view(template_name='hubpro/server.html'), name='server'),
-    url(_(r'^hubpro/'), TemplateView.as_view(template_name='hubpro/index.html'), name='hubpro'),
+    url(_(r'^tv/eosd'), TemplateView.as_view(template_name='hubpro/eosd.html'), name='eosd'),
+    url(_(r'^tv/mediacenter'), TemplateView.as_view(template_name='hubpro/mediacenter.html'), name='mediacenter'),
+    url(_(r'^tv/videogame'), TemplateView.as_view(template_name='hubpro/videogame.html'), name='videogame'),
+    url(_(r'^tv/'), TemplateView.as_view(template_name='hubpro/index.html'), name='hubpro'),
 
     url(_(r'^services/plans'), TemplateView.as_view(template_name='services/plans.html'), name='plans'),
     url(_(r'^services/cloud'), TemplateView.as_view(template_name='services/cloud.html'), name='services'),
