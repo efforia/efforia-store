@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 10:33-0300\n"
+"POT-Creation-Date: 2016-05-30 11:47-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,34 +86,29 @@ msgstr ""
 msgid "Toggle Navigation"
 msgstr ""
 
-#: templates/base.html:92
+#: templates/base.html:92 templates/index.html:96
 msgid "ATOM"
 msgstr ""
 
-#: templates/base.html:96 templates/includes/sitemap.html:7
-#: templates/index.html:96
+#: templates/base.html:95 templates/includes/sitemap.html:7
+#: templates/index.html:106
 msgid "HUB"
 msgstr ""
 
-#: templates/base.html:100 templates/includes/sitemap.html:11
-#: templates/index.html:106 templates/services/plans.html:62
+#: templates/base.html:99 templates/includes/sitemap.html:11
+#: templates/index.html:101 templates/services/plans.html:62
 msgid "TV"
 msgstr ""
 
-#: templates/base.html:104 templates/includes/sitemap.html:15
-#: templates/index.html:101
-msgid "Services"
-msgstr ""
-
-#: templates/base.html:108
+#: templates/base.html:103
 msgid "Support"
 msgstr ""
 
-#: templates/base.html:141 templates/base.html:146
+#: templates/base.html:136 templates/base.html:141
 msgid "+5551 9848 5888"
 msgstr ""
 
-#: templates/base.html:143
+#: templates/base.html:138
 #, fuzzy
 #| msgid " +555198485888 "
 msgid "+5551 4042 3888"
@@ -1437,7 +1432,7 @@ msgstr ""
 "help create new solutions rapidly."
 
 #: templates/hub/index.html:28
-msgid " TODO O PODER <br>NA PALMA DE SUA MÃO. "
+msgid " CONTROLE TOTAL <br>SOBRE QUALQUER LUGAR. "
 msgstr ""
 
 #: templates/hub/index.html:60
@@ -1770,15 +1765,27 @@ msgstr ""
 msgid "Cloud"
 msgstr ""
 
-#: templates/hub/sensors.html:10
-msgid "Sensores para o HUB"
-msgstr "Sensors for the HUB"
+#: templates/hub/sensors.html:27
+msgid " TODO O PODER <br>NA PALMA DE SUA MÃO. "
+msgstr ""
 
-#: templates/hub/sensors.html:12
+#: templates/hub/sensors.html:36
+msgid "Novo Efforia ATOM. Em breve."
+msgstr ""
+
+#: templates/hub/sensors.html:38
+#, fuzzy
+#| msgid ""
+#| " Graças à tecnologia de barramento presente em nossos\n"
+#| "        nanocomputadores, é possível acrescentar uma série de sensores "
+#| "para o HUB\n"
+#| "        de modo a fechar o sistema de automação, complementando o seu "
+#| "próximo projeto\n"
+#| "        de IoT. "
 msgid ""
 " Graças à tecnologia de barramento presente em nossos\n"
 "        nanocomputadores, é possível acrescentar uma série de sensores para "
-"o HUB\n"
+"o ATOM\n"
 "        de modo a fechar o sistema de automação, complementando o seu "
 "próximo projeto\n"
 "        de IoT. "
@@ -1787,13 +1794,19 @@ msgstr ""
 "possibile to add a number of sensors for HUB, making the ideal automation "
 "system, complementing your next project of IoT."
 
-#: templates/hub/sensors.html:24
+#: templates/hub/sensors.html:50
 msgid "Temperatura e Umidade"
 msgstr "Temperature and Humidity"
 
-#: templates/hub/sensors.html:25
+#: templates/hub/sensors.html:51
+#, fuzzy
+#| msgid ""
+#| " Com o monitoramento de temperatura, o HUB é capaz de atuar no ambiente\n"
+#| "        emitindo avisos de ultrapassagem de limites e o controlar "
+#| "unidades de\n"
+#| "        condicionamento de ar para refrigerar o ambiente. "
 msgid ""
-" Com o monitoramento de temperatura, o HUB é capaz de atuar no ambiente\n"
+" Com o monitoramento de temperatura, o ATOM é capaz de atuar no ambiente\n"
 "        emitindo avisos de ultrapassagem de limites e o controlar unidades "
 "de\n"
 "        condicionamento de ar para refrigerar o ambiente. "
@@ -1802,11 +1815,11 @@ msgstr ""
 "as issuing limits overtaking warnings and controlling air conditioning units "
 "to refrigerate the environment."
 
-#: templates/hub/sensors.html:38
+#: templates/hub/sensors.html:64
 msgid "Distância e presença"
 msgstr "Distance and presence"
 
-#: templates/hub/sensors.html:39
+#: templates/hub/sensors.html:65
 msgid ""
 " Através do sensor de presença e distância de pessoas e/ou objetos em\n"
 "        um ambiente, é possível automatizar luzes e acionar avisos e eventos "
@@ -1818,11 +1831,11 @@ msgstr ""
 "environment, it can automate lights and trigger warnings and relevant events "
 "for each project and can be very useful for security designs."
 
-#: templates/hub/sensors.html:48
+#: templates/hub/sensors.html:74
 msgid "Presença de gás"
 msgstr "Gas detection"
 
-#: templates/hub/sensors.html:49
+#: templates/hub/sensors.html:75
 msgid ""
 " O controle de gás por um determinado fluxo pode ser um sensor adicional\n"
 "        de grande utilidade para indústrias que utilizam este ativo, e "
@@ -1834,11 +1847,11 @@ msgstr ""
 "industries that use this asset, as in a micro-brewery for automating exhaust "
 "valves."
 
-#: templates/hub/sensors.html:62
+#: templates/hub/sensors.html:88
 msgid "Presença de água"
 msgstr "Water detection"
 
-#: templates/hub/sensors.html:63
+#: templates/hub/sensors.html:89
 msgid ""
 " Tal como a presença de gás, permite o monitoramento e controle de válvulas\n"
 "        da água, que, assim como o outro, o processo de automatização pode "
@@ -1849,11 +1862,11 @@ msgstr ""
 "which, like the other, the automation process can bring greater efficiency "
 "in the manufacturing flow of industries that make use of this asset."
 
-#: templates/hub/sensors.html:72
+#: templates/hub/sensors.html:98
 msgid "Câmera"
 msgstr "Camera"
 
-#: templates/hub/sensors.html:73
+#: templates/hub/sensors.html:99
 msgid ""
 " Ótimo recurso especialmente para a área da segurança, o sensor de imagem\n"
 "        permite a captura de fotografias e filmagens de determinados "
@@ -1864,11 +1877,11 @@ msgstr ""
 "to capture photographs and footage of certain environments, and it may be "
 "used for various purposes automation."
 
-#: templates/hub/sensors.html:86
+#: templates/hub/sensors.html:112
 msgid "Eletricidade"
 msgstr "Electricity"
 
-#: templates/hub/sensors.html:87
+#: templates/hub/sensors.html:113
 msgid ""
 " Através de sensores e atuadores adicionais de eletricidade, é possível\n"
 "        obter todo o controle de chaves de luz e equipamentos bem na palma "
@@ -2008,7 +2021,7 @@ msgid ""
 msgstr ""
 
 #: templates/hubpro/index.html:25
-msgid " CONTROLE TOTAL <br>SOBRE SUA TELEVISÃO. "
+msgid " A SUA SALA DE ESTAR <br>EM UMA EXPERIÊNCIA IMERSIVA. "
 msgstr ""
 
 #: templates/hubpro/index.html:57
@@ -2504,7 +2517,7 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: templates/includes/sitemap.html:19
+#: templates/includes/sitemap.html:15
 msgid "Help"
 msgstr ""
 
@@ -2564,20 +2577,20 @@ msgstr ""
 
 #: templates/index.html:97
 msgid ""
-"Know more about our efficient solution for Internet of Things automation and "
-"its numerous possibilities."
+"The ultimate device for Internet of Things automation by Efforia "
+"Nanocomputers."
 msgstr ""
 
 #: templates/index.html:102
 msgid ""
-"Ultimate services and plans that we can do more for you at Efforia "
-"Nanocomputers."
+"Discover about our outstanding solution for Audiovisual automation and its "
+"infinite possibilities."
 msgstr ""
 
 #: templates/index.html:107
 msgid ""
-"Discover about our outstanding solution for Internet of Things automation "
-"and its infinite possibilities."
+"Know more about our efficient solution for General automation and its "
+"numerous possibilities."
 msgstr ""
 
 #: templates/pages/category.html:45
@@ -3804,6 +3817,9 @@ msgstr ""
 #: templates/twitter/tweets.html:7
 msgid "Recent Tweets"
 msgstr ""
+
+#~ msgid "Sensores para o HUB"
+#~ msgstr "Sensors for the HUB"
 
 #~ msgid "Correios"
 #~ msgstr "Post Office"
