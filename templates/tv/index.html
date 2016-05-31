@@ -1,4 +1,4 @@
-{% extends "hubpro/base.html" %}
+{% extends "tv/base.html" %}
 {% load i18n %}
 {% load staticfiles %}
 
@@ -21,7 +21,6 @@
 <div class="jumbotron background">
   <div class="transparent-black overlay middle nobottom">
     <div class="container centered">
-      <!--<img class="hubpro-size" src="{% static 'img/hubpa.png' %}"/>!-->
       <h2 class="jumbo-highlight white">{% blocktrans %} A SUA SALA DE ESTAR <br>EM UMA EXPERIÊNCIA IMERSIVA. {% endblocktrans %}</h2>
     </div>
   </div>
@@ -29,15 +28,14 @@
 
 <nav class="navbar subnavbar hidden-xs hidden-sm nooverlay">
   <ul class="nav nav-pills submenu submenu-inverse right">
-    <li class="rightmargin">
+    <li class="leftmargin rightmargin">
       <button class="btn btn-default hub-btn" onclick="redirect('/store/choose');">{% trans "Buy" %}</button>
     </li>
-    <li class="rightmargin">
-      <a href="{% url 'hubpro' %}">{% trans "Home" %}</a>
-    </li>
-    {% include "hubpro/nav.html" %}
+    {% include "tv/nav.html" %}
     <li class="left leftmargin">
-      <img class="hub-logo" src="{% static 'svg/tvwhite.svg' %}"/>
+      <a href="{% url 'hubpro' %}" style="padding:0px">
+        <img class="hub-logo" src="{% static 'svg/tvwhite.svg' %}"/>
+      </a>
     </li>
   </ul>
 </nav>
@@ -63,7 +61,7 @@
 <div class="container spaces-sm">
   <div class="row text-center">
     <div class="col-md-4 col-sm-4">
-      <img src="{% static 'svg/fastsimple.svg' %}" class="img-responsive img-rounded full-width"/>
+      <img src="{% static 'svg/fastsimple.svg' %}" class="img-responsive img-rounded third-width"/>
       <h1>{% trans "Robusto" %}</h1>
       <h3>{% trans "Tudo na palma de sua mão" %}</h3>
       <p>{% blocktrans %} O Efforia TV representa o futuro da automação doméstica e corporativa:
@@ -71,7 +69,7 @@
       sendo uma ótima opção para qualquer ambiente externo ou interno. {% endblocktrans %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
-      <img src="{% static 'svg/spectacularsimple.svg' %}" class="img-responsive img-rounded full-width">
+      <img src="{% static 'svg/spectacularsimple.svg' %}" class="img-responsive img-rounded third-width">
       <h1>{% trans "Espetacular" %}</h1>
       <h3>{% trans "Ótima experiência audiovisual" %}</h3>
       <p>{% blocktrans %} Com a tecnologia baseada na plataforma Android, o Efforia TV traz
@@ -79,7 +77,7 @@
       aproveitando o que há de melhor por horas sem você nem perceber. {% endblocktrans %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
-      <img src="{% static 'svg/connectedsimple.svg' %}" class="img-responsive img-rounded full-width"/>
+      <img src="{% static 'svg/connectedsimple.svg' %}" class="img-responsive img-rounded third-width"/>
       <h1>{% trans "Ligado" %}</h1>
       <h3>{% trans "Amplamente conectável" %}</h3>
       <p>{% blocktrans %} Com as conexões sem fio (Wi-Fi), com fio (Ethernet), e de redes móveis
@@ -92,7 +90,7 @@
 <div class="container spaces-sm">
   <div class="row text-center">
     <div class="col-md-6 col-sm-6">
-      <!--<img src="{% static 'svg/combinated.svg' %}" class="box img-responsive full-width">!-->
+      <img src="{% static 'svg/androidrobot.svg' %}" class="img-responsive full-width">
       <h1>{% trans "Appstacular" %}</h1>
       <h3>{% trans "Um mundo de possibilidades" %}</h3>
       <p>{% blocktrans %} A tecnologia é baseada na plataforma Android, o que te permite o uso
@@ -100,7 +98,7 @@
         smartphone, tablet ou outros gadgets, direto na sua televisão. {% endblocktrans %}</p>
     </div>
     <div class="col-md-6 col-sm-6">
-      <!--<img src="{% static 'svg/coloured.svg' %}" class="box img-responsive full-width">!-->
+      <img src="{% static 'svg/channels.svg' %}" class="img-responsive full-width">
       <h1>{% trans "O Futuro da TV" %}</h1>
       <h3>{% trans "Canais de streaming" %}</h3>
       <p>{% blocktrans %} Nós da Efforia acreditamos que o Efforia TV representa o futuro da televisão.
@@ -121,7 +119,7 @@
         opção para levar para onde você precisar. {% endblocktrans %}</p>
     </div>
     <div class="col-md-4 col-sm-4">
-      <!--<img src="{% static 'svg/anything.svg' %}" class="box img-responsive full-width">!-->
+      <!--<img src="{% static 'svg/eosd.svg' %}" class="img-responsive full-width">!-->
       <h1>{% trans "Super Versátil" %}</h1>
       <h3>{% trans "Tecnologias EOS e Android" %}</h3>
       <p>{% blocktrans %} Graças a compatibilidade com as tecnologias EOS e Android, o Efforia TV possui

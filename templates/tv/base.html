@@ -8,15 +8,14 @@
 
 <nav class="navbar subnavbar-top hidden-xs hidden-sm">
   <ul class="nav nav-pills submenu-top right">
-    <li class="rightmargin">
+    <li class="leftmargin rightmargin">
       <button class="btn btn-default hub-btn" onclick="redirect('/store/choose');">{% trans "Buy" %}</button>
     </li>
-    <li class="rightmargin">
-      <a href="{% url 'hubpro' %}">{% trans "Home" %}</a>
-    </li>
-    {% include "hubpro/nav.html" %}
+    {% include "tv/nav.html" %}
     <li class="left leftmargin">
-      <img class="hub-logo" src="{% static 'svg/tv.svg' %}"/>
+      <a href="{% url 'hubpro' %}" style="padding:0px">
+        <img class="hub-logo" src="{% static 'svg/tv.svg' %}"/>
+      </a>
     </li><br>
   </ul>
 </nav>
