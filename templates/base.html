@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 <link rel="stylesheet" href="{% static "css/dropdown.css" %}">
+<link rel="stylesheet" href="{% static "css/font-awesome.css" %}">
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/rtl.css" %}">
 {% endif %}
@@ -62,9 +63,6 @@
         <img src="{% static "svg/blacklogo.svg" %}" class="navbar-img" alt="Efforia"/>
       </a>
       <div class="navbar-header hidden-md">
-        <div id="search" class="hidden-xs hidden-sm">
-          {% include "includes/search_form.html" %}
-        </div>
         <button class="navbar-toggle collapsed bordered navbar-height navbar-corner-left"
                 type="button" data-toggle="collapse" data-target="#collapsed">
           <span class="sr-only">{% trans "Toggle Navigation" %}</span>
@@ -93,19 +91,19 @@
           </li>
           <li class="dropdown menuitem">
             <a id="hub" href="{% url 'hub' %}"> {% trans "HUB" %} </a>
-            <ul class="dropdown-menu menu"> {% include "hub/nav.html" %} </ul>
+            <!--<ul class="dropdown-menu menu"> {% include "hub/nav.html" %} </ul>!-->
           </li>
           <li class="dropdown menuitem">
             <a id="hubpro" href="{% url 'hubpro' %}"> {% trans "TV" %} </a>
-            <ul class="dropdown-menu menu"> {% include "tv/nav.html" %} </ul>
+            <!--<ul class="dropdown-menu menu"> {% include "tv/nav.html" %} </ul>!-->
           </li>
           <li class="dropdown menuitem">
-            <a id="help" href="{% url 'support' %}"> {% trans "Support" %} </a>
-            <ul class="dropdown-menu menu"> {% include "help/nav.html" %} </ul>
+            <a id="help" href="{% url 'support' %}"> {% trans "Help" %} </a>
+            <!--<ul class="dropdown-menu menu"> {% include "help/nav.html" %} </ul>!-->
           </li>
           {% page_menu "pages/menus/dropdown.html" %}
         </ul>
-        <div class="visible-xs visible-sm centered" style="padding: 0px 5px;"> {% include "includes/search_form.html" %} </div>
+        <div class="hidden visible-xs visible-sm centered" style="padding: 0px 5px;"> {% include "includes/search_form.html" %} </div>
       </div>
       <div id="profile" class="navbar-right navbar-cart hidden-xs hidden-sm">
         <div class="dropdown" id="pop">
@@ -130,41 +128,135 @@
   <!-- Common footer for all pages, including scripts !-->
   <footer class="footer">
     <div class="container-fluid">
-      <nav class="row footer-nav">
-        <div class="col-md-3"></div>
-        <div class="col-md-6 centered visible-lg visible-md" style="font-size:0.9em; font-weight:normal;">
-          <img class="navicon" src="{% static "svg/whatsapp.svg" %}"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
-          <img class="navicon" src="{% static "svg/skype.svg" %}"/>&nbsp;efforiaca&nbsp;&nbsp;
-          <img class="navicon" src="{% static "svg/phone.svg" %}"/>&nbsp;{% trans "+5551 4042 3888" %}&nbsp;&nbsp;
-        </div>
-        <div class="col-md-6 centered visible-xs visible-sm" style="font-size:0.8em; font-weight:normal;">
-          <img class="navicon" src="{% static "svg/whatsapp.svg" %}" height="18"/>&nbsp;{% trans "+5551 9848 5888" %}&nbsp;&nbsp;
-          <img class="navicon" src="{% static "svg/skype.svg" %}" height="18"/>&nbsp;efforiaca&nbsp;&nbsp;
-        </div>
-        <div class="col-md-3"></div>
-      </nav>
-      <div class="row flex">
-        <div class="col-md-8 col-sm-6 centered hidden-xs spaces-xs"> {% include "includes/sitemap.html" %} </div>
-        <div class="col-md-6 col-sm-6 col-xs-12 middle">
-          <div class="visible-xs">
-            <img class="payments-xs" src="{% static "svg/optionsv.svg" %}"/></div>
-          <div class="visible-sm visible-md">
-            <img class="payments-sm" src="{% static "svg/optionsv.svg" %}"/></div>
-          <div class="visible-lg">
-            <img class="payments-md" src="{% static "svg/options.svg" %}"/></div>
+      <div class="row white">
+        <div class="col-md-6 col-sm-6 hidden-xs" style="text-align:right">
+	  <div class="col-md-3 col-md-offset-3">
+	    <h3>Produtos</h3>
+	    <a class="white" href="{% url 'sensors' %}"><p>ATOM</p></a>
+	    <a class="white" href="{% url 'hub' %}"><p>HUB</p></a>
+	    <a class="white" href="{% url 'hubpro' %}"><p>TV</p></a>
+          </div>
+	  <div class="col-md-3">
+	    <h3>Aplicações</h3>
+	    <a class="white" href="{% url 'videogame' %}"><p>Entretenimento</p></a>
+	    <a class="white" href="{% url 'mediacenter' %}"><p>Audiovisual</p></a>
+	    <a class="white" href="{% url 'server' %}"<p>Nuvem</p></a>
+	    <a class="white" href="{% url 'iot' %}"><p>IoT</p></a>
+          </div>
+	  <div class="col-md-3">
+	    <h3>A Efforia</h3>
+	    <a class="white" href="{% url 'localization'%}"><p>Localização</p></a>
+	    <a class="white" href="{% url 'support' %}"><p>Ajuda</p></a>
+	    <a class="white" href="/blog"><p>Blog</p></a>
+	  </div>
+	</div>
+	<div class="col-md-2 col-sm-6 text">
+	  <h3>Siga a Efforia</h3>
+	  <style>
+	    .social-icon {
+	      min-height:60px;
+	      background:#222;
+	    }
+	  </style>
+	  <div class="row flex text-center" style="margin-top:15px">
+            <div class="col-md-3 col-xs-3 middle social-icon">
+	      <a class="white" href="http://www.facebook.com/efforianano">
+	        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+	      </a>
+	    </div>
+            <div class="col-md-3 col-xs-3 middle social-icon">
+	      <a class="white" href="http://www.twitter.com/efforianano">
+	        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+	      </a>
+	    </div>
+            <div class="col-md-3 col-xs-3 middle social-icon">
+	      <a class="white" href="https://plus.google.com/106385069867778439257">
+	        <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+	      </a>
+	    </div>
+            <div class="col-md-3 col-xs-3 middle social-icon">
+	      <a class="white" href="http://www.instagram.com/">
+	        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+	      </a>
+	    </div>
+	  </div>
+	  <div class="row flex text-center">
+            <div class="col-md-3 col-xs-3 middle social-icon">
+	      <a class="white" href="https://www.youtube.com/channel/UCIn8CFewJH4XMiTSrGY9xVA">
+	        <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+	      </a>
+	    </div>
+            <div class="col-md-3 col-xs-3 middle social-icon">
+	      <a class="white" href="https://github.com/efforia/">
+	        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+	      </a>
+	    </div>
+            <div class="col-md-3 col-xs-3 middle social-icon">
+	      <a class="white" href="https://pt.foursquare.com/v/fábrica-de-ideias-coworking--escritório-compartilhado/507e0c1a64a41ea912010f7c">
+ 	        <i class="fa fa-foursquare fa-2x" aria-hidden="true"></i>
+	      </a>
+	    </div>
+            <div class="col-md-3 col-xs-3 middle social-icon">
+	      <a class="white" href="https://www.medium.com/">
+	        <i class="fa fa-medium fa-2x" aria-hidden="true"></i>
+	      </a>
+	    </div>
+	  </div>
+	</div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+	  <h3>Contate-nos</h3>
+	  <style>
+	    .black {
+	      background:black;
+	      padding:5px;
+            }
+	    .black-p {
+	      margin:0px;
+	    }
+            .black-row {
+	      padding-top:5px;	
+	      padding-bottom:5px;	
+	    }
+	    .inverted {
+	      filter:invert(100%);
+	    }
+	  </style>
+
+	  <div class="row black-row flex">
+            <div class="col-md-2 col-xs-3"><img src="{% static 'svg/whatsapp.svg' %}" class="black img-rounded img-responsive"></div>
+	    <div class="col-md-10 col-xs-9 middle nopadding" style="justify-content:left">
+	      <p class="black-p">{% blocktrans %} +555198485888 {% endblocktrans %}</p>
+	    </div>
+	  </div>
+	  <div class="row black-row flex">
+            <div class="col-md-2 col-xs-3"><img src="{% static 'svg/phone.svg' %}" class="black img-rounded img-responsive"></div>
+            <div class="col-md-10 col-xs-9 middle nopadding" style="justify-content:left">
+	      <p class="black-p">{% blocktrans %} (51) 3516-2367 {% endblocktrans %}</p>
+	    </div>
+	  </div>
+	  <div class="row black-row flex">
+            <div class="col-md-2 col-xs-3"><div class="black img-rounded"><img src="/static/svg/email.svg" class="inverted img-responsive"></div></div>
+	    <div class="col-md-10 col-xs-9 middle nopadding" style="justify-content:left">
+	      <p class="black-p">{% blocktrans %} ola@efforia.com.br {% endblocktrans %}</p>
+	    </div>
+	  </div>
+
+	  <!--<div class="col-md-1 col-sm-1 col-xs-1"><img src="{% static 'svg/skype.svg' %}" class="black img-rounded img-responsive"></div>
+	  <div class="col-md-11 col-sm-11 col-xs-11 nopadding"><p class="black-p">{% blocktrans %} efforiaca {% endblocktrans %}</p></div>!-->
         </div>
       </div>
-      <div class="row middle centered whitebg">{% include "includes/flags.html" %}</div>
+      <hr>
+      <div class="row white middle centered">{% include "includes/flags.html" %}</div>
       <div class="row info whitebg">
         <p class="visible-md visible-lg visible-sm site-info text-center">
           Efforia Tecnologia Ltda - ME
           <span class="separator">|</span> CNPJ: 15.436.865/0001-72
-          <span class="separator">|</span> Vigário José Inácio, 399/409 - Porto Alegre/RS - Brasil
+          <span class="separator">|</span> Vigário José Inácio, 399/702 - Porto Alegre/RS - Brasil
         </p>
         <p class="visible-xs site-info text-center">
           Efforia Tecnologia Ltda - ME<br/>
           CNPJ: 15.436.865/0001-72<br/>
-          Rua Vigário José Inácio, 399/409<br/>
+          Rua Vigário José Inácio, 399/702<br/>
           Porto Alegre/RS - Brasil
         </p>
       </div>

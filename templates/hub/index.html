@@ -24,7 +24,7 @@
   <div class="transparent-white overlay middle">
     <div class="container">
       <!--<img src="{% static 'svg/hubsimple.svg' %}" style="height:8em"/>!-->
-      <h2 class="jumbo-highlight black">
+      <h2 class="jumbo-highlight black" style="background:transparent">
           {% blocktrans %} CONTROLE TOTAL <br>SOBRE QUALQUER LUGAR. {% endblocktrans %}
       </h2><br>
     </div>
@@ -36,7 +36,7 @@
     <li class="leftmargin rightmargin">
       <button class="btn btn-info hub-btn" onclick="redirect('/store/choose');">{% trans "Buy" %}</button>
     </li>
-    {% include "hub/nav.html" %}
+    <!--{% include "hub/nav.html" %}!-->
     <li class="left leftmargin">
       <a href="{% url 'hub' %}" style="padding:0px">
         <img class="hub-logo" src="{% static 'svg/hublogo.svg' %}"/>
