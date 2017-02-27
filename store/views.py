@@ -1,14 +1,16 @@
 # -*- coding: UTF-8 -*-
 
-import paypalrestsdk,urlparse,urllib2
+import paypalrestsdk
+from urllib.request import urlopen
+from urllib.parse import urlparse,parse_qs
 from xml.etree import ElementTree as ETree
-from hooks import paypal_api,pagseguro_api
+from store.hooks import paypal_api,pagseguro_api
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import Http404,HttpResponse
 from django.http import HttpResponse as response
 from django.shortcuts import get_object_or_404,redirect,render
-from cartridge.shop.models import Product, ProductVariation, Order, OrderItem
+# from cartridge.shop.models import Product, ProductVariation, Order, OrderItem
 from paypalrestsdk import Payment
 
 def payment_cancel(request):
@@ -21,8 +23,8 @@ def paypal_redirect(request,order):
     for link in payment.links:
         if link.method == "REDIRECT":
             redirect_url = link.href
-            url = urlparse.urlparse(link.href)
-            params = urlparse.parse_qs(url.query)
+            url = urlparse(link.href)
+            params = parse_qs(url.query)
             redirect_token = params['token'][0]
             order.paypal_redirect_token = redirect_token
             order.save()
@@ -33,7 +35,7 @@ def payment_redirect(request, order_id):
     if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
     elif not request.user.is_staff: lookup["user_id"] = request.user.id
     order = get_object_or_404(Order, **lookup)
-    is_pagseguro = order.pagseguro_redirect 
+    is_pagseguro = order.pagseguro_redirect
     is_paypal = order.paypal_redirect_token
     if 'none' not in is_pagseguro: return redirect(str(is_pagseguro))
     elif 'none' not in is_paypal: return paypal_redirect(request,order)
@@ -42,7 +44,7 @@ def payment_redirect(request, order_id):
 def payment_slip(request):
 	orderid = request.GET['id']
 	order = Order.objects.filter(id=orderid)[0]
-	send_mail('Pedido de boleto', 'O pedido de boleto foi solicitado ao Efforia para o pedido %s. Em instantes você estará recebendo pelo e-mail. Aguarde instruções.' % order.id, 'oi@efforia.com.br',
+	send_mail('Pedido de boleto', 'O pedido de boleto foi solicitado ao Efforia para o pedido %s. Em instantes vocï¿½ estarï¿½ recebendo pelo e-mail. Aguarde instruï¿½ï¿½es.' % order.id, 'oi@efforia.com.br',
     [order.billing_detail_email,'contato@efforia.com.br'], fail_silently=False)
 	context = { "order": order }
 	resp = render(request,"shop/slip_confirmation.html",context)
@@ -51,7 +53,7 @@ def payment_slip(request):
 def payment_bank(request):
 	orderid = request.GET['order_id']
 	order = Order.objects.filter(id=orderid)[0]
-	context = { 
+	context = {
 		"order": order,
 		"agency": settings.BANK_AGENCY,
 		"account": settings.BANK_ACCOUNT,
@@ -60,7 +62,7 @@ def payment_bank(request):
 	resp = render(request,"shop/bank_confirmation.html",context)
 	return resp
 
-def payment_execute(request, template="shop/payment_confirmation.html"):    
+def payment_execute(request, template="shop/payment_confirmation.html"):
 	order = None
 	lookup = {}
 	if request.GET.has_key('token'):
@@ -76,9 +78,9 @@ def payment_execute(request, template="shop/payment_confirmation.html"):
 		token = api.data['token']
 		transaction = request.GET['transaction_id']
 		url = api.config.TRANSACTION_URL % transaction
-		resp = urllib2.urlopen("%s?email=%s&token=%s" % (url,email,token)).read()
+		resp = urlopen("%s?email=%s&token=%s" % (url,email,token)).read()
 		lookup["id"] = ETree.fromstring(resp).findall("reference")[0].text
-		print ETree.fromstring(resp).findall("reference")[0].text
+		print(ETree.fromstring(resp).findall("reference")[0].text)
 		if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
 		if not request.user.is_staff: lookup["user_id"] = request.user.id
 		order = get_object_or_404(Order, **lookup)

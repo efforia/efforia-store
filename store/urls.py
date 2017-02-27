@@ -1,12 +1,14 @@
 from __future__ import unicode_literals
 from django.conf import settings
-from django.conf.urls import patterns, include, url
+from django.conf.urls import include, url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.conf.urls.static import static
 from django.views.generic.base import TemplateView,RedirectView
 from django.utils.translation import ugettext_lazy as _
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls.static import static
+
+import store.views
 
 admin.autodiscover()
 
@@ -14,16 +16,16 @@ urlpatterns = i18n_patterns(url(u'^admin/', include(admin.site.urls)))
 
 urlpatterns += [
     url(_(r'^shop/volumes/'),TemplateView.as_view(template_name='volumes.html'),name='volumes'),
-    url(_(u'^shop/'), include(u'cartridge.shop.urls'), name='shop'),
+    # url(_(u'^shop/'), include(u'cartridge.shop.urls'), name='shop'),
 
     url(u'^store/services',TemplateView.as_view(template_name='pages/services.html')),
     url(u'^store/choose',TemplateView.as_view(template_name='pages/choose.html')),
-    url(u'^store/slip', "store.views.payment_slip"),
-    url(u'^store/bank', "store.views.payment_bank"),
-    url(u'^store/cancel', "store.views.payment_cancel"),
-    url(u'^store/execute', "store.views.payment_execute", name=u'payment_execute'),
-    url(u'^store/pay/(?P<order_id>\\d+)/$', "store.views.payment_redirect", name=u'payment_redirect'),
-    url(u'^store/orders/$', "cartridge.shop.views.order_history", name=u'order_history'),
+    url(u'^store/slip', store.views.payment_slip),
+    url(u'^store/bank', store.views.payment_bank),
+    url(u'^store/cancel', store.views.payment_cancel),
+    url(u'^store/execute', store.views.payment_execute, name=u'payment_execute'),
+    url(u'^store/pay/(?P<order_id>\\d+)/$', store.views.payment_redirect, name=u'payment_redirect'),
+    # url(u'^store/orders/$', "cartridge.shop.views.order_history", name=u'order_history'),
     url(r'^i18n/', include('django.conf.urls.i18n'), name='set_language'),
 
     url(_(r'^atom/'), TemplateView.as_view(template_name='atom/index.html'), name='sensors'),
@@ -53,10 +55,8 @@ urlpatterns += [
 
     url(u'^$', TemplateView.as_view(template_name='index.html'), name=u'home'),
     url(r'^accountold/', RedirectView.as_view(url='/'), name=u'old_account_redirect'),
-    url(u'^', include(u'mezzanine.urls'))
-]
+    # url(u'^', include(u'mezzanine.urls'))
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-urlpatterns += staticfiles_urlpatterns()
-
-handler404 = u'mezzanine.core.views.page_not_found'
-handler500 = u'mezzanine.core.views.server_error'
+# handler404 = u'mezzanine.core.views.page_not_found'
+# handler500 = u'mezzanine.core.views.server_error'

@@ -1,7 +1,6 @@
-Django==1.9.6
-Mezzanine==4.1.0
-Cartridge==0.11.0
+Django==1.10.5
 Pillow==3.2.0
+python-memcached==1.58
 dj-static==0.0.6
 django-crispy-forms==1.6.0
 django-feedly==0.6.4

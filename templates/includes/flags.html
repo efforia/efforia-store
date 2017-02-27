@@ -1,4 +1,4 @@
-{% load shop_tags pages_tags mezzanine_tags i18n future staticfiles %}
+{% load i18n staticfiles %}
 
 <form id="locale" class="navbar-form navbar-padding none nomargin hidden" action="{% url 'set_language' %}" method="post">{% csrf_token %}
     <input name="next" type="hidden" value="{{ redirect_to }}" />

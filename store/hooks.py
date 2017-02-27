@@ -4,15 +4,15 @@ from django.core.exceptions import ImproperlyConfigured
 from django.http import HttpResponse as response
 from django.template import Template,Context
 from django.http import HttpResponseRedirect as redirect
-from shipping.codes import CorreiosCode
-from shipping.fretefacil import FreteFacilShippingService
-from shipping.correios import CorreiosShippingService
-from shipping.models import DeliverableProperty
-from mezzanine.conf import settings
-from cartridge.shop.utils import set_shipping
-from cartridge.shop.forms import OrderForm
-from cartridge.shop.models import Cart
-from cartridge.shop.checkout import CheckoutError
+# from shipping.codes import CorreiosCode
+# from shipping.fretefacil import FreteFacilShippingService
+# from shipping.correios import CorreiosShippingService
+# from shipping.models import DeliverableProperty
+# from mezzanine.conf import settings
+# from cartridge.shop.utils import set_shipping
+# from cartridge.shop.forms import OrderForm
+# from cartridge.shop.models import Cart
+# from cartridge.shop.checkout import CheckoutError
 
 class SandboxConfig(pagseguro.Config):
 	BASE_URL = "https://ws.sandbox.pagseguro.uol.com.br"

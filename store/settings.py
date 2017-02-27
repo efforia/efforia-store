@@ -4,11 +4,14 @@ import os
 SHOP_CHECKOUT_FORM_CLASS = 'store.forms.ExternalPaymentOrderForm'
 SHOP_CHECKOUT_STEPS_SPLIT = True
 SHOP_CHECKOUT_STEPS_CONFIRMATION = False
-SHOP_CURRENCY_LOCALE = 'ptb' if 'posix' not in os.name else 'pt_BR.UTF-8'
-SHOP_HANDLER_BILLING_SHIPPING = 'store.hooks.sedex_shipping_handler'
+#SHOP_CURRENCY_LOCALE = 'ptb' if 'posix' not in os.name else 'pt_BR.UTF-8'
+SHOP_CURRENCY_LOCALE = 'en_US.UTF-8'
+#SHOP_HANDLER_BILLING_SHIPPING = 'store.hooks.sedex_shipping_handler'
+SHOP_HANDLER_BILLING_SHIPPING = None
 SHOP_HANDLER_TAX = None
 SHOP_HANDLER_ORDER = None
-SHOP_HANDLER_PAYMENT = 'store.hooks.multiple_payment_handler'
+#SHOP_HANDLER_PAYMENT = 'store.hooks.multiple_payment_handler'
+SHOP_HANDLER_PAYMENT = None
 
 EXTRA_MODEL_FIELDS = ((
     'cartridge.shop.models.Order.paypal_redirect_token',
@@ -73,7 +76,7 @@ USE_I18N = True
 INTERNAL_IPS = ('127.0.0.1',)
 
 AUTHENTICATION_BACKENDS = (
-    'mezzanine.core.auth_backends.MezzanineBackend',
+    # 'mezzanine.core.auth_backends.MezzanineBackend',
     'django.contrib.auth.backends.ModelBackend'
 )
 
@@ -135,21 +138,21 @@ TEMPLATES = [
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.core.context_processors.debug',
-                'django.core.context_processors.i18n',
-                'django.core.context_processors.static',
-                'django.core.context_processors.media',
-                'django.core.context_processors.request',
-                'django.core.context_processors.tz',
-                'mezzanine.conf.context_processors.settings',
-                'mezzanine.pages.context_processors.page'
+                'django.template.context_processors.debug',
+                'django.template.context_processors.i18n',
+                'django.template.context_processors.static',
+                'django.template.context_processors.media',
+                'django.template.context_processors.request',
+                'django.template.context_processors.tz',
+                # 'mezzanine.conf.context_processors.settings',
+                # 'mezzanine.pages.context_processors.page'
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader'
             ],
             'builtins': [
-                'mezzanine.template.loader_tags',
+                # 'mezzanine.template.loader_tags',
             ],
         }
     }
@@ -164,18 +167,18 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
-    'cartridge.shop',
-    'mezzanine.boot',
-    'mezzanine.conf',
-    'mezzanine.core',
-    'mezzanine.generic',
-    'mezzanine.blog',
-    'mezzanine.forms',
-    'mezzanine.pages',
-    'mezzanine.galleries',
-    'mezzanine.twitter',
-    'mezzanine.accounts',
-    'shipping',
+    # 'cartridge.shop',
+    # 'mezzanine.boot',
+    # 'mezzanine.conf',
+    # 'mezzanine.core',
+    # 'mezzanine.generic',
+    # 'mezzanine.blog',
+    # 'mezzanine.forms',
+    # 'mezzanine.pages',
+    # 'mezzanine.galleries',
+    # 'mezzanine.twitter',
+    # 'mezzanine.accounts',
+    # 'shipping',
     'store',
     'gunicorn'
 )
@@ -190,7 +193,7 @@ EXTENSIONS = {
 }
 
 MIDDLEWARE_CLASSES = (
-    'mezzanine.core.middleware.UpdateCacheMiddleware',
+    # 'mezzanine.core.middleware.UpdateCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -198,14 +201,14 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'cartridge.shop.middleware.ShopMiddleware',
-    'mezzanine.core.request.CurrentRequestMiddleware',
-    'mezzanine.core.middleware.TemplateForDeviceMiddleware',
-    'mezzanine.core.middleware.TemplateForHostMiddleware',
-    'mezzanine.core.middleware.AdminLoginInterfaceSelectorMiddleware',
-    'mezzanine.core.middleware.SitePermissionMiddleware',
-    'mezzanine.pages.middleware.PageMiddleware',
-    'mezzanine.core.middleware.FetchFromCacheMiddleware'
+    # 'cartridge.shop.middleware.ShopMiddleware',
+    # 'mezzanine.core.request.CurrentRequestMiddleware',
+    # 'mezzanine.core.middleware.TemplateForDeviceMiddleware',
+    # 'mezzanine.core.middleware.TemplateForHostMiddleware',
+    # 'mezzanine.core.middleware.AdminLoginInterfaceSelectorMiddleware',
+    # 'mezzanine.core.middleware.SitePermissionMiddleware',
+    # 'mezzanine.pages.middleware.PageMiddleware',
+    # 'mezzanine.core.middleware.FetchFromCacheMiddleware'
 )
 
 PACKAGE_NAME_FILEBROWSER = 'filebrowser_safe'
@@ -247,9 +250,9 @@ LOGIN_ERROR_URL = '/'
 SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 ANONYMOUS_USER_ID = -1
 
-try:
-    from mezzanine.utils.conf import set_dynamic_settings
-except ImportError:
-    pass
-else:
-    set_dynamic_settings(globals())
+# try:
+#     from mezzanine.utils.conf import set_dynamic_settings
+# except ImportError:
+#     pass
+# else:
+#     set_dynamic_settings(globals())

@@ -1,6 +1,6 @@
 ﻿<!doctype html>
 <html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
-{% load shop_tags pages_tags mezzanine_tags i18n future staticfiles %}
+{% load i18n static %}
 
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -10,39 +10,16 @@
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/hubshortcut.png" %}">
 
-{% ifinstalled mezzanine.blog %}
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
-<link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
-{% endifinstalled %}
-
-{% compress css %}
-<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
-<link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
+<link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
 <link rel="stylesheet" href="{% static "css/dropdown.css" %}">
 <link rel="stylesheet" href="{% static "css/font-awesome.css" %}">
-{% if LANGUAGE_BIDI %}
-<link rel="stylesheet" href="{% static "css/rtl.css" %}">
-{% endif %}
-
-{% ifinstalled cartridge.shop %}
-<link rel="stylesheet" href="{% static "css/cartridge.css" %}">
-
-{% if LANGUAGE_BIDI %}
-<link rel="stylesheet" href="{% static "css/cartridge.rtl.css" %}">
-{% endif %}
-
-{% endifinstalled %}
 
 {% block extra_css %}{% endblock %}
-{% endcompress %}
 
-{% compress js %}
 <script src="{% static "js/jquery-2.1.3.min.js" %}"></script>
-<script src="{% static "js/bootstrap.js" %}"></script>
-<script src="{% static "js/bootstrap-extras.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
 <script src="{% static "js/main.js" %}"></script>
 {% block extra_js %}{% endblock %}
-{% endcompress %}
 
 <link rel="stylesheet" href="{% static "css/efforia.css" %}">
 <link rel="stylesheet" href="{% static "css/main.css" %}">
@@ -101,7 +78,6 @@
             <a id="help" href="{% url 'support' %}"> {% trans "Help" %} </a>
             <!--<ul class="dropdown-menu menu"> {% include "help/nav.html" %} </ul>!-->
           </li>
-          {% page_menu "pages/menus/dropdown.html" %}
         </ul>
         <div class="hidden visible-xs visible-sm centered" style="padding: 0px 5px;"> {% include "includes/search_form.html" %} </div>
       </div>
@@ -214,8 +190,8 @@
 	      margin:0px;
 	    }
             .black-row {
-	      padding-top:5px;	
-	      padding-bottom:5px;	
+	      padding-top:5px;
+	      padding-bottom:5px;
 	    }
 	    .inverted {
 	      filter:invert(100%);
