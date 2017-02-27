@@ -1,3 +1,4 @@
+""" Invent General Settings for Django """
 from __future__ import absolute_import, unicode_literals
 import os
 
@@ -13,20 +14,6 @@ SHOP_HANDLER_ORDER = None
 #SHOP_HANDLER_PAYMENT = 'invent.hooks.multiple_payment_handler'
 SHOP_HANDLER_PAYMENT = None
 
-EXTRA_MODEL_FIELDS = ((
-    'cartridge.shop.models.Order.paypal_redirect_token',
-    'django.db.models.CharField',(),{
-        'blank': True,
-        'null': True,
-        'max_length': 36
-    }),(
-    'cartridge.shop.models.Order.pagseguro_redirect',
-    'django.db.models.CharField',(),{
-        'blank': True,
-        'null': True,
-        'max_length': 200
-    })
-)
 
 USE_SOUTH = True
 SITE_TITLE = 'Efforia Nanocomputadores'
@@ -57,27 +44,24 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'contato@efforia.com.br'
 EMAIL_HOST_PASSWORD = 'c40k21_1'
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-ADMINS = ()
-MANAGERS = ADMINS
 ALLOWED_HOSTS = ['*']
 TIME_ZONE = 'America/Sao_Paulo'
 USE_TZ = True
 LANGUAGE_CODE = 'pt-br'
 _ = lambda s: s
 LANGUAGES = (
-	('pt-br', _('Brazilian Portuguese')),
+    ('pt-br', _('Brazilian Portuguese')),
     ('es-ar', _('Argentinian Spanish')),
-	('en', _('English'))
+    ('en', _('English'))
 )
 DEBUG = True
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SITE_ID = 1
 USE_I18N = True
-INTERNAL_IPS = ('127.0.0.1',)
+INTERNAL_IPS = ('127.0.0.1')
 
 AUTHENTICATION_BACKENDS = (
-    # 'mezzanine.core.auth_backends.MezzanineBackend',
-    'django.contrib.auth.backends.ModelBackend'
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 STATICFILES_FINDERS = (
@@ -86,10 +70,6 @@ STATICFILES_FINDERS = (
 )
 
 FILE_UPLOAD_PERMISSIONS = 420
-DATABASES = {}
-
-
-GRAPPELLI_INSTALLED = True
 
 DATABASES = {
     "default": {
@@ -98,22 +78,15 @@ DATABASES = {
     }
 }
 
-# PostgreSQL Connection for Django
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'efforia',
-#        'USER': 'efforia',
-#        'PASSWORD': 'mk28to#$',
-#        'HOST': '127.0.0.1',
-#        'PORT': ''
-#    }
-#}
-
 CACHE_MIDDLEWARE_SECONDS = 60
 CACHE_MIDDLEWARE_KEY_PREFIX = 'efforia'
-CACHES = {'default': {'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-              'LOCATION': '127.0.0.1:11211'}}
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211'
+    }
+}
+
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
 LOGGING = {
@@ -124,8 +97,10 @@ LOGGING = {
 BASE_DIR = PROJECT_ROOT = os.path.abspath('')
 CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_ROOT.split(os.sep)[-1]
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip('/'))
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'invent/public'),)
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'invent/static')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'invent/public'),
+)
 MEDIA_URL = STATIC_URL + 'media/'
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip('/').split('/'))
 ROOT_URLCONF = 'invent.urls'
@@ -133,7 +108,7 @@ ROOT_URLCONF = 'invent.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ os.path.join(PROJECT_ROOT, 'invent/templates') ],
+        'DIRS': [os.path.join(PROJECT_ROOT, 'invent/templates')],
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -144,86 +119,52 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'django.template.context_processors.request',
                 'django.template.context_processors.tz',
-                # 'mezzanine.conf.context_processors.settings',
-                # 'mezzanine.pages.context_processors.page'
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader'
-            ],
-            'builtins': [
-                # 'mezzanine.template.loader_tags',
-            ],
+            ]
         }
     }
 ]
 
 INSTALLED_APPS = (
+    'flat_responsive',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.messages',
     'django.contrib.redirects',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
-    # 'cartridge.shop',
-    # 'mezzanine.boot',
-    # 'mezzanine.conf',
-    # 'mezzanine.core',
-    # 'mezzanine.generic',
-    # 'mezzanine.blog',
-    # 'mezzanine.forms',
-    # 'mezzanine.pages',
-    # 'mezzanine.galleries',
-    # 'mezzanine.twitter',
-    # 'mezzanine.accounts',
     # 'shipping',
     'invent',
 )
 
 EXTENSIONS = {
     'Folder': [''],
-    'Image': ['.jpg','.jpeg','.gif','.png','.tif','.tiff','.svg'],
-    'Video': ['.mov','.wmv','.mpeg','.mpg','.avi','.rm'],
-    'Document': ['.pdf','.doc','.rtf','.txt','.xls','.csv'],
-    'Audio': ['.mp3','.mp4','.wav','.aiff','.midi','.m4p'],
-    'Code': ['.html','.py','.js','.css']
+    'Image': ['.jpg', '.jpeg', '.gif', '.png', '.tif', '.tiff', '.svg'],
+    'Video': ['.mov', '.wmv', '.mpeg', '.mpg', '.avi', '.rm'],
+    'Document': ['.pdf', '.doc', '.rtf', '.txt', '.xls', '.csv'],
+    'Audio': ['.mp3', '.mp4', '.wav', '.aiff', '.midi', '.m4p'],
+    'Code': ['.html', '.py', '.js', '.css']
 }
 
 MIDDLEWARE_CLASSES = (
-    # 'mezzanine.core.middleware.UpdateCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    # 'cartridge.shop.middleware.ShopMiddleware',
-    # 'mezzanine.core.request.CurrentRequestMiddleware',
-    # 'mezzanine.core.middleware.TemplateForDeviceMiddleware',
-    # 'mezzanine.core.middleware.TemplateForHostMiddleware',
-    # 'mezzanine.core.middleware.AdminLoginInterfaceSelectorMiddleware',
-    # 'mezzanine.core.middleware.SitePermissionMiddleware',
-    # 'mezzanine.pages.middleware.PageMiddleware',
-    # 'mezzanine.core.middleware.FetchFromCacheMiddleware'
-)
-
-PACKAGE_NAME_FILEBROWSER = 'filebrowser_safe'
-PACKAGE_NAME_GRAPPELLI = 'grappelli_safe'
-
-OPTIONAL_APPS = (
-    'debug_toolbar',
-    'django_extensions',
-    'compressor',
-    PACKAGE_NAME_FILEBROWSER,
-    PACKAGE_NAME_GRAPPELLI
+    'django.contrib.messages.middleware.MessageMiddleware'
 )
 
 DEBUG_TOOLBAR_CONFIG = {'INTERCEPT_REDIRECTS': False}
-SECRET_KEY = '928f26e4-2b36-48c1-b9b7-5e2049306018df5334a2-3efa-4de8-a10b-010226b85823eaa7584f-0878-43f2-b099-45f4b73519af'
-NEVERCACHE_KEY = '0085b0ee-8947-4699-ba15-6bbf538cf75f06e504a2-ee28-4c9e-8a23-ffa5bdebc69384f3b8c4-e63f-4c95-874f-d43f59ff92aa'
+SECRET_KEY = '928f26e4'
+NEVERCACHE_KEY = '0085b0ee'
 SSH_USER = 'azureuser'
 FABRIC = {
     'SSH_USER': SSH_USER,
@@ -248,10 +189,3 @@ LOGIN_REDIRECT_URL = '/'
 LOGIN_ERROR_URL = '/'
 SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 ANONYMOUS_USER_ID = -1
-
-# try:
-#     from mezzanine.utils.conf import set_dynamic_settings
-# except ImportError:
-#     pass
-# else:
-#     set_dynamic_settings(globals())
