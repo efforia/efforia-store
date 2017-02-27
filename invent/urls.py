@@ -8,7 +8,7 @@ from django.views.generic.base import TemplateView,RedirectView
 from django.utils.translation import ugettext_lazy as _
 from django.conf.urls.static import static
 
-import store.views
+import invent.views
 
 admin.autodiscover()
 
@@ -20,11 +20,11 @@ urlpatterns += [
 
     url(u'^store/services',TemplateView.as_view(template_name='pages/services.html')),
     url(u'^store/choose',TemplateView.as_view(template_name='pages/choose.html')),
-    url(u'^store/slip', store.views.payment_slip),
-    url(u'^store/bank', store.views.payment_bank),
-    url(u'^store/cancel', store.views.payment_cancel),
-    url(u'^store/execute', store.views.payment_execute, name=u'payment_execute'),
-    url(u'^store/pay/(?P<order_id>\\d+)/$', store.views.payment_redirect, name=u'payment_redirect'),
+    url(u'^store/slip', invent.views.payment_slip),
+    url(u'^store/bank', invent.views.payment_bank),
+    url(u'^store/cancel', invent.views.payment_cancel),
+    url(u'^store/execute', invent.views.payment_execute, name=u'payment_execute'),
+    url(u'^store/pay/(?P<order_id>\\d+)/$', invent.views.payment_redirect, name=u'payment_redirect'),
     # url(u'^store/orders/$', "cartridge.shop.views.order_history", name=u'order_history'),
     url(r'^i18n/', include('django.conf.urls.i18n'), name='set_language'),
 

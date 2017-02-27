@@ -1,16 +1,16 @@
 from __future__ import absolute_import, unicode_literals
 import os
 
-SHOP_CHECKOUT_FORM_CLASS = 'store.forms.ExternalPaymentOrderForm'
+SHOP_CHECKOUT_FORM_CLASS = 'invent.forms.ExternalPaymentOrderForm'
 SHOP_CHECKOUT_STEPS_SPLIT = True
 SHOP_CHECKOUT_STEPS_CONFIRMATION = False
 #SHOP_CURRENCY_LOCALE = 'ptb' if 'posix' not in os.name else 'pt_BR.UTF-8'
 SHOP_CURRENCY_LOCALE = 'en_US.UTF-8'
-#SHOP_HANDLER_BILLING_SHIPPING = 'store.hooks.sedex_shipping_handler'
+#SHOP_HANDLER_BILLING_SHIPPING = 'invent.hooks.sedex_shipping_handler'
 SHOP_HANDLER_BILLING_SHIPPING = None
 SHOP_HANDLER_TAX = None
 SHOP_HANDLER_ORDER = None
-#SHOP_HANDLER_PAYMENT = 'store.hooks.multiple_payment_handler'
+#SHOP_HANDLER_PAYMENT = 'invent.hooks.multiple_payment_handler'
 SHOP_HANDLER_PAYMENT = None
 
 EXTRA_MODEL_FIELDS = ((
@@ -125,10 +125,10 @@ BASE_DIR = PROJECT_ROOT = os.path.abspath('')
 CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_ROOT.split(os.sep)[-1]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip('/'))
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'store/public'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'invent/public'),)
 MEDIA_URL = STATIC_URL + 'media/'
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip('/').split('/'))
-ROOT_URLCONF = 'store.urls'
+ROOT_URLCONF = 'invent.urls'
 
 TEMPLATES = [
     {
@@ -179,8 +179,7 @@ INSTALLED_APPS = (
     # 'mezzanine.twitter',
     # 'mezzanine.accounts',
     # 'shipping',
-    'store',
-    'gunicorn'
+    'invent',
 )
 
 EXTENSIONS = {

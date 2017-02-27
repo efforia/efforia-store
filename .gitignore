@@ -9,6 +9,7 @@ last*
 /static
 /bin
 /env
+venv
 /obj/Debug
 *.suo
 *.config

@@ -4,7 +4,7 @@ import paypalrestsdk
 from urllib.request import urlopen
 from urllib.parse import urlparse,parse_qs
 from xml.etree import ElementTree as ETree
-from store.hooks import paypal_api,pagseguro_api
+from invent.hooks import paypal_api,pagseguro_api
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import Http404,HttpResponse

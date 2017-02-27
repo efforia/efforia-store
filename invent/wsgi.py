@@ -15,5 +15,5 @@ from django.core.wsgi import get_wsgi_application
 # os.environ.setdefault("DJANGO_SETTINGS_MODULE",
 #                       "%s.production" % real_project_name("store"))
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE","store.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE","invent.settings")
 application = get_wsgi_application()

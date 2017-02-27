@@ -1,6 +1,5 @@
 Django==1.10.5
-Pillow==3.2.0
-python-memcached==1.58
+Pillow==4.0.0
 dj-static==0.0.6
 django-crispy-forms==1.6.0
 django-feedly==0.6.4
@@ -9,6 +8,7 @@ django-ship==0.2.3
 django-social-auth==0.7.28
 django-socialize==0.5.0
 django-storages==1.1.8
+python-memcached==1.58
 gunicorn==19.4.5
 pagseguro==0.1.9.dev0
 paypalrestsdk==1.11.5
