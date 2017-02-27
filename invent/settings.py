@@ -133,7 +133,7 @@ ROOT_URLCONF = 'invent.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ os.path.join(PROJECT_ROOT, 'templates') ],
+        'DIRS': [ os.path.join(PROJECT_ROOT, 'invent/templates') ],
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
