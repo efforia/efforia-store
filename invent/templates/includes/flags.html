@@ -1,6 +1,6 @@
 {% load i18n staticfiles %}
 
-<form id="locale" class="navbar-form navbar-padding none nomargin hidden" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+<form id="locale" class="navbar-form navbar-padding none nomargin hidden" action="{#{% url 'set_language' %}#}" method="post">{% csrf_token %}
     <input name="next" type="hidden" value="{{ redirect_to }}" />
     <select id="language" name="language">
         {% get_current_language as LANGUAGE_CODE %}

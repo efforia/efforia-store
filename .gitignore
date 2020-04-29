@@ -14,3 +14,4 @@ venv
 *.suo
 *.config
 /ptvs_virtualenv_proxy.py
+output

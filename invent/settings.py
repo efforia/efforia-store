@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     # 'shipping',
+    'django_distill',
     'invent',
 )
 
