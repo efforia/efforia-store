@@ -1,0 +1,49 @@
+html,body
+{
+    width: 100%;
+    /*height: 100%;*/
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+body { 
+	font-family:Ubuntu; 
+	background:#222222;
+}
+h1,h2,h3,h4,h5,h6,ul.nav { font-family: Ubuntu; font-weight:bold; }
+a,a:hover,a:active,a:focus { text-decoration:none !important; }
+
+.facebook,.facebook:hover { text-align:left; background:#3C5A98; text-shadow:none; }
+.twitter,.twitter:hover { text-align:left; background:#00ACED; text-shadow:none; }
+.youtube,.youtube:hover { text-align:left; background:#FF1F20; text-shadow:none; }
+.foursquare,.foursquare:hover { text-align:left; background:#0072B1; text-shadow:none; }
+.github,.github:hover { text-align:left; background:white; text-shadow:none; }
+
+.divider { margin:5px; }
+.inline { display:inline; color:white; }
+.hidden { display:none; }
+.centered { text-align:center; }
+.footer { background-color:#222222; color:#969696; margin-top:0; font-size: 1.2em; border-top:0; font-weight: bold }
+
+.input_id_card_pay_option_0 { display:none; }
+.turquoise { color:turquoise; }
+.pink { color: pink; }
+.gold { color: lightgreen; }
+.black:hover { color:black; }
+.white:hover { color:white; }
+
+.fixed-navbar {
+	border:0px; 
+	border-radius:0px; 
+	padding:0px;
+	margin-bottom:0px; 
+}
+.nebula-jumbotron {
+	text-align:center; 
+	color:white; 
+	padding:2em 0em;
+}
+
+#inner{
+	background:white;
+}

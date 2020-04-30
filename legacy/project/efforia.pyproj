@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{bb6f4b70-d326-425e-9b4b-67a2b567e4b0}</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <InterpreterId>2af0f10d-7135-4994-9156-5d01c9c11b7e</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <Name>efforia</Name>
+    <RootNamespace>Efforia</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <CommandLineArguments />
+    <InterpreterPath />
+    <InterpreterArguments />
+    <DjangoSettingsModule />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="efforia\bootstrap\admin.py" />
+    <Compile Include="efforia\bootstrap\templatetags\bootstrap_admin_list.py" />
+    <Compile Include="efforia\bootstrap\templatetags\bootstrap_template_tags.py" />
+    <Compile Include="efforia\bootstrap\templatetags\__init__.py" />
+    <Compile Include="efforia\bootstrap\__init__.py" />
+    <Compile Include="efforia\correios\encomenda.py" />
+    <Compile Include="efforia\correios\scraping.py" />
+    <Compile Include="efforia\correios\__init__.py" />
+    <Compile Include="efforia\dropbox\client.py" />
+    <Compile Include="efforia\dropbox\rest.py" />
+    <Compile Include="efforia\dropbox\session.py" />
+    <Compile Include="efforia\dropbox\__init__.py" />
+    <Compile Include="efforia\infinite\mixins.py" />
+    <Compile Include="efforia\infinite\models.py" />
+    <Compile Include="efforia\infinite\paginator.py" />
+    <Compile Include="efforia\infinite\tests.py" />
+    <Compile Include="efforia\infinite\__init__.py" />
+    <Compile Include="efforia\jade\compiler.py" />
+    <Compile Include="efforia\jade\convert.py" />
+    <Compile Include="efforia\jade\exceptions.py" />
+    <Compile Include="efforia\jade\ext\django\loader.py" />
+    <Compile Include="efforia\jade\ext\django\templatetags.py" />
+    <Compile Include="efforia\jade\ext\django\__init__.py" />
+    <Compile Include="efforia\jade\ext\html.py" />
+    <Compile Include="efforia\jade\ext\jinja.py" />
+    <Compile Include="efforia\jade\ext\mako.py" />
+    <Compile Include="efforia\jade\ext\pyramid\__init__.py" />
+    <Compile Include="efforia\jade\ext\underscore.py" />
+    <Compile Include="efforia\jade\ext\__init__.py" />
+    <Compile Include="efforia\jade\lexer.py" />
+    <Compile Include="efforia\jade\nodes.py" />
+    <Compile Include="efforia\jade\parser.py" />
+    <Compile Include="efforia\jade\runtime.py" />
+    <Compile Include="efforia\jade\utils.py" />
+    <Compile Include="efforia\jade\__init__.py" />
+    <Compile Include="efforia\admin.py" />
+    <Compile Include="efforia\pagseguro\models.py" />
+    <Compile Include="efforia\pagseguro\pagseguro.py" />
+    <Compile Include="efforia\pagseguro\signals.py" />
+    <Compile Include="efforia\pagseguro\tests\pagseguro.py" />
+    <Compile Include="efforia\pagseguro\tests\signals.py" />
+    <Compile Include="efforia\pagseguro\tests\views.py" />
+    <Compile Include="efforia\pagseguro\tests\__init__.py" />
+    <Compile Include="efforia\pagseguro\urls.py" />
+    <Compile Include="efforia\pagseguro\views.py" />
+    <Compile Include="efforia\pagseguro\__init__.py" />
+    <Compile Include="efforia\paypal\fretefacil\tornadoweb.py" />
+    <Compile Include="efforia\paypal\fretefacil\__init__.py" />
+    <Compile Include="efforia\paypal\pro\admin.py" />
+    <Compile Include="efforia\paypal\pro\creditcard.py" />
+    <Compile Include="efforia\paypal\pro\exceptions.py" />
+    <Compile Include="efforia\paypal\pro\fields.py" />
+    <Compile Include="efforia\paypal\pro\forms.py" />
+    <Compile Include="efforia\paypal\pro\helpers.py" />
+    <Compile Include="efforia\paypal\pro\models.py" />
+    <Compile Include="efforia\paypal\pro\signals.py" />
+    <Compile Include="efforia\paypal\pro\tests.py" />
+    <Compile Include="efforia\paypal\pro\views.py" />
+    <Compile Include="efforia\paypal\pro\__init__.py" />
+    <Compile Include="efforia\paypal\standard\conf.py" />
+    <Compile Include="efforia\paypal\standard\forms.py" />
+    <Compile Include="efforia\paypal\standard\helpers.py" />
+    <Compile Include="efforia\paypal\standard\ipn\admin.py" />
+    <Compile Include="efforia\paypal\standard\ipn\forms.py" />
+    <Compile Include="efforia\paypal\standard\ipn\migrations\0001_first_migration.py" />
+    <Compile Include="efforia\paypal\standard\ipn\migrations\__init__.py" />
+    <Compile Include="efforia\paypal\standard\ipn\models.py" />
+    <Compile Include="efforia\paypal\standard\ipn\signals.py" />
+    <Compile Include="efforia\paypal\standard\ipn\tests\test_ipn.py" />
+    <Compile Include="efforia\paypal\standard\ipn\tests\test_urls.py" />
+    <Compile Include="efforia\paypal\standard\ipn\tests\__init__.py" />
+    <Compile Include="efforia\paypal\standard\ipn\urls.py" />
+    <Compile Include="efforia\paypal\standard\ipn\views.py" />
+    <Compile Include="efforia\paypal\standard\ipn\__init__.py" />
+    <Compile Include="efforia\paypal\standard\models.py" />
+    <Compile Include="efforia\paypal\standard\pdt\admin.py" />
+    <Compile Include="efforia\paypal\standard\pdt\forms.py" />
+    <Compile Include="efforia\paypal\standard\pdt\migrations\0001_first_migration.py" />
+    <Compile Include="efforia\paypal\standard\pdt\migrations\__init__.py" />
+    <Compile Include="efforia\paypal\standard\pdt\models.py" />
+    <Compile Include="efforia\paypal\standard\pdt\signals.py" />
+    <Compile Include="efforia\paypal\standard\pdt\tests\test_pdt.py" />
+    <Compile Include="efforia\paypal\standard\pdt\tests\test_urls.py" />
+    <Compile Include="efforia\paypal\standard\pdt\tests\__init__.py" />
+    <Compile Include="efforia\paypal\standard\pdt\urls.py" />
+    <Compile Include="efforia\paypal\standard\pdt\views.py" />
+    <Compile Include="efforia\paypal\standard\pdt\__init__.py" />
+    <Compile Include="efforia\paypal\standard\widgets.py" />
+    <Compile Include="efforia\paypal\standard\__init__.py" />
+    <Compile Include="efforia\paypal\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="settings.py" />
+    <Compile Include="urls.py" />
+    <Compile Include="efforia\control.py" />
+    <Compile Include="efforia\feed.py" />
+    <Compile Include="efforia\main.py" />
+    <Compile Include="efforia\models.py" />
+    <Compile Include="efforia\payments.py" />
+    <Compile Include="efforia\settings.py" />
+    <Compile Include="efforia\social.py" />
+    <Compile Include="efforia\stream.py" />
+    <Compile Include="efforia\urls.py" />
+    <Compile Include="efforia\views.py" />
+    <Compile Include="efforia\wsgi.py" />
+    <Compile Include="efforia\__init__.py" />
+    <Compile Include="efforia\migrations\0001_initial.py" />
+    <Compile Include="efforia\migrations\0002_auto__add_field_sellable_date.py" />
+    <Compile Include="efforia\migrations\0003_auto__add_field_sellable_pid.py" />
+    <Compile Include="efforia\migrations\0004_auto__del_field_sellable_pid__add_field_sellable_sellid.py" />
+    <Compile Include="efforia\migrations\0005_auto__add_field_sellable_visual__chg_field_sellable_name.py" />
+    <Compile Include="efforia\migrations\__init__.py" />
+    <Content Include="efforia\bootstrap\templates\admin\404.html" />
+    <Content Include="efforia\bootstrap\templates\admin\500.html" />
+    <Content Include="efforia\bootstrap\templates\admin\actions.html" />
+    <Content Include="efforia\bootstrap\templates\admin\app_index.html" />
+    <Content Include="efforia\bootstrap\templates\admin\auth\user\add_form.html" />
+    <Content Include="efforia\bootstrap\templates\admin\auth\user\change_password.html" />
+    <Content Include="efforia\bootstrap\templates\admin\base.html" />
+    <Content Include="efforia\bootstrap\templates\admin\base_site.html" />
+    <Content Include="efforia\bootstrap\templates\admin\change_form.html" />
+    <Content Include="efforia\bootstrap\templates\admin\change_list.html" />
+    <Content Include="efforia\bootstrap\templates\admin\change_list_results.html" />
+    <Content Include="efforia\bootstrap\templates\admin\date_hierarchy.html" />
+    <Content Include="efforia\bootstrap\templates\admin\delete_confirmation.html" />
+    <Content Include="efforia\bootstrap\templates\admin\delete_selected_confirmation.html" />
+    <Content Include="efforia\bootstrap\templates\admin\edit_inline\stacked.html" />
+    <Content Include="efforia\bootstrap\templates\admin\edit_inline\tabular.html" />
+    <Content Include="efforia\bootstrap\templates\admin\filter.html" />
+    <Content Include="efforia\bootstrap\templates\admin\includes\fieldset.html" />
+    <Content Include="efforia\bootstrap\templates\admin\index.html" />
+    <Content Include="efforia\bootstrap\templates\admin\invalid_setup.html" />
+    <Content Include="efforia\bootstrap\templates\admin\login.html" />
+    <Content Include="efforia\bootstrap\templates\admin\object_history.html" />
+    <Content Include="efforia\bootstrap\templates\admin\pagination.html" />
+    <Content Include="efforia\bootstrap\templates\admin\prepopulated_fields_js.html" />
+    <Content Include="efforia\bootstrap\templates\admin\search_form.html" />
+    <Content Include="efforia\bootstrap\templates\admin\submit_line.html" />
+    <Content Include="efforia\bootstrap\templates\registration\logged_out.html" />
+    <Content Include="efforia\bootstrap\templates\registration\password_change_done.html" />
+    <Content Include="efforia\bootstrap\templates\registration\password_change_form.html" />
+    <Content Include="efforia\bootstrap\templates\registration\password_reset_complete.html" />
+    <Content Include="efforia\bootstrap\templates\registration\password_reset_confirm.html" />
+    <Content Include="efforia\bootstrap\templates\registration\password_reset_done.html" />
+    <Content Include="efforia\bootstrap\templates\registration\password_reset_email.html" />
+    <Content Include="efforia\bootstrap\templates\registration\password_reset_form.html" />
+    <Content Include="efforia\infinite\templates\pure_pagination\pagination.html" />
+    <Content Include="efforia\pagseguro\templates\pagseguro_form.html" />
+    <Content Include="efforia\paypal\pro\templates\pro\confirm.html" />
+    <Content Include="efforia\paypal\pro\templates\pro\payment.html" />
+    <Content Include="efforia\paypal\standard\ipn\templates\ipn\ipn.html" />
+    <Content Include="efforia\paypal\standard\ipn\templates\ipn\ipn_test.html" />
+    <Content Include="efforia\paypal\standard\ipn\templates\ipn\paypal.html" />
+    <Content Include="efforia\paypal\standard\pdt\templates\pdt\pdt.html" />
+    <Content Include="efforia\paypal\standard\pdt\templates\pdt\test_pdt_response.html" />
+    <Content Include="efforia\paypal\standard\pdt\tests\templates\pdt\pdt.html" />
+    <Content Include="efforia\public\grid.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\public\js\animation.js" />
+    <Content Include="efforia\public\js\app.js" />
+    <Content Include="efforia\public\js\efforia.js" />
+    <Content Include="efforia\public\js\events.js" />
+    <Content Include="efforia\public\js\globals.js" />
+    <Content Include="efforia\public\js\main.coffee" />
+    <Content Include="efforia\public\js\sandbox.coffee" />
+    <Content Include="efforia\public\css\bootstrap-responsive.min.css" />
+    <Content Include="efforia\public\css\bootstrap-wysiwyg.css" />
+    <Content Include="efforia\public\css\bootstrap.min.css" />
+    <Content Include="efforia\public\css\datepicker.min.css" />
+    <Content Include="efforia\public\css\efforia.css" />
+    <Content Include="efforia\public\css\wysiwyg-color.css" />
+    <Content Include="efforia\public\img\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="efforia\public\img\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="efforia\public\img\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="efforia\public\img\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="efforia\public\img\apple-touch-icon-precomposed.png" />
+    <Content Include="efforia\public\img\apple-touch-icon.png" />
+    <Content Include="efforia\public\img\cart.png" />
+    <Content Include="efforia\public\img\config.png" />
+    <Content Include="efforia\public\img\create.png" />
+    <Content Include="efforia\public\img\efforia.png" />
+    <Content Include="efforia\public\img\efforia_full.png" />
+    <Content Include="efforia\public\img\explore.png" />
+    <Content Include="efforia\public\img\facebook.png" />
+    <Content Include="efforia\public\img\filter.png" />
+    <Content Include="efforia\public\img\glyphicons-halflings-white.png" />
+    <Content Include="efforia\public\img\glyphicons-halflings.png" />
+    <Content Include="efforia\public\img\helice.png" />
+    <Content Include="efforia\public\img\logo.png" />
+    <Content Include="efforia\public\img\mgfy.png" />
+    <Content Include="efforia\public\img\nok.png" />
+    <Content Include="efforia\public\img\ok.png" />
+    <Content Include="efforia\public\img\play.png" />
+    <Content Include="efforia\public\img\playit.png" />
+    <Content Include="efforia\public\img\spin.png" />
+    <Content Include="efforia\public\img\spread.png" />
+    <Content Include="efforia\public\img\store.png" />
+    <Content Include="efforia\public\img\tile.png" />
+    <Content Include="efforia\public\img\twitter.png" />
+    <Content Include="efforia\public\img\upload.png" />
+    <Content Include="efforia\public\img\youtube.png" />
+    <Content Include="efforia\public\img\progress.gif" />
+    <Content Include="efforia\public\js\view.coffee">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\public\svg\interface.svg" />
+    <Content Include="efforia\templates\base.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\bootstrap.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\404.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\500.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\appearance.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\configapp.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\enter.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\form.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\index.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\integrations.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\password.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\photo.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\place.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\profile.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\profileview.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\jade\tutorial.jade">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="efforia\templates\register.html">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="efforia" />
+    <Folder Include="efforia\bootstrap\templates\admin\" />
+    <Folder Include="efforia\bootstrap\templates\admin\auth\" />
+    <Folder Include="efforia\bootstrap\templates\admin\auth\user\" />
+    <Folder Include="efforia\bootstrap\templates\admin\edit_inline\" />
+    <Folder Include="efforia\bootstrap\templates\admin\includes\" />
+    <Folder Include="efforia\bootstrap\templates\registration\" />
+    <Folder Include="efforia\bootstrap\templatetags\" />
+    <Folder Include="efforia\bootstrap\templates\" />
+    <Folder Include="efforia\infinite\templates\" />
+    <Folder Include="efforia\infinite\templates\pure_pagination\" />
+    <Folder Include="efforia\jade\ext\" />
+    <Folder Include="efforia\jade\ext\django\" />
+    <Folder Include="efforia\jade\ext\pyramid\" />
+    <Folder Include="efforia\migrations" />
+    <Folder Include="efforia\correios\" />
+    <Folder Include="efforia\infinite\" />
+    <Folder Include="efforia\dropbox\" />
+    <Folder Include="efforia\jade\" />
+    <Folder Include="efforia\bootstrap\" />
+    <Folder Include="efforia\pagseguro\" />
+    <Folder Include="efforia\pagseguro\tests\" />
+    <Folder Include="efforia\pagseguro\templates\" />
+    <Folder Include="efforia\paypal\" />
+    <Folder Include="efforia\paypal\fretefacil\" />
+    <Folder Include="efforia\paypal\pro\" />
+    <Folder Include="efforia\paypal\pro\templates\" />
+    <Folder Include="efforia\paypal\pro\templates\pro\" />
+    <Folder Include="efforia\paypal\standard\" />
+    <Folder Include="efforia\paypal\standard\ipn\" />
+    <Folder Include="efforia\paypal\standard\ipn\migrations\" />
+    <Folder Include="efforia\paypal\standard\ipn\templates\ipn\" />
+    <Folder Include="efforia\paypal\standard\ipn\tests\" />
+    <Folder Include="efforia\paypal\standard\ipn\templates\" />
+    <Folder Include="efforia\paypal\standard\pdt\" />
+    <Folder Include="efforia\paypal\standard\pdt\migrations\" />
+    <Folder Include="efforia\paypal\standard\pdt\templates\pdt\" />
+    <Folder Include="efforia\paypal\standard\pdt\tests\" />
+    <Folder Include="efforia\paypal\standard\pdt\templates\" />
+    <Folder Include="efforia\paypal\standard\pdt\tests\templates\" />
+    <Folder Include="efforia\paypal\standard\pdt\tests\templates\pdt\" />
+    <Folder Include="efforia\public\" />
+    <Folder Include="efforia\public\css" />
+    <Folder Include="efforia\public\img" />
+    <Folder Include="efforia\public\js\" />
+    <Folder Include="efforia\public\svg" />
+    <Folder Include="efforia\templates\" />
+    <Folder Include="efforia\templates\jade\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
