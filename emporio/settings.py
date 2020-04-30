@@ -1,17 +1,17 @@
-""" Invent General Settings for Django """
+""" Emporio General Settings for Django """
 from __future__ import absolute_import, unicode_literals
 import os
 
-SHOP_CHECKOUT_FORM_CLASS = 'invent.forms.ExternalPaymentOrderForm'
+SHOP_CHECKOUT_FORM_CLASS = 'emporio.forms.ExternalPaymentOrderForm'
 SHOP_CHECKOUT_STEPS_SPLIT = True
 SHOP_CHECKOUT_STEPS_CONFIRMATION = False
 #SHOP_CURRENCY_LOCALE = 'ptb' if 'posix' not in os.name else 'pt_BR.UTF-8'
 SHOP_CURRENCY_LOCALE = 'en_US.UTF-8'
-#SHOP_HANDLER_BILLING_SHIPPING = 'invent.hooks.sedex_shipping_handler'
+#SHOP_HANDLER_BILLING_SHIPPING = 'emporio.hooks.sedex_shipping_handler'
 SHOP_HANDLER_BILLING_SHIPPING = None
 SHOP_HANDLER_TAX = None
 SHOP_HANDLER_ORDER = None
-#SHOP_HANDLER_PAYMENT = 'invent.hooks.multiple_payment_handler'
+#SHOP_HANDLER_PAYMENT = 'emporio.hooks.multiple_payment_handler'
 SHOP_HANDLER_PAYMENT = None
 
 
@@ -97,18 +97,18 @@ LOGGING = {
 BASE_DIR = PROJECT_ROOT = os.path.abspath('')
 CACHE_MIDDLEWARE_KEY_PREFIX = PROJECT_ROOT.split(os.sep)[-1]
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'invent/static')
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'emporio/static')
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'invent/public'),
+    os.path.join(BASE_DIR, 'emporio/public'),
 )
 MEDIA_URL = STATIC_URL + 'media/'
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip('/').split('/'))
-ROOT_URLCONF = 'invent.urls'
+ROOT_URLCONF = 'emporio.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(PROJECT_ROOT, 'invent/templates')],
+        'DIRS': [os.path.join(PROJECT_ROOT, 'emporio/templates')],
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -141,7 +141,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # 'shipping',
     'django_distill',
-    'invent',
+    'emporio',
 )
 
 EXTENSIONS = {

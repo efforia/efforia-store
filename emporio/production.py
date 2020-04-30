@@ -1,4 +1,4 @@
-from store.settings import *
+from .settings import *
 
 DEBUG = False
 

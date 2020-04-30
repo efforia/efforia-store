@@ -9,7 +9,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.conf.urls.static import static
 from django_distill import distill_url as url
 
-import invent.views
+# import .views
 
 admin.autodiscover()
 
