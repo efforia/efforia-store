@@ -1,21 +1,37 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+#
+# This file is part of django-emporio project.
+#
+# Copyright (C) 2011-2020 William Oliveira de Lagos <william.lagos@icloud.com>
+#
+# Emporio is free software: you can redistribute it and/or modify
+# it under the terms of the Lesser GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Emporio is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with Emporio. If not, see <http://www.gnu.org/licenses/>.
+#
+
 import json,time
+
+from datetime import datetime
 from django.contrib.auth.models import User
 from django.conf import settings
 from django.http import HttpResponse as response
 from django.http import HttpResponseRedirect as redirect
 from django.shortcuts import render
+
 from paypal.standard.forms import PayPalPaymentsForm
 from paypal.standard.ipn.signals import payment_was_successful
-from shipping import fretefacil
-from datetime import datetime
 
-from shipping.correios import CorreiosShippingService as Correios
-from shipping.models import Deliverable
-from feedly.models import Profile,Basket
-from plethora.app import Images,Plethora
-from plethora.models import Product
+from .models import Profile, Basket, Product
+from .app import Images,Plethora
 
 class Cancel(Plethora):
     def __init__(self): pass
