@@ -1,10 +1,8 @@
 # -*- coding: UTF-8 -*-
 
-import paypalrestsdk
 from urllib.request import urlopen
 from urllib.parse import urlparse,parse_qs
 from xml.etree import ElementTree as ETree
-from .hooks import paypal_api,pagseguro_api
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import Http404,HttpResponse
@@ -12,6 +10,10 @@ from django.http import HttpResponse as response
 from django.shortcuts import get_object_or_404,redirect,render
 # from cartridge.shop.models import Product, ProductVariation, Order, OrderItem
 from paypalrestsdk import Payment
+from .hooks import paypal_api,pagseguro_api
+from .payments import PagSeguro,PayPal,Baskets,Cartridge
+from .models import Sellable
+from .store import Store, Cancel
 
 def payment_cancel(request):
     # Not implemented already
@@ -19,7 +21,7 @@ def payment_cancel(request):
 
 def paypal_redirect(request,order):
     paypal_api()
-    payment = paypalrestsdk.Payment.find(order.transaction_id)
+    payment = Payment.find(order.transaction_id)
     for link in payment.links:
         if link.method == "REDIRECT":
             redirect_url = link.href
@@ -93,21 +95,6 @@ def payment_execute(request, template="shop/payment_confirmation.html"):
 	response = render(request, template, context)
 	return response
 
-# django-feedly views merger
-from django.views.decorators.cache import never_cache
-from .payments import PagSeguro,PayPal,Baskets,Cartridge
-from .models import Sellable
-
-@never_cache
-def payment_redirect(request, order_id):
-    p = Cartridge()
-    return p.payment_redirect(request,order_id)
-
-@never_cache
-def payment_execute(request, template="shop/payment_confirmation.html"):
-    p = Cartridge()
-    return p.payment_execute(request,template)
-
 def basket(request):
     b = Baskets()
     if request.method == 'GET':
@@ -140,11 +127,6 @@ def paypalcart(request):
     if request.method == 'GET':
         return p.process_cart(request)
 
-# django-plethora views merger
-
-from .payments import Baskets
-from .store import Store, Cancel
-
 def spread_basket(request):
     b = Baskets(Product())
     if request.method == 'GET':
@@ -156,18 +138,6 @@ def cancel(request):
     c = Cancel()
     if request.method == 'POST':
         return c.cancel(request)
-
-def delivery(request):
-    deliver = Deliveries()
-    if request.method == 'GET':
-        return deliver.view_package(request)
-    elif request.method == 'POST':
-        return deliver.create_package(request)
-
-def mail(request):
-    m = Mail()
-    if request.method == 'GET':
-        return m.postal_code(request)
 
 def paypal_ipn(request):
     """Accepts or rejects a Paypal payment notification."""
