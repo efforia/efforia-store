@@ -92,3 +92,99 @@ def payment_execute(request, template="shop/payment_confirmation.html"):
 	context = { "order" : order }
 	response = render(request, template, context)
 	return response
+
+# django-feedly views merger
+from django.views.decorators.cache import never_cache
+from .payments import PagSeguro,PayPal,Baskets,Cartridge
+from .models import Sellable
+
+@never_cache
+def payment_redirect(request, order_id):
+    p = Cartridge()
+    return p.payment_redirect(request,order_id)
+
+@never_cache
+def payment_execute(request, template="shop/payment_confirmation.html"):
+    p = Cartridge()
+    return p.payment_execute(request,template)
+
+def basket(request):
+    b = Baskets()
+    if request.method == 'GET':
+        return b.view_items(request)
+    elif request.method == 'POST':
+        return b.add_item(request)
+
+def basketclean(request):
+    b = Baskets()
+    if request.method == 'GET':
+        return b.clean_basket(request)
+
+def pagseguro(request):
+    p = PagSeguro()
+    if request.method == 'GET':
+        return p.process(request)
+
+def pagsegurocart(request):
+    p = PagSeguro()
+    if request.method == 'GET':
+        return p.process_cart(request)
+
+def paypal(request):
+    p = PayPal()
+    if request.method == 'GET':
+        return p.process(request)
+
+def paypalcart(request):
+    p = PayPal()
+    if request.method == 'GET':
+        return p.process_cart(request)
+
+# django-plethora views merger
+
+from .payments import Baskets
+from .store import Store, Cancel
+
+def spread_basket(request):
+    b = Baskets(Product())
+    if request.method == 'GET':
+        return b.view_items(request)
+    elif request.method == 'POST':
+        return b.add_item(request)
+
+def cancel(request):
+    c = Cancel()
+    if request.method == 'POST':
+        return c.cancel(request)
+
+def delivery(request):
+    deliver = Deliveries()
+    if request.method == 'GET':
+        return deliver.view_package(request)
+    elif request.method == 'POST':
+        return deliver.create_package(request)
+
+def mail(request):
+    m = Mail()
+    if request.method == 'GET':
+        return m.postal_code(request)
+
+def paypal_ipn(request):
+    """Accepts or rejects a Paypal payment notification."""
+    input = request.GET # remember to decode this! you could run into errors with charsets!
+    if 'txn_id' in input and 'verified' in input['payer_status'][0]: pass
+    else: raise Exception # Erro 402
+
+def store_main(request):
+    prod = Store()
+    if request.method == 'GET':
+        return prod.view_product(request)
+    elif request.method == 'POST':
+        return prod.create_product(request)
+
+def product_image(request):
+    s = Store()
+    if request.method == 'GET':
+        return s.view_image(request)
+    elif request.method == 'POST':
+        return s.create_image(request)

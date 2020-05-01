@@ -5,6 +5,15 @@ from django.utils.translation import ugettext_lazy as _
 from django.forms import Form,CharField,ChoiceField,RadioSelect,BooleanField,CheckboxInput,Textarea
 from cartridge.shop.forms import OrderForm
 
+class BasketForm(Form):
+    business = CharField(max_length=100)
+    notify_url = CharField(max_length=100)
+    return_url = CharField(max_length=100)
+    cancel_return = CharField(max_length=100)
+    currency_code = CharField(max_length=10)
+    def render(self): return ''
+    def form(self): return ''
+
 class ExternalPaymentOrderForm(OrderForm):
 	GATEWAYS = (
        (1, "PayPal"),
