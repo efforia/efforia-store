@@ -24,6 +24,7 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
+    path('sellables/', PaymentsView.as_view()),
     url("^pay/(?P<order_id>\d+)/$", payment_redirect, name="payment_redirect"),
     url("^execute", payment_execute, name="payment_execute"),
     url(r'^basketclean', basketclean),
@@ -32,5 +33,4 @@ urlpatterns = [
     url(r'^pagseguro', pagseguro),
     url(r'^paypal/cart', paypalcart),
     url(r'^paypal', paypal),
-    path('payments/', PaymentsView.as_view())
 ]
