@@ -21,9 +21,11 @@
 from urllib.request import urlopen
 from urllib.parse import urlparse,parse_qs
 from xml.etree import ElementTree as ETree
+
+from django.views import View
 from django.core.mail import send_mail
 from django.conf import settings
-from django.http import Http404,HttpResponse
+from django.http import Http404, HttpResponse, JsonResponse
 from django.http import HttpResponse as response
 from django.shortcuts import get_object_or_404,redirect,render
 
@@ -34,6 +36,18 @@ from .hooks import paypal_api,pagseguro_api
 from .payments import PagSeguro,PayPal,Baskets,Cartridge
 from .models import Sellable
 from .store import Store, Cancel
+
+class PaymentsView(View):
+    def get(self, request):
+        return JsonResponse({'payment': 'success'})
+    def redirect(self):
+        pass
+    def execute(self):
+        pass
+    def cancel(self):
+        pass
+    def cart(self):
+        pass
 
 def payment_cancel(request):
     # Not implemented already

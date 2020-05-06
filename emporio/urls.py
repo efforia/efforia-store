@@ -18,7 +18,8 @@
 # along with Emporio. If not, see <http://www.gnu.org/licenses/>.
 #
 
-from django.conf.urls import url,include
+from django.conf.urls import url, include
+from django.urls import path
 
 from .views import *
 
@@ -31,4 +32,5 @@ urlpatterns = [
     url(r'^pagseguro', pagseguro),
     url(r'^paypal/cart', paypalcart),
     url(r'^paypal', paypal),
+    path('payments/', PaymentsView.as_view())
 ]

@@ -29,9 +29,9 @@ from django import forms
 from django.http import Http404,HttpResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.utils.translation import ugettext as _
-from .models import Sellable,Basket,user
+from .models import Sellable,Basket
 from .forms import BasketForm
-from .feed import Mosaic
+# from .feed import Mosaic
 from .hooks import paypal_api
 
 logger = logging.getLogger("feedly.views")
@@ -47,7 +47,7 @@ try:
 except ImportError as e:
     logging.info("Extension modules deactivated: they could not be found.")
 
-class Baskets(Mosaic):
+class Baskets():#(Mosaic):
     def view_items(self,request):
         u = self.current_user(request); products = []
         basket = list(Basket.objects.filter(user=u))

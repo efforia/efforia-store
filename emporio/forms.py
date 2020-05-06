@@ -21,7 +21,7 @@
 from django.utils.translation import ugettext_lazy as _
 from django.forms import Form,CharField,ChoiceField,RadioSelect,BooleanField,CheckboxInput,Textarea
 
-from cartridge.shop.forms import OrderForm
+# from cartridge.shop.forms import OrderForm
 
 class BasketForm(Form):
     business = CharField(max_length=100)
@@ -32,7 +32,7 @@ class BasketForm(Form):
     def render(self): return ''
     def form(self): return ''
 
-class ExternalPaymentOrderForm(OrderForm):
+class ExternalPaymentOrderForm(Form):#(OrderForm):
 	GATEWAYS = (
        (1, "PayPal"),
        (2, "PagSeguro"),
@@ -56,5 +56,5 @@ excluded = ('card_name','card_type','card_number','card_expiry_month','card_ccv'
 			'billing_detail_country','shipping_detail_street','shipping_detail_city',
 			'shipping_detail_state','shipping_detail_country') # ,'same_billing_shipping')
 
-for field in excluded:
-	del ExternalPaymentOrderForm.base_fields[field]
+# for field in excluded:
+# 	del ExternalPaymentOrderForm.base_fields[field]

@@ -27,13 +27,13 @@ from django.http import HttpResponse as response
 from django.http import HttpResponseRedirect as redirect
 from django.shortcuts import render
 
-from paypal.standard.forms import PayPalPaymentsForm
-from paypal.standard.ipn.signals import payment_was_successful
+# from paypal.standard.forms import PayPalPaymentsForm
+# from paypal.standard.ipn.signals import payment_was_successful
 
-from .models import Profile, Basket, Product
-from .app import Images,Plethora
+from .models import Basket, Product #, Profile
+# from .app import Images,Plethora
 
-class Cancel(Plethora):
+class Cancel():#(Plethora):
     def __init__(self): pass
     def cancel(self,request):
         u = self.current_user(request)
@@ -43,7 +43,7 @@ class Cancel(Plethora):
         #self.current_user().profile.credit -= value
         #self.current_user().profile.save()
 
-class Payments(Plethora):
+class Payments():#(Plethora):
     def __init__(self): pass
     def view_recharge(self,request):
         paypal_dict = {
@@ -83,7 +83,7 @@ class SpreadBasket(Basket):
         # value += p.product.credit*p.quantity
         pass
 
-class Store(Plethora):
+class Store(): #(Plethora):
     def __init__(self): pass
     def view_product(self,request):
         u = self.current_user(request)

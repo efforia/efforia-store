@@ -27,11 +27,11 @@ from django.template import Template, Context
 from django.http import HttpResponseRedirect as redirect
 
 try:
-	from mezzanine.conf import settings
-	from cartridge.shop.utils import set_shipping
-	from cartridge.shop.forms import OrderForm
-	from cartridge.shop.models import Cart
-	from cartridge.shop.checkout import CheckoutError
+	# from mezzanine.conf import settings
+	# from cartridge.shop.utils import set_shipping
+	# from cartridge.shop.forms import OrderForm
+	# from cartridge.shop.models import Cart
+	# from cartridge.shop.checkout import CheckoutError
 	import paypalrestsdk
 	import pagseguro
 except ImportError as e:
