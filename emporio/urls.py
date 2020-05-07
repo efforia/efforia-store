@@ -23,12 +23,21 @@ from django.urls import path
 
 from .views import *
 
-urlpatterns = [
-    path('sellables/', PaymentsView.as_view()),
-    url("^pay/(?P<order_id>\d+)/$", payment_redirect, name="payment_redirect"),
-    url("^execute", payment_execute, name="payment_execute"),
+baskets_patterns = ([
+    path('', BasketsView.as_view()),
     url(r'^basketclean', basketclean),
     url(r'^basket', basket),
+], 'baskets')
+
+products_patterns = ([
+    path('', ProductsView.as_view())
+], 'products')
+
+urlpatterns = [
+    path('baskets', include(baskets_patterns)),
+    path('products', include(products_patterns)),
+    url("^pay/(?P<order_id>\d+)/$", payment_redirect, name="payment_redirect"),
+    url("^execute", payment_execute, name="payment_execute"),
     url(r'^pagseguro/cart', pagsegurocart),
     url(r'^pagseguro', pagseguro),
     url(r'^paypal/cart', paypalcart),

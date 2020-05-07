@@ -37,9 +37,9 @@ from .payments import PagSeguro,PayPal,Baskets,Cartridge
 from .models import Sellable
 from .store import Store, Cancel
 
-class PaymentsView(View):
+class ProductsView(View):
     def get(self, request):
-        return JsonResponse({'payment': 'success'})
+        return JsonResponse({'products': 'success'})
     def redirect(self):
         pass
     def execute(self):
@@ -48,6 +48,10 @@ class PaymentsView(View):
         pass
     def cart(self):
         pass
+
+class BasketsView(View):
+    def get(self, request):
+        return JsonResponse({'baskets': 'success'})
 
 def payment_cancel(request):
     # Not implemented already
