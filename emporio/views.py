@@ -34,15 +34,15 @@ from paypalrestsdk import Payment
 
 from .hooks import paypal_api,pagseguro_api
 from .payments import PagSeguro,PayPal,Baskets,Cartridge
-from .models import Sellable, Basket
+from .models import Product, Basket, Order
 from .store import Store, Cancel
 from .mixins import HybridDetailView, HybridListView
 
 class ProductsDetailView(HybridDetailView):
-    model = Sellable
+    model = Product
 
 class ProductsListView(HybridListView):
-    model = Sellable
+    model = Product
 
 
 class BasketsDetailView(HybridDetailView):
@@ -52,11 +52,11 @@ class BasketsListView(HybridListView):
     model = Basket
 
 
-# class OrdersDetailView(HybridDetailView):
-#     model = Order
+class OrdersDetailView(HybridDetailView):
+    model = Order
 
-# class OrdersListView(HybridListView):
-#     model = Order
+class OrdersListView(HybridListView):
+    model = Order
 
 def payment_cancel(request):
     # Not implemented already
