@@ -79,3 +79,6 @@ class Product(Sellable):
     def token(self): return self.name[:3]
     def name_trimmed(self): return self.name.split(';')[0][2:]
     def month(self): return locale[self.date.month-1]
+
+class Order(Model):
+    user = ForeignKey(User,related_name='+', on_delete=CASCADE)
