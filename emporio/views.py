@@ -22,7 +22,7 @@ from urllib.request import urlopen
 from urllib.parse import urlparse,parse_qs
 from xml.etree import ElementTree as ETree
 
-from django.views import View
+from django.views.generic import View, ListView, DetailView
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import Http404, HttpResponse, JsonResponse
@@ -34,24 +34,29 @@ from paypalrestsdk import Payment
 
 from .hooks import paypal_api,pagseguro_api
 from .payments import PagSeguro,PayPal,Baskets,Cartridge
-from .models import Sellable
+from .models import Sellable, Basket
 from .store import Store, Cancel
+from .mixins import HybridDetailView, HybridListView
 
-class ProductsView(View):
-    def get(self, request):
-        return JsonResponse({'products': 'success'})
-    def redirect(self):
-        pass
-    def execute(self):
-        pass
-    def cancel(self):
-        pass
-    def cart(self):
-        pass
+class ProductsDetailView(HybridDetailView):
+    model = Sellable
 
-class BasketsView(View):
-    def get(self, request):
-        return JsonResponse({'baskets': 'success'})
+class ProductsListView(HybridListView):
+    model = Sellable
+
+
+class BasketsDetailView(HybridDetailView):
+    model = Basket
+
+class BasketsListView(HybridListView):
+    model = Basket
+
+
+# class OrdersDetailView(HybridDetailView):
+#     model = Order
+
+# class OrdersListView(HybridListView):
+#     model = Order
 
 def payment_cancel(request):
     # Not implemented already

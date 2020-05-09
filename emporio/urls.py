@@ -19,25 +19,33 @@
 #
 
 from django.conf.urls import url, include
-from django.urls import path
+from django.urls import path, re_path
 
 from .views import *
 
 baskets_patterns = ([
-    path('', BasketsView.as_view()),
-    url(r'^basketclean', basketclean),
-    url(r'^basket', basket),
+    re_path('(?P<pk>\d+)', BasketsDetailView.as_view()),
+    re_path('', BasketsListView.as_view()),
+    # url(r'^basketclean', basketclean),
+    # url(r'^basket', basket),
 ], 'baskets')
 
 products_patterns = ([
-    path('', ProductsView.as_view())
+    re_path('(?P<pk>\d+)', ProductsDetailView.as_view()),
+    re_path('', ProductsListView.as_view()),
 ], 'products')
 
+# orders_patterns = ([
+#     re_path("(?P<pk>\d+)/", OrdersDetailView.as_view(), name="payment_execute"),
+#     re_path('', OrdersListView.as_view()),
+# ])
+
 urlpatterns = [
+    # path('orders', include(orders_patterns)),
     path('baskets', include(baskets_patterns)),
     path('products', include(products_patterns)),
     url("^pay/(?P<order_id>\d+)/$", payment_redirect, name="payment_redirect"),
-    url("^execute", payment_execute, name="payment_execute"),
+    
     url(r'^pagseguro/cart', pagsegurocart),
     url(r'^pagseguro', pagseguro),
     url(r'^paypal/cart', paypalcart),
