@@ -22,7 +22,7 @@ class JsonRequestResponseMixin(object):
     If request is properly formatted, the json is saved to self.request_json as a Python object,
     request_json will be None for imparsible requests. Set the attribute require_json to True to 
     return a 400 'Bad Request' error for requests that don't contain JSON. Note: To allow public 
-    access to the view dispatch function, it's needed to use the csrf_exempt decorator or CsrfExemptMixin.
+    access to the view dispatch function, it's needed to use the csrf_exempt decorator.
     '''
 
     content_type = None

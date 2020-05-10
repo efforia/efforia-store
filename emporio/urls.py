@@ -23,6 +23,11 @@ from django.urls import path, re_path
 
 from .views import *
 
+orders_patterns = ([
+    re_path("(?P<pk>\d+)/", OrdersDetailView.as_view(), name="payment_execute"),
+    re_path('', OrdersListView.as_view()),
+], 'orders')
+
 baskets_patterns = ([
     re_path('(?P<pk>\d+)', BasketsDetailView.as_view()),
     re_path('', BasketsListView.as_view()),
@@ -34,11 +39,6 @@ products_patterns = ([
     re_path('(?P<pk>\d+)', ProductsDetailView.as_view()),
     re_path('', ProductsListView.as_view()),
 ], 'products')
-
-orders_patterns = ([
-    re_path("(?P<pk>\d+)/", OrdersDetailView.as_view(), name="payment_execute"),
-    re_path('', OrdersListView.as_view()),
-])
 
 urlpatterns = [
     path('orders', include(orders_patterns)),
