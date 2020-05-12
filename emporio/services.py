@@ -27,11 +27,52 @@ from django.http import HttpResponse as response
 from django.http import HttpResponseRedirect as redirect
 from django.shortcuts import render
 
-# from paypal.standard.forms import PayPalPaymentsForm
-# from paypal.standard.ipn.signals import payment_was_successful
+from .models import Basket, Product
+# from .providers import *
 
-from .models import Basket, Product #, Profile
-# from .app import Images,Plethora
+class Baskets():#(Mosaic):
+    def view_items(self,request):
+        u = self.current_user(request); products = []
+        basket = list(Basket.objects.filter(user=u))
+        for b in basket: products.extend(Sellable.objects.filter(sellid=b.product))
+        return self.view_mosaic(request,products)
+    def add_item(self,request):
+        u = self.current_user(request)
+        prodid = int(request.REQUEST['id'])
+        if 'value' in request.REQUEST:
+            value = request.REQUEST['value']
+            token = request.REQUEST['token']
+            visual = request.REQUEST['visual']
+            s = Sellable(user=u,name=token,value=value,sellid=prodid,visual=visual); s.save()
+            if 'qty' in request.REQUEST:
+                for i in range(int(request.REQUEST['qty'])-1):
+                    s = Sellable(user=u,name=token,value=value,sellid=prodid,visual=visual); s.save()
+        exists = Basket.objects.all().filter(user=u,product=prodid)
+        if not len(exists):
+            basket = Basket(user=u,product=prodid)
+            basket.save()
+        return self.view_items(request)
+    def process_cart(self,request):
+        u = self.current_user(request); cart = []
+        basket = list(Basket.objects.filter(user=u))
+        for b in basket:
+            sellables = Sellable.objects.filter(sellid=b.product)
+            for s in sellables:
+                prod = {}
+                prod['value'] = s.value
+                prod['product'] = s.name
+                prod['qty'] = '1'
+                cart.append(prod)
+        return self.process(request,cart)
+    def clean_basket(self,request):
+        u = self.current_user(request); cart = []
+        basket = list(Basket.objects.filter(user=u))
+        for b in basket:
+            Sellable.objects.filter(sellid=b.product).delete()
+            b.delete()
+        return response("Basket cleaned successfully")
+    def process(self,request,cart=None):
+        pass
 
 class Cancel():#(Plethora):
     def __init__(self): pass

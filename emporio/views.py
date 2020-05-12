@@ -29,14 +29,9 @@ from django.http import Http404, HttpResponse, JsonResponse
 from django.http import HttpResponse as response
 from django.shortcuts import get_object_or_404,redirect,render
 
-# from cartridge.shop.models import Product, ProductVariation, Order, OrderItem
-from paypalrestsdk import Payment
-
-from .hooks import paypal_api,pagseguro_api
-from .payments import PagSeguro,PayPal,Baskets,Cartridge
 from .models import Product, Basket, Order
-from .store import Store, Cancel
 from .mixins import HybridDetailView, HybridListView
+from .services import *
 
 class ProductsDetailView(HybridDetailView):
     
