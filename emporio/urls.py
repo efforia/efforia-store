@@ -26,6 +26,9 @@ from .views import *
 orders_patterns = ([
     re_path("(?P<pk>\d+)/", OrdersDetailView.as_view(), name="payment_execute"),
     re_path('', OrdersListView.as_view()),
+    # url("^pay/(?P<order_id>\d+)/$", payment_redirect, name="payment_redirect"),
+    # url(r'^pagseguro', pagseguro),
+    # url(r'^paypal', paypal),
 ], 'orders')
 
 baskets_patterns = ([
@@ -33,6 +36,8 @@ baskets_patterns = ([
     re_path('', BasketsListView.as_view()),
     # url(r'^basketclean', basketclean),
     # url(r'^basket', basket),
+    # url(r'^pagseguro/cart', pagsegurocart),
+    # url(r'^paypal/cart', paypalcart),
 ], 'baskets')
 
 products_patterns = ([
@@ -44,10 +49,4 @@ urlpatterns = [
     path('orders', include(orders_patterns)),
     path('baskets', include(baskets_patterns)),
     path('products', include(products_patterns)),
-    url("^pay/(?P<order_id>\d+)/$", payment_redirect, name="payment_redirect"),
-    
-    url(r'^pagseguro/cart', pagsegurocart),
-    url(r'^pagseguro', pagseguro),
-    url(r'^paypal/cart', paypalcart),
-    url(r'^paypal', paypal),
 ]
