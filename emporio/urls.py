@@ -24,24 +24,19 @@ from django.urls import path, re_path
 from .views import *
 
 orders_patterns = ([
-    re_path("(?P<pk>\d+)/", OrdersDetailView.as_view(), name="payment_execute"),
+    re_path('(?P<pk>\d+)/process/', PaymentsView.as_view(), name="payment_execute"),
+    re_path('(?P<pk>\d+)/cancel/', CancelView.as_view(), name="payment_cancel"),
+    re_path('(?P<pk>\d+)/', OrdersDetailView.as_view()),
     re_path('', OrdersListView.as_view()),
-    # url("^pay/(?P<order_id>\d+)/$", payment_redirect, name="payment_redirect"),
-    # url(r'^pagseguro', pagseguro),
-    # url(r'^paypal', paypal),
 ], 'orders')
 
 baskets_patterns = ([
-    re_path('(?P<pk>\d+)', BasketsDetailView.as_view()),
+    re_path('(?P<pk>\d+)/', BasketsDetailView.as_view()),
     re_path('', BasketsListView.as_view()),
-    # url(r'^basketclean', basketclean),
-    # url(r'^basket', basket),
-    # url(r'^pagseguro/cart', pagsegurocart),
-    # url(r'^paypal/cart', paypalcart),
 ], 'baskets')
 
 products_patterns = ([
-    re_path('(?P<pk>\d+)', ProductsDetailView.as_view()),
+    re_path('(?P<pk>\d+)/', ProductsDetailView.as_view()),
     re_path('', ProductsListView.as_view()),
 ], 'products')
 

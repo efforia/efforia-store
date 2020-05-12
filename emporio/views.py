@@ -39,92 +39,82 @@ from .store import Store, Cancel
 from .mixins import HybridDetailView, HybridListView
 
 class ProductsDetailView(HybridDetailView):
-
+    
     model = Product
 
-    def product_image(self, request):
-        s = Store()
-        if request.method == 'GET':
-            return s.view_image(request)
-        elif request.method == 'POST':
-            return s.create_image(request)
+    def get(self, request, *args, **kwargs):
+        ''' Specific logic for GET on loading product own image '''
+        store_manager = Store()
+        image = store_manager.view_image(request)
+        product = store_manager.view_product(request)
+        return super(ProductsDetailView, self).get(request, *args, **kwargs)        
 
 class ProductsListView(HybridListView):
 
     model = Product
 
-    def store_main(self, request):
-        prod = Store()
-        if request.method == 'GET':
-            return prod.view_product(request)
-        elif request.method == 'POST':
-            return prod.create_product(request)
-
-    def cancel(self, request):
-        c = Cancel()
-        if request.method == 'POST':
-            return c.cancel(request)
+    def post(self, request, *args, **kwargs):
+        ''' Specific logic for POST on creating a product with its own image '''
+        store_manager = Store()
+        store_manager.create_image(request)
+        store_manager.create_product(request)
+        return super(ProductsListView, self).post(request, *args, **kwargs)
 
 
 class BasketsDetailView(HybridDetailView):
 
     model = Basket
 
-    def pagsegurocart(self, request):
-        p = PagSeguro()
-        if request.method == 'GET':
-            return p.process_cart(request)
+    def post(self, request, *args, **kwargs):
+        ''' Adds item to basket '''
+        basket_manager = Baskets(Product())
+        basket_manager.add_item(request)
+        return super(BasketsDetailView, self).post(request, *args, **kwargs)
 
-    def paypalcart(self, request):
-        p = PayPal()
-        if request.method == 'GET':
-            return p.process_cart(request)
+    def delete(self, request, *args, **kwargs):
+        ''' Clear one specific basket from user / key '''
+        basket_manager = Baskets()
+        basket_manager.clean_basket(request)
+        return super(BasketsDetailView, self).delete(request, *args, **kwargs)
 
 class BasketsListView(HybridListView):
 
     model = Basket
 
-    def basket(self, request):
-        b = Baskets()
-        if request.method == 'GET':
-            return b.view_items(request)
-        elif request.method == 'POST':
-            return b.add_item(request)
+    def get(self, request, *args, **kwargs):
+        ''' Specific logic for GET on retrieving items basket '''
+        basket_manager = Baskets()
+        items = basket_manager.view_items(request)
+        return super(BasketsListView, self).get(request, *args, **kwargs)
 
-    def basketclean(self, request):
-        b = Baskets()
-        if request.method == 'GET':
-            return b.clean_basket(request)
-
-    def spread_basket(self, request):
-        b = Baskets(Product())
-        if request.method == 'GET':
-            return b.view_items(request)
-        elif request.method == 'POST':
-            return b.add_item(request)
+    def delete(self, request, *args, **kwargs):
+        ''' Clears all baskets from specific user / key '''
+        cancel_manager = Cancel()
+        cancel_manager.cancel(request)
+        return super(BasketsListView, self).delete(request, *args, **kwargs)
 
 
 class OrdersDetailView(HybridDetailView):
 
     model = Order
 
-    def pagseguro(self, request):
-        p = PagSeguro()
-        if request.method == 'GET':
-            return p.process(request)
+class OrdersListView(HybridListView):
 
-    def paypal(self, request):
-        p = PayPal()
-        if request.method == 'GET':
-            return p.process(request)
+    model = Order
 
-    def paypal_ipn(self, request):
-        """Accepts or rejects a Paypal payment notification."""
-        input = request.GET # remember to decode this! you could run into errors with charsets!
-        if 'txn_id' in input and 'verified' in input['payer_status'][0]: pass
-        else: raise Exception # Erro 402
-    
-    def paypal_redirect(self, request, order):
+class PaymentsView(View):
+
+    def get(self, request, order, *args, **kwargs):
+        ''' Accepts or rejects a payment '''
+        # template="shop/payment_confirmation.html"
+        order = None
+        lookup = {}
+        # PayPal IPN code
+        # input = request.GET # remember to decode this! you could run into errors with charsets!
+        # if 'txn_id' in input and 'verified' in input['payer_status'][0]: pass
+        # else: raise Exception # Erro 402
+        # 
+        # PayPal redirect code
         paypal_api()
         payment = Payment.find(order.transaction_id)
         for link in payment.links:
@@ -135,47 +125,6 @@ class OrdersDetailView(HybridDetailView):
                 redirect_token = params['token'][0]
                 order.paypal_redirect_token = redirect_token
                 order.save()
-        return redirect(redirect_url)
-
-class OrdersListView(HybridListView):
-
-    model = Order
-
-    def payment_redirect(self, request, order_id):
-        lookup = {"id": order_id}
-        if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
-        elif not request.user.is_staff: lookup["user_id"] = request.user.id
-        order = get_object_or_404(Order, **lookup)
-        is_pagseguro = order.pagseguro_redirect
-        is_paypal = order.paypal_redirect_token
-        if 'none' not in is_pagseguro: return redirect(str(is_pagseguro))
-        elif 'none' not in is_paypal: return paypal_redirect(request,order)
-        else: return redirect("/store/execute?orderid=%s" % lookup["id"])
-
-    def payment_slip(self, request):
-        orderid = request.GET['id']
-        order = Order.objects.filter(id=orderid)[0]
-        send_mail('Pedido de boleto', 'O pedido de boleto foi solicitado ao Efforia para o pedido %s. Em instantes voc� estar� recebendo pelo e-mail. Aguarde instru��es.' % order.id, 'oi@efforia.com.br',
-        [order.billing_detail_email,'contato@efforia.com.br'], fail_silently=False)
-        context = { "order": order }
-        resp = render(request,"shop/slip_confirmation.html",context)
-        return resp
-
-    def payment_bank(self, request):
-        orderid = request.GET['order_id']
-        order = Order.objects.filter(id=orderid)[0]
-        context = {
-            "order": order,
-            "agency": settings.BANK_AGENCY,
-            "account": settings.BANK_ACCOUNT,
-            "socname": settings.BANK_SOCIALNAME
-        }
-        resp = render(request,"shop/bank_confirmation.html",context)
-        return resp
-
-    def payment_execute(self, request, template="shop/payment_confirmation.html"):
-        order = None
-        lookup = {}
         if request.GET.has_key('token'):
             paypal_api()
             token = request.GET['token']
@@ -183,23 +132,66 @@ class OrdersListView(HybridListView):
             order = get_object_or_404(Order, paypal_redirect_token=token)
             payment = Payment.find(order.transaction_id)
             payment.execute({ "payer_id": payer_id })
-        elif request.GET.has_key('transaction_id'):
-            api = pagseguro_api()
-            email = api.data['email']
-            token = api.data['token']
-            transaction = request.GET['transaction_id']
-            url = api.config.TRANSACTION_URL % transaction
-            resp = urlopen("%s?email=%s&token=%s" % (url,email,token)).read()
-            lookup["id"] = ETree.fromstring(resp).findall("reference")[0].text
-            print(ETree.fromstring(resp).findall("reference")[0].text)
-            if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
-            if not request.user.is_staff: lookup["user_id"] = request.user.id
-            order = get_object_or_404(Order, **lookup)
-            order.transaction_id = transaction
-        elif request.GET.has_key('orderid'):
-            return redirect("/store/bank?order_id=%s" % request.GET['orderid'])
-        order.status = 2
-        order.save()
-        context = { "order" : order }
-        response = render(request, template, context)
-        return response
+        #
+        # PagSeguro redirect code
+        # if request.GET.has_key('transaction_id'):
+        #     api = pagseguro_api()
+        #     email = api.data['email']
+        #     token = api.data['token']
+        #     transaction = request.GET['transaction_id']
+        #     url = api.config.TRANSACTION_URL % transaction
+        #     resp = urlopen("%s?email=%s&token=%s" % (url,email,token)).read()
+        #     lookup["id"] = ETree.fromstring(resp).findall("reference")[0].text
+        #     print(ETree.fromstring(resp).findall("reference")[0].text)
+        #     if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
+        #     if not request.user.is_staff: lookup["user_id"] = request.user.id
+        #     order = get_object_or_404(Order, **lookup)
+        #     order.transaction_id = transaction
+        #
+        # Cartridge specific code
+        # lookup = {"id": order_id}
+        # if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
+        # elif not request.user.is_staff: lookup["user_id"] = request.user.id
+        # order = get_object_or_404(Order, **lookup)
+        # order.status = 2
+        # order.save()
+        # context = { "order" : order }
+        # response = render(request, template, context)
+        # return response
+        return JsonResponse({'payment_finish': 'success'})
+
+    def post(self, request, *args, **kwargs):
+        ''' Order processing method '''
+        paypal = PayPal()
+        paypal.process(request)
+        paypal.process_cart(request)
+        # PagSeguro Option
+        # pagseguro = PagSeguro()
+        # pagseguro.process(request)
+        # pagseguro.process_cart(request)
+        #
+        # Bank Slip Option
+        # orderid = request.GET['id']
+        # order = Order.objects.filter(id=orderid)[0]
+        # send_mail('Pedido de boleto', 'O pedido de boleto foi solicitado ao Efforia para o pedido %s. Em instantes voc� estar� recebendo pelo e-mail. Aguarde instru��es.' % order.id, 'oi@efforia.com.br',
+        # [order.billing_detail_email,'contato@efforia.com.br'], fail_silently=False)
+        # context = { "order": order }
+        # resp = render(request,"shop/slip_confirmation.html",context)
+        # return resp
+        #
+        # Bank Transfer Option
+        # orderid = request.GET['order_id']
+        # order = Order.objects.filter(id=orderid)[0]
+        # context = {
+        #     "order": order,
+        #     "agency": settings.BANK_AGENCY,
+        #     "account": settings.BANK_ACCOUNT,
+        #     "socname": settings.BANK_SOCIALNAME
+        # }
+        # resp = render(request,"shop/bank_confirmation.html",context)
+        # return resp
+        return JsonResponse({'payment_process': 'success'})
+
+class CancelView(View):
+    def get(self, request, *args, **kwargs):
+        return JsonResponse({'payment_cancel': 'success'})
