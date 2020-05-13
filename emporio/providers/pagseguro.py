@@ -125,3 +125,26 @@ class PagSeguroSandbox(pagseguro.PagSeguro):
 		self.redirect_url = None
 		self.notification_url = None
 		self.abandon_url = None
+
+
+def process():
+	pagseguro = PagSeguro()
+	pagseguro.process(request)
+	pagseguro.process_cart(request)
+
+def redirect():
+	order = None
+	lookup = {}
+	if request.GET.has_key('transaction_id'):
+		api = pagseguro_api()
+		email = api.data['email']
+		token = api.data['token']
+		transaction = request.GET['transaction_id']
+		url = api.config.TRANSACTION_URL % transaction
+		resp = urlopen("%s?email=%s&token=%s" % (url,email,token)).read()
+		lookup["id"] = ETree.fromstring(resp).findall("reference")[0].text
+		print(ETree.fromstring(resp).findall("reference")[0].text)
+		if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
+		if not request.user.is_staff: lookup["user_id"] = request.user.id
+		order = get_object_or_404(Order, **lookup)
+		order.transaction_id = transaction

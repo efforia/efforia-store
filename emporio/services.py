@@ -25,6 +25,7 @@ from django.contrib.auth.models import User
 from django.conf import settings
 from django.http import HttpResponse as response
 from django.http import HttpResponseRedirect as redirect
+from django.http import JsonResponse
 from django.shortcuts import render
 
 from .models import Basket, Product
@@ -84,8 +85,22 @@ class Cancel():#(Plethora):
         #self.current_user().profile.credit -= value
         #self.current_user().profile.save()
 
-class Payments():#(Plethora):
-    def __init__(self): pass
+class PaymentService():
+
+    def __init__(self): 
+        pass
+
+    def process(self):
+        ''' Order processing handler '''
+        return JsonResponse({'payment_process': 'success'})
+
+    def redirect(self):
+        ''' Accepts or rejects a payment '''
+        return JsonResponse({'payment_finish': 'success'})
+
+    def cancel(self):
+        return JsonResponse({'payment_cancel': 'success'})
+
     def view_recharge(self,request):
         paypal_dict = {
             "business": settings.PAYPAL_RECEIVER_EMAIL,
@@ -101,6 +116,7 @@ class Payments():#(Plethora):
         payments = PayPalPaymentsForm(initial=paypal_dict)
         form = CreditForm()
         return render(request,"recharge.pug",{'form':payments,'credit':form},content_type='text/html')
+
     def update_credit(self,request):
         value = int(request.POST['credit'][0])
         current_profile = Profile.objects.all().filter(user=self.current_user(request))[0]

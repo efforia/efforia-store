@@ -132,3 +132,36 @@ def paypal_api():
 	os.environ['PAYPAL_CLIENT_ID'] = client_id
 	os.environ['PAYPAL_CLIENT_SECRET'] = client_secret
 	return api
+
+def process():
+    paypal = PayPal()
+    paypal.process(request)
+    paypal.process_cart(request)
+
+
+def redirect():
+    order = None
+    lookup = {}
+    # PayPal IPN code
+    # input = request.GET # remember to decode this! you could run into errors with charsets!
+    # if 'txn_id' in input and 'verified' in input['payer_status'][0]: pass
+    # else: raise Exception # Erro 402
+    # 
+    # PayPal redirect code
+    paypal_api()
+    payment = Payment.find(order.transaction_id)
+    for link in payment.links:
+        if link.method == "REDIRECT":
+            redirect_url = link.href
+            url = urlparse(link.href)
+            params = parse_qs(url.query)
+            redirect_token = params['token'][0]
+            order.paypal_redirect_token = redirect_token
+            order.save()
+    if request.GET.has_key('token'):
+        paypal_api()
+        token = request.GET['token']
+        payer_id = request.GET['PayerID']
+        order = get_object_or_404(Order, paypal_redirect_token=token)
+        payment = Payment.find(order.transaction_id)
+        payment.execute({ "payer_id": payer_id })
