@@ -22,7 +22,7 @@ from urllib.request import urlopen
 from urllib.parse import urlparse,parse_qs
 from xml.etree import ElementTree as ETree
 
-from django.views.generic import View, ListView, DetailView
+from django.views.generic import View, ListView, DetailView, RedirectView
 from django.core.mail import send_mail
 from django.conf import settings
 from django.http import Http404, HttpResponse, JsonResponse
@@ -109,9 +109,18 @@ class PaymentsView(View):
         ''' Order processing method '''
         return self.service.process()
 
-class CancelView(View):
-
-    service = PaymentService()
-
-    def get(self, request, *args, **kwargs):
+    def delete(self, request, *args, **kwargs):
+        ''' Order payment cancelling method '''
         return self.service.cancel()
+
+class PaymentCancelView(RedirectView):
+
+    def get_redirect_url(self, *args, **kwargs):
+        self.url = 'orders/%s/cancel/' % kwargs['pk'] 
+        return super().get_redirect_url(*args, **kwargs)
+
+class PaymentRedirectView(RedirectView):
+
+    def get_redirect_url(self, *args, **kwargs):
+        self.url = 'orders/%s/redirect/' % kwargs['pk']
+        return super().get_redirect_url(*args, **kwargs)

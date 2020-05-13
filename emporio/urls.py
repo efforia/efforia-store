@@ -24,8 +24,9 @@ from django.urls import path, re_path
 from .views import *
 
 orders_patterns = ([
-    re_path('(?P<pk>\d+)/process/', PaymentsView.as_view(), name="payment_execute"),
-    re_path('(?P<pk>\d+)/cancel/', CancelView.as_view(), name="payment_cancel"),
+    re_path('<int:pk>/redirect/', PaymentRedirectView.as_view(), name="payment_redirect"),
+    re_path('<int:pk>/process/', PaymentsView.as_view(), name="payment_execute"),
+    re_path('<int:pk>/cancel/', PaymentCancelView.as_view(), name="payment_cancel"),
     path('<int:pk>/', OrdersDetailView.as_view()),
     re_path('', OrdersListView.as_view()),
 ], 'orders')
