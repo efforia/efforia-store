@@ -40,21 +40,6 @@ class JsonRequestResponseMixin(object):
         self.json_dumps_kwargs.setdefault('ensure_ascii', False)
         return self.json_dumps_kwargs
 
-    def render_json_response(self, context_dict, status=200):
-        '''
-        Limited serialization for shipping plain data. Do not use for models
-        or other complex or custom objects.
-        '''
-        json_context = list(context_dict['object_list'].values())
-        return JsonResponse(json_context, safe=False, status=status)
-
-    def render_json_object_response(self, objects, **kwargs):
-        '''
-        Serializes objects using Django's builtin JSON serializer. Additional
-        kwargs can be used the same way for django.core.serializers.serialize.
-        '''
-        return JsonResponse(json.loads(objects), safe=False)
-
     def render_bad_request_response(self, error_dict=None):
         if error_dict is None:
             error_dict = self.error_response_dict
@@ -72,6 +57,7 @@ class JsonRequestResponseMixin(object):
         except ValueError:
             return None
 
+    @csrf_exempt
     def dispatch(self, request, *args, **kwargs):
         self.request = request
         self.args = args
@@ -86,19 +72,35 @@ class JsonRequestResponseMixin(object):
         return super(JsonRequestResponseMixin, self).dispatch(
             request, *args, **kwargs)
 
-class HybridMixin(JsonRequestResponseMixin):
-    @csrf_exempt
-    def dispatch(self, request, *args, **kwargs):
-        return super(HybridMixin, self).dispatch(request, *args, **kwargs)
-
-    def render_to_response(self, context):
-        # Look for a 'format=json' GET argument
-        if self.request.GET.get('format') == 'html':
-            return super().render_to_response(context)
+    def get_data(self, context):
+        if isinstance(self, BaseDetailView):
+            return list(self.get_queryset().values())[0]
+        elif isinstance(self, BaseListView):
+            return list(self.get_queryset().values())
         else:
-            return self.render_json_response(context)
+            return context
 
-class HybridDetailView(HybridMixin, SingleObjectTemplateResponseMixin, BaseDetailView):
+    def render_json_response(self, context_dict, status=200):
+        '''
+        Limited serialization for shipping plain data. Do not use for models
+        or other complex or custom objects.
+        '''
+        return JsonResponse(self.get_data(context_dict), safe=False, status=status)
+
+    def render_json_object_response(self, objects, **kwargs):
+        '''
+        Serializes objects using Django's builtin JSON serializer. Additional
+        kwargs can be used the same way for django.core.serializers.serialize.
+        '''
+        return JsonResponse(serializers.serialize('json', objects), safe=False)
+
+    def render_to_response(self, context, **response_kwargs):
+        if self.request.GET.get('format') == 'html':
+            return super().render_to_response(context, **response_kwargs)
+        else:
+            return self.render_json_response(context, **response_kwargs)
+
+class HybridDetailView(JsonRequestResponseMixin, SingleObjectTemplateResponseMixin, BaseDetailView):
     '''
     Hybrid DetailView class, for rendering API options and templates (when available). It contains
     all generic stuff for detail REST API operations, such as PUT, PATCH and DELETE methods
@@ -127,7 +129,7 @@ class HybridDetailView(HybridMixin, SingleObjectTemplateResponseMixin, BaseDetai
             models.delete()
             return HttpResponseNoContent()
 
-class HybridListView(HybridMixin, SingleObjectTemplateResponseMixin, BaseListView):
+class HybridListView(JsonRequestResponseMixin, SingleObjectTemplateResponseMixin, BaseListView):
     '''
     Hybrid ListView class, for rendering API options and templates (when available). It contains
     all generic stuff for list REST API operations, such as POST method
