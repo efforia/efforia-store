@@ -26,7 +26,7 @@ from .views import *
 orders_patterns = ([
     re_path('(?P<pk>\d+)/process/', PaymentsView.as_view(), name="payment_execute"),
     re_path('(?P<pk>\d+)/cancel/', CancelView.as_view(), name="payment_cancel"),
-    re_path('(?P<pk>\d+)/', OrdersDetailView.as_view()),
+    path('<int:pk>/', OrdersDetailView.as_view()),
     re_path('', OrdersListView.as_view()),
 ], 'orders')
 
@@ -41,7 +41,7 @@ products_patterns = ([
 ], 'products')
 
 urlpatterns = [
-    path('orders', include(orders_patterns)),
-    path('baskets', include(baskets_patterns)),
-    path('products', include(products_patterns)),
+    path('orders/', include(orders_patterns)),
+    path('baskets/', include(baskets_patterns)),
+    path('products/', include(products_patterns)),
 ]
