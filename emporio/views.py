@@ -30,10 +30,9 @@ from django.http import HttpResponse as response
 from django.shortcuts import get_object_or_404,redirect,render
 
 from .models import Product, Basket, Order
-from .mixins import HybridDetailView, HybridListView
 from .services import *
 
-class ProductsDetailView(HybridDetailView):
+class ProductsDetailView(DetailView):
     
     model = Product
 
@@ -44,7 +43,7 @@ class ProductsDetailView(HybridDetailView):
         product = store_manager.view_product(request)
         return super(ProductsDetailView, self).get(request, *args, **kwargs)        
 
-class ProductsListView(HybridListView):
+class ProductsListView(ListView):
 
     model = Product
 
@@ -56,7 +55,7 @@ class ProductsListView(HybridListView):
         return super(ProductsListView, self).post(request, *args, **kwargs)
 
 
-class BasketsDetailView(HybridDetailView):
+class BasketsDetailView(DetailView):
 
     model = Basket
 
@@ -72,7 +71,7 @@ class BasketsDetailView(HybridDetailView):
         basket_manager.clean_basket(request)
         return super(BasketsDetailView, self).delete(request, *args, **kwargs)
 
-class BasketsListView(HybridListView):
+class BasketsListView(ListView):
 
     model = Basket
 
@@ -89,11 +88,11 @@ class BasketsListView(HybridListView):
         return super(BasketsListView, self).delete(request, *args, **kwargs)
 
 
-class OrdersDetailView(HybridDetailView):
+class OrdersDetailView(DetailView):
 
     model = Order
 
-class OrdersListView(HybridListView):
+class OrdersListView(ListView):
 
     model = Order
 
