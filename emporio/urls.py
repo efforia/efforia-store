@@ -19,30 +19,24 @@
 #
 
 from django.conf.urls import url, include
-from django.urls import path, re_path
+from django.urls import path
 
 from .views import *
 
-orders_patterns = ([
-    re_path('<int:pk>/redirect/', PaymentRedirectView.as_view(), name="payment_redirect"),
-    re_path('<int:pk>/process/', PaymentsView.as_view(), name="payment_execute"),
-    re_path('<int:pk>/cancel/', PaymentCancelView.as_view(), name="payment_cancel"),
-    path('<int:pk>/', OrdersDetailView.as_view()),
-    re_path('', OrdersListView.as_view()),
-], 'orders')
-
-baskets_patterns = ([
-    re_path('(?P<pk>\d+)/', BasketsDetailView.as_view()),
-    re_path('', BasketsListView.as_view()),
-], 'baskets')
-
-products_patterns = ([
-    re_path('(?P<pk>\d+)/', ProductsDetailView.as_view()),
-    re_path('', ProductsListView.as_view()),
-], 'products')
-
 urlpatterns = [
-    path('orders/', include(orders_patterns)),
-    path('baskets/', include(baskets_patterns)),
-    path('products/', include(products_patterns)),
+    path('orders/', include([
+        path('<int:pk>/redirect/', PaymentRedirectView.as_view(), name="payment_redirect"),
+        path('<int:pk>/process/', PaymentsView.as_view(), name="payment_execute"),
+        path('<int:pk>/cancel/', PaymentCancelView.as_view(), name="payment_cancel"),
+        path('<int:pk>/', OrdersDetailView.as_view()),
+        path('', OrdersListView.as_view()),
+    ])),
+    path('baskets/', include([
+        path('<int:pk>/', BasketsDetailView.as_view()),
+        path('', BasketsListView.as_view()),
+    ])),
+    path('products/', include([
+        path('<int:pk>/', ProductsDetailView.as_view()),
+        path('', ProductsListView.as_view()),
+    ])),
 ]
