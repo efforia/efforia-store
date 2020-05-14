@@ -24,9 +24,10 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
+    path('', PaymentsView.as_view()),
     path('orders/', include([
         path('<int:pk>/redirect/', PaymentRedirectView.as_view(), name="payment_redirect"),
-        path('<int:pk>/process/', PaymentsView.as_view(), name="payment_execute"),
+        path('<int:pk>/process/', PaymentProcessView.as_view(), name="payment_execute"),
         path('<int:pk>/cancel/', PaymentCancelView.as_view(), name="payment_cancel"),
         path('<int:pk>/', OrdersDetailView.as_view()),
         path('', OrdersListView.as_view()),

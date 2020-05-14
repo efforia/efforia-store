@@ -98,28 +98,29 @@ class OrdersListView(ListView):
 
 class PaymentsView(View):
 
+    def get(self, request, *args, **kwargs):
+        return JsonResponse({'payments': 'success'})
+
+class PaymentProcessView(View):
+
     service = PaymentService()
 
     def get(self, request, *args, **kwargs):
         ''' Accepts or rejects a payment '''
         return self.service.redirect()
 
-    def post(self, request, *args, **kwargs):
+class PaymentCancelView(View):
+
+    service = PaymentService()
+
+    def get(self, request, *args, **kwargs):
         ''' Order processing method '''
         return self.service.process()
 
-    def delete(self, request, *args, **kwargs):
+class PaymentRedirectView(View):
+
+    service = PaymentService()
+
+    def get(self, request, *args, **kwargs):
         ''' Order payment cancelling method '''
         return self.service.cancel()
-
-class PaymentCancelView(RedirectView):
-
-    def get_redirect_url(self, *args, **kwargs):
-        self.url = 'orders/%s/cancel/' % kwargs['pk'] 
-        return super().get_redirect_url(*args, **kwargs)
-
-class PaymentRedirectView(RedirectView):
-
-    def get_redirect_url(self, *args, **kwargs):
-        self.url = 'orders/%s/redirect/' % kwargs['pk']
-        return super().get_redirect_url(*args, **kwargs)
