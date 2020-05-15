@@ -20,7 +20,6 @@
 
 from django.db import models
 from django.db.models import *
-from django.template import Context,Template
 from django.contrib.auth.models import User
 
 # Create your models here.
@@ -48,30 +47,6 @@ class Sellable(Model):
     def token(self): return '$$'
     def name_trimmed(self): return self.name
     def type_object(self): return self.name[:2]
-    def render(self):
-        source = """
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 brick">
-                <a class="block sellable" href="#" style="display:block; background-color:white">
-                <div class="box" style="background-color:#333">
-                <div class="content">
-                <h2 class="title" style="color:white">{{nametrim}}</h2>
-                {% if paid %}
-                    <h2 class="lightgreen"> Valor j&aacute; pago </h2>
-                {% endif %}
-                <h1 class="centered"><span class="label label-info big-label"> R$ {{value}}0 </span></h1>
-                <h1 class="centered"><span class="glyphicon glyphicon-shopping-cart giant-glyphicon style="color:white; margin-bottom:10px"></span></h1>
-                <div class="id hidden">{{id}}</div>
-            </div></div></div></a></div>
-        """
-        return Template(source).render(Context({
-            'nametrim':  object.name_trimmed,
-            'paid':      object.paid,
-            'id':        object.id,
-            'value':     object.value,
-            'bio':       object.bio,
-            'day':       object.date.day,
-            'month':     object.month
-        }))
 
 class Product(Sellable):
     category = IntegerField(default=1)
