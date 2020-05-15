@@ -26,76 +26,78 @@ from django.http import HttpResponse as response
 from django.template import Template, Context
 from django.http import HttpResponseRedirect as redirect
 
-def bancobrasil_payment(request,order):
-    order.paypal_redirect_token = 'none'
-    order.pagseguro_redirect = 'none'
-    order.save()
-    return order.id
+class DefaultPaymentProvider:
 
-def multiple_payment_handler(request, order_form, order):
-	data = order_form.cleaned_data
-	cart_items = []
-	cart = Cart.objects.from_request(request)
-	currency = settings.SHOP_CURRENCY
-	for item in cart.items.all():
-		cart_items.append({
-			"name":item.description,
-			"sku":item.sku,
-			"price":'%.2f' % item.unit_price,
-			"currency":currency,
-			"quantity":item.quantity
-		})
-	price = cart.total_price() # + shipping TODO: integrate shipping_payment_handler
-	if '1' in data['card_pay_option']:
-		return paypal_payment(request,cart_items,price,currency,order)
-	elif '2' in data['card_pay_option']:
-		return pagseguro_payment(request,cart_items,price,order)
-	elif '3' in data['card_pay_option']:
-		return bancobrasil_payment(request,order)
+	def bancobrasil_payment(self, request,order):
+		order.paypal_redirect_token = 'none'
+		order.pagseguro_redirect = 'none'
+		order.save()
+		return order.id
 
-def payment_redirect(self, request, order_id):
-	logger.debug("feedly.views.payment_redirect(%s)" % order_id)
-	lookup = {"id": order_id}
-	if not request.user.is_authenticated():
-		lookup["key"] = request.session.session_key
-	elif not request.user.is_staff:
-		lookup["user_id"] = request.user.id
-	order = get_object_or_404(Order, **lookup)
-	is_pagseguro = order.pagseguro_redirect
-	if is_pagseguro is not None: return redirect(str(is_pagseguro))
-	else: return self.paypal_redirect(request,order)
+	def multiple_payment_handler(self, request, order_form, order):
+		data = order_form.cleaned_data
+		cart_items = []
+		cart = Cart.objects.from_request(request)
+		currency = settings.SHOP_CURRENCY
+		for item in cart.items.all():
+			cart_items.append({
+				"name":item.description,
+				"sku":item.sku,
+				"price":'%.2f' % item.unit_price,
+				"currency":currency,
+				"quantity":item.quantity
+			})
+		price = cart.total_price() # + shipping TODO: integrate shipping_payment_handler
+		if '1' in data['card_pay_option']:
+			return paypal_payment(request,cart_items,price,currency,order)
+		elif '2' in data['card_pay_option']:
+			return pagseguro_payment(request,cart_items,price,order)
+		elif '3' in data['card_pay_option']:
+			return bancobrasil_payment(request,order)
 
-def process():
-	# Bank Slip Option
-	orderid = request.GET['id']
-	order = Order.objects.filter(id=orderid)[0]
-	send_mail('Pedido de boleto', 'O pedido de boleto foi solicitado ao Efforia para o pedido %s. Em instantes voc� estar� recebendo pelo e-mail. Aguarde instru��es.' % order.id, 'oi@efforia.com.br',
-	[order.billing_detail_email,'contato@efforia.com.br'], fail_silently=False)
-	context = { "order": order }
-	resp = render(request,"shop/slip_confirmation.html",context)
-	# return resp
+	def payment_redirect(self, request, order_id):
+		logger.debug("feedly.views.payment_redirect(%s)" % order_id)
+		lookup = {"id": order_id}
+		if not request.user.is_authenticated():
+			lookup["key"] = request.session.session_key
+		elif not request.user.is_staff:
+			lookup["user_id"] = request.user.id
+		order = get_object_or_404(Order, **lookup)
+		is_pagseguro = order.pagseguro_redirect
+		if is_pagseguro is not None: return redirect(str(is_pagseguro))
+		else: return self.paypal_redirect(request,order)
 
-	# Bank Transfer Option
-	orderid = request.GET['order_id']
-	order = Order.objects.filter(id=orderid)[0]
-	context = {
-	    "order": order,
-	    "agency": settings.BANK_AGENCY,
-	    "account": settings.BANK_ACCOUNT,
-	    "socname": settings.BANK_SOCIALNAME
-	}
-	resp = render(request,"shop/bank_confirmation.html",context)
-	return resp
+	def process(self):
+		# Bank Slip Option
+		orderid = request.GET['id']
+		order = Order.objects.filter(id=orderid)[0]
+		send_mail('Pedido de boleto', 'O pedido de boleto foi solicitado ao Efforia para o pedido %s. Em instantes voc� estar� recebendo pelo e-mail. Aguarde instru��es.' % order.id, 'oi@efforia.com.br',
+		[order.billing_detail_email,'contato@efforia.com.br'], fail_silently=False)
+		context = { "order": order }
+		resp = render(request,"shop/slip_confirmation.html",context)
+		# return resp
 
-def redirect():
-	# Cartridge specific code
-	order = None
-	lookup = {"id": order_id}
-	if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
-	elif not request.user.is_staff: lookup["user_id"] = request.user.id
-	order = get_object_or_404(Order, **lookup)
-	order.status = 2
-	order.save()
-	context = { "order" : order }
-	response = render(request, template, context)
-	return response
+		# Bank Transfer Option
+		orderid = request.GET['order_id']
+		order = Order.objects.filter(id=orderid)[0]
+		context = {
+			"order": order,
+			"agency": settings.BANK_AGENCY,
+			"account": settings.BANK_ACCOUNT,
+			"socname": settings.BANK_SOCIALNAME
+		}
+		resp = render(request,"shop/bank_confirmation.html",context)
+		return resp
+
+	def redirect(self):
+		# Cartridge specific code
+		order = None
+		lookup = {"id": order_id}
+		if not request.user.is_authenticated(): lookup["key"] = request.session.session_key
+		elif not request.user.is_staff: lookup["user_id"] = request.user.id
+		order = get_object_or_404(Order, **lookup)
+		order.status = 2
+		order.save()
+		context = { "order" : order }
+		response = render(request, template, context)
+		return response

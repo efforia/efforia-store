@@ -21,8 +21,9 @@
 from paypal.standard.forms import PayPalPaymentsForm
 from paypal.standard.ipn.signals import payment_was_successful
 
-class PayPal():
-    def process(self,request,cart=None):
+class PayPalPaymentProvider():
+    
+    def process(self, request,cart=None):
         for k,v in request.REQUEST.items():
             if 'product' in k: product = v
             elif 'value' in k: value = float(v)
@@ -56,7 +57,7 @@ class PayPal():
         c = Context({'form':form_paypal.render()})
         return response(t.render(c))
 
-    def paypal_redirect(self,request,order):
+    def paypal_redirect(self, request,order):
         paypal_api()
         payment = paypalrestsdk.Payment.find(order.transaction_id)
         for link in payment.links:
@@ -85,7 +86,7 @@ class PayPal():
         response = render(request, template, context)
         return response
 
-    def paypal_payment(request,items,price,currency,order):
+    def paypal_payment(self, request,items,price,currency,order):
         paypal_api()
         server_host = request.get_host()
         payment = paypalrestsdk.Payment({
@@ -112,56 +113,56 @@ class PayPal():
         else: raise CheckoutError(payment.error)
 
 
-def paypal_api():
-	try:
-		if settings.PAYPAL_SANDBOX_MODE:
-			mode = 'sandbox'
-			client_id = settings.PAYPAL_SANDBOX_CLIENT_ID
-			client_secret = settings.PAYPAL_SANDBOX_CLIENT_SECRET
-		else:
-			mode = 'live'
-			client_id = settings.PAYPAL_CLIENT_ID
-			client_secret = settings.PAYPAL_CLIENT_SECRET
-	except AttributeError:
-		raise ImproperlyConfigured(_("Credenciais de acesso ao paypal estao faltando, "
-								 "isso inclui PAYPAL_SANDBOX_MODE, PAYPAL_CLIENT_ID e PAYPAL_CLIENT_SECRET "
-								 "basta inclui-las no settings.py para serem utilizadas "
-								 "no processador de pagamentos do paypal."))
-	api = paypalrestsdk.set_config(mode = mode,	client_id = client_id, client_secret = client_secret)
-	os.environ['PAYPAL_MODE'] = mode
-	os.environ['PAYPAL_CLIENT_ID'] = client_id
-	os.environ['PAYPAL_CLIENT_SECRET'] = client_secret
-	return api
+    def paypal_api(self):
+        try:
+            if settings.PAYPAL_SANDBOX_MODE:
+                mode = 'sandbox'
+                client_id = settings.PAYPAL_SANDBOX_CLIENT_ID
+                client_secret = settings.PAYPAL_SANDBOX_CLIENT_SECRET
+            else:
+                mode = 'live'
+                client_id = settings.PAYPAL_CLIENT_ID
+                client_secret = settings.PAYPAL_CLIENT_SECRET
+        except AttributeError:
+            raise ImproperlyConfigured(_("Credenciais de acesso ao paypal estao faltando, "
+                                    "isso inclui PAYPAL_SANDBOX_MODE, PAYPAL_CLIENT_ID e PAYPAL_CLIENT_SECRET "
+                                    "basta inclui-las no settings.py para serem utilizadas "
+                                    "no processador de pagamentos do paypal."))
+        api = paypalrestsdk.set_config(mode = mode,	client_id = client_id, client_secret = client_secret)
+        os.environ['PAYPAL_MODE'] = mode
+        os.environ['PAYPAL_CLIENT_ID'] = client_id
+        os.environ['PAYPAL_CLIENT_SECRET'] = client_secret
+        return api
 
-def process():
-    paypal = PayPal()
-    paypal.process(request)
-    paypal.process_cart(request)
+    def alt_process(self):
+        paypal = PayPal()
+        paypal.process(request)
+        paypal.process_cart(request)
 
 
-def redirect():
-    order = None
-    lookup = {}
-    # PayPal IPN code
-    # input = request.GET # remember to decode this! you could run into errors with charsets!
-    # if 'txn_id' in input and 'verified' in input['payer_status'][0]: pass
-    # else: raise Exception # Erro 402
-    # 
-    # PayPal redirect code
-    paypal_api()
-    payment = Payment.find(order.transaction_id)
-    for link in payment.links:
-        if link.method == "REDIRECT":
-            redirect_url = link.href
-            url = urlparse(link.href)
-            params = parse_qs(url.query)
-            redirect_token = params['token'][0]
-            order.paypal_redirect_token = redirect_token
-            order.save()
-    if request.GET.has_key('token'):
+    def redirect(self):
+        order = None
+        lookup = {}
+        # PayPal IPN code
+        # input = request.GET # remember to decode this! you could run into errors with charsets!
+        # if 'txn_id' in input and 'verified' in input['payer_status'][0]: pass
+        # else: raise Exception # Erro 402
+        # 
+        # PayPal redirect code
         paypal_api()
-        token = request.GET['token']
-        payer_id = request.GET['PayerID']
-        order = get_object_or_404(Order, paypal_redirect_token=token)
         payment = Payment.find(order.transaction_id)
-        payment.execute({ "payer_id": payer_id })
+        for link in payment.links:
+            if link.method == "REDIRECT":
+                redirect_url = link.href
+                url = urlparse(link.href)
+                params = parse_qs(url.query)
+                redirect_token = params['token'][0]
+                order.paypal_redirect_token = redirect_token
+                order.save()
+        if request.GET.has_key('token'):
+            paypal_api()
+            token = request.GET['token']
+            payer_id = request.GET['PayerID']
+            order = get_object_or_404(Order, paypal_redirect_token=token)
+            payment = Payment.find(order.transaction_id)
+            payment.execute({ "payer_id": payer_id })
