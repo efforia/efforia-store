@@ -31,13 +31,59 @@ from django.shortcuts import render
 from .models import Basket, Product
 # from .providers import *
 
-class Baskets():#(Mosaic):
-    def view_items(self,request):
+class MarketService():
+
+    def __init__(self): 
+        pass
+
+    def view_product(self, request):
+        u = self.current_user(request)
+        if 'action' in request.GET:
+            deliver = list(Deliverable.objects.all().filter(buyer=u))
+            if not len(deliver) or 'more' in request.GET:
+                products = list(Product.objects.all())
+                return self.render_grid(list(products),request)
+            else: return self.render_grid(deliver,request)
+        elif 'product' in request.GET:
+            id = int(request.REQUEST['product'])
+            prod = Product.objects.all().filter(id=id)[0]
+            return render(request,'productview.pug',{'product':prod})
+        else:
+            return render(request,'product.pug',{'static_url':settings.STATIC_URL},content_type='text/html')
+
+    def create_product(self, request):
+        u = self.current_user(request)
+        e = json.load(open('%s/json/elements.json'%settings.STATIC_ROOT))
+        c = request.REQUEST['category']
+        category = e['locale_cat'].index(c)
+        credit = request.REQUEST['credit']
+        name = request.REQUEST['name']
+        description = request.REQUEST['description']
+        product = Product(category=category,credit=credit,visual='',
+        name='$$%s'%name,description=description,user=u)
+        product.save()
+        return redirect('productimage')
+
+    def view_image(self, request):
+        return render(request,'upload.pug',{'static_url':settings.STATIC_URL})
+
+    def create_image(self, request):
+        images = Images()
+        u = self.current_user(request)
+        url = images.upload_image(request)
+        products = Product.objects.filter(user=u)
+        latest = list(products)[-1:][0]
+        latest.visual = url
+        latest.save()
+        return response("Product created successfully")
+
+    def view_items(self, request):
         u = self.current_user(request); products = []
         basket = list(Basket.objects.filter(user=u))
         for b in basket: products.extend(Sellable.objects.filter(sellid=b.product))
         return self.view_mosaic(request,products)
-    def add_item(self,request):
+
+    def add_item(self, request):
         u = self.current_user(request)
         prodid = int(request.REQUEST['id'])
         if 'value' in request.REQUEST:
@@ -53,30 +99,15 @@ class Baskets():#(Mosaic):
             basket = Basket(user=u,product=prodid)
             basket.save()
         return self.view_items(request)
-    def process_cart(self,request):
-        u = self.current_user(request); cart = []
-        basket = list(Basket.objects.filter(user=u))
-        for b in basket:
-            sellables = Sellable.objects.filter(sellid=b.product)
-            for s in sellables:
-                prod = {}
-                prod['value'] = s.value
-                prod['product'] = s.name
-                prod['qty'] = '1'
-                cart.append(prod)
-        return self.process(request,cart)
-    def clean_basket(self,request):
+
+    def clean_basket(self, request):
         u = self.current_user(request); cart = []
         basket = list(Basket.objects.filter(user=u))
         for b in basket:
             Sellable.objects.filter(sellid=b.product).delete()
             b.delete()
         return response("Basket cleaned successfully")
-    def process(self,request,cart=None):
-        pass
 
-class Cancel():#(Plethora):
-    def __init__(self): pass
     def cancel(self,request):
         u = self.current_user(request)
         Cart.objects.all().filter(user=u).delete()
@@ -84,6 +115,13 @@ class Cancel():#(Plethora):
         #value = int(self.request.arguments['credit'])
         #self.current_user().profile.credit -= value
         #self.current_user().profile.save()
+    
+    def product(self,prodid):
+        # for p in basket:
+            # quantity += p.quantity
+            # value += p.product.credit*p.quantity
+            pass
+        #payment_was_successful.connect(confirm_payment)
 
 class PaymentService():
 
@@ -101,7 +139,7 @@ class PaymentService():
     def cancel(self):
         return JsonResponse({'payment_cancel': 'success'})
 
-    def view_recharge(self,request):
+    def view_recharge(self, request):
         paypal_dict = {
             "business": settings.PAYPAL_RECEIVER_EMAIL,
             "amount": "1.19",
@@ -117,7 +155,7 @@ class PaymentService():
         form = CreditForm()
         return render(request,"recharge.pug",{'form':payments,'credit':form},content_type='text/html')
 
-    def update_credit(self,request):
+    def update_credit(self, request):
         value = int(request.POST['credit'][0])
         current_profile = Profile.objects.all().filter(user=self.current_user(request))[0]
         if value > current_profile.credit: return self.view_recharge(request)
@@ -133,50 +171,18 @@ class PaymentService():
             self.accumulate_points(1,request)
             return response('')
 
-class SpreadBasket(Basket):
-    def product(self,prodid):
-	# for p in basket:
-        # quantity += p.quantity
-        # value += p.product.credit*p.quantity
+    def process(self, request, cart=None):
         pass
 
-class Store(): #(Plethora):
-    def __init__(self): pass
-    def view_product(self,request):
-        u = self.current_user(request)
-        if 'action' in request.GET:
-            deliver = list(Deliverable.objects.all().filter(buyer=u))
-            if not len(deliver) or 'more' in request.GET:
-                products = list(Product.objects.all())
-                return self.render_grid(list(products),request)
-            else: return self.render_grid(deliver,request)
-        elif 'product' in request.GET:
-            id = int(request.REQUEST['product'])
-            prod = Product.objects.all().filter(id=id)[0]
-            return render(request,'productview.pug',{'product':prod})
-        else:
-            return render(request,'product.pug',{'static_url':settings.STATIC_URL},content_type='text/html')
-    def create_product(self,request):
-        u = self.current_user(request)
-        e = json.load(open('%s/json/elements.json'%settings.STATIC_ROOT))
-        c = request.REQUEST['category']
-        category = e['locale_cat'].index(c)
-        credit = request.REQUEST['credit']
-        name = request.REQUEST['name']
-        description = request.REQUEST['description']
-        product = Product(category=category,credit=credit,visual='',
-        name='$$%s'%name,description=description,user=u)
-        product.save()
-        return redirect('productimage')
-    def view_image(self,request):
-        return render(request,'upload.pug',{'static_url':settings.STATIC_URL})
-    def create_image(self,request):
-        images = Images()
-        u = self.current_user(request)
-        url = images.upload_image(request)
-        products = Product.objects.filter(user=u)
-        latest = list(products)[-1:][0]
-        latest.visual = url
-        latest.save()
-        return response("Product created successfully")
-#payment_was_successful.connect(confirm_payment)
+    def process_cart(self, request):
+        u = self.current_user(request); cart = []
+        basket = list(Basket.objects.filter(user=u))
+        for b in basket:
+            sellables = Sellable.objects.filter(sellid=b.product)
+            for s in sellables:
+                prod = {}
+                prod['value'] = s.value
+                prod['product'] = s.name
+                prod['qty'] = '1'
+                cart.append(prod)
+        return self.process(request,cart)
