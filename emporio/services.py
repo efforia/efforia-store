@@ -31,7 +31,7 @@ from django.shortcuts import render
 from .models import Basket, Product
 # from .providers import *
 
-class MarketService():
+class MarketplaceService():
 
     def __init__(self): 
         pass

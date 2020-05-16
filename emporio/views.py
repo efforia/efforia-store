@@ -39,7 +39,7 @@ class ProductsDetailView(DetailView):
 
     def get(self, request, *args, **kwargs):
         ''' Specific logic for GET on loading product own image '''
-        store_manager = Store()
+        store_manager = MarketplaceService()
         image = store_manager.view_image(request)
         product = store_manager.view_product(request)
         return super(ProductsDetailView, self).get(request, *args, **kwargs)        
@@ -75,7 +75,7 @@ class ProductsListView(ListView):
 
     def post(self, request, *args, **kwargs):
         ''' Specific logic for POST on creating a product with its own image '''
-        store_manager = Store()
+        store_manager = MarketplaceService()
         store_manager.create_image(request)
         store_manager.create_product(request)
         return super(ProductsListView, self).post(request, *args, **kwargs)
@@ -87,13 +87,13 @@ class BasketsDetailView(DetailView):
 
     def post(self, request, *args, **kwargs):
         ''' Adds item to basket '''
-        basket_manager = Baskets(Product())
+        basket_manager = MarketplaceService(Product())
         basket_manager.add_item(request)
         return super(BasketsDetailView, self).post(request, *args, **kwargs)
 
     def delete(self, request, *args, **kwargs):
         ''' Clear one specific basket from user / key '''
-        basket_manager = Baskets()
+        basket_manager = MarketplaceService()
         basket_manager.clean_basket(request)
         return super(BasketsDetailView, self).delete(request, *args, **kwargs)
 
@@ -103,13 +103,13 @@ class BasketsListView(ListView):
 
     def get(self, request, *args, **kwargs):
         ''' Specific logic for GET on retrieving items basket '''
-        basket_manager = Baskets()
+        basket_manager = MarketplaceService()
         items = basket_manager.view_items(request)
         return super(BasketsListView, self).get(request, *args, **kwargs)
 
     def delete(self, request, *args, **kwargs):
         ''' Clears all baskets from specific user / key '''
-        cancel_manager = Cancel()
+        cancel_manager = MarketplaceService()
         cancel_manager.cancel(request)
         return super(BasketsListView, self).delete(request, *args, **kwargs)
 
