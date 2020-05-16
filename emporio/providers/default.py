@@ -28,7 +28,7 @@ from django.http import HttpResponseRedirect as redirect
 
 class DefaultPaymentProvider:
 
-	def bancobrasil_payment(self, request,order):
+	def bancobrasil_payment(self, request, order):
 		order.paypal_redirect_token = 'none'
 		order.pagseguro_redirect = 'none'
 		order.save()

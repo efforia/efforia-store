@@ -56,7 +56,7 @@ class SandboxConfig(pagseguro.Config):
 	DATETIME_FORMAT = '%Y-%m-%dT%H:%M:%S'
 
 class PagSeguroSandbox(pagseguro.PagSeguro):
-	def __init__(self, email,token,data=None):
+	def __init__(self, email, token, data=None):
 		self.config = SandboxConfig()
 		self.data = {}
 		self.data['email'] = email
@@ -73,7 +73,7 @@ class PagSeguroSandbox(pagseguro.PagSeguro):
 
 class PagSeguroPaymentProvider:
 
-    def process(self, request,cart=None):
+    def process(self, request, cart=None):
         for k,v in request.REQUEST.items():
             if 'product' in k: product = v
             elif 'value' in k: value = float(v)
@@ -92,7 +92,7 @@ class PagSeguroPaymentProvider:
         c = Context({'form':carrinho.form()})
         return response(t.render(c))
 
-	def pagseguro_payment(self, request,items,price,order):
+	def pagseguro_payment(self, request, items, price, order):
 		server_host = request.get_host()
 		payment = pagseguro_api()
 		for product in items:

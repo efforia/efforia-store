@@ -22,8 +22,8 @@ from paypal.standard.forms import PayPalPaymentsForm
 from paypal.standard.ipn.signals import payment_was_successful
 
 class PayPalPaymentProvider():
-    
-    def process(self, request,cart=None):
+
+    def process(self, request, cart=None):
         for k,v in request.REQUEST.items():
             if 'product' in k: product = v
             elif 'value' in k: value = float(v)
@@ -57,7 +57,7 @@ class PayPalPaymentProvider():
         c = Context({'form':form_paypal.render()})
         return response(t.render(c))
 
-    def paypal_redirect(self, request,order):
+    def paypal_redirect(self, request, order):
         paypal_api()
         payment = paypalrestsdk.Payment.find(order.transaction_id)
         for link in payment.links:
@@ -86,7 +86,7 @@ class PayPalPaymentProvider():
         response = render(request, template, context)
         return response
 
-    def paypal_payment(self, request,items,price,currency,order):
+    def paypal_payment(self, request, items, price, currency, order):
         paypal_api()
         server_host = request.get_host()
         payment = paypalrestsdk.Payment({
