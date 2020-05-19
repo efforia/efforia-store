@@ -28,10 +28,12 @@ from django.http import HttpResponseRedirect as redirect
 from django.http import JsonResponse
 from django.shortcuts import render
 
-from .models import Basket, Product
+from .models import Basket, Product, Order
 # from .providers import *
 
-class MarketplaceService():
+class MarketplaceService:
+
+    model = Product
 
     def __init__(self): 
         pass
@@ -123,7 +125,14 @@ class MarketplaceService():
             pass
         #payment_was_successful.connect(confirm_payment)
 
-class PaymentService():
+class BasketService:
+    
+    model = Basket
+
+
+class PaymentService:
+
+    model = Order
 
     def __init__(self): 
         pass
