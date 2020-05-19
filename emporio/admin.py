@@ -24,6 +24,6 @@ from .models import *
 
 # Register your models here.
 
-admin.site.register(Product)
-admin.site.register(Sellable)
-admin.site.register(Basket)
+# admin.site.register(Product)
+# admin.site.register(Sellable)
+# admin.site.register(Basket)
