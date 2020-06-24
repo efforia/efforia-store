@@ -1,5 +1,5 @@
-Django==3.0.7
-django-distill==1.7
-future==0.18.2
-pagseguro==0.3.4
-paypalrestsdk==1.13.1
+Django>=3.0.7
+django-distill>=1.7
+future>=0.18.2
+pagseguro>=0.3.4
+paypalrestsdk>=1.13.1
